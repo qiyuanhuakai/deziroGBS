@@ -1,0 +1,51 @@
+{
+  "config": {
+    "name": "scaling_v1",
+    "modes": [
+      16,
+      32,
+      64
+    ],
+    "topologies": [
+      "haar",
+      "local2"
+    ],
+    "squeezing": 0.6,
+    "transmissivity": [
+      0.25,
+      0.6
+    ],
+    "seed": 3901,
+    "samples_per_method": 128,
+    "methods": [
+      {
+        "strategy": "pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "calibrated_greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 2
+      },
+      {
+        "strategy": "zero_pairwise",
+        "k": 2
+      }
+    ]
+  },
+  "source_sha256": "49933a83f38fef70c7e2335b0873a53c46d5bed4625c74d83fefd58def1b6def",
+  "started_utc": "2026-11-03T15:00:32.966992+00:00",
+  "quality_status": "No full TV/KL evaluated at these sizes. Cost probe only.",
+  "timing_notes": "Fresh covariance oracle per method, 8192-entry vacuum cache. No exact reference or dense surrogate enumeration. One cold batch; not a throughput benchmark or speedup claim.",
+  "elapsed_seconds": 60.04663269699995,
+  "successful_rows": 60,
+  "failed_rows": 0,
+  "completed_utc": "2026-11-03T15:01:33.013646+00:00"
+}

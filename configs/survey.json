@@ -1,0 +1,21 @@
+{
+  "name": "survey_v2",
+  "modes": [8, 12],
+  "topologies": ["haar", "local2", "local4"],
+  "squeezing": [0.4, 0.8],
+  "transmissivity": [0.25, 0.6, 1.0],
+  "seeds": [1701, 1702, 1703],
+  "methods": [
+    {"strategy": "independent", "k": 0},
+    {"strategy": "previous", "k": 1},
+    {"strategy": "previous", "k": 2},
+    {"strategy": "previous", "k": 3},
+    {"strategy": "pairwise", "k": 1},
+    {"strategy": "pairwise", "k": 2},
+    {"strategy": "pairwise", "k": 3},
+    {"strategy": "greedy_cmi", "k": 2},
+    {"strategy": "greedy_cmi", "k": 3}
+  ],
+  "samples_per_method": 10000,
+  "save_distributions": false
+}
