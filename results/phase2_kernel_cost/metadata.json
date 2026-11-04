@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T02:53:20.557262+00:00",
+  "config": {
+    "modes": [
+      16,
+      32,
+      64
+    ],
+    "seeds": [
+      7201,
+      7202
+    ],
+    "topology": "haar",
+    "squeezing": 0.6,
+    "transmissivity": 0.35,
+    "retained_clicks": 2,
+    "repeats": 3,
+    "samples_per_method": 128,
+    "methods": [
+      "old_pairwise",
+      "schur_pairwise"
+    ],
+    "sample_seed_offset": 300000
+  },
+  "source_sha256": "d47b7a503ba8bc7ad5c5310bd6252c836b0a83581783e3daf391b286f81af727",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "protocol": "3 repeats per input; fresh model and sampler caches; alternating method order; same RNG within each pair; no dense enumeration",
+  "timing_scope": "model construction, sampler setup, and draws timed separately; U,V construction shared/excluded; CPU cache/OS load not controlled by script",
+  "quality_scope": "algebraically equivalent retained-click models; equality of paired samples checked, no new global-quality claim",
+  "completed_utc": "2026-11-04T02:53:59.634424+00:00",
+  "elapsed_seconds": 39.07528646499986,
+  "method_runs": 36,
+  "sample_pairs": 18,
+  "identical_pairs": 18,
+  "failed_runs": 0
+}

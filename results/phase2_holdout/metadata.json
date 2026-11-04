@@ -1,0 +1,78 @@
+{
+  "config": {
+    "name": "phase2_holdout",
+    "modes": [
+      10
+    ],
+    "topologies": [
+      "haar",
+      "local2",
+      "local4"
+    ],
+    "squeezing": [
+      0.4,
+      0.8
+    ],
+    "transmissivity": [
+      0.5
+    ],
+    "profiles": [
+      "uniform",
+      "heterogeneous"
+    ],
+    "seeds": [
+      5101,
+      5102
+    ],
+    "samples_per_method": 128,
+    "methods": [
+      {
+        "strategy": "schur_recent",
+        "k": 2
+      },
+      {
+        "strategy": "schur_pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "conditional_mi",
+        "k": 2
+      },
+      {
+        "strategy": "click_influence",
+        "k": 2
+      },
+      {
+        "strategy": "conditional_mi",
+        "k": 3
+      },
+      {
+        "strategy": "click_influence",
+        "k": 3
+      }
+    ]
+  },
+  "config_sha256": "15f670ca5a240ba6abef20f474fd604a929a5442be1096f272cd8929a8f11d6b",
+  "source_sha256": "04f1335ef97848f364e4ebfd472c5b0abcd29abcc218e822c12b7ac331812dd5",
+  "started_utc": "2026-11-04T02:43:14.007783+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "notes": [
+    "Fresh candidate oracle, sampling before dense evaluation.",
+    "Dense TV/KL and prefix diagnostics are evaluation-only.",
+    "Sample timing includes lazy selection; fit-only timings are insufficient.",
+    "Profiles/parameters share interferometers; no iid case-population inference."
+  ],
+  "status": "complete",
+  "completed_utc": "2026-11-04T02:45:10.832419+00:00",
+  "elapsed_seconds": 116.82429446900005,
+  "cases": 24,
+  "successful_rows": 144,
+  "failed_rows": 0
+}

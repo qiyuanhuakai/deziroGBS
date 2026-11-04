@@ -1,0 +1,20 @@
+{
+  "name": "phase2_discovery",
+  "modes": [10],
+  "topologies": ["haar", "local2", "local4"],
+  "squeezing": [0.4, 0.8],
+  "transmissivity": [0.3, 0.7, 1.0],
+  "profiles": ["uniform"],
+  "seeds": [4101, 4102],
+  "samples_per_method": 128,
+  "methods": [
+    {"strategy": "old_recent", "k": 2},
+    {"strategy": "old_pairwise", "k": 2},
+    {"strategy": "schur_recent", "k": 2},
+    {"strategy": "schur_pairwise", "k": 2},
+    {"strategy": "conditional_mi", "k": 2},
+    {"strategy": "click_influence", "k": 2},
+    {"strategy": "conditional_mi", "k": 3},
+    {"strategy": "click_influence", "k": 3}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "phase2_discovery_k3_control",
+  "modes": [
+    10
+  ],
+  "topologies": [
+    "haar",
+    "local2",
+    "local4"
+  ],
+  "squeezing": [
+    0.4,
+    0.8
+  ],
+  "transmissivity": [
+    0.3,
+    0.7,
+    1.0
+  ],
+  "profiles": [
+    "uniform"
+  ],
+  "seeds": [
+    4101,
+    4102
+  ],
+  "samples_per_method": 128,
+  "methods": [
+    {
+      "strategy": "schur_recent",
+      "k": 3
+    },
+    {
+      "strategy": "schur_pairwise",
+      "k": 3
+    }
+  ],
+  "purpose": "Post-discovery equal-click-budget controls; not a new held-out selector tuning run."
+}

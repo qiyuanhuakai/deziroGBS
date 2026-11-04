@@ -1,0 +1,1011 @@
+{
+  "FrugalGBS": {
+    "commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+    "files": [
+      "CITATION.cff",
+      "CMakeLists.txt",
+      "LICENSE.md",
+      "README.md",
+      "include/fgbs.hpp",
+      "include/fgbs/core/bitstring_utils.hpp",
+      "include/fgbs/core/consts.hpp",
+      "include/fgbs/core/correlator_utils.hpp",
+      "include/fgbs/core/cov_matrix_io.hpp",
+      "include/fgbs/core/cumulant_utils.hpp",
+      "include/fgbs/core/file_utils.hpp",
+      "include/fgbs/core/index_utils.hpp",
+      "include/fgbs/core/io_utils.hpp",
+      "include/fgbs/core/iter_utils.hpp",
+      "include/fgbs/core/macro_utils.hpp",
+      "include/fgbs/core/math_utils.hpp",
+      "include/fgbs/core/matrix_utils.hpp",
+      "include/fgbs/core/mmpy_format.hpp",
+      "include/fgbs/core/random_simd.hpp",
+      "include/fgbs/core/random_utils.hpp",
+      "include/fgbs/core/result.hpp",
+      "include/fgbs/core/slice.hpp",
+      "include/fgbs/core/stat_structs.hpp",
+      "include/fgbs/core/stat_utils.hpp",
+      "include/fgbs/core/string_utils.hpp",
+      "include/fgbs/core/structs.hpp",
+      "include/fgbs/core/sublist_utils.hpp",
+      "include/fgbs/core/thread_utils.hpp",
+      "include/fgbs/core/time_utils.hpp",
+      "include/fgbs/core/tuple_utils.hpp",
+      "include/fgbs/core/type_utils.hpp",
+      "include/fgbs/core/validation.hpp",
+      "include/fgbs/cpu/cpu_cumulants.hpp",
+      "include/fgbs/cpu/cpu_sampler.hpp",
+      "include/fgbs/cpu/cpu_stats.hpp",
+      "include/fgbs/cumulants.hpp",
+      "include/fgbs/data.hpp",
+      "include/fgbs/global.hpp.in",
+      "include/fgbs/layout.hpp",
+      "include/fgbs/sampler.hpp",
+      "include/fgbs/stats.hpp",
+      "src/CMakeLists.txt",
+      "src/fgbs/CMakeLists.txt",
+      "src/fgbs/core/correlator_utils.cpp",
+      "src/fgbs/core/cumulant_utils.cpp",
+      "src/fgbs/core/file_utils.cpp",
+      "src/fgbs/core/matrix_utils.cpp",
+      "src/fgbs/core/mmpy_format.cpp",
+      "src/fgbs/core/result.cpp",
+      "src/fgbs/core/string_utils.cpp",
+      "src/fgbs/core/thread_utils.cpp",
+      "src/fgbs/core/time_utils.cpp",
+      "src/fgbs/cpu/CMakeLists.txt",
+      "src/fgbs/cpu/cpu_sampler.cpp",
+      "src/fgbs/layout.cpp"
+    ],
+    "file_blobs": [
+      {
+        "path": "CITATION.cff",
+        "git_blob_sha": "072ba40ee80c4c987d938b2cefb84f2747ad0fe3",
+        "sha256": "53f092520247a95796966bfec5007f0938d98d4befb07fac64a92d87044b37c5",
+        "bytes": 1019
+      },
+      {
+        "path": "CMakeLists.txt",
+        "git_blob_sha": "3d5b19bfae3935d3caa991c1d0237864cba51c95",
+        "sha256": "102e486041cce7111032fb256cccf4643009f494dffd8bf750262e755cb79224",
+        "bytes": 5162
+      },
+      {
+        "path": "LICENSE.md",
+        "git_blob_sha": "2c79b411b940f0117cc437fe4ddd11acdcc39257",
+        "sha256": "a394fcedf8518364e55e42eaaff695d043bc2147b009cbf611abbc02aa974839",
+        "bytes": 1081
+      },
+      {
+        "path": "README.md",
+        "git_blob_sha": "d8b7debe2c19dbff7e789427a23bbde8a2d4db28",
+        "sha256": "e0bca4f9a7ff938a737a1f8e323c248c91ef82a2f326f482ed85f6320bd4932c",
+        "bytes": 2875
+      },
+      {
+        "path": "include/fgbs.hpp",
+        "git_blob_sha": "a6bd2060e459a1352c932cd3bd544b42d4a85736",
+        "sha256": "7dd339e3f61bac8e81598400177f44f93134d16769e8c397cd34599aa0bf60b7",
+        "bytes": 179
+      },
+      {
+        "path": "include/fgbs/core/bitstring_utils.hpp",
+        "git_blob_sha": "fa147ca6350fd02c70110c538ad59de08920ea6f",
+        "sha256": "25b3cfd3dfaa6f9324dec2a9e76520f0946a4a5179c6a64553e453158fb79d8d",
+        "bytes": 2830
+      },
+      {
+        "path": "include/fgbs/core/consts.hpp",
+        "git_blob_sha": "aa6a9f42403e83e8867200d4e2d8c33a242614fd",
+        "sha256": "ffb428a8039b17348abd308692c64844c6d6a0b9aed36e23d250977c0757f7ea",
+        "bytes": 831
+      },
+      {
+        "path": "include/fgbs/core/correlator_utils.hpp",
+        "git_blob_sha": "e090452f4db9b8e08938d8d247cc71161dc242f2",
+        "sha256": "7c200d6cc1cd53c24e0aa19985f094a3dd40f27701f0750909b06f12c5516f2f",
+        "bytes": 1920
+      },
+      {
+        "path": "include/fgbs/core/cov_matrix_io.hpp",
+        "git_blob_sha": "6699856b62e3afed9b319fb1a1eba0dd98b71bb2",
+        "sha256": "dbdac9a45d7310ae4aeb66766321d7693c7ca1da1ec1b3871cf23b3123e8c6ff",
+        "bytes": 1416
+      },
+      {
+        "path": "include/fgbs/core/cumulant_utils.hpp",
+        "git_blob_sha": "83a86bc46b51fe65d36b406717ad7c8e178367c2",
+        "sha256": "ebd895a266e1a63dfcd534186cd0cd3ec1b86301c6a8caef7bb4a35b52198522",
+        "bytes": 2375
+      },
+      {
+        "path": "include/fgbs/core/file_utils.hpp",
+        "git_blob_sha": "93d507c295b90da230f74281c464769ea4ffde7a",
+        "sha256": "eda8aa7fea228c82a931374cc12433035038439f7fc2bf120d68b2c5f061537a",
+        "bytes": 5547
+      },
+      {
+        "path": "include/fgbs/core/index_utils.hpp",
+        "git_blob_sha": "a1cb702cf5810b6cc906bd9e1419a9c697ce4c72",
+        "sha256": "64f7e0eb7333746c3c606365e4bf028d2a74edef17f018d7c8acd1d83330706d",
+        "bytes": 456
+      },
+      {
+        "path": "include/fgbs/core/io_utils.hpp",
+        "git_blob_sha": "88bee305a2aef7bb6f9be6923383bb9dcce09eed",
+        "sha256": "10a89fb04c5c704191ebe90f8d67b200ae79ac69ec736c37e3e722508d7a0056",
+        "bytes": 303
+      },
+      {
+        "path": "include/fgbs/core/iter_utils.hpp",
+        "git_blob_sha": "22769eeb137949b4a7f7ca12f68cb237e032d108",
+        "sha256": "b3c7acb43f263962e46dc402b1ba5af12111bf4a0d52ef11cf1385c449cc0346",
+        "bytes": 3350
+      },
+      {
+        "path": "include/fgbs/core/macro_utils.hpp",
+        "git_blob_sha": "51a27bdfd26ebd85cc6a68c5dba498976ce4b01c",
+        "sha256": "6a0e3a533adf409f65c416f978b5d633d09a766bd46017086a7e8e6b9c2f2d90",
+        "bytes": 305
+      },
+      {
+        "path": "include/fgbs/core/math_utils.hpp",
+        "git_blob_sha": "1809a0cff138ee6610496634b04a9af52a7e1ced",
+        "sha256": "f24a9a7bf79bf6a63647635c9ebd960a6b7ee93e9fa85dd6ef6e41f5498534d6",
+        "bytes": 3051
+      },
+      {
+        "path": "include/fgbs/core/matrix_utils.hpp",
+        "git_blob_sha": "27ac9fc15526a5312e9d2088f754058c5937ba21",
+        "sha256": "2152771f48c7cda7dbb7f0f05afa1d4155b6338e0cba7843aa28838ba9539054",
+        "bytes": 559
+      },
+      {
+        "path": "include/fgbs/core/mmpy_format.hpp",
+        "git_blob_sha": "1429244da9cef3c1c6f122053de2f0404e4d66a7",
+        "sha256": "0e4ee668a175f3a9724303b0e8c75a80bb6ba14c408c35cf71891d21ed07ffdc",
+        "bytes": 14560
+      },
+      {
+        "path": "include/fgbs/core/random_simd.hpp",
+        "git_blob_sha": "1cfbfd5bd11c24b084889c80966dcfddd143a557",
+        "sha256": "bdcbe1d9330d62bd46c1fe610b6e41ce4d44d7b9597f81f94cca392f4379906f",
+        "bytes": 1720
+      },
+      {
+        "path": "include/fgbs/core/random_utils.hpp",
+        "git_blob_sha": "fbb63236eaa4577bc82b34b71a3db0fa6f991512",
+        "sha256": "95b2f183e5f6bdfbd4499650924a13bbccbf951d69734d66b4d12fba040eab15",
+        "bytes": 1635
+      },
+      {
+        "path": "include/fgbs/core/result.hpp",
+        "git_blob_sha": "3239e6ed7dfe8cc03f98f6c650c13240c879d6e5",
+        "sha256": "48543e8cc6ce19ee34e079e0674acf3346d3cdfe15e4db4fbde181d60911637a",
+        "bytes": 1650
+      },
+      {
+        "path": "include/fgbs/core/slice.hpp",
+        "git_blob_sha": "d253073c5b67e601917256b31450994ba7f254c7",
+        "sha256": "1b4e40b94d410d84e3f0612f662a75c1a502cc2998a0674a5898415574a571bb",
+        "bytes": 991
+      },
+      {
+        "path": "include/fgbs/core/stat_structs.hpp",
+        "git_blob_sha": "4004c143cd20568c21ab5cde5b24dfe1be48bbc9",
+        "sha256": "cebaec76ce5f99d7deaf4326a798543a35014457248b56efa248bf989e27866d",
+        "bytes": 274
+      },
+      {
+        "path": "include/fgbs/core/stat_utils.hpp",
+        "git_blob_sha": "b2085a7ee10fdf02d1ade9956c3a4d60d9a4ee86",
+        "sha256": "140f0cc1216bed2c341a0475d6e340eb4a9ee53fb4058ecab517b8e97ba9f071",
+        "bytes": 6360
+      },
+      {
+        "path": "include/fgbs/core/string_utils.hpp",
+        "git_blob_sha": "521053b91cf7e343a2a2c7d3149632bed3a5db27",
+        "sha256": "47b854abbd07d1eab76acae8542bedf8b2d03be4f54f6f7802a98640bb9d1973",
+        "bytes": 2965
+      },
+      {
+        "path": "include/fgbs/core/structs.hpp",
+        "git_blob_sha": "861175587e150cb77335c5efdf100e1b11d3e015",
+        "sha256": "7f5e4e89fafcaa4b89c9b8e3b4792917b5d6738bd34d3008e16966536ed51443",
+        "bytes": 3444
+      },
+      {
+        "path": "include/fgbs/core/sublist_utils.hpp",
+        "git_blob_sha": "49be6c7675491f53df48bce430306d99eb529223",
+        "sha256": "b81c2a07946b000c3b304f6d09c9069f794695c5a5d9c39c53c4e223058621f5",
+        "bytes": 1766
+      },
+      {
+        "path": "include/fgbs/core/thread_utils.hpp",
+        "git_blob_sha": "2b46988a920ee3e17049993a9738bf150b2909d2",
+        "sha256": "53ab79b46e1fc56e67f5833d0443c7aa0e74a43a3391e5a555a4c9c9ce46964c",
+        "bytes": 4030
+      },
+      {
+        "path": "include/fgbs/core/time_utils.hpp",
+        "git_blob_sha": "aec8cd7c5ecb630e251b000dee045ae02c08329f",
+        "sha256": "c8c0d4bbbe779b65657f5001e84844ed8986cd64b58ed49e22ab3f130e07bdc0",
+        "bytes": 701
+      },
+      {
+        "path": "include/fgbs/core/tuple_utils.hpp",
+        "git_blob_sha": "5c0892e11e383c6d2826ce7360b8007a863c8315",
+        "sha256": "0fa3c956b6bce1b13b76cfe19908f05fb887b3527f261d4286d8bed3fa31d380",
+        "bytes": 306
+      },
+      {
+        "path": "include/fgbs/core/type_utils.hpp",
+        "git_blob_sha": "b902e427e38107f1c2950071c5fc2df3a78741c5",
+        "sha256": "e101dbb2283b20af44a09c0aca913d844729decdc034ea8266bf165e3b9d5ee2",
+        "bytes": 1423
+      },
+      {
+        "path": "include/fgbs/core/validation.hpp",
+        "git_blob_sha": "ac68096205f4df6aff7ae09442e47e588d42ec51",
+        "sha256": "cf43fb59d1edb91af0da889acdabed9f3af522d0bea0d576d51e5f7f50157427",
+        "bytes": 13023
+      },
+      {
+        "path": "include/fgbs/cpu/cpu_cumulants.hpp",
+        "git_blob_sha": "3fae9c2e608f4caca0ccc3e7c30c81055f611f8e",
+        "sha256": "96f1bba3e30056af7813203e8999c5bca14db4466ee7e033aa7b617f85d52cfe",
+        "bytes": 2212
+      },
+      {
+        "path": "include/fgbs/cpu/cpu_sampler.hpp",
+        "git_blob_sha": "931861351da5d190cffb5ca20d015a5dded979a9",
+        "sha256": "a5cc3456b944f5fafa41e47400cd6c51739239727f0a9e9fee7780e16f54c406",
+        "bytes": 24356
+      },
+      {
+        "path": "include/fgbs/cpu/cpu_stats.hpp",
+        "git_blob_sha": "866e31a5a38ee1eee433b5eeb14f8232a03ae0ff",
+        "sha256": "b4d51bc738a8f824ff736f6758f20879dc8f7b5a2a1ddf9cca40db694ff533dc",
+        "bytes": 1728
+      },
+      {
+        "path": "include/fgbs/cumulants.hpp",
+        "git_blob_sha": "3ba8581cb012c35cf08ee61975916289e73820b9",
+        "sha256": "c346963cc6eb98678eca6afd27db3f51d4ffc77758bd0f1c58d25e726c0ca593",
+        "bytes": 1541
+      },
+      {
+        "path": "include/fgbs/data.hpp",
+        "git_blob_sha": "15d082f854f7364701b099147b90330862021fe6",
+        "sha256": "9583a776af388ddfd3fef3adbae4af806499748adca11823bb3aa45e4cbce74e",
+        "bytes": 5101
+      },
+      {
+        "path": "include/fgbs/global.hpp.in",
+        "git_blob_sha": "a6d7d5f08824529eade4f6fefab5539b43afdfd9",
+        "sha256": "1fb3b829301e9181943eec0efc6cec9af3c54b5a1887e0618c2f071398ace5f4",
+        "bytes": 195
+      },
+      {
+        "path": "include/fgbs/layout.hpp",
+        "git_blob_sha": "56198eddbbb7591436f04c0b9fe379d9da52f373",
+        "sha256": "2e7afdc1ada8633557d7ddd448ed79cef0dd3b26b2e38a09d4380ef91f31adb7",
+        "bytes": 8018
+      },
+      {
+        "path": "include/fgbs/sampler.hpp",
+        "git_blob_sha": "16309ae770a26b8468699e5c152d966f19a1a57b",
+        "sha256": "cde1f3f8cdff54377989a7c7a84965ddc54ab1ad16cdb8ce544cedd560f86d22",
+        "bytes": 1267
+      },
+      {
+        "path": "include/fgbs/stats.hpp",
+        "git_blob_sha": "9dd5ba7555f7b51994b73d61266c83926673acd9",
+        "sha256": "07770046e24091405c038515ba385f0c8af66450d6c244112f05b94572b5af0d",
+        "bytes": 7290
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "git_blob_sha": "dc5d95fa9d5d87ce4cb6569a2521c1a46e04e005",
+        "sha256": "0e5e38a5d0f14d1381bac3e5c7a4b1d42ef4580f74174d80c0f8a5d94180a6df",
+        "bytes": 23
+      },
+      {
+        "path": "src/fgbs/CMakeLists.txt",
+        "git_blob_sha": "99baf9c0f9fd20c7dacacbfe3cb39d6c6a06ab20",
+        "sha256": "9b31898823ec4ce66d51a2c6d4d81b826bfd9880aefdd6f0bd39a55e801d4003",
+        "bytes": 2308
+      },
+      {
+        "path": "src/fgbs/core/correlator_utils.cpp",
+        "git_blob_sha": "612bc920985a428bf14e72fe1bfd2884407a98f4",
+        "sha256": "734f6c32dbfd93e2b78fd2f8d781d2c5dac5f548a1cd3d2be3270232777bf151",
+        "bytes": 2515
+      },
+      {
+        "path": "src/fgbs/core/cumulant_utils.cpp",
+        "git_blob_sha": "8a0a47b397d7c484fd4134bb1977b522b17ac4b3",
+        "sha256": "4e758a960bd6ffe105cd71acf473b690d2b71b180a73af9eb6cbd1817081eca9",
+        "bytes": 1244
+      },
+      {
+        "path": "src/fgbs/core/file_utils.cpp",
+        "git_blob_sha": "d8960b4b971605c0e9b4a49c1bc80c63e8f7f4fe",
+        "sha256": "cf92f1261c899f56417a3ccacc2ba4e1144bae422d56f9f093ddaa5fe90b81ef",
+        "bytes": 402
+      },
+      {
+        "path": "src/fgbs/core/matrix_utils.cpp",
+        "git_blob_sha": "4cfc01963744e694bcc689aa25962a9d9fbc9de1",
+        "sha256": "3614b7323e498fdfbee875d0bc0c6668fc2d1924b21d40a7bdcd19857aa6f3b2",
+        "bytes": 586
+      },
+      {
+        "path": "src/fgbs/core/mmpy_format.cpp",
+        "git_blob_sha": "f004252fcf00d6d0581bfff98285a01ec164363f",
+        "sha256": "8ff5e3796d52061ebebfda7e2a78ee445f46a4f6b75f5e1c0c405c6b4d24ea38",
+        "bytes": 5361
+      },
+      {
+        "path": "src/fgbs/core/result.cpp",
+        "git_blob_sha": "9359d75ced150d7570ce1dc98a1cd68b80211042",
+        "sha256": "b78178901358002521d52b6d27cda0824e7cba6b3f359c309916e27370310b0d",
+        "bytes": 195
+      },
+      {
+        "path": "src/fgbs/core/string_utils.cpp",
+        "git_blob_sha": "57e78aed3cff5b1eaf908683dc2aca21b8459ed9",
+        "sha256": "a836ba830854150724fdca87f9371c3226987c85d556b7b4296a309b6d12a989",
+        "bytes": 212
+      },
+      {
+        "path": "src/fgbs/core/thread_utils.cpp",
+        "git_blob_sha": "26c825be751f84bc23017df1d0a58885d50e0f24",
+        "sha256": "23d1ea85ade89c5a80e9b7b473154b075ff7eb3796e8832e89754f8385baed7b",
+        "bytes": 265
+      },
+      {
+        "path": "src/fgbs/core/time_utils.cpp",
+        "git_blob_sha": "7786156d7a0a1a799588a2336836c482b18b7adf",
+        "sha256": "4125a705d2337111ed3f829ac0fe3ec1f8fab1bcfb1df8e7a7290bbc54f19e47",
+        "bytes": 435
+      },
+      {
+        "path": "src/fgbs/cpu/CMakeLists.txt",
+        "git_blob_sha": "fe3129679fd9a7e0381f264775834c04b01f9398",
+        "sha256": "8dadf4dd13cd17fb5c0e3049594b3a4b77416002843bded87d93a75a341a91a5",
+        "bytes": 525
+      },
+      {
+        "path": "src/fgbs/cpu/cpu_sampler.cpp",
+        "git_blob_sha": "23edea1cf8d34c55af3633651b011346e3bbe7bd",
+        "sha256": "75a671472ea7454bf93b6abb5dbf90b5c8262041e25338ccc190c6ce9321cb2e",
+        "bytes": 1022
+      },
+      {
+        "path": "src/fgbs/layout.cpp",
+        "git_blob_sha": "772dc72a00d8a82e6c1745a100cd52a6b845c23e",
+        "sha256": "dfd0654dc1efd927733d7e8fc2cc88220756ffb9110d965afa0587d3d54d4a16",
+        "bytes": 152
+      }
+    ]
+  },
+  "xsimd": {
+    "commit": "fb285a4a66617693c32ff0d71bd63ff812130e89",
+    "files": [
+      {
+        "path": "LICENSE",
+        "git_blob_sha": "eee7a54bc956b609b075059bcb7a9105ab04a218",
+        "size": 1606
+      },
+      {
+        "path": "README.md",
+        "git_blob_sha": "e4f70888fd812dbbd26a2a648fbca69b257da120",
+        "size": 9430
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_arithmetic.hpp",
+        "git_blob_sha": "ad2f0dceea17e17ad2d6e587a40b1cb7d1bce35b",
+        "size": 21050
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_bit.hpp",
+        "git_blob_sha": "607bddf1cb6ae1dcea16059d85713a71206592a8",
+        "size": 7049
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_cast.hpp",
+        "git_blob_sha": "95753babd1134ee921b6ca7fd0519ecec86ebacf",
+        "size": 1682
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_complex.hpp",
+        "git_blob_sha": "cb25535e1d42188aebb6ee661278fa99fc068701",
+        "size": 4070
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_details.hpp",
+        "git_blob_sha": "13a71d5fc5fe2e18cc255228f49ee31521155d9b",
+        "size": 19687
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_logical.hpp",
+        "git_blob_sha": "b6aed9c96c5b164f035705c104d5647013f183b5",
+        "size": 9854
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_math.hpp",
+        "git_blob_sha": "ad8a2741abd738308a12a5cfb1cef9f1a26ab8b1",
+        "size": 117833
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_memory.hpp",
+        "git_blob_sha": "046faafad94b46aca3d2bffea5974fef4eeb8d3f",
+        "size": 49356
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_rounding.hpp",
+        "git_blob_sha": "6bf6ce67ca826b5c74a8223344a35f6a63f9c11f",
+        "size": 2748
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_swizzle.hpp",
+        "git_blob_sha": "59c8afdb071d9db57891e6855ea7aadf6a76b1d4",
+        "size": 7608
+      },
+      {
+        "path": "include/xsimd/arch/common/xsimd_common_trigo.hpp",
+        "git_blob_sha": "00ad75076f7a61a90d71bd4bd517d60430c4405c",
+        "size": 46494
+      },
+      {
+        "path": "include/xsimd/arch/utils/shifts.hpp",
+        "git_blob_sha": "719ecfb7a750107e91d80736d792bb25c6ce404f",
+        "size": 3555
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx.hpp",
+        "git_blob_sha": "f06a603e45007a5703c12c1b56cda3c0977fa946",
+        "size": 109639
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx2.hpp",
+        "git_blob_sha": "6da09877239e542734bcb38cb2c074e41412359f",
+        "size": 70619
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx2_128.hpp",
+        "git_blob_sha": "4d90b125ba8a8d6c67ac5d998513a8ca8fb7a11d",
+        "size": 10366
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512bw.hpp",
+        "git_blob_sha": "2d32002b91308d8da8dd9ec9a43ec72150551ce0",
+        "size": 32423
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512cd.hpp",
+        "git_blob_sha": "95f3f1df8f6de1a990824bd60a7b720368bb3707",
+        "size": 979
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512dq.hpp",
+        "git_blob_sha": "81fa98642d78d523cac8271dfd2c05783ad6bfe8",
+        "size": 12663
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512er.hpp",
+        "git_blob_sha": "ee69ef9f8dbf6a6769df0b8d165ea40de01748a4",
+        "size": 892
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512f.hpp",
+        "git_blob_sha": "414a26f34c39d4ed2dc9bbd6007dce6c43018e85",
+        "size": 148562
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512ifma.hpp",
+        "git_blob_sha": "13e55de8f0da6d17e599cc624ae0813873aa9394",
+        "size": 898
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512pf.hpp",
+        "git_blob_sha": "5c21d6787e5f84dc7dd514e8e66efc6be81d9f0a",
+        "size": 892
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vbmi.hpp",
+        "git_blob_sha": "099adb7e0475c0012288fc01c8459842b747c1eb",
+        "size": 3382
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vbmi2.hpp",
+        "git_blob_sha": "84284d215eaf80ddb06cf6f28851b06f2c5c46db",
+        "size": 5517
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vl.hpp",
+        "git_blob_sha": "d47b0df40ff03d82f14170c0b51c5db8fd0cb4de",
+        "size": 972
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vl_128.hpp",
+        "git_blob_sha": "3058bad45cd79fd2f09d3b4b83cb77588b2774cd",
+        "size": 45078
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vl_256.hpp",
+        "git_blob_sha": "2bfefcb13d5aeec426030feff6bee977613b72ae",
+        "size": 50898
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vnni_avx512bw.hpp",
+        "git_blob_sha": "c95069df1a492092b490fc25fd3b77b379a091a2",
+        "size": 927
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx512vnni_avx512vbmi2.hpp",
+        "git_blob_sha": "552869d257743449e04c407ccc717a3bd0b624a7",
+        "size": 934
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avx_128.hpp",
+        "git_blob_sha": "346f7259baeafe1935678c2465433799e40a9bc1",
+        "size": 9993
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_avxvnni.hpp",
+        "git_blob_sha": "7c1fec96c767ac28d7ac5d128ee4ae9ab6a4be55",
+        "size": 889
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_common.hpp",
+        "git_blob_sha": "1d800e349fb3b9002d89f09ac5de6ed38c2f3d18",
+        "size": 1281
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_common_fwd.hpp",
+        "git_blob_sha": "139b0b282d0a5acdc48b8048ab0e4469b0b063ce",
+        "size": 8719
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_constants.hpp",
+        "git_blob_sha": "a5843f09f0cb96e1d80f31befa74ff9737aa3044",
+        "size": 14116
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_emulated.hpp",
+        "git_blob_sha": "e2cd04c910e2363da811622efef5e6dbc8a7e756",
+        "size": 36767
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_fma3_avx.hpp",
+        "git_blob_sha": "efdb2fc8e5c8f63b9110da4ef215311fa5b8f9c0",
+        "size": 3564
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_fma3_avx2.hpp",
+        "git_blob_sha": "134053951ac6385f40bfab45267adacc6f680731",
+        "size": 1592
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_fma3_avx2_128.hpp",
+        "git_blob_sha": "c09f8bd9ad626e501af82c5dc580fc20db5047f0",
+        "size": 1699
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_fma3_sse.hpp",
+        "git_blob_sha": "4e2a61827d09d3260c18c13d0832e4649b6fad2d",
+        "size": 3816
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_fma4.hpp",
+        "git_blob_sha": "33273687c468f408e094c40839d8e3e00779de94",
+        "size": 3461
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_i8mm_neon64.hpp",
+        "git_blob_sha": "5533923020363017dbcfcde5da34b2a1185637c7",
+        "size": 901
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_isa.hpp",
+        "git_blob_sha": "8077a8a4907845daf753a5dec792b72b4a4734ef",
+        "size": 4103
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_lasx.hpp",
+        "git_blob_sha": "0b10360fdd8325c868d66a1ad20b649a09f5a99e",
+        "size": 51710
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_lsx.hpp",
+        "git_blob_sha": "7f1ca30febdb837486b5f9c2a1320752ee4551c3",
+        "size": 44901
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_neon.hpp",
+        "git_blob_sha": "4521f38daae76eb77f4ae7722f53fee9d36c4dda",
+        "size": 192046
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_neon64.hpp",
+        "git_blob_sha": "809ef8fa5541c800f787bc3fc225a05210c53dbf",
+        "size": 69384
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_rvv.hpp",
+        "git_blob_sha": "cf1d2092a1cb24644a9d4142b6ff88fce374635d",
+        "size": 75316
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_scalar.hpp",
+        "git_blob_sha": "d9c76ee2f4bead215e7ba292305b18afbcd54256",
+        "size": 37361
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_sse2.hpp",
+        "git_blob_sha": "544fdfc59fd7c006bb95f58e070154ccfe7c4fc7",
+        "size": 104517
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_sse3.hpp",
+        "git_blob_sha": "196ed078ccb38969f62357fc42ebc5c4b8225113",
+        "size": 2423
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_sse4_1.hpp",
+        "git_blob_sha": "73af32cd6f637ddded1a0408ad0f58137ecb7803",
+        "size": 22814
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_sse4_2.hpp",
+        "git_blob_sha": "1619cf70ad1cede1a8622dd47158d195f62dc4ae",
+        "size": 1697
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_ssse3.hpp",
+        "git_blob_sha": "4451d5bacac1cea732f235c209b73b2897ff607c",
+        "size": 8263
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_sve.hpp",
+        "git_blob_sha": "b5a9c9612f852db05f2fb5e62bf844dfb8cd7561",
+        "size": 54540
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_vsx.hpp",
+        "git_blob_sha": "b2361b5bada649ca538d8e5fc4f4e9581dbd7a84",
+        "size": 41799
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_vxe.hpp",
+        "git_blob_sha": "1403fff908735efe84c2865e8d38f04804e47e12",
+        "size": 34466
+      },
+      {
+        "path": "include/xsimd/arch/xsimd_wasm.hpp",
+        "git_blob_sha": "87120e3071402e04a70912881fe12178f1abca5e",
+        "size": 76139
+      },
+      {
+        "path": "include/xsimd/config/xsimd_arch.hpp",
+        "git_blob_sha": "a84d70d840862fea7acbfb30a3a36d4ac5f81ec1",
+        "size": 8041
+      },
+      {
+        "path": "include/xsimd/config/xsimd_config.hpp",
+        "git_blob_sha": "86dde7d12ad1f88bc9382bc4b3ec4fafec82cf24",
+        "size": 17388
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features.hpp",
+        "git_blob_sha": "40029fb9624029b5632ae3471754404d3d3a1988",
+        "size": 2242
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_arm.hpp",
+        "git_blob_sha": "57f1c56e31d43e498d5494d87e373bc48ac5edb2",
+        "size": 4126
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_loongarch.hpp",
+        "git_blob_sha": "1e8fe6810cbaa5eb4cd89e6d404b91510c02f2ec",
+        "size": 2808
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_ppc.hpp",
+        "git_blob_sha": "510124617808fcf366407552c35b9fd47b11d4ba",
+        "size": 1877
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_riscv.hpp",
+        "git_blob_sha": "d1d2ba7d66105adc27ef2de86dde8c541054d473",
+        "size": 2928
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_s390x.hpp",
+        "git_blob_sha": "e05fa53f3ea65efe1c19a1a18a2301fa4c1fe2d0",
+        "size": 2024
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpu_features_x86.hpp",
+        "git_blob_sha": "25d6dc5b0b930386eb426baa3b06a94031a9d6fc",
+        "size": 45053
+      },
+      {
+        "path": "include/xsimd/config/xsimd_cpuid.hpp",
+        "git_blob_sha": "a82816c7361be58c0eb5fa59244c34ec6d3e1be6",
+        "size": 5636
+      },
+      {
+        "path": "include/xsimd/config/xsimd_getauxval.hpp",
+        "git_blob_sha": "0c9cff57eeb286bf0d45a30001c05c1be60fa390",
+        "size": 4621
+      },
+      {
+        "path": "include/xsimd/config/xsimd_macros.hpp",
+        "git_blob_sha": "6c5b6fa1624bf3016cf25ad0e0ee29039fa6ebef",
+        "size": 1395
+      },
+      {
+        "path": "include/xsimd/math/xsimd_rem_pio2.hpp",
+        "git_blob_sha": "c513b93cff56b5ae3b879cfbb9c903c9c0e4f485",
+        "size": 25191
+      },
+      {
+        "path": "include/xsimd/memory/xsimd_aligned_allocator.hpp",
+        "git_blob_sha": "89ddf84a8e7a8c009089db9b150978fec6b4b6cd",
+        "size": 11427
+      },
+      {
+        "path": "include/xsimd/memory/xsimd_alignment.hpp",
+        "git_blob_sha": "92f8edd87e579eaf9545f0cb140edf8ffefdb3f9",
+        "size": 2919
+      },
+      {
+        "path": "include/xsimd/types/xsimd_all_registers.hpp",
+        "git_blob_sha": "c024f8fd6b7ee81db773afb8f79a26ad99cf4117",
+        "size": 2301
+      },
+      {
+        "path": "include/xsimd/types/xsimd_api.hpp",
+        "git_blob_sha": "31a850aefae890bf956419b9f21921a9a7a0b6eb",
+        "size": 112222
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx2_register.hpp",
+        "git_blob_sha": "5f393343db5460c7cdb2e97f68ccf044e65c9094",
+        "size": 1881
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512bw_register.hpp",
+        "git_blob_sha": "1aacc8f0e1c4070968baaa68bf98de9ed31e10f5",
+        "size": 1658
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512cd_register.hpp",
+        "git_blob_sha": "7c32d5faab6737965c869bb4efd27ab6cc9e6683",
+        "size": 1653
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512dq_register.hpp",
+        "git_blob_sha": "833ff8c7ad1188e282c42b1d4d7fa25bad191dc3",
+        "size": 1658
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512er_register.hpp",
+        "git_blob_sha": "aa7d3f9a0c27b29f5610ab50c9b46ca6a45e62e9",
+        "size": 1658
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512f_register.hpp",
+        "git_blob_sha": "c541612098b921e6d9f2f5507da38eeb22c49b35",
+        "size": 3168
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512ifma_register.hpp",
+        "git_blob_sha": "9c0953ca540500bf05d9e0af2af2b4bb2e248689",
+        "size": 1678
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512pf_register.hpp",
+        "git_blob_sha": "c2df209821d04c809cc59241e39237d80a932594",
+        "size": 1658
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512vbmi2_register.hpp",
+        "git_blob_sha": "c2b0f0f766cbd30017cdfe81aaa7dc3b23636619",
+        "size": 1697
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512vbmi_register.hpp",
+        "git_blob_sha": "1ebe48a4fc8d47396dba82075b4ce96cb43b3619",
+        "size": 1688
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512vl_register.hpp",
+        "git_blob_sha": "28c7d28fa7115c78738f2e941672c49e1fc40095",
+        "size": 3027
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512vnni_avx512bw_register.hpp",
+        "git_blob_sha": "9fdb88219fba639158549ba79186a9b66e73700d",
+        "size": 1830
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx512vnni_avx512vbmi2_register.hpp",
+        "git_blob_sha": "114a0b8a0f2b17ff4915b5d9ae00fb0de9262230",
+        "size": 1871
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avx_register.hpp",
+        "git_blob_sha": "515b60901adffa898005ee8430d0e71a6cf832a8",
+        "size": 2876
+      },
+      {
+        "path": "include/xsimd/types/xsimd_avxvnni_register.hpp",
+        "git_blob_sha": "529656fa6991a93668b024a11377eee13a517a20",
+        "size": 1984
+      },
+      {
+        "path": "include/xsimd/types/xsimd_batch.hpp",
+        "git_blob_sha": "e784d720fa31d3c2781ab33e1a92bae81ab5b1e5",
+        "size": 70333
+      },
+      {
+        "path": "include/xsimd/types/xsimd_batch_constant.hpp",
+        "git_blob_sha": "d7a18069e0db04142cbeb80e0fa79dc2a305ca16",
+        "size": 23328
+      },
+      {
+        "path": "include/xsimd/types/xsimd_batch_fwd.hpp",
+        "git_blob_sha": "62e3cbba76554ef3d809e846ef4f7f9a1d937066",
+        "size": 1573
+      },
+      {
+        "path": "include/xsimd/types/xsimd_common_arch.hpp",
+        "git_blob_sha": "8f92ad4dc7d013058330f22ff8b3ab3ac79b67ed",
+        "size": 1857
+      },
+      {
+        "path": "include/xsimd/types/xsimd_emulated_register.hpp",
+        "git_blob_sha": "6bfc04e94bfd1d53048170f733545935df2f5105",
+        "size": 3083
+      },
+      {
+        "path": "include/xsimd/types/xsimd_fma3_avx2_128_register.hpp",
+        "git_blob_sha": "963be3bed0b3d5de3a2ad9f942de166d549159d8",
+        "size": 1693
+      },
+      {
+        "path": "include/xsimd/types/xsimd_fma3_avx2_register.hpp",
+        "git_blob_sha": "081a4c2ac304d51e4133a2478aaf400e092c9486",
+        "size": 1559
+      },
+      {
+        "path": "include/xsimd/types/xsimd_fma3_avx_register.hpp",
+        "git_blob_sha": "c03430cecb904d1df2106fb69f2d7e663d61316d",
+        "size": 1545
+      },
+      {
+        "path": "include/xsimd/types/xsimd_fma3_sse_register.hpp",
+        "git_blob_sha": "f13039b75f7e80d368ece2bfafebdc3dc8fb72dc",
+        "size": 1575
+      },
+      {
+        "path": "include/xsimd/types/xsimd_fma4_register.hpp",
+        "git_blob_sha": "6c649cb2a4596d5f658b6a1e43de6603f1e348f8",
+        "size": 1518
+      },
+      {
+        "path": "include/xsimd/types/xsimd_i8mm_neon64_register.hpp",
+        "git_blob_sha": "39945eae72a8694257e521b50631b7bde0bd163a",
+        "size": 1754
+      },
+      {
+        "path": "include/xsimd/types/xsimd_lasx_register.hpp",
+        "git_blob_sha": "cb14331bc22abd98dcd483bc703176686facf3c6",
+        "size": 2637
+      },
+      {
+        "path": "include/xsimd/types/xsimd_lsx_register.hpp",
+        "git_blob_sha": "c6abac40c81194157ca260fb9864515ea5e8e327",
+        "size": 2633
+      },
+      {
+        "path": "include/xsimd/types/xsimd_neon64_register.hpp",
+        "git_blob_sha": "1df2d4abb2bd4529b54c1d90a959b6b9733e81ff",
+        "size": 1849
+      },
+      {
+        "path": "include/xsimd/types/xsimd_neon_register.hpp",
+        "git_blob_sha": "0732ea7cc938abce721036b0b963b534c9ece932",
+        "size": 5026
+      },
+      {
+        "path": "include/xsimd/types/xsimd_register.hpp",
+        "git_blob_sha": "e4f9b1ddcdad4e3e03ad3efdd87fa690ebcbc5d2",
+        "size": 4217
+      },
+      {
+        "path": "include/xsimd/types/xsimd_rvv_register.hpp",
+        "git_blob_sha": "76b9b2a32e0203d091cd45f9a752d1011072817d",
+        "size": 23555
+      },
+      {
+        "path": "include/xsimd/types/xsimd_sse2_register.hpp",
+        "git_blob_sha": "48c1fd53f0fe034af44f55aecfcb91d5adb928d5",
+        "size": 2395
+      },
+      {
+        "path": "include/xsimd/types/xsimd_sse3_register.hpp",
+        "git_blob_sha": "9a0f7ef0e29c9b030a2acc318a76bb9e5a953dea",
+        "size": 1498
+      },
+      {
+        "path": "include/xsimd/types/xsimd_sse4_1_register.hpp",
+        "git_blob_sha": "e6c9a69d2e14fb6506be126bdedc2e1af3aece25",
+        "size": 1522
+      },
+      {
+        "path": "include/xsimd/types/xsimd_sse4_2_register.hpp",
+        "git_blob_sha": "97006e236cfaed73e2a2a949b3e53c21ab0fc059",
+        "size": 1527
+      },
+      {
+        "path": "include/xsimd/types/xsimd_ssse3_register.hpp",
+        "git_blob_sha": "8c72ebe1bceef9edabdd7795ba5eddeb3478f48d",
+        "size": 1507
+      },
+      {
+        "path": "include/xsimd/types/xsimd_sve_register.hpp",
+        "git_blob_sha": "e4920d13b92d03f831a30c015e4d1b209bdbcc33",
+        "size": 9004
+      },
+      {
+        "path": "include/xsimd/types/xsimd_traits.hpp",
+        "git_blob_sha": "a3a0a9c772799b5260ae59d5edf8bffbdf3d9166",
+        "size": 11369
+      },
+      {
+        "path": "include/xsimd/types/xsimd_utils.hpp",
+        "git_blob_sha": "f339c5de78ea33540641449b6baede3ded505b81",
+        "size": 12058
+      },
+      {
+        "path": "include/xsimd/types/xsimd_vsx_register.hpp",
+        "git_blob_sha": "36b9339025286a290b965902a4382da951a520ec",
+        "size": 3879
+      },
+      {
+        "path": "include/xsimd/types/xsimd_vxe_register.hpp",
+        "git_blob_sha": "ba051baa5c783519b06baca9049170a34d29e3c1",
+        "size": 4033
+      },
+      {
+        "path": "include/xsimd/types/xsimd_wasm_register.hpp",
+        "git_blob_sha": "5091b76369e79325566871f25a039684c0dc1f01",
+        "size": 2441
+      },
+      {
+        "path": "include/xsimd/utils/bits.hpp",
+        "git_blob_sha": "4faa0d97092d7f5ab6c7e8c876329a97986cf019",
+        "size": 5358
+      },
+      {
+        "path": "include/xsimd/utils/xsimd_type_traits.hpp",
+        "git_blob_sha": "5c272469b9900150cef15a2ffc4e857ec37a095f",
+        "size": 4707
+      },
+      {
+        "path": "include/xsimd/xsimd.hpp",
+        "git_blob_sha": "705dce71b776eac83342d8b11e77ce03f864c449",
+        "size": 1682
+      }
+    ],
+    "errors": []
+  },
+  "verification": "Every included upstream file matches its pinned Git blob object; the license final newline was restored exactly before archival"
+}
