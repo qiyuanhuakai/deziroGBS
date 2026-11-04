@@ -1,0 +1,127 @@
+{
+  "schema": "gbslab.iteration7_forest_validation.v1",
+  "passed": true,
+  "completed_at_utc": "2026-11-04T16:11:17.342232+00:00",
+  "tests_run": 17,
+  "tests_passed": 17,
+  "tests": [
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_cache_changes_cost_not_law_and_details_are_defensive_copies",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_class_conditional_chain_and_star_posteriors_are_exact",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_edge_analytic_zero_and_two_zero_scores_are_explicit",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_endpoint_rounding_is_failure_but_analytic_vacuum_is_exact",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_failure_mass_no_redraw_and_program_errors_propagate",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_forest_formula_matches_independent_dense_event_sums",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_gaussian_table_full_laws_share_retained_selection_and_tree",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_generic_high_order_parity_is_not_a_tree_exactness_claim",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_generic_markov_chain_full_law_is_exact",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_invalid_forest_and_static_gaussian_contract",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_log_domain_survives_products_below_float64_range",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_merged_exponents_cancel_error_terms_but_negative_powers_count",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_retained_selectors_and_pure_gaussian_boundary_are_unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_singleton_analytic_zero_precedes_edge_queries",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_static_mi_reuses_corrected_policy_and_tree_has_maximum_weight",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_zero_one_two_omissions_are_exact_for_both_trees",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_forest.ForestCompletionTests.test_zero_weight_edges_are_kept_and_ties_use_physical_indices",
+      "status": "passed"
+    }
+  ],
+  "duration_seconds": 0.5846647510006733,
+  "errors": [],
+  "failures": [],
+  "skips": [],
+  "source_hashes": {
+    "src/gbslab/positive_forest.py": "5d11d277a3b4de2318dad50a686d08dc1c5138518db30da5ae5f867ba8122c5f",
+    "tests/test_positive_forest.py": "961be3e8ac66622e5be56a81f86ead32b6be55f53359fa52715e0cb92e62b268",
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "src/gbslab/conditional_memory.py": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c",
+    "src/gbslab/zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0",
+    "src/gbslab/schur_memory.py": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/gaussian.py": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+  },
+  "source_unchanged_during_validation": true,
+  "iteration6_dependencies_match_frozen_gate": true,
+  "iteration6_gate_sha256": "f37ce99853e977e5f249b459b06d7e044e59b01ad876a70076f5896d6f606a06",
+  "test_log": "results/iteration7_forest_validation/test.log",
+  "test_log_sha256": "246c64438aca01d2cb7365e798af3bb1006de1b046f283b0ebe9809f3ae80aba",
+  "source_snapshot_directory": "results/iteration7_forest_validation/source_snapshot",
+  "replay_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONPATH=src python -m unittest discover -s tests -p test_positive_forest.py -v",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    }
+  },
+  "validated_scope": [
+    "independent dense sums of the full node/edge likelihood formula",
+    "empty, singleton and two-omission exactness for chain and static trees",
+    "generic Markov-chain complete-law equality and class-conditioned chain/star Bayes posteriors",
+    "Gaussian versus independent table events with the same Gaussian retained selector and graph",
+    "nonidentity physical bit order and original recent/pairwise/click_influence selection",
+    "static Gaussian MI equality to the corrected existing policy, exhaustive small-graph optimality and zero-weight physical-index ties",
+    "analytic singleton zeros precede edge queries; analytic edge zeros and two-zero-score errors",
+    "merged exponent error propagation, negative powers and endpoint/underflow guards",
+    "failure-symbol mass, no success renormalization, no redraw and programming-error propagation",
+    "bounded cache equivalence, defensive details and explicit generic parity limitation"
+  ],
+  "limitations": [
+    "This gate validates the small-system Python research implementation, not a new-input quality advantage or native throughput.",
+    "static_mi_tree optimizes fixed unconditional input MI, not branch-conditioned likelihood or global TV.",
+    "Default direct event determinants include all zeros; no small-k Schur kernel optimization is claimed.",
+    "The roundoff indicators are heuristic guards, not rigorous interval bounds.",
+    "Generic table Markov/parity fixtures are not presented as physical Gaussian states; separate Gaussian/table tests use matching physical targets."
+  ]
+}

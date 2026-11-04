@@ -1,0 +1,94 @@
+{
+  "name": "iteration7_positive_forest_full_laws",
+  "frozen_before_formal_evaluation": true,
+  "analysis_role": "new_fixed_exploration_after_pair_completion_stronger_baseline_comparison",
+  "modes": [
+    8,
+    10,
+    12
+  ],
+  "seeds_per_mode": [
+    340701
+  ],
+  "seed_rule": "base_seed + 1000 * modes; same U for the three profiles at each size and seed",
+  "profiles": [
+    {
+      "name": "lossy",
+      "squeezing": 0.6,
+      "transmissivity": 0.35
+    },
+    {
+      "name": "bright",
+      "squeezing": 0.9,
+      "transmissivity": 0.65
+    },
+    {
+      "name": "stress",
+      "squeezing": 1.2,
+      "transmissivity": 0.85
+    }
+  ],
+  "methods": [
+    {
+      "id": "retained_k4",
+      "completion": "none",
+      "k": 4
+    },
+    {
+      "id": "retained_k6",
+      "completion": "none",
+      "k": 6
+    },
+    {
+      "id": "pair_k2",
+      "completion": "pair_block",
+      "k": 2
+    },
+    {
+      "id": "pair_k4",
+      "completion": "pair_block",
+      "k": 4
+    },
+    {
+      "id": "chain_k2",
+      "completion": "chain",
+      "k": 2
+    },
+    {
+      "id": "chain_k4",
+      "completion": "chain",
+      "k": 4
+    },
+    {
+      "id": "tree_k2",
+      "completion": "static_mi_tree",
+      "k": 2
+    },
+    {
+      "id": "tree_k4",
+      "completion": "static_mi_tree",
+      "k": 4
+    }
+  ],
+  "selector": "click_influence",
+  "order": "natural physical-mode order",
+  "block_order": "measurement",
+  "cache_size": 8192,
+  "max_relative_roundoff": 1e-06,
+  "planned_instances": 9,
+  "planned_method_evaluations": 72,
+  "full_law_max_modes": 12,
+  "native_crosscheck": "retained_k4 on every instance, independent frozen C++ product binary; validation only, no cross-language speed claims",
+  "table_crosscheck": "all six non-baseline methods on all three m8 instances, same Gaussian selector and independent complete-target event sums",
+  "failure_policy": "Every unresolved reachable prefix contributes its full probability weight to an explicit failure symbol; never renormalize successes or retry a case",
+  "primary_metric": "complete extended TV, 0.5 * (sum(abs(Q_success-P)) + Q_failure)",
+  "secondary_metrics": [
+    "failure_mass",
+    "mean_clicks_of_success_subprobability",
+    "same_backend_wall_time_descriptive_only",
+    "event_and_selector_work_counters"
+  ],
+  "continuation_rule": "Evaluate all fixed methods and retain every failure. Compare to pair at same k and stronger retained k4/k6 with the same maximum local event width. Do not claim a throughput improvement from this Python reference matrix.",
+  "claim_scope": "No universal TV guarantee, classical-limit breakthrough, asymptotic exact-GBS speedup, native throughput claim, or novelty claim follows from this exploratory matrix. The Gaussian support theorem assumes exact local probabilities.",
+  "forest_structure": "chain follows omitted measurement order; static_mi_tree is a deterministic maximum tree of fixed unconditional Gaussian pair MI, no data fitting or conditional-optimality claim"
+}

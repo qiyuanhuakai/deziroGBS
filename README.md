@@ -1,6 +1,18 @@
 # deziroGBS / GBS Classical Lab
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第六轮，2026-11-04**。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第七轮，2026-11-04**。
+
+**第七轮以条件依赖树补入遗漏点击之间的关联，9 个新输入上的 72 个完整分布、27 项交叉检查均完成。** chain-k2 在 8/9 项比 retained-k4 的 TV 更低，tree-k2 为 7/9 项，两个 k2 方法均无数值失败；TV 比值中位数分别为 0.918156、0.880217。不过 Python 准备加完整枚举的成本中位比分别为 1.183、1.119，尚未建立速度优势。
+
+两个 k4 树均在 6/9 项低于 retained-k6，但低亮度输入有显式失败质量，且相对 pair-k4 并非普遍更准。独立保存的 18 项事后表参考诊断表明事件求值值得优先改进；完整表不能冒充可扩展后端。另给出同一、二、三模式阈值边缘但四模式联合概率不同的合法 Gaussian 相位例，明确低阶近似的信息限制；它不构成计算困难性证明。
+
+本轮已推导共享 Schur 事件内核的具体复用公式与成本，尚未实现或实测。全套回归 **240 项通过，0 失败、0 错误、0 跳过**。没有固定全局 TV 的普适多项式保证，也没有战胜完整九章任务或建立方法原创性。
+
+先读 [第七轮研究报告](RESEARCH_REPORT_ITERATION7.md)、[完整结果表](results/iteration7_analysis/summary_tables.md)、[理论审查](research/iteration7_theory_audit.md)、[误差预算说明](research/iteration7_error_budget_note.md) 和 [共享内核推导](research/iteration7_batched_event_kernel.md)。
+
+![第七轮：条件树与强基线的完整TV比较](results/iteration7_analysis/forest_tv_ratios.png)
+
+## 第六轮（历史）
 
 **第六轮改变条件采样律，检验遗漏点击的正事件补全。** 18 个固定输入上的 126 个完整分布评估、42 项独立表事件/原生交叉检查全部完成。相同 k 下，逐点补全 18/18 项降低 TV；两两补全 k4 为 16/18 项降低 TV。但与直接多保留两个点击相比，pair-k4 只在 3/18 项胜出，且两个低亮度输入有约 0.0011 的数值失败质量，已计入完整 TV。事后完整表诊断消除了这两项失败，但仍未超过 retained-k6。
 
@@ -136,6 +148,8 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 | `surrogates.py` | 有界父集贝叶斯网络，按最近位置、互信息或条件互信息选取父模式 | 已知图模型基线，不是新算法 |
 | `calibration.py` | 精确校准第一个点击的位置和无点击类别 | 保证前向 KL 不增加，不保证 TV 单调 |
 | `zero_memory.py` | 保留全部零观测、保留 k 个点击约束 | 固定 k 仍有大矩阵行列式成本；选择策略不是普适最优 |
+| `positive_completion.py` | 对所有遗漏点击做单点或不相交块的条件似然补全 | 无通用 TV 保证；直接包含排除有数值失败，失败质量不删除 |
+| `positive_forest.py` | 用固定链或静态无条件 MI 树补入跨块依赖 | 无条件 MI 不优化条件 TV；当前为 Python 质量参考，未实现共享小核 |
 | `photon_tail.py` | 均匀损耗下可计算的光子数尾界 | 高计数时界很松；不支持一般非均匀输出损耗 |
 | `cache.py` | 以配置和引擎代码哈希缓存精确参考 | 单写者；不允许多个进程同时写同一缓存目录 |
 
@@ -153,14 +167,15 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 - `results/survey_v1/`、`adaptive_v1/`：初始探索记录，保留研究历史；不用于最终数值结论。
 - `results/analysis/`：图、摘要和所有反例索引。
 - `research/`：方法审计、查新记录和下一轮问题。
-- `.cache/targets/`：可重建的精确参考缓存；不跟踪到 Git。历史独立归档可能保留缓存；第五轮恢复包只包含Git跟踪的研究成果。
+- `results/iteration6_completion/`、`results/iteration7_forest/`：本轮连续探索的冻结完整 P/Q、元数据、源码快照与全部失败记录；各自事后诊断另存。
+- `.cache/targets/`：可重建的精确参考缓存；不跟踪到 Git。历史独立归档可能保留缓存；最新恢复包只包含Git跟踪的研究成果。
 
 未下载或复制论文全文。`third_party/FrugalGBS`（MIT）和 `third_party/xsimd`（BSD-3-Clause）保存用于可复现对赛的上游源码子集，文件均核对固定提交的 Git blob；参见 [上游说明](third_party/README.md)。本项目自有新增代码尚未选择对外开放源码许可证。
 
 ## GitHub 与历史恢复状态
 
-目标远程地址为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**。本轮恢复了原四轮本地研究历史，并将 `37518d5` 与已知远端初始化提交 `52e38ae` 合并为本地 `ce73c2e`；第五轮继续在其后提交。Python包名仍为 `gbslab`。
+目标远程地址为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**。本次恢复了原四轮本地研究历史，并将 `37518d5` 与已知远端初始化提交 `52e38ae` 合并为本地 `ce73c2e`；第五至七轮继续在其后提交。Python包名仍为 `gbslab`。
 
-**本轮尚未公开发布。** 自动审批审查拒绝了将具体研究源码、实验结果和历史推送至公开仓库的操作，要求用户明确批准这批内容和目的地。没有用其他接口绕过；因此不能把远程克隆描述为已经包含完整研究。第五轮交付包内的Git bundle可恢复全部历史及最终源码，确切提交和恢复命令见包内清单。
+**本轮尚未公开发布。** 自动审批审查拒绝了将具体研究源码、实验结果和历史推送至公开仓库的操作，要求用户明确批准这批内容和目的地。没有用其他接口绕过；因此不能把远程克隆描述为已经包含完整研究。最新交付包内的Git bundle可恢复全部历史及最终源码，确切提交和恢复命令见包内清单。
 
 编译产物、计算缓存和作者原始协方差不包含在该恢复包或拟公开源码树中。九章模型复现需按来源说明独立取得协方差并校验散列。上游FrugalGBS和xsimd许可证保留；项目自有新增代码尚未选择对外开放源码许可证。

@@ -1,0 +1,353 @@
+{
+  "schema": "gbslab.iteration7_gaussian_phase_witness.v1",
+  "passed": true,
+  "created_utc": "2026-11-04T16:22:03.225761+00:00",
+  "scope": "Fixed deterministic exact-algebra examples, not search, random sampling or an algorithmic hardness result",
+  "parameter_search_performed": false,
+  "new_random_samples": 0,
+  "phase_values_are_part_of_analytic_construction": true,
+  "full_covariance_algorithms_are_not_ruled_out": true,
+  "actual_sampler_and_restricted_information_model_bounds_are_distinct": true,
+  "source_hashes": {
+    "experiments/iteration7_gaussian_phase_witness.py": "710cb32f61a78c8df628b545d62c07fad548bd88cca30e37dd2eadd3b19a14b2",
+    "src/gbslab/positive_forest.py": "5d11d277a3b4de2318dad50a686d08dc1c5138518db30da5ae5f867ba8122c5f",
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/conditional_memory.py": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c",
+    "src/gbslab/schur_memory.py": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227",
+    "src/gbslab/zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0"
+  },
+  "sources_stable": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "rows": [
+    {
+      "modes": 3,
+      "n": "1",
+      "r": "2/5",
+      "phases": [
+        "0",
+        "pi"
+      ],
+      "analytic_minimum_N_eigenvalue_lower_bound": "1/5",
+      "proper_vacuum_marginals_identical_exactly": true,
+      "full_vacuum": [
+        {
+          "exact": "125/896",
+          "decimal": 0.13950892857142858
+        },
+        {
+          "exact": "125/864",
+          "decimal": 0.14467592592592593
+        }
+      ],
+      "delta_full_vacuum": {
+        "exact": "-125/24192",
+        "decimal": -0.005166997354497355
+      },
+      "all_click_probability": [
+        {
+          "exact": "127/896",
+          "decimal": 0.14174107142857142
+        },
+        {
+          "exact": "59/432",
+          "decimal": 0.13657407407407407
+        }
+      ],
+      "full_target_tv": {
+        "exact": "125/6048",
+        "decimal": 0.02066798941798942
+      },
+      "common_Q_information_model_minimax_TV_lower_bound": {
+        "exact": "125/12096",
+        "decimal": 0.01033399470899471
+      },
+      "last_mode": 2,
+      "all_one_prefix_mass": {
+        "exact": "25/96",
+        "decimal": 0.2604166666666667
+      },
+      "true_last_mode_posteriors": [
+        {
+          "exact": "381/700",
+          "decimal": 0.5442857142857143
+        },
+        {
+          "exact": "118/225",
+          "decimal": 0.5244444444444445
+        }
+      ],
+      "posterior_separation": {
+        "exact": "5/252",
+        "decimal": 0.01984126984126984
+      },
+      "exact_target_fractions": [
+        [
+          "125/896",
+          "325/2688",
+          "325/2688",
+          "319/2688",
+          "325/2688",
+          "319/2688",
+          "319/2688",
+          "127/896"
+        ],
+        [
+          "125/864",
+          "25/216",
+          "25/216",
+          "107/864",
+          "25/216",
+          "107/864",
+          "107/864",
+          "59/432"
+        ]
+      ],
+      "gaussian_numeric_max_abs_errors": [
+        1.1102230246251565e-16,
+        8.326672684688674e-17
+      ],
+      "physicality_checks": [
+        {
+          "minimum_N_eigenvalue": 0.5999999999999996,
+          "minimum_uncertainty_eigenvalue": 1.1999999999999995,
+          "target_diagnostics": {
+            "determinant_evaluations": 7,
+            "marginal_evaluations": 1,
+            "negative_entries_clipped": 0,
+            "largest_negative_probability": 0.0,
+            "largest_normalization_error": 0.0,
+            "largest_l1_numerical_correction": 0.0,
+            "vacuum_cache_hits": 1,
+            "vacuum_cache_evictions": 0,
+            "vacuum_cache_peak_entries": 8
+          }
+        },
+        {
+          "minimum_N_eigenvalue": 0.19999999999999968,
+          "minimum_uncertainty_eigenvalue": 0.4000000000000007,
+          "target_diagnostics": {
+            "determinant_evaluations": 7,
+            "marginal_evaluations": 1,
+            "negative_entries_clipped": 0,
+            "largest_negative_probability": 0.0,
+            "largest_normalization_error": 0.0,
+            "largest_l1_numerical_correction": 0.0,
+            "vacuum_cache_hits": 1,
+            "vacuum_cache_evictions": 0,
+            "vacuum_cache_peak_entries": 8
+          }
+        }
+      ],
+      "arrays_sha256": "6fa027b5dc72ab92b703e60e46bd53a804bce6963595733f59e470889f722725"
+    },
+    {
+      "modes": 4,
+      "n": "1",
+      "r": "2/5",
+      "phases": [
+        "0",
+        "pi"
+      ],
+      "analytic_minimum_N_eigenvalue_lower_bound": "1/5",
+      "proper_vacuum_marginals_identical_exactly": true,
+      "full_vacuum": [
+        {
+          "exact": "25/336",
+          "decimal": 0.0744047619047619
+        },
+        {
+          "exact": "625/8464",
+          "decimal": 0.0738421550094518
+        }
+      ],
+      "delta_full_vacuum": {
+        "exact": "25/44436",
+        "decimal": 0.0005626068953101089
+      },
+      "all_click_probability": [
+        {
+          "exact": "187/2576",
+          "decimal": 0.07259316770186336
+        },
+        {
+          "exact": "1829/25392",
+          "decimal": 0.07203056080655325
+        }
+      ],
+      "full_target_tv": {
+        "exact": "50/11109",
+        "decimal": 0.004500855162480871
+      },
+      "common_Q_information_model_minimax_TV_lower_bound": {
+        "exact": "25/11109",
+        "decimal": 0.0022504275812404357
+      },
+      "last_mode": 3,
+      "all_one_prefix_mass": {
+        "exact": "149/1104",
+        "decimal": 0.13496376811594202
+      },
+      "true_last_mode_posteriors": [
+        {
+          "exact": "561/1043",
+          "decimal": 0.5378715244487057
+        },
+        {
+          "exact": "1829/3427",
+          "decimal": 0.533702947184126
+        }
+      ],
+      "posterior_separation": {
+        "exact": "100/23989",
+        "decimal": 0.004168577264579599
+      },
+      "exact_target_fractions": [
+        [
+          "25/336",
+          "475/7728",
+          "475/7728",
+          "325/5152",
+          "475/7728",
+          "407/7728",
+          "325/5152",
+          "241/3864",
+          "475/7728",
+          "325/5152",
+          "407/7728",
+          "241/3864",
+          "325/5152",
+          "241/3864",
+          "241/3864",
+          "187/2576"
+        ],
+        [
+          "625/8464",
+          "525/8464",
+          "525/8464",
+          "3175/50784",
+          "525/8464",
+          "441/8464",
+          "3175/50784",
+          "799/12696",
+          "525/8464",
+          "3175/50784",
+          "441/8464",
+          "799/12696",
+          "3175/50784",
+          "799/12696",
+          "799/12696",
+          "1829/25392"
+        ]
+      ],
+      "gaussian_numeric_max_abs_errors": [
+        1.3877787807814457e-16,
+        1.1102230246251565e-16
+      ],
+      "physicality_checks": [
+        {
+          "minimum_N_eigenvalue": 0.1999999999999999,
+          "minimum_uncertainty_eigenvalue": 0.4000000000000006,
+          "target_diagnostics": {
+            "determinant_evaluations": 15,
+            "marginal_evaluations": 1,
+            "negative_entries_clipped": 0,
+            "largest_negative_probability": 0.0,
+            "largest_normalization_error": 0.0,
+            "largest_l1_numerical_correction": 0.0,
+            "vacuum_cache_hits": 1,
+            "vacuum_cache_evictions": 0,
+            "vacuum_cache_peak_entries": 16
+          }
+        },
+        {
+          "minimum_N_eigenvalue": 0.4343145750507619,
+          "minimum_uncertainty_eigenvalue": 0.8686291501015225,
+          "target_diagnostics": {
+            "determinant_evaluations": 15,
+            "marginal_evaluations": 1,
+            "negative_entries_clipped": 0,
+            "largest_negative_probability": 0.0,
+            "largest_normalization_error": 0.0,
+            "largest_l1_numerical_correction": 0.0,
+            "vacuum_cache_hits": 1,
+            "vacuum_cache_evictions": 0,
+            "vacuum_cache_peak_entries": 16
+          }
+        }
+      ],
+      "current_conditioned_singleton_and_all_pair_marginals_identical": true,
+      "current_conditioned_marginals": [
+        {
+          "outcome": 0,
+          "nodes": {
+            "0": "23/48",
+            "1": "1/2",
+            "2": "23/48"
+          },
+          "all_pairs": {
+            "(0, 1)": "277/1104",
+            "(0, 2)": "127/552",
+            "(1, 2)": "277/1104"
+          }
+        },
+        {
+          "outcome": 1,
+          "nodes": {
+            "0": "25/48",
+            "1": "1/2",
+            "2": "25/48"
+          },
+          "all_pairs": {
+            "(0, 1)": "149/552",
+            "(0, 2)": "149/552",
+            "(1, 2)": "149/552"
+          }
+        }
+      ],
+      "chain_tree_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "common_chain_posterior": {
+        "exact": "88804/165533",
+        "decimal": 0.5364730899578936
+      },
+      "actual_chain_k0_Qs_are_identical": false,
+      "actual_chain_k0_TVs": [
+        {
+          "exact": "241441/1279239024",
+          "decimal": 0.00018873798834329495
+        },
+        {
+          "exact": "523817/1401071312",
+          "decimal": 0.00037386890696681395
+        }
+      ],
+      "actual_sampler_conditional_minimax_TV_lower_bound": {
+        "exact": "25/88872",
+        "decimal": 0.00028130344765505446
+      },
+      "actual_chain_k0_exact_law_checks": [
+        {
+          "failure_mass": 0.0,
+          "max_abs_error": 8.326672684688674e-17,
+          "next_click_at_all_one_prefix": 0.5364730899578932
+        },
+        {
+          "failure_mass": 0.0,
+          "max_abs_error": 8.326672684688674e-17,
+          "next_click_at_all_one_prefix": 0.5364730899578932
+        }
+      ],
+      "arrays_sha256": "e3ebee05acf55b18e5de5a7060115c1077f1de2900c4498b1784a4b4d2b48797"
+    }
+  ]
+}
