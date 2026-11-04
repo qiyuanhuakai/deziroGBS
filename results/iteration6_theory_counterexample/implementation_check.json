@@ -1,0 +1,119 @@
+{
+  "scope": "one fixed posthoc physical counterexample API crosscheck; no new search or samples",
+  "passed": true,
+  "source_sha256": {
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "tests/test_positive_completion.py": "c1cb2223a284f57f98ab60c2a118bc2931a6a7bcf44991616b595c6196f0d4c8"
+  },
+  "independent_case_sha256": "52bd1d4e0462214cd69315de1b74630f183cecf6f26b9719b7fd7bd5e8fb5001",
+  "rows": [
+    {
+      "method": "product",
+      "oracle": "gaussian_direct",
+      "click_probability": 0.14515294884495014,
+      "independent_reference_click_probability": 0.1451529488449504,
+      "absolute_difference_from_independent_reference": 2.498001805406602e-16,
+      "retained": [
+        3,
+        4
+      ],
+      "omitted": [
+        0,
+        1,
+        2
+      ],
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "conditional_failures": 0
+    },
+    {
+      "method": "product",
+      "oracle": "table_same_gaussian_model",
+      "click_probability": 0.14515294884495014,
+      "independent_reference_click_probability": 0.1451529488449504,
+      "absolute_difference_from_independent_reference": 2.498001805406602e-16,
+      "retained": [
+        3,
+        4
+      ],
+      "omitted": [
+        0,
+        1,
+        2
+      ],
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "conditional_failures": 0
+    },
+    {
+      "method": "pair_block",
+      "oracle": "gaussian_direct",
+      "click_probability": 0.14372420012013845,
+      "independent_reference_click_probability": 0.1437242001201385,
+      "absolute_difference_from_independent_reference": 5.551115123125783e-17,
+      "retained": [
+        3,
+        4
+      ],
+      "omitted": [
+        0,
+        1,
+        2
+      ],
+      "blocks": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "conditional_failures": 0
+    },
+    {
+      "method": "pair_block",
+      "oracle": "table_same_gaussian_model",
+      "click_probability": 0.14372420012013845,
+      "independent_reference_click_probability": 0.1437242001201385,
+      "absolute_difference_from_independent_reference": 5.551115123125783e-17,
+      "retained": [
+        3,
+        4
+      ],
+      "omitted": [
+        0,
+        1,
+        2
+      ],
+      "blocks": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "conditional_failures": 0
+    }
+  ]
+}

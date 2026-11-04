@@ -1,0 +1,1580 @@
+{
+  "created_utc": "2026-11-04T15:54:46.006787+00:00",
+  "analysis_source_sha256": "47e73a596557441133433cb79c46c3906af5e54ce87a3739df72aea541b84c78",
+  "metadata_sha256": "18d63c9e7503750a75c51857c10ebf136a68ad62d72b12a9e09bc2ea8c263743",
+  "metrics_sha256": "d854027e41bc9842563eb901fbb125d583c833972321eb2822832b47085ec71a",
+  "instances": 18,
+  "method_evaluations": 126,
+  "crosschecks_passed": true,
+  "comparisons": [
+    {
+      "method": "product_k2",
+      "baseline": "retained_k2",
+      "comparison": "same_k",
+      "improved": 18,
+      "worsened": 0,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 0.41137772356098185,
+      "max_tv_ratio": 0.6431303077129277,
+      "max_absolute_worsening": 0,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 1.3479836902945341,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 0.00016246756531767647,
+          "baseline_tv": 0.0009769977203994405,
+          "tv_ratio": 0.1662926759452954,
+          "tv_difference": -0.000814530155081764,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3302248796630254
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.004918032488297738,
+          "baseline_tv": 0.014810530441739278,
+          "tv_ratio": 0.3320632240448093,
+          "tv_difference": -0.00989249795344154,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.572651112873296
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.008215358477301279,
+          "baseline_tv": 0.025672860655515065,
+          "tv_ratio": 0.3200016775511322,
+          "tv_difference": -0.017457502178213784,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1154374621021002
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 0.0003497374667593828,
+          "baseline_tv": 0.0023173174212798553,
+          "tv_ratio": 0.15092341840947393,
+          "tv_difference": -0.0019675799545204728,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.223458707465148
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.009167312265165118,
+          "baseline_tv": 0.024979711980308274,
+          "tv_ratio": 0.3669903108727511,
+          "tv_difference": -0.015812399715143158,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2756147353375462
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.013994811831418996,
+          "baseline_tv": 0.02890554844816061,
+          "tv_ratio": 0.48415659216836443,
+          "tv_difference": -0.014910736616741613,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3022835765818948
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 0.000674726681134358,
+          "baseline_tv": 0.0033661806662982677,
+          "tv_ratio": 0.2004428009136965,
+          "tv_difference": -0.0026914539851639096,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1676889487320135
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.015421753371607044,
+          "baseline_tv": 0.033837062436417736,
+          "tv_ratio": 0.4557651362492126,
+          "tv_difference": -0.018415309064810693,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4644434082142066
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.01976045444813529,
+          "baseline_tv": 0.03804943651455389,
+          "tv_ratio": 0.5193363229065672,
+          "tv_difference": -0.018288982066418602,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.32305776649749
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 0.0006751626069866682,
+          "baseline_tv": 0.002761681492344105,
+          "tv_ratio": 0.2444751897922858,
+          "tv_difference": -0.0020865188853574365,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3941897367077973
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.014234722613100931,
+          "baseline_tv": 0.03002541610143979,
+          "tv_ratio": 0.4740891038781755,
+          "tv_difference": -0.015790693488338857,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6682209130266328
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.018550178035299215,
+          "baseline_tv": 0.032649948190834124,
+          "tv_ratio": 0.5681533681730876,
+          "tv_difference": -0.014099770155534909,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.240785922746625
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.0014412726946293922,
+          "baseline_tv": 0.005267037157305003,
+          "tv_ratio": 0.27364012282131905,
+          "tv_difference": -0.0038257644626756107,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4488614207383872
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.023946645927836054,
+          "baseline_tv": 0.04202797872680336,
+          "tv_ratio": 0.5697786725242646,
+          "tv_difference": -0.018081332798967308,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.365742500926043
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.023952954261201292,
+          "baseline_tv": 0.03808189571749778,
+          "tv_ratio": 0.6289853435577643,
+          "tv_difference": -0.01412894145629649,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4965879157962942
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.0013455385534598045,
+          "baseline_tv": 0.005390593968071398,
+          "tv_ratio": 0.24960858885485676,
+          "tv_difference": -0.004045055414611594,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2699537003002948
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.023751195500654486,
+          "baseline_tv": 0.043496723535723134,
+          "tv_ratio": 0.5460456229800396,
+          "tv_difference": -0.019745528035068648,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4848816113358982
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.025086652799941128,
+          "baseline_tv": 0.039007107112014675,
+          "tv_ratio": 0.6431303077129277,
+          "tv_difference": -0.013920454312073546,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.8504325705749116
+        }
+      ]
+    },
+    {
+      "method": "product_k2",
+      "baseline": "retained_k4",
+      "comparison": "two_more_retained",
+      "improved": 0,
+      "worsened": 18,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 2.6294526658133472,
+      "max_tv_ratio": 10.657399571020834,
+      "max_absolute_worsening": 0.012779688504449768,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 0.9537296752917749,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 0.00016246756531767647,
+          "baseline_tv": 1.5244578589269718e-05,
+          "tv_ratio": 10.657399571020834,
+          "tv_difference": 0.00014722298672840677,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6585970175388978
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.004918032488297738,
+          "baseline_tv": 0.0013427563173145243,
+          "tv_ratio": 3.6626396203695903,
+          "tv_difference": 0.003575276170983214,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.8041601986019984
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.008215358477301279,
+          "baseline_tv": 0.003911177643437796,
+          "tv_ratio": 2.1004820609682793,
+          "tv_difference": 0.004304180833863483,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6451770187477994
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 0.0003497374667593828,
+          "baseline_tv": 3.910512193322446e-05,
+          "tv_ratio": 8.943520681423553,
+          "tv_difference": 0.0003106323448261583,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6895743257039517
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.009167312265165118,
+          "baseline_tv": 0.0021210713312901073,
+          "tv_ratio": 4.322019787797164,
+          "tv_difference": 0.007046240933875011,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6584970568673234
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.013994811831418996,
+          "baseline_tv": 0.0051294168306688995,
+          "tv_ratio": 2.728343648686084,
+          "tv_difference": 0.008865395000750096,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6558194888730942
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 0.000674726681134358,
+          "baseline_tv": 0.00011277719741803648,
+          "tv_ratio": 5.98282894576035,
+          "tv_difference": 0.0005619494837163215,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9159257159922135
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.015421753371607044,
+          "baseline_tv": 0.006336381910806497,
+          "tv_ratio": 2.4338421497772624,
+          "tv_difference": 0.009085371460800545,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9439903165907033
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.01976045444813529,
+          "baseline_tv": 0.012657320461170154,
+          "tv_ratio": 1.5611878129147454,
+          "tv_difference": 0.007103133986965136,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9634690339928464
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 0.0006751626069866682,
+          "baseline_tv": 8.858303001817266e-05,
+          "tv_ratio": 7.621805292144102,
+          "tv_difference": 0.0005865795769684955,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.0139584303454328
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.014234722613100931,
+          "baseline_tv": 0.005625123745871166,
+          "tv_ratio": 2.530561682940611,
+          "tv_difference": 0.008609598867229765,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1155184032283685
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.018550178035299215,
+          "baseline_tv": 0.011166789886391745,
+          "tv_ratio": 1.661191642721346,
+          "tv_difference": 0.007383388148907471,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9201461277978079
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.0014412726946293922,
+          "baseline_tv": 0.0002577411523527032,
+          "tv_ratio": 5.591938584402299,
+          "tv_difference": 0.001183531542276689,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7367547557526413
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.023946645927836054,
+          "baseline_tv": 0.011166957423386286,
+          "tv_ratio": 2.1444199185076176,
+          "tv_difference": 0.012779688504449768,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.69263226233758
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.023952954261201292,
+          "baseline_tv": 0.016232775054872344,
+          "tv_ratio": 1.4755920771545281,
+          "tv_difference": 0.007720179206328948,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7066150415913869
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.0013455385534598045,
+          "baseline_tv": 0.00027581940397870895,
+          "tv_ratio": 4.878331741894669,
+          "tv_difference": 0.0010697191494810957,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7199451584284189
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.023751195500654486,
+          "baseline_tv": 0.01195837861835863,
+          "tv_ratio": 1.9861551685770675,
+          "tv_difference": 0.011792816882295856,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7824206686774348
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.025086652799941128,
+          "baseline_tv": 0.017515076910835467,
+          "tv_ratio": 1.4322890460401922,
+          "tv_difference": 0.007571575889105661,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9291236661023453
+        }
+      ]
+    },
+    {
+      "method": "product_k4",
+      "baseline": "retained_k4",
+      "comparison": "same_k",
+      "improved": 18,
+      "worsened": 0,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 0.24735487100593306,
+      "max_tv_ratio": 0.4975597185627615,
+      "max_absolute_worsening": 0,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 1.2899692175379145,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 7.854350498799458e-07,
+          "baseline_tv": 1.5244578589269718e-05,
+          "tv_ratio": 0.05152225397905024,
+          "tv_difference": -1.4459143539389772e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3123399535614433
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.00016106922330994807,
+          "baseline_tv": 0.0013427563173145243,
+          "tv_ratio": 0.11995417279591139,
+          "tv_difference": -0.0011816870940045763,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4599487656577637
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.0006580811348958295,
+          "baseline_tv": 0.003911177643437796,
+          "tv_ratio": 0.1682565188517998,
+          "tv_difference": -0.003253096508541967,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2615027614376058
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 1.4261231902441588e-06,
+          "baseline_tv": 3.910512193322446e-05,
+          "tv_ratio": 0.036468961602508065,
+          "tv_difference": -3.76789987429803e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2822357591615103
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.00043182183140237564,
+          "baseline_tv": 0.0021210713312901073,
+          "tv_ratio": 0.20358666162336322,
+          "tv_difference": -0.0016892494998877318,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1958669831229893
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.002008079381377919,
+          "baseline_tv": 0.0051294168306688995,
+          "tv_ratio": 0.39148297899511053,
+          "tv_difference": -0.0031213374492909804,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3462608549774628
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 1.1033574328982295e-05,
+          "baseline_tv": 0.00011277719741803648,
+          "tv_ratio": 0.09783515268679388,
+          "tv_difference": -0.00010174362308905418,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2515428092259802
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0018446670203919758,
+          "baseline_tv": 0.006336381910806497,
+          "tv_ratio": 0.29112308038850293,
+          "tv_difference": -0.004491714890414522,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.252325411339563
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.004753770638613387,
+          "baseline_tv": 0.012657320461170154,
+          "tv_ratio": 0.3755748029922209,
+          "tv_difference": -0.007903549822556767,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3989349441441266
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 1.0097707726203517e-05,
+          "baseline_tv": 8.858303001817266e-05,
+          "tv_ratio": 0.11399144648960405,
+          "tv_difference": -7.848532229196915e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2034901902097854
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.0016977218785494655,
+          "baseline_tv": 0.005625123745871166,
+          "tv_ratio": 0.30181058324194043,
+          "tv_difference": -0.003927401867321701,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3982735639371615
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.0042317509567668336,
+          "baseline_tv": 0.011166789886391745,
+          "tv_ratio": 0.37895859059046133,
+          "tv_difference": -0.006935038929624911,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2427579828556024
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 4.2938213665369666e-05,
+          "baseline_tv": 0.0002577411523527032,
+          "tv_ratio": 0.16659432641401137,
+          "tv_difference": -0.0002148029386873335,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.340630590794192
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.004426217628798449,
+          "baseline_tv": 0.011166957423386286,
+          "tv_ratio": 0.3963673775211937,
+          "tv_difference": -0.006740739794587837,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2487468192683018
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.0080151746193965,
+          "baseline_tv": 0.016232775054872344,
+          "tv_ratio": 0.4937649041708803,
+          "tv_difference": -0.008217600435475845,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2677671523170913
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 4.387160057860077e-05,
+          "baseline_tv": 0.00027581940397870895,
+          "tv_ratio": 0.15905915227772482,
+          "tv_difference": -0.0002319478034001082,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2977026759143184
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.004337993549557624,
+          "baseline_tv": 0.01195837861835863,
+          "tv_ratio": 0.36275766874431375,
+          "tv_difference": -0.007620385068801006,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3295097884817637
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.008714796738360417,
+          "baseline_tv": 0.017515076910835467,
+          "tv_ratio": 0.4975597185627615,
+          "tv_difference": -0.00880028017247505,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.5025455218530706
+        }
+      ]
+    },
+    {
+      "method": "product_k4",
+      "baseline": "retained_k6",
+      "comparison": "two_more_retained",
+      "improved": 0,
+      "worsened": 18,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 6.314221733081975,
+      "max_tv_ratio": 25.50485764606494,
+      "max_absolute_worsening": 0.003818604750686015,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 2.2175460538919856,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 7.854350498799458e-07,
+          "baseline_tv": 3.393801213373696e-08,
+          "tv_ratio": 23.143224971010124,
+          "tv_difference": 7.514970377462088e-07,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 5.050853633799233
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.00016106922330994807,
+          "baseline_tv": 6.3152371028739654e-06,
+          "tv_ratio": 25.50485764606494,
+          "tv_difference": 0.0001547539862070741,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.496819704940072
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.0006580811348958295,
+          "baseline_tv": 0.0002127330714040596,
+          "tv_ratio": 3.093459472720569,
+          "tv_difference": 0.0004453480634917698,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.6533858268156685
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 1.4261231902441588e-06,
+          "baseline_tv": 9.776478490279544e-08,
+          "tv_ratio": 14.587289192750843,
+          "tv_difference": 1.3283584053413632e-06,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 3.7156991160372543
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.00043182183140237564,
+          "baseline_tv": 2.7845824976122113e-05,
+          "tv_ratio": 15.50759698348547,
+          "tv_difference": 0.00040397600642625353,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.166775797000443
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.002008079381377919,
+          "baseline_tv": 0.00021450888441073592,
+          "tv_ratio": 9.361287700946232,
+          "tv_difference": 0.001793570496967183,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.884161439680893
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 1.1033574328982295e-05,
+          "baseline_tv": 8.4202196872857e-07,
+          "tv_ratio": 13.103665627207672,
+          "tv_difference": 1.0191552360253725e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.1746871240189387
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0018446670203919758,
+          "baseline_tv": 0.0004181071314378998,
+          "tv_ratio": 4.411948234530313,
+          "tv_difference": 0.001426559888954076,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.414464828993218
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.004753770638613387,
+          "baseline_tv": 0.0019661325263442444,
+          "tv_ratio": 2.4178281854948893,
+          "tv_difference": 0.0027876381122691426,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.4680617139463346
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 1.0097707726203517e-05,
+          "baseline_tv": 7.757171092967465e-07,
+          "tv_ratio": 13.017255395279275,
+          "tv_difference": 9.32199061690677e-06,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.0892760727730213
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.0016977218785494655,
+          "baseline_tv": 0.0003616129464165636,
+          "tv_ratio": 4.694859228280389,
+          "tv_difference": 0.001336108932132902,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.071521144551
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.0042317509567668336,
+          "baseline_tv": 0.0015350567698013088,
+          "tv_ratio": 2.756739060089988,
+          "tv_difference": 0.002696694186965525,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.260404983765033
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 4.2938213665369666e-05,
+          "baseline_tv": 5.156586423807974e-06,
+          "tv_ratio": 8.32686784170315,
+          "tv_difference": 3.778162724156169e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2537274860317018
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.004426217628798449,
+          "baseline_tv": 0.0015888646725248363,
+          "tv_ratio": 2.785773832937468,
+          "tv_difference": 0.0028373529562736124,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1776083602796275
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.0080151746193965,
+          "baseline_tv": 0.004984635415856682,
+          "tv_ratio": 1.6079761006992275,
+          "tv_difference": 0.0030305392035398174,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1947426746456702
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 4.387160057860077e-05,
+          "baseline_tv": 5.529858795613465e-06,
+          "tv_ratio": 7.933584237883562,
+          "tv_difference": 3.83417417829873e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.207140719023158
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.004337993549557624,
+          "baseline_tv": 0.0017045639534763414,
+          "tv_ratio": 2.5449285963783193,
+          "tv_difference": 0.002633429596081283,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1818208795292906
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.008714796738360417,
+          "baseline_tv": 0.004896191987674402,
+          "tv_ratio": 1.7799131979095002,
+          "tv_difference": 0.003818604750686015,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2088781057111204
+        }
+      ]
+    },
+    {
+      "method": "pair_k2",
+      "baseline": "retained_k2",
+      "comparison": "same_k",
+      "improved": 18,
+      "worsened": 0,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 0.1836702822511207,
+      "max_tv_ratio": 0.5001570748807926,
+      "max_absolute_worsening": 0,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 1.3404893089997567,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 2.1563729120246072e-05,
+          "baseline_tv": 0.0009769977203994405,
+          "tv_ratio": 0.022071422143574555,
+          "tv_difference": -0.0009554339912791944,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.296119534592574
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.0014653090891428421,
+          "baseline_tv": 0.014810530441739278,
+          "tv_ratio": 0.09893697561387027,
+          "tv_difference": -0.013345221352596436,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.586609784986271
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.0038837514319718194,
+          "baseline_tv": 0.025672860655515065,
+          "tv_ratio": 0.1512784836908118,
+          "tv_difference": -0.021789109223543244,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.0803298049763368
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 5.645807369050984e-05,
+          "baseline_tv": 0.0023173174212798553,
+          "tv_ratio": 0.024363547769527413,
+          "tv_difference": -0.0022608593475893454,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1751320030146069
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.0038155325196442364,
+          "baseline_tv": 0.024979711980308274,
+          "tv_ratio": 0.15274525673682923,
+          "tv_difference": -0.021164179460664036,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.144384564016975
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.00807593835445421,
+          "baseline_tv": 0.02890554844816061,
+          "tv_ratio": 0.27939059412547207,
+          "tv_difference": -0.0208296100937064,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3610317540090628
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 0.00014054544812565714,
+          "baseline_tv": 0.0033661806662982677,
+          "tv_ratio": 0.04175219991391983,
+          "tv_difference": -0.0032256352181726108,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2555829785460195
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0075556347248166905,
+          "baseline_tv": 0.033837062436417736,
+          "tv_ratio": 0.22329464146050707,
+          "tv_difference": -0.026281427711601045,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4062681206061551
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.0126923036343503,
+          "baseline_tv": 0.03804943651455389,
+          "tv_ratio": 0.3335740236125573,
+          "tv_difference": -0.02535713288020359,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2320507190109529
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 0.00012542521622083025,
+          "baseline_tv": 0.002761681492344105,
+          "tv_ratio": 0.045416249690100864,
+          "tv_difference": -0.002636256276123275,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2047743527944224
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.006443313409073033,
+          "baseline_tv": 0.03002541610143979,
+          "tv_ratio": 0.21459530776541216,
+          "tv_difference": -0.023582102692366755,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.5529836613756578
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.01245135348586043,
+          "baseline_tv": 0.032649948190834124,
+          "tv_ratio": 0.38135905800168834,
+          "tv_difference": -0.020198594704973694,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3855561356878505
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.00035587572417437847,
+          "baseline_tv": 0.005267037157305003,
+          "tv_ratio": 0.06756658697210904,
+          "tv_difference": -0.004911161433130624,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3888185089171365
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.01403835792157445,
+          "baseline_tv": 0.04202797872680336,
+          "tv_ratio": 0.33402410362936347,
+          "tv_difference": -0.02798962080522891,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3264107943074979
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.01847420954418225,
+          "baseline_tv": 0.03808189571749778,
+          "tv_ratio": 0.4851179069768253,
+          "tv_difference": -0.01960768617331553,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4169366559187677
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.000368554924443859,
+          "baseline_tv": 0.005390593968071398,
+          "tv_ratio": 0.0683700027542081,
+          "tv_difference": -0.005022039043627539,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2592224864279897
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.015236177884961588,
+          "baseline_tv": 0.043496723535723134,
+          "tv_ratio": 0.35028334657088295,
+          "tv_difference": -0.028260545650761547,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3545678236920156
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.019509680592707024,
+          "baseline_tv": 0.039007107112014675,
+          "tv_ratio": 0.5001570748807926,
+          "tv_difference": -0.01949742651930765,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.460790908936162
+        }
+      ]
+    },
+    {
+      "method": "pair_k2",
+      "baseline": "retained_k4",
+      "comparison": "two_more_retained",
+      "improved": 1,
+      "worsened": 17,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 1.2516779286016626,
+      "max_tv_ratio": 1.7988704403088134,
+      "max_absolute_worsening": 0.003277799266602958,
+      "max_failure_mass": 0.0,
+      "median_python_enumeration_time_ratio": 0.9456796016949409,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 2.1563729120246072e-05,
+          "baseline_tv": 1.5244578589269718e-05,
+          "tv_ratio": 1.4145178887020364,
+          "tv_difference": 6.319150530976354e-06,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.616072610966142
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 0.0014653090891428421,
+          "baseline_tv": 0.0013427563173145243,
+          "tv_ratio": 1.0912695552037468,
+          "tv_difference": 0.00012255277182831779,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.8201737189851388
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.0038837514319718194,
+          "baseline_tv": 0.003911177643437796,
+          "tv_ratio": 0.9929877356729135,
+          "tv_difference": -2.7426211465976773e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.593396159087111
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 5.645807369050984e-05,
+          "baseline_tv": 3.910512193322446e-05,
+          "tv_ratio": 1.44375137832116,
+          "tv_difference": 1.7352951757285375e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.6228360217568663
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 0.0038155325196442364,
+          "baseline_tv": 0.0021210713312901073,
+          "tv_ratio": 1.7988704403088134,
+          "tv_difference": 0.0016944611883541291,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4878774748900345
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.00807593835445421,
+          "baseline_tv": 0.0051294168306688995,
+          "tv_ratio": 1.5744359682699194,
+          "tv_difference": 0.002946521523785311,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.7305162591226282
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 0.00014054544812565714,
+          "baseline_tv": 0.00011277719741803648,
+          "tv_ratio": 1.2462222093061135,
+          "tv_difference": 2.776825070762066e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9848690782431399
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0075556347248166905,
+          "baseline_tv": 0.006336381910806497,
+          "tv_ratio": 1.1924209795389378,
+          "tv_difference": 0.0012192528140101931,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9064901251467421
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.0126923036343503,
+          "baseline_tv": 0.012657320461170154,
+          "tv_ratio": 1.0027638688052078,
+          "tv_difference": 3.4983173180146154e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.8971964385335298
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 0.00012542521622083025,
+          "baseline_tv": 8.858303001817266e-05,
+          "tv_ratio": 1.41590568978166,
+          "tv_difference": 3.684218620265759e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.876201480699822
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.006443313409073033,
+          "baseline_tv": 0.005625123745871166,
+          "tv_ratio": 1.1454527402712549,
+          "tv_difference": 0.0008181896632018671,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.0384606982503772
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.01245135348586043,
+          "baseline_tv": 0.011166789886391745,
+          "tv_ratio": 1.1150342768635866,
+          "tv_difference": 0.0012845635994686855,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.0275053010574928
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.00035587572417437847,
+          "baseline_tv": 0.0002577411523527032,
+          "tv_ratio": 1.3807485569374038,
+          "tv_difference": 9.813457182167529e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7062225735850753
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.01403835792157445,
+          "baseline_tv": 0.011166957423386286,
+          "tv_ratio": 1.2571336478972117,
+          "tv_difference": 0.002871400498188164,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.6726853038748176
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.01847420954418225,
+          "baseline_tv": 0.016232775054872344,
+          "tv_ratio": 1.1380807952881185,
+          "tv_difference": 0.0022414344893099056,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.6690076429767734
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.000368554924443859,
+          "baseline_tv": 0.00027581940397870895,
+          "tv_ratio": 1.336218261396535,
+          "tv_difference": 9.273552046515008e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7138615622551103
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.015236177884961588,
+          "baseline_tv": 0.01195837861835863,
+          "tv_ratio": 1.2741006428388917,
+          "tv_difference": 0.003277799266602958,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7137551265306197
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.019509680592707024,
+          "baseline_tv": 0.017515076910835467,
+          "tv_ratio": 1.1138792419825243,
+          "tv_difference": 0.001994603681871557,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.7334800663922911
+        }
+      ]
+    },
+    {
+      "method": "pair_k4",
+      "baseline": "retained_k4",
+      "comparison": "same_k",
+      "improved": 16,
+      "worsened": 2,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 0.09121194080455297,
+      "max_tv_ratio": 4.311592622439994,
+      "max_absolute_worsening": 0.0008535336986303944,
+      "max_failure_mass": 0.0011064835319681866,
+      "median_python_enumeration_time_ratio": 1.2790596354039392,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 2.401811770140842e-08,
+          "baseline_tv": 1.5244578589269718e-05,
+          "tv_ratio": 0.001575518638364604,
+          "tv_difference": -1.5220560471568309e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.503224629176334
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 2.8834430485248023e-05,
+          "baseline_tv": 0.0013427563173145243,
+          "tv_ratio": 0.02147406056738284,
+          "tv_difference": -0.0013139218868292763,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.334412781937603
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.00016155037411972833,
+          "baseline_tv": 0.003911177643437796,
+          "tv_ratio": 0.04130479074270093,
+          "tv_difference": -0.003749627269318068,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3077706597946923
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 1.0162396487451706e-07,
+          "baseline_tv": 3.910512193322446e-05,
+          "tv_ratio": 0.002598737961949056,
+          "tv_difference": -3.9003497968349944e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3018075449593969
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 4.243620324810755e-05,
+          "baseline_tv": 0.0021210713312901073,
+          "tv_ratio": 0.02000696658433284,
+          "tv_difference": -0.002078635128042,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.175022851436921
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.0001481917079455326,
+          "baseline_tv": 0.0051294168306688995,
+          "tv_ratio": 0.028890556731418476,
+          "tv_difference": -0.004981225122723367,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4619399892708418
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 1.0649980645733775e-06,
+          "baseline_tv": 0.00011277719741803648,
+          "tv_ratio": 0.00944338118835938,
+          "tv_difference": -0.0001117121993534631,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.4161572189177283
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0006021790033684607,
+          "baseline_tv": 0.006336381910806497,
+          "tv_ratio": 0.09503514968715247,
+          "tv_difference": -0.005734202907438037,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.247985674598392
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.0022711536471406563,
+          "baseline_tv": 0.012657320461170154,
+          "tv_ratio": 0.17943400059341555,
+          "tv_difference": -0.010386166814029497,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.269156059648332
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 1.1398223927732754e-06,
+          "baseline_tv": 8.858303001817266e-05,
+          "tv_ratio": 0.012867277090650915,
+          "tv_difference": -8.744320762539939e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2403617916257288
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.0004915724310557501,
+          "baseline_tv": 0.005625123745871166,
+          "tv_ratio": 0.08738873192195348,
+          "tv_difference": -0.005133551314815416,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2193796446219007
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.0019522434439728158,
+          "baseline_tv": 0.011166789886391745,
+          "tv_ratio": 0.1748258419684148,
+          "tv_difference": -0.009214546442418928,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.251328541370917
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.0011112748509830976,
+          "baseline_tv": 0.0002577411523527032,
+          "tv_ratio": 4.311592622439994,
+          "tv_difference": 0.0008535336986303944,
+          "failure_mass": 0.0011064835319681866,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2889632111595464
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.0019928041766013567,
+          "baseline_tv": 0.011166957423386286,
+          "tv_ratio": 0.1784554289092163,
+          "tv_difference": -0.00917415324678493,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2381703007210807
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.005389564315256055,
+          "baseline_tv": 0.016232775054872344,
+          "tv_ratio": 0.3320174336820094,
+          "tv_difference": -0.010843210739616289,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1882695863977155
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.0010891318566644702,
+          "baseline_tv": 0.00027581940397870895,
+          "tv_ratio": 3.948713690747234,
+          "tv_difference": 0.0008133124526857612,
+          "failure_mass": 0.0010838739490638737,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.3085026152143715
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.0019889159162597573,
+          "baseline_tv": 0.01195837861835863,
+          "tv_ratio": 0.16631986490261752,
+          "tv_difference": -0.009969462702098874,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.433556651668815
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.005616906179096418,
+          "baseline_tv": 0.017515076910835467,
+          "tv_ratio": 0.3206897810206928,
+          "tv_difference": -0.01189817073173905,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1679318301186883
+        }
+      ]
+    },
+    {
+      "method": "pair_k4",
+      "baseline": "retained_k6",
+      "comparison": "two_more_retained",
+      "improved": 3,
+      "worsened": 15,
+      "numerically_tied": 0,
+      "ratio_cases": 18,
+      "median_tv_ratio": 1.2595209207184772,
+      "max_tv_ratio": 215.50591023789275,
+      "max_absolute_worsening": 0.0011061182645592895,
+      "max_failure_mass": 0.0011064835319681866,
+      "median_python_enumeration_time_ratio": 2.2575469105657584,
+      "pairs": [
+        {
+          "case_id": "m8_lossy_s240611",
+          "new_tv": 2.401811770140842e-08,
+          "baseline_tv": 3.393801213373696e-08,
+          "tv_ratio": 0.7077054957362275,
+          "tv_difference": -9.91989443232854e-09,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 5.785518881816403
+        },
+        {
+          "case_id": "m8_bright_s240611",
+          "new_tv": 2.8834430485248023e-05,
+          "baseline_tv": 6.3152371028739654e-06,
+          "tv_ratio": 4.565850816927511,
+          "tv_difference": 2.2519193382374058e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.110153611888841
+        },
+        {
+          "case_id": "m8_stress_s240611",
+          "new_tv": 0.00016155037411972833,
+          "baseline_tv": 0.0002127330714040596,
+          "tv_ratio": 0.7594041352079376,
+          "tv_difference": -5.118269728433128e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.824057179295354
+        },
+        {
+          "case_id": "m8_lossy_s240612",
+          "new_tv": 1.0162396487451706e-07,
+          "baseline_tv": 9.776478490279544e-08,
+          "tv_ratio": 1.0394741314631715,
+          "tv_difference": 3.859179971721619e-09,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 3.772414791504013
+        },
+        {
+          "case_id": "m8_bright_s240612",
+          "new_tv": 4.243620324810755e-05,
+          "baseline_tv": 2.7845824976122113e-05,
+          "tv_ratio": 1.5239700488133046,
+          "tv_difference": 1.4590378271985439e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 4.094148301932234
+        },
+        {
+          "case_id": "m8_stress_s240612",
+          "new_tv": 0.0001481917079455326,
+          "baseline_tv": 0.00021450888441073592,
+          "tv_ratio": 0.6908418192217113,
+          "tv_difference": -6.631717646520333e-05,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 5.303839071250183
+        },
+        {
+          "case_id": "m10_lossy_s240611",
+          "new_tv": 1.0649980645733775e-06,
+          "baseline_tv": 8.4202196872857e-07,
+          "tv_ratio": 1.2648103067684746,
+          "tv_difference": 2.229760958448075e-07,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.460721956024421
+        },
+        {
+          "case_id": "m10_bright_s240611",
+          "new_tv": 0.0006021790033684607,
+          "baseline_tv": 0.0004181071314378998,
+          "tv_ratio": 1.4402504958418785,
+          "tv_difference": 0.00018407187193056085,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.4060978808871027
+        },
+        {
+          "case_id": "m10_stress_s240611",
+          "new_tv": 0.0022711536471406563,
+          "baseline_tv": 0.0019661325263442444,
+          "tv_ratio": 1.1551376200278611,
+          "tv_difference": 0.0003050211207964119,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.2391001761396594
+        },
+        {
+          "case_id": "m10_lossy_s240612",
+          "new_tv": 1.1398223927732754e-06,
+          "baseline_tv": 7.757171092967465e-07,
+          "tv_ratio": 1.4693789515698852,
+          "tv_difference": 3.641052834765289e-07,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.153285696806372
+        },
+        {
+          "case_id": "m10_bright_s240612",
+          "new_tv": 0.0004915724310557501,
+          "baseline_tv": 0.0003616129464165636,
+          "tv_ratio": 1.3593883624107816,
+          "tv_difference": 0.00012995948463918655,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.8064925077728702
+        },
+        {
+          "case_id": "m10_stress_s240612",
+          "new_tv": 0.0019522434439728158,
+          "baseline_tv": 0.0015350567698013088,
+          "tv_ratio": 1.271772798491033,
+          "tv_difference": 0.000417186674171507,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 2.275993644991857
+        },
+        {
+          "case_id": "m12_lossy_s240611",
+          "new_tv": 0.0011112748509830976,
+          "baseline_tv": 5.156586423807974e-06,
+          "tv_ratio": 215.50591023789275,
+          "tv_difference": 0.0011061182645592895,
+          "failure_mass": 0.0011064835319681866,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2054093181307173
+        },
+        {
+          "case_id": "m12_bright_s240611",
+          "new_tv": 0.0019928041766013567,
+          "baseline_tv": 0.0015888646725248363,
+          "tv_ratio": 1.2542315346684796,
+          "tv_difference": 0.0004039395040765204,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1676343635721458
+        },
+        {
+          "case_id": "m12_stress_s240611",
+          "new_tv": 0.005389564315256055,
+          "baseline_tv": 0.004984635415856682,
+          "tv_ratio": 1.081235409536924,
+          "tv_difference": 0.00040492889939937327,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.1198242368546747
+        },
+        {
+          "case_id": "m12_lossy_s240612",
+          "new_tv": 0.0010891318566644702,
+          "baseline_tv": 5.529858795613465e-06,
+          "tv_ratio": 196.95473192342976,
+          "tv_difference": 0.0010836019978688568,
+          "failure_mass": 0.0010838739490638737,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.217186969781551
+        },
+        {
+          "case_id": "m12_bright_s240612",
+          "new_tv": 0.0019889159162597573,
+          "baseline_tv": 0.0017045639534763414,
+          "tv_ratio": 1.166818007739457,
+          "tv_difference": 0.0002843519627834159,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 1.2743096723379577
+        },
+        {
+          "case_id": "m12_stress_s240612",
+          "new_tv": 0.005616906179096418,
+          "baseline_tv": 0.004896191987674402,
+          "tv_ratio": 1.1471989238241334,
+          "tv_difference": 0.0007207141914220162,
+          "failure_mass": 0.0,
+          "baseline_failure_mass": 0.0,
+          "enumeration_time_ratio": 0.9396635229076715
+        }
+      ]
+    }
+  ],
+  "claim_scope": "Complete floating extended TV on these fixed small instances; Python full enumeration time is not sampling throughput or native cost. No novelty or universal accuracy claim."
+}
