@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "created_utc": "2026-11-04T06:35:50.527139+00:00",
+  "executable_sha256": "8986aafa436744a65ea72663e77d28b90acf22497ca3d5f6bc50bead674751dd",
+  "build_cache_key": "f59dfb2cfa2b21c131c6725c2b3ad209355ba793ffc862eff57414605dffa357",
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+  "sampler_body_sha256": "9c14a870f2875e808025d9e3535a71ba86144e5639ab14f0b7be5b594dabb3fb",
+  "generated_density_trace_identical_to_v1": true,
+  "modes_compiled": [
+    8,
+    10,
+    12,
+    16,
+    32,
+    64,
+    100,
+    144
+  ],
+  "real_precision": 2,
+  "tests_run": 4,
+  "test_suite": "tests.test_frugal_evidence.FrugalCheckpointTests",
+  "source_hashes": {
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_evidence_adapter.cpp": "85d0009f64c0be66a39a0ff62ac83b1d8a6d3bc504ab6513f10061967f8dbd6d",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/build_frugal_evidence.py": "44254f07ef61821f301a8598b74005ac75b0a8f6a6ae8cd172ea58f251932ea2",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/src/gbslab/frugal_evidence.py": "63b4b6a636725481f25c84dda0ad9e0b277f050d1704e67a56bfadf67819668b",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/tests/test_frugal_evidence.py": "c3148a61ac2616cf1bc485e0133e860927f9cc18993fa319187b7366443c8e2d"
+  },
+  "protected_v1_files_unchanged": {
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-evidence-native/frugal_evidence_adapter": "8009d86b6f46f99c079c2f9dc391a7df8e94132cd19bb0dbfb8645ba541a75b3",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-evidence-native/build.json": "7ca46b8e4d11f26b382d8c1a27fd747ce172b811a527f960071bce26ec8ff14a",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_frugal_adapter/validation.json": "a3bddd6c9ab0a0d305529c8ba788008e91da22f7eb1b8390a6aeefda4aa53eca",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_jiuzhang1_control/frugal/native.json": "f44208c61830f566d84c6a662a90572a616c5f1aa44dd3dc4e8070300af11ce7",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_jiuzhang1_control/frugal/worker_native.json": "e4db3b306def2a6df8816159d9633aa44322180454e01421b288fff5bb48035e"
+  },
+  "checks": [
+    "m8 K5 ordered samples, log Q, and full Q exactly match frozen v1",
+    "checkpoint completion precedes density start in native diagnostics",
+    "sampling timer matches checkpoint timing and excludes checkpoint serialization",
+    "mocked wrapper timeout recovers a complete verified checkpoint without another process call",
+    "preexisting checkpoint is preserved and prevents launching a new batch",
+    "malformed checkpoint cannot claim completed generation or density acceptance"
+  ],
+  "limitations": [
+    "timeout branch is tested by explicit injection after a small real native run",
+    "no 100-mode rerun or second real experimental batch",
+    "no broad numerical revalidation; source density trace is byte-identical to v1",
+    "checkpoint is generation-only evidence and cannot automatically pass D1"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "decision": "out_of_scope",
+  "evidence_scope": "none",
+  "epsilon": 0.1,
+  "confidence_plan": {
+    "comparison_ids": [
+      "full_tmsv",
+      "iid_tmsv",
+      "matched_means_impostor",
+      "witness_only_tmsv",
+      "unresolved_target",
+      "wrong_detector",
+      "independent_fock",
+      "native_complete"
+    ],
+    "planned_comparisons": 8,
+    "familywise_alpha": 0.05,
+    "familywise_nominal_confidence": 0.95,
+    "per_comparison_alpha": 0.00625,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "1cfa47c54ee032e471c7fec194db204ce5248a7f7a35652d7718c4d3ae0d104b",
+    "comparison_id": "wrong_detector",
+    "alpha_global_tv": 0.003125,
+    "alpha_witnesses": 0.003125
+  },
+  "model_check": {
+    "valid": null,
+    "in_scope": false
+  },
+  "target": {
+    "target_id": null,
+    "detector_model": "pnr",
+    "state_model": "zero_mean_gaussian",
+    "quadrature_order": "xxpp",
+    "hbar": 2,
+    "covariance_convention": "xxpp;hbar=2;vacuum=I"
+  },
+  "full_law": null,
+  "global_tv": null,
+  "witnesses": null,
+  "sampling_protocol": null,
+  "strict_floating_point_certificate": false,
+  "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+  "evidence_trust_boundary": "A provided full law or provenance hash is evidence to verify, not cryptographic proof of an arbitrary sampler's honesty; implementation-equivalence checks and sample consistency remain required",
+  "identity_scope": "agreement with the specified target, not existence of some Gaussian model that could fit the data",
+  "reasons": [
+    "This evaluator supports zero-mean Gaussian threshold GBS in hbar2/xxpp only; other GBS variants are not declared invalid"
+  ]
+}

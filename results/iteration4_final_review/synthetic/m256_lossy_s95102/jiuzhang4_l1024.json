@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "run_id": "m256_lossy_s95102",
+  "reference_id": "jiuzhang4_l1024",
+  "target_kind": "published_gaussian_model",
+  "target_label": "Jiuzhang 4.0 L1024 (2026)",
+  "epsilon": 0.1,
+  "catalog_checked_as_of": "2026-11-04",
+  "catalog_sha256": "676f912fb3f47312a94311f86084b68f5d1d52fdad8d7a4b9eec48588f93bfcd",
+  "run_manifest_sha256": "11fb12ef92d6d5b8c8bcc21852ebe269097c548e3ade0a57bb7adf82c39fefc8",
+  "evidence_sha256": "aacc60e0c0c77077dcff82e11de5667476e830f8a42cf49f7012ebd46b337687",
+  "verdict": "different_or_incomplete_task",
+  "gates": {
+    "physical_instance": {
+      "status": "fail",
+      "reason": "The run uses a synthetic circuit, not this experimental instance.",
+      "next_action": "Import a cited experimental calibration or an explicitly registered published-model covariance."
+    },
+    "full_output_extent": {
+      "status": "fail",
+      "reason": "The full output extent differs from the target task.",
+      "observed": {
+        "modes": 256,
+        "output_bins": 256
+      },
+      "required": {
+        "optical_modes": 8176,
+        "binary_detection_bins": 8176
+      }
+    },
+    "measurement_alphabet": {
+      "status": "pass",
+      "reason": "Declared detector alphabet matches; calibrated response is a separate gate."
+    },
+    "imperfections": {
+      "status": "fail",
+      "reason": "Required model/response features are omitted or unsupported.",
+      "observed": [
+        "uniform_loss"
+      ],
+      "required": [
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "next_action": "Implement the selected target's calibrated noise/response; a uniform-loss surrogate is insufficient."
+    },
+    "implementation_capacity": {
+      "status": "fail",
+      "reason": "The current implementation cannot represent the full target extent.",
+      "observed": {
+        "maximum_modes": 256
+      },
+      "required": {
+        "modes": 8176
+      }
+    },
+    "distribution_quality": {
+      "status": "unknown",
+      "reason": "Local validation does not establish quality for an unbound or different Jiuzhang target.",
+      "observed": {
+        "local_quality_status": "unknown",
+        "blocking_task_axes": [
+          "physical_instance",
+          "full_output_extent",
+          "imperfections"
+        ]
+      },
+      "next_action": "First bind the physical instance, full extent, detector alphabet and imperfections; then validate that same law."
+    },
+    "sampling_protocol": {
+      "status": "pass",
+      "reason": "A complete declared IID batch uses the target selection rule without retries."
+    },
+    "resource_timing_comparability": {
+      "status": "unknown",
+      "reason": "Complete timing boundaries and resource measurements are missing or invalid.",
+      "observed": {
+        "missing_or_invalid_times": [],
+        "missing_or_invalid_resources": [
+          "peak_memory_bytes"
+        ]
+      },
+      "next_action": "Measure setup, sampling, complete wall time, threads/accelerators and peak memory under one documented protocol."
+    }
+  },
+  "local_distribution_quality": {
+    "status": "unknown",
+    "reason": "The supplied evidence does not establish the requested TV tolerance.",
+    "observed": {
+      "value": 1.0,
+      "scope": "global_tv_upper"
+    },
+    "required": {
+      "epsilon": 0.1
+    }
+  },
+  "scale": {
+    "local_modes": 256,
+    "target_optical_modes": 8176,
+    "local_squeezed_input_states": 256,
+    "target_squeezed_input_states": 1024,
+    "target_binary_detection_bins": 8176,
+    "target_hardware_detector_channels": 16,
+    "local_sample_count": 512,
+    "local_click_statistics": null,
+    "target_click_statistics": {
+      "observed_maximum_detection_events": 3050,
+      "mean_detection_events": null,
+      "maximum_is_not_typical": true,
+      "true_PNR_photons": false,
+      "note": "3050 is a reported maximum detection-event count in the largest configuration; subgroup means and maxima need their specific data."
+    },
+    "dense_float64_covariance_bytes_at_target_extent": 2139103232,
+    "dense_memory_note": "One dense real 2m-by-2m covariance only; excludes copies, complex validation, workspaces and sampling state."
+  },
+  "timing": {
+    "local_sampling_draws_per_second": 28.192411009213366,
+    "published_hardware_sample_period_seconds": 2.56e-05,
+    "classical_wall_over_reference_wall": null,
+    "comparison_authorized_by_evidence": false,
+    "historical_advantage_claim_is_not_a_current_classical_lower_bound": true
+  },
+  "blockers": [
+    {
+      "axis": "physical_instance",
+      "status": "fail",
+      "reason": "The run uses a synthetic circuit, not this experimental instance.",
+      "next_action": "Import a cited experimental calibration or an explicitly registered published-model covariance."
+    },
+    {
+      "axis": "full_output_extent",
+      "status": "fail",
+      "reason": "The full output extent differs from the target task.",
+      "observed": {
+        "modes": 256,
+        "output_bins": 256
+      },
+      "required": {
+        "optical_modes": 8176,
+        "binary_detection_bins": 8176
+      }
+    },
+    {
+      "axis": "imperfections",
+      "status": "fail",
+      "reason": "Required model/response features are omitted or unsupported.",
+      "observed": [
+        "uniform_loss"
+      ],
+      "required": [
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "next_action": "Implement the selected target's calibrated noise/response; a uniform-loss surrogate is insufficient."
+    },
+    {
+      "axis": "implementation_capacity",
+      "status": "fail",
+      "reason": "The current implementation cannot represent the full target extent.",
+      "observed": {
+        "maximum_modes": 256
+      },
+      "required": {
+        "modes": 8176
+      }
+    },
+    {
+      "axis": "distribution_quality",
+      "status": "unknown",
+      "reason": "Local validation does not establish quality for an unbound or different Jiuzhang target.",
+      "observed": {
+        "local_quality_status": "unknown",
+        "blocking_task_axes": [
+          "physical_instance",
+          "full_output_extent",
+          "imperfections"
+        ]
+      },
+      "next_action": "First bind the physical instance, full extent, detector alphabet and imperfections; then validate that same law."
+    },
+    {
+      "axis": "resource_timing_comparability",
+      "status": "unknown",
+      "reason": "Complete timing boundaries and resource measurements are missing or invalid.",
+      "observed": {
+        "missing_or_invalid_times": [],
+        "missing_or_invalid_resources": [
+          "peak_memory_bytes"
+        ]
+      },
+      "next_action": "Measure setup, sampling, complete wall time, threads/accelerators and peak memory under one documented protocol."
+    }
+  ],
+  "source_ids": [
+    "jz4_paper",
+    "jz4_preprint",
+    "jz4_data"
+  ],
+  "limitations": [
+    "No scalar readiness score or defeat-of-Jiuzhang conclusion is produced.",
+    "Model equivalence and empirical hardware agreement are separate targets.",
+    "Observed maximum clicks are not mean/typical event hardness or a full-distribution quality certificate.",
+    "The checker trusts curated hashes and supplied validation records; it does not establish their truth by assertion."
+  ]
+}

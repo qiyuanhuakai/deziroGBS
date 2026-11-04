@@ -1,0 +1,40 @@
+[
+  {
+    "method": "candidate",
+    "source_path": "results/iteration4_jiuzhang1_control/candidate/worker_native.json",
+    "source_sha256": "19e2cb78226899c3a61b8de911080d2f317f2d9b4db0f355c67674a0892c710f",
+    "pipeline_status": "ok",
+    "covariance_sha256": "2af0a953bec2d0a42ddd7ef98baeaa256f44525d3a6b94cb0576ec80bebc31ae",
+    "generation_phase_completed": true,
+    "sample_records_returned": true,
+    "last_reported_phase": null,
+    "completed_stage_seconds": {},
+    "setup_seconds_from_completed_phases": 0.003807371,
+    "sampling_seconds_from_completed_phase": 8.99331279,
+    "wrapper_attempt_wall_seconds": 9.046406171000854,
+    "density_completed": true,
+    "interpretation": "A completed generation timer is not a recovered sample batch or quality certificate; audit timeout is separate from generator accuracy."
+  },
+  {
+    "method": "frugal",
+    "source_path": "results/iteration4_jiuzhang1_control/frugal/worker_native.json",
+    "source_sha256": "e4db3b306def2a6df8816159d9633aa44322180454e01421b288fff5bb48035e",
+    "pipeline_status": "failed",
+    "covariance_sha256": "2af0a953bec2d0a42ddd7ef98baeaa256f44525d3a6b94cb0576ec80bebc31ae",
+    "generation_phase_completed": true,
+    "sample_records_returned": false,
+    "last_reported_phase": "density",
+    "completed_stage_seconds": {
+      "input": 0.008428276,
+      "bitstring_layout": 37.485126903,
+      "cumulant_layout": 3.0636e-05,
+      "target": 686.787482761,
+      "sampling": 130.220664478
+    },
+    "setup_seconds_from_completed_phases": 724.2726403,
+    "sampling_seconds_from_completed_phase": 130.220664478,
+    "wrapper_attempt_wall_seconds": 1800.1513249709988,
+    "density_completed": false,
+    "interpretation": "A completed generation timer is not a recovered sample batch or quality certificate; audit timeout is separate from generator accuracy."
+  }
+]

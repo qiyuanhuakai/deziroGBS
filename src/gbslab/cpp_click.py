@@ -143,6 +143,8 @@ def run_cpp_click(
     executable: str | Path | None = None,
     raw_samples: bool = True,
     trace_conditionals: bool = False,
+    record_log_probabilities: bool = False,
+    vacuum_kernel: str = "log",
     profile: bool = False,
     timeout: float = 600.0,
 ) -> dict:
@@ -154,6 +156,17 @@ def run_cpp_click(
     columns and distribution mask bits use *physical* mode indices; mode 0
     is the least significant distribution bit.  Enumerating Q is an explicit
     optional operation limited to 14 modes and never used to generate draws.
+
+    ``record_log_probabilities`` requests the natural log of the actual
+    conditional-chain probability of each returned sample.  It adds work to
+    the timed sampling loop and requires an iteration-4-or-newer executable.
+    A run that aborts is never retried.  These successful-path masses belong
+    to the binary-output process augmented by a failure symbol; completing
+    one batch does not prove that no other history can trigger a guard.
+
+    ``vacuum_kernel='product'`` explicitly selects the guarded product kernel
+    in newer executables.  The default log path omits the new CLI switch for
+    compatibility with the archived fixed-log executables.
 
     Seed reproducibility is internal to the C++ generator; the same numeric
     seed does not promise the same stream as NumPy.  Use explicit uniforms
@@ -171,12 +184,16 @@ def run_cpp_click(
     modes = covariance.shape[0] // 2
     if selection not in ("pairwise", "click_influence"):
         raise ValueError("selection must be 'pairwise' or 'click_influence'")
+    if vacuum_kernel not in ("log", "product"):
+        raise ValueError("vacuum_kernel must be 'log' or 'product'")
     k = _integer(max_clicks, "max_clicks", 0, 8)
     count = _integer(samples, "samples", 0)
     seed = _integer(seed, "seed", 0, 2**64 - 1)
     for name, flag in (("enumerate_distribution", enumerate_distribution),
                        ("raw_samples", raw_samples),
-                       ("trace_conditionals", trace_conditionals), ("profile", profile)):
+                       ("trace_conditionals", trace_conditionals),
+                       ("record_log_probabilities", record_log_probabilities),
+                       ("profile", profile)):
         if not isinstance(flag, (bool, np.bool_)):
             raise ValueError(f"{name} must be a boolean")
     if enumerate_distribution and modes > 14:
@@ -209,6 +226,8 @@ def run_cpp_click(
     command = [str(path), "--modes", str(modes), "--selector", selection,
                "--k", str(k), "--samples", str(count), "--seed", str(seed),
                "--order", ",".join(map(str, order))]
+    if vacuum_kernel != "log":
+        command += ["--vacuum-kernel", vacuum_kernel]
     with tempfile.TemporaryDirectory(prefix="gbslab-cpp-click-") as directory:
         covariance_path = Path(directory) / "covariance.csv"
         np.savetxt(covariance_path, covariance, delimiter=",", fmt="%.17g")
@@ -220,6 +239,7 @@ def run_cpp_click(
         for flag, enabled in (("--enumerate", enumerate_distribution),
                               ("--raw-samples", raw_samples),
                               ("--trace-conditionals", trace_conditionals),
+                              ("--record-log-probabilities", record_log_probabilities),
                               ("--profile", profile)):
             if enabled:
                 command.append(flag)
@@ -252,6 +272,21 @@ def run_cpp_click(
         if result.get(key) != expected:
             raise CppClickError(f"compiled result metadata mismatch for {key}",
                                 payload=result, executable_sha256=binary_sha)
+    if (result.get("vacuum_kernel", "log") != vacuum_kernel
+            or (vacuum_kernel == "product" and "vacuum_kernel" not in result)):
+        raise CppClickError("compiled result vacuum kernel does not match request",
+                            payload=result, executable_sha256=binary_sha)
+    log_values = result.get("sample_log_probabilities")
+    if record_log_probabilities:
+        if result.get("log_probability_enabled") is not True or log_values is None:
+            raise CppClickError("requested sample log probabilities are missing",
+                                payload=result, executable_sha256=binary_sha)
+        log_array = np.asarray(log_values, dtype=float)
+        if (log_array.shape != (count,) or not np.all(np.isfinite(log_array))
+                or np.any(log_array > 0)):
+            raise CppClickError("sample log probabilities must be finite, nonpositive, and match sample_count")
+    elif result.get("log_probability_enabled", False) or log_values is not None:
+        raise CppClickError("unrequested sample log probabilities were returned")
     if enumerate_distribution:
         _check_probability_array(result.get("distribution"), 1 << modes, "distribution")
     elif result.get("distribution") is not None:
@@ -266,6 +301,12 @@ def run_cpp_click(
         if (bit_array.shape != (count, modes)
                 or not np.all((bit_array == 0) | (bit_array == 1))):
             raise CppClickError("raw_samples are not binary or have the wrong shape")
+        if enumerate_distribution and record_log_probabilities and count:
+            masks = np.asarray(bit_array, dtype=np.int64) @ (1 << np.arange(modes))
+            probabilities = np.asarray(result["distribution"], dtype=float)[masks]
+            if (np.any(probabilities <= 0)
+                    or not np.allclose(log_array, np.log(probabilities), atol=2e-10, rtol=0)):
+                raise CppClickError("sample log probabilities disagree with the enumerated conditional-chain law")
     histogram = result.get("histogram_counts")
     if histogram is not None:
         if modes > 14:
@@ -336,6 +377,21 @@ def run_cpp_click(
                 if uniforms is not None and bit_array[sample_index, mode] != int(
                         uniforms[sample_index, position] < probability):
                     raise CppClickError("sample bits disagree with the traced uniform threshold rule")
+        if record_log_probabilities and returned_samples is not None:
+            traced_logs = np.zeros(count, dtype=np.longdouble)
+            for step in trace:
+                index, mode = step["sample_index"], step["mode"]
+                probability = np.longdouble(step["p_one"])
+                if bit_array[index, mode]:
+                    if probability <= 0:
+                        raise CppClickError("sample follows a zero-probability traced click")
+                    traced_logs[index] += np.log(probability)
+                else:
+                    if probability >= 1:
+                        raise CppClickError("sample follows a zero-probability traced no-click")
+                    traced_logs[index] += np.log1p(-probability)
+            if not np.allclose(log_array, traced_logs, atol=2e-12*max(1, modes), rtol=0):
+                raise CppClickError("sample log probabilities disagree with the conditional trace")
     result.update(
         executable_sha256=binary_sha,
         build_cache_key=build_metadata.get("cache_key") if build_metadata else None,

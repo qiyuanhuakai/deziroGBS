@@ -1,0 +1,25 @@
+{
+  "comparison_ids": [
+    "full_tmsv",
+    "iid_tmsv",
+    "matched_means_impostor",
+    "witness_only_tmsv",
+    "unresolved_target",
+    "wrong_detector",
+    "independent_fock",
+    "native_complete"
+  ],
+  "familywise_alpha": 0.05,
+  "samples_per_iid_case": 2048,
+  "epsilon": 0.1,
+  "max_exact_clicks": 2,
+  "sample_seeds": {
+    "tmsv": 12301,
+    "impostor": 12302
+  },
+  "native_seed": 12304,
+  "native_samples": 256,
+  "native_kernel": "product",
+  "protocol": "first fixed batch, iid PRNG model, no retry/filtering; one batch reused for positive and witness-only diagnostics",
+  "role": "small positive/negative controls for evaluator semantics, not a new GBS algorithm performance claim"
+}

@@ -1,0 +1,51 @@
+{
+  "run_id": "jiuzhang1_author_cov0_frugal_K5",
+  "status": "failed",
+  "synthetic": false,
+  "instance_id": "jiuzhang1_author_cov0",
+  "covariance_sha256": null,
+  "modes": 100,
+  "output_bins": 100,
+  "source_count": 50,
+  "detector_model": "threshold",
+  "output_encoding": "binary_threshold_bins",
+  "noise_features": [
+    "mode_dependent_loss"
+  ],
+  "sampling": {
+    "count_requested": 1024,
+    "count_observed": 0,
+    "iid": true,
+    "no_retries": true,
+    "postselection": "none"
+  },
+  "timings": {
+    "wall_seconds": null,
+    "setup_seconds": 0,
+    "sampling_seconds": null,
+    "scope": "complete wrapper with per-sample density; validator excluded; no compiler or full-law enumeration",
+    "formal_performance_claim": false,
+    "density_seconds": null,
+    "density_within_sampling": false
+  },
+  "resources": {
+    "cpu": "AMD EPYC 9V74; shared host",
+    "threads": 1,
+    "gpus": 0,
+    "peak_memory_bytes": 3019440128
+  },
+  "implementation": {
+    "maximum_modes": 144
+  },
+  "native_provenance": {
+    "executable_sha256": "8009d86b6f46f99c079c2f9dc391a7df8e94132cd19bb0dbfb8645ba541a75b3",
+    "build_cache_key": null,
+    "selector": null,
+    "k": null,
+    "order": null,
+    "vacuum_kernel": null,
+    "covariance_sha256": null,
+    "seed": null,
+    "sample_count": null
+  }
+}

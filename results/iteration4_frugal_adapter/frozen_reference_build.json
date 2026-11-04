@@ -1,0 +1,72 @@
+{
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+  "native": true,
+  "modes": [
+    8,
+    10,
+    12,
+    16,
+    32,
+    64
+  ],
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-march=native"
+  ],
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-march=native",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/generated",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/xsimd/include",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_sampling_adapter.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/cumulant_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/file_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/matrix_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/mmpy_format.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/result.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/string_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/thread_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/time_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/layout.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/cpu/cpu_sampler.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/frugal_sampling_adapter.building"
+  ],
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "dependencies": {
+    "eigen": {
+      "sha256": "dc70ce0aa482936d7dece6e97e5cbf9c271e7778dfeae8958b754e27d6be822b",
+      "files": 530,
+      "bytes": 8669110
+    },
+    "xsimd": {
+      "sha256": "acc75980f3a43d38d5ae6ec2bd07b29c48fc16ba367c29110e500680f9f594c8",
+      "files": 120,
+      "bytes": 2189803
+    }
+  },
+  "cache_key": "09258f1cc04217fde37f13a626432b61b51b3d8a1ea295a339663c629dcfe788",
+  "executable_sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+  "build_seconds": 22.381562290999682,
+  "precision": "float64",
+  "full_law_max_modes": 14,
+  "sampling_api": "unmodified official generate_samples",
+  "fast_math": false
+}

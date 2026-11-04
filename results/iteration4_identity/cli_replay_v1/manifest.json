@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-04T05:46:49.232517+00:00",
+  "sources": [
+    {
+      "source": "experiments/validate_gbs_identity.py",
+      "snapshot": "source_snapshot/validate_gbs_identity.py",
+      "sha256": "26ce1a81ccbefafb72bddfacf991fe8b4c21cfe8b30b5911c5016507eda5604f"
+    },
+    {
+      "source": "src/gbslab/gbs_identity.py",
+      "snapshot": "source_snapshot/gbs_identity.py",
+      "sha256": "d7390397b6236bfe68c95fdbb6114da4796ca377e9801532112deea3e4087d47"
+    },
+    {
+      "source": "src/gbslab/cpp_click.py",
+      "snapshot": "source_snapshot/cpp_click.py",
+      "sha256": "35e1932cb7afd9b8ab6fc2b45ae0e5f1ce4ca591cc3b03477fea99fa19c160b8"
+    },
+    {
+      "source": "src/gbslab/exact.py",
+      "snapshot": "source_snapshot/exact.py",
+      "sha256": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff"
+    },
+    {
+      "source": "src/gbslab/schur_memory.py",
+      "snapshot": "source_snapshot/schur_memory.py",
+      "sha256": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227"
+    },
+    {
+      "source": "src/gbslab/tv_validation.py",
+      "snapshot": "source_snapshot/tv_validation.py",
+      "sha256": "3b04843f380df8e647466b945a8c3cd38aae9b6056313bd3beaa89159c9498b3"
+    },
+    {
+      "source": "src/gbslab/fock.py",
+      "snapshot": "source_snapshot/fock.py",
+      "sha256": "64694710a3ed2e22bde884d3144781d7c9720cd094b37079ae67768aa536a17c"
+    },
+    {
+      "source": "src/gbslab/gaussian.py",
+      "snapshot": "source_snapshot/gaussian.py",
+      "sha256": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+    },
+    {
+      "source": "src/gbslab/paired_stress.py",
+      "snapshot": "source_snapshot/paired_stress.py",
+      "sha256": "4290628ad327b59eca23651feedbd7e50ec390b62a5d21ce3c541cb8518e3da8"
+    }
+  ],
+  "inputs": {
+    "input": {
+      "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_identity/demo_v1/native_complete.npz",
+      "sha256": "7e072cc3ad36ba204f4f47c5a79bae621d470bb97a61ece3e1a7b6748b4ef3ee"
+    },
+    "plan": {
+      "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_identity/demo_v1/protocol.json",
+      "sha256": "3359531751b323b34965d5cf6dee260e737abf386c697302bf59bc4465009dc6"
+    },
+    "protocol": {
+      "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_identity/cli_replay_protocol.json",
+      "sha256": "025dcb567af7881d377615f5ec1e6e34fdfbf89b3923aedba956202ba027a494"
+    },
+    "native_result": {
+      "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_identity/demo_v1/native_complete_raw.json",
+      "sha256": "817bb2bf121732a19745a783f84fd63bf951bbe737d34c0f2131f67b161a9f19"
+    }
+  },
+  "assessment_sha256": "ad9e9db06dbee3c1beaa736dafbe97efee213d09c56a7c325070e7ced1656501",
+  "decision": "accepted_within_tolerance_conditional",
+  "numpy": "2.3.5"
+}

@@ -87,6 +87,8 @@ struct NumericalProbabilityError : std::runtime_error {
     using std::runtime_error::runtime_error;
 };
 
+enum class VacuumKernel { logarithmic, product };
+
 struct Options {
     std::string input, uniforms;
     std::string selector = "pairwise";
@@ -96,6 +98,8 @@ struct Options {
     std::vector<int> order;
     bool enumerate = false, raw_samples = false, profile = false, trace = false;
     bool step_cache = true;
+    bool record_log_probabilities = false;
+    VacuumKernel vacuum_kernel = VacuumKernel::logarithmic;
 };
 
 std::uint64_t nonnegative_integer(std::string const& value) {
@@ -116,12 +120,17 @@ Options parse_options(int argc, char** argv) {
         if (flag == "--raw-samples") { result.raw_samples = true; continue; }
         if (flag == "--profile") { result.profile = true; continue; }
         if (flag == "--trace-conditionals") { result.trace = true; continue; }
+        if (flag == "--record-log-probabilities") {
+            result.record_log_probabilities = true;
+            continue;
+        }
         if (flag == "--no-step-cache") { result.step_cache = false; continue; }
         if (flag == "--help") {
             std::cout << "click_sampler --input covariance.csv --modes M --selector "
                          "pairwise|click_influence --k K [--samples N --seed S] "
                          "[--order 0,1,... --uniforms matrix.csv --enumerate "
-                         "--raw-samples --trace-conditionals --profile --no-step-cache]\n";
+                         "--raw-samples --trace-conditionals --record-log-probabilities "
+                         "--vacuum-kernel log|product --profile --no-step-cache]\n";
             std::exit(0);
         }
         if (++i >= argc) throw std::invalid_argument("Missing value for " + flag);
@@ -129,6 +138,11 @@ Options parse_options(int argc, char** argv) {
         if (flag == "--input") result.input = value;
         else if (flag == "--uniforms") result.uniforms = value;
         else if (flag == "--selector") result.selector = value;
+        else if (flag == "--vacuum-kernel") {
+            if (value == "log") result.vacuum_kernel = VacuumKernel::logarithmic;
+            else if (value == "product") result.vacuum_kernel = VacuumKernel::product;
+            else throw std::invalid_argument("vacuum kernel must be log or product");
+        }
         else if (flag == "--order") order_text = value;
         else if (flag == "--samples") result.samples = nonnegative_integer(value);
         else if (flag == "--seed") result.seed = nonnegative_integer(value);
@@ -228,6 +242,8 @@ struct Counters {
     std::uint64_t gaussian_rank_two_updates = 0, event_corrections = 0;
     std::uint64_t probability_corrections = 0, pairwise_probability_corrections = 0;
     std::uint64_t vacuum_probability_corrections = 0, guard_failures = 0;
+    std::uint64_t vacuum_log_evaluations = 0, vacuum_product_evaluations = 0;
+    std::uint64_t vacuum_product_fallbacks = 0;
     std::uint64_t step_vacuum_requests = 0, step_cache_hits = 0, step_cache_misses = 0;
     std::uint64_t step_cache_capacity_skips = 0;
     std::size_t step_cache_peak_entries = 0, step_cache_peak_table_bytes = 0;
@@ -262,6 +278,9 @@ struct Counters {
             << ",\"probability_corrections\":" << probability_corrections
             << ",\"pairwise_probability_corrections\":" << pairwise_probability_corrections
             << ",\"vacuum_probability_corrections\":" << vacuum_probability_corrections
+            << ",\"vacuum_log_evaluations\":" << vacuum_log_evaluations
+            << ",\"vacuum_product_evaluations\":" << vacuum_product_evaluations
+            << ",\"vacuum_product_fallbacks\":" << vacuum_product_fallbacks
             << ",\"guard_failures\":" << guard_failures
             << ",\"step_vacuum_requests\":" << step_vacuum_requests
             << ",\"step_cache_hits\":" << step_cache_hits
@@ -316,8 +335,10 @@ struct State {
     std::vector<int> active;
     std::array<int, max_modes> positions{};
     int zero_count = 0;
+    VacuumKernel vacuum_kernel;
 
-    explicit State(Matrix const& base) : covariance(base), active(base.rows()/2) {
+    explicit State(Matrix const& base, VacuumKernel kernel)
+        : covariance(base), active(base.rows()/2), vacuum_kernel(kernel) {
         positions.fill(-1);
         std::iota(active.begin(), active.end(), 0);
         for (std::size_t j = 0; j < active.size(); ++j) positions[j] = static_cast<int>(j);
@@ -450,14 +471,43 @@ double fixed_vacuum(State const& state, std::array<int, 2*max_kernel_modes> cons
     Eigen::LLT<Fixed> factor(shifted);
     if (factor.info() != Eigen::Success)
         counts.fail("Conditioned vacuum determinant is not positive definite");
-    double log_sqrt_det = 0;
-    for (int i = 0; i < Dimension; ++i) {
-        const double diagonal = factor.matrixL()(i,i);
-        if (!(diagonal > 0) || !std::isfinite(diagonal))
-            counts.fail("Conditioned vacuum factor is not positive finite");
-        log_sqrt_det += std::log(diagonal);
+    double probability;
+    bool use_log = state.vacuum_kernel == VacuumKernel::logarithmic;
+    if (!use_log) {
+        // Replacing sum(log(diagonal)) followed by exp with a product avoids
+        // scalar transcendental calls in this small fixed-size kernel. A
+        // nonnormal intermediate triggers the original logarithmic formula;
+        // no event, probability, or conditioning tolerance is changed.
+        double product = 1.0;
+        bool normal_product = true;
+        for (int i = 0; i < Dimension; ++i) {
+            const double diagonal = factor.matrixL()(i,i);
+            if (!(diagonal > 0) || !std::isfinite(diagonal))
+                counts.fail("Conditioned vacuum factor is not positive finite");
+            if (normal_product) {
+                product *= diagonal;
+                normal_product = std::isnormal(product);
+            }
+        }
+        if (normal_product) {
+            probability = 1.0/product;
+            ++counts.vacuum_product_evaluations;
+        } else {
+            use_log = true;
+            ++counts.vacuum_product_fallbacks;
+        }
     }
-    const double probability = std::exp(-log_sqrt_det);
+    if (use_log) {
+        double log_sqrt_det = 0;
+        for (int i = 0; i < Dimension; ++i) {
+            const double diagonal = factor.matrixL()(i,i);
+            if (!(diagonal > 0) || !std::isfinite(diagonal))
+                counts.fail("Conditioned vacuum factor is not positive finite");
+            log_sqrt_det += std::log(diagonal);
+        }
+        probability = std::exp(-log_sqrt_det);
+        ++counts.vacuum_log_evaluations;
+    }
     if (!std::isfinite(probability) || probability > 1.0 + probability_tolerance)
         counts.fail("Conditioned vacuum probability is nonfinite or exceeds one");
     if (probability > 1.0) {
@@ -746,7 +796,7 @@ public:
     }
 
     void precompute_pairwise() {
-        const State state(base);
+        const State state(base, option.vacuum_kernel);
         pairwise_mi = Matrix::Zero(option.modes, option.modes);
         std::vector<double> singles(option.modes);
         std::vector<StableModeFactor> stable_factors;
@@ -912,7 +962,7 @@ public:
                 clicks.pop_back();
             }
         };
-        const State initial(base);
+        const State initial(base, option.vacuum_kernel);
         visit(0, initial, 0, 1.0);
         long double sum = 0;
         for (double p : probabilities) {
@@ -979,13 +1029,19 @@ int run(int argc, char** argv) {
         // as the official baseline does. Include RNG/buffer initialization.
         const std::size_t words_per_sample = (option.modes+63)/64;
         std::vector<std::uint64_t> packed_samples(option.samples*words_per_sample,0);
+        // This optional O(samples) channel records the exact conditional
+        // probabilities used by the sampler. It never consults target P.
+        // Its allocation and logarithms are included in sampling time.
+        std::vector<double> sample_log_probabilities;
+        if (option.record_log_probabilities) sample_log_probabilities.resize(option.samples);
         std::vector<TraceRow> trace;
         if (option.trace) trace.reserve(option.samples*option.modes);
         std::mt19937_64 engine(option.seed);
         for (std::size_t sample_index = 0; sample_index < option.samples; ++sample_index) {
             context.sample_index = sample_index;
-            State state(sampler->base);
+            State state(sampler->base, option.vacuum_kernel);
             std::vector<int> clicks;
+            long double log_probability = 0;
             for (int position = 0; position < option.modes; ++position) {
                 context.position = position;
                 const int mode = option.order[position];
@@ -996,6 +1052,18 @@ int run(int argc, char** argv) {
                     ? static_cast<double>(engine() >> 11) * 0x1.0p-53
                     : uniforms[sample_index*option.modes+position];
                 const bool one = uniform < result.p_one;
+                if (option.record_log_probabilities) {
+                    const long double p_one = result.p_one;
+                    if ((one && !(p_one > 0)) || (!one && !(p_one < 1)))
+                        sampler->sampling_counts.fail("Sampled a zero-probability branch");
+                    // log1p preserves the zero branch near p_one=0; using the
+                    // rounded p_one makes this the law actually sampled, not
+                    // a separately re-evaluated conditioning approximation.
+                    const long double log_branch = one ? std::log(p_one) : std::log1p(-p_one);
+                    if (!std::isfinite(log_branch) || log_branch > 0)
+                        sampler->sampling_counts.fail("Sampled branch has invalid log probability");
+                    log_probability += log_branch;
+                }
                 if (option.trace) trace.push_back({sample_index, position, mode,
                     retained, result.p_one, result.indicator});
                 if (one) packed_samples[sample_index*words_per_sample+mode/64]
@@ -1004,6 +1072,12 @@ int run(int argc, char** argv) {
                 if (position+1 < option.modes)
                     sampler->advance(state, clicks, mode, one,
                         sampler->sampling_counts, sampler->sampling_profile);
+            }
+            if (option.record_log_probabilities) {
+                const double value = static_cast<double>(log_probability);
+                if (!std::isfinite(value) || value > 0)
+                    sampler->sampling_counts.fail("Sample log probability is invalid");
+                sample_log_probabilities[sample_index] = value;
             }
             ++completed_samples;
         }
@@ -1038,6 +1112,8 @@ int run(int argc, char** argv) {
             << ",\"implementation\":\"C++ retained-click sampler\""
             << ",\"modes\":" << option.modes << ",\"selector\":" << quote(option.selector)
             << ",\"k\":" << option.k << ",\"sample_count\":" << option.samples
+            << ",\"vacuum_kernel\":"
+            << quote(option.vacuum_kernel == VacuumKernel::logarithmic ? "log" : "product")
             << ",\"pairwise_score_policy\":\"v3 exact structural zeros; long-double whitening/determinant-ratio delta; stable binary-KL remainder; physical-index ties; no score floor\""
             << ",\"seed\":" << option.seed << ",\"threads\":1,\"order\":";
         print_vector(option.order);
@@ -1045,6 +1121,10 @@ int run(int argc, char** argv) {
             << ",\"mask_convention\":\"bit i is physical mode i; one is a click\""
             << ",\"uniform_source\":" << quote(option.uniforms.empty() ? "mt19937_64 upper 53 bits / 2^53" : "injected CSV by measurement step")
             << ",\"profile_enabled\":" << (option.profile ? "true" : "false")
+            << ",\"log_probability_enabled\":" << (option.record_log_probabilities ? "true" : "false")
+            << ",\"sample_log_probability_semantics\":\"Natural logarithm of the product of computed chosen-branch conditional probabilities under ideal continuous uniforms; not a finite PRNG-state law. Computed during sampling, never from a target distribution.\""
+            << ",\"sample_log_probability_accumulation\":\"long double log(p_one) or log1p(-p_one); double output; included in sampling time\""
+            << ",\"sample_log_probability_storage_bytes\":" << sample_log_probabilities.size()*sizeof(double)
             << ",\"step_cache_enabled\":" << (option.step_cache ? "true" : "false")
             << ",\"step_cache_entry_cap\":" << step_cache_entry_cap
             << ",\"step_cache_scope\":\"one conditional; ordered physical subsets; no cross-step reuse\""
@@ -1073,6 +1153,9 @@ int run(int argc, char** argv) {
         if (histogram.empty()) std::cout << "null"; else print_vector(histogram);
         std::cout << ",\"click_count_histogram\":"; print_vector(click_histogram);
         std::cout << ",\"mode_click_counts\":"; print_vector(mode_counts);
+        std::cout << ",\"sample_log_probabilities\":";
+        if (option.record_log_probabilities) print_vector(sample_log_probabilities);
+        else std::cout << "null";
         std::cout << ",\"distribution\":";
         if (option.enumerate) print_vector(distribution); else std::cout << "null";
         std::cout << ",\"raw_samples\":";

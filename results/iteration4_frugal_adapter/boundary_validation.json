@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "threshold_cases": 12,
+  "forced_branch_checks": 24,
+  "upstream_lane_decision_checks": 96,
+  "positive_branch_product_underflow_preserved": true,
+  "source_sha256": "78344b66285078f019d2e963d8afb4e566e2d60902033c3ecb229961642bbd7b",
+  "executable_sha256": "53160201425653031bbb85e2aad3d9e105d988be1db7e7d3db225647f53e91ba",
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-march=native",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-evidence-native/generated",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/xsimd/include",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/iteration4_frugal_adapter/boundary_probe.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-evidence-native/boundary_probe"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "purpose": "Agreement with one specified zero-mean Gaussian threshold target; not a generic Gaussian-histogram classifier",
+  "decisions": [
+    "accepted_within_tolerance_conditional",
+    "rejected",
+    "insufficient_evidence",
+    "invalid_evidence",
+    "invalid_model",
+    "evaluation_failed",
+    "out_of_scope"
+  ],
+  "evidence_scopes": [
+    "full_distribution",
+    "global_tv_upper",
+    "witnesses_only",
+    "none"
+  ],
+  "target_binding": [
+    "target.target_id",
+    "target.covariance_sha256",
+    "target.detector_model",
+    "target.state_model",
+    "target.modes",
+    "target.covariance_convention"
+  ],
+  "native_sampler_binding": [
+    "native_provenance.executable_sha256",
+    "native_provenance.selector",
+    "native_provenance.k",
+    "native_provenance.order",
+    "native_provenance.vacuum_kernel"
+  ],
+  "quality_fields": [
+    "full_law.tv",
+    "global_tv.upper",
+    "witnesses.tv_lower",
+    "epsilon"
+  ],
+  "qualifications": [
+    "strict_floating_point_certificate=false",
+    "sampling_protocol",
+    "confidence_plan",
+    "global_tv.output_space=binary_patterns_plus_failure",
+    "global_tv.conditional_on_success_coverage_claimed=false"
+  ],
+  "trust_boundary": "Metadata hashes bind records; they are not cryptographic proof that an arbitrary external sampler is honest or correct"
+}

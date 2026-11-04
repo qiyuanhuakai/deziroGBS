@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T05:55:10.642020+00:00",
+  "config_sha256": "59e1f6d19ff4228162c98d549679e7b44efe31fe5410694535409a2730b48e4d",
+  "source_hashes": {
+    "iteration4_jiuzhang1_control.py": "d7d6b64e0bb8ec7950acecfc249681137af966de0865a980c6e8ca458be837f6",
+    "iteration4_quality.py": "4170bb3784d648e10209e8a27770007d3d0731f45bf8bf8eb96d28c8aee63edb",
+    "frugal_evidence.py": "a9cae31a2537f92b92e0b78df64b8cf5ccdf22425baeb258e02804a0326aeb71",
+    "cpp_click.py": "35e1932cb7afd9b8ab6fc2b45ae0e5f1ce4ca591cc3b03477fea99fa19c160b8",
+    "gbs_identity.py": "d7390397b6236bfe68c95fdbb6114da4796ca377e9801532112deea3e4087d47",
+    "jiuzhang_gap.py": "145911175e23c8d002c5d86b29eb1ffe000c7f7d1b89dcdb1800fdd135aa4593",
+    "tv_validation.py": "3b04843f380df8e647466b945a8c3cd38aae9b6056313bd3beaa89159c9498b3",
+    "exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff"
+  },
+  "binary_hashes": {
+    "candidate": "5e667bc45ccf6d4a3775d1fb644c7f69d921bcf16aa7adb5c355b2d5de70cbf0",
+    "frugal": "8009d86b6f46f99c079c2f9dc391a7df8e94132cd19bb0dbfb8645ba541a75b3"
+  },
+  "scope": "This actual published Jiuzhang1 Gaussian model is a bridge target, not a reproduction of Frugal paper's Jiuzhang2/3 GPU benchmarks or raw hardware samples.",
+  "planned_batches": 2,
+  "threads": 1,
+  "timing_qualification": "One batch per method; no variance estimate. Candidate density logging is within sampling; Frugal density replay is separate. Neither draw rate establishes equal distributional quality.",
+  "completed_utc": "2026-11-04T06:25:20.470325+00:00",
+  "elapsed_seconds": 1809.8265884039993,
+  "batches": 2
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "decision": "insufficient_evidence",
+  "evidence_scope": "witnesses_only",
+  "epsilon": 0.1,
+  "confidence_plan": {
+    "comparison_ids": [
+      "full_tmsv",
+      "iid_tmsv",
+      "matched_means_impostor",
+      "witness_only_tmsv",
+      "unresolved_target",
+      "wrong_detector",
+      "independent_fock",
+      "native_complete"
+    ],
+    "planned_comparisons": 8,
+    "familywise_alpha": 0.05,
+    "familywise_nominal_confidence": 0.95,
+    "per_comparison_alpha": 0.00625,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "1cfa47c54ee032e471c7fec194db204ce5248a7f7a35652d7718c4d3ae0d104b",
+    "comparison_id": "witness_only_tmsv",
+    "alpha_global_tv": 0.003125,
+    "alpha_witnesses": 0.003125
+  },
+  "model_check": {
+    "valid": true,
+    "in_scope": true,
+    "minimum_uncertainty_eigenvalue": 0.0,
+    "physicality_is_distribution_validation": false,
+    "resource_max_modes": 256
+  },
+  "target": {
+    "target_id": null,
+    "detector_model": "threshold",
+    "state_model": "zero_mean_gaussian",
+    "quadrature_order": "xxpp",
+    "hbar": 2,
+    "covariance_convention": "xxpp;hbar=2;vacuum=I",
+    "modes": 2,
+    "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+    "mean_photons": 2.0
+  },
+  "full_law": null,
+  "global_tv": null,
+  "witnesses": {
+    "status": "ok",
+    "planned_witnesses": 4,
+    "evaluated_witnesses": 4,
+    "witness_schedule_sha256": "3cb1c23021671d5c076944de402afa73d6b4bd2bfc302686322ad5195925432d",
+    "predeclared_subsets": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "alpha": 0.003125,
+    "simultaneous_hoeffding_radius": 0.04377165350715452,
+    "tv_lower": 0.0,
+    "target_mean_clicks": 1.0,
+    "observed_mean_clicks": 1.04296875,
+    "rows": [
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0
+        ],
+        "target": 0.5,
+        "observed": 0.478515625,
+        "absolute_difference": 0.021484375,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1
+        ],
+        "target": 0.5,
+        "observed": 0.478515625,
+        "absolute_difference": 0.021484375,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          1
+        ],
+        "target": 0.5000000000000001,
+        "observed": 0.478515625,
+        "absolute_difference": 0.02148437500000011,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "normalized_total_clicks",
+        "normalization": 2,
+        "target": 0.5,
+        "observed": 0.521484375,
+        "absolute_difference": 0.021484375,
+        "tv_lower": 0.0
+      }
+    ],
+    "numerical_failures": [],
+    "scope": "necessary bounded-observable tests; passing does not certify the full law",
+    "output_space": "binary_patterns_plus_failure",
+    "failure_symbol_observable_value": 0.0,
+    "strict_floating_point_certificate": false
+  },
+  "sampling_protocol": {
+    "requested_draws": 2048,
+    "target_and_sampler_fixed_before_samples": true,
+    "iid_attempts": true,
+    "first_batch_no_retry": true,
+    "no_postselection": true,
+    "density_is_unconditional_path_mass": true,
+    "source": "saved_demo_protocol",
+    "unseen_failure_mass_assumed_zero": false,
+    "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+  },
+  "strict_floating_point_certificate": false,
+  "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+  "evidence_trust_boundary": "A provided full law or provenance hash is evidence to verify, not cryptographic proof of an arbitrary sampler's honesty; implementation-equivalence checks and sample consistency remain required",
+  "identity_scope": "agreement with the specified target, not existence of some Gaussian model that could fit the data",
+  "reasons": [
+    "Passing witnesses or obtaining an upper bound above tolerance does not decide full-distribution agreement"
+  ],
+  "samples_sha256": "1776cbc7c9af1403bd46d451928392d5207e6e2add4871a7d729e7cf60067227",
+  "n_observed": 2048,
+  "statistical_protocol_valid": true,
+  "statistical_protocol_issues": [],
+  "decision_basis": "no_global_acceptance_or_rejection_bound",
+  "elapsed_seconds": 0.0005033289999119006
+}
