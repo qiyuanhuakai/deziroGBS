@@ -30,6 +30,121 @@ import numpy as np
 from .exact import NumericalProbabilityError
 
 
+GAUSSIAN_PAIRWISE_MI_POLICY = "gaussian_structural_zero_stable_kl_v3"
+
+
+def _binary_kl_remainder(value):
+    """h(x)=(1+x)log(1+x)-x without weak-correlation cancellation."""
+    x = np.longdouble(value)
+    if not np.isfinite(x) or x < -1:
+        raise NumericalProbabilityError("invalid Bernoulli KL remainder argument")
+    if x == -1:
+        return np.longdouble(1)
+    if abs(x) <= np.longdouble("0.001"):
+        one = np.longdouble(1)
+        return x*x*(one/2 + x*(-one/6 + x*(one/12 + x*(-one/20
+                    + x*(one/30 + x*(-one/42 + x/56))))))
+    return (1+x)*np.log1p(x)-x
+
+
+def _gaussian_pairwise_mi(covariance, first, second, *, probability_tolerance=2e-10):
+    """Canonical two-mode Gaussian threshold MI for retained-click selection.
+
+    This helper is only a score evaluator.  It never changes a conditional
+    sampling probability or an unrelated Bayesian-network surrogate.  Exact
+    zero covariance cross-blocks imply independent Gaussian marginals, hence
+    exactly zero threshold MI.  For other pairs, a scalar long-double Schur
+    determinant ratio obtains the small Bernoulli covariance without
+    subtracting two nearly equal vacuum probabilities.
+
+    Matrix entries are xxpp, hbar=2.  The caller supplies an already validated
+    Gaussian covariance and separately applies the existing marginal guards.
+    There is no epsilon score floor.  The small-x KL series is an algebraic
+    accuracy choice; it does not treat small nonzero scores as ties.
+    """
+    V = covariance
+    modes = V.shape[0] // 2
+    ld = np.longdouble
+    c00, c01 = ld(V[first, second]), ld(V[first, second+modes])
+    c10, c11 = ld(V[first+modes, second]), ld(V[first+modes, second+modes])
+    if c00 == 0 and c01 == 0 and c10 == 0 and c11 == 0:
+        return 0.0, {"structural_zero": True, "l1_probability_correction": 0.0,
+                     "vacuum_probability_corrections": 0}
+    tolerance = ld(probability_tolerance)
+    vacuum_corrections = 0
+
+    def factor(mode):
+        nonlocal vacuum_corrections
+        a00 = ld(V[mode, mode])+1
+        a10 = ld(V[mode+modes, mode])
+        a11 = ld(V[mode+modes, mode+modes])+1
+        if not np.isfinite(a00) or a00 <= 0:
+            raise NumericalProbabilityError("invalid Gaussian pair-score Cholesky pivot")
+        l00 = np.sqrt(a00)
+        l10 = a10/l00
+        remainder = a11-l10*l10
+        if not np.isfinite(remainder) or remainder <= 0:
+            raise NumericalProbabilityError("invalid Gaussian pair-score Cholesky remainder")
+        l11 = np.sqrt(remainder)
+        vacuum = ld(2)/(l00*l11)
+        if not np.isfinite(vacuum) or vacuum < 0 or vacuum > 1+tolerance:
+            raise NumericalProbabilityError("invalid stable single-mode vacuum probability")
+        if vacuum > 1:
+            vacuum = ld(1)
+            vacuum_corrections += 1
+        return l00, l10, l11, vacuum
+
+    la00, la10, la11, a = factor(first)
+    lb00, lb10, lb11, b = factor(second)
+    u00, u01 = c00/la00, c01/la00
+    u10, u11 = (c10-la10*u00)/la11, (c11-la10*u01)/la11
+    t00, t10 = u00/lb00, u10/lb00
+    t01, t11 = (u01-lb10*t00)/lb11, (u11-lb10*t10)/lb11
+    trace = t00*t00+t01*t01+t10*t10+t11*t11
+    determinant = t00*t11-t01*t10
+    schur_change = trace-determinant*determinant
+    if not np.isfinite(schur_change) or not 0 <= schur_change < 1:
+        raise NumericalProbabilityError("invalid Gaussian pair-score determinant ratio")
+    delta = a*b*np.expm1(-ld("0.5")*np.log1p(-schur_change))
+    products = [a*b, (1-a)*b, a*(1-b), (1-a)*(1-b)]
+    signs = (1, -1, -1, 1)
+    raw = [product+sign*delta for product, sign in zip(products, signs)]
+    if (any(not np.isfinite(p) or p < -tolerance for p in raw)
+            or abs(sum(raw, ld(0))-1) > tolerance):
+        raise NumericalProbabilityError("invalid stable Gaussian pair marginal")
+    correction = ld(0)
+    corrected = any(p < 0 for p in raw)
+    if corrected:
+        joint = [max(ld(0), p) for p in raw]
+        mass = sum(joint, ld(0))
+        if not np.isfinite(mass) or mass <= 0:
+            raise NumericalProbabilityError("stable Gaussian pair marginal has zero mass")
+        joint = [p/mass for p in joint]
+        correction = sum((abs(p-q) for p, q in zip(joint, raw)), ld(0))
+        if correction > 10*tolerance:
+            raise NumericalProbabilityError("stable Gaussian pair correction exceeds tolerance")
+        a0, a1 = joint[0]+joint[2], joint[1]+joint[3]
+        b0, b1 = joint[0]+joint[1], joint[2]+joint[3]
+        products = [a0*b0, a1*b0, a0*b1, a1*b1]
+    else:
+        joint = raw
+    information = ld(0)
+    for product, probability, sign in zip(products, joint, signs):
+        if product == 0:
+            if probability != 0:
+                raise NumericalProbabilityError("positive joint cell has a zero product marginal")
+            continue
+        if product < 0 or not np.isfinite(product):
+            raise NumericalProbabilityError("invalid stable pair product marginal")
+        ratio_delta = ((probability-product)/product if corrected else sign*delta/product)
+        information += product*_binary_kl_remainder(ratio_delta)
+    if not np.isfinite(information) or information < 0:
+        raise NumericalProbabilityError("invalid stable Gaussian mutual information")
+    return float(information), {"structural_zero": False,
+                               "l1_probability_correction": float(correction),
+                               "vacuum_probability_corrections": vacuum_corrections}
+
+
 class ZeroMemorySampler:
     """Retain no-click observations and at most ``max_clicks`` prior clicks.
 
@@ -46,8 +161,11 @@ class ZeroMemorySampler:
         always use original physical mode indices.
     selection : str
         ``recent`` keeps the most recent prior clicks.  ``pairwise`` ranks
-        previously clicked modes by their exact unconditional threshold MI
-        with the next mode, breaking ties by physical mode index.  This is a
+        previously clicked modes by their unconditional threshold MI
+        with the next mode, breaking ties by physical mode index.  Gaussian
+        models use structural-zero independence and a stable KL remainder
+        for weak correlations; generic no-covariance oracles retain the
+        historical joint-marginal calculation.  This is a
         fixed covariance-derived criterion; conditional dependence after
         postselection can differ and improvement is not guaranteed.  A zero
         click budget skips all pairwise precomputation.
@@ -100,11 +218,22 @@ class ZeroMemorySampler:
             "minimum_conditioning_probability": None,
             "pairwise_marginals_requested": 0,
             "pairwise_precompute_seconds": 0.0,
+            "pairwise_mi_policy": "not_used",
+            "pairwise_structural_zero_pairs": 0,
+            "pairwise_stable_probability_corrections": 0,
+            "pairwise_max_stable_l1_correction": 0.0,
         }
         self.pairwise_mi = None
         if self.selection == "pairwise" and self.max_clicks:
             start = perf_counter()
             scores = np.zeros((self.m, self.m))
+            gaussian_covariance = getattr(model, "V", None)
+            if gaussian_covariance is not None:
+                gaussian_covariance = np.asarray(gaussian_covariance)
+                if gaussian_covariance.shape != (2*self.m, 2*self.m):
+                    raise ValueError("Gaussian pairwise model covariance has the wrong shape")
+            self.diagnostics["pairwise_mi_policy"] = (GAUSSIAN_PAIRWISE_MI_POLICY
+                if gaussian_covariance is not None else "legacy_joint_marginal_v1")
             for first in range(self.m):
                 for second in range(first + 1, self.m):
                     joint = np.asarray(model.marginal((first, second)), dtype=float)
@@ -112,15 +241,27 @@ class ZeroMemorySampler:
                             or np.any(joint < 0)
                             or abs(float(np.sum(joint)) - 1.0) > 1e-10):
                         raise NumericalProbabilityError("invalid pair marginal for MI selector")
-                    first_marginal = np.array([joint[0] + joint[2], joint[1] + joint[3]])
-                    second_marginal = np.array([joint[0] + joint[1], joint[2] + joint[3]])
-                    product = np.array([first_marginal[mask & 1] * second_marginal[mask >> 1]
-                                        for mask in range(4)])
-                    positive = joint > 0
-                    mi = float(np.sum(joint[positive] * np.log(joint[positive] / product[positive])))
-                    if mi < -1e-12:
-                        raise NumericalProbabilityError(f"negative pairwise MI {mi:.3g}")
-                    scores[first, second] = scores[second, first] = max(0.0, mi)
+                    if gaussian_covariance is not None:
+                        mi, info = _gaussian_pairwise_mi(gaussian_covariance, first, second,
+                            probability_tolerance=getattr(model, "probability_tolerance", 2e-10))
+                        self.diagnostics["pairwise_structural_zero_pairs"] += int(info["structural_zero"])
+                        correction = info["l1_probability_correction"]
+                        self.diagnostics["pairwise_stable_probability_corrections"] += int(correction > 0)
+                        self.diagnostics["pairwise_max_stable_l1_correction"] = max(
+                            self.diagnostics["pairwise_max_stable_l1_correction"], correction)
+                    else:
+                        # Preserve the historical generic-oracle contract;
+                        # analytic paired fixtures deliberately have no V.
+                        first_marginal = np.array([joint[0] + joint[2], joint[1] + joint[3]])
+                        second_marginal = np.array([joint[0] + joint[1], joint[2] + joint[3]])
+                        product = np.array([first_marginal[mask & 1] * second_marginal[mask >> 1]
+                                            for mask in range(4)])
+                        positive = joint > 0
+                        mi = float(np.sum(joint[positive] * np.log(joint[positive] / product[positive])))
+                        if mi < -1e-12:
+                            raise NumericalProbabilityError(f"negative pairwise MI {mi:.3g}")
+                        mi = max(0.0, mi)
+                    scores[first, second] = scores[second, first] = mi
                     self.diagnostics["pairwise_marginals_requested"] += 1
             scores.setflags(write=False)
             self.pairwise_mi = scores

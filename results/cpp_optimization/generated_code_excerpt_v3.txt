@@ -1,0 +1,3038 @@
+0000000000016c40 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)>:
+   16c40:	push   %rbp
+   16c41:	mov    %rsp,%rbp
+   16c44:	push   %r15
+   16c46:	push   %r14
+   16c48:	push   %r13
+   16c4a:	push   %r12
+   16c4c:	push   %rbx
+   16c4d:	and    $0xffffffffffffffe0,%rsp
+   16c51:	sub    $0x1000,%rsp
+   16c58:	orq    $0x0,(%rsp)
+   16c5d:	sub    $0x1000,%rsp
+   16c64:	orq    $0x0,(%rsp)
+   16c69:	sub    $0x940,%rsp
+   16c70:	mov    %rdx,0x48(%rsp)
+   16c75:	mov    %rcx,0x30(%rsp)
+   16c7a:	mov    %fs:0x28,%rax
+   16c83:	mov    %rax,0x2938(%rsp)
+   16c8b:	mov    %rcx,%rax
+   16c8e:	mov    %rdi,%rbx
+   16c91:	movzbl (%rcx),%edi
+   16c94:	add    $0x8,%rax
+   16c98:	movslq %esi,%r12
+   16c9b:	mov    %rax,0x88(%rsp)
+   16ca3:	mov    %dil,0x3f(%rsp)
+   16ca8:	mov    %dil,0x80(%rsp)
+   16cb0:	test   %dil,%dil
+   16cb3:	jne    16f70 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x330>
+   16cb9:	movq   $0x0,0x90(%rsp)
+   16cc5:	mov    0x20(%rbx),%rax
+   16cc9:	mov    0x18(%rbx),%rsi
+   16ccd:	mov    0x30(%rbx,%r12,4),%r15d
+   16cd2:	mov    %rax,0x50(%rsp)
+   16cd7:	sub    %rsi,%rax
+   16cda:	mov    %rsi,0x40(%rsp)
+   16cdf:	sar    $0x2,%rax
+   16ce3:	mov    %eax,%r14d
+   16ce6:	mov    %rax,0x78(%rsp)
+   16ceb:	test   %r15d,%r15d
+   16cee:	js     479a <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]>
+   16cf4:	mov    0x8(%rbx),%rcx
+   16cf8:	movslq %r15d,%r8
+   16cfb:	cmp    %rcx,%r8
+   16cfe:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   16d04:	mov    0x10(%rbx),%r13
+   16d08:	cmp    %r13,%r8
+   16d0b:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   16d11:	mov    (%rbx),%r12
+   16d14:	mov    %r8,%r10
+   16d17:	vmovsd 0x357d1(%rip),%xmm0        # 4c4f0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x430>
+   16d1f:	imul   %rcx,%r10
+   16d23:	lea    (%r8,%r10,1),%rax
+   16d27:	vaddsd (%r12,%rax,8),%xmm0,%xmm1
+   16d2d:	mov    0x78(%rsp),%eax
+   16d31:	vmovsd %xmm1,0xa0(%rsp)
+   16d3a:	add    %r15d,%eax
+   16d3d:	cltq
+   16d3f:	test   %rax,%rax
+   16d42:	js     174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   16d48:	cmp    %r13,%rax
+   16d4b:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   16d51:	mov    %rax,%r11
+   16d54:	mov    %r8,0x68(%rsp)
+   16d59:	mov    %rcx,0x70(%rsp)
+   16d5e:	imul   %rcx,%r11
+   16d62:	cmp    %rcx,%rax
+   16d65:	lea    (%r8,%r11,1),%rdx
+   16d69:	vmovsd (%r12,%rdx,8),%xmm1
+   16d6f:	vmovsd %xmm1,0xb0(%rsp)
+   16d78:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   16d7e:	lea    (%rax,%r10,1),%rdx
+   16d82:	add    %r11,%rax
+   16d85:	lea    0xa0(%rsp),%rsi
+   16d8d:	lea    0xe0(%rsp),%rdi
+   16d95:	vmovsd (%r12,%rdx,8),%xmm1
+   16d9b:	vaddsd (%r12,%rax,8),%xmm0,%xmm0
+   16da1:	vmovsd %xmm1,0xa8(%rsp)
+   16daa:	vmovsd %xmm0,0xb8(%rsp)
+   16db3:	vmovdqa 0xa0(%rsp),%ymm7
+   16dbc:	mov    %r10,0x58(%rsp)
+   16dc1:	mov    %r11,0x60(%rsp)
+   16dc6:	movb   $0x0,0x108(%rsp)
+   16dce:	vmovdqa %ymm7,0xe0(%rsp)
+   16dd7:	vzeroupper
+   16dda:	call   16ba0 <Eigen::LLT<Eigen::Matrix<double, 2, 2, 0, 2, 2>, 1>& Eigen::LLT<Eigen::Matrix<double, 2, 2, 0, 2, 2>, 1>::compute<Eigen::Matrix<double, 2, 2, 0, 2, 2> >(Eigen::EigenBase<Eigen::Matrix<double, 2, 2, 0, 2, 2> > const&) [clone .isra.0]>
+   16ddf:	cmpb   $0x0,0x108(%rsp)
+   16de7:	mov    0x60(%rsp),%r11
+   16dec:	mov    0x58(%rsp),%r10
+   16df1:	mov    0x70(%rsp),%rcx
+   16df6:	mov    0x68(%rsp),%r8
+   16dfb:	je     17552 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x912>
+   16e01:	mov    0x10c(%rsp),%esi
+   16e08:	test   %esi,%esi
+   16e0a:	je     16ea0 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x260>
+   16e10:	lea    0x1940(%rsp),%rax
+   16e18:	mov    $0x30,%edi
+   16e1d:	mov    %rax,0x1930(%rsp)
+   16e25:	call   36a0 <operator new(unsigned long)@plt>
+   16e2a:	vmovdqa 0x355ee(%rip),%ymm6        # 4c420 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x360>
+   16e32:	vmovdqa 0x359c6(%rip),%xmm0        # 4c800 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x740>
+   16e3a:	mov    %rax,0x1930(%rsp)
+   16e42:	movq   $0x2f,0x1940(%rsp)
+   16e4e:	movq   $0x2f,0x1938(%rsp)
+   16e5a:	movb   $0x0,0x2f(%rax)
+   16e5e:	vmovdqu %ymm6,(%rax)
+   16e62:	vmovdqu %xmm0,0x1f(%rax)
+   16e67:	mov    0x2938(%rsp),%rax
+   16e6f:	sub    %fs:0x28,%rax
+   16e78:	jne    175a7 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x967>
+   16e7e:	mov    0x48(%rsp),%rdi
+   16e83:	lea    0x1930(%rsp),%r12
+   16e8b:	mov    %r12,%rsi
+   16e8e:	vzeroupper
+   16e91:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   16e96:	cs nopw 0x0(%rax,%rax,1)
+   16ea0:	vmovsd 0xe0(%rsp),%xmm2
+   16ea9:	vxorpd %xmm0,%xmm0,%xmm0
+   16ead:	vmovsd 0xe8(%rsp),%xmm6
+   16eb6:	vmovsd 0xf8(%rsp),%xmm3
+   16ebf:	vcomisd %xmm0,%xmm2
+   16ec3:	jbe    16ee9 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x2a9>
+   16ec5:	vcomisd %xmm0,%xmm3
+   16ec9:	jbe    16ee9 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x2a9>
+   16ecb:	vmovq  0x358fd(%rip),%xmm4        # 4c7d0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x710>
+   16ed3:	vandpd %xmm4,%xmm2,%xmm0
+   16ed7:	vmovsd 0x35869(%rip),%xmm5        # 4c748 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x688>
+   16edf:	vucomisd %xmm0,%xmm5
+   16ee3:	jae    16f90 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x350>
+   16ee9:	lea    0x1940(%rsp),%rax
+   16ef1:	mov    $0x35,%edi
+   16ef6:	mov    %rax,0x1930(%rsp)
+   16efe:	call   36a0 <operator new(unsigned long)@plt>
+   16f03:	vmovdqa 0x35535(%rip),%ymm3        # 4c440 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x380>
+   16f0b:	vmovdqa 0x3554d(%rip),%ymm4        # 4c460 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x3a0>
+   16f13:	mov    %rax,0x1930(%rsp)
+   16f1b:	movq   $0x34,0x1940(%rsp)
+   16f27:	movq   $0x34,0x1938(%rsp)
+   16f33:	movb   $0x0,0x34(%rax)
+   16f37:	vmovdqu %ymm3,(%rax)
+   16f3b:	vmovdqu %ymm4,0x14(%rax)
+   16f40:	mov    0x2938(%rsp),%rax
+   16f48:	sub    %fs:0x28,%rax
+   16f51:	jne    175bb <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x97b>
+   16f57:	mov    0x48(%rsp),%rdi
+   16f5c:	lea    0x1930(%rsp),%r12
+   16f64:	mov    %r12,%rsi
+   16f67:	vzeroupper
+   16f6a:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   16f6f:	nop
+   16f70:	call   3780 <std::chrono::_V2::steady_clock::now()@plt>
+   16f75:	mov    %rax,0x90(%rsp)
+   16f7d:	jmp    16cc5 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x85>
+   16f82:	data16 cs nopw 0x0(%rax,%rax,1)
+   16f8d:	nopl   (%rax)
+   16f90:	vandpd %xmm4,%xmm3,%xmm0
+   16f94:	vucomisd %xmm0,%xmm5
+   16f98:	jb     16ee9 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x2a9>
+   16f9e:	mov    0x78(%rsp),%eax
+   16fa2:	mov    $0x800,%edx
+   16fa7:	xor    %esi,%esi
+   16fa9:	mov    %r8,0x8(%rsp)
+   16fae:	mov    %r10,0x10(%rsp)
+   16fb3:	mov    %rcx,0x18(%rsp)
+   16fb8:	mov    %r11,0x20(%rsp)
+   16fbd:	vmovsd %xmm2,0x28(%rsp)
+   16fc3:	vmovsd %xmm6,0x60(%rsp)
+   16fc9:	vmovsd %xmm3,0x70(%rsp)
+   16fcf:	dec    %eax
+   16fd1:	mov    %eax,0x68(%rsp)
+   16fd5:	add    %eax,%eax
+   16fd7:	mov    %eax,0x38(%rsp)
+   16fdb:	lea    0x130(%rsp),%rax
+   16fe3:	mov    %rax,%rdi
+   16fe6:	mov    %rax,0x58(%rsp)
+   16feb:	call   35b0 <memset@plt>
+   16ff0:	mov    0x78(%rsp),%ecx
+   16ff4:	xor    %edx,%edx
+   16ff6:	xor    %eax,%eax
+   16ff8:	mov    0x20(%rsp),%r11
+   16ffd:	mov    0x10(%rsp),%r10
+   17002:	vmovsd 0x70(%rsp),%xmm3
+   17008:	vmovsd 0x60(%rsp),%xmm6
+   1700e:	mov    0x8(%rsp),%r8
+   17013:	vmovsd 0x28(%rsp),%xmm2
+   17019:	test   %ecx,%ecx
+   1701b:	mov    0x18(%rsp),%rcx
+   17020:	jle    173a2 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x762>
+   17026:	cs nopw 0x0(%rax,%rax,1)
+   17030:	cmp    %eax,%r15d
+   17033:	je     17390 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x750>
+   17039:	movslq %edx,%rsi
+   1703c:	mov    0x78(%rsp),%edi
+   17040:	mov    %eax,0x130(%rsp,%rsi,4)
+   17047:	mov    0x68(%rsp),%esi
+   1704b:	add    %eax,%edi
+   1704d:	inc    %eax
+   1704f:	add    %edx,%esi
+   17051:	inc    %edx
+   17053:	movslq %esi,%rsi
+   17056:	mov    %edi,0x130(%rsp,%rsi,4)
+   1705d:	cmp    %eax,%r14d
+   17060:	jne    17030 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x3f0>
+   17062:	lea    0x930(%rsp),%r9
+   1706a:	xor    %esi,%esi
+   1706c:	mov    $0x1000,%edx
+   17071:	lea    0x1930(%rsp),%r15
+   17079:	mov    %r9,%rdi
+   1707c:	mov    %r8,(%rsp)
+   17080:	mov    %r10,0x8(%rsp)
+   17085:	mov    %rcx,0x10(%rsp)
+   1708a:	mov    %r11,0x18(%rsp)
+   1708f:	vmovsd %xmm2,0x20(%rsp)
+   17095:	vmovsd %xmm6,0x28(%rsp)
+   1709b:	vmovsd %xmm3,0x60(%rsp)
+   170a1:	mov    %r9,0x70(%rsp)
+   170a6:	call   35b0 <memset@plt>
+   170ab:	xor    %esi,%esi
+   170ad:	mov    $0x1000,%edx
+   170b2:	mov    %r15,%rdi
+   170b5:	call   35b0 <memset@plt>
+   170ba:	mov    0x68(%rsp),%eax
+   170be:	mov    0x70(%rsp),%r9
+   170c3:	mov    0x18(%rsp),%r11
+   170c8:	mov    0x10(%rsp),%rcx
+   170cd:	mov    0x8(%rsp),%r10
+   170d2:	vmovsd 0x60(%rsp),%xmm3
+   170d8:	vmovsd 0x28(%rsp),%xmm6
+   170de:	mov    (%rsp),%r8
+   170e2:	vmovsd 0x20(%rsp),%xmm2
+   170e8:	test   %eax,%eax
+   170ea:	je     1750d <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8cd>
+   170f0:	mov    0x78(%rsp),%rax
+   170f5:	mov    0x58(%rsp),%r14
+   170fa:	xor    %edx,%edx
+   170fc:	lea    -0x3(%rax,%rax,1),%edi
+   17100:	mov    %rdi,0x60(%rsp)
+   17105:	jmp    17113 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x4d3>
+   17107:	nopw   0x0(%rax,%rax,1)
+   17110:	mov    %rax,%rdx
+   17113:	movslq (%r14,%rdx,4),%rax
+   17117:	test   %rax,%rax
+   1711a:	js     174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   17120:	cmp    %rcx,%rax
+   17123:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   17129:	lea    (%rax,%r10,1),%rsi
+   1712d:	add    %r11,%rax
+   17130:	vmovsd (%r12,%rax,8),%xmm1
+   17136:	vmovsd (%r12,%rsi,8),%xmm0
+   1713c:	lea    0x1(%rdx),%rax
+   17140:	vdivsd %xmm2,%xmm0,%xmm0
+   17144:	vmovsd %xmm0,(%r9,%rdx,8)
+   1714a:	vmulsd %xmm6,%xmm0,%xmm0
+   1714e:	vsubsd %xmm0,%xmm1,%xmm0
+   17152:	vdivsd %xmm3,%xmm0,%xmm0
+   17156:	vmovsd %xmm0,(%r15,%rdx,8)
+   1715c:	cmp    %rdx,%rdi
+   1715f:	jne    17110 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x4d0>
+   17161:	movslq 0x38(%rsp),%rax
+   17166:	mov    %rcx,0x20(%rsp)
+   1716b:	mov    %r9,0x28(%rsp)
+   17170:	mov    %r8,0x40(%rsp)
+   17175:	mov    %rax,%r12
+   17178:	mov    %rax,0x70(%rsp)
+   1717d:	imul   %rax,%rax
+   17181:	lea    0x40(,%rax,8),%rdi
+   17189:	call   3790 <malloc@plt>
+   1718e:	test   %rax,%rax
+   17191:	je     4843 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0xa9>
+   17197:	mov    %rax,%r14
+   1719a:	vmovq  %r13,%xmm8
+   1719f:	mov    0x58(%rsp),%r8
+   171a4:	mov    0x28(%rsp),%r13
+   171a9:	and    $0xffffffffffffffc0,%r14
+   171ad:	mov    0x20(%rsp),%rcx
+   171b2:	mov    $0x1,%esi
+   171b7:	vmovq  0x35611(%rip),%xmm4        # 4c7d0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x710>
+   171bf:	mov    %rax,0x38(%r14)
+   171c3:	mov    0x60(%rsp),%rax
+   171c8:	lea    0x40(%r14),%rdx
+   171cc:	mov    %r14,0x20(%rsp)
+   171d1:	mov    %rdx,%r9
+   171d4:	mov    %rbx,%r14
+   171d7:	mov    %rdx,0x50(%rsp)
+   171dc:	movq   $0x0,0x60(%rsp)
+   171e5:	mov    %rdx,0x10(%rsp)
+   171ea:	vmovsd 0x35556(%rip),%xmm5        # 4c748 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x688>
+   171f2:	add    $0x2,%rax
+   171f6:	mov    %rax,0x18(%rsp)
+   171fb:	lea    0x0(,%r12,8),%rax
+   17203:	vmovq  %rax,%xmm2
+   17208:	vmovdqa %xmm2,%xmm6
+   1720c:	movslq -0x4(%r8,%rsi,4),%rax
+   17211:	vmovq  %xmm8,%rdi
+   17216:	lea    -0x1(%rsi),%r12
+   1721a:	mov    %rax,%rdx
+   1721d:	mov    %rax,%rbx
+   17220:	not    %rdx
+   17223:	imul   %rcx,%rbx
+   17227:	shr    $0x3f,%rdx
+   1722b:	cmp    %rdi,%rax
+   1722e:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   17234:	mov    0x50(%rsp),%rax
+   17239:	mov    0x60(%rsp),%rdi
+   1723e:	mov    %r9,%r10
+   17241:	mov    %r9,0x58(%rsp)
+   17246:	vmovq  %rbx,%xmm2
+   1724b:	vmovdqa %xmm6,%xmm7
+   1724f:	mov    %edx,%r9d
+   17252:	lea    (%rax,%rdi,8),%r11
+   17256:	xor    %eax,%eax
+   17258:	jmp    1729a <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x65a>
+   1725a:	nopw   0x0(%rax,%rax,1)
+   17260:	mov    0x70(%rsp),%rbx
+   17265:	cmp    %r12,%rax
+   17268:	mov    %r12,%rdx
+   1726b:	cmovge %rax,%rdx
+   1726f:	cmp    %rbx,%rdx
+   17272:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   17278:	vmovq  %xmm7,%rbx
+   1727d:	inc    %rax
+   17280:	vmovsd %xmm0,(%r11)
+   17285:	vmovsd %xmm0,(%r10)
+   1728a:	add    $0x8,%r11
+   1728e:	add    %rbx,%r10
+   17291:	cmp    %rsi,%rax
+   17294:	je     173d0 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x790>
+   1729a:	movslq (%r8,%rax,4),%rdx
+   1729e:	test   %rdx,%rdx
+   172a1:	js     174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   172a7:	cmp    %rcx,%rdx
+   172aa:	jge    174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   172b0:	test   %r9b,%r9b
+   172b3:	je     174ee <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8ae>
+   172b9:	mov    (%r14),%rdi
+   172bc:	vmovq  %xmm2,%rbx
+   172c1:	vmovsd 0x0(%r13,%rax,8),%xmm0
+   172c8:	vmovsd (%r15,%rax,8),%xmm1
+   172ce:	add    %rbx,%rdx
+   172d1:	vmulsd -0x8(%r15,%rsi,8),%xmm1,%xmm1
+   172d8:	vmulsd -0x8(%r13,%rsi,8),%xmm0,%xmm0
+   172df:	vaddsd %xmm1,%xmm0,%xmm0
+   172e3:	vmovsd (%rdi,%rdx,8),%xmm1
+   172e8:	vsubsd %xmm0,%xmm1,%xmm0
+   172ec:	vandpd %xmm4,%xmm0,%xmm1
+   172f0:	vucomisd %xmm1,%xmm5
+   172f4:	jae    17260 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x620>
+   172fa:	lea    0xd0(%rsp),%rax
+   17302:	mov    $0x2a,%edi
+   17307:	mov    0x20(%rsp),%r14
+   1730c:	mov    %rax,0xc0(%rsp)
+   17314:	call   36a0 <operator new(unsigned long)@plt>
+   17319:	vmovdqa 0x3515f(%rip),%ymm5        # 4c480 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x3c0>
+   17321:	vmovdqa 0x354e7(%rip),%xmm0        # 4c810 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x750>
+   17329:	mov    %rax,0xc0(%rsp)
+   17331:	movq   $0x29,0xd0(%rsp)
+   1733d:	movq   $0x29,0xc8(%rsp)
+   17349:	movb   $0x0,0x29(%rax)
+   1734d:	vmovdqu %ymm5,(%rax)
+   17351:	vmovdqu %xmm0,0x19(%rax)
+   17356:	mov    0x2938(%rsp),%rax
+   1735e:	sub    %fs:0x28,%rax
+   17367:	jne    175c3 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x983>
+   1736d:	mov    0x48(%rsp),%rdi
+   17372:	lea    0xc0(%rsp),%r12
+   1737a:	mov    %r12,%rsi
+   1737d:	vzeroupper
+   17380:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   17385:	data16 cs nopw 0x0(%rax,%rax,1)
+   17390:	lea    0x1(%r15),%eax
+   17394:	cmp    %eax,%r14d
+   17397:	jne    17030 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x3f0>
+   1739d:	jmp    17062 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x422>
+   173a2:	lea    0x2da3f(%rip),%rcx        # 44de8 <_IO_stdin_used+0x3de8>
+   173a9:	mov    $0x111,%edx
+   173ae:	lea    0x2dacb(%rip),%rsi        # 44e80 <_IO_stdin_used+0x3e80>
+   173b5:	lea    0x2db5c(%rip),%rdi        # 44f18 <_IO_stdin_used+0x3f18>
+   173bc:	call   35f0 <__assert_fail@plt>
+   173c1:	data16 cs nopw 0x0(%rax,%rax,1)
+   173cc:	nopl   0x0(%rax)
+   173d0:	mov    0x58(%rsp),%r9
+   173d5:	mov    0x70(%rsp),%rbx
+   173da:	lea    0x1(%rax),%rsi
+   173de:	add    %rbx,0x60(%rsp)
+   173e3:	add    $0x8,%r9
+   173e7:	cmp    %rsi,0x18(%rsp)
+   173ec:	jne    1720c <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x5cc>
+   173f2:	mov    0x18(%r14),%rax
+   173f6:	mov    0x40(%rsp),%r8
+   173fb:	mov    %rdi,%r12
+   173fe:	mov    0x10(%rsp),%rdi
+   17403:	mov    %r14,%rbx
+   17406:	mov    %rax,0x40(%rsp)
+   1740b:	mov    0x20(%r14),%rax
+   1740f:	mov    %rax,0x50(%rsp)
+   17414:	mov    0x40(%rsp),%rax
+   17419:	vpbroadcastq 0x70(%rsp),%xmm0
+   17420:	mov    %rdi,(%rbx)
+   17423:	lea    (%rax,%r8,4),%rdi
+   17427:	mov    0x50(%rsp),%rax
+   1742c:	lea    0x4(%rdi),%rsi
+   17430:	vmovdqu %xmm0,0x8(%rbx)
+   17435:	cmp    %rax,%rsi
+   17438:	je     17458 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x818>
+   1743a:	mov    %rax,%rdx
+   1743d:	sub    %rsi,%rdx
+   17440:	cmp    $0x4,%rdx
+   17444:	jle    17571 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x931>
+   1744a:	call   3830 <memmove@plt>
+   1744f:	mov    0x20(%rbx),%rax
+   17453:	mov    %rax,0x50(%rsp)
+   17458:	mov    0x50(%rsp),%rax
+   1745d:	mov    $0x400,%edx
+   17462:	lea    0x30(%rbx),%rdi
+   17466:	mov    $0xff,%esi
+   1746b:	sub    $0x4,%rax
+   1746f:	mov    %rax,0x20(%rbx)
+   17473:	call   35b0 <memset@plt>
+   17478:	mov    0x68(%rsp),%edx
+   1747c:	test   %edx,%edx
+   1747e:	jle    174a3 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x863>
+   17480:	mov    0x78(%rsp),%rax
+   17485:	mov    0x18(%rbx),%rsi
+   17489:	lea    -0x2(%rax),%ecx
+   1748c:	xor    %eax,%eax
+   1748e:	xchg   %ax,%ax
+   17490:	movslq (%rsi,%rax,4),%rdx
+   17494:	mov    %eax,0x30(%rbx,%rdx,4)
+   17498:	mov    %rax,%rdx
+   1749b:	inc    %rax
+   1749e:	cmp    %rdx,%rcx
+   174a1:	jne    17490 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x850>
+   174a3:	mov    0x48(%rsp),%rax
+   174a8:	incl   0x430(%rbx)
+   174ae:	incq   0x68(%rax)
+   174b2:	test   %r12,%r12
+   174b5:	je     174c1 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x881>
+   174b7:	mov    -0x8(%r12),%rdi
+   174bc:	call   3720 <free@plt>
+   174c1:	cmpb   $0x0,0x3f(%rsp)
+   174c6:	jne    1751d <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x8dd>
+   174c8:	mov    0x2938(%rsp),%rax
+   174d0:	sub    %fs:0x28,%rax
+   174d9:	jne    17581 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x941>
+   174df:	lea    -0x28(%rbp),%rsp
+   174e3:	pop    %rbx
+   174e4:	pop    %r12
+   174e6:	pop    %r13
+   174e8:	pop    %r14
+   174ea:	pop    %r15
+   174ec:	pop    %rbp
+   174ed:	ret
+   174ee:	lea    0x2b5db(%rip),%rcx        # 42ad0 <_IO_stdin_used+0x1ad0>
+   174f5:	mov    $0x16e,%edx
+   174fa:	lea    0x2b69f(%rip),%rsi        # 42ba0 <_IO_stdin_used+0x1ba0>
+   17501:	lea    0x2b730(%rip),%rdi        # 42c38 <_IO_stdin_used+0x1c38>
+   17508:	call   35f0 <__assert_fail@plt>
+   1750d:	xor    %edi,%edi
+   1750f:	movq   $0x0,0x70(%rsp)
+   17518:	jmp    17414 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x7d4>
+   1751d:	mov    0x90(%rsp),%rbx
+   17525:	call   3780 <std::chrono::_V2::steady_clock::now()@plt>
+   1752a:	vxorps %xmm0,%xmm0,%xmm0
+   1752e:	sub    %rbx,%rax
+   17531:	vcvtsi2sd %rax,%xmm0,%xmm0
+   17536:	mov    0x30(%rsp),%rax
+   1753b:	vdivsd 0x3520d(%rip),%xmm0,%xmm0        # 4c750 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x690>
+   17543:	vaddsd 0x8(%rax),%xmm0,%xmm0
+   17548:	vmovsd %xmm0,0x8(%rax)
+   1754d:	jmp    174c8 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x888>
+   17552:	lea    0x2ba6f(%rip),%rcx        # 42fc8 <_IO_stdin_used+0x1fc8>
+   17559:	mov    $0xc1,%edx
+   1755e:	lea    0x2baeb(%rip),%rsi        # 43050 <_IO_stdin_used+0x2050>
+   17565:	lea    0x2bb74(%rip),%rdi        # 430e0 <_IO_stdin_used+0x20e0>
+   1756c:	call   35f0 <__assert_fail@plt>
+   17571:	jne    17458 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x818>
+   17577:	mov    0x4(%rdi),%eax
+   1757a:	mov    %eax,(%rdi)
+   1757c:	jmp    17458 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)+0x818>
+   17581:	call   36d0 <__stack_chk_fail@plt>
+   17586:	endbr64
+   1758a:	mov    %rax,%rbx
+   1758d:	jmp    47e4 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0x4a>
+   17592:	endbr64
+   17596:	mov    %rax,%rbx
+   17599:	jmp    4860 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0xc6>
+   1759e:	endbr64
+   175a2:	jmp    4836 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0x9c>
+   175a7:	vzeroupper
+   175aa:	call   36d0 <__stack_chk_fail@plt>
+   175af:	endbr64
+   175b3:	mov    %rax,%rbx
+   175b6:	jmp    47e4 <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0x4a>
+   175bb:	vzeroupper
+   175be:	call   36d0 <__stack_chk_fail@plt>
+   175c3:	vzeroupper
+   175c6:	call   36d0 <__stack_chk_fail@plt>
+   175cb:	endbr64
+   175cf:	mov    %rax,%rbx
+   175d2:	vzeroupper
+   175d5:	jmp    486b <(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&) [clone .cold]+0xd1>
+   175da:	nopw   0x0(%rax,%rax,1)
+
+
+0000000000017fb0 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)>:
+   17fb0:	lea    0x8(%rsp),%r10
+   17fb5:	and    $0xffffffffffffffc0,%rsp
+   17fb9:	push   -0x8(%r10)
+   17fbd:	push   %rbp
+   17fbe:	mov    %rsp,%rbp
+   17fc1:	push   %r14
+   17fc3:	push   %r13
+   17fc5:	push   %r12
+   17fc7:	push   %r10
+   17fc9:	push   %rbx
+   17fca:	lea    -0x6b0(%rbp),%r8
+   17fd1:	mov    %rdx,%rbx
+   17fd4:	sub    $0x6c8,%rsp
+   17fdb:	mov    %r8,%r9
+   17fde:	xor    %r12d,%r12d
+   17fe1:	vmovsd 0x3478f(%rip),%xmm1        # 4c778 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6b8>
+   17fe9:	mov    %fs:0x28,%rax
+   17ff2:	mov    %rax,-0x38(%rbp)
+   17ff6:	xor    %eax,%eax
+   17ff8:	vmovsd 0x344f0(%rip),%xmm3        # 4c4f0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x430>
+   18000:	vxorpd %xmm2,%xmm2,%xmm2
+   18004:	movslq (%rsi,%r12,4),%rcx
+   18008:	xor    %eax,%eax
+   1800a:	cmp    $0x1,%ecx
+   1800d:	je     1803b <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x8b>
+   1800f:	jmp    18080 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0xd0>
+   18011:	data16 cs nopw 0x0(%rax,%rax,1)
+   1801c:	nopl   0x0(%rax)
+   18020:	vaddsd %xmm2,%xmm0,%xmm0
+   18024:	vmulsd %xmm1,%xmm0,%xmm0
+   18028:	vmovsd %xmm0,(%r9,%rax,8)
+   1802e:	inc    %rax
+   18031:	cmp    $0xa,%rax
+   18035:	je     18110 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x160>
+   1803b:	movslq (%rsi,%rax,4),%rcx
+   1803f:	test   %rcx,%rcx
+   18042:	js     18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   18048:	mov    0x8(%rdi),%rdx
+   1804c:	cmp    %rcx,%rdx
+   1804f:	jle    18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   18055:	cmpq   $0x1,0x10(%rdi)
+   1805a:	jle    18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   18060:	add    %rcx,%rdx
+   18063:	mov    (%rdi),%rcx
+   18066:	vmovsd (%rcx,%rdx,8),%xmm0
+   1806b:	cmp    %eax,%r12d
+   1806e:	jne    18020 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x70>
+   18070:	vaddsd %xmm3,%xmm0,%xmm0
+   18074:	jmp    18024 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x74>
+   18076:	cs nopw 0x0(%rax,%rax,1)
+   18080:	mov    %rcx,%r10
+   18083:	xor    %edx,%edx
+   18085:	vmovsd 0x346eb(%rip),%xmm4        # 4c778 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6b8>
+   1808d:	not    %r10
+   18090:	shr    $0x3f,%r10
+   18094:	jmp    180b7 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x107>
+   18096:	cs nopw 0x0(%rax,%rax,1)
+   180a0:	vaddsd %xmm2,%xmm0,%xmm0
+   180a4:	vmulsd %xmm1,%xmm0,%xmm0
+   180a8:	vmovsd %xmm0,(%r9,%rdx,8)
+   180ae:	inc    %rdx
+   180b1:	cmp    $0xa,%rdx
+   180b5:	je     18110 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x160>
+   180b7:	movslq (%rsi,%rdx,4),%r11
+   180bb:	test   %r11,%r11
+   180be:	js     18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   180c4:	mov    0x8(%rdi),%rax
+   180c8:	cmp    %rax,%r11
+   180cb:	jge    18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   180d1:	test   %r10b,%r10b
+   180d4:	je     18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   180da:	cmp    0x10(%rdi),%rcx
+   180de:	jge    18677 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6c7>
+   180e4:	imul   %rcx,%rax
+   180e8:	add    %r11,%rax
+   180eb:	mov    (%rdi),%r11
+   180ee:	vmovsd (%r11,%rax,8),%xmm0
+   180f4:	cmp    %edx,%r12d
+   180f7:	jne    180a0 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0xf0>
+   180f9:	vaddsd %xmm3,%xmm0,%xmm0
+   180fd:	vmulsd %xmm4,%xmm0,%xmm0
+   18101:	vmovsd %xmm0,(%r9,%rdx,8)
+   18107:	inc    %rdx
+   1810a:	cmp    $0xa,%rdx
+   1810e:	jne    180b7 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x107>
+   18110:	inc    %r12
+   18113:	add    $0x50,%r9
+   18117:	cmp    $0xa,%r12
+   1811b:	jne    18000 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x50>
+   18121:	lea    -0x390(%rbp),%r14
+   18128:	mov    $0x320,%edx
+   1812d:	mov    %r8,%rsi
+   18130:	mov    %r14,%rdi
+   18133:	mov    %r14,%r13
+   18136:	call   3680 <memcpy@plt>
+   1813b:	vmovapd -0x6b0(%rbp),%ymm6
+   18143:	vmovapd -0x610(%rbp),%ymm5
+   1814b:	vmovapd -0x4f0(%rbp),%ymm7
+   18153:	movb   $0x0,-0x68(%rbp)
+   18157:	mov    %r14,%rcx
+   1815a:	mov    %r14,%rdx
+   1815d:	xor    %eax,%eax
+   1815f:	mov    $0x11,%edi
+   18164:	vmovapd %ymm6,-0x390(%rbp)
+   1816c:	vmovapd -0x690(%rbp),%ymm6
+   18174:	vmovapd %ymm5,-0x2f0(%rbp)
+   1817c:	vmovapd -0x5d0(%rbp),%ymm5
+   18184:	vmovapd %ymm7,-0x1d0(%rbp)
+   1818c:	vmovapd %ymm6,-0x370(%rbp)
+   18194:	vmovapd -0x670(%rbp),%ymm6
+   1819c:	vmovapd %ymm5,-0x2b0(%rbp)
+   181a4:	vmovapd -0x590(%rbp),%ymm5
+   181ac:	vmovapd %ymm6,-0x350(%rbp)
+   181b4:	vmovapd -0x650(%rbp),%ymm6
+   181bc:	vmovapd %ymm5,-0x270(%rbp)
+   181c4:	vmovapd -0x550(%rbp),%ymm5
+   181cc:	vmovapd %ymm6,-0x330(%rbp)
+   181d4:	vmovapd -0x630(%rbp),%ymm6
+   181dc:	vmovapd %ymm5,-0x230(%rbp)
+   181e4:	vmovapd -0x510(%rbp),%ymm5
+   181ec:	vmovapd %ymm6,-0x310(%rbp)
+   181f4:	vmovapd -0x5f0(%rbp),%ymm6
+   181fc:	vmovapd %ymm5,-0x1f0(%rbp)
+   18204:	vmovapd %ymm6,-0x2d0(%rbp)
+   1820c:	vmovapd -0x5b0(%rbp),%ymm6
+   18214:	vmovapd %ymm6,-0x290(%rbp)
+   1821c:	vmovapd -0x570(%rbp),%ymm6
+   18224:	vmovapd %ymm6,-0x250(%rbp)
+   1822c:	vmovapd -0x530(%rbp),%ymm6
+   18234:	vmovapd %ymm6,-0x210(%rbp)
+   1823c:	vmovapd -0x4d0(%rbp),%ymm6
+   18244:	vmovapd %ymm6,-0x1b0(%rbp)
+   1824c:	vmovapd -0x4b0(%rbp),%ymm3
+   18254:	vmovapd -0x490(%rbp),%ymm5
+   1825c:	vmovapd -0x470(%rbp),%ymm7
+   18264:	vmovapd -0x450(%rbp),%ymm6
+   1826c:	vmovdqa32 0x340ca(%rip),%zmm8        # 4c340 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x280>
+   18276:	movq   $0x0,-0x70(%rbp)
+   1827e:	vmovapd %ymm3,-0x190(%rbp)
+   18286:	vmovapd -0x430(%rbp),%ymm3
+   1828e:	vmovapd %ymm5,-0x170(%rbp)
+   18296:	vmovapd -0x410(%rbp),%ymm5
+   1829e:	vmovapd %ymm7,-0x150(%rbp)
+   182a6:	vmovapd -0x3f0(%rbp),%ymm7
+   182ae:	vmovapd %ymm6,-0x130(%rbp)
+   182b6:	vmovapd -0x3d0(%rbp),%ymm6
+   182be:	vmovapd %ymm3,-0x110(%rbp)
+   182c6:	vmovapd -0x3b0(%rbp),%ymm3
+   182ce:	vmovapd %ymm5,-0xf0(%rbp)
+   182d6:	vxorpd %xmm5,%xmm5,%xmm5
+   182da:	vmovapd %ymm7,-0xd0(%rbp)
+   182e2:	vmovapd %ymm6,-0xb0(%rbp)
+   182ea:	vmovapd %ymm3,-0x90(%rbp)
+   182f2:	vmovq  0x344d6(%rip),%xmm3        # 4c7d0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x710>
+   182fa:	vmovapd %xmm3,%xmm7
+   182fe:	vmovapd %xmm3,%xmm6
+   18302:	jmp    18391 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3e1>
+   18307:	nopw   0x0(%rax,%rax,1)
+   18310:	vpandd (%rcx),%zmm8,%zmm1
+   18316:	vmovapd %ymm1,%ymm0
+   1831a:	vextractf64x4 $0x1,%zmm1,%ymm1
+   18321:	vaddpd %ymm1,%ymm0,%ymm0
+   18325:	vperm2f128 $0x1,%ymm0,%ymm0,%ymm1
+   1832b:	vhaddpd %ymm1,%ymm0,%ymm0
+   1832f:	vhaddpd %ymm0,%ymm0,%ymm0
+   18333:	vmovapd %xmm0,%xmm1
+   18337:	cmp    $0x8,%r12
+   1833b:	jbe    1835d <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ad>
+   1833d:	vmovsd 0x40(%rcx),%xmm0
+   18342:	vandpd %xmm6,%xmm0,%xmm0
+   18346:	vaddsd %xmm0,%xmm1,%xmm1
+   1834a:	cmp    $0xa,%r12
+   1834e:	jne    1835d <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ad>
+   18350:	vmovsd 0x48(%rcx),%xmm0
+   18355:	vandpd %xmm6,%xmm0,%xmm0
+   18359:	vaddsd %xmm0,%xmm1,%xmm1
+   1835d:	vxorpd %xmm0,%xmm0,%xmm0
+   18361:	test   %rax,%rax
+   18364:	jne    18500 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x550>
+   1836a:	vaddsd %xmm1,%xmm0,%xmm0
+   1836e:	vcomisd %xmm5,%xmm0
+   18372:	jbe    1837d <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3cd>
+   18374:	vmovsd %xmm0,-0x70(%rbp)
+   18379:	vmovsd %xmm0,%xmm0,%xmm5
+   1837d:	inc    %rax
+   18380:	add    $0x8,%rdx
+   18384:	add    $0x58,%rcx
+   18388:	dec    %r12
+   1838b:	je     1851b <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x56b>
+   18391:	mov    %rdi,%rsi
+   18394:	sub    %rax,%rsi
+   18397:	cmp    $0xe,%rsi
+   1839b:	ja     18310 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x360>
+   183a1:	vmovsd (%rcx),%xmm1
+   183a5:	vmovapd %xmm3,%xmm2
+   183a9:	vandpd %xmm3,%xmm1,%xmm1
+   183ad:	cmp    $0x1,%r12
+   183b1:	je     18580 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x5d0>
+   183b7:	vmovsd 0x8(%rcx),%xmm0
+   183bc:	vandpd %xmm3,%xmm0,%xmm0
+   183c0:	vaddsd %xmm0,%xmm1,%xmm1
+   183c4:	cmp    $0x2,%r12
+   183c8:	je     18423 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x473>
+   183ca:	vmovsd 0x10(%rcx),%xmm0
+   183cf:	vandpd %xmm3,%xmm0,%xmm0
+   183d3:	vaddsd %xmm0,%xmm1,%xmm1
+   183d7:	cmp    $0x3,%r12
+   183db:	je     18423 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x473>
+   183dd:	vmovsd 0x18(%rcx),%xmm0
+   183e2:	vandpd %xmm3,%xmm0,%xmm0
+   183e6:	vaddsd %xmm0,%xmm1,%xmm1
+   183ea:	cmp    $0x4,%r12
+   183ee:	je     18423 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x473>
+   183f0:	vmovsd 0x20(%rcx),%xmm0
+   183f5:	vandpd %xmm3,%xmm0,%xmm0
+   183f9:	vaddsd %xmm0,%xmm1,%xmm1
+   183fd:	cmp    $0x5,%r12
+   18401:	je     18423 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x473>
+   18403:	vmovsd 0x28(%rcx),%xmm0
+   18408:	vandpd %xmm3,%xmm0,%xmm0
+   1840c:	vaddsd %xmm0,%xmm1,%xmm1
+   18410:	cmp    $0x6,%r12
+   18414:	je     18423 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x473>
+   18416:	vmovsd 0x30(%rcx),%xmm0
+   1841b:	vandpd %xmm3,%xmm0,%xmm0
+   1841f:	vaddsd %xmm0,%xmm1,%xmm1
+   18423:	vmovsd (%rdx),%xmm0
+   18427:	vandpd %xmm3,%xmm0,%xmm0
+   1842b:	vmovsd 0x50(%rdx),%xmm4
+   18430:	vandpd %xmm2,%xmm4,%xmm4
+   18434:	vaddsd %xmm4,%xmm0,%xmm0
+   18438:	cmp    $0x2,%rax
+   1843c:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   18442:	vmovsd 0xa0(%rdx),%xmm4
+   1844a:	vandpd %xmm2,%xmm4,%xmm4
+   1844e:	vaddsd %xmm4,%xmm0,%xmm0
+   18452:	cmp    $0x3,%rax
+   18456:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   1845c:	vmovsd 0xf0(%rdx),%xmm4
+   18464:	vandpd %xmm2,%xmm4,%xmm4
+   18468:	vaddsd %xmm4,%xmm0,%xmm0
+   1846c:	cmp    $0x4,%rax
+   18470:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   18476:	vmovsd 0x140(%rdx),%xmm4
+   1847e:	vandpd %xmm2,%xmm4,%xmm4
+   18482:	vaddsd %xmm4,%xmm0,%xmm0
+   18486:	cmp    $0x5,%rax
+   1848a:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   18490:	vmovsd 0x190(%rdx),%xmm4
+   18498:	vandpd %xmm2,%xmm4,%xmm4
+   1849c:	vaddsd %xmm4,%xmm0,%xmm0
+   184a0:	cmp    $0x6,%rax
+   184a4:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   184aa:	vmovsd 0x1e0(%rdx),%xmm4
+   184b2:	vandpd %xmm2,%xmm4,%xmm4
+   184b6:	vaddsd %xmm4,%xmm0,%xmm0
+   184ba:	cmp    $0x7,%rax
+   184be:	je     1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   184c4:	vmovsd 0x230(%rdx),%xmm4
+   184cc:	vandpd %xmm2,%xmm4,%xmm4
+   184d0:	vaddsd %xmm4,%xmm0,%xmm0
+   184d4:	cmp    $0x9,%rax
+   184d8:	jne    1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   184de:	vmovsd 0x280(%rdx),%xmm4
+   184e6:	vandpd %xmm2,%xmm4,%xmm2
+   184ea:	vaddsd %xmm2,%xmm0,%xmm0
+   184ee:	jmp    1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   184f3:	data16 cs nopw 0x0(%rax,%rax,1)
+   184fe:	xchg   %ax,%ax
+   18500:	vmovsd (%rdx),%xmm0
+   18504:	vmovapd %xmm3,%xmm2
+   18508:	vandpd %xmm7,%xmm0,%xmm0
+   1850c:	cmp    $0x2,%rax
+   18510:	jne    1836a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x3ba>
+   18516:	jmp    1842b <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x47b>
+   1851b:	mov    %r14,%rdi
+   1851e:	movb   $0x1,-0x68(%rbp)
+   18522:	vzeroupper
+   18525:	call   2a4f0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)>
+   1852a:	cmp    $0xffffffffffffffff,%rax
+   1852e:	je     1859a <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x5ea>
+   18530:	cmpb   $0x0,-0x68(%rbp)
+   18534:	movl   $0x1,-0x64(%rbp)
+   1853b:	je     186c6 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x716>
+   18541:	lea    -0x6d0(%rbp),%r12
+   18548:	lea    0x2ad41(%rip),%rsi        # 43290 <_IO_stdin_used+0x2290>
+   1854f:	mov    %r12,%rdi
+   18552:	call   f310 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .isra.0]>
+   18557:	mov    -0x38(%rbp),%rax
+   1855b:	sub    %fs:0x28,%rax
+   18564:	jne    186e5 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x735>
+   1856a:	mov    %r12,%rsi
+   1856d:	mov    %rbx,%rdi
+   18570:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   18575:	data16 cs nopw 0x0(%rax,%rax,1)
+   18580:	vmovsd 0x50(%rdx),%xmm0
+   18585:	vmovsd (%rdx),%xmm4
+   18589:	vandpd %xmm3,%xmm0,%xmm0
+   1858d:	vandpd %xmm3,%xmm4,%xmm4
+   18591:	vaddsd %xmm4,%xmm0,%xmm0
+   18595:	jmp    18442 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x492>
+   1859a:	cmpb   $0x0,-0x68(%rbp)
+   1859e:	movl   $0x0,-0x64(%rbp)
+   185a5:	je     186c6 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x716>
+   185ab:	add    $0x370,%r14
+   185b2:	movq   $0x0,-0x6d8(%rbp)
+   185bd:	nopl   (%rax)
+   185c0:	vmovsd 0x0(%r13),%xmm0
+   185c6:	vxorpd %xmm5,%xmm5,%xmm5
+   185ca:	vcomisd %xmm5,%xmm0
+   185ce:	jbe    4934 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&) [clone .cold]>
+   185d4:	vandpd 0x341f4(%rip),%xmm0,%xmm1        # 4c7d0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x710>
+   185dc:	vmovsd 0x34164(%rip),%xmm7        # 4c748 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x688>
+   185e4:	vucomisd %xmm1,%xmm7
+   185e8:	jb     4934 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&) [clone .cold]>
+   185ee:	add    $0x58,%r13
+   185f2:	call   3670 <log@plt>
+   185f7:	vaddsd -0x6d8(%rbp),%xmm0,%xmm7
+   185ff:	vmovsd %xmm7,-0x6d8(%rbp)
+   18607:	cmp    %r14,%r13
+   1860a:	jne    185c0 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x610>
+   1860c:	vmovsd %xmm7,%xmm7,%xmm5
+   18610:	vxorpd 0x341c8(%rip),%xmm5,%xmm0        # 4c7e0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x720>
+   18618:	call   38a0 <exp@plt>
+   1861d:	vmovsd 0x34123(%rip),%xmm7        # 4c748 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x688>
+   18625:	vucomisd %xmm0,%xmm7
+   18629:	jb     18696 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6e6>
+   1862b:	vcomisd 0x3414d(%rip),%xmm0        # 4c780 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6c0>
+   18633:	ja     18696 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x6e6>
+   18635:	vcomisd 0x33eb3(%rip),%xmm0        # 4c4f0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x430>
+   1863d:	jbe    1864e <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x69e>
+   1863f:	incq   0x88(%rbx)
+   18646:	vmovsd 0x33ea2(%rip),%xmm0        # 4c4f0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x430>
+   1864e:	mov    -0x38(%rbp),%rax
+   18652:	sub    %fs:0x28,%rax
+   1865b:	jne    186e5 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x735>
+   18661:	add    $0x6c8,%rsp
+   18668:	pop    %rbx
+   18669:	pop    %r10
+   1866b:	pop    %r12
+   1866d:	pop    %r13
+   1866f:	pop    %r14
+   18671:	pop    %rbp
+   18672:	lea    -0x8(%r10),%rsp
+   18676:	ret
+   18677:	lea    0x2aa92(%rip),%rcx        # 43110 <_IO_stdin_used+0x2110>
+   1867e:	mov    $0x76,%edx
+   18683:	lea    0x2a516(%rip),%rsi        # 42ba0 <_IO_stdin_used+0x1ba0>
+   1868a:	lea    0x2a5a7(%rip),%rdi        # 42c38 <_IO_stdin_used+0x1c38>
+   18691:	call   35f0 <__assert_fail@plt>
+   18696:	lea    -0x6d0(%rbp),%r12
+   1869d:	lea    0x2ac24(%rip),%rsi        # 432c8 <_IO_stdin_used+0x22c8>
+   186a4:	mov    %r12,%rdi
+   186a7:	call   f310 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .isra.0]>
+   186ac:	mov    -0x38(%rbp),%rax
+   186b0:	sub    %fs:0x28,%rax
+   186b9:	jne    186e5 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)+0x735>
+   186bb:	mov    %r12,%rsi
+   186be:	mov    %rbx,%rdi
+   186c1:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   186c6:	lea    0x2ac3b(%rip),%rcx        # 43308 <_IO_stdin_used+0x2308>
+   186cd:	mov    $0xc1,%edx
+   186d2:	lea    0x2a977(%rip),%rsi        # 43050 <_IO_stdin_used+0x2050>
+   186d9:	lea    0x2aa00(%rip),%rdi        # 430e0 <_IO_stdin_used+0x20e0>
+   186e0:	call   35f0 <__assert_fail@plt>
+   186e5:	call   36d0 <__stack_chk_fail@plt>
+   186ea:	endbr64
+   186ee:	mov    %rax,%rbx
+   186f1:	jmp    49b1 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&) [clone .cold]+0x7d>
+   186f6:	endbr64
+   186fa:	mov    %rax,%rbx
+   186fd:	jmp    49b1 <double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&) [clone .cold]+0x7d>
+   18702:	data16 cs nopw 0x0(%rax,%rax,1)
+   1870d:	nopl   (%rax)
+
+
+000000000001bd50 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)>:
+   1bd50:	lea    0x8(%rsp),%r10
+   1bd55:	and    $0xffffffffffffffe0,%rsp
+   1bd59:	push   -0x8(%r10)
+   1bd5d:	push   %rbp
+   1bd5e:	mov    %rsp,%rbp
+   1bd61:	push   %r15
+   1bd63:	push   %r14
+   1bd65:	push   %r13
+   1bd67:	push   %r12
+   1bd69:	push   %r10
+   1bd6b:	push   %rbx
+   1bd6c:	sub    $0x1000,%rsp
+   1bd73:	orq    $0x0,(%rsp)
+   1bd78:	sub    $0x1000,%rsp
+   1bd7f:	orq    $0x0,(%rsp)
+   1bd84:	sub    $0x280,%rsp
+   1bd8b:	mov    (%r10),%rax
+   1bd8e:	mov    %rdi,-0x2290(%rbp)
+   1bd95:	mov    0x8(%r10),%edi
+   1bd99:	mov    %rsi,-0x2240(%rbp)
+   1bda0:	movzbl (%r9),%esi
+   1bda4:	mov    %rdx,%r12
+   1bda7:	lea    0x20(%r9),%rdx
+   1bdab:	mov    %ecx,%r14d
+   1bdae:	mov    %r8,%r15
+   1bdb1:	mov    %rax,-0x2278(%rbp)
+   1bdb8:	mov    0x10(%r10),%rax
+   1bdbc:	mov    %edi,-0x2254(%rbp)
+   1bdc2:	mov    %rax,-0x2260(%rbp)
+   1bdc9:	mov    %fs:0x28,%rax
+   1bdd2:	mov    %rax,-0x38(%rbp)
+   1bdd6:	xor    %eax,%eax
+   1bdd8:	mov    %sil,-0x2255(%rbp)
+   1bddf:	mov    %sil,-0x2230(%rbp)
+   1bde6:	lea    0x18(%r9),%rax
+   1bdea:	cmp    $0x1,%edi
+   1bded:	cmovne %rdx,%rax
+   1bdf1:	mov    %rax,-0x2298(%rbp)
+   1bdf8:	mov    %rax,-0x2228(%rbp)
+   1bdff:	test   %sil,%sil
+   1be02:	jne    1c3c0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x670>
+   1be08:	movq   $0x0,-0x2220(%rbp)
+   1be13:	mov    0x8(%r12),%rbx
+   1be18:	movq   $0x0,-0x2210(%rbp)
+   1be23:	movq   $0x0,-0x2208(%rbp)
+   1be2e:	movq   $0x0,-0x2200(%rbp)
+   1be39:	sub    (%r12),%rbx
+   1be3d:	mov    %rbx,-0x2238(%rbp)
+   1be44:	je     1c250 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x500>
+   1be4a:	movabs $0x7ffffffffffffffc,%rax
+   1be54:	cmp    %rbx,%rax
+   1be57:	jb     1c99b <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc4b>
+   1be5d:	mov    %rbx,%rdi
+   1be60:	mov    %rbx,%r13
+   1be63:	call   36a0 <operator new(unsigned long)@plt>
+   1be68:	mov    (%r12),%rsi
+   1be6c:	mov    0x8(%r12),%rbx
+   1be71:	lea    (%rax,%r13,1),%rdi
+   1be75:	mov    %rax,-0x2250(%rbp)
+   1be7c:	mov    %rdi,-0x2288(%rbp)
+   1be83:	mov    %rdi,-0x2200(%rbp)
+   1be8a:	mov    %rax,-0x2210(%rbp)
+   1be91:	mov    %rax,%rdi
+   1be94:	sub    %rsi,%rbx
+   1be97:	lea    (%rax,%rbx,1),%r13
+   1be9b:	mov    %rbx,-0x2270(%rbp)
+   1bea2:	cmp    $0x4,%rbx
+   1bea6:	jle    1cae5 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xd95>
+   1beac:	mov    %rbx,%rdx
+   1beaf:	call   3830 <memmove@plt>
+   1beb4:	mov    %r13,-0x2208(%rbp)
+   1bebb:	cmp    %r13,-0x2288(%rbp)
+   1bec2:	je     1c560 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x810>
+   1bec8:	mov    %r14d,0x0(%r13)
+   1becc:	add    $0x4,%r13
+   1bed0:	mov    %r13,-0x2208(%rbp)
+   1bed7:	mov    -0x2250(%rbp),%rax
+   1bede:	mov    %r13,%rbx
+   1bee1:	sub    %rax,%rbx
+   1bee4:	mov    %rbx,%rax
+   1bee7:	sar    $0x2,%rax
+   1beeb:	mov    %rax,-0x2280(%rbp)
+   1bef2:	mov    -0x2278(%rbp),%rax
+   1bef9:	mov    0x38(%rax),%rdi
+   1befd:	mov    0x48(%rax),%rax
+   1bf01:	mov    %rax,-0x2238(%rbp)
+   1bf08:	sub    %rdi,%rax
+   1bf0b:	cmp    %rbx,%rax
+   1bf0e:	jb     1c4e0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x790>
+   1bf14:	mov    -0x2278(%rbp),%rax
+   1bf1b:	mov    0x40(%rax),%rax
+   1bf1f:	mov    %rax,%rdx
+   1bf22:	sub    %rdi,%rdx
+   1bf25:	cmp    %rbx,%rdx
+   1bf28:	jae    1c3f0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x6a0>
+   1bf2e:	cmp    $0x4,%rdx
+   1bf32:	jle    1ca53 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xd03>
+   1bf38:	mov    -0x2250(%rbp),%rsi
+   1bf3f:	call   3830 <memmove@plt>
+   1bf44:	mov    -0x2278(%rbp),%rsi
+   1bf4b:	mov    0x40(%rsi),%rax
+   1bf4f:	mov    0x38(%rsi),%rdi
+   1bf53:	mov    %rax,%rdx
+   1bf56:	sub    %rdi,%rdx
+   1bf59:	mov    -0x2250(%rbp),%rsi
+   1bf60:	add    %rdx,%rsi
+   1bf63:	mov    %r13,%rdx
+   1bf66:	sub    %rsi,%rdx
+   1bf69:	cmp    $0x4,%rdx
+   1bf6d:	jle    1ca69 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xd19>
+   1bf73:	mov    %rax,%rdi
+   1bf76:	call   3830 <memmove@plt>
+   1bf7b:	mov    -0x2278(%rbp),%rax
+   1bf82:	mov    0x38(%rax),%r14
+   1bf86:	add    %rbx,%r14
+   1bf89:	mov    %r14,0x40(%rax)
+   1bf8d:	cmp    $0x24,%rbx
+   1bf91:	ja     4f5c <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x73>
+   1bf97:	cmpl   $0x1,-0x2254(%rbp)
+   1bf9e:	je     1c3e0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x690>
+   1bfa4:	incq   (%r15)
+   1bfa7:	mov    0x8(%r12),%rax
+   1bfac:	lea    -0x2040(%rbp),%rbx
+   1bfb3:	xor    %esi,%esi
+   1bfb5:	mov    $0x2000,%edx
+   1bfba:	sub    (%r12),%rax
+   1bfbe:	mov    %rbx,%rdi
+   1bfc1:	mov    $0x1,%r14d
+   1bfc7:	mov    %rax,%r12
+   1bfca:	call   35b0 <memset@plt>
+   1bfcf:	mov    $0x2,%eax
+   1bfd4:	fld1
+   1bfd6:	sar    $0x2,%r12
+   1bfda:	fstpt  -0x2040(%rbp)
+   1bfe0:	shlx   %r12d,%eax,%esi
+   1bfe5:	shlx   %r12d,%r14d,%r14d
+   1bfea:	mov    %rsi,-0x2270(%rbp)
+   1bff1:	mov    $0x1,%r12d
+   1bff7:	cmp    $0x1,%esi
+   1bffa:	jbe    1c053 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x303>
+   1bffc:	nopl   0x0(%rax)
+   1c000:	sub    $0x8,%rsp
+   1c004:	mov    -0x2254(%rbp),%r9d
+   1c00b:	push   -0x2260(%rbp)
+   1c011:	mov    -0x2250(%rbp),%rsi
+   1c018:	mov    -0x2240(%rbp),%rdi
+   1c01f:	mov    %r15,%r8
+   1c022:	mov    %r12d,%ecx
+   1c025:	mov    %r13,%rdx
+   1c028:	call   1a780 <(anonymous namespace)::vacuum((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, unsigned int, (anonymous namespace)::Counters&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .isra.0]>
+   1c02d:	pop    %rax
+   1c02e:	mov    %r12,%rax
+   1c031:	pop    %rdx
+   1c032:	vmovsd %xmm0,-0x2238(%rbp)
+   1c03a:	shl    $0x4,%rax
+   1c03e:	fldl   -0x2238(%rbp)
+   1c044:	fstpt  (%rbx,%rax,1)
+   1c047:	inc    %r12
+   1c04a:	cmp    %r12,-0x2270(%rbp)
+   1c051:	jne    1c000 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x2b0>
+   1c053:	fldz
+   1c055:	mov    %r14d,%ecx
+   1c058:	xor    %eax,%eax
+   1c05a:	fld    %st(0)
+   1c05c:	fld    %st(1)
+   1c05e:	fld    %st(2)
+   1c060:	fld1
+   1c062:	fld    %st(0)
+   1c064:	fld    %st(1)
+   1c066:	fld1
+   1c068:	shl    $0x4,%rcx
+   1c06c:	fchs
+   1c06e:	fxch   %st(5)
+   1c070:	jmp    1c088 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x338>
+   1c072:	data16 cs nopw 0x0(%rax,%rax,1)
+   1c07d:	nopl   (%rax)
+   1c080:	fxch   %st(1)
+   1c082:	fxch   %st(2)
+   1c084:	fxch   %st(3)
+   1c086:	fxch   %st(6)
+   1c088:	faddp  %st,%st(2)
+   1c08a:	fldt   (%rbx,%rcx,1)
+   1c08d:	inc    %eax
+   1c08f:	add    $0x10,%rbx
+   1c093:	fmul   %st,%st(1)
+   1c095:	fxch   %st(6)
+   1c097:	faddp  %st,%st(1)
+   1c099:	fxch   %st(2)
+   1c09b:	fabs
+   1c09d:	faddp  %st,%st(3)
+   1c09f:	fxch   %st(4)
+   1c0a1:	fabs
+   1c0a3:	faddp  %st,%st(5)
+   1c0a5:	cmp    %eax,%r14d
+   1c0a8:	je     1c0d0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x380>
+   1c0aa:	fldt   (%rbx)
+   1c0ac:	popcnt %eax,%edx
+   1c0b0:	and    $0x1,%edx
+   1c0b3:	fld    %st(0)
+   1c0b5:	fchs
+   1c0b7:	fld    %st(4)
+   1c0b9:	jne    1c080 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x330>
+   1c0bb:	ffreep %st(0)
+   1c0bd:	ffreep %st(0)
+   1c0bf:	fld    %st(0)
+   1c0c1:	fld1
+   1c0c3:	fxch   %st(1)
+   1c0c5:	fxch   %st(2)
+   1c0c7:	fxch   %st(3)
+   1c0c9:	fxch   %st(6)
+   1c0cb:	jmp    1c088 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x338>
+   1c0cd:	nopl   (%rax)
+   1c0d0:	fstp   %st(2)
+   1c0d2:	fxch   %st(1)
+   1c0d4:	mov    -0x2240(%rbp),%rsi
+   1c0db:	mov    -0x2280(%rbp),%eax
+   1c0e1:	mov    $0x1,%edx
+   1c0e6:	vxorps %xmm1,%xmm1,%xmm1
+   1c0ea:	add    0x430(%rsi),%eax
+   1c0f0:	test   %eax,%eax
+   1c0f2:	cmovle %edx,%eax
+   1c0f5:	vcvtsi2sd %eax,%xmm1,%xmm0
+   1c0f9:	vmulsd 0x30687(%rip),%xmm0,%xmm7        # 4c788 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6c8>
+   1c101:	vmovsd %xmm7,-0x2238(%rbp)
+   1c109:	fldl   -0x2238(%rbp)
+   1c10f:	fld    %st(0)
+   1c111:	mov    -0x2278(%rbp),%rax
+   1c118:	fmulp  %st,%st(5)
+   1c11a:	fxch   %st(3)
+   1c11c:	fstl   -0x2238(%rbp)
+   1c122:	vmovsd -0x2238(%rbp),%xmm0
+   1c12a:	vmovsd %xmm0,0x58(%rax)
+   1c12f:	fldz
+   1c131:	fld    %st(0)
+   1c133:	fcomip %st(3),%st
+   1c135:	ja     1c300 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x5b0>
+   1c13b:	ffreep %st(0)
+   1c13d:	fldz
+   1c13f:	fxch   %st(1)
+   1c141:	fcomi  %st(1),%st
+   1c143:	jbe    1c330 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x5e0>
+   1c149:	fdivr  %st,%st(2)
+   1c14b:	mov    -0x2278(%rbp),%rax
+   1c152:	fld    %st(2)
+   1c154:	fabs
+   1c156:	fxch   %st(5)
+   1c158:	fmulp  %st,%st(4)
+   1c15a:	fxch   %st(3)
+   1c15c:	fmul   %st(4),%st
+   1c15e:	faddp  %st,%st(5)
+   1c160:	fxch   %st(4)
+   1c162:	fdivp  %st,%st(2)
+   1c164:	fxch   %st(1)
+   1c166:	fstpl  -0x2238(%rbp)
+   1c16c:	fldt   0x306be(%rip)        # 4c830 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x770>
+   1c172:	vmovsd -0x2238(%rbp),%xmm6
+   1c17a:	vmovsd %xmm6,0x50(%rax)
+   1c17f:	fucomip %st(2),%st
+   1c181:	fstp   %st(1)
+   1c183:	vmaxsd 0xd0(%r15),%xmm6,%xmm2
+   1c18c:	vmovsd %xmm2,0xd0(%r15)
+   1c195:	vminsd 0xe8(%r15),%xmm0,%xmm2
+   1c19e:	vmovsd %xmm2,0xe8(%r15)
+   1c1a7:	jb     1c1d0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x480>
+   1c1a9:	vandpd 0x3061f(%rip),%xmm6,%xmm2        # 4c7d0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x710>
+   1c1b1:	vmovsd 0x3058f(%rip),%xmm3        # 4c748 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x688>
+   1c1b9:	vucomisd %xmm2,%xmm3
+   1c1bd:	jae    1c420 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x6d0>
+   1c1c3:	ffreep %st(0)
+   1c1c5:	ffreep %st(0)
+   1c1c7:	jmp    1c1d4 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x484>
+   1c1c9:	nopl   0x0(%rax)
+   1c1d0:	ffreep %st(0)
+   1c1d2:	ffreep %st(0)
+   1c1d4:	lea    -0x21c0(%rbp),%rax
+   1c1db:	mov    $0x3c,%edi
+   1c1e0:	mov    %rax,-0x21d0(%rbp)
+   1c1e7:	call   36a0 <operator new(unsigned long)@plt>
+   1c1ec:	vmovdqa 0x3036c(%rip),%ymm5        # 4c560 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x4a0>
+   1c1f4:	vmovdqa 0x30384(%rip),%ymm4        # 4c580 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x4c0>
+   1c1fc:	mov    %rax,-0x21d0(%rbp)
+   1c203:	movq   $0x3b,-0x21c0(%rbp)
+   1c20e:	movq   $0x3b,-0x21c8(%rbp)
+   1c219:	movb   $0x0,0x3b(%rax)
+   1c21d:	vmovdqu %ymm5,(%rax)
+   1c221:	vmovdqu %ymm4,0x1b(%rax)
+   1c226:	mov    -0x38(%rbp),%rax
+   1c22a:	sub    %fs:0x28,%rax
+   1c233:	jne    1ccc2 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xf72>
+   1c239:	lea    -0x21d0(%rbp),%r12
+   1c240:	mov    %r15,%rdi
+   1c243:	mov    %r12,%rsi
+   1c246:	vzeroupper
+   1c249:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   1c24e:	xchg   %ax,%ax
+   1c250:	movq   $0x0,-0x2210(%rbp)
+   1c25b:	movq   $0x0,-0x2200(%rbp)
+   1c266:	movq   $0x0,-0x2208(%rbp)
+   1c271:	movq   $0x0,-0x2270(%rbp)
+   1c27c:	movq   $0x0,-0x2280(%rbp)
+   1c287:	mov    $0x4,%r13d
+   1c28d:	mov    %r13,%rdi
+   1c290:	call   36a0 <operator new(unsigned long)@plt>
+   1c295:	mov    %rax,-0x2250(%rbp)
+   1c29c:	add    %r13,%rax
+   1c29f:	mov    %rax,-0x2288(%rbp)
+   1c2a6:	mov    -0x2250(%rbp),%rax
+   1c2ad:	mov    -0x2270(%rbp),%rdx
+   1c2b4:	vmovq  %rax,%xmm4
+   1c2b9:	lea    0x4(%rax,%rdx,1),%r13
+   1c2be:	mov    %r14d,(%rax,%rdx,1)
+   1c2c2:	vpinsrq $0x1,%r13,%xmm4,%xmm0
+   1c2c8:	test   %rbx,%rbx
+   1c2cb:	jg     1c660 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x910>
+   1c2d1:	cmpq   $0x0,-0x2280(%rbp)
+   1c2d9:	jne    1c67f <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x92f>
+   1c2df:	mov    -0x2288(%rbp),%rax
+   1c2e6:	vmovdqa %xmm0,-0x2210(%rbp)
+   1c2ee:	mov    %rax,-0x2200(%rbp)
+   1c2f5:	jmp    1bed7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x187>
+   1c2fa:	nopw   0x0(%rax,%rax,1)
+   1c300:	fxch   %st(2)
+   1c302:	fchs
+   1c304:	fcomip %st(5),%st
+   1c306:	ja     1c5d0 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x880>
+   1c30c:	incq   0x70(%r15)
+   1c310:	fldz
+   1c312:	fxch   %st(1)
+   1c314:	fcomi  %st(1),%st
+   1c316:	ja     1c149 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x3f9>
+   1c31c:	ffreep %st(0)
+   1c31e:	ffreep %st(0)
+   1c320:	ffreep %st(0)
+   1c322:	ffreep %st(0)
+   1c324:	ffreep %st(0)
+   1c326:	ffreep %st(0)
+   1c328:	jmp    1c33c <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x5ec>
+   1c32a:	nopw   0x0(%rax,%rax,1)
+   1c330:	ffreep %st(0)
+   1c332:	ffreep %st(0)
+   1c334:	ffreep %st(0)
+   1c336:	ffreep %st(0)
+   1c338:	ffreep %st(0)
+   1c33a:	ffreep %st(0)
+   1c33c:	lea    -0x21c0(%rbp),%rax
+   1c343:	mov    $0x44,%edi
+   1c348:	mov    %rax,-0x21d0(%rbp)
+   1c34f:	call   36a0 <operator new(unsigned long)@plt>
+   1c354:	vmovdqa64 0x30022(%rip),%zmm3        # 4c380 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x2c0>
+   1c35e:	mov    %rax,-0x21d0(%rbp)
+   1c365:	movq   $0x43,-0x21c0(%rbp)
+   1c370:	movq   $0x43,-0x21c8(%rbp)
+   1c37b:	movb   $0x0,0x43(%rax)
+   1c37f:	vmovdqu64 %zmm3,(%rax)
+   1c385:	movl   $0x7974696c,0x3f(%rax)
+   1c38c:	mov    -0x38(%rbp),%rax
+   1c390:	sub    %fs:0x28,%rax
+   1c399:	jne    1ccc2 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xf72>
+   1c39f:	lea    -0x21d0(%rbp),%r12
+   1c3a6:	mov    %r15,%rdi
+   1c3a9:	mov    %r12,%rsi
+   1c3ac:	vzeroupper
+   1c3af:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   1c3b4:	data16 cs nopw 0x0(%rax,%rax,1)
+   1c3bf:	nop
+   1c3c0:	call   3780 <std::chrono::_V2::steady_clock::now()@plt>
+   1c3c5:	mov    %rax,-0x2220(%rbp)
+   1c3cc:	jmp    1be13 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc3>
+   1c3d1:	data16 cs nopw 0x0(%rax,%rax,1)
+   1c3dc:	nopl   0x0(%rax)
+   1c3e0:	incq   0x20(%r15)
+   1c3e4:	jmp    1bfa7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x257>
+   1c3e9:	nopl   0x0(%rax)
+   1c3f0:	cmp    $0x4,%rbx
+   1c3f4:	jle    1c9c8 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc78>
+   1c3fa:	mov    -0x2250(%rbp),%rsi
+   1c401:	mov    %rbx,%rdx
+   1c404:	call   3830 <memmove@plt>
+   1c409:	mov    -0x2278(%rbp),%rax
+   1c410:	mov    0x38(%rax),%r14
+   1c414:	add    %rbx,%r14
+   1c417:	jmp    1bf89 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x239>
+   1c41c:	nopl   0x0(%rax)
+   1c420:	vcomisd 0x30368(%rip),%xmm6        # 4c790 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6d0>
+   1c428:	ja     1c6a7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x957>
+   1c42e:	fxch   %st(1)
+   1c430:	fcomip %st(1),%st
+   1c432:	ja     1c909 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xbb9>
+   1c438:	fld1
+   1c43a:	fxch   %st(1)
+   1c43c:	fcomi  %st(1),%st
+   1c43e:	jbe    1c9b3 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc63>
+   1c444:	fsubp  %st,%st(1)
+   1c446:	fldl   -0x2238(%rbp)
+   1c44c:	fxch   %st(1)
+   1c44e:	vxorpd %xmm2,%xmm2,%xmm2
+   1c452:	fcomip %st(1),%st
+   1c454:	ffreep %st(0)
+   1c456:	jbe    1c925 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xbd5>
+   1c45c:	lea    -0x21c0(%rbp),%rax
+   1c463:	mov    $0x40,%edi
+   1c468:	mov    %rax,-0x21d0(%rbp)
+   1c46f:	call   36a0 <operator new(unsigned long)@plt>
+   1c474:	vmovdqa 0x30124(%rip),%ymm3        # 4c5a0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x4e0>
+   1c47c:	vmovdqa 0x3013c(%rip),%ymm4        # 4c5c0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x500>
+   1c484:	mov    %rax,-0x21d0(%rbp)
+   1c48b:	movq   $0x3f,-0x21c0(%rbp)
+   1c496:	movq   $0x3f,-0x21c8(%rbp)
+   1c4a1:	movb   $0x0,0x3f(%rax)
+   1c4a5:	vmovdqu %ymm3,(%rax)
+   1c4a9:	vmovdqu %ymm4,0x1f(%rax)
+   1c4ae:	mov    -0x38(%rbp),%rax
+   1c4b2:	sub    %fs:0x28,%rax
+   1c4bb:	jne    1ccc2 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xf72>
+   1c4c1:	lea    -0x21d0(%rbp),%r12
+   1c4c8:	mov    %r15,%rdi
+   1c4cb:	mov    %r12,%rsi
+   1c4ce:	vzeroupper
+   1c4d1:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   1c4d6:	cs nopw 0x0(%rax,%rax,1)
+   1c4e0:	movabs $0x7ffffffffffffffc,%rax
+   1c4ea:	cmp    %rbx,%rax
+   1c4ed:	jb     1cb5a <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe0a>
+   1c4f3:	mov    %rbx,%rdi
+   1c4f6:	call   36a0 <operator new(unsigned long)@plt>
+   1c4fb:	mov    %rax,%r14
+   1c4fe:	cmp    $0x4,%rbx
+   1c502:	je     1cb49 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xdf9>
+   1c508:	mov    -0x2250(%rbp),%rsi
+   1c50f:	mov    %rbx,%rdx
+   1c512:	mov    %rax,%rdi
+   1c515:	call   3680 <memcpy@plt>
+   1c51a:	mov    -0x2278(%rbp),%rax
+   1c521:	mov    0x38(%rax),%rdi
+   1c525:	test   %rdi,%rdi
+   1c528:	je     1c540 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x7f0>
+   1c52a:	mov    0x48(%rax),%rax
+   1c52e:	mov    %rax,%rsi
+   1c531:	mov    %rax,-0x2238(%rbp)
+   1c538:	sub    %rdi,%rsi
+   1c53b:	call   36b0 <operator delete(void*, unsigned long)@plt>
+   1c540:	mov    -0x2278(%rbp),%rax
+   1c547:	mov    %r14,0x38(%rax)
+   1c54b:	add    %rbx,%r14
+   1c54e:	mov    %r14,0x48(%rax)
+   1c552:	jmp    1bf89 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x239>
+   1c557:	nopw   0x0(%rax,%rax,1)
+   1c560:	movabs $0x7ffffffffffffffc,%rax
+   1c56a:	cmp    %rax,%rbx
+   1c56d:	je     1cbbc <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe6c>
+   1c573:	mov    -0x2250(%rbp),%rdi
+   1c57a:	mov    %rbx,%rdx
+   1c57d:	mov    %rax,%r13
+   1c580:	sar    $0x2,%rdx
+   1c584:	lea    (%rdx,%rdx,1),%rcx
+   1c588:	mov    %rdi,-0x2280(%rbp)
+   1c58f:	cmp    %rdx,%rcx
+   1c592:	jb     1c28d <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x53d>
+   1c598:	movabs $0x1fffffffffffffff,%rax
+   1c5a2:	cmp    %rax,%rcx
+   1c5a5:	cmova  %rax,%rcx
+   1c5a9:	mov    -0x2250(%rbp),%rax
+   1c5b0:	lea    0x0(,%rcx,4),%r13
+   1c5b8:	mov    %rax,-0x2280(%rbp)
+   1c5bf:	jmp    1c28d <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x53d>
+   1c5c4:	data16 cs nopw 0x0(%rax,%rax,1)
+   1c5cf:	nop
+   1c5d0:	ffreep %st(0)
+   1c5d2:	ffreep %st(0)
+   1c5d4:	ffreep %st(0)
+   1c5d6:	ffreep %st(0)
+   1c5d8:	ffreep %st(0)
+   1c5da:	lea    -0x21c0(%rbp),%rax
+   1c5e1:	mov    $0x36,%edi
+   1c5e6:	mov    %rax,-0x21d0(%rbp)
+   1c5ed:	call   36a0 <operator new(unsigned long)@plt>
+   1c5f2:	vmovdqa 0x2ff26(%rip),%ymm3        # 4c520 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x460>
+   1c5fa:	vmovdqa 0x2ff3e(%rip),%ymm5        # 4c540 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x480>
+   1c602:	mov    %rax,-0x21d0(%rbp)
+   1c609:	movq   $0x35,-0x21c0(%rbp)
+   1c614:	movq   $0x35,-0x21c8(%rbp)
+   1c61f:	movb   $0x0,0x35(%rax)
+   1c623:	vmovdqu %ymm3,(%rax)
+   1c627:	vmovdqu %ymm5,0x15(%rax)
+   1c62c:	mov    -0x38(%rbp),%rax
+   1c630:	sub    %fs:0x28,%rax
+   1c639:	jne    1ccc2 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xf72>
+   1c63f:	lea    -0x21d0(%rbp),%r12
+   1c646:	mov    %r15,%rdi
+   1c649:	mov    %r12,%rsi
+   1c64c:	vzeroupper
+   1c64f:	call   3900 <(anonymous namespace)::Counters::fail(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+   1c654:	data16 cs nopw 0x0(%rax,%rax,1)
+   1c65f:	nop
+   1c660:	mov    -0x2280(%rbp),%rsi
+   1c667:	mov    %rax,%rdi
+   1c66a:	vmovdqa %xmm0,-0x2270(%rbp)
+   1c672:	call   3680 <memcpy@plt>
+   1c677:	vmovdqa -0x2270(%rbp),%xmm0
+   1c67f:	mov    -0x2238(%rbp),%rsi
+   1c686:	mov    -0x2280(%rbp),%rdi
+   1c68d:	vmovdqa %xmm0,-0x2270(%rbp)
+   1c695:	call   36b0 <operator delete(void*, unsigned long)@plt>
+   1c69a:	vmovdqa -0x2270(%rbp),%xmm0
+   1c6a2:	jmp    1c2df <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x58f>
+   1c6a7:	ffreep %st(0)
+   1c6a9:	ffreep %st(0)
+   1c6ab:	lea    0x342be(%rip),%rax        # 50970 <vtable for std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@GLIBCXX_3.4.21+0x18>
+   1c6b2:	lea    -0x2160(%rbp),%r12
+   1c6b9:	lea    -0x21d0(%rbp),%rbx
+   1c6c0:	lea    0x34169(%rip),%r13        # 50830 <vtable for std::basic_ios<char, std::char_traits<char> >@GLIBCXX_3.4+0x10>
+   1c6c7:	vmovq  %rax,%xmm0
+   1c6cc:	lea    0x341cd(%rip),%rax        # 508a0 <vtable for std::basic_streambuf<char, std::char_traits<char> >@GLIBCXX_3.4+0x10>
+   1c6d3:	mov    %r12,%rdi
+   1c6d6:	vpinsrq $0x1,%rax,%xmm0,%xmm5
+   1c6dc:	vmovdqa %xmm5,-0x2250(%rbp)
+   1c6e4:	call   34f0 <std::ios_base::ios_base()@plt>
+   1c6e9:	mov    0x342c0(%rip),%rax        # 509b0 <VTT for std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@GLIBCXX_3.4.21+0x8>
+   1c6f0:	movw   $0x0,-0x2080(%rbp)
+   1c6f9:	vpxor  %xmm0,%xmm0,%xmm0
+   1c6fd:	vmovdqu %ymm0,-0x2078(%rbp)
+   1c705:	xor    %esi,%esi
+   1c707:	mov    %r13,-0x2160(%rbp)
+   1c70e:	movq   $0x0,-0x2088(%rbp)
+   1c719:	mov    -0x18(%rax),%rdi
+   1c71d:	mov    %rax,-0x21d0(%rbp)
+   1c724:	mov    0x3428d(%rip),%rax        # 509b8 <VTT for std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@GLIBCXX_3.4.21+0x10>
+   1c72b:	add    %rbx,%rdi
+   1c72e:	mov    %rax,(%rdi)
+   1c731:	vzeroupper
+   1c734:	call   37a0 <std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@plt>
+   1c739:	vmovdqa -0x2250(%rbp),%xmm5
+   1c741:	lea    0x34250(%rip),%rax        # 50998 <vtable for std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@GLIBCXX_3.4.21+0x40>
+   1c748:	vpxor  %xmm0,%xmm0,%xmm0
+   1c74c:	vmovdqu %ymm0,-0x21c0(%rbp)
+   1c754:	mov    %rax,-0x2160(%rbp)
+   1c75b:	lea    -0x2190(%rbp),%rax
+   1c762:	lea    0x34317(%rip),%r14        # 50a80 <vtable for std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >@GLIBCXX_3.4.21+0x10>
+   1c769:	movq   $0x0,-0x21a0(%rbp)
+   1c774:	mov    %rax,%rdi
+   1c777:	mov    %rax,-0x2250(%rbp)
+   1c77e:	movq   $0x0,-0x2198(%rbp)
+   1c789:	vmovdqa %xmm5,-0x21d0(%rbp)
+   1c791:	vzeroupper
+   1c794:	call   38f0 <std::locale::locale()@plt>
+   1c799:	lea    -0x2170(%rbp),%rax
+   1c7a0:	lea    -0x21c8(%rbp),%rsi
+   1c7a7:	mov    %r12,%rdi
+   1c7aa:	mov    %r14,-0x21c8(%rbp)
+   1c7b1:	movl   $0x10,-0x2188(%rbp)
+   1c7bb:	mov    %rax,-0x2180(%rbp)
+   1c7c2:	movq   $0x0,-0x2178(%rbp)
+   1c7cd:	movb   $0x0,-0x2170(%rbp)
+   1c7d4:	call   37a0 <std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@plt>
+   1c7d9:	mov    $0x29,%edx
+   1c7de:	lea    0x26e83(%rip),%rsi        # 43668 <_IO_stdin_used+0x2668>
+   1c7e5:	mov    %rbx,%rdi
+   1c7e8:	call   36f0 <std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@plt>
+   1c7ed:	mov    -0x21d0(%rbp),%rax
+   1c7f4:	mov    %rbx,%rdi
+   1c7f7:	vmovsd -0x2238(%rbp),%xmm0
+   1c7ff:	mov    -0x18(%rax),%rax
+   1c803:	movq   $0x11,-0x21c8(%rbp,%rax,1)
+   1c80f:	call   3810 <std::ostream& std::ostream::_M_insert<double>(double)@plt>
+   1c814:	mov    $0x9,%edx
+   1c819:	lea    0x24bc3(%rip),%rsi        # 413e3 <_IO_stdin_used+0x3e3>
+   1c820:	mov    %rax,%rdi
+   1c823:	mov    %rax,%r12
+   1c826:	call   36f0 <std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@plt>
+   1c82b:	mov    %r12,%rdi
+   1c82e:	vmovsd 0x2ff5a(%rip),%xmm0        # 4c790 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6d0>
+   1c836:	call   3810 <std::ostream& std::ostream::_M_insert<double>(double)@plt>
+   1c83b:	mov    -0x21a0(%rbp),%r12
+   1c842:	lea    -0x21e0(%rbp),%r13
+   1c849:	movq   $0x0,-0x21e8(%rbp)
+   1c854:	movb   $0x0,-0x21e0(%rbp)
+   1c85b:	mov    %r13,-0x21f0(%rbp)
+   1c862:	test   %r12,%r12
+   1c865:	je     1c9de <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc8e>
+   1c86b:	mov    -0x21b0(%rbp),%rax
+   1c872:	mov    -0x21a8(%rbp),%r14
+   1c879:	mov    %r12,%rdx
+   1c87c:	cmp    %r12,%rax
+   1c87f:	cmovae %rax,%r12
+   1c883:	test   %rax,%rax
+   1c886:	cmove  %rdx,%r12
+   1c88a:	sub    %r14,%r12
+   1c88d:	js     1cb8e <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe3e>
+   1c893:	cmp    $0xf,%r12
+   1c897:	jbe    5089 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x1a0>
+   1c89d:	cmp    $0x1d,%r12
+   1c8a1:	ja     1ca78 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xd28>
+   1c8a7:	mov    $0x1f,%edi
+   1c8ac:	movq   $0x1e,-0x2250(%rbp)
+   1c8b7:	lea    -0x21f0(%rbp),%rax
+   1c8be:	mov    %rax,-0x2238(%rbp)
+   1c8c5:	call   36a0 <operator new(unsigned long)@plt>
+   1c8ca:	mov    %rax,-0x2238(%rbp)
+   1c8d1:	test   %r14,%r14
+   1c8d4:	je     1c8e4 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xb94>
+   1c8d6:	mov    %r12,%rdx
+   1c8d9:	mov    %r14,%rsi
+   1c8dc:	mov    %rax,%rdi
+   1c8df:	call   3680 <memcpy@plt>
+   1c8e4:	mov    -0x21f0(%rbp),%rdi
+   1c8eb:	cmp    %r13,%rdi
+   1c8ee:	je     50f4 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x20b>
+   1c8f4:	mov    -0x21e0(%rbp),%rax
+   1c8fb:	lea    0x1(%rax),%rsi
+   1c8ff:	call   36b0 <operator delete(void*, unsigned long)@plt>
+   1c904:	jmp    50f4 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x20b>
+   1c909:	fchs
+   1c90b:	fldl   -0x2238(%rbp)
+   1c911:	fxch   %st(1)
+   1c913:	vmovsd 0x2fbd5(%rip),%xmm2        # 4c4f0 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x430>
+   1c91b:	fcomip %st(1),%st
+   1c91d:	ffreep %st(0)
+   1c91f:	ja     1c45c <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x70c>
+   1c925:	incq   0x78(%r15)
+   1c929:	mov    -0x2290(%rbp),%rax
+   1c930:	vmovhpd -0x2238(%rbp),%xmm2,%xmm2
+   1c938:	vmovupd %xmm2,(%rax)
+   1c93c:	vmovsd %xmm0,0x10(%rax)
+   1c941:	mov    -0x2250(%rbp),%rax
+   1c948:	test   %rax,%rax
+   1c94b:	je     1c95f <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc0f>
+   1c94d:	mov    -0x2288(%rbp),%rsi
+   1c954:	mov    %rax,%rdi
+   1c957:	sub    %rax,%rsi
+   1c95a:	call   36b0 <operator delete(void*, unsigned long)@plt>
+   1c95f:	cmpb   $0x0,-0x2255(%rbp)
+   1c966:	jne    1cab1 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xd61>
+   1c96c:	mov    -0x38(%rbp),%rax
+   1c970:	sub    %fs:0x28,%rax
+   1c979:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1c97f:	mov    -0x2290(%rbp),%rax
+   1c986:	lea    -0x30(%rbp),%rsp
+   1c98a:	pop    %rbx
+   1c98b:	pop    %r10
+   1c98d:	pop    %r12
+   1c98f:	pop    %r13
+   1c991:	pop    %r14
+   1c993:	pop    %r15
+   1c995:	pop    %rbp
+   1c996:	lea    -0x8(%r10),%rsp
+   1c99a:	ret
+   1c99b:	mov    -0x38(%rbp),%rax
+   1c99f:	sub    %fs:0x28,%rax
+   1c9a8:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1c9ae:	call   3650 <std::__throw_bad_array_new_length()@plt>
+   1c9b3:	fsubrp %st,%st(1)
+   1c9b5:	fstpl  -0x2240(%rbp)
+   1c9bb:	vmovsd -0x2240(%rbp),%xmm2
+   1c9c3:	jmp    1c929 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xbd9>
+   1c9c8:	je     1cb6e <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe1e>
+   1c9ce:	mov    -0x2278(%rbp),%rax
+   1c9d5:	lea    (%rdi,%rbx,1),%r14
+   1c9d9:	jmp    1bf89 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x239>
+   1c9de:	mov    -0x2178(%rbp),%r12
+   1c9e5:	cmp    $0xf,%r12
+   1c9e9:	jbe    4ee9 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]>
+   1c9ef:	test   %r12,%r12
+   1c9f2:	js     1cbd7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe87>
+   1c9f8:	cmp    $0x1d,%r12
+   1c9fc:	ja     1cb14 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xdc4>
+   1ca02:	mov    $0x1e,%r14d
+   1ca08:	mov    $0x1f,%edi
+   1ca0d:	lea    -0x21f0(%rbp),%rax
+   1ca14:	mov    %rax,-0x2238(%rbp)
+   1ca1b:	call   36a0 <operator new(unsigned long)@plt>
+   1ca20:	mov    -0x21f0(%rbp),%rdi
+   1ca27:	cmp    %r13,%rdi
+   1ca2a:	je     4f42 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x59>
+   1ca30:	mov    %rax,-0x2238(%rbp)
+   1ca37:	mov    -0x21e0(%rbp),%rax
+   1ca3e:	lea    0x1(%rax),%rsi
+   1ca42:	call   36b0 <operator delete(void*, unsigned long)@plt>
+   1ca47:	mov    -0x2238(%rbp),%rax
+   1ca4e:	jmp    4f42 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x59>
+   1ca53:	jne    1bf59 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x209>
+   1ca59:	mov    -0x2250(%rbp),%rcx
+   1ca60:	mov    (%rcx),%ecx
+   1ca62:	mov    %ecx,(%rdi)
+   1ca64:	jmp    1bf59 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x209>
+   1ca69:	jne    1c9ce <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc7e>
+   1ca6f:	mov    (%rsi),%edx
+   1ca71:	mov    %edx,(%rax)
+   1ca73:	jmp    1c9ce <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc7e>
+   1ca78:	mov    %r12,%rdi
+   1ca7b:	mov    %r12,-0x2250(%rbp)
+   1ca82:	inc    %rdi
+   1ca85:	jns    1c8b7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xb67>
+   1ca8b:	mov    -0x38(%rbp),%rax
+   1ca8f:	sub    %fs:0x28,%rax
+   1ca98:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1ca9e:	lea    -0x21f0(%rbp),%rax
+   1caa5:	mov    %rax,-0x2238(%rbp)
+   1caac:	call   3520 <std::__throw_bad_alloc()@plt>
+   1cab1:	mov    -0x2220(%rbp),%rbx
+   1cab8:	call   3780 <std::chrono::_V2::steady_clock::now()@plt>
+   1cabd:	vxorps %xmm1,%xmm1,%xmm1
+   1cac1:	sub    %rbx,%rax
+   1cac4:	vcvtsi2sd %rax,%xmm1,%xmm1
+   1cac9:	mov    -0x2298(%rbp),%rax
+   1cad0:	vdivsd 0x2fc78(%rip),%xmm1,%xmm1        # 4c750 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x690>
+   1cad8:	vaddsd (%rax),%xmm1,%xmm1
+   1cadc:	vmovsd %xmm1,(%rax)
+   1cae0:	jmp    1c96c <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xc1c>
+   1cae5:	jne    1cc00 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xeb0>
+   1caeb:	mov    (%rsi),%eax
+   1caed:	mov    -0x2250(%rbp),%rdi
+   1caf4:	mov    $0x2,%ecx
+   1caf9:	mov    %r13,-0x2208(%rbp)
+   1cb00:	mov    %eax,(%rdi)
+   1cb02:	cmp    %r13,-0x2288(%rbp)
+   1cb09:	jne    1bec8 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x178>
+   1cb0f:	jmp    1c598 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x848>
+   1cb14:	mov    %r12,%rdi
+   1cb17:	mov    %r12,%r14
+   1cb1a:	inc    %rdi
+   1cb1d:	jns    1ca0d <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xcbd>
+   1cb23:	mov    -0x38(%rbp),%rax
+   1cb27:	sub    %fs:0x28,%rax
+   1cb30:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1cb36:	lea    -0x21f0(%rbp),%rax
+   1cb3d:	mov    %rax,-0x2238(%rbp)
+   1cb44:	call   3520 <std::__throw_bad_alloc()@plt>
+   1cb49:	mov    -0x2250(%rbp),%rax
+   1cb50:	mov    (%rax),%eax
+   1cb52:	mov    %eax,(%r14)
+   1cb55:	jmp    1c51a <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x7ca>
+   1cb5a:	mov    -0x38(%rbp),%rax
+   1cb5e:	sub    %fs:0x28,%rax
+   1cb67:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1cb69:	call   3650 <std::__throw_bad_array_new_length()@plt>
+   1cb6e:	mov    -0x2250(%rbp),%rax
+   1cb75:	add    $0x4,%rdi
+   1cb79:	mov    (%rax),%eax
+   1cb7b:	mov    %eax,-0x4(%rdi)
+   1cb7e:	mov    -0x2278(%rbp),%rax
+   1cb85:	mov    %rdi,0x40(%rax)
+   1cb89:	jmp    1bf97 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x247>
+   1cb8e:	mov    -0x38(%rbp),%rax
+   1cb92:	sub    %fs:0x28,%rax
+   1cb9b:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1cb9d:	lea    -0x21f0(%rbp),%rax
+   1cba4:	lea    0x24842(%rip),%rdi        # 413ed <_IO_stdin_used+0x3ed>
+   1cbab:	mov    %rax,-0x2238(%rbp)
+   1cbb2:	call   35a0 <std::__throw_length_error(char const*)@plt>
+   1cbb7:	call   36d0 <__stack_chk_fail@plt>
+   1cbbc:	mov    -0x38(%rbp),%rax
+   1cbc0:	sub    %fs:0x28,%rax
+   1cbc9:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1cbcb:	lea    0x24685(%rip),%rdi        # 41257 <_IO_stdin_used+0x257>
+   1cbd2:	call   35a0 <std::__throw_length_error(char const*)@plt>
+   1cbd7:	mov    -0x38(%rbp),%rax
+   1cbdb:	sub    %fs:0x28,%rax
+   1cbe4:	jne    1cbb7 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xe67>
+   1cbe6:	lea    -0x21f0(%rbp),%rax
+   1cbed:	lea    0x24bd6(%rip),%rdi        # 417ca <_IO_stdin_used+0x7ca>
+   1cbf4:	mov    %rax,-0x2238(%rbp)
+   1cbfb:	call   35a0 <std::__throw_length_error(char const*)@plt>
+   1cc00:	mov    %r13,-0x2208(%rbp)
+   1cc07:	cmp    %r13,-0x2288(%rbp)
+   1cc0e:	jne    1bec8 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x178>
+   1cc14:	mov    -0x2250(%rbp),%rax
+   1cc1b:	mov    %rax,-0x2280(%rbp)
+   1cc22:	test   %rbx,%rbx
+   1cc25:	je     1c287 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x537>
+   1cc2b:	mov    %rbx,%rdx
+   1cc2e:	sar    $0x2,%rdx
+   1cc32:	lea    (%rdx,%rdx,1),%rax
+   1cc36:	mov    %rax,%rcx
+   1cc39:	cmp    %rdx,%rax
+   1cc3c:	jb     1cc62 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0xf12>
+   1cc3e:	test   %rax,%rax
+   1cc41:	jne    1c598 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x848>
+   1cc47:	movq   $0x0,-0x2288(%rbp)
+   1cc52:	movq   $0x0,-0x2250(%rbp)
+   1cc5d:	jmp    1c2a6 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x556>
+   1cc62:	movabs $0x7ffffffffffffffc,%r13
+   1cc6c:	jmp    1c28d <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)+0x53d>
+   1cc71:	endbr64
+   1cc75:	mov    %rax,%rbx
+   1cc78:	vzeroupper
+   1cc7b:	jmp    4fb3 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0xca>
+   1cc80:	endbr64
+   1cc84:	mov    %rax,%r12
+   1cc87:	vzeroupper
+   1cc8a:	jmp    5007 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x11e>
+   1cc8f:	endbr64
+   1cc93:	mov    %rax,%rbx
+   1cc96:	jmp    5014 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x12b>
+   1cc9b:	endbr64
+   1cc9f:	mov    %rax,%rbx
+   1cca2:	vzeroupper
+   1cca5:	jmp    5065 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x17c>
+   1ccaa:	endbr64
+   1ccae:	mov    %rax,%rbx
+   1ccb1:	jmp    5079 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x190>
+   1ccb6:	endbr64
+   1ccba:	mov    %rax,%r12
+   1ccbd:	jmp    4ff8 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x10f>
+   1ccc2:	vzeroupper
+   1ccc5:	call   36d0 <__stack_chk_fail@plt>
+   1ccca:	endbr64
+   1ccce:	mov    %rax,%rbx
+   1ccd1:	jmp    5139 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x250>
+   1ccd6:	endbr64
+   1ccda:	mov    %rax,%rbx
+   1ccdd:	vzeroupper
+   1cce0:	jmp    4fbf <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0xd6>
+   1cce5:	endbr64
+   1cce9:	mov    %rax,%rbx
+   1ccec:	jmp    5124 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x23b>
+   1ccf1:	endbr64
+   1ccf5:	mov    %rax,%rbx
+   1ccf8:	jmp    5160 <(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*) [clone .cold]+0x277>
+   1ccfd:	nop
+   1ccfe:	xchg   %ax,%ax
+
+
+0000000000029460 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 2, 2, 0, 2, 2> >(Eigen::Matrix<double, 2, 2, 0, 2, 2>&)>:
+   29460:	endbr64
+   29464:	xor    %eax,%eax
+   29466:	vmovsd (%rdi),%xmm0
+   2946a:	vxorpd %xmm2,%xmm2,%xmm2
+   2946e:	vcomisd %xmm0,%xmm2
+   29472:	jb     29480 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 2, 2, 0, 2, 2> >(Eigen::Matrix<double, 2, 2, 0, 2, 2>&)+0x20>
+   29474:	ret
+   29475:	data16 cs nopw 0x0(%rax,%rax,1)
+   29480:	vsqrtsd %xmm0,%xmm0,%xmm1
+   29484:	vmovsd 0x8(%rdi),%xmm0
+   29489:	vmovsd %xmm1,(%rdi)
+   2948d:	vdivsd %xmm1,%xmm0,%xmm0
+   29491:	vmovsd 0x18(%rdi),%xmm1
+   29496:	vmovsd %xmm0,0x8(%rdi)
+   2949b:	vmulsd %xmm0,%xmm0,%xmm0
+   2949f:	vsubsd %xmm0,%xmm1,%xmm0
+   294a3:	vcomisd %xmm0,%xmm2
+   294a7:	jae    294ba <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 2, 2, 0, 2, 2> >(Eigen::Matrix<double, 2, 2, 0, 2, 2>&)+0x5a>
+   294a9:	vsqrtsd %xmm0,%xmm0,%xmm0
+   294ad:	mov    $0xffffffffffffffff,%rax
+   294b4:	vmovsd %xmm0,0x18(%rdi)
+   294b9:	ret
+   294ba:	mov    $0x1,%eax
+   294bf:	ret
+
+
+00000000000294c0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)>:
+   294c0:	endbr64
+   294c4:	lea    0x8(%rdi),%rcx
+   294c8:	mov    %rdi,%r9
+   294cb:	push   %rbx
+   294cc:	mov    $0x3,%r8d
+   294d2:	mov    %rcx,%rdx
+   294d5:	xor    %edi,%edi
+   294d7:	vxorpd %xmm3,%xmm3,%xmm3
+   294db:	vmovsd -0x8(%rcx),%xmm2
+   294e0:	test   %rdi,%rdi
+   294e3:	je     296a0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1e0>
+   294e9:	vmovsd -0x8(%rdx),%xmm0
+   294ee:	mov    %rdi,%rax
+   294f1:	vmulsd %xmm0,%xmm0,%xmm0
+   294f5:	cmp    $0x1,%rdi
+   294f9:	je     2951b <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x5b>
+   294fb:	vmovsd 0x18(%rdx),%xmm1
+   29500:	vmulsd %xmm1,%xmm1,%xmm1
+   29504:	vaddsd %xmm1,%xmm0,%xmm0
+   29508:	cmp    $0x3,%rdi
+   2950c:	jne    2951b <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x5b>
+   2950e:	vmovsd 0x38(%rdx),%xmm1
+   29513:	vmulsd %xmm1,%xmm1,%xmm1
+   29517:	vaddsd %xmm1,%xmm0,%xmm0
+   2951b:	vsubsd %xmm0,%xmm2,%xmm2
+   2951f:	vcomisd %xmm2,%xmm3
+   29523:	jae    29691 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1d1>
+   29529:	vsqrtsd %xmm2,%xmm2,%xmm2
+   2952d:	vmovsd %xmm2,-0x8(%rcx)
+   29532:	test   %r8,%r8
+   29535:	jle    2968d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1cd>
+   2953b:	mov    %rcx,%r10
+   2953e:	and    $0x7,%r10d
+   29542:	jne    296d3 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x213>
+   29548:	mov    %rcx,%rax
+   2954b:	shr    $0x3,%rax
+   2954f:	neg    %rax
+   29552:	and    $0x7,%eax
+   29555:	cmp    %r8,%rax
+   29558:	cmovg  %r8,%rax
+   2955c:	test   %rax,%rax
+   2955f:	je     296ec <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x22c>
+   29565:	cmp    $0x2,%rdi
+   29569:	jne    29827 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x367>
+   2956f:	vmovsd -0x8(%rdx),%xmm0
+   29574:	vmovsd 0x18(%rdx),%xmm1
+   29579:	vmulsd (%rdx),%xmm0,%xmm0
+   2957d:	vmulsd 0x20(%rdx),%xmm1,%xmm1
+   29582:	vaddsd %xmm1,%xmm0,%xmm0
+   29586:	vmovsd (%rcx),%xmm1
+   2958a:	vsubsd %xmm0,%xmm1,%xmm1
+   2958e:	vmovsd %xmm1,(%rcx)
+   29592:	cmp    $0x1,%rax
+   29596:	jne    29889 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3c9>
+   2959c:	cmp    $0x1,%r8
+   295a0:	je     295d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x110>
+   295a2:	shl    $0x3,%rax
+   295a6:	vmovsd -0x8(%rdx),%xmm0
+   295ab:	vmovsd 0x18(%rdx),%xmm1
+   295b0:	lea    (%rdx,%rax,1),%rsi
+   295b4:	add    %rcx,%rax
+   295b7:	vmulsd 0x20(%rsi),%xmm1,%xmm1
+   295bc:	vmulsd (%rsi),%xmm0,%xmm0
+   295c0:	vaddsd %xmm1,%xmm0,%xmm0
+   295c4:	vmovsd (%rax),%xmm1
+   295c8:	vsubsd %xmm0,%xmm1,%xmm1
+   295cc:	vmovsd %xmm1,(%rax)
+   295d0:	test   %r10,%r10
+   295d3:	jne    296bc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1fc>
+   295d9:	mov    %rcx,%rax
+   295dc:	shr    $0x3,%rax
+   295e0:	neg    %rax
+   295e3:	and    $0x7,%eax
+   295e6:	cmp    %r8,%rax
+   295e9:	cmovg  %r8,%rax
+   295ed:	test   %rax,%rax
+   295f0:	je     29633 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x173>
+   295f2:	mov    %rax,%r10
+   295f5:	cmp    $0x1,%rax
+   295f9:	je     296cc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x20c>
+   295ff:	vmovupd (%rcx),%xmm4
+   29603:	vmovddup %xmm2,%xmm0
+   29607:	mov    $0x2,%esi
+   2960c:	vdivpd %xmm0,%xmm4,%xmm0
+   29610:	vmovupd %xmm0,(%rcx)
+   29614:	cmp    $0x2,%r10
+   29618:	je     296db <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x21b>
+   2961e:	lea    (%rcx,%rsi,8),%rsi
+   29622:	vmovsd (%rsi),%xmm0
+   29626:	vdivsd %xmm2,%xmm0,%xmm0
+   2962a:	vmovsd %xmm0,(%rsi)
+   2962e:	cmp    %rax,%r8
+   29631:	jle    29675 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1b5>
+   29633:	mov    %r8,%r10
+   29636:	sub    %rax,%r10
+   29639:	cmp    $0x1,%r10
+   2963d:	je     29665 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1a5>
+   2963f:	lea    0x1(%rdi,%rdi,4),%rsi
+   29644:	vmovddup %xmm2,%xmm0
+   29648:	add    %rax,%rsi
+   2964b:	lea    (%r9,%rsi,8),%rsi
+   2964f:	vmovupd (%rsi),%xmm5
+   29653:	vdivpd %xmm0,%xmm5,%xmm0
+   29657:	vmovupd %xmm0,(%rsi)
+   2965b:	cmp    $0x2,%r10
+   2965f:	je     29675 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1b5>
+   29661:	add    $0x2,%rax
+   29665:	lea    (%rcx,%rax,8),%rax
+   29669:	vmovsd (%rax),%xmm0
+   2966d:	vdivsd %xmm2,%xmm0,%xmm0
+   29671:	vmovsd %xmm0,(%rax)
+   29675:	inc    %rdi
+   29678:	dec    %r8
+   2967b:	add    $0x28,%rcx
+   2967f:	add    $0x8,%rdx
+   29683:	cmp    $0x4,%rdi
+   29687:	jne    294db <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1b>
+   2968d:	or     $0xffffffffffffffff,%rax
+   29691:	pop    %rbx
+   29692:	ret
+   29693:	data16 cs nopw 0x0(%rax,%rax,1)
+   2969e:	xchg   %ax,%ax
+   296a0:	vcomisd %xmm2,%xmm3
+   296a4:	jb     296aa <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1ea>
+   296a6:	xor    %eax,%eax
+   296a8:	pop    %rbx
+   296a9:	ret
+   296aa:	vsqrtsd %xmm2,%xmm2,%xmm2
+   296ae:	vmovsd %xmm2,-0x8(%rcx)
+   296b3:	test   $0x7,%cl
+   296b6:	je     297b8 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x2f8>
+   296bc:	mov    %r8,%rax
+   296bf:	mov    %rax,%r10
+   296c2:	cmp    $0x1,%rax
+   296c6:	jne    295ff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x13f>
+   296cc:	xor    %esi,%esi
+   296ce:	jmp    2961e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x15e>
+   296d3:	mov    %r8,%rax
+   296d6:	jmp    29565 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0xa5>
+   296db:	mov    $0x2,%eax
+   296e0:	cmp    $0x3,%r8
+   296e4:	je     29665 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1a5>
+   296ea:	jmp    29675 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x1b5>
+   296ec:	cmp    $0x2,%rdi
+   296f0:	je     295a2 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0xe2>
+   296f6:	mov    %r8,%rsi
+   296f9:	sub    %rax,%rsi
+   296fc:	lea    -0x1(%rsi),%r11
+   29700:	cmp    $0x1,%r11
+   29704:	jbe    29724 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x264>
+   29706:	lea    0x1(%rdi,%rdi,4),%r11
+   2970b:	lea    0x2(%rdi,%rax,1),%rbx
+   29710:	add    %rax,%r11
+   29713:	shl    $0x3,%r11
+   29717:	shl    $0x3,%rbx
+   2971b:	cmp    %r11,%rbx
+   2971e:	jne    297e0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x320>
+   29724:	lea    0x0(,%rax,8),%rsi
+   2972c:	lea    (%rcx,%rsi,1),%r11
+   29730:	vmovsd (%rdx,%rsi,1),%xmm1
+   29735:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   2973a:	vmovsd (%r11),%xmm0
+   2973f:	vsubsd %xmm1,%xmm0,%xmm0
+   29743:	vmovsd %xmm0,(%r11)
+   29748:	lea    0x1(%rax),%r11
+   2974c:	cmp    %r11,%r8
+   2974f:	jle    295d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x110>
+   29755:	cmp    $0x1,%rax
+   29759:	lea    0x8(%rsi,%rcx,1),%r11
+   2975e:	vmovsd 0x8(%rsi,%rdx,1),%xmm1
+   29764:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   29769:	sbb    %rax,%rax
+   2976c:	vmovsd (%r11),%xmm0
+   29771:	vsubsd %xmm1,%xmm0,%xmm0
+   29775:	vmovsd %xmm0,(%r11)
+   2977a:	add    $0x3,%rax
+   2977e:	cmp    %rax,%r8
+   29781:	jle    298a8 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3e8>
+   29787:	vmovsd -0x8(%rdx),%xmm1
+   2978c:	vmovsd 0x10(%rcx),%xmm0
+   29791:	vmulsd 0x10(%rdx),%xmm1,%xmm1
+   29796:	vsubsd %xmm1,%xmm0,%xmm0
+   2979a:	vmovsd %xmm0,0x10(%rcx)
+   2979f:	test   %r10,%r10
+   297a2:	je     295d9 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x119>
+   297a8:	mov    $0x3,%r10d
+   297ae:	mov    $0x3,%eax
+   297b3:	jmp    295ff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x13f>
+   297b8:	mov    %rcx,%rax
+   297bb:	shr    $0x3,%rax
+   297bf:	neg    %rax
+   297c2:	and    $0x7,%eax
+   297c5:	cmp    %r8,%rax
+   297c8:	cmovg  %r8,%rax
+   297cc:	test   %rax,%rax
+   297cf:	jne    295f2 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x132>
+   297d5:	jmp    2962e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x16e>
+   297da:	nopw   0x0(%rax,%rax,1)
+   297e0:	vmovddup -0x8(%rdx),%xmm0
+   297e5:	vmulpd -0x8(%r9,%rbx,1),%xmm0,%xmm0
+   297ec:	add    %r9,%r11
+   297ef:	and    $0xfffffffffffffffe,%rsi
+   297f3:	vmovupd (%r11),%xmm6
+   297f8:	add    %rsi,%rax
+   297fb:	shl    $0x3,%rax
+   297ff:	lea    (%rcx,%rax,1),%rsi
+   29803:	vsubpd %xmm0,%xmm6,%xmm0
+   29807:	vmovupd %xmm0,(%r11)
+   2980c:	vmovsd (%rdx,%rax,1),%xmm1
+   29811:	vmovsd (%rsi),%xmm0
+   29815:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   2981a:	vsubsd %xmm1,%xmm0,%xmm0
+   2981e:	vmovsd %xmm0,(%rsi)
+   29822:	jmp    295d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x110>
+   29827:	vmovsd (%rdx),%xmm1
+   2982b:	vmovsd (%rcx),%xmm0
+   2982f:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   29834:	vsubsd %xmm1,%xmm0,%xmm0
+   29838:	vmovsd %xmm0,(%rcx)
+   2983c:	cmp    $0x1,%rax
+   29840:	je     298bc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3fc>
+   29842:	cmp    $0x1,%r8
+   29846:	je     29889 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3c9>
+   29848:	vmovsd 0x8(%rdx),%xmm1
+   2984d:	vmovsd 0x8(%rcx),%xmm0
+   29852:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   29857:	vsubsd %xmm1,%xmm0,%xmm0
+   2985b:	vmovsd %xmm0,0x8(%rcx)
+   29860:	cmp    $0x3,%rax
+   29864:	jne    298bc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3fc>
+   29866:	cmp    $0x3,%r8
+   2986a:	jne    29889 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x3c9>
+   2986c:	vmovsd 0x10(%rdx),%xmm1
+   29871:	vmovsd 0x10(%rcx),%xmm0
+   29876:	vmulsd -0x8(%rdx),%xmm1,%xmm1
+   2987b:	vsubsd %xmm1,%xmm0,%xmm0
+   2987f:	vmovsd %xmm0,0x10(%rcx)
+   29884:	jmp    295d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x110>
+   29889:	lea    0x1bef8(%rip),%rcx        # 45788 <_IO_stdin_used+0x4788>
+   29890:	mov    $0x78,%edx
+   29895:	lea    0x18a94(%rip),%rsi        # 42330 <_IO_stdin_used+0x1330>
+   2989c:	lea    0x18b15(%rip),%rdi        # 423b8 <_IO_stdin_used+0x13b8>
+   298a3:	call   35f0 <__assert_fail@plt>
+   298a8:	test   %r10,%r10
+   298ab:	je     295d9 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x119>
+   298b1:	mov    %r8,%r10
+   298b4:	mov    %r8,%rax
+   298b7:	jmp    295ff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x13f>
+   298bc:	cmp    %rax,%r8
+   298bf:	jg     296f6 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x236>
+   298c5:	jmp    295d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)+0x110>
+   298ca:	nopw   0x0(%rax,%rax,1)
+
+
+00000000000298d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)>:
+   298d0:	endbr64
+   298d4:	push   %rbp
+   298d5:	lea    0x8(%rdi),%rdx
+   298d9:	mov    %rdi,%r10
+   298dc:	xor    %r9d,%r9d
+   298df:	mov    %rsp,%rbp
+   298e2:	push   %r12
+   298e4:	push   %rbx
+   298e5:	mov    %rdx,%rax
+   298e8:	and    $0xffffffffffffffe0,%rsp
+   298ec:	mov    $0x5,%r8d
+   298f2:	xor    %ecx,%ecx
+   298f4:	vxorpd %xmm3,%xmm3,%xmm3
+   298f8:	jmp    29c2b <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x35b>
+   298fd:	nopl   (%rax)
+   29900:	mov    %rdx,%rbx
+   29903:	and    $0x7,%ebx
+   29906:	jne    29f97 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6c7>
+   2990c:	mov    %rdx,%rsi
+   2990f:	shr    $0x3,%rsi
+   29913:	neg    %rsi
+   29916:	and    $0x7,%esi
+   29919:	cmp    %r8,%rsi
+   2991c:	cmovg  %r8,%rsi
+   29920:	test   %rsi,%rsi
+   29923:	je     29cce <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3fe>
+   29929:	vmovsd -0x8(%rax),%xmm1
+   2992e:	vmulsd (%rax),%xmm1,%xmm1
+   29932:	cmp    $0x1,%rcx
+   29936:	je     29974 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0xa4>
+   29938:	vmovsd 0x30(%rax),%xmm2
+   2993d:	vmulsd 0x28(%rax),%xmm2,%xmm2
+   29942:	vaddsd %xmm2,%xmm1,%xmm1
+   29946:	cmp    $0x2,%rcx
+   2994a:	je     29974 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0xa4>
+   2994c:	vmovsd 0x58(%rax),%xmm2
+   29951:	vmulsd 0x60(%rax),%xmm2,%xmm2
+   29956:	vaddsd %xmm2,%xmm1,%xmm1
+   2995a:	cmp    $0x3,%rcx
+   2995e:	je     29974 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0xa4>
+   29960:	vmovsd 0x90(%rax),%xmm2
+   29968:	vmulsd 0x88(%rax),%xmm2,%xmm2
+   29970:	vaddsd %xmm2,%xmm1,%xmm1
+   29974:	vmovsd (%rdx),%xmm2
+   29978:	vsubsd %xmm1,%xmm2,%xmm2
+   2997c:	vmovsd %xmm2,(%rdx)
+   29980:	cmp    $0x1,%rsi
+   29984:	je     29cc5 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3f5>
+   2998a:	cmp    $0x1,%r8
+   2998e:	je     2a098 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7c8>
+   29994:	vmovsd -0x8(%rax),%xmm1
+   29999:	vmulsd 0x8(%rax),%xmm1,%xmm1
+   2999e:	cmp    $0x1,%rcx
+   299a2:	je     299e0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x110>
+   299a4:	vmovsd 0x28(%rax),%xmm2
+   299a9:	vmulsd 0x38(%rax),%xmm2,%xmm2
+   299ae:	vaddsd %xmm2,%xmm1,%xmm1
+   299b2:	cmp    $0x2,%rcx
+   299b6:	je     299e0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x110>
+   299b8:	vmovsd 0x58(%rax),%xmm2
+   299bd:	vmulsd 0x68(%rax),%xmm2,%xmm2
+   299c2:	vaddsd %xmm2,%xmm1,%xmm1
+   299c6:	cmp    $0x3,%rcx
+   299ca:	je     299e0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x110>
+   299cc:	vmovsd 0x88(%rax),%xmm2
+   299d4:	vmulsd 0x98(%rax),%xmm2,%xmm2
+   299dc:	vaddsd %xmm2,%xmm1,%xmm1
+   299e0:	vmovsd 0x8(%rdx),%xmm2
+   299e5:	vsubsd %xmm1,%xmm2,%xmm2
+   299e9:	vmovsd %xmm2,0x8(%rdx)
+   299ee:	cmp    $0x2,%rsi
+   299f2:	je     29cc5 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3f5>
+   299f8:	cmp    $0x2,%r8
+   299fc:	je     2a098 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7c8>
+   29a02:	vmovsd -0x8(%rax),%xmm1
+   29a07:	vmulsd 0x10(%rax),%xmm1,%xmm1
+   29a0c:	cmp    $0x1,%rcx
+   29a10:	je     29a4e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x17e>
+   29a12:	vmovsd 0x28(%rax),%xmm2
+   29a17:	vmulsd 0x40(%rax),%xmm2,%xmm2
+   29a1c:	vaddsd %xmm2,%xmm1,%xmm1
+   29a20:	cmp    $0x2,%rcx
+   29a24:	je     29a4e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x17e>
+   29a26:	vmovsd 0x58(%rax),%xmm2
+   29a2b:	vmulsd 0x70(%rax),%xmm2,%xmm2
+   29a30:	vaddsd %xmm2,%xmm1,%xmm1
+   29a34:	cmp    $0x3,%rcx
+   29a38:	je     29a4e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x17e>
+   29a3a:	vmovsd 0x88(%rax),%xmm2
+   29a42:	vmulsd 0xa0(%rax),%xmm2,%xmm2
+   29a4a:	vaddsd %xmm2,%xmm1,%xmm1
+   29a4e:	vmovsd 0x10(%rdx),%xmm2
+   29a53:	vsubsd %xmm1,%xmm2,%xmm2
+   29a57:	vmovsd %xmm2,0x10(%rdx)
+   29a5c:	cmp    $0x3,%rsi
+   29a60:	je     29cc5 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3f5>
+   29a66:	cmp    $0x3,%r8
+   29a6a:	je     2a098 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7c8>
+   29a70:	vmovsd -0x8(%rax),%xmm1
+   29a75:	vmulsd 0x18(%rax),%xmm1,%xmm1
+   29a7a:	cmp    $0x1,%rcx
+   29a7e:	je     29abc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x1ec>
+   29a80:	vmovsd 0x28(%rax),%xmm2
+   29a85:	vmulsd 0x48(%rax),%xmm2,%xmm2
+   29a8a:	vaddsd %xmm2,%xmm1,%xmm1
+   29a8e:	cmp    $0x2,%rcx
+   29a92:	je     29abc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x1ec>
+   29a94:	vmovsd 0x58(%rax),%xmm2
+   29a99:	vmulsd 0x78(%rax),%xmm2,%xmm2
+   29a9e:	vaddsd %xmm2,%xmm1,%xmm1
+   29aa2:	cmp    $0x3,%rcx
+   29aa6:	je     29abc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x1ec>
+   29aa8:	vmovsd 0x88(%rax),%xmm2
+   29ab0:	vmulsd 0xa8(%rax),%xmm2,%xmm2
+   29ab8:	vaddsd %xmm2,%xmm1,%xmm1
+   29abc:	vmovsd 0x18(%rdx),%xmm2
+   29ac1:	vsubsd %xmm1,%xmm2,%xmm2
+   29ac5:	vmovsd %xmm2,0x18(%rdx)
+   29aca:	cmp    $0x5,%rsi
+   29ace:	jne    29cc0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3f0>
+   29ad4:	cmp    $0x5,%r8
+   29ad8:	jne    2a098 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7c8>
+   29ade:	vmovsd -0x8(%rax),%xmm1
+   29ae3:	vmulsd 0x20(%rax),%xmm1,%xmm1
+   29ae8:	cmp    $0x1,%rcx
+   29aec:	je     29b2d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x25d>
+   29aee:	vmovsd 0x50(%rax),%xmm2
+   29af3:	vmulsd 0x28(%rax),%xmm2,%xmm2
+   29af8:	vaddsd %xmm2,%xmm1,%xmm1
+   29afc:	cmp    $0x2,%rcx
+   29b00:	je     29b2d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x25d>
+   29b02:	vmovsd 0x80(%rax),%xmm2
+   29b0a:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29b0f:	vaddsd %xmm2,%xmm1,%xmm1
+   29b13:	cmp    $0x3,%rcx
+   29b17:	je     29b2d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x25d>
+   29b19:	vmovsd 0x88(%rax),%xmm2
+   29b21:	vmulsd 0xb0(%rax),%xmm2,%xmm2
+   29b29:	vaddsd %xmm2,%xmm1,%xmm1
+   29b2d:	vmovsd 0x20(%rdx),%xmm2
+   29b32:	vsubsd %xmm1,%xmm2,%xmm2
+   29b36:	vmovsd %xmm2,0x20(%rdx)
+   29b3b:	test   %rbx,%rbx
+   29b3e:	je     29f01 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x631>
+   29b44:	mov    $0x5,%esi
+   29b49:	mov    $0x5,%r11d
+   29b4f:	vmovupd (%rdx),%ymm4
+   29b53:	vbroadcastsd %xmm0,%ymm1
+   29b58:	mov    $0x4,%edi
+   29b5d:	vdivpd %ymm1,%ymm4,%ymm1
+   29b61:	vmovupd %ymm1,(%rdx)
+   29b65:	cmp    $0x4,%r11
+   29b69:	je     2a055 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x785>
+   29b6f:	lea    (%rdx,%rdi,8),%rdi
+   29b73:	vmovsd (%rdi),%xmm1
+   29b77:	vdivsd %xmm0,%xmm1,%xmm1
+   29b7b:	vmovsd %xmm1,(%rdi)
+   29b7f:	cmp    %rsi,%r8
+   29b82:	jle    29c0f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x33f>
+   29b88:	mov    %r8,%rdi
+   29b8b:	mov    %rsi,%rbx
+   29b8e:	sub    %rsi,%rdi
+   29b91:	lea    -0x1(%rdi),%r11
+   29b95:	cmp    $0x2,%r11
+   29b99:	jbe    2a090 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7c0>
+   29b9f:	lea    0x1(%rsi,%r9,1),%r11
+   29ba4:	vbroadcastsd %xmm0,%ymm1
+   29ba9:	lea    (%r10,%r11,8),%r11
+   29bad:	vmovupd (%r11),%ymm5
+   29bb2:	vdivpd %ymm1,%ymm5,%ymm1
+   29bb6:	vmovupd %ymm1,(%r11)
+   29bbb:	test   $0x3,%dil
+   29bbf:	je     29c0f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x33f>
+   29bc1:	mov    %rdi,%r11
+   29bc4:	and    $0xfffffffffffffffc,%r11
+   29bc8:	add    %r11,%rsi
+   29bcb:	sub    %r11,%rdi
+   29bce:	add    %r11,%rbx
+   29bd1:	cmp    $0x1,%rdi
+   29bd5:	je     29bff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x32f>
+   29bd7:	lea    0x1(%rbx,%r9,1),%r11
+   29bdc:	vmovddup %xmm0,%xmm1
+   29be0:	lea    (%r10,%r11,8),%r11
+   29be4:	vmovupd (%r11),%xmm7
+   29be9:	vdivpd %xmm1,%xmm7,%xmm1
+   29bed:	vmovupd %xmm1,(%r11)
+   29bf2:	test   $0x1,%dil
+   29bf6:	je     29c0f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x33f>
+   29bf8:	and    $0xfffffffffffffffe,%rdi
+   29bfc:	add    %rdi,%rsi
+   29bff:	lea    (%rdx,%rsi,8),%rsi
+   29c03:	vmovsd (%rsi),%xmm1
+   29c07:	vdivsd %xmm0,%xmm1,%xmm1
+   29c0b:	vmovsd %xmm1,(%rsi)
+   29c0f:	inc    %rcx
+   29c12:	dec    %r8
+   29c15:	add    $0x7,%r9
+   29c19:	add    $0x38,%rdx
+   29c1d:	add    $0x8,%rax
+   29c21:	cmp    $0x6,%rcx
+   29c25:	je     29cb7 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3e7>
+   29c2b:	vmovsd -0x8(%rdx),%xmm0
+   29c30:	test   %rcx,%rcx
+   29c33:	je     29f80 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6b0>
+   29c39:	vmovsd -0x8(%rax),%xmm1
+   29c3e:	mov    %rcx,%rsi
+   29c41:	vmulsd %xmm1,%xmm1,%xmm1
+   29c45:	cmp    $0x1,%rcx
+   29c49:	je     29c97 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3c7>
+   29c4b:	vmovsd 0x28(%rax),%xmm2
+   29c50:	vmulsd %xmm2,%xmm2,%xmm2
+   29c54:	vaddsd %xmm2,%xmm1,%xmm1
+   29c58:	cmp    $0x2,%rcx
+   29c5c:	je     29c97 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3c7>
+   29c5e:	vmovsd 0x58(%rax),%xmm2
+   29c63:	vmulsd %xmm2,%xmm2,%xmm2
+   29c67:	vaddsd %xmm2,%xmm1,%xmm1
+   29c6b:	cmp    $0x3,%rcx
+   29c6f:	je     29c97 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3c7>
+   29c71:	vmovsd 0x88(%rax),%xmm2
+   29c79:	vmulsd %xmm2,%xmm2,%xmm2
+   29c7d:	vaddsd %xmm2,%xmm1,%xmm1
+   29c81:	cmp    $0x5,%rcx
+   29c85:	jne    29c97 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x3c7>
+   29c87:	vmovsd 0xb8(%rax),%xmm2
+   29c8f:	vmulsd %xmm2,%xmm2,%xmm2
+   29c93:	vaddsd %xmm2,%xmm1,%xmm1
+   29c97:	vsubsd %xmm1,%xmm0,%xmm0
+   29c9b:	vcomisd %xmm0,%xmm3
+   29c9f:	jae    29f88 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6b8>
+   29ca5:	vsqrtsd %xmm0,%xmm0,%xmm0
+   29ca9:	vmovsd %xmm0,-0x8(%rdx)
+   29cae:	test   %r8,%r8
+   29cb1:	jg     29900 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x30>
+   29cb7:	or     $0xffffffffffffffff,%rsi
+   29cbb:	jmp    29f88 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6b8>
+   29cc0:	mov    $0x4,%esi
+   29cc5:	cmp    %rsi,%r8
+   29cc8:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29cce:	lea    0x0(,%rsi,8),%rdi
+   29cd6:	lea    (%rax,%rdi,1),%r11
+   29cda:	vmovsd (%r11),%xmm2
+   29cdf:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   29ce4:	cmp    $0x1,%rcx
+   29ce8:	je     29f9f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6cf>
+   29cee:	vmovsd 0x30(%r11),%xmm1
+   29cf4:	vmulsd 0x28(%rax),%xmm1,%xmm1
+   29cf9:	vaddsd %xmm2,%xmm1,%xmm1
+   29cfd:	cmp    $0x2,%rcx
+   29d01:	je     29d2d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x45d>
+   29d03:	vmovsd 0x60(%r11),%xmm2
+   29d09:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29d0e:	vaddsd %xmm2,%xmm1,%xmm1
+   29d12:	cmp    $0x3,%rcx
+   29d16:	je     29d2d <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x45d>
+   29d18:	vmovsd 0x90(%r11),%xmm2
+   29d21:	vmulsd 0x88(%rax),%xmm2,%xmm2
+   29d29:	vaddsd %xmm2,%xmm1,%xmm1
+   29d2d:	lea    (%rdx,%rdi,1),%r11
+   29d31:	vmovsd (%r11),%xmm2
+   29d36:	vsubsd %xmm1,%xmm2,%xmm2
+   29d3a:	vmovsd %xmm2,(%r11)
+   29d3f:	lea    0x1(%rsi),%r11
+   29d43:	cmp    %r11,%r8
+   29d46:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29d4c:	lea    0x8(%rdi,%rax,1),%r11
+   29d51:	vmovsd -0x8(%rax),%xmm2
+   29d56:	lea    0x8(%rdi),%r12
+   29d5a:	vmovsd 0x30(%r11),%xmm1
+   29d60:	vmulsd (%r11),%xmm2,%xmm2
+   29d65:	vmulsd 0x28(%rax),%xmm1,%xmm1
+   29d6a:	vaddsd %xmm2,%xmm1,%xmm1
+   29d6e:	cmp    $0x2,%rcx
+   29d72:	je     29d9e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x4ce>
+   29d74:	vmovsd 0x60(%r11),%xmm2
+   29d7a:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29d7f:	vaddsd %xmm2,%xmm1,%xmm1
+   29d83:	cmp    $0x3,%rcx
+   29d87:	je     29d9e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x4ce>
+   29d89:	vmovsd 0x88(%rax),%xmm2
+   29d91:	vmulsd 0x90(%r11),%xmm2,%xmm2
+   29d9a:	vaddsd %xmm2,%xmm1,%xmm1
+   29d9e:	add    %rdx,%r12
+   29da1:	lea    0x2(%rsi),%r11
+   29da5:	vmovsd (%r12),%xmm2
+   29dab:	vsubsd %xmm1,%xmm2,%xmm2
+   29daf:	vmovsd %xmm2,(%r12)
+   29db5:	cmp    %r11,%r8
+   29db8:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29dbe:	lea    0x10(%rdi,%rax,1),%r11
+   29dc3:	vmovsd 0x28(%rax),%xmm1
+   29dc8:	lea    0x10(%rdi),%r12
+   29dcc:	vmulsd 0x40(%rdi,%rax,1),%xmm1,%xmm1
+   29dd2:	vmovsd (%r11),%xmm2
+   29dd7:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   29ddc:	vaddsd %xmm2,%xmm1,%xmm1
+   29de0:	cmp    $0x2,%rcx
+   29de4:	je     29e10 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x540>
+   29de6:	vmovsd 0x60(%r11),%xmm2
+   29dec:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29df1:	vaddsd %xmm2,%xmm1,%xmm1
+   29df5:	cmp    $0x3,%rcx
+   29df9:	je     29e10 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x540>
+   29dfb:	vmovsd 0x90(%r11),%xmm2
+   29e04:	vmulsd 0x88(%rax),%xmm2,%xmm2
+   29e0c:	vaddsd %xmm2,%xmm1,%xmm1
+   29e10:	add    %rdx,%r12
+   29e13:	lea    0x3(%rsi),%r11
+   29e17:	vmovsd (%r12),%xmm2
+   29e1d:	vsubsd %xmm1,%xmm2,%xmm2
+   29e21:	vmovsd %xmm2,(%r12)
+   29e27:	cmp    %r11,%r8
+   29e2a:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29e30:	lea    0x18(%rdi,%rax,1),%r11
+   29e35:	vmovsd 0x28(%rax),%xmm1
+   29e3a:	lea    0x18(%rdi),%r12
+   29e3e:	vmulsd 0x48(%rdi,%rax,1),%xmm1,%xmm1
+   29e44:	vmovsd (%r11),%xmm2
+   29e49:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   29e4e:	vaddsd %xmm2,%xmm1,%xmm1
+   29e52:	cmp    $0x2,%rcx
+   29e56:	je     29e82 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x5b2>
+   29e58:	vmovsd 0x60(%r11),%xmm2
+   29e5e:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29e63:	vaddsd %xmm2,%xmm1,%xmm1
+   29e67:	cmp    $0x3,%rcx
+   29e6b:	je     29e82 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x5b2>
+   29e6d:	vmovsd 0x90(%r11),%xmm2
+   29e76:	vmulsd 0x88(%rax),%xmm2,%xmm2
+   29e7e:	vaddsd %xmm2,%xmm1,%xmm1
+   29e82:	add    %rdx,%r12
+   29e85:	cmp    $0x1,%rsi
+   29e89:	sbb    %rsi,%rsi
+   29e8c:	vmovsd (%r12),%xmm2
+   29e92:	vsubsd %xmm1,%xmm2,%xmm2
+   29e96:	vmovsd %xmm2,(%r12)
+   29e9c:	add    $0x5,%rsi
+   29ea0:	cmp    %rsi,%r8
+   29ea3:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29ea5:	vmovsd 0x20(%rax),%xmm1
+   29eaa:	vmovsd 0x28(%rax),%xmm2
+   29eaf:	vmulsd -0x8(%rax),%xmm1,%xmm1
+   29eb4:	vmulsd 0x50(%rax),%xmm2,%xmm2
+   29eb9:	vaddsd %xmm2,%xmm1,%xmm1
+   29ebd:	cmp    $0x2,%rcx
+   29ec1:	je     29eee <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x61e>
+   29ec3:	vmovsd 0x80(%rax),%xmm2
+   29ecb:	vmulsd 0x58(%rax),%xmm2,%xmm2
+   29ed0:	vaddsd %xmm2,%xmm1,%xmm1
+   29ed4:	cmp    $0x3,%rcx
+   29ed8:	je     29eee <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x61e>
+   29eda:	vmovsd 0x88(%rax),%xmm2
+   29ee2:	vmulsd 0xb0(%rax),%xmm2,%xmm2
+   29eea:	vaddsd %xmm2,%xmm1,%xmm1
+   29eee:	vmovsd 0x20(%rdx),%xmm2
+   29ef3:	vsubsd %xmm1,%xmm2,%xmm2
+   29ef7:	vmovsd %xmm2,0x20(%rdx)
+   29efc:	test   %rbx,%rbx
+   29eff:	jne    29f74 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x6a4>
+   29f01:	mov    %rdx,%rsi
+   29f04:	shr    $0x3,%rsi
+   29f08:	neg    %rsi
+   29f0b:	and    $0x7,%esi
+   29f0e:	cmp    %r8,%rsi
+   29f11:	cmovg  %r8,%rsi
+   29f15:	test   %rsi,%rsi
+   29f18:	je     29b88 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x2b8>
+   29f1e:	lea    -0x1(%rsi),%rdi
+   29f22:	mov    %rsi,%r11
+   29f25:	cmp    $0x2,%rdi
+   29f29:	ja     29b4f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x27f>
+   29f2f:	cmp    $0x1,%rsi
+   29f33:	je     2a0ba <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x7ea>
+   29f39:	lea    0x8(%r10,%r9,8),%rdi
+   29f3e:	vmovddup %xmm0,%xmm1
+   29f42:	vmovupd (%rdi),%xmm6
+   29f46:	vdivpd %xmm1,%xmm6,%xmm1
+   29f4a:	vmovupd %xmm1,(%rdi)
+   29f4e:	mov    $0x2,%edi
+   29f53:	cmp    $0x2,%rsi
+   29f57:	jne    29b6f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x29f>
+   29f5d:	jmp    29b7f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x2af>
+   29f62:	vsqrtsd %xmm0,%xmm0,%xmm0
+   29f66:	vmovsd %xmm0,-0x8(%rdx)
+   29f6b:	test   $0x7,%dl
+   29f6e:	je     2a069 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x799>
+   29f74:	mov    %r8,%rsi
+   29f77:	jmp    29f1e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x64e>
+   29f79:	nopl   0x0(%rax)
+   29f80:	vcomisd %xmm0,%xmm3
+   29f84:	jb     29f62 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x692>
+   29f86:	xor    %esi,%esi
+   29f88:	vzeroupper
+   29f8b:	lea    -0x10(%rbp),%rsp
+   29f8f:	mov    %rsi,%rax
+   29f92:	pop    %rbx
+   29f93:	pop    %r12
+   29f95:	pop    %rbp
+   29f96:	ret
+   29f97:	mov    %r8,%rsi
+   29f9a:	jmp    29929 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x59>
+   29f9f:	lea    (%rdx,%rdi,1),%r11
+   29fa3:	vmovsd (%r11),%xmm1
+   29fa8:	vsubsd %xmm2,%xmm1,%xmm1
+   29fac:	vmovsd %xmm1,(%r11)
+   29fb1:	lea    0x1(%rsi),%r11
+   29fb5:	cmp    %r11,%r8
+   29fb8:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29fbe:	lea    0x8(%rdi,%rdx,1),%r11
+   29fc3:	vmovsd 0x8(%rdi,%rax,1),%xmm2
+   29fc9:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   29fce:	vmovsd (%r11),%xmm1
+   29fd3:	vsubsd %xmm2,%xmm1,%xmm1
+   29fd7:	vmovsd %xmm1,(%r11)
+   29fdc:	lea    0x2(%rsi),%r11
+   29fe0:	cmp    %r11,%r8
+   29fe3:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   29fe9:	lea    0x10(%rdi,%rdx,1),%r11
+   29fee:	vmovsd 0x10(%rdi,%rax,1),%xmm2
+   29ff4:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   29ff9:	vmovsd (%r11),%xmm1
+   29ffe:	vsubsd %xmm2,%xmm1,%xmm1
+   2a002:	vmovsd %xmm1,(%r11)
+   2a007:	lea    0x3(%rsi),%r11
+   2a00b:	cmp    %r11,%r8
+   2a00e:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   2a014:	cmp    $0x1,%rsi
+   2a018:	lea    0x18(%rdi,%rdx,1),%r11
+   2a01d:	vmovsd 0x18(%rdi,%rax,1),%xmm2
+   2a023:	vmulsd -0x8(%rax),%xmm2,%xmm2
+   2a028:	sbb    %rsi,%rsi
+   2a02b:	vmovsd (%r11),%xmm1
+   2a030:	vsubsd %xmm2,%xmm1,%xmm1
+   2a034:	vmovsd %xmm1,(%r11)
+   2a039:	add    $0x5,%rsi
+   2a03d:	cmp    %rsi,%r8
+   2a040:	jle    29efc <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x62c>
+   2a046:	vmovsd -0x8(%rax),%xmm1
+   2a04b:	vmulsd 0x20(%rax),%xmm1,%xmm1
+   2a050:	jmp    29eee <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x61e>
+   2a055:	mov    $0x4,%esi
+   2a05a:	cmp    $0x5,%r8
+   2a05e:	je     29bff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x32f>
+   2a064:	jmp    29c0f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x33f>
+   2a069:	mov    %rdx,%rsi
+   2a06c:	shr    $0x3,%rsi
+   2a070:	neg    %rsi
+   2a073:	and    $0x7,%esi
+   2a076:	cmp    %r8,%rsi
+   2a079:	cmovg  %r8,%rsi
+   2a07d:	test   %rsi,%rsi
+   2a080:	jne    29f1e <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x64e>
+   2a086:	jmp    29b7f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x2af>
+   2a08b:	nopl   0x0(%rax,%rax,1)
+   2a090:	xor    %r11d,%r11d
+   2a093:	jmp    29bcb <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x2fb>
+   2a098:	lea    0x1b7e9(%rip),%rcx        # 45888 <_IO_stdin_used+0x4888>
+   2a09f:	mov    $0x78,%edx
+   2a0a4:	lea    0x18285(%rip),%rsi        # 42330 <_IO_stdin_used+0x1330>
+   2a0ab:	lea    0x18306(%rip),%rdi        # 423b8 <_IO_stdin_used+0x13b8>
+   2a0b2:	vzeroupper
+   2a0b5:	call   35f0 <__assert_fail@plt>
+   2a0ba:	xor    %edi,%edi
+   2a0bc:	jmp    29b6f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)+0x29f>
+   2a0c1:	cs nopw 0x0(%rax,%rax,1)
+   2a0cb:	nopl   0x0(%rax,%rax,1)
+
+
+000000000002a0d0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)>:
+   2a0d0:	endbr64
+   2a0d4:	lea    0x8(%rsp),%r10
+   2a0d9:	and    $0xffffffffffffffe0,%rsp
+   2a0dd:	push   -0x8(%r10)
+   2a0e1:	push   %rbp
+   2a0e2:	mov    %rsp,%rbp
+   2a0e5:	push   %r15
+   2a0e7:	push   %r14
+   2a0e9:	push   %r13
+   2a0eb:	push   %r12
+   2a0ed:	push   %r10
+   2a0ef:	push   %rbx
+   2a0f0:	mov    %rdi,%r14
+   2a0f3:	sub    $0x40,%rsp
+   2a0f7:	lea    0x8(%rdi),%rbx
+   2a0fb:	xor    %r13d,%r13d
+   2a0fe:	xor    %r12d,%r12d
+   2a101:	mov    %fs:0x28,%rax
+   2a10a:	mov    %rax,-0x38(%rbp)
+   2a10e:	xor    %eax,%eax
+   2a110:	vmovsd 0x22646(%rip),%xmm17        # 4c760 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6a0>
+   2a11a:	mov    %rdi,%rax
+   2a11d:	mov    $0x7,%edi
+   2a122:	jmp    2a2a7 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1d7>
+   2a127:	nopw   0x0(%rax,%rax,1)
+   2a130:	lea    0x8(%rax),%r15
+   2a134:	cmp    $0x1,%rdi
+   2a138:	je     2a3c0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x2f0>
+   2a13e:	lea    -0x50(%rbp),%rdx
+   2a142:	lea    -0x60(%rbp),%rcx
+   2a146:	mov    %rbx,%r8
+   2a149:	mov    %r12,%rsi
+   2a14c:	mov    %rdi,-0x68(%rbp)
+   2a150:	mov    %rax,-0x60(%rbp)
+   2a154:	vmovsd %xmm17,%xmm17,%xmm0
+   2a15a:	movq   $0x8,-0x58(%rbp)
+   2a162:	mov    %r15,-0x50(%rbp)
+   2a166:	movq   $0x8,-0x48(%rbp)
+   2a16e:	vzeroupper
+   2a171:	call   c910 <Eigen::internal::general_matrix_vector_product<long, double, Eigen::internal::const_blas_data_mapper<double, long, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, long, 1>, false, 0>::run(long, long, Eigen::internal::const_blas_data_mapper<double, long, 0> const&, Eigen::internal::const_blas_data_mapper<double, long, 1> const&, double*, long, double) [clone .isra.0]>
+   2a176:	mov    -0x68(%rbp),%rdi
+   2a17a:	mov    %rdi,%rdx
+   2a17d:	test   $0x7,%bl
+   2a180:	je     2a43c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x36c>
+   2a186:	lea    -0x1(%rdx),%rax
+   2a18a:	cmp    $0x2,%rax
+   2a18e:	jbe    2a4e1 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x411>
+   2a194:	vmovupd (%rbx),%ymm2
+   2a198:	vbroadcastsd %xmm16,%ymm0
+   2a19e:	mov    $0x4,%esi
+   2a1a3:	mov    $0x4,%eax
+   2a1a8:	vdivpd %ymm0,%ymm2,%ymm0
+   2a1ac:	vmovupd %ymm0,(%rbx)
+   2a1b0:	cmp    $0x4,%rdx
+   2a1b4:	je     2a460 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x390>
+   2a1ba:	mov    %rdx,%rcx
+   2a1bd:	sub    %rsi,%rcx
+   2a1c0:	cmp    $0x1,%rcx
+   2a1c4:	je     2a1ed <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x11d>
+   2a1c6:	lea    0x1(%r13,%rsi,1),%rsi
+   2a1cb:	vmovddup %xmm16,%xmm0
+   2a1d1:	lea    (%r14,%rsi,8),%rsi
+   2a1d5:	vmovupd (%rsi),%xmm4
+   2a1d9:	vdivpd %xmm0,%xmm4,%xmm0
+   2a1dd:	vmovupd %xmm0,(%rsi)
+   2a1e1:	test   $0x1,%cl
+   2a1e4:	je     2a1ff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x12f>
+   2a1e6:	and    $0xfffffffffffffffe,%rcx
+   2a1ea:	add    %rcx,%rax
+   2a1ed:	lea    (%rbx,%rax,8),%rax
+   2a1f1:	vmovsd (%rax),%xmm0
+   2a1f5:	vdivsd %xmm16,%xmm0,%xmm0
+   2a1fb:	vmovsd %xmm0,(%rax)
+   2a1ff:	cmp    %rdx,%rdi
+   2a202:	jle    2a28c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1bc>
+   2a208:	mov    %rdi,%rax
+   2a20b:	mov    %rdx,%rsi
+   2a20e:	sub    %rdx,%rax
+   2a211:	lea    -0x1(%rax),%rcx
+   2a215:	cmp    $0x2,%rcx
+   2a219:	jbe    2a4d2 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x402>
+   2a21f:	lea    0x1(%r13,%rdx,1),%rcx
+   2a224:	vbroadcastsd %xmm16,%ymm0
+   2a22a:	lea    (%r14,%rcx,8),%rcx
+   2a22e:	vmovupd (%rcx),%ymm3
+   2a232:	vdivpd %ymm0,%ymm3,%ymm0
+   2a236:	vmovupd %ymm0,(%rcx)
+   2a23a:	mov    %rax,%rcx
+   2a23d:	and    $0xfffffffffffffffc,%rcx
+   2a241:	add    %rcx,%rdx
+   2a244:	test   $0x3,%al
+   2a246:	je     2a28c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1bc>
+   2a248:	sub    %rcx,%rax
+   2a24b:	add    %rcx,%rsi
+   2a24e:	cmp    $0x1,%rax
+   2a252:	je     2a27a <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1aa>
+   2a254:	lea    0x1(%rsi,%r13,1),%rcx
+   2a259:	vmovddup %xmm16,%xmm0
+   2a25f:	lea    (%r14,%rcx,8),%rcx
+   2a263:	vmovupd (%rcx),%xmm5
+   2a267:	vdivpd %xmm0,%xmm5,%xmm0
+   2a26b:	vmovupd %xmm0,(%rcx)
+   2a26f:	test   $0x1,%al
+   2a271:	je     2a28c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1bc>
+   2a273:	and    $0xfffffffffffffffe,%rax
+   2a277:	add    %rax,%rdx
+   2a27a:	lea    (%rbx,%rdx,8),%rax
+   2a27e:	vmovsd (%rax),%xmm0
+   2a282:	vdivsd %xmm16,%xmm0,%xmm0
+   2a288:	vmovsd %xmm0,(%rax)
+   2a28c:	inc    %r12
+   2a28f:	dec    %rdi
+   2a292:	add    $0x9,%r13
+   2a296:	add    $0x48,%rbx
+   2a29a:	mov    %r15,%rax
+   2a29d:	cmp    $0x8,%r12
+   2a2a1:	je     2a36b <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x29b>
+   2a2a7:	vmovsd -0x8(%rbx),%xmm16
+   2a2ae:	test   %r12,%r12
+   2a2b1:	je     2a380 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x2b0>
+   2a2b7:	vmovsd (%rax),%xmm0
+   2a2bb:	mov    %r12,%rdx
+   2a2be:	vmulsd %xmm0,%xmm0,%xmm0
+   2a2c2:	cmp    $0x1,%r12
+   2a2c6:	je     2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a2c8:	vmovsd 0x40(%rax),%xmm1
+   2a2cd:	vmulsd %xmm1,%xmm1,%xmm1
+   2a2d1:	vaddsd %xmm1,%xmm0,%xmm0
+   2a2d5:	cmp    $0x2,%r12
+   2a2d9:	je     2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a2db:	vmovsd 0x80(%rax),%xmm1
+   2a2e3:	vmulsd %xmm1,%xmm1,%xmm1
+   2a2e7:	vaddsd %xmm1,%xmm0,%xmm0
+   2a2eb:	cmp    $0x3,%r12
+   2a2ef:	je     2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a2f1:	vmovsd 0xc0(%rax),%xmm1
+   2a2f9:	vmulsd %xmm1,%xmm1,%xmm1
+   2a2fd:	vaddsd %xmm1,%xmm0,%xmm0
+   2a301:	cmp    $0x4,%r12
+   2a305:	je     2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a307:	vmovsd 0x100(%rax),%xmm1
+   2a30f:	vmulsd %xmm1,%xmm1,%xmm1
+   2a313:	vaddsd %xmm1,%xmm0,%xmm0
+   2a317:	cmp    $0x5,%r12
+   2a31b:	je     2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a31d:	vmovsd 0x140(%rax),%xmm1
+   2a325:	vmulsd %xmm1,%xmm1,%xmm1
+   2a329:	vaddsd %xmm1,%xmm0,%xmm0
+   2a32d:	cmp    $0x7,%r12
+   2a331:	jne    2a343 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x273>
+   2a333:	vmovsd 0x180(%rax),%xmm1
+   2a33b:	vmulsd %xmm1,%xmm1,%xmm1
+   2a33f:	vaddsd %xmm1,%xmm0,%xmm0
+   2a343:	vsubsd %xmm0,%xmm16,%xmm16
+   2a349:	vxorpd %xmm0,%xmm0,%xmm0
+   2a34d:	vcomisd %xmm16,%xmm0
+   2a353:	jae    2a392 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x2c2>
+   2a355:	vsqrtsd %xmm16,%xmm16,%xmm16
+   2a35b:	vmovsd %xmm16,-0x8(%rbx)
+   2a362:	test   %rdi,%rdi
+   2a365:	jg     2a130 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x60>
+   2a36b:	or     $0xffffffffffffffff,%rdx
+   2a36f:	jmp    2a392 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x2c2>
+   2a371:	data16 cs nopw 0x0(%rax,%rax,1)
+   2a37c:	nopl   0x0(%rax)
+   2a380:	vxorpd %xmm0,%xmm0,%xmm0
+   2a384:	vcomisd %xmm16,%xmm0
+   2a38a:	jb     2a480 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x3b0>
+   2a390:	xor    %edx,%edx
+   2a392:	mov    -0x38(%rbp),%rax
+   2a396:	sub    %fs:0x28,%rax
+   2a39f:	jne    2a4d9 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x409>
+   2a3a5:	vzeroupper
+   2a3a8:	add    $0x40,%rsp
+   2a3ac:	mov    %rdx,%rax
+   2a3af:	pop    %rbx
+   2a3b0:	pop    %r10
+   2a3b2:	pop    %r12
+   2a3b4:	pop    %r13
+   2a3b6:	pop    %r14
+   2a3b8:	pop    %r15
+   2a3ba:	pop    %rbp
+   2a3bb:	lea    -0x8(%r10),%rsp
+   2a3bf:	ret
+   2a3c0:	vmovsd (%rax),%xmm0
+   2a3c4:	vmovsd 0x48(%rax),%xmm1
+   2a3c9:	vmulsd 0x8(%rax),%xmm0,%xmm0
+   2a3ce:	vmulsd 0x40(%rax),%xmm1,%xmm1
+   2a3d3:	vaddsd %xmm1,%xmm0,%xmm0
+   2a3d7:	vmovsd 0x88(%rax),%xmm1
+   2a3df:	vmulsd 0x80(%rax),%xmm1,%xmm1
+   2a3e7:	vaddsd %xmm1,%xmm0,%xmm0
+   2a3eb:	vmovsd 0xc8(%rax),%xmm1
+   2a3f3:	vmulsd 0xc0(%rax),%xmm1,%xmm1
+   2a3fb:	vaddsd %xmm1,%xmm0,%xmm0
+   2a3ff:	vmovsd 0x100(%rax),%xmm1
+   2a407:	vmulsd 0x108(%rax),%xmm1,%xmm1
+   2a40f:	vaddsd %xmm1,%xmm0,%xmm0
+   2a413:	vmovsd 0x140(%rax),%xmm1
+   2a41b:	vmulsd 0x148(%rax),%xmm1,%xmm1
+   2a423:	vaddsd %xmm1,%xmm0,%xmm0
+   2a427:	vmovsd (%rbx),%xmm1
+   2a42b:	vsubsd %xmm0,%xmm1,%xmm1
+   2a42f:	vmovsd %xmm1,(%rbx)
+   2a433:	test   $0x7,%bl
+   2a436:	jne    2a4c6 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x3f6>
+   2a43c:	mov    %rbx,%rdx
+   2a43f:	shr    $0x3,%rdx
+   2a443:	neg    %rdx
+   2a446:	and    $0x7,%edx
+   2a449:	cmp    %rdi,%rdx
+   2a44c:	cmovg  %rdi,%rdx
+   2a450:	test   %rdx,%rdx
+   2a453:	jne    2a186 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0xb6>
+   2a459:	jmp    2a208 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x138>
+   2a45e:	xchg   %ax,%ax
+   2a460:	cmp    $0x4,%rdi
+   2a464:	jle    2a28c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x1bc>
+   2a46a:	lea    -0x4(%rdi),%rax
+   2a46e:	xor    %ecx,%ecx
+   2a470:	jmp    2a248 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x178>
+   2a475:	data16 cs nopw 0x0(%rax,%rax,1)
+   2a480:	vsqrtsd %xmm16,%xmm16,%xmm16
+   2a486:	vmovsd %xmm16,-0x8(%rbx)
+   2a48d:	test   $0x7,%bl
+   2a490:	je     2a4a0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x3d0>
+   2a492:	mov    %rdi,%rdx
+   2a495:	lea    0x8(%rax),%r15
+   2a499:	jmp    2a186 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0xb6>
+   2a49e:	xchg   %ax,%ax
+   2a4a0:	mov    %rbx,%rdx
+   2a4a3:	lea    0x8(%rax),%r15
+   2a4a7:	shr    $0x3,%rdx
+   2a4ab:	neg    %rdx
+   2a4ae:	and    $0x7,%edx
+   2a4b1:	cmp    %rdi,%rdx
+   2a4b4:	cmovg  %rdi,%rdx
+   2a4b8:	test   %rdx,%rdx
+   2a4bb:	jne    2a186 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0xb6>
+   2a4c1:	jmp    2a1ff <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x12f>
+   2a4c6:	mov    $0x1,%edx
+   2a4cb:	xor    %eax,%eax
+   2a4cd:	jmp    2a1ed <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x11d>
+   2a4d2:	xor    %ecx,%ecx
+   2a4d4:	jmp    2a248 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0x178>
+   2a4d9:	vzeroupper
+   2a4dc:	call   36d0 <__stack_chk_fail@plt>
+   2a4e1:	xor    %esi,%esi
+   2a4e3:	xor    %eax,%eax
+   2a4e5:	jmp    2a1ba <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)+0xea>
+   2a4ea:	nopw   0x0(%rax,%rax,1)
+
+
+000000000002a4f0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)>:
+   2a4f0:	endbr64
+   2a4f4:	lea    0x8(%rsp),%r10
+   2a4f9:	and    $0xffffffffffffffc0,%rsp
+   2a4fd:	push   -0x8(%r10)
+   2a501:	push   %rbp
+   2a502:	mov    %rsp,%rbp
+   2a505:	push   %r15
+   2a507:	push   %r14
+   2a509:	push   %r13
+   2a50b:	push   %r12
+   2a50d:	push   %r10
+   2a50f:	push   %rbx
+   2a510:	mov    %rdi,%r15
+   2a513:	sub    $0x40,%rsp
+   2a517:	lea    0x8(%rdi),%rbx
+   2a51b:	xor    %r14d,%r14d
+   2a51e:	mov    $0x9,%r13d
+   2a524:	mov    %fs:0x28,%rax
+   2a52d:	mov    %rax,-0x38(%rbp)
+   2a531:	xor    %eax,%eax
+   2a533:	vmovsd 0x22223(%rip),%xmm17        # 4c760 <typeinfo name for (anonymous namespace)::Sampler::enumerate()::{lambda(int, (anonymous namespace)::State const&, unsigned long, double)#1}+0x6a0>
+   2a53d:	mov    %rdi,%rax
+   2a540:	xor    %r12d,%r12d
+   2a543:	jmp    2a6df <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1ef>
+   2a548:	nopl   0x0(%rax,%rax,1)
+   2a550:	lea    0x8(%rax),%r9
+   2a554:	cmp    $0x1,%r13
+   2a558:	je     2a820 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x330>
+   2a55e:	lea    -0x60(%rbp),%rcx
+   2a562:	lea    -0x50(%rbp),%rdx
+   2a566:	mov    %rbx,%r8
+   2a569:	mov    %r12,%rsi
+   2a56c:	mov    %r13,%rdi
+   2a56f:	mov    %r9,-0x50(%rbp)
+   2a573:	mov    %r9,-0x68(%rbp)
+   2a577:	mov    %rax,-0x60(%rbp)
+   2a57b:	vmovsd %xmm17,%xmm17,%xmm0
+   2a581:	movq   $0xa,-0x58(%rbp)
+   2a589:	movq   $0xa,-0x48(%rbp)
+   2a591:	vzeroupper
+   2a594:	call   c910 <Eigen::internal::general_matrix_vector_product<long, double, Eigen::internal::const_blas_data_mapper<double, long, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, long, 1>, false, 0>::run(long, long, Eigen::internal::const_blas_data_mapper<double, long, 0> const&, Eigen::internal::const_blas_data_mapper<double, long, 1> const&, double*, long, double) [clone .isra.0]>
+   2a599:	test   $0x7,%bl
+   2a59c:	mov    -0x68(%rbp),%r9
+   2a5a0:	je     2a8c0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x3d0>
+   2a5a6:	lea    -0x1(%r13),%rcx
+   2a5aa:	cmp    $0x6,%rcx
+   2a5ae:	jbe    2aa76 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x586>
+   2a5b4:	vmovupd (%rbx),%zmm2
+   2a5ba:	vbroadcastsd %xmm16,%zmm0
+   2a5c0:	vdivpd %zmm0,%zmm2,%zmm0
+   2a5c6:	vmovupd %zmm0,(%rbx)
+   2a5cc:	cmp    $0x8,%r13
+   2a5d0:	je     2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2a5d6:	mov    %r13,%rsi
+   2a5d9:	mov    %r13,%rdx
+   2a5dc:	mov    %r13,%rax
+   2a5df:	mov    $0x8,%r8d
+   2a5e5:	mov    $0x8,%edi
+   2a5ea:	sub    %r8,%rsi
+   2a5ed:	lea    -0x1(%rsi),%r10
+   2a5f1:	cmp    $0x2,%r10
+   2a5f5:	jbe    2a621 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x131>
+   2a5f7:	lea    0x1(%r8,%r14,1),%r8
+   2a5fc:	vbroadcastsd %xmm16,%ymm0
+   2a602:	lea    (%r15,%r8,8),%r8
+   2a606:	vmovupd (%r8),%ymm3
+   2a60b:	vdivpd %ymm0,%ymm3,%ymm0
+   2a60f:	vmovupd %ymm0,(%r8)
+   2a614:	test   $0x3,%sil
+   2a618:	je     2a673 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x183>
+   2a61a:	and    $0xfffffffffffffffc,%rsi
+   2a61e:	add    %rsi,%rdi
+   2a621:	lea    0x0(,%rdi,8),%r8
+   2a629:	lea    (%rbx,%r8,1),%rsi
+   2a62d:	vmovsd (%rsi),%xmm0
+   2a631:	vdivsd %xmm16,%xmm0,%xmm0
+   2a637:	vmovsd %xmm0,(%rsi)
+   2a63b:	lea    0x1(%rdi),%rsi
+   2a63f:	cmp    %rdx,%rsi
+   2a642:	jge    2a673 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x183>
+   2a644:	lea    0x8(%r8,%rbx,1),%rsi
+   2a649:	vmovsd (%rsi),%xmm0
+   2a64d:	vdivsd %xmm16,%xmm0,%xmm0
+   2a653:	vmovsd %xmm0,(%rsi)
+   2a657:	lea    0x2(%rdi),%rsi
+   2a65b:	cmp    %rdx,%rsi
+   2a65e:	jge    2a673 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x183>
+   2a660:	lea    0x10(%r8,%rbx,1),%rsi
+   2a665:	vmovsd (%rsi),%xmm0
+   2a669:	vdivsd %xmm16,%xmm0,%xmm0
+   2a66f:	vmovsd %xmm0,(%rsi)
+   2a673:	cmp    %rax,%rdx
+   2a676:	jge    2a94f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x45f>
+   2a67c:	lea    0x0(,%rdx,8),%rdi
+   2a684:	vbroadcastsd %xmm16,%zmm1
+   2a68a:	add    $0x8,%rdx
+   2a68e:	lea    (%rbx,%rdi,1),%rsi
+   2a692:	vmovapd (%rsi),%zmm5
+   2a698:	vdivpd %zmm1,%zmm5,%zmm0
+   2a69e:	vmovapd %zmm0,(%rsi)
+   2a6a4:	cmp    %rax,%rdx
+   2a6a7:	jge    2a94f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x45f>
+   2a6ad:	lea    0x40(%rdi,%rbx,1),%rax
+   2a6b2:	vmovapd (%rax),%zmm7
+   2a6b8:	vdivpd %zmm1,%zmm7,%zmm0
+   2a6be:	vmovapd %zmm0,(%rax)
+   2a6c4:	inc    %r12
+   2a6c7:	mov    %rcx,%r13
+   2a6ca:	add    $0xb,%r14
+   2a6ce:	add    $0x58,%rbx
+   2a6d2:	mov    %r9,%rax
+   2a6d5:	cmp    $0xa,%r12
+   2a6d9:	je     2a7d7 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2e7>
+   2a6df:	vmovsd -0x8(%rbx),%xmm16
+   2a6e6:	test   %r12,%r12
+   2a6e9:	je     2a7e0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2f0>
+   2a6ef:	vmovsd (%rax),%xmm0
+   2a6f3:	mov    %r12,%rdx
+   2a6f6:	vmulsd %xmm0,%xmm0,%xmm0
+   2a6fa:	cmp    $0x1,%r12
+   2a6fe:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a704:	vmovsd 0x50(%rax),%xmm1
+   2a709:	vmulsd %xmm1,%xmm1,%xmm1
+   2a70d:	vaddsd %xmm1,%xmm0,%xmm0
+   2a711:	cmp    $0x2,%r12
+   2a715:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a71b:	vmovsd 0xa0(%rax),%xmm1
+   2a723:	vmulsd %xmm1,%xmm1,%xmm1
+   2a727:	vaddsd %xmm1,%xmm0,%xmm0
+   2a72b:	cmp    $0x3,%r12
+   2a72f:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a731:	vmovsd 0xf0(%rax),%xmm1
+   2a739:	vmulsd %xmm1,%xmm1,%xmm1
+   2a73d:	vaddsd %xmm1,%xmm0,%xmm0
+   2a741:	cmp    $0x4,%r12
+   2a745:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a747:	vmovsd 0x140(%rax),%xmm1
+   2a74f:	vmulsd %xmm1,%xmm1,%xmm1
+   2a753:	vaddsd %xmm1,%xmm0,%xmm0
+   2a757:	cmp    $0x5,%r12
+   2a75b:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a75d:	vmovsd 0x190(%rax),%xmm1
+   2a765:	vmulsd %xmm1,%xmm1,%xmm1
+   2a769:	vaddsd %xmm1,%xmm0,%xmm0
+   2a76d:	cmp    $0x6,%r12
+   2a771:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a773:	vmovsd 0x1e0(%rax),%xmm1
+   2a77b:	vmulsd %xmm1,%xmm1,%xmm1
+   2a77f:	vaddsd %xmm1,%xmm0,%xmm0
+   2a783:	cmp    $0x7,%r12
+   2a787:	je     2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a789:	vmovsd 0x230(%rax),%xmm1
+   2a791:	vmulsd %xmm1,%xmm1,%xmm1
+   2a795:	vaddsd %xmm1,%xmm0,%xmm0
+   2a799:	cmp    $0x9,%r12
+   2a79d:	jne    2a7af <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x2bf>
+   2a79f:	vmovsd 0x280(%rax),%xmm1
+   2a7a7:	vmulsd %xmm1,%xmm1,%xmm1
+   2a7ab:	vaddsd %xmm1,%xmm0,%xmm0
+   2a7af:	vsubsd %xmm0,%xmm16,%xmm16
+   2a7b5:	vxorpd %xmm0,%xmm0,%xmm0
+   2a7b9:	vcomisd %xmm16,%xmm0
+   2a7bf:	jae    2a7f2 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x302>
+   2a7c1:	vsqrtsd %xmm16,%xmm16,%xmm16
+   2a7c7:	vmovsd %xmm16,-0x8(%rbx)
+   2a7ce:	test   %r13,%r13
+   2a7d1:	jg     2a550 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x60>
+   2a7d7:	or     $0xffffffffffffffff,%rdx
+   2a7db:	jmp    2a7f2 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x302>
+   2a7dd:	nopl   (%rax)
+   2a7e0:	vxorpd %xmm0,%xmm0,%xmm0
+   2a7e4:	vcomisd %xmm16,%xmm0
+   2a7ea:	jb     2a910 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x420>
+   2a7f0:	xor    %edx,%edx
+   2a7f2:	mov    -0x38(%rbp),%rax
+   2a7f6:	sub    %fs:0x28,%rax
+   2a7ff:	jne    2a947 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x457>
+   2a805:	vzeroupper
+   2a808:	add    $0x40,%rsp
+   2a80c:	mov    %rdx,%rax
+   2a80f:	pop    %rbx
+   2a810:	pop    %r10
+   2a812:	pop    %r12
+   2a814:	pop    %r13
+   2a816:	pop    %r14
+   2a818:	pop    %r15
+   2a81a:	pop    %rbp
+   2a81b:	lea    -0x8(%r10),%rsp
+   2a81f:	ret
+   2a820:	vmovsd 0x50(%rax),%xmm0
+   2a825:	vmovsd (%rax),%xmm1
+   2a829:	vmulsd 0x58(%rax),%xmm0,%xmm0
+   2a82e:	vmulsd 0x8(%rax),%xmm1,%xmm1
+   2a833:	vaddsd %xmm1,%xmm0,%xmm0
+   2a837:	vmovsd 0xa0(%rax),%xmm1
+   2a83f:	vmulsd 0xa8(%rax),%xmm1,%xmm1
+   2a847:	vaddsd %xmm1,%xmm0,%xmm0
+   2a84b:	vmovsd 0xf8(%rax),%xmm1
+   2a853:	vmulsd 0xf0(%rax),%xmm1,%xmm1
+   2a85b:	vaddsd %xmm1,%xmm0,%xmm0
+   2a85f:	vmovsd 0x148(%rax),%xmm1
+   2a867:	vmulsd 0x140(%rax),%xmm1,%xmm1
+   2a86f:	vaddsd %xmm1,%xmm0,%xmm0
+   2a873:	vmovsd 0x198(%rax),%xmm1
+   2a87b:	vmulsd 0x190(%rax),%xmm1,%xmm1
+   2a883:	vaddsd %xmm1,%xmm0,%xmm0
+   2a887:	vmovsd 0x1e0(%rax),%xmm1
+   2a88f:	vmulsd 0x1e8(%rax),%xmm1,%xmm1
+   2a897:	vaddsd %xmm1,%xmm0,%xmm0
+   2a89b:	vmovsd 0x230(%rax),%xmm1
+   2a8a3:	vmulsd 0x238(%rax),%xmm1,%xmm1
+   2a8ab:	vaddsd %xmm1,%xmm0,%xmm0
+   2a8af:	vmovsd (%rbx),%xmm1
+   2a8b3:	vsubsd %xmm0,%xmm1,%xmm1
+   2a8b7:	vmovsd %xmm1,(%rbx)
+   2a8bb:	test   $0x7,%bl
+   2a8be:	jne    2a92c <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x43c>
+   2a8c0:	mov    %rbx,%rdx
+   2a8c3:	mov    %r13,%rax
+   2a8c6:	shr    $0x3,%rdx
+   2a8ca:	neg    %rdx
+   2a8cd:	and    $0x7,%edx
+   2a8d0:	cmp    %r13,%rdx
+   2a8d3:	cmovg  %r13,%rdx
+   2a8d7:	sub    %rdx,%rax
+   2a8da:	mov    %rax,%rsi
+   2a8dd:	sar    $0x3f,%rsi
+   2a8e1:	shr    $0x3d,%rsi
+   2a8e5:	lea    (%rax,%rsi,1),%rcx
+   2a8e9:	and    $0x7,%ecx
+   2a8ec:	sub    %rsi,%rcx
+   2a8ef:	sub    %rcx,%rax
+   2a8f2:	lea    -0x1(%r13),%rcx
+   2a8f6:	add    %rdx,%rax
+   2a8f9:	test   %rdx,%rdx
+   2a8fc:	je     2a673 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x183>
+   2a902:	mov    %rdx,%rsi
+   2a905:	xor    %r8d,%r8d
+   2a908:	xor    %edi,%edi
+   2a90a:	jmp    2a5ea <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0xfa>
+   2a90f:	nop
+   2a910:	vsqrtsd %xmm16,%xmm16,%xmm16
+   2a916:	lea    0x8(%rax),%r9
+   2a91a:	vmovsd %xmm16,-0x8(%rbx)
+   2a921:	test   $0x7,%bl
+   2a924:	jne    2a5a6 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0xb6>
+   2a92a:	jmp    2a8c0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x3d0>
+   2a92c:	mov    $0x1,%edx
+   2a931:	mov    $0x1,%eax
+   2a936:	mov    $0x1,%esi
+   2a93b:	xor    %r8d,%r8d
+   2a93e:	xor    %edi,%edi
+   2a940:	xor    %ecx,%ecx
+   2a942:	jmp    2a5ea <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0xfa>
+   2a947:	vzeroupper
+   2a94a:	call   36d0 <__stack_chk_fail@plt>
+   2a94f:	cmp    %rax,%r13
+   2a952:	jle    2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2a958:	mov    %r13,%rdx
+   2a95b:	mov    %rax,%rsi
+   2a95e:	sub    %rax,%rdx
+   2a961:	lea    -0x1(%rdx),%rdi
+   2a965:	cmp    $0x6,%rdi
+   2a969:	jbe    2aa6f <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x57f>
+   2a96f:	lea    0x1(%rax,%r14,1),%rdi
+   2a974:	vbroadcastsd %xmm16,%zmm1
+   2a97a:	mov    %rdx,%r8
+   2a97d:	lea    (%r15,%rdi,8),%rdi
+   2a981:	vmovupd (%rdi),%zmm6
+   2a987:	shr    $0x3,%r8
+   2a98b:	vdivpd %zmm1,%zmm6,%zmm0
+   2a991:	vmovupd %zmm0,(%rdi)
+   2a997:	cmp    $0x1,%r8
+   2a99b:	je     2aa60 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x570>
+   2a9a1:	vmovupd 0x40(%rdi),%zmm7
+   2a9a8:	sub    $0x8,%rax
+   2a9ac:	vdivpd %zmm1,%zmm7,%zmm0
+   2a9b2:	vmovupd %zmm0,0x40(%rdi)
+   2a9b9:	mov    $0xfffffffffffffff8,%rdi
+   2a9c0:	sub    %rdi,%rdx
+   2a9c3:	add    %rdi,%rsi
+   2a9c6:	lea    -0x1(%rdx),%rdi
+   2a9ca:	cmp    $0x2,%rdi
+   2a9ce:	jbe    2a9fb <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x50b>
+   2a9d0:	lea    0x1(%rsi,%r14,1),%rsi
+   2a9d5:	vbroadcastsd %xmm16,%ymm0
+   2a9db:	lea    (%r15,%rsi,8),%rsi
+   2a9df:	vmovupd (%rsi),%ymm4
+   2a9e3:	vdivpd %ymm0,%ymm4,%ymm0
+   2a9e7:	vmovupd %ymm0,(%rsi)
+   2a9eb:	test   $0x3,%dl
+   2a9ee:	je     2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2a9f4:	and    $0xfffffffffffffffc,%rdx
+   2a9f8:	add    %rdx,%rax
+   2a9fb:	lea    0x0(,%rax,8),%rdx
+   2aa03:	lea    (%rbx,%rdx,1),%rsi
+   2aa07:	vmovsd (%rsi),%xmm0
+   2aa0b:	vdivsd %xmm16,%xmm0,%xmm0
+   2aa11:	vmovsd %xmm0,(%rsi)
+   2aa15:	lea    0x1(%rax),%rsi
+   2aa19:	cmp    %rsi,%r13
+   2aa1c:	jle    2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2aa22:	lea    0x8(%rdx,%rbx,1),%rsi
+   2aa27:	add    $0x2,%rax
+   2aa2b:	vmovsd (%rsi),%xmm0
+   2aa2f:	vdivsd %xmm16,%xmm0,%xmm0
+   2aa35:	vmovsd %xmm0,(%rsi)
+   2aa39:	cmp    %rax,%r13
+   2aa3c:	jle    2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2aa42:	lea    0x10(%rdx,%rbx,1),%rax
+   2aa47:	vmovsd (%rax),%xmm0
+   2aa4b:	vdivsd %xmm16,%xmm0,%xmm0
+   2aa51:	vmovsd %xmm0,(%rax)
+   2aa55:	jmp    2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2aa5a:	nopw   0x0(%rax,%rax,1)
+   2aa60:	add    $0x8,%rax
+   2aa64:	cmp    $0x8,%rdx
+   2aa68:	jne    2a9fb <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x50b>
+   2aa6a:	jmp    2a6c4 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x1d4>
+   2aa6f:	xor    %edi,%edi
+   2aa71:	jmp    2a9c0 <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0x4d0>
+   2aa76:	mov    %r13,%rsi
+   2aa79:	mov    %r13,%rdx
+   2aa7c:	mov    %r13,%rax
+   2aa7f:	xor    %r8d,%r8d
+   2aa82:	xor    %edi,%edi
+   2aa84:	jmp    2a5ea <long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)+0xfa>
+   2aa89:	nopl   0x0(%rax)
+

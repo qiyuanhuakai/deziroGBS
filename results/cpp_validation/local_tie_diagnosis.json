@@ -1,0 +1,1209 @@
+{
+  "status": "diagnosis_before_canonical_fix",
+  "cold_metadata_sha256": "3b6482e3ead5275310e4d87c64efa5a60be8b82ab16eec818dc18261ba7d6a7e",
+  "baseline_binary_sha256": "021e7d14ee43f9659809a0c7fe2add871dc9f0a551d4cbf389fcb8321adf4bd5",
+  "legacy_zero_memory_source_sha256": "c415c9f6b3059e5fb0e5228b2a57a4365b8fab52450ae8aff9457e81def29c3f",
+  "cold_equality_gate": 2e-08,
+  "pairwise_failures_above_gate": 13,
+  "maximum_influence_tv": 9.462116672972477e-14,
+  "cases": [
+    {
+      "suite": "phase2_holdout",
+      "case_id": "6cb27d80dbb0f492",
+      "input": "results/phase2_holdout/instances/6cb27d80dbb0f492.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "35779123abea2916340f1726fb9853b91e4dfca333efed886238589cab78ec70",
+      "cpp_law_sha256": "bf903d72c334cd798af6f7db315db21341b3027813c67a9f87172d954b6a7049",
+      "legacy_python_law_sha256": "76b182be0ff32316a7fa23129cc553e5b876ae04a35b217ca31d4245cf8c171c",
+      "pairwise_cpp_legacy_tv": 9.157588058466703e-14,
+      "influence_cpp_legacy_tv": 9.103696435884957e-14,
+      "cpp_pairwise_target_tv": 4.853227705652822e-05,
+      "legacy_python_pairwise_target_tv": 4.853227703177052e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "30c7f8dec79228c4",
+      "input": "results/phase2_holdout/instances/30c7f8dec79228c4.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "f4bc96e0d7a22215a9c5c0ef2cdb6ad08e002d094c14f0a45dadd2f43f716e36",
+      "cpp_law_sha256": "2436a7adbfc51f232f2d2e9561f0dfce0dcca8e9e0b1779372fad84b9e383445",
+      "legacy_python_law_sha256": "1f23ee9dd4e7ca66dc70c539f9766cb0d5556d3c80fdc0886ce0b93ce4966806",
+      "pairwise_cpp_legacy_tv": 9.002561053513874e-14,
+      "influence_cpp_legacy_tv": 8.962640421687693e-14,
+      "cpp_pairwise_target_tv": 7.092361238232886e-05,
+      "legacy_python_pairwise_target_tv": 7.092361236264942e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "66ce38d6166576dd",
+      "input": "results/phase2_holdout/instances/66ce38d6166576dd.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "014e43cc0ab625d38462a96bfcadc1867deea7e39c1e7cc41e2d2c2fa235102d",
+      "cpp_law_sha256": "621eac7503290beec9a2f245ce163ffbbcaa640229ca2f484a7e0b17a4abca8f",
+      "legacy_python_law_sha256": "656bd593164df4443baaa4f7d70854d8cef53bbcaf308f0db2b4529e12ad153b",
+      "pairwise_cpp_legacy_tv": 8.893644511560975e-14,
+      "influence_cpp_legacy_tv": 8.965093083755036e-14,
+      "cpp_pairwise_target_tv": 8.42286286515248e-05,
+      "legacy_python_pairwise_target_tv": 8.422862863882563e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "6b6ab968ca92af1a",
+      "input": "results/phase2_holdout/instances/6b6ab968ca92af1a.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "3ac1faab84b9f163b2f8c238837d519fc675d53ffb1f0fa35c83e6fbfcb873e8",
+      "cpp_law_sha256": "7af50131df7cfb92bc89406d9daca860bdf8bef9155bf4970f3ba509513c275f",
+      "legacy_python_law_sha256": "221e90ef7fb55bbe0d7a1fdcde2784f8652d903758dd3f51e6d4b6ad1b42db02",
+      "pairwise_cpp_legacy_tv": 8.419112940812597e-14,
+      "influence_cpp_legacy_tv": 8.555432986034672e-14,
+      "cpp_pairwise_target_tv": 0.0001713903681041447,
+      "legacy_python_pairwise_target_tv": 0.00017139036808583704
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "3445658f5f6ad186",
+      "input": "results/phase2_holdout/instances/3445658f5f6ad186.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "acdb7e0c50a4615e404520bb23f13fff89d16295ab5280cc13a2346b1e937e89",
+      "cpp_law_sha256": "b72d15d50bdb01eb9ae2cc91a454782c3a244079da164f0911a68893dd08bb25",
+      "legacy_python_law_sha256": "1694ffa2b56b95380d7d5cb125bde8dcbceaae55c025271b449050506dec291f",
+      "pairwise_cpp_legacy_tv": 2.765138548091895e-14,
+      "influence_cpp_legacy_tv": 2.7306002714478327e-14,
+      "cpp_pairwise_target_tv": 0.002208609521151022,
+      "legacy_python_pairwise_target_tv": 0.0022086095211468863
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "61056b2fd9255bb9",
+      "input": "results/phase2_holdout/instances/61056b2fd9255bb9.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "36848dfc84287724dd79e6aefb6369b8ccf7a0934b845fa963a7b80cd8ddd769",
+      "cpp_law_sha256": "856c57005c0e088ca7b9b28433c1d141419bafcea2af5a54715b3f54ee0a674f",
+      "legacy_python_law_sha256": "f31ed1e86fe36ec798b22501f397860e7f7501149924df16c56961946eafd325",
+      "pairwise_cpp_legacy_tv": 2.7860824541522944e-14,
+      "influence_cpp_legacy_tv": 2.806160353727421e-14,
+      "cpp_pairwise_target_tv": 0.0032148518711495604,
+      "legacy_python_pairwise_target_tv": 0.0032148518711474687
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "e8d14e27ec08c56c",
+      "input": "results/phase2_holdout/instances/e8d14e27ec08c56c.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "9254334ea90138b638935f546b66c6a27b610de2993698366d24bacfc4e4408d",
+      "cpp_law_sha256": "fd26523b15bf907e57174ad3fbf11b00d36903acbe84ba8909751f3706ec0358",
+      "legacy_python_law_sha256": "e95f83933dae071854a6eef7a58c49af8fb1ccfba647359a9c0c557728bf6dcf",
+      "pairwise_cpp_legacy_tv": 1.9232726712224354e-14,
+      "influence_cpp_legacy_tv": 1.9655653650920216e-14,
+      "cpp_pairwise_target_tv": 0.0035082951183401526,
+      "legacy_python_pairwise_target_tv": 0.0035082951183372847
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "d9306c98bdd064f3",
+      "input": "results/phase2_holdout/instances/d9306c98bdd064f3.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "eba8651f74fa59fa35ac29dbf851c16b5f5bf3a39721443291205ce7f4f88b50",
+      "cpp_law_sha256": "ba171f39a340ac6c3cc0a4058de20e2e66491c9079b2bae5fc6b99d566986982",
+      "legacy_python_law_sha256": "dfe72f1a49b4853c16312f4af0e948e7aa062df9a69d9e6c2579f0ddafefe264",
+      "pairwise_cpp_legacy_tv": 1.6780522284209898e-14,
+      "influence_cpp_legacy_tv": 1.718255800229468e-14,
+      "cpp_pairwise_target_tv": 0.007493680123004729,
+      "legacy_python_pairwise_target_tv": 0.007493680123005231
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "b2b9ae4c30d7745a",
+      "input": "results/phase2_holdout/instances/b2b9ae4c30d7745a.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "b5ce9207e3d5a0aaf5050aa3bd2fb0e09867a1777dd0a9e987bd9876a22f917e",
+      "cpp_law_sha256": "006505a8f6dff81970c36736c2577621619b4a69ecf38c424a76205e3fbfaf63",
+      "legacy_python_law_sha256": "ab7bd677a4174e0753f9763310d24e159c4c020f728df59f94beb119ef8da362",
+      "pairwise_cpp_legacy_tv": 1.925609408101207e-05,
+      "influence_cpp_legacy_tv": 5.87658824256038e-14,
+      "cpp_pairwise_target_tv": 1.683529732596152e-05,
+      "legacy_python_pairwise_target_tv": 1.1636559190524646e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "3da1dce90e21feb1",
+      "input": "results/phase2_holdout/instances/3da1dce90e21feb1.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "1e883c818d8c7d62d7e8429392d00b2166d27c3d7b6a7c3263a5c9ebbb783feb",
+      "cpp_law_sha256": "79fd13c4a2be0ee2ca267459e60d213ae09b5a8b61bcc3428fa04d9ba64fa18f",
+      "legacy_python_law_sha256": "196048fae99ac60f7e0c784ab71cae9c24e063d1e4e43692142417685ad177e3",
+      "pairwise_cpp_legacy_tv": 3.2082992541260625e-08,
+      "influence_cpp_legacy_tv": 5.685821202064035e-14,
+      "cpp_pairwise_target_tv": 2.032729158228985e-08,
+      "legacy_python_pairwise_target_tv": 3.7579899079105274e-08
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "317b2844d264918f",
+      "input": "results/phase2_holdout/instances/317b2844d264918f.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "ec34b4fcfa854d5fc5e4364c648f963c320ed8bd720e5b71ddfc2ca0e9b8a5b3",
+      "cpp_law_sha256": "ce0e150f5127990eaa11ab8a6ed0029cba2f2dd8fac661556017585a3793e73e",
+      "legacy_python_law_sha256": "b3cd47f30d7e18b5511d1db5534ccf9d4361a2056629bf71a9cec640d09ab960",
+      "pairwise_cpp_legacy_tv": 5.819545557090888e-06,
+      "influence_cpp_legacy_tv": 7.981052065812991e-14,
+      "cpp_pairwise_target_tv": 0.00015931979781591874,
+      "legacy_python_pairwise_target_tv": 0.000160510259579394
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "03df3a69dcd002f3",
+      "input": "results/phase2_holdout/instances/03df3a69dcd002f3.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "1e3841d1cfbd3675132a65d33b37f0a6d4e174ef1e3fbf075e9b7bca9f1ff371",
+      "cpp_law_sha256": "57d55d78631c89880e1521646fb428070705402b7f52f5a8cfabf951a571caf7",
+      "legacy_python_law_sha256": "38314433be806d30f756e54b21f753aa7535aa9e9e8660318ef5cb1734073e98",
+      "pairwise_cpp_legacy_tv": 5.3173176427789325e-09,
+      "influence_cpp_legacy_tv": 7.4352513552199e-14,
+      "cpp_pairwise_target_tv": 1.6810830513798977e-07,
+      "legacy_python_pairwise_target_tv": 1.6714728706225728e-07
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "a71ab6f032848177",
+      "input": "results/phase2_holdout/instances/a71ab6f032848177.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "f8df5e89c06b298066f734de5b0db1fe8a0e386e960dd000fd01289558c455b1",
+      "cpp_law_sha256": "4efcba79c8cdfb35bee76809549b5ab8a4829ff0b8e50481fa2995ed4099cf4f",
+      "legacy_python_law_sha256": "e46b061d501d5191c8fab567dcc1deab0db88b5c09dc765787625764eee960c7",
+      "pairwise_cpp_legacy_tv": 0.004377654238046784,
+      "influence_cpp_legacy_tv": 2.266221064972651e-14,
+      "cpp_pairwise_target_tv": 0.005175504015323353,
+      "legacy_python_pairwise_target_tv": 0.0012133407338831164
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "afa34a299ca346b0",
+      "input": "results/phase2_holdout/instances/afa34a299ca346b0.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "c0bff7b8866410c2de27ef47f54277397c9ba96a0d4f181938d44ce1e54ce5c3",
+      "cpp_law_sha256": "60f0a31d5ce84aa776e444c41fb8fb0793c721cb8306cbaeff65e31ce9ea9fae",
+      "legacy_python_law_sha256": "ea333b2c1503bdd56c6224e85000029b31b82522837b12903ac0a2e9c527e93a",
+      "pairwise_cpp_legacy_tv": 1.1183566526068331e-07,
+      "influence_cpp_legacy_tv": 2.3996497605822953e-14,
+      "cpp_pairwise_target_tv": 1.1592971051930117e-06,
+      "legacy_python_pairwise_target_tv": 1.1644519656939476e-06
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "b710263cce141760",
+      "input": "results/phase2_holdout/instances/b710263cce141760.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "f03ee6fef523ff2af071e2688dde151b790f6d49e189d8179f3a15e8c792e096",
+      "cpp_law_sha256": "47bba91cfde701035f3daf9739f07e25e30bf7b9f15034fc8ef0a8f007221198",
+      "legacy_python_law_sha256": "aea88dc2cc685c5bfd7c8b26497d140878b12b02ba80c065205e59ce439a83be",
+      "pairwise_cpp_legacy_tv": 0.0003542728208664016,
+      "influence_cpp_legacy_tv": 2.088964512979817e-14,
+      "cpp_pairwise_target_tv": 0.006410303706298899,
+      "legacy_python_pairwise_target_tv": 0.0064456404796568705
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "cff4485e43200629",
+      "input": "results/phase2_holdout/instances/cff4485e43200629.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "95b732ae6667dc64d22ea289ca45a37d9d8265a6db7fbf7a2e5d9dc928594133",
+      "cpp_law_sha256": "bc484479247b536e42502c6fd3764bd47288dbf06b1fc3f7bf916bd6f32f454f",
+      "legacy_python_law_sha256": "6cf6ab3b2413ec9fed4ffbbe2b54c1283a486b74f2c28161c72ff3fb949e51e4",
+      "pairwise_cpp_legacy_tv": 2.07057762581462e-05,
+      "influence_cpp_legacy_tv": 1.934146287276223e-14,
+      "cpp_pairwise_target_tv": 2.269077256875211e-05,
+      "legacy_python_pairwise_target_tv": 1.708168584650701e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "22c3418bd5ab4f76",
+      "input": "results/phase2_holdout/instances/22c3418bd5ab4f76.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "973b057f99fc5a302c320af7338c116def938ba4eb14484b725822ce83d10d5f",
+      "cpp_law_sha256": "b885ee12b84a60669a3e83790c230664c818c273942a468ea346ab0cca8226c0",
+      "legacy_python_law_sha256": "aaba2e57d8a798cdcc7e2ae6f94a3099a9bfa3fd96db10308a6c4a1d67855090",
+      "pairwise_cpp_legacy_tv": 2.507551839503033e-06,
+      "influence_cpp_legacy_tv": 9.462116672972477e-14,
+      "cpp_pairwise_target_tv": 1.88167738135068e-05,
+      "legacy_python_pairwise_target_tv": 2.0462144423799683e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "aa8205f11e479aae",
+      "input": "results/phase2_holdout/instances/aa8205f11e479aae.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "1939909c9144efb1476ca76667d27bb5ad684f5a4558224e910d87113c80a89e",
+      "cpp_law_sha256": "2f0f380aade6ea1d6432a344edc71fd8e2e953c3a8685e5d3cbf5b5abcac4d9a",
+      "legacy_python_law_sha256": "95e585433c63c5deaf24c9d49ae85ff657f8f188d6b129966cf176ec5d2f4144",
+      "pairwise_cpp_legacy_tv": 9.022164852783837e-14,
+      "influence_cpp_legacy_tv": 8.842655544449743e-14,
+      "cpp_pairwise_target_tv": 1.6003948790630767e-05,
+      "legacy_python_pairwise_target_tv": 1.600394877856018e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "a6ab077cd37e9a1f",
+      "input": "results/phase2_holdout/instances/a6ab077cd37e9a1f.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "7d7007427d24e7befce54af0fb9acdf19870e90fca3a5610a2ff3abbaed14536",
+      "cpp_law_sha256": "afb9cad67f71f85012a118307335b28956031e9eb2e98d96df6141da17d84c81",
+      "legacy_python_law_sha256": "eb383ca1d26a3835b1e6ba079d33ba863e19208f88fe8e780ca265881382962c",
+      "pairwise_cpp_legacy_tv": 6.085256236161118e-06,
+      "influence_cpp_legacy_tv": 7.816581095986752e-14,
+      "cpp_pairwise_target_tv": 3.1081438846571024e-05,
+      "legacy_python_pairwise_target_tv": 2.7402640881735898e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "e3af7adb350d6fa7",
+      "input": "results/phase2_holdout/instances/e3af7adb350d6fa7.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "77644b17acdbfdd06a7b8a9a0eb18258868cb39d649688fb535f073450f39b7f",
+      "cpp_law_sha256": "056de3b1dae9e0dd45ad2c5691380ca9af22f34b7be2eda11cc53b9844b1ab9e",
+      "legacy_python_law_sha256": "1e6e875a76ef28c5b0d718108cb6782119f9c3935d9afab568957d14f32e1414",
+      "pairwise_cpp_legacy_tv": 5.5597435713469854e-06,
+      "influence_cpp_legacy_tv": 8.054161149940398e-14,
+      "cpp_pairwise_target_tv": 2.5727225633017085e-05,
+      "legacy_python_pairwise_target_tv": 2.5811551844541547e-05
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "8670a2147006a38a",
+      "input": "results/phase2_holdout/instances/8670a2147006a38a.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "7695ea87c523adee4de3f71306447ad6416a91cbeaaf7d6fb19da6de732f8e29",
+      "cpp_law_sha256": "addf844b2a1514fd7a0851cabc48bb89d669994b3907ca9394896894d9fc41ed",
+      "legacy_python_law_sha256": "b25825c2825333380e701c11d0a11a783783eccd0ed2b6a8308a4d4d25a029d7",
+      "pairwise_cpp_legacy_tv": 0.00010658513147333249,
+      "influence_cpp_legacy_tv": 2.960449099135686e-14,
+      "cpp_pairwise_target_tv": 0.0009470716361012663,
+      "legacy_python_pairwise_target_tv": 0.0009739049448117749
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "d2601daee0737d9b",
+      "input": "results/phase2_holdout/instances/d2601daee0737d9b.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5102
+      },
+      "input_sha256": "ed9a60bff760d653c324129d00a22c757fd495f71a2afd7501714466495ec8d4",
+      "cpp_law_sha256": "17c8b3f3d244451c48a96b074c831938dc73808b5d73dd1b88833b0eb143c4e0",
+      "legacy_python_law_sha256": "bc44520836edc0fcb50b9dee5d5ef0bcd208a3097315df3a29e4d44dc53abe38",
+      "pairwise_cpp_legacy_tv": 2.8488181187972736e-14,
+      "influence_cpp_legacy_tv": 2.8046631382898542e-14,
+      "cpp_pairwise_target_tv": 0.0006744297904772009,
+      "legacy_python_pairwise_target_tv": 0.0006744297904750097
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "b7e6861062dd571a",
+      "input": "results/phase2_holdout/instances/b7e6861062dd571a.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5101
+      },
+      "input_sha256": "3a4758cc1347b57e0ef6c6019290a7a483764fd86f05236128bfd6d9257ef919",
+      "cpp_law_sha256": "d6e9a98e6e541f02e14d8eeb62ef47b4c69e003eae063718622a2650716de2d8",
+      "legacy_python_law_sha256": "fa53fa296962c7f2c612730bea907a927455e03e5b7e2b4bae7114078c57c816",
+      "pairwise_cpp_legacy_tv": 0.0006861085949354578,
+      "influence_cpp_legacy_tv": 2.191087887298479e-14,
+      "cpp_pairwise_target_tv": 0.0018526094222357761,
+      "legacy_python_pairwise_target_tv": 0.002276752229130489
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "cbdf99aba78a9599",
+      "input": "results/phase2_holdout/instances/cbdf99aba78a9599.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "heterogeneous",
+        "seed": 5102
+      },
+      "input_sha256": "6181af677f9507d21acc9728ce78d72176ec3e45ad123880b0ffd6df760a7211",
+      "cpp_law_sha256": "46836dc0531a031e692a4a530924cc7b3ccc7f6a8affc43a8c740990f50819b9",
+      "legacy_python_law_sha256": "6f9baea2661b9eeaf4b345a26015f9f7a7aea9cd19f5118871a6886374099e6e",
+      "pairwise_cpp_legacy_tv": 0.0003240111823242512,
+      "influence_cpp_legacy_tv": 1.99043357479705e-14,
+      "cpp_pairwise_target_tv": 0.0013482978340311163,
+      "legacy_python_pairwise_target_tv": 0.0012331428376444735
+    },
+    {
+      "suite": "phase2_bright",
+      "case_id": "73d4f80934cf605f",
+      "input": "results/phase2_bright/instances/73d4f80934cf605f.npz",
+      "spec": {
+        "modes": 12,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.8,
+        "profile": "uniform",
+        "seed": 6101
+      },
+      "input_sha256": "8a73d27ea82d5c51290dd1f95423af2e34d735f1fac3770929706aa90346d6ac",
+      "cpp_law_sha256": "4d64fd79148bda929fff7b7e6b7fbbc9a25f98424b3409d5d476891be1b2b391",
+      "legacy_python_law_sha256": "eae4b86b90026eb2ad207af1060bc8099c76defb6d0919591de4d7897c914bb9",
+      "pairwise_cpp_legacy_tv": 3.168668432295633e-14,
+      "influence_cpp_legacy_tv": 3.223231076032555e-14,
+      "cpp_pairwise_target_tv": 0.020579617865261725,
+      "legacy_python_pairwise_target_tv": 0.02057961786526072
+    },
+    {
+      "suite": "phase2_bright",
+      "case_id": "5ce0588ea53b1413",
+      "input": "results/phase2_bright/instances/5ce0588ea53b1413.npz",
+      "spec": {
+        "modes": 12,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.8,
+        "profile": "uniform",
+        "seed": 6102
+      },
+      "input_sha256": "62a0d37dccc44c6ee3ef2038c4032b9ede65c2d9e95ae76705b67346b27df5a1",
+      "cpp_law_sha256": "f5c07f2eb77f66af96abd1dd8b8b79760cedd89da0caa43afea5c2c77ea45ab2",
+      "legacy_python_law_sha256": "976c87700e2cae31beb535c6b0ccddf9074fb582f8bcf5dd6826795ea311cab4",
+      "pairwise_cpp_legacy_tv": 3.095333674975071e-14,
+      "influence_cpp_legacy_tv": 3.047582700793378e-14,
+      "cpp_pairwise_target_tv": 0.01942019827736744,
+      "legacy_python_pairwise_target_tv": 0.019420198277367184
+    },
+    {
+      "suite": "phase2_bright",
+      "case_id": "c4f3ca91e2875d23",
+      "input": "results/phase2_bright/instances/c4f3ca91e2875d23.npz",
+      "spec": {
+        "modes": 12,
+        "topology": "haar",
+        "squeezing": 0.8,
+        "transmissivity": 0.8,
+        "profile": "uniform",
+        "seed": 6103
+      },
+      "input_sha256": "546e38129209fe12391ec2473d14cce8774d00838cc5232b5b302c6bb988f7e2",
+      "cpp_law_sha256": "04af9ad928928e0ae23d6b5c29d43095d8e9298e1414333a2c8448815afbc5a2",
+      "legacy_python_law_sha256": "503e430c76a7bce9b5a9267a5e0c8bfba4df7b21d8b6b7d615166b70ac0ddfa7",
+      "pairwise_cpp_legacy_tv": 3.1586172005303344e-14,
+      "influence_cpp_legacy_tv": 3.199573107002564e-14,
+      "cpp_pairwise_target_tv": 0.01676531754895892,
+      "legacy_python_pairwise_target_tv": 0.016765317548958766
+    }
+  ],
+  "regression_cases": [
+    {
+      "suite": "phase2_holdout",
+      "case_id": "b2b9ae4c30d7745a",
+      "input": "results/phase2_holdout/instances/b2b9ae4c30d7745a.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "b5ce9207e3d5a0aaf5050aa3bd2fb0e09867a1777dd0a9e987bd9876a22f917e",
+      "cpp_law_sha256": "006505a8f6dff81970c36736c2577621619b4a69ecf38c424a76205e3fbfaf63",
+      "legacy_python_law_sha256": "ab7bd677a4174e0753f9763310d24e159c4c020f728df59f94beb119ef8da362",
+      "pairwise_cpp_legacy_tv": 1.925609408101207e-05,
+      "influence_cpp_legacy_tv": 5.87658824256038e-14,
+      "cpp_pairwise_target_tv": 1.683529732596152e-05,
+      "legacy_python_pairwise_target_tv": 1.1636559190524646e-05,
+      "legacy_pairwise_mi": [
+        [
+          0.0,
+          0.00011424877727221313,
+          0.02178033164338137,
+          1.3530757962816658e-16,
+          0.0,
+          9.014826799597275e-17,
+          5.5551345575807185e-18,
+          0.0,
+          1.0245232588281916e-16,
+          0.0
+        ],
+        [
+          0.00011424877727221313,
+          0.0,
+          0.0008593992861311572,
+          0.0014962580756399256,
+          0.019849514643784736,
+          0.0,
+          0.0,
+          1.1302351688940765e-16,
+          1.1061309500234229e-17,
+          0.0
+        ],
+        [
+          0.02178033164338137,
+          0.0008593992861311572,
+          0.0,
+          6.0327731039591865e-06,
+          0.00010594247063494609,
+          0.0,
+          1.3031327681262953e-17,
+          0.0,
+          0.0,
+          2.8850397362205314e-17
+        ],
+        [
+          1.3530757962816658e-16,
+          0.0014962580756399256,
+          6.0327731039591865e-06,
+          0.0,
+          0.002332446344968809,
+          0.014774482807716207,
+          0.00014285350804483436,
+          1.1066570352338714e-16,
+          1.8263046051119488e-17,
+          0.0
+        ],
+        [
+          0.0,
+          0.019849514643784736,
+          0.00010594247063494609,
+          0.002332446344968809,
+          0.0,
+          0.001068825908243554,
+          8.23362875041969e-06,
+          0.0,
+          1.828397305988385e-17,
+          0.0
+        ],
+        [
+          9.014826799597275e-17,
+          0.0,
+          0.0,
+          0.014774482807716207,
+          0.001068825908243554,
+          0.0,
+          0.000352559235259094,
+          0.00026054377207281043,
+          4.8003180583257136e-05,
+          3.767176313812755e-17
+        ],
+        [
+          5.5551345575807185e-18,
+          0.0,
+          1.3031327681262953e-17,
+          0.00014285350804483436,
+          8.23362875041969e-06,
+          0.000352559235259094,
+          0.0,
+          0.02276459989050248,
+          0.004818066056354545,
+          7.395831759195979e-17
+        ],
+        [
+          0.0,
+          1.1302351688940765e-16,
+          0.0,
+          1.1066570352338714e-16,
+          0.0,
+          0.00026054377207281043,
+          0.02276459989050248,
+          0.0,
+          6.902228382360163e-05,
+          0.0075679954317926425
+        ],
+        [
+          1.0245232588281916e-16,
+          1.1061309500234229e-17,
+          0.0,
+          1.8263046051119488e-17,
+          1.828397305988385e-17,
+          4.8003180583257136e-05,
+          0.004818066056354545,
+          6.902228382360163e-05,
+          0.0,
+          0.03459651014458982
+        ],
+        [
+          0.0,
+          0.0,
+          2.8850397362205314e-17,
+          0.0,
+          0.0,
+          3.767176313812755e-17,
+          7.395831759195979e-17,
+          0.0075679954317926425,
+          0.03459651014458982,
+          0.0
+        ]
+      ],
+      "diagnostic_prefixes": [
+        {
+          "mode": 7,
+          "prefix_mask": 47,
+          "prefix_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cpp_p_one_from_full_law": 0.06308930839105101,
+          "legacy_python_p_one_from_full_law": 0.0638339586025928,
+          "cpp_prefix_mass": 2.6210994116456328e-05,
+          "legacy_python_prefix_mass": 2.6210994116822266e-05,
+          "legacy_python_retained": [
+            5,
+            1,
+            3,
+            0
+          ],
+          "uniforms_for_shared_prefix_and_disagreeing_next_bit": [
+            0.033786175859059485,
+            0.042999211159034115,
+            0.14817293038062485,
+            0.05787214950523468,
+            0.6019536968419693,
+            0.08977240769193415,
+            0.5399987142484663,
+            0.0634616334968219,
+            0.5,
+            0.5
+          ],
+          "expected_cpp_next_bit": 0,
+          "expected_legacy_python_next_bit": 1
+        }
+      ]
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "a71ab6f032848177",
+      "input": "results/phase2_holdout/instances/a71ab6f032848177.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local2",
+        "squeezing": 0.8,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "f8df5e89c06b298066f734de5b0db1fe8a0e386e960dd000fd01289558c455b1",
+      "cpp_law_sha256": "4efcba79c8cdfb35bee76809549b5ab8a4829ff0b8e50481fa2995ed4099cf4f",
+      "legacy_python_law_sha256": "e46b061d501d5191c8fab567dcc1deab0db88b5c09dc765787625764eee960c7",
+      "pairwise_cpp_legacy_tv": 0.004377654238046784,
+      "influence_cpp_legacy_tv": 2.266221064972651e-14,
+      "cpp_pairwise_target_tv": 0.005175504015323353,
+      "legacy_python_pairwise_target_tv": 0.0012133407338831164,
+      "legacy_pairwise_mi": [
+        [
+          0.0,
+          0.00015120879370431788,
+          0.04098628440896827,
+          5.554056280936877e-17,
+          2.1839864724046928e-17,
+          6.938503000952155e-17,
+          0.0,
+          0.0,
+          2.4786353732146224e-18,
+          9.109562371041764e-17
+        ],
+        [
+          0.00015120879370431788,
+          0.0,
+          0.0010043690702589998,
+          0.0019190225234426966,
+          0.033658389349850146,
+          0.0,
+          0.0,
+          0.0,
+          6.325888715770487e-17,
+          0.0
+        ],
+        [
+          0.04098628440896827,
+          0.0010043690702589998,
+          0.0,
+          6.441143414261737e-06,
+          0.00012886315220638584,
+          0.0,
+          0.0,
+          1.2647808667181777e-17,
+          4.768503887608089e-17,
+          4.010658861956516e-17
+        ],
+        [
+          5.554056280936877e-17,
+          0.0019190225234426966,
+          6.441143414261737e-06,
+          0.0,
+          0.002862768941284349,
+          0.024530888529529858,
+          0.00015775212628379867,
+          5.5326848552207313e-17,
+          6.32555343219884e-17,
+          0.0
+        ],
+        [
+          2.1839864724046928e-17,
+          0.033658389349850146,
+          0.00012886315220638584,
+          0.002862768941284349,
+          0.0,
+          0.0013614742694687803,
+          8.982196945919252e-06,
+          5.845977922598449e-17,
+          4.7121594376946094e-17,
+          0.0
+        ],
+        [
+          6.938503000952155e-17,
+          0.0,
+          0.0,
+          0.024530888529529858,
+          0.0013614742694687803,
+          0.0,
+          0.0003847020655722679,
+          0.00029906793577339635,
+          5.227582442076653e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.00015775212628379867,
+          8.982196945919252e-06,
+          0.0003847020655722679,
+          0.0,
+          0.03707874928425765,
+          0.0059609411631974495,
+          6.990199121852346e-18
+        ],
+        [
+          0.0,
+          0.0,
+          1.2647808667181777e-17,
+          5.5326848552207313e-17,
+          5.845977922598449e-17,
+          0.00029906793577339635,
+          0.03707874928425765,
+          0.0,
+          6.664949652906678e-05,
+          0.009828524855165471
+        ],
+        [
+          2.4786353732146224e-18,
+          6.325888715770487e-17,
+          4.768503887608089e-17,
+          6.32555343219884e-17,
+          4.7121594376946094e-17,
+          5.227582442076653e-05,
+          0.0059609411631974495,
+          6.664949652906678e-05,
+          0.0,
+          0.05969294589082832
+        ],
+        [
+          9.109562371041764e-17,
+          0.0,
+          4.010658861956516e-17,
+          0.0,
+          0.0,
+          0.0,
+          6.990199121852346e-18,
+          0.009828524855165471,
+          0.05969294589082832,
+          0.0
+        ]
+      ],
+      "diagnostic_prefixes": [
+        {
+          "mode": 7,
+          "prefix_mask": 47,
+          "prefix_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cpp_p_one_from_full_law": 0.22016469466183794,
+          "legacy_python_p_one_from_full_law": 0.20994911513396414,
+          "cpp_prefix_mass": 0.0015801506101269307,
+          "legacy_python_prefix_mass": 0.0015801506101268661,
+          "legacy_python_retained": [
+            5,
+            3,
+            2,
+            0
+          ],
+          "uniforms_for_shared_prefix_and_disagreeing_next_bit": [
+            0.12319422276750036,
+            0.13651563342967787,
+            0.24040759678139878,
+            0.14930093442155792,
+            0.7118904941570927,
+            0.19761341377657776,
+            0.6408043554901253,
+            0.21505690489790102,
+            0.5,
+            0.5
+          ],
+          "expected_cpp_next_bit": 1,
+          "expected_legacy_python_next_bit": 0
+        },
+        {
+          "mode": 9,
+          "prefix_mask": 466,
+          "prefix_bits": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cpp_p_one_from_full_law": 0.5630043770765315,
+          "legacy_python_p_one_from_full_law": 0.4193112741240108,
+          "cpp_prefix_mass": 0.0014404250285396205,
+          "legacy_python_prefix_mass": 0.0014404250285395253,
+          "legacy_python_retained": [
+            8,
+            7,
+            6,
+            1
+          ],
+          "uniforms_for_shared_prefix_and_disagreeing_next_bit": [
+            0.6231942227675007,
+            0.12763628599779397,
+            0.6088388738612066,
+            0.6547701047922461,
+            0.24526200292454287,
+            0.6103637620845069,
+            0.12989148750458335,
+            0.24226643459484604,
+            0.14404604954165764,
+            0.49115782560027116
+          ],
+          "expected_cpp_next_bit": 1,
+          "expected_legacy_python_next_bit": 0,
+          "kernel_probability_legacy_retained": 0.4193112741239704,
+          "kernel_probability_alternate_retained": 0.5630043770765272,
+          "physical_full_history_probability": 0.4198235847541495,
+          "zero_crossblock_candidates": {
+            "1": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "4": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "6": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        },
+        {
+          "mode": 9,
+          "prefix_mask": 451,
+          "prefix_bits": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cpp_p_one_from_full_law": 0.5635316262728459,
+          "legacy_python_p_one_from_full_law": 0.4188392329255241,
+          "cpp_prefix_mass": 0.00038496990348558776,
+          "legacy_python_prefix_mass": 0.0003849699034855444,
+          "legacy_python_retained": [
+            8,
+            7,
+            0,
+            6
+          ],
+          "uniforms_for_shared_prefix_and_disagreeing_next_bit": [
+            0.12319422276750036,
+            0.13651563342967787,
+            0.740407596781399,
+            0.6521196504069836,
+            0.7317513319394329,
+            0.5891020915484406,
+            0.12792712620450442,
+            0.24383265536553284,
+            0.14399128020118213,
+            0.491185429599185
+          ],
+          "expected_cpp_next_bit": 1,
+          "expected_legacy_python_next_bit": 0
+        }
+      ]
+    },
+    {
+      "suite": "phase2_holdout",
+      "case_id": "22c3418bd5ab4f76",
+      "input": "results/phase2_holdout/instances/22c3418bd5ab4f76.npz",
+      "spec": {
+        "modes": 10,
+        "topology": "local4",
+        "squeezing": 0.4,
+        "transmissivity": 0.5,
+        "profile": "uniform",
+        "seed": 5101
+      },
+      "input_sha256": "973b057f99fc5a302c320af7338c116def938ba4eb14484b725822ce83d10d5f",
+      "cpp_law_sha256": "b885ee12b84a60669a3e83790c230664c818c273942a468ea346ab0cca8226c0",
+      "legacy_python_law_sha256": "aaba2e57d8a798cdcc7e2ae6f94a3099a9bfa3fd96db10308a6c4a1d67855090",
+      "pairwise_cpp_legacy_tv": 2.507551839503033e-06,
+      "influence_cpp_legacy_tv": 9.462116672972477e-14,
+      "cpp_pairwise_target_tv": 1.88167738135068e-05,
+      "legacy_python_pairwise_target_tv": 2.0462144423799683e-05,
+      "legacy_pairwise_mi": [
+        [
+          0.0,
+          0.002763885236438097,
+          3.1212243142015824e-05,
+          0.005193301892424373,
+          0.0021917575678853446,
+          6.400450384281268e-12,
+          2.6182109912426075e-12,
+          5.6320442103557345e-18,
+          5.970158775616022e-17,
+          9.559353921931578e-17
+        ],
+        [
+          0.002763885236438097,
+          0.0,
+          0.0017123358995192722,
+          0.006451756078428171,
+          0.0002870882572921043,
+          0.00020296467376233187,
+          0.00025352012100100904,
+          1.7194565526161302e-11,
+          2.9117738639432093e-16,
+          0.0
+        ],
+        [
+          3.1212243142015824e-05,
+          0.0017123358995192722,
+          0.0,
+          0.00017271558910902972,
+          0.0016913941317459368,
+          0.006094775822526634,
+          0.0037874334202669764,
+          2.3645982808103538e-12,
+          0.0,
+          1.2628096832035342e-16
+        ],
+        [
+          0.005193301892424373,
+          0.006451756078428171,
+          0.00017271558910902972,
+          0.0,
+          2.278686151933483e-06,
+          2.076084507347418e-05,
+          2.2715342842888006e-07,
+          3.866942343359208e-05,
+          1.0377098528676455e-07,
+          5.299688006417684e-06
+        ],
+        [
+          0.0021917575678853446,
+          0.0002870882572921043,
+          0.0016913941317459368,
+          2.278686151933483e-06,
+          0.0,
+          0.0009707221232957601,
+          0.0019016818422517012,
+          0.00010756866392785209,
+          2.536498687521471e-07,
+          1.3973610523757766e-05
+        ],
+        [
+          6.400450384281268e-12,
+          0.00020296467376233187,
+          0.006094775822526634,
+          2.076084507347418e-05,
+          0.0009707221232957601,
+          0.0,
+          0.0005917896251117225,
+          0.0041348766509722934,
+          1.573670561957457e-05,
+          0.0005428938992207769
+        ],
+        [
+          2.6182109912426075e-12,
+          0.00025352012100100904,
+          0.0037874334202669764,
+          2.2715342842888006e-07,
+          0.0019016818422517012,
+          0.0005917896251117225,
+          0.0,
+          0.011949400882710464,
+          4.9499578145727197e-05,
+          0.0017104915806381545
+        ],
+        [
+          5.6320442103557345e-18,
+          1.7194565526161302e-11,
+          2.3645982808103538e-12,
+          3.866942343359208e-05,
+          0.00010756866392785209,
+          0.0041348766509722934,
+          0.011949400882710464,
+          0.0,
+          0.007043658641905632,
+          4.4556584501296496e-05
+        ],
+        [
+          5.970158775616022e-17,
+          2.9117738639432093e-16,
+          0.0,
+          1.0377098528676455e-07,
+          2.536498687521471e-07,
+          1.573670561957457e-05,
+          4.9499578145727197e-05,
+          0.007043658641905632,
+          0.0,
+          0.007155421965787605
+        ],
+        [
+          9.559353921931578e-17,
+          0.0,
+          1.2628096832035342e-16,
+          5.299688006417684e-06,
+          1.3973610523757766e-05,
+          0.0005428938992207769,
+          0.0017104915806381545,
+          4.4556584501296496e-05,
+          0.007155421965787605,
+          0.0
+        ]
+      ],
+      "diagnostic_prefixes": [],
+      "weak_nonzero_pairs": [
+        {
+          "modes": [
+            8,
+            1
+          ],
+          "cross_block": [
+            [
+              -3.732523414967989e-05,
+              7.760461625866012e-05
+            ],
+            [
+              7.760461625866012e-05,
+              3.732523414967991e-05
+            ]
+          ],
+          "legacy_python_mi": 2.9117738639432093e-16
+        },
+        {
+          "modes": [
+            8,
+            2
+          ],
+          "cross_block": [
+            [
+              -5.3172703694855904e-05,
+              1.7067488206525336e-06
+            ],
+            [
+              1.706748820652515e-06,
+              5.31727036948559e-05
+            ]
+          ],
+          "legacy_python_mi": 0.0
+        }
+      ]
+    }
+  ],
+  "coverage_gap": "Haar inputs lacked exact structural zero-MI ties; independent thermal/vacuum tied candidates had the same conditional effect; fully-conditioned fixtures never truncated clicked histories. Sparse local inputs combine tied/weak unconditional MI with different postselected predictive effects.",
+  "next_policy": "Exact Gaussian zero-crossblock independence plus stable Bernoulli KL remainder and stable covariance-derived correlation; no score floor and unchanged probability/full-Q guards. Corrected controls are new artifacts, not replacements of archived phase2 laws."
+}

@@ -2,13 +2,25 @@
 
 一个用于探索经典 Gaussian Boson Sampling 算法的可复现实验项目。最近一轮工作日期：**2026-11-04**。
 
-**第二轮已经完成：**63 个新输入上的 879 次完整分布方法评估，接入并核验官方 FrugalGBS，增加条件点击影响选择器、Schur 内核、解析失败家族和无需完整枚举的 TV 统计验证。当前 86 项测试通过；另有 15 项官方采样器接入验证。完整分布比较仍限于 10、12 模式。
+**原生 C++ 轮已经完成：**两个 retained-click 选择器、Gaussian 状态更新、概率内核、随机抽样及样本存储均已迁移到 C++20。与同一编译器、本机优化、单线程的官方 FrugalGBS 完成 366 次方法运行，0 次失败。全项目 106 项测试通过。新增稳定互信息公式，修复稀疏线路中舍入误差改变对照选择的问题；原始失败记录与旧结果全部保留。
 
-**当前结论：**保留 4 个点击的自适应选择器在追加探索的 27 个小规模输入上，TV 均低于官方 FrugalGBS K=5；当前 Python 原型短批成本仍显著高于官方 C++ 实现。没有证明相同算力预算下获胜，也没有战胜大型量子实验，原创性仍待确认。该 k=4 扩展在看到基线后加入，不能称为独立确认试验。
+**当前结论：**保留 4 个点击的自适应选择器在 27 个 10/12 模式输入上，完整分布 TV 均低于官方 FrugalGBS K=5；预处理加 128 样本的短批成本在 26/27 个输入上更低。但 8192 样本的小规模持续抽样测试中，抽样耗时约为 Frugal 的 7–9 倍。32/64 模式成本又有优势，完整分布质量尚未核验。没有战胜大型量子实验，原创性仍待确认；k=4 和这些输入此前已用于探索，本轮不是独立确认试验。
 
-先读 [RESEARCH_REPORT_PHASE2.md](RESEARCH_REPORT_PHASE2.md) 和 [第二轮结果表](results/phase2_analysis/summary_tables.md)。第一轮报告 [RESEARCH_REPORT.md](RESEARCH_REPORT.md) 与数据保持原样，第一轮的 2,124 次模型评估、216 个输入和 60 次成本探测不计入第二轮数字。
+先读 [RESEARCH_REPORT_CPP.md](RESEARCH_REPORT_CPP.md)、[C++ 结果表](results/cpp_analysis/summary_tables.md) 和 [独立审查](research/cpp_independent_audit.md)。完整数据包括 81 个小规模 Q/P 方法评估，16/32/64 模式仅做成本测量。运行失败、稀有事件的数值拒绝与普通成功验证分别记录。
 
-![Accuracy and cost comparison](results/phase2_analysis/accuracy_frontier.png)
+![Native C++ quality and cost comparison](results/cpp_analysis/native_frontier.png)
+
+## C++ 复现
+
+构建、独立 CLI 采样和统一对赛命令见 [原生报告第 7 节](RESEARCH_REPORT_CPP.md#7-复现入口)。核心文件是 `experiments/click_sampler.cpp`，Python 包装层是 `src/gbslab/cpp_click.py`。本机版采用 `-O3 -march=native -ffp-contract=off`，未使用 fast-math；生成代码已含 SIMD，本轮没有手写汇编。移植使用浮点保护而非自动重试来处理不可靠条件概率。
+
+当前 pairwise 采用修复后的稳定分数。要逐版本恢复旧 pairwise 结果，请使用历史源码快照或对应 Git 提交；直接用最新代码运行旧配置会使用新公式。归档保留首次原生试验的 13 个跨语言分布失败例，以及修复后的 27 个完整对照。
+
+## 历史里程碑
+
+第二轮完成了 63 个新输入上的 879 次完整分布方法评估，接入官方 FrugalGBS，增加条件点击影响选择器、Schur 内核、解析失败家族和无需完整枚举的 TV 统计验证。其报告 [RESEARCH_REPORT_PHASE2.md](RESEARCH_REPORT_PHASE2.md) 与 [结果表](results/phase2_analysis/summary_tables.md) 保留当时的 Python/C++ 实现差异；当时的性能结论已由本轮统一原生对赛推进。旧 pairwise 对照中的舍入敏感问题详见本轮报告。
+
+第一轮报告 [RESEARCH_REPORT.md](RESEARCH_REPORT.md) 与数据保持原样，第一轮的 2,124 次模型评估、216 个输入和 60 次成本探测不计入第二轮数字。
 
 ## 第二轮复现
 

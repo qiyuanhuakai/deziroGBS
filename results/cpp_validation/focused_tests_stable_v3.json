@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -p test_cpp_click.py -v",
+  "tests_run": 20,
+  "reported_runtime_seconds": 7.543,
+  "portable_executable_sha256": "54c361675c80c00dc7837d5afebc075e20281f60bcfb735ea6c5e5c3ddf04b73",
+  "test_source_sha256": "5d6619b4d24fccb70bd27c9981cb3c0f15257d90292abc67507a72ceb0965de2",
+  "source_hashes": {
+    "zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0",
+    "cpp_click.py": "6f94d770679678c992b2b8845a9a01a1027c87e5489ebb68f633443012c1e621"
+  },
+  "provenance": "Actual unittest process exited0 and reported20 tests OK; record saved from its completed output without rerunning the suite."
+}
