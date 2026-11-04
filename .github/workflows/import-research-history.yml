@@ -1,0 +1,122 @@
+name: Import archived GBS research history
+'on':
+  push:
+    branches: [main]
+    paths: [.github/research-import.json]
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'qiyuanhuakai/deziroGBS'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Verify and import the fixed research archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PYIMPORT'
+          import base64
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import tempfile
+          import urllib.request
+
+          REPOSITORY = "qiyuanhuakai/deziroGBS"
+          SOURCE_COMMIT = "37518d58f571de62749c14c322fe7e0736240ed0"
+          SOURCE_TREE = "b2eca32a00c9fa3df56fbd91f459f7211b9eb84c"
+          BUNDLE_SHA256 = "2acff55a1d622052a1318251b958400821095a371963213111f0f4a3d872fd71"
+          BUNDLE_BYTES = 42619275
+
+          assert os.environ["GITHUB_REPOSITORY"] == REPOSITORY
+          trigger = os.environ["GITHUB_SHA"]
+          assert len(trigger) == 40 and all(c in "0123456789abcdef" for c in trigger)
+          token = os.environ["GH_TOKEN"]
+
+
+          def api(path):
+              request = urllib.request.Request(
+                  "https://api.github.com/repos/" + REPOSITORY + "/" + path,
+                  headers={
+                      "Authorization": "Bearer " + token,
+                      "Accept": "application/vnd.github+json",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=90) as response:
+                  return json.load(response)
+
+
+          payload = api("contents/.github/research-import.json?ref=" + trigger)
+          manifest = json.loads(base64.b64decode(payload["content"]))
+          assert manifest["repository"] == REPOSITORY
+          assert manifest["source_commit"] == SOURCE_COMMIT
+          assert manifest["source_tree"] == SOURCE_TREE
+          assert manifest["bundle_sha256"] == BUNDLE_SHA256
+          assert manifest["bundle_bytes"] == BUNDLE_BYTES
+          assert 1 <= len(manifest["chunks"]) <= 100
+
+          env = os.environ.copy()
+          env["GIT_TERMINAL_PROMPT"] = "0"
+          env["GIT_CONFIG_COUNT"] = "1"
+          env["GIT_CONFIG_KEY_0"] = "http.https://github.com/.extraheader"
+          auth = base64.b64encode(("x-access-token:" + token).encode()).decode()
+          env["GIT_CONFIG_VALUE_0"] = "AUTHORIZATION: basic " + auth
+
+          with tempfile.TemporaryDirectory(prefix="dezirogbs-import-") as directory:
+              work = Path(directory)
+              bundle = work / "research.bundle"
+              digest = hashlib.sha256()
+              size = 0
+              with bundle.open("wb") as stream:
+                  for item in manifest["chunks"]:
+                      sha = item["sha"]
+                      assert len(sha) == 40 and all(c in "0123456789abcdef" for c in sha)
+                      blob = api("git/blobs/" + sha)
+                      assert blob["sha"] == sha and blob["encoding"] == "base64"
+                      data = base64.b64decode(blob["content"])
+                      assert len(data) == item["bytes"] and len(data) <= 5 * 1024 * 1024
+                      git_digest = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data)
+                      assert git_digest.hexdigest() == sha
+                      size += len(data)
+                      assert size <= BUNDLE_BYTES
+                      digest.update(data)
+                      stream.write(data)
+              assert size == BUNDLE_BYTES and digest.hexdigest() == BUNDLE_SHA256
+
+              checkout = work / "repository"
+              checkout.mkdir()
+
+              def git(*args, input_text=None):
+                  return subprocess.run(
+                      ["git", *args], cwd=checkout, env=env, check=True,
+                      input=input_text, capture_output=True, text=True,
+                  ).stdout.strip()
+
+              git("init", "--quiet")
+              git("config", "user.name", "deziroGBS archive importer")
+              git("config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+              git("bundle", "verify", str(bundle))
+              git("fetch", "--quiet", str(bundle), "refs/heads/main:refs/remotes/import/source")
+              assert git("rev-parse", "refs/remotes/import/source") == SOURCE_COMMIT
+              assert git("rev-parse", SOURCE_COMMIT + "^{tree}") == SOURCE_TREE
+              git("remote", "add", "origin", "https://github.com/" + REPOSITORY + ".git")
+              git("fetch", "--quiet", "origin", trigger)
+              current = git("ls-remote", "--exit-code", "origin", "refs/heads/main").split()[0]
+              assert current == trigger, "Remote main advanced; no changes were pushed."
+              message = (
+                  "Import complete GBS research history\n\n"
+                  "Preserve the four original research commits and their exact source tree.\n"
+                  "Source commit: " + SOURCE_COMMIT + "\n"
+                  "Bundle SHA-256: " + BUNDLE_SHA256 + "\n"
+                  "The temporary import workflow and manifest are absent from this tree.\n"
+              )
+              merged = git("commit-tree", SOURCE_TREE, "-p", SOURCE_COMMIT, "-p", trigger, input_text=message)
+              assert git("rev-parse", merged + "^{tree}") == SOURCE_TREE
+              git("merge-base", "--is-ancestor", trigger, merged)
+              git("push", "--porcelain", "origin", merged + ":refs/heads/main")
+              print(json.dumps({"source_commit": SOURCE_COMMIT, "source_tree": SOURCE_TREE, "published_commit": merged}))
+          PYIMPORT
