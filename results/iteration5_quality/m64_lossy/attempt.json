@@ -1,0 +1,37 @@
+{
+  "case": {
+    "id": "m64_lossy",
+    "modes": 64,
+    "profile": {
+      "name": "lossy",
+      "squeezing": 0.6,
+      "transmissivity": 0.35
+    },
+    "synthetic": true,
+    "method": "candidate",
+    "count": 2048,
+    "pilot": 512,
+    "seed": 7120605
+  },
+  "covariance_sha256": "8c6fb1677fa4a8bea55209280a6d7e55faff120225ab8be73db82b4d16c935a8",
+  "config_sha256": "60543065c0166763595f38ae9db4c3e356d0e20ac5c4c85d3cbd089138dc390c",
+  "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+  "validation_binding": {
+    "checked_utc": "2026-11-04T14:52:26.740678+00:00",
+    "method": "candidate",
+    "validation_path": "/workspace/scratch/7ca85676bed2/deziroGBS/results/iteration5_prefix_validation/validation.json",
+    "validation_sha256": "9e3073ad86458aca5ef4a590556f8e8aaac15148ea92eb43ada9c66b1e6da0b6",
+    "build_metadata_sha256": "438229bb1deaf65208b2e878b8eea008cb0991d800552c13570cf374ccf4a12b",
+    "build_cache_key": "131c28526865f9f25d0c9d2464a7dc0be5b8c3eae098ee840a35a7684c4b2a88",
+    "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+    "passed": true,
+    "scope": "Matching validated native binary and build identity; Python evaluator revisions are recorded separately and do not backdate validation.",
+    "checked_before_sampling": true
+  },
+  "started_utc": "2026-11-04T14:52:26.745518+00:00",
+  "source_hashes": {
+    "experiments/iteration5_quality.py": "0bc026f93e6a20d57551b4df21afae35e988a46dba9a97429d96b0a474276b11",
+    "src/gbslab/cpp_click.py": "675b92a67aa4bb87962b1d6b0cffc8de3465fa0e6dd4601f69856df00fec484d",
+    "src/gbslab/frugal_evidence.py": "2ff0a0096a3783c27c60fd8010cbb775622f238deb6a2d87a0b7b425141ec727"
+  }
+}

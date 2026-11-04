@@ -1,26 +1,30 @@
 # deziroGBS / GBS Classical Lab
 
-一个用于探索经典 Gaussian Boson Sampling 算法的可复现实验项目。最近一轮工作日期：**2026-11-04**。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第五轮，2026-11-04**。
 
-**第四轮：全模式优化、两个判别器及官方 Frugal 对照。** 在8–256模式的32组新输入上完成192次配对性能运行：新product核有30/32组中位耗时下降，配对加速中位数1.095倍。32组固定质量批次在TV≤0.1标准下有10组有条件接受、22组证据不足、0组采样失败；其中只有8个8/12模式完整分布比较和2个低亮度16模式统计上界得到接受。大型高亮度的质量问题仍然存在。
+**本轮新增保持候选采样律的有界前缀缓存，并得到一个大模式质量反例。** 216次正式方法运行全部完成；32组缓存开/关配对中24组更快，中位加速1.075倍。8/12模式的8192样本批次加速5.534–25.998倍；32–256模式的中位数只有1.010倍。缓存默认关闭，不把小系统收益外推为大规模普适加速。
 
-第一判别器检查指定Gaussian阈值分布的物理模型、全局TV证据与必要见证；第二判别器分别检查真实九章实例、输出规模、探测输出、噪声、质量、协议和资源。二者都不会把“能出样本”变成“已复现九章”。默认最新前沿是2026年发表的九章四号：1024输入压缩态、8176输出模式。
+预定四个小模式Frugal输入的补充完整分布枚举中，候选TV均较小，三个8192样本批次还同时有更低的原生准备加采样成本；12模式高亮度长批次仍由Frugal更快。固定质量批次的主D1为2组有条件接受、12组证据不足。保持原事件、样本和alpha的事后Clopper–Pearson精化，在256模式高亮度输入给出TV下界 **0.106672 > 0.1**，因此该输入不满足本轮目标。原主分析与D2报告没有改写。
 
-官方FrugalGBS已加入相同判别器的额外对照，并用真实九章一号作者协方差进行固定批次实验：准备724.27秒、官方生成1024样本阶段130.22秒；我们额外加入的logQ审计在总预算1800秒时超时，未取得完整样本，质量未判定。论文原始声明审计区分了九章二号完整144位阈值任务、九章三号144位粗粒化任务，以及尚未建立的完整九章四号演示。本地实验不冒充论文千万样本GPU基准的复现。
+九章一号作者Gaussian模型的官方Frugal K5新批次已完整保存1024条样本：准备848.715秒、生成149.121秒；平均点击41.153，目标41.042，候选39.864。两者仍未建立完整分布质量接受；第四轮的额外logQ审计超时记录保留。本轮最终 **203项测试通过，0失败、0错误、0跳过**。
 
-超时后已增加“生成完成立即保存样本，再做密度审计”的独立v2接口，并通过4项小规模故障／一致性检查。本次100模式失败记录保持原样，没有被第二次采样替换。当前主对照运行器使用v2；历史计时仍明确绑定v1。
+先读 [第五轮研究报告](RESEARCH_REPORT_ITERATION5.md)、[完整结果表](results/iteration5_analysis/summary_tables.md) 和 [独立审查](research/iteration5_independent_audit.md)。当前方法是零均值Gaussian态的近似阈值采样器；不是完整PNR实现，没有战胜完整大型九章实验，原创性也尚未建立。
 
-先读 [第四轮研究报告](RESEARCH_REPORT_ITERATION4.md)、[第四轮结果表](results/iteration4_analysis/summary_tables.md) 和 [Frugal声明审计](research/iteration4_frugal_claims.md)。当前方法仍是经典近似GBS采样器，没有战胜完整大型量子实验，原创性也尚未建立。
+![第五轮：同一候选采样律的缓存速度](results/iteration5_analysis/prefix_cache_speed.png)
 
-第四轮最终全项目153项测试通过，包含两个判别器和样本checkpoint修复；完整日志及源文件散列见 `results/iteration4_verification/`。
+## 第五轮接口与复现
 
-![Full-mode optimization and two evidence validators](results/iteration4_analysis/full_mode_validation.png)
+核心C++实现 `experiments/click_sampler.cpp` 新增 `--prefix-cache-entries N`，Python包装层对应 `prefix_cache_entries`；默认0。正式实验使用65536项、3 MiB前缀向量载荷，分配和所有未命中计入采样时间。该数字不是进程总内存。
 
-## 第四轮复现与接口
+性能配置为 `configs/iteration5_prefix_benchmark.json`，质量配置为 `configs/iteration5_quality.json`。入口分别是 `experiments/iteration5_benchmark.py` 与 `experiments/iteration5_quality.py`。质量抽样和评估分开；CP只读取原始产物并写入独立目录。旧结果和失败记录不覆盖。
 
-核心实现为 `experiments/click_sampler.cpp`，新增 `--vacuum-kernel product` 和 `--record-log-probabilities`；旧log核仍是默认。两个判别器为 `src/gbslab/gbs_identity.py`、`src/gbslab/jiuzhang_gap.py`，官方对照证据接口为 `src/gbslab/frugal_evidence.py`。入口和完整限定见 [第四轮报告第6节](RESEARCH_REPORT_ITERATION4.md#6-可复现性与审查)。
+构建、独立旧版参考、二进制门禁与复现命令见 [第五轮报告第7节](RESEARCH_REPORT_ITERATION5.md#7-验证源码与恢复)。重新编译后必须生成绑定新构建的验证记录；不能改写旧门禁中的散列来绕过检查。原生集成测试缺失对应程序时会跳过，归档的零跳过结果只属于实际验证过的环境。
 
-固定协议位于 `configs/iteration4_cross_mode.json` 和 `configs/iteration4_jiuzhang1_control.json`。性能与质量批次分别保存；任何无法可靠求出的目标点使用最坏分数，不丢弃、不重抽。结果只对具体输入、程序和容差有效；浮点估计不是严格区间证书。
+## 第四轮（历史）
+
+第四轮在8–256模式32个输入上完成192次配对性能运行，product核中位加速1.095倍。32组质量批次为10组有条件接受、22组证据不足；大型高亮度质量问题未解决。两个判别器分别检查指定Gaussian阈值分布，以及相对真实九章实例的输出、质量、噪声、协议和资源差距。
+
+第四轮九章一号Frugal批次的额外logQ审计在总预算1800秒下超时，完整样本丢失；随后增加生成完成先保存checkpoint的v2接口。第五轮独立新批次实际使用这一接口，没有替换旧失败。详见 [第四轮报告](RESEARCH_REPORT_ITERATION4.md)、[历史结果表](results/iteration4_analysis/summary_tables.md)、[Frugal声明审计](research/iteration4_frugal_claims.md)。第四轮153项测试是当时的历史数字，不与第五轮203项相加。
 
 ## 第三轮原生C++对赛（历史）
 
@@ -139,21 +143,14 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 - `results/survey_v1/`、`adaptive_v1/`：初始探索记录，保留研究历史；不用于最终数值结论。
 - `results/analysis/`：图、摘要和所有反例索引。
 - `research/`：方法审计、查新记录和下一轮问题。
-- `.cache/targets/`：可重建的精确参考缓存；不跟踪到 Git。归档压缩包保留本轮缓存。
+- `.cache/targets/`：可重建的精确参考缓存；不跟踪到 Git。历史独立归档可能保留缓存；第五轮恢复包只包含Git跟踪的研究成果。
 
 未下载或复制论文全文。`third_party/FrugalGBS`（MIT）和 `third_party/xsimd`（BSD-3-Clause）保存用于可复现对赛的上游源码子集，文件均核对固定提交的 Git blob；参见 [上游说明](third_party/README.md)。本项目自有新增代码尚未选择对外开放源码许可证。
 
-## GitHub 状态
+## GitHub 与历史恢复状态
 
-项目远程地址为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**，由用户于2026-11-04创建。仓库保存代码、报告、固定实验配置、实际结果及本地研究提交历史。Python包仍使用 `gbslab`，旧报告中的项目工作名为GBS Classical Lab。
+目标远程地址为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**。本轮恢复了原四轮本地研究历史，并将 `37518d5` 与已知远端初始化提交 `52e38ae` 合并为本地 `ce73c2e`；第五轮继续在其后提交。Python包名仍为 `gbslab`。
 
-编译产物、精确参考缓存和未公开再分发的作者协方差位于被忽略的 `.cache/`，单独归档，不推入远程源码树。旧里程碑压缩包中的 `history.bundle` 仍可恢复当时的研究历史。
+**本轮尚未公开发布。** 自动审批审查拒绝了将具体研究源码、实验结果和历史推送至公开仓库的操作，要求用户明确批准这批内容和目的地。没有用其他接口绕过；因此不能把远程克隆描述为已经包含完整研究。第五轮交付包内的Git bundle可恢复全部历史及最终源码，确切提交和恢复命令见包内清单。
 
-```bash
-git clone https://github.com/qiyuanhuakai/deziroGBS.git
-cd deziroGBS
-python -m pip install -e .
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -v
-```
-
-原生集成测试在没有相应已编译程序时会跳过；本轮记录的153项全部通过是在归档本机二进制可用的环境中完成。重新编译后应重新验证对应的二进制散列，不能直接套用旧构建的验证门。
+编译产物、计算缓存和作者原始协方差不包含在该恢复包或拟公开源码树中。九章模型复现需按来源说明独立取得协方差并校验散列。上游FrugalGBS和xsimd许可证保留；项目自有新增代码尚未选择对外开放源码许可证。

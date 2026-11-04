@@ -1,0 +1,68 @@
+{
+  "run_id": "m12_lossy",
+  "status": "ok",
+  "synthetic": true,
+  "instance_id": null,
+  "covariance_sha256": "1635616408e2394b58d9dab67b70ffe4009483ca182999b5b36aba0886af81c4",
+  "modes": 12,
+  "output_bins": 12,
+  "source_count": 12,
+  "detector_model": "threshold",
+  "output_encoding": "binary_threshold_bins",
+  "noise_features": [
+    "uniform_loss"
+  ],
+  "sampling": {
+    "count_requested": 512,
+    "count_observed": 512,
+    "iid": true,
+    "no_retries": true,
+    "postselection": "none"
+  },
+  "timings": {
+    "wall_seconds": 0.08010785700025735,
+    "setup_seconds": 4.6871e-05,
+    "sampling_seconds": 0.002919399,
+    "scope": "candidate with path log-Q in sampling; small full-Q enumeration is outside sampling",
+    "formal_performance_claim": false
+  },
+  "resources": {
+    "cpu": "AMD EPYC 9V74; shared host",
+    "threads": 1,
+    "gpus": 0,
+    "peak_memory_bytes": null
+  },
+  "implementation": {
+    "maximum_modes": 256
+  },
+  "native_provenance": {
+    "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+    "build_cache_key": "131c28526865f9f25d0c9d2464a7dc0be5b8c3eae098ee840a35a7684c4b2a88",
+    "selector": "click_influence",
+    "k": 4,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "vacuum_kernel": "product",
+    "covariance_sha256": "1635616408e2394b58d9dab67b70ffe4009483ca182999b5b36aba0886af81c4",
+    "seed": 7120601,
+    "sample_count": 512
+  },
+  "click_statistics": {
+    "observed_mean": 1.36328125,
+    "observed_maximum": 6,
+    "sample_size": 512,
+    "source": "complete frozen batch, not an inferred target-hardness parameter"
+  }
+}

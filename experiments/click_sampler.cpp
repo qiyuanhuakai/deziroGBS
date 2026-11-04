@@ -22,6 +22,7 @@
 #include <limits>
 #include <memory>
 #include <numeric>
+#include <optional>
 #include <random>
 #include <sstream>
 #include <stdexcept>
@@ -43,6 +44,8 @@ constexpr std::size_t uniform_byte_cap = 512ULL * 1024 * 1024;
 constexpr std::size_t sample_byte_cap = 512ULL * 1024 * 1024;
 constexpr std::size_t trace_step_cap = 1000000;
 constexpr std::size_t step_cache_entry_cap = 65536;
+constexpr std::size_t prefix_cache_entry_cap = 1ULL << 20;
+constexpr std::size_t prefix_cache_byte_cap = 64ULL * 1024 * 1024;
 
 double elapsed(Clock::time_point start) {
     return std::chrono::duration<double>(Clock::now() - start).count();
@@ -99,6 +102,7 @@ struct Options {
     bool enumerate = false, raw_samples = false, profile = false, trace = false;
     bool step_cache = true;
     bool record_log_probabilities = false;
+    std::size_t prefix_cache_entries = 0;
     VacuumKernel vacuum_kernel = VacuumKernel::logarithmic;
 };
 
@@ -130,7 +134,8 @@ Options parse_options(int argc, char** argv) {
                          "pairwise|click_influence --k K [--samples N --seed S] "
                          "[--order 0,1,... --uniforms matrix.csv --enumerate "
                          "--raw-samples --trace-conditionals --record-log-probabilities "
-                         "--vacuum-kernel log|product --profile --no-step-cache]\n";
+                         "--vacuum-kernel log|product --prefix-cache-entries N "
+                         "--profile --no-step-cache]\n";
             std::exit(0);
         }
         if (++i >= argc) throw std::invalid_argument("Missing value for " + flag);
@@ -145,6 +150,12 @@ Options parse_options(int argc, char** argv) {
         }
         else if (flag == "--order") order_text = value;
         else if (flag == "--samples") result.samples = nonnegative_integer(value);
+        else if (flag == "--prefix-cache-entries") {
+            const auto entries = nonnegative_integer(value);
+            if (entries > prefix_cache_entry_cap)
+                throw std::invalid_argument("prefix cache exceeds 1048576 entries");
+            result.prefix_cache_entries = static_cast<std::size_t>(entries);
+        }
         else if (flag == "--seed") result.seed = nonnegative_integer(value);
         else if (flag == "--modes" || flag == "--k") {
             const auto number = nonnegative_integer(value);
@@ -574,6 +585,86 @@ struct Conditional {
     double p_one, indicator, denominator;
 };
 
+// One cache is owned by one fixed-input, fixed-order sampling batch. A trie
+// path is the COMPLETE measured prefix, including all zeros and all clicks.
+// Only successful computed conditionals are inserted; there is no target-law
+// oracle, probability smoothing, failed-path replacement, or enumeration use.
+class PrefixConditionalCache {
+public:
+    static constexpr std::uint32_t absent = std::numeric_limits<std::uint32_t>::max();
+    struct Entry {
+        Conditional conditional;
+        std::array<std::uint32_t, 2> children{absent, absent};
+        std::array<std::uint8_t, max_clicks> retained{};
+        std::uint8_t retained_size = 0;
+    };
+    static_assert(sizeof(Entry) <= 64);
+    std::vector<Entry> entries;
+    const std::size_t limit;
+    std::uint64_t hits = 0, misses = 0, capacity_skips = 0;
+    std::uint64_t state_reconstructions = 0, replayed_zero_updates = 0;
+    std::uint64_t samples_without_state = 0;
+
+    PrefixConditionalCache(std::size_t requested, bool has_samples) : limit(requested) {
+        if (limit > prefix_cache_entry_cap || limit > prefix_cache_byte_cap/sizeof(Entry))
+            throw std::invalid_argument("prefix cache exceeds its payload memory cap");
+        if (limit && has_samples) {
+            entries.reserve(limit);
+            if (entries.capacity() > limit)
+                throw std::runtime_error("prefix cache allocation exceeded its requested entry cap");
+        }
+    }
+
+    bool enabled() const { return limit != 0; }
+    std::uint32_t root() const { return entries.empty() ? absent : 0; }
+    std::uint32_t child(std::uint32_t node, bool one) const {
+        return node == absent ? absent : entries[node].children[one];
+    }
+
+    std::uint32_t insert(std::uint32_t parent, bool previous_one,
+                         Conditional result, std::vector<int> const& retained) {
+        if (entries.size() >= limit) {
+            ++capacity_skips;
+            return absent;
+        }
+        if ((parent == absent && !entries.empty())
+                || (parent != absent && (parent >= entries.size()
+                    || entries[parent].children[previous_one] != absent)))
+            throw std::logic_error("Invalid prefix-cache parent or duplicate insertion");
+        if (retained.size() > max_clicks)
+            throw std::logic_error("Prefix-cache retained-click vector exceeds cap");
+        Entry entry;
+        entry.conditional = result;
+        entry.retained_size = static_cast<std::uint8_t>(retained.size());
+        for (std::size_t j = 0; j < entry.retained.size() && j < retained.size(); ++j)
+            entry.retained[j] = static_cast<std::uint8_t>(retained[j]);
+        const auto index = static_cast<std::uint32_t>(entries.size());
+        entries.push_back(entry);
+        if (parent != absent) entries[parent].children[previous_one] = index;
+        return index;
+    }
+
+    void print() const {
+        std::cout << "{\"enabled\":" << (enabled() ? "true" : "false")
+            << ",\"requested_max_entries\":" << limit
+            << ",\"hard_max_entries\":" << prefix_cache_entry_cap
+            << ",\"hard_payload_byte_cap\":" << prefix_cache_byte_cap
+            << ",\"entry_bytes\":" << sizeof(Entry)
+            << ",\"capacity_entries\":" << entries.capacity()
+            << ",\"capacity_bytes\":" << entries.capacity()*sizeof(Entry)
+            << ",\"entries_used\":" << entries.size()
+            << ",\"hits\":" << hits << ",\"misses\":" << misses
+            << ",\"capacity_skips\":" << capacity_skips
+            << ",\"state_reconstructions\":" << state_reconstructions
+            << ",\"replayed_zero_updates\":" << replayed_zero_updates
+            << ",\"samples_without_state\":" << samples_without_state
+            << ",\"enumeration_uses_cache\":false"
+            << ",\"scope\":\"this sampling batch only; complete fixed-order measured prefixes\""
+            << ",\"memory_scope\":\"trie vector payload only; excludes allocator metadata, Gaussian state and sample buffers\""
+            << ",\"allocation_timing\":\"reserve and insert are included in sampling\"}";
+    }
+};
+
 struct StableModeFactor {
     long double l00, l10, l11, vacuum;
 };
@@ -1000,6 +1091,7 @@ int run(int argc, char** argv) {
     std::cout << std::setprecision(17);
     Context context;
     std::unique_ptr<Sampler> sampler;
+    std::unique_ptr<PrefixConditionalCache> prefix_cache;
     std::size_t completed_samples = 0;
     try {
         const auto option = parse_options(argc, argv);
@@ -1037,17 +1129,72 @@ int run(int argc, char** argv) {
         std::vector<TraceRow> trace;
         if (option.trace) trace.reserve(option.samples*option.modes);
         std::mt19937_64 engine(option.seed);
+        prefix_cache = std::make_unique<PrefixConditionalCache>(
+            option.prefix_cache_entries, option.samples != 0);
+        auto& prefixes = *prefix_cache;
+        struct PendingZero { int mode, position; std::uint32_t cached_node; };
         for (std::size_t sample_index = 0; sample_index < option.samples; ++sample_index) {
             context.sample_index = sample_index;
-            State state(sampler->base, option.vacuum_kernel);
+            // A fully cached path needs neither a covariance copy nor zero
+            // updates. On its first miss, replay prior zeros in the ORIGINAL
+            // order, using the unchanged update kernel and arithmetic.
+            std::optional<State> state;
+            if (!prefixes.enabled()) state.emplace(sampler->base, option.vacuum_kernel);
+            std::vector<PendingZero> pending_zeros;
             std::vector<int> clicks;
             long double log_probability = 0;
+            auto node = prefixes.root();
+            auto parent = PrefixConditionalCache::absent;
+            bool previous_one = false;
             for (int position = 0; position < option.modes; ++position) {
                 context.position = position;
                 const int mode = option.order[position];
                 std::vector<int> retained;
-                const auto result = sampler->conditional(state, clicks, mode,
-                    sampler->sampling_counts, sampler->sampling_profile, retained);
+                Conditional result;
+                if (node != PrefixConditionalCache::absent) {
+                    ++prefixes.hits;
+                    const auto& entry = prefixes.entries[node];
+                    result = entry.conditional;
+                    retained.assign(entry.retained.begin(),
+                                    entry.retained.begin()+entry.retained_size);
+                    context.mode = mode;
+                    context.zero_count = position-static_cast<int>(clicks.size());
+                    context.click_count = static_cast<int>(clicks.size());
+                    context.kernel_modes = retained;
+                    context.kernel_modes.push_back(mode);
+                    context.last_indicator = result.indicator;
+                    context.last_denominator = result.denominator;
+                } else {
+                    if (prefixes.enabled()) ++prefixes.misses;
+                    if (!state) {
+                        state.emplace(sampler->base, option.vacuum_kernel);
+                        ++prefixes.state_reconstructions;
+                        for (const auto& pending : pending_zeros) {
+                            // A previously unvisited zero edge can fail its
+                            // update. Restore its original step context and
+                            // abort before drawing ANY additional uniform.
+                            const auto& entry = prefixes.entries[pending.cached_node];
+                            context.position = pending.position;
+                            context.mode = pending.mode;
+                            context.zero_count = state->zero_count;
+                            context.click_count = pending.position-state->zero_count;
+                            context.kernel_modes.assign(entry.retained.begin(),
+                                entry.retained.begin()+entry.retained_size);
+                            context.kernel_modes.push_back(pending.mode);
+                            context.last_indicator = entry.conditional.indicator;
+                            context.last_denominator = entry.conditional.denominator;
+                            state->project_zero(pending.mode, sampler->sampling_counts,
+                                                sampler->sampling_profile);
+                            ++prefixes.replayed_zero_updates;
+                        }
+                        pending_zeros.clear();
+                        context.position = position;
+                    }
+                    result = sampler->conditional(*state, clicks, mode,
+                        sampler->sampling_counts, sampler->sampling_profile, retained);
+                    if (prefixes.enabled()) node = prefixes.insert(parent, previous_one,
+                                                                  result, retained);
+                }
                 const double uniform = uniforms.empty()
                     ? static_cast<double>(engine() >> 11) * 0x1.0p-53
                     : uniforms[sample_index*option.modes+position];
@@ -1069,9 +1216,15 @@ int run(int argc, char** argv) {
                 if (one) packed_samples[sample_index*words_per_sample+mode/64]
                     |= std::uint64_t{1} << (mode%64);
                 // No later probability needs the final outcome's updated state.
-                if (position+1 < option.modes)
-                    sampler->advance(state, clicks, mode, one,
-                        sampler->sampling_counts, sampler->sampling_profile);
+                if (position+1 < option.modes) {
+                    if (one) clicks.push_back(mode);
+                    else if (state) state->project_zero(mode, sampler->sampling_counts,
+                                                       sampler->sampling_profile);
+                    else pending_zeros.push_back({mode, position, node});
+                    parent = node;
+                    previous_one = one;
+                    node = prefixes.child(node, one);
+                }
             }
             if (option.record_log_probabilities) {
                 const double value = static_cast<double>(log_probability);
@@ -1079,6 +1232,7 @@ int run(int argc, char** argv) {
                     sampler->sampling_counts.fail("Sample log probability is invalid");
                 sample_log_probabilities[sample_index] = value;
             }
+            if (prefixes.enabled() && !state) ++prefixes.samples_without_state;
             ++completed_samples;
         }
         const double sampling_seconds = elapsed(started);
@@ -1128,7 +1282,9 @@ int run(int argc, char** argv) {
             << ",\"step_cache_enabled\":" << (option.step_cache ? "true" : "false")
             << ",\"step_cache_entry_cap\":" << step_cache_entry_cap
             << ",\"step_cache_scope\":\"one conditional; ordered physical subsets; no cross-step reuse\""
-            << ",\"sample_storage\":{\"format\":\"packed uint64 physical bits\",\"words_per_sample\":"
+            << ",\"prefix_cache\":";
+        prefixes.print();
+        std::cout << ",\"sample_storage\":{\"format\":\"packed uint64 physical bits\",\"words_per_sample\":"
             << words_per_sample << ",\"bytes\":" << packed_samples.size()*sizeof(std::uint64_t)
             << ",\"materialized_without_raw_output\":true}"
             << ",\"enumerated_law\":\"product of computed conditional probabilities under ideal continuous uniforms; not a finite PRNG-state enumeration\""
@@ -1204,6 +1360,10 @@ int run(int argc, char** argv) {
             if (context.phase == "enumeration") sampler->enumeration_counts.print();
             else if (context.phase == "setup") sampler->setup_counts.print();
             else sampler->sampling_counts.print();
+        }
+        if (prefix_cache) {
+            std::cout << ",\"prefix_cache\":";
+            prefix_cache->print();
         }
         std::cout << "}\n";
         return numerical ? 2 : 1;

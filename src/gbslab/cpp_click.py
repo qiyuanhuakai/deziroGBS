@@ -24,6 +24,8 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_EXECUTABLE = ROOT / ".cache" / "click-build" / "click_sampler"
+MAX_PREFIX_CACHE_ENTRIES = 1 << 20
+MAX_PREFIX_CACHE_PAYLOAD_BYTES = 64 * 1024 * 1024
 
 
 class CppClickError(RuntimeError):
@@ -130,6 +132,44 @@ def _check_count_array(values, length, count, name):
     return numbers
 
 
+def _check_prefix_cache(metadata, requested, count, modes):
+    """Check the bounded, batch-local cache's declared memory and work counts."""
+    if metadata is None:
+        if requested:
+            raise CppClickError("requested prefix cache metadata is missing")
+        return  # Archived binaries predate this optional optimization.
+    if not isinstance(metadata, dict):
+        raise CppClickError("prefix_cache metadata must be an object")
+    expected_enabled = requested != 0
+    if (metadata.get("enabled") is not expected_enabled
+            or metadata.get("enumeration_uses_cache") is not False):
+        raise CppClickError("prefix cache enabled/enumeration policy does not match request")
+    fields = ("requested_max_entries", "hard_max_entries", "hard_payload_byte_cap",
+              "entry_bytes", "capacity_entries", "capacity_bytes", "entries_used",
+              "hits", "misses", "capacity_skips", "state_reconstructions",
+              "replayed_zero_updates", "samples_without_state")
+    if any(type(metadata.get(name)) is not int or metadata[name] < 0 for name in fields):
+        raise CppClickError("prefix cache counters and capacities must be nonnegative integers")
+    if (metadata["requested_max_entries"] != requested
+            or metadata["hard_max_entries"] != MAX_PREFIX_CACHE_ENTRIES
+            or metadata["hard_payload_byte_cap"] != MAX_PREFIX_CACHE_PAYLOAD_BYTES
+            or not 0 < metadata["entry_bytes"] <= 64
+            or metadata["capacity_entries"] != (requested if count else 0)
+            or metadata["entries_used"] > metadata["capacity_entries"]
+            or metadata["capacity_bytes"] != metadata["capacity_entries"]*metadata["entry_bytes"]
+            or metadata["capacity_bytes"] > MAX_PREFIX_CACHE_PAYLOAD_BYTES):
+        raise CppClickError("prefix cache memory/entry bounds do not match request")
+    if expected_enabled:
+        if (metadata["hits"]+metadata["misses"] != count*modes
+                or metadata["capacity_skips"]+metadata["entries_used"] != metadata["misses"]
+                or metadata["state_reconstructions"]+metadata["samples_without_state"] != count
+                or metadata["replayed_zero_updates"] > metadata["state_reconstructions"]*modes):
+            raise CppClickError("prefix cache work counts are inconsistent with the batch")
+    elif any(metadata[key] for key in fields if key not in (
+            "hard_max_entries", "hard_payload_byte_cap", "entry_bytes")):
+        raise CppClickError("disabled prefix cache reported nonzero activity or storage")
+
+
 def run_cpp_click(
     model_or_covariance,
     *,
@@ -145,6 +185,7 @@ def run_cpp_click(
     trace_conditionals: bool = False,
     record_log_probabilities: bool = False,
     vacuum_kernel: str = "log",
+    prefix_cache_entries: int = 0,
     profile: bool = False,
     timeout: float = 600.0,
 ) -> dict:
@@ -168,6 +209,17 @@ def run_cpp_click(
     in newer executables.  The default log path omits the new CLI switch for
     compatibility with the archived fixed-log executables.
 
+    ``prefix_cache_entries`` enables a bounded trie of conditionals indexed
+    by the COMPLETE prior measured bitstring, within this batch only. Zero
+    (the default) disables it and remains compatible with archived binaries.
+    A cached prefix reuses the identical computed conditional, including its
+    retained clicks; the first miss lazily reconstructs the same Gaussian
+    state by replaying prior zeros in the original order. It never consults
+    or populates the optional full-law enumeration and does not change Q.
+    At most 2**20 entries and 64 MiB of trie payload are supported; Gaussian
+    matrices, sample buffers, and allocator metadata are separate memory.
+    Cache allocation, population, and reconstruction are timed as sampling.
+
     Seed reproducibility is internal to the C++ generator; the same numeric
     seed does not promise the same stream as NumPy.  Use explicit uniforms
     for paired trajectory comparisons.
@@ -189,6 +241,8 @@ def run_cpp_click(
     k = _integer(max_clicks, "max_clicks", 0, 8)
     count = _integer(samples, "samples", 0)
     seed = _integer(seed, "seed", 0, 2**64 - 1)
+    prefix_cache_entries = _integer(prefix_cache_entries, "prefix_cache_entries",
+                                    0, MAX_PREFIX_CACHE_ENTRIES)
     for name, flag in (("enumerate_distribution", enumerate_distribution),
                        ("raw_samples", raw_samples),
                        ("trace_conditionals", trace_conditionals),
@@ -228,6 +282,8 @@ def run_cpp_click(
                "--order", ",".join(map(str, order))]
     if vacuum_kernel != "log":
         command += ["--vacuum-kernel", vacuum_kernel]
+    if prefix_cache_entries:
+        command += ["--prefix-cache-entries", str(prefix_cache_entries)]
     with tempfile.TemporaryDirectory(prefix="gbslab-cpp-click-") as directory:
         covariance_path = Path(directory) / "covariance.csv"
         np.savetxt(covariance_path, covariance, delimiter=",", fmt="%.17g")
@@ -276,6 +332,7 @@ def run_cpp_click(
             or (vacuum_kernel == "product" and "vacuum_kernel" not in result)):
         raise CppClickError("compiled result vacuum kernel does not match request",
                             payload=result, executable_sha256=binary_sha)
+    _check_prefix_cache(result.get("prefix_cache"), prefix_cache_entries, count, modes)
     log_values = result.get("sample_log_probabilities")
     if record_log_probabilities:
         if result.get("log_probability_enabled") is not True or log_values is None:

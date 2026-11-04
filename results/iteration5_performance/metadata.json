@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T15:01:50.407091+00:00",
+  "config_sha256": "8c0e7cc3d3234381dec283deb6a2a980abec0b6f18f1d0fe818aeb7006be4ebb",
+  "threads": 1,
+  "source_hashes": {
+    "click_sampler.cpp": "c74c377e81137786cfdd2ae02c66967f3c7920393adf067ab9b3c4348a7fbd28",
+    "cpp_click.py": "675b92a67aa4bb87962b1d6b0cffc8de3465fa0e6dd4601f69856df00fec484d",
+    "frugal_scaling.py": "1c37c2bdbcfda3d23c61d7116fd244b597f8156f0655233049d3d695ada323d4",
+    "iteration5_benchmark.py": "1ff1a62f58046f6bb241da39d60dea0ea59a31399dbf0ef3ee03fb8f17368c71"
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "timing_scope": "native setup plus complete timed sample batch including all cache allocation, insertion and cold misses; sampling-only is also reported",
+  "claim_scope": "Cache implementation speed at unchanged candidate law; only small-mode Frugal cost comparison. No equal-quality or quantum-speedup claim from timing alone.",
+  "dedicated_host": false,
+  "prewarming": false,
+  "rows": 216,
+  "failures": 0,
+  "elapsed_seconds": 380.7857477340003,
+  "completed_utc": "2026-11-04T15:08:11.194729+00:00"
+}

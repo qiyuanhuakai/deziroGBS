@@ -1,0 +1,295 @@
+{
+  "executable_sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+  "build": {
+    "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+    "native": true,
+    "modes": [
+      8,
+      10,
+      12,
+      16,
+      32,
+      64
+    ],
+    "flags": [
+      "-O3",
+      "-std=c++20",
+      "-ffp-contract=off",
+      "-fopenmp",
+      "-DFGBS_GPU_ENABLED=0",
+      "-march=native"
+    ],
+    "command": [
+      "/usr/bin/c++",
+      "-O3",
+      "-std=c++20",
+      "-ffp-contract=off",
+      "-fopenmp",
+      "-DFGBS_GPU_ENABLED=0",
+      "-march=native",
+      "-I",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/generated",
+      "-I",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include",
+      "-I",
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+      "-I",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/xsimd/include",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_sampling_adapter.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/cumulant_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/file_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/matrix_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/mmpy_format.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/result.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/string_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/thread_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/time_utils.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/layout.cpp",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/cpu/cpu_sampler.cpp",
+      "-o",
+      "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/frugal_sampling_adapter.building"
+    ],
+    "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+    "dependencies": {
+      "eigen": {
+        "sha256": "dc70ce0aa482936d7dece6e97e5cbf9c271e7778dfeae8958b754e27d6be822b",
+        "files": 530,
+        "bytes": 8669110
+      },
+      "xsimd": {
+        "sha256": "acc75980f3a43d38d5ae6ec2bd07b29c48fc16ba367c29110e500680f9f594c8",
+        "files": 120,
+        "bytes": 2189803
+      }
+    },
+    "cache_key": "09258f1cc04217fde37f13a626432b61b51b3d8a1ea295a339663c629dcfe788",
+    "executable_sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+    "build_seconds": 22.381562290999682,
+    "precision": "float64",
+    "full_law_max_modes": 14,
+    "sampling_api": "unmodified official generate_samples",
+    "fast_math": false
+  },
+  "validation": {
+    "passed": true,
+    "created_utc": "2026-11-04T03:24:25.775972+00:00",
+    "executable_sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+    "build_cache_key": "09258f1cc04217fde37f13a626432b61b51b3d8a1ea295a339663c629dcfe788",
+    "flags": [
+      "-O3",
+      "-std=c++20",
+      "-ffp-contract=off",
+      "-fopenmp",
+      "-DFGBS_GPU_ENABLED=0",
+      "-march=native"
+    ],
+    "cases": [
+      {
+        "fixture": "vacuum_m8",
+        "modes": 8,
+        "K": 2,
+        "samples": 128,
+        "seed": 820000,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 100,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 26386432,
+        "tv_native_to_previous_trace": 0.0,
+        "maximum_trace_difference": 0.0,
+        "empirical_tv_to_native_trace": 2.220446049250313e-16,
+        "histogram_upper": 0.2323076381202039,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 2.220446049250313e-16
+      },
+      {
+        "fixture": "vacuum_m16",
+        "modes": 16,
+        "K": 2,
+        "samples": 128,
+        "seed": 820001,
+        "simd_lanes": 8,
+        "trace": null,
+        "peak_rss_bytes_linux": 26910720
+      },
+      {
+        "fixture": "vacuum_m32",
+        "modes": 32,
+        "K": 2,
+        "samples": 128,
+        "seed": 820002,
+        "simd_lanes": 8,
+        "trace": null,
+        "peak_rss_bytes_linux": 27041792
+      },
+      {
+        "fixture": "vacuum_m64",
+        "modes": 64,
+        "K": 2,
+        "samples": 128,
+        "seed": 820003,
+        "simd_lanes": 8,
+        "trace": null,
+        "peak_rss_bytes_linux": 27041792
+      },
+      {
+        "fixture": "thermal_nonuniform8",
+        "modes": 8,
+        "K": 5,
+        "samples": 50000,
+        "seed": 820004,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 0,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27172864,
+        "tv_native_to_previous_trace": 0.0,
+        "maximum_trace_difference": 0.0,
+        "empirical_tv_to_native_trace": 0.022814346327265766,
+        "histogram_upper": 0.04098699555421977,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 3.3306690738754696e-16
+      },
+      {
+        "fixture": "haar8_K4",
+        "modes": 8,
+        "K": 4,
+        "samples": 50000,
+        "seed": 820005,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 0,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27172864,
+        "tv_native_to_previous_trace": 0.0,
+        "maximum_trace_difference": 0.0,
+        "empirical_tv_to_native_trace": 0.028209569604908242,
+        "histogram_upper": 0.04304536200424852,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 1.942890293094024e-16
+      },
+      {
+        "fixture": "haar8_K5",
+        "modes": 8,
+        "K": 5,
+        "samples": 50000,
+        "seed": 820006,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 0,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27172864,
+        "tv_native_to_previous_trace": 0.0,
+        "maximum_trace_difference": 0.0,
+        "empirical_tv_to_native_trace": 0.026130962852010508,
+        "histogram_upper": 0.04306812217116154,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 1.1102230246251565e-16
+      },
+      {
+        "fixture": "clipping8",
+        "modes": 8,
+        "K": 5,
+        "samples": 50000,
+        "seed": 820007,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 4,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27172864,
+        "tv_native_to_previous_trace": 2.087089182034596e-16,
+        "maximum_trace_difference": 6.071532165918825e-18,
+        "empirical_tv_to_native_trace": 0.027754932072664825,
+        "histogram_upper": 0.04497535661723084,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 1.6653345369377348e-16
+      },
+      {
+        "fixture": "heterogeneous10",
+        "modes": 10,
+        "K": 5,
+        "samples": 50000,
+        "seed": 820008,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 0,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27303936,
+        "tv_native_to_previous_trace": 9.174027504462931e-16,
+        "maximum_trace_difference": 2.7755575615628914e-17,
+        "empirical_tv_to_native_trace": 0.04048028368316682,
+        "histogram_upper": 0.06316681496534052,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 4.440892098500626e-16
+      },
+      {
+        "fixture": "bright12",
+        "modes": 12,
+        "K": 5,
+        "samples": 50000,
+        "seed": 820009,
+        "simd_lanes": 8,
+        "trace": {
+          "method": "generated forced-branch upstream SIMD body",
+          "official_api": false,
+          "probability_model": "continuous uniform thresholds; floating-point SIMD arithmetic",
+          "probability_sum": 1,
+          "saturated_threshold_path_steps": 0,
+          "nonfinite_threshold_path_steps": 0
+        },
+        "peak_rss_bytes_linux": 27303936,
+        "tv_native_to_previous_trace": 2.486559237322144e-15,
+        "maximum_trace_difference": 1.7780915628762273e-17,
+        "empirical_tv_to_native_trace": 0.09840808269965187,
+        "histogram_upper": 0.13857710677410368,
+        "histogram_failure_probability": 1e-06,
+        "off_support_samples": 0,
+        "first_two_modes_error": 2.7755575615628914e-16
+      }
+    ],
+    "notes": [
+      "New native binary validated; previous SSE validation not simply reused.",
+      "Large-mode checks are vacuum and output-shape checks, not correlated global quality claims.",
+      "Sampling remains the unmodified official API; small traced laws use continuous uniform thresholds."
+    ]
+  },
+  "validation_sha256": "4857f5a66b5c4c3dacafbf67d6472d880abdaaf8c428e932e17dafd5939c8f5d"
+}

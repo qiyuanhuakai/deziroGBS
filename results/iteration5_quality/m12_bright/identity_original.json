@@ -1,0 +1,711 @@
+{
+  "schema_version": 1,
+  "decision": "accepted_within_tolerance_conditional",
+  "evidence_scope": "full_distribution",
+  "epsilon": 0.1,
+  "confidence_plan": {
+    "comparison_ids": [
+      "m12_lossy",
+      "m12_bright",
+      "m32_lossy",
+      "m32_bright",
+      "m64_lossy",
+      "m64_bright",
+      "m100_lossy",
+      "m100_bright",
+      "m144_lossy",
+      "m144_bright",
+      "m256_lossy",
+      "m256_bright",
+      "jiuzhang1_candidate",
+      "jiuzhang1_frugal"
+    ],
+    "planned_comparisons": 14,
+    "familywise_alpha": 0.025,
+    "familywise_nominal_confidence": 0.975,
+    "per_comparison_alpha": 0.0017857142857142859,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "67a3d9d7282c9b665c36692d1c34d03ff7ee9a2e79eb5cfe0ab48d870de8dce1",
+    "comparison_id": "m12_bright",
+    "alpha_global_tv": 0.0008928571428571429,
+    "alpha_witnesses": 0.0008928571428571429
+  },
+  "model_check": {
+    "valid": true,
+    "in_scope": true,
+    "minimum_uncertainty_eigenvalue": 0.2117740209738203,
+    "physicality_is_distribution_validation": false,
+    "resource_max_modes": 256
+  },
+  "target": {
+    "target_id": "m12_bright",
+    "detector_model": "threshold",
+    "state_model": "zero_mean_gaussian",
+    "quadrature_order": "xxpp",
+    "hbar": 2,
+    "covariance_convention": "xxpp;hbar=2;vacuum=I",
+    "modes": 12,
+    "covariance_sha256": "9e75e4d38d214d7aedcb2307cfe512f502df2ecf373e08349311c62b6159d606",
+    "mean_photons": 8.219145387637344
+  },
+  "full_law": {
+    "tv": 0.011509752849771359,
+    "within_tolerance": true,
+    "patterns": 4096,
+    "epsilon": 0.1,
+    "candidate_normalization": {
+      "supplied_mass": 1.0,
+      "normalization_l1_change": 0.0
+    },
+    "target_diagnostics": {
+      "determinant_evaluations": 4095,
+      "marginal_evaluations": 1,
+      "negative_entries_clipped": 0,
+      "largest_negative_probability": 0.0,
+      "largest_normalization_error": 0.0,
+      "largest_l1_numerical_correction": 0.0,
+      "vacuum_cache_hits": 1,
+      "vacuum_cache_evictions": 0,
+      "vacuum_cache_peak_entries": 4096,
+      "vacuum_cache_entries": 4096,
+      "vacuum_cache_size_limit": 8192,
+      "marginal_cache_entries": 2,
+      "marginal_cache_bytes": 32776
+    },
+    "scope": "all bitstrings, numerically enumerated; complete provided Q has no declared failure mass",
+    "strict_floating_point_certificate": false
+  },
+  "global_tv": {
+    "status": "ok",
+    "n_requested": 512,
+    "n_observed": 512,
+    "alpha": 0.0008928571428571429,
+    "nominal_confidence": 0.9991071428571429,
+    "mean_score": 0.2076185790547886,
+    "statistical_margin": 0.08280415031190232,
+    "upper": 0.2904227293666909,
+    "max_exact_clicks": 6,
+    "cutoff_count": 103,
+    "target_probability_failure_count": 0,
+    "successfully_evaluated_count": 409,
+    "unique_target_probability_evaluations": 356,
+    "pattern_cache_hits": 53,
+    "failure_reasons": {},
+    "density_check": {
+      "distinct_patterns": 454,
+      "observed_distinct_mass": 0.21284997545742534,
+      "normalization_scope": "necessary partial-mass check only; total law follows from the declared output-process construction"
+    },
+    "output_space": "binary_patterns_plus_failure",
+    "target_failure_probability": 0.0,
+    "observed_sampling_failures": 0,
+    "unseen_failure_mass_assumed_zero": false,
+    "confidence_scope": "unconditional false-accept guarantee for first fixed-N iid attempts; validation aborts on any sampling failure",
+    "conditional_on_success_coverage_claimed": false,
+    "conditional_success_law_tv_also_bounded": true,
+    "strict_floating_point_certificate": false,
+    "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+    "elapsed_seconds": 0.722415947002446,
+    "target_probability_mode": "floating_gaussian_point_estimate",
+    "target_oracle_diagnostics": {
+      "point_evaluations": 356,
+      "large_no_click_determinants": 356,
+      "maximum_large_determinant_dimension": 24,
+      "small_vacuum_determinants": 10663,
+      "maximum_small_determinant_dimension": 12,
+      "maximum_all_click_terms": 64,
+      "maximum_relative_cancellation_indicator": 6.997947918789719e-10,
+      "log_probability_roundoff_corrections": 0,
+      "gaussian_conditioner": {
+        "requests": 355,
+        "base_returns": 0,
+        "cache_hits": 0,
+        "cache_misses": 355,
+        "parent_cache_reuses": 87,
+        "rank_two_updates": 87,
+        "direct_factorizations": 268,
+        "maximum_direct_factorization_dimension": 22,
+        "cache_evictions": 227,
+        "peak_cache_entries": 128,
+        "peak_cache_payload_bytes": 111328,
+        "oversized_states_not_cached": 0,
+        "maximum_asymmetry_correction": 0.0,
+        "cache_entries": 128,
+        "cache_size_limit": 128,
+        "cache_payload_bytes": 108832,
+        "cache_payload_bytes_limit": 67108864,
+        "base_payload_bytes": 4704
+      }
+    },
+    "fixed_iid_no_retry_assumptions": {
+      "requested_draws": 512,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "witnesses": {
+    "status": "ok",
+    "planned_witnesses": 33,
+    "evaluated_witnesses": 33,
+    "witness_schedule_sha256": "2d43ba52499c43d9f3332771bb82ccc1e1ded1b6d77c1ca08864b46252b9ad56",
+    "predeclared_subsets": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "alpha": 0.0008928571428571429,
+    "simultaneous_hoeffding_radius": 0.10463262883960382,
+    "tv_lower": 0.0,
+    "target_mean_clicks": 4.639067906512993,
+    "observed_mean_clicks": 4.93359375,
+    "rows": [
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0
+        ],
+        "target": 0.6282400700348525,
+        "observed": 0.626953125,
+        "absolute_difference": 0.0012869450348524936,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1
+        ],
+        "target": 0.6268935863985449,
+        "observed": 0.611328125,
+        "absolute_difference": 0.015565461398544866,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2
+        ],
+        "target": 0.6139816511425439,
+        "observed": 0.572265625,
+        "absolute_difference": 0.04171602614254388,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3
+        ],
+        "target": 0.609485423372779,
+        "observed": 0.57421875,
+        "absolute_difference": 0.035266673372779,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4
+        ],
+        "target": 0.5943537340545721,
+        "observed": 0.556640625,
+        "absolute_difference": 0.03771310905457215,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5
+        ],
+        "target": 0.6232589387609269,
+        "observed": 0.58203125,
+        "absolute_difference": 0.04122768876092686,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          6
+        ],
+        "target": 0.6392678576113541,
+        "observed": 0.626953125,
+        "absolute_difference": 0.012314732611354073,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          7
+        ],
+        "target": 0.6003443430528195,
+        "observed": 0.591796875,
+        "absolute_difference": 0.008547468052819474,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8
+        ],
+        "target": 0.6148472439242709,
+        "observed": 0.546875,
+        "absolute_difference": 0.06797224392427093,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          9
+        ],
+        "target": 0.6128929784024516,
+        "observed": 0.59375,
+        "absolute_difference": 0.019142978402451605,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          10
+        ],
+        "target": 0.6002178966411585,
+        "observed": 0.603515625,
+        "absolute_difference": 0.0032977283588414563,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          11
+        ],
+        "target": 0.5971483700907323,
+        "observed": 0.580078125,
+        "absolute_difference": 0.017070245090732294,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          1
+        ],
+        "target": 0.40185132070068413,
+        "observed": 0.376953125,
+        "absolute_difference": 0.024898195700684134,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1,
+          2
+        ],
+        "target": 0.38950568060921875,
+        "observed": 0.376953125,
+        "absolute_difference": 0.012552555609218752,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2,
+          3
+        ],
+        "target": 0.374236142736335,
+        "observed": 0.330078125,
+        "absolute_difference": 0.04415801773633499,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3,
+          4
+        ],
+        "target": 0.3700271603297214,
+        "observed": 0.32421875,
+        "absolute_difference": 0.04580841032972138,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          5
+        ],
+        "target": 0.37722378798640344,
+        "observed": 0.33203125,
+        "absolute_difference": 0.045192537986403436,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5,
+          6
+        ],
+        "target": 0.40393041566520665,
+        "observed": 0.365234375,
+        "absolute_difference": 0.038696040665206655,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          6,
+          7
+        ],
+        "target": 0.39281135243512066,
+        "observed": 0.388671875,
+        "absolute_difference": 0.004139477435120664,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          7,
+          8
+        ],
+        "target": 0.3731209130339797,
+        "observed": 0.328125,
+        "absolute_difference": 0.044995913033979706,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8,
+          9
+        ],
+        "target": 0.38182319161834566,
+        "observed": 0.3359375,
+        "absolute_difference": 0.04588569161834566,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          9,
+          10
+        ],
+        "target": 0.38956947809696735,
+        "observed": 0.37890625,
+        "absolute_difference": 0.010663228096967348,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          10,
+          11
+        ],
+        "target": 0.3647268136651599,
+        "observed": 0.34375,
+        "absolute_difference": 0.02097681366515991,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          6
+        ],
+        "target": 0.40228880583810706,
+        "observed": 0.400390625,
+        "absolute_difference": 0.0018981808381070553,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1,
+          7
+        ],
+        "target": 0.38889794898164476,
+        "observed": 0.39453125,
+        "absolute_difference": 0.005633301018355241,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2,
+          8
+        ],
+        "target": 0.4061453737303717,
+        "observed": 0.353515625,
+        "absolute_difference": 0.052629748730371684,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3,
+          9
+        ],
+        "target": 0.38164298002909985,
+        "observed": 0.357421875,
+        "absolute_difference": 0.024221105029099854,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          10
+        ],
+        "target": 0.3714379883392324,
+        "observed": 0.373046875,
+        "absolute_difference": 0.0016088866607675834,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5,
+          11
+        ],
+        "target": 0.3855367400368243,
+        "observed": 0.3515625,
+        "absolute_difference": 0.03397424003682431,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "target": 0.16736832194191278,
+        "observed": 0.140625,
+        "absolute_difference": 0.026743321941912784,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "target": 0.17059032057790388,
+        "observed": 0.150390625,
+        "absolute_difference": 0.02019969557790388,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "target": 0.15840069872163995,
+        "observed": 0.1328125,
+        "absolute_difference": 0.02558819872163995,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "normalized_total_clicks",
+        "normalization": 12,
+        "target": 0.3865889922094161,
+        "observed": 0.4111328125,
+        "absolute_difference": 0.024543820290583884,
+        "tv_lower": 0.0
+      }
+    ],
+    "numerical_failures": [],
+    "scope": "necessary bounded-observable tests; passing does not certify the full law",
+    "output_space": "binary_patterns_plus_failure",
+    "failure_symbol_observable_value": 0.0,
+    "strict_floating_point_certificate": false
+  },
+  "sampling_protocol": {
+    "requested_draws": 512,
+    "target_and_sampler_fixed_before_samples": true,
+    "iid_attempts": true,
+    "first_batch_no_retry": true,
+    "no_postselection": true,
+    "density_is_unconditional_path_mass": true,
+    "source": "iteration5_frozen_first_batch",
+    "unseen_failure_mass_assumed_zero": false,
+    "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+  },
+  "strict_floating_point_certificate": false,
+  "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+  "evidence_trust_boundary": "A provided full law or provenance hash is evidence to verify, not cryptographic proof of an arbitrary sampler's honesty; implementation-equivalence checks and sample consistency remain required",
+  "identity_scope": "agreement with the specified target, not existence of some Gaussian model that could fit the data",
+  "reasons": [
+    "Full numerical TV is within the preset tolerance"
+  ],
+  "samples_sha256": "85fb6e3f681d1aff5002d260ab8760376c3a568f16f7fa5ca0f649c9e8b32732",
+  "n_observed": 512,
+  "density_check": {
+    "distinct_patterns": 454,
+    "observed_distinct_mass": 0.21284997545742534,
+    "normalization_scope": "necessary partial-mass check only; total law follows from the declared output-process construction",
+    "checked_against_complete_Q": true
+  },
+  "statistical_protocol_valid": true,
+  "statistical_protocol_issues": [],
+  "decision_basis": "complete_numerical_law",
+  "elapsed_seconds": 0.8126397199994244,
+  "native_provenance": {
+    "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+    "build_cache_key": "131c28526865f9f25d0c9d2464a7dc0be5b8c3eae098ee840a35a7684c4b2a88",
+    "build_metadata_matches_binary": true,
+    "covariance_sha256": "9e75e4d38d214d7aedcb2307cfe512f502df2ecf373e08349311c62b6159d606",
+    "selector": "click_influence",
+    "k": 4,
+    "vacuum_kernel": "product",
+    "seed": 7120602,
+    "sample_count": 512,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "uniform_source": "mt19937_64 upper 53 bits / 2^53",
+    "sample_log_probability_semantics": "Natural logarithm of the product of computed chosen-branch conditional probabilities under ideal continuous uniforms; not a finite PRNG-state law. Computed during sampling, never from a target distribution.",
+    "uniforms_sha256": null,
+    "binding_scope": "Traceability to the declared covariance and executable/selector/kernel; not cryptographic verification of implementation correctness"
+  }
+}

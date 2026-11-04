@@ -403,18 +403,35 @@ def frugal_evidence_sample(covariance, cutoff=5, sample_count=1024, seed=0, *,
     return out
 
 
-def assess_frugal_samples(covariance, evidence, *, protocol=None, **options):
+def assess_frugal_samples(covariance, evidence, *, protocol=None,
+                          require_log_probabilities=True, **options):
     """Pass complete Frugal evidence to the generic GBS identity evaluator.
 
     The caller supplies a protocol fixed before sampling and a confidence plan.
     A successful run or a good fit to a few moments is not that attestation.
+    The default retains the original strict density requirement. Explicitly
+    setting ``require_log_probabilities=False`` also permits a complete
+    generation-only batch, bound to the same covariance and executable, for
+    necessary witnesses. Missing log Q never supplies a global TV upper
+    bound; a separately supplied complete Q remains explicit full-law evidence.
+    Inconsistent density flags/arrays and failed checkpoints are not relaxed.
     """
     from .gbs_identity import assess_gbs_identity, covariance_sha256
+    if not isinstance(require_log_probabilities, (bool, np.bool_)):
+        raise ValueError("require_log_probabilities must be a boolean")
     if not isinstance(evidence, dict) or evidence.get("status") != "ok":
         failure = evidence if isinstance(evidence, dict) else {"error": str(evidence)}
         return assess_gbs_identity(covariance, protocol=protocol, sampling_failure=failure, **options)
-    if evidence.get("raw_samples") is None or evidence.get("sample_log_probabilities") is None or evidence.get("log_probability_enabled") is not True:
+    logs = evidence.get("sample_log_probabilities")
+    enabled = evidence.get("log_probability_enabled")
+    if evidence.get("raw_samples") is None:
+        raise ValueError("Frugal assessment requires raw samples")
+    if require_log_probabilities and (logs is None or enabled is not True):
         raise ValueError("Frugal assessment requires raw samples and recorded log probabilities")
+    if enabled is not True and enabled is not False:
+        raise ValueError("Frugal evidence must declare its density flag")
+    if (enabled is True) != (logs is not None):
+        raise ValueError("Frugal density flag and log-probability array disagree")
     V = np.asarray(getattr(covariance, "V", covariance))
     if evidence.get("modes") != V.shape[0] // 2 or evidence.get("covariance_sha256") != covariance_sha256(V):
         raise ValueError("Frugal evidence is not bound to the supplied covariance")
@@ -423,9 +440,15 @@ def assess_frugal_samples(covariance, evidence, *, protocol=None, **options):
     if isinstance(protocol, dict) and protocol.get("requested_draws") != evidence.get("sample_count"):
         return assess_gbs_identity(V, protocol=protocol,
             sampling_failure={"error": "Frugal batch does not match prespecified requested_draws"}, **options)
+    # Do not mutate the caller's protocol or attest an absent path density.
+    if isinstance(protocol, dict) and logs is None:
+        protocol = {**protocol, "density_is_unconditional_path_mass": False}
     result = assess_gbs_identity(V, candidate_distribution=evidence.get("distribution"),
-        samples=evidence["raw_samples"], sample_log_probabilities=evidence["sample_log_probabilities"],
+        samples=evidence["raw_samples"], sample_log_probabilities=logs,
         protocol=protocol, **options)
+    result["density_available"] = logs is not None or evidence.get("distribution") is not None
+    result["density_source"] = ("recorded_sample_path_mass" if logs is not None else
+        "provided_complete_Q" if evidence.get("distribution") is not None else None)
     result["native_provenance"] = {key: evidence.get(key) for key in (
         "executable_sha256", "build_cache_key", "build_metadata_matches_binary", "covariance_sha256",
         "selector", "k", "vacuum_kernel", "seed", "sample_count", "order", "uniform_source",
