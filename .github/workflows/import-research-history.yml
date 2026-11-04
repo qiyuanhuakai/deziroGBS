@@ -107,16 +107,21 @@ jobs:
               git("fetch", "--quiet", "origin", trigger)
               current = git("ls-remote", "--exit-code", "origin", "refs/heads/main").split()[0]
               assert current == trigger, "Remote main advanced; no changes were pushed."
+              assert not git("ls-tree", SOURCE_COMMIT, ".github")
+              git("read-tree", SOURCE_TREE)
+              git("read-tree", "--prefix=.github/", trigger + ":.github")
+              import_tree = git("write-tree")
+              assert git("rev-parse", import_tree + ":.github") == git("rev-parse", trigger + ":.github")
               message = (
                   "Import complete GBS research history\n\n"
                   "Preserve the four original research commits and their exact source tree.\n"
                   "Source commit: " + SOURCE_COMMIT + "\n"
                   "Bundle SHA-256: " + BUNDLE_SHA256 + "\n"
-                  "The temporary import workflow and manifest are absent from this tree.\n"
+                  "The bootstrap .github tree is preserved unchanged for subsequent API cleanup.\n"
               )
-              merged = git("commit-tree", SOURCE_TREE, "-p", SOURCE_COMMIT, "-p", trigger, input_text=message)
-              assert git("rev-parse", merged + "^{tree}") == SOURCE_TREE
+              merged = git("commit-tree", import_tree, "-p", SOURCE_COMMIT, "-p", trigger, input_text=message)
+              assert git("rev-parse", merged + "^{tree}") == import_tree
               git("merge-base", "--is-ancestor", trigger, merged)
-              git("push", "--porcelain", "origin", merged + ":refs/heads/main")
-              print(json.dumps({"source_commit": SOURCE_COMMIT, "source_tree": SOURCE_TREE, "published_commit": merged}))
+              git("push", "--porcelain", "--force-with-lease=refs/heads/main:" + trigger, "origin", merged + ":refs/heads/main")
+              print(json.dumps({"source_commit": SOURCE_COMMIT, "source_tree": SOURCE_TREE, "import_tree": import_tree, "published_commit": merged}))
           PYIMPORT
