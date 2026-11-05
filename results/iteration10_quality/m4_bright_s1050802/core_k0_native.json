@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "implementation": "coherent_dense_core_v1",
+  "status": "ok",
+  "numerical_failure": false,
+  "error": null,
+  "failed_phase": null,
+  "action": "state",
+  "modes": 4,
+  "cutoff": 0,
+  "seed": 0,
+  "requested_samples": 0,
+  "completed_samples": 0,
+  "failed_sample": 0,
+  "partial_prefix_mask": 0,
+  "partial_prefix_length": 0,
+  "long_double_digits": 64,
+  "long_double_bytes": 16,
+  "complex_long_double_bytes": 32,
+  "numeric_guard": 1e-10,
+  "numeric_policy": "compensated sums, recurrence/norm/completeness guards; no clipping; no rigorous numerical TV certificate",
+  "law_semantics": "coherent normalized total-N truncation, latent rank-one channels, correlated Gaussian alpha; no trajectory logQ",
+  "failure_record_semantics": "enumeration failure records are latent-path mass contributions; other latent paths with the same binary prefix may succeed",
+  "quantum_uniform_policy": "two top-53-bit uniforms per accepted mode; second unused for nonzero projective channel",
+  "gaussian_rng_policy": "Box-Muller with open half-shifted 53-bit uniforms; finite PRNG approximation",
+  "resources": {
+    "full_basis": 1,
+    "even_initial_basis": 1,
+    "all_stage_basis": 5,
+    "fiber_index_entries": 4,
+    "planned_major_payload_bytes": 1229,
+    "max_basis": 100000,
+    "max_stage_basis": 1000000,
+    "max_payload_bytes": 268435456,
+    "memory_scope": "planned major numerical/index/sample containers; excludes allocator overhead, process RSS and JSON transport"
+  },
+  "timings_seconds": {
+    "input": 6.5749e-05,
+    "setup": 2.3725e-05,
+    "sampling": 0,
+    "cold_batch": 2.3725e-05,
+    "reference": 0
+  },
+  "parameters": {
+    "squeezing": 0.9,
+    "loss": 0.65,
+    "a": 0.4574442773440312,
+    "b": 4.282270851868415,
+    "core_squeezing": 0.39105009991984085,
+    "tanh_core_squeezing": 0.3722651569531656,
+    "lambda": 0.138581347081365,
+    "displacement_variance": 2.0962122442362388,
+    "unitarity_residual": 3.605514324600545e-16
+  },
+  "retained_weight": 0.7420420955961557,
+  "analytic_retained_weight": 0.7420420955961557,
+  "tail_probability": 0.25795790440384425,
+  "trace_distance_bound": 0.5078955644656136,
+  "tail_scope": "sqrt(tau) is the exact-arithmetic coherent projection budget; floating state, Gaussian RNG and measurement errors are additional",
+  "state": {
+    "occupations": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "amplitudes_real": [
+      1.0
+    ],
+    "amplitudes_imag": [
+      0.0
+    ],
+    "amplitudes": [
+      [
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "channels": null,
+  "raw_samples": null,
+  "completed_packed_words": [],
+  "trace": [],
+  "enumeration_complete": false,
+  "distribution": null,
+  "vacuum_marginals": null,
+  "failure_mass": 0.0,
+  "vacuum_absolute_indicator": 0.0,
+  "enumeration_failures": [],
+  "diagnostics": {
+    "coefficient_evaluations": 0,
+    "measurements": 0,
+    "contracted_amplitudes": 0,
+    "poisson_tail_terms": 0,
+    "normal_variates": 0,
+    "gaussian_uniforms": 0,
+    "quantum_uniforms": 0,
+    "displacement_evaluations": 0,
+    "enumeration_nodes": 0,
+    "vacuum_subsets": 0,
+    "completed_samples": 0,
+    "numeric_failures": 0,
+    "maximum_state_norm_residual": 0.0,
+    "maximum_channel_norm_residual": 0.0,
+    "maximum_poisson_norm_residual": 0.0,
+    "maximum_poisson_tail_remainder": 0.0,
+    "coefficient_error_l2_indicator": 1.993500247528444e-18,
+    "retained_weight_residual": 0.0
+  },
+  "occupations": [
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "amplitudes": [
+    [
+      1.0,
+      0.0
+    ]
+  ],
+  "executable_sha256": "f6a9f7c8447a73d07485314c9c1ebd8ea0b1a09383e5dcbfde6d2eb4c794aac2",
+  "build_cache_key": "1357d47d0502f863720f8e0aa1e59e2c7e0d4d0decbebaaa5bf20b818f235bca",
+  "build_metadata_matches_binary": true,
+  "wrapper_input_validation_seconds": 0.000420133999796235,
+  "wrapper_process_wall_seconds": 0.0017523839997011237,
+  "wrapper_wall_seconds": 0.0028575630003615515,
+  "wrapper_stderr": "",
+  "unitary_sha256": "d98ee13da5621a0975d87b2fcef9dc4f07c6d0c52ddbecf7a70ca0332309ec4f"
+}

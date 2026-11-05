@@ -1,0 +1,80 @@
+{
+  "name": "iteration10_coherent_core_refined_threshold_sampling",
+  "scope": "Construct the normalized coherent total-photon truncated pure core, apply the original correlated Gaussian displacement channel, and sample threshold outcomes by a rank-one local POVM refinement. This is a finite Fock prototype, not MPS or a universal efficient GBS algorithm.",
+  "primary_modes": [4, 8],
+  "seed_bases": [1050801, 1050802],
+  "haar_seed_rule": "seed_base + 1000*modes",
+  "profiles": [
+    {"name": "lossy", "squeezing": 0.6, "transmissivity": 0.35},
+    {"name": "bright", "squeezing": 0.9, "transmissivity": 0.65}
+  ],
+  "core_cutoffs": [0, 2, 4],
+  "retained_budgets": [2, 4, 6],
+  "planned_primary_inputs": 8,
+  "planned_primary_core_laws": 24,
+  "planned_primary_retained_laws": 24,
+  "supplement": {"modes": 12, "seed_base": 1050801, "profile": "lossy", "core_cutoffs": [2], "retained_budgets": [4, 6]},
+  "reference": {
+    "method": "analytic Gaussian tilt and finite Wick moments, followed by complete threshold Mobius inversion; no Monte Carlo law estimation",
+    "maximum_modes": 12,
+    "maximum_compatible_unordered_pairs": 2500000,
+    "maximum_wick_moments_per_subset": 100000,
+    "negative_atom_tolerance": 1e-11,
+    "sum_error_tolerance": 1e-11,
+    "maximum_correction_l1": 1e-9,
+    "save_raw_law_and_all_repairs": true,
+    "coefficient_comparison_max_absolute_tolerance": 2e-12,
+    "coefficient_norm_comparison_tolerance": 2e-12,
+    "native_tail_comparison_absolute_tolerance": 2e-12,
+    "nominal_trace_bound_check_absolute_tolerance": 1e-8,
+    "reference_resource_rejection": "save and report; never replace a selected input",
+    "outward_rounded_certificate": false
+  },
+  "native": {
+    "maximum_modes": 64,
+    "maximum_cutoff": 8,
+    "maximum_basis": 100000,
+    "maximum_sum_stage_basis": 1000000,
+    "arithmetic": "complex long double in the new sampler; retained baseline retains its unchanged arithmetic",
+    "measurement_order": "natural physical mode order",
+    "hidden_channel_policy": "sample all K+1 projective channels, split parallel channel with positive Poisson CDF/tail; keep all remaining total N<=K occupations including odd sectors",
+    "likelihood": "no claim that a latent path probability is the marginal binary output probability",
+    "failure": "stop and preserve partial results; no retry, refill, or failed-case replacement"
+  },
+  "timing": {
+    "cases": [
+      {"modes": 8, "seed_base": 1050801, "profile": "lossy", "core_cutoffs": [0, 2, 4], "retained_budgets": [4, 6], "sample_counts": [64, 1024]},
+      {"modes": 12, "seed_base": 1050801, "profile": "lossy", "core_cutoffs": [2], "retained_budgets": [4, 6], "sample_counts": [64, 1024]},
+      {"modes": 32, "seed_base": 1050801, "profile": "lossy", "core_cutoffs": [4], "retained_budgets": [4, 6], "sample_counts": [16, 128]}
+    ],
+    "repeats": 3,
+    "planned_runs": 66,
+    "shuffle_seed": 1050899,
+    "sample_seed_base": 1050811,
+    "sampling_seed_rule": "sample_seed_base + replicate_index",
+    "fresh_process_per_run": true,
+    "retain_raw_samples": true,
+    "primary_cost": "native setup plus sampling, including basis/state construction, correlated displacement draws, conditional state contractions, RNG and sample allocation; separately report wrapper/input/output costs",
+    "statistic": "median of the three predetermined repetitions per case/method/sample-count; quality-cost comparisons only when both full laws were evaluated",
+    "retained_selector": "click_influence",
+    "retained_vacuum_kernel": "product",
+    "retained_prefix_cache_entries": 0,
+    "threads": 1,
+    "dedicated_host": false,
+    "per_run_timeout_seconds": 600,
+    "no_sampling_quality_certificate_from_histogram": true
+  },
+  "resource_boundary": {
+    "modes": 64,
+    "cutoff": 6,
+    "profile": "lossy",
+    "expectation": "reject by basis resource cap before allocation; this is not a numerical failure or a replacement timing input"
+  },
+  "claims": {
+    "new_algorithm_novelty": false,
+    "exact_untruncated_GBS": false,
+    "formal_theorem": "In ideal arithmetic, same displacement channel and measurement give TV <= sqrt(core photon tail); finite arithmetic and failure need their own budget",
+    "large_mode_full_TV_certificate": false,
+    "classical_frontier_or_Jiuzhang_claim": false
+  }
+}

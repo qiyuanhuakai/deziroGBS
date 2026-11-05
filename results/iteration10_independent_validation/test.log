@@ -1,0 +1,25 @@
+coherent_core_gh_gate {"development_check": {"cutoff": 4, "max_abs_difference": 2.5127122604828855e-11, "orders": [8, 14], "passed": false, "previous_threshold": 2e-11}, "diagnostics": [{"cutoff": 2, "max_abs_12_vs_20": 2.220446049250313e-16, "max_abs_20_vs_28": 4.440892098500626e-16, "max_abs_28_vs_analytic_wick": 3.3306690738754696e-16, "orders": [12, 20, 28]}, {"cutoff": 4, "max_abs_12_vs_20": 3.3306690738754696e-16, "max_abs_20_vs_28": 5.551115123125783e-16, "max_abs_28_vs_analytic_wick": 4.440892098500626e-16, "orders": [12, 20, 28]}], "loss": 0.4, "modes": 2, "outward_rounded_certificate": false, "seed": 101105, "squeezing": 0.4}
+test_all_hidden_channels_survive_the_total_photon_budget (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_all_hidden_channels_survive_the_total_photon_budget) ... ok
+test_failure_preserves_checkpoint_and_refined_enumeration_retains_failed_mass (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_failure_preserves_checkpoint_and_refined_enumeration_retains_failed_mass) ... ok
+test_fixed_displacement_complete_native_laws_against_independent_povm (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_fixed_displacement_complete_native_laws_against_independent_povm) ... ok
+test_forgetting_channels_reproduces_the_full_conditional_density_and_odd_support (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_forgetting_channels_reproduces_the_full_conditional_density_and_odd_support) ... ok
+test_native_complex_bra_fixture_has_correct_binary_probability (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_native_complex_bra_fixture_has_correct_binary_probability) ... ok
+test_native_initial_coefficients_match_independent_maps_at_multiple_sizes (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_native_initial_coefficients_match_independent_maps_at_multiple_sizes) ... ok
+test_one_joint_normal_vector_and_injected_quantum_paths_match_fixed_displacement (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_one_joint_normal_vector_and_injected_quantum_paths_match_fixed_displacement) ... ok
+test_positive_poisson_tail_below_machine_epsilon_is_not_subtracted_away (test_coherent_core_independent.CoherentCoreIndependentNativeTests.test_positive_poisson_tail_below_machine_epsilon_is_not_subtracted_away) ... ok
+test_coefficient_recurrence_against_direct_small_hafnian_pairing (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_coefficient_recurrence_against_direct_small_hafnian_pairing) ... ok
+test_complex_bra_and_dephasing_have_distinct_closed_form_probabilities (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_complex_bra_and_dephasing_have_distinct_closed_form_probabilities) ... ok
+test_correlated_improper_gaussian_tilt_against_fixed_gauss_hermite (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_correlated_improper_gaussian_tilt_against_fixed_gauss_hermite) ... ok
+test_direct_tensor_threshold_effects_agree_with_vacuum_mobius (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_direct_tensor_threshold_effects_agree_with_vacuum_mobius) ... ok
+test_reference_repairs_are_visible_and_out_of_budget_values_fail (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_reference_repairs_are_visible_and_out_of_budget_values_fail) ... ok
+test_resource_counts_and_caps_are_explicit_without_panel_computation (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_resource_counts_and_caps_are_explicit_without_panel_computation) ... ok
+test_singular_gaussian_average_keeps_coherence_and_degree_eight (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_singular_gaussian_average_keeps_coherence_and_degree_eight) ... ok
+test_small_complete_law_obeys_state_budget_against_independent_gaussian_target (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_small_complete_law_obeys_state_budget_against_independent_gaussian_target) ... ok
+test_two_mode_complex_interference_and_total_sector_coherence (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_two_mode_complex_interference_and_total_sector_coherence) ... ok
+test_vacuum_and_lossless_boundaries_match_direct_fock_threshold_bins (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_vacuum_and_lossless_boundaries_match_direct_fock_threshold_bins) ... ok
+test_zero_cutoff_matches_gaussian_classical_covariance_determinants (test_coherent_core_independent.CoherentCoreIndependentReferenceTests.test_zero_cutoff_matches_gaussian_classical_covariance_determinants) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 4.923s
+
+OK

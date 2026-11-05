@@ -1,0 +1,29 @@
+In file included from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/Core:328,
+                 from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/Dense:1,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/matrix_utils.hpp:6,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/correlator_utils.hpp:6,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/data.hpp:4,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_sampling_adapter.cpp:6:
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h: In instantiation of ‘Eigen::TriangularView<MatrixType, Mode>::Scalar Eigen::TriangularView<MatrixType, Mode>::determinant() const [with _MatrixType = const Eigen::Matrix<double, -1, -1>; unsigned int _Mode = 1; Scalar = double]’:
+/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/matrix_utils.hpp:23:67:   required from ‘auto fgbs::triangular_determinant(MATRIX&&) [with MATRIX = const Eigen::Matrix<double, -1, -1>&]’
+/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/correlator_utils.hpp:33:67:   required from here
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h:323:16: warning: bitwise operation between different enumeration types ‘Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>’ and ‘Eigen::UpLoType’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  323 |       if (Mode & UnitDiag)
+      |           ~~~~~^~~~~~~~~~
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h:325:21: warning: bitwise operation between different enumeration types ‘Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>’ and ‘Eigen::UpLoType’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  325 |       else if (Mode & ZeroDiag)
+      |                ~~~~~^~~~~~~~~~
+In file included from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/Core:328,
+                 from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/Dense:1,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/matrix_utils.hpp:6,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/correlator_utils.hpp:6,
+                 from /workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp:1:
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h: In instantiation of ‘Eigen::TriangularView<MatrixType, Mode>::Scalar Eigen::TriangularView<MatrixType, Mode>::determinant() const [with _MatrixType = const Eigen::Matrix<double, -1, -1>; unsigned int _Mode = 1; Scalar = double]’:
+/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/matrix_utils.hpp:23:67:   required from ‘auto fgbs::triangular_determinant(MATRIX&&) [with MATRIX = const Eigen::Matrix<double, -1, -1>&]’
+/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include/fgbs/core/correlator_utils.hpp:33:67:   required from here
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h:323:16: warning: bitwise operation between different enumeration types ‘Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>’ and ‘Eigen::UpLoType’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  323 |       if (Mode & UnitDiag)
+      |           ~~~~~^~~~~~~~~~
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3/Eigen/src/Core/TriangularMatrix.h:325:21: warning: bitwise operation between different enumeration types ‘Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>’ and ‘Eigen::UpLoType’ is deprecated [-Wdeprecated-enum-enum-conversion]
+  325 |       else if (Mode & ZeroDiag)
+      |                ~~~~~^~~~~~~~~~

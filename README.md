@@ -1,19 +1,35 @@
 # deziroGBS / GBS Classical Lab
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第八轮原生内核实验与第九轮理论/资源筛查，2026-11-05（北京时间）**。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第十轮相干纯态核心原生采样器与固定质量/成本实验，2026-11-05**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
 
 ## 当前结论与方向
 
-**第八轮实现了共享 Schur 事件内核，提高了小系统质量与数值可靠性，但速度目标失败。** 在 12 个新输入（4 个独立 Haar 干涉仪、各 3 种亮度）上完成 72 个完整分布，全部零失败质量；72 项 Python 编排核对和 24 项独立表事件核对均通过。四种 chain/tree 候选相对各自较强 retained 基线的 TV 比值中位数为 0.726–0.915，但完整原生成本中位比为 34.73–40.43，24 个配对计时单元全部更慢。历史 4 行数值失败已消除；正式面板未触发 quad，改善发生于新的 long-double 共享/缩放路径。完整回归 **268 项通过，0 失败、0 错误、0 跳过**。
+**第十轮完成了新的相干核心采样实现，但没有获得质量与速度的联合优势。** 新 C++ 原型保留核心不同总光子数之间的相干性，施加原相关 Gaussian 位移，通过秩一隐藏通道实现阈值测量。完整项目门禁 **298 项通过，0 失败、0 错误、0 跳过**。5 个不同 Haar 干涉仪对应 9 个协方差输入，完成 51/51 个质量分布及 76/76 项交叉检查。
 
-**第九轮随即转向纯态核心分解、全局截断预算与压缩表示。** 已核对有损 Gaussian 态的已知纯态核心加经典位移分解，推导保留相干性的总光子数截断界 `TV <= sqrt(tail)`，并完成 42 行固定资源比较及 20 项检查。1024 模式最轻配置的核心截断为 K=36（TV 预算 0.1），但稠密偶数 Fock 表仍约有 10^67 个复振幅；因此排除大规模稠密展开，后续考察保留相干性的压缩表示及其独立误差预算。新的压缩态采样器尚未实现；本轮理论不为现有 forest 分布提供 TV 证书。
+在 16 个有双方完整质量参考和计时的配对单元中，core 的 TV 均更大、完整原生成本也均更高，**0/16 满足 TV 不高且更快**。例如 m8 lossy 的 1024 样本批次，core K2 用时 0.034565 秒、K4 用时 0.285667 秒，retained k4 为 0.004727 秒；对应 TV 分别为 0.00562895、0.000285452 和 0.0000289980。这里 core TV 明确是导出归一化系数在**理想相关位移与阈值通道**下的 `construction_reference_tv`，retained 是完整枚举的扩展原生条件律；不能把两个证据范围写成相同的有限精度采样器全局保证。
+
+66 次预定计时全部执行，60 次完整，6 次失败均在 m32 retained-k6；它们是同三个种子在两种批长下重现的失败前缀，不是六次独立观察，失败单元不补跑、不报告成功子集的中位数。core 的 30 次计时批次全部完成，但其全局 native 失败质量仍未知。m32 K4 的 58,905 维稠密状态生成 128 样本需 13.9428 秒，没有完整 Q；m64 K6 的 131,115,985 维状态在分配前被资源上限拒绝。
+
+**下一步需要研究保留相干性的压缩表示，并分别验证状态近似与实际测量采样误差。** 秩一隐藏通道避免保存条件混合态的全部分量，却没有消除稠密 Fock 向量的规模瓶颈。当前未实现 MPS 压缩，没有有限精度原生输出的全局 TV 证书，也没有建立通用低复杂度或完整九章模拟优势。
 
 | 当前交付 | 入口 |
 |---|---|
+| 第十轮方法、全部质量与成本结果 | [研究报告](RESEARCH_REPORT_ITERATION10.md)、[完整结果表](results/iteration10_analysis/summary_tables.md)、[冻结汇总](results/iteration10_analysis/summary.json) |
+| 第十轮独立验证与理论 | [相干 POVM 推导](research/iteration10_coherent_povm_theory.md)、[独立参考与正式证据审查](research/iteration10_independent_audit.md)、[298 项完整门禁](results/iteration10_validation/validation.json) |
 | 第八轮实现、质量、失败与完整成本 | [研究报告](RESEARCH_REPORT_ITERATION8.md)、[完整结果表](results/iteration8_analysis/summary_tables.md) |
 | 第八轮独立复核 | [数值审查](research/iteration8_numerical_audit.md)、[理论/协议审查](research/iteration8_theory_and_protocol_audit.md)、[最终产物审计](research/iteration8_final_audit.md) |
 | 第九轮理论与固定资源面板 | [研究报告](RESEARCH_REPORT_ITERATION9.md)、[完整推导与先前工作](research/iteration9_core_budget_theory.md)、[资源计算说明](results/iteration9_core_budget/README.md) |
 | 排除的快捷方案 | [边界路线审查](research/iteration9_boundary_route_review.md) |
+
+![第十轮：构造参考质量与完整原生成本](results/iteration10_analysis/quality_cost.png)
+
+第十轮原生构建、完整门禁、正式质量与计时、独立分析的复现入口见 [报告第 13 节](RESEARCH_REPORT_ITERATION10.md#13-文件与复现入口)。新编译必须建立新的源码/二进制绑定门禁，全部复跑使用新输出目录；旧失败和资源拒绝不覆盖。core 的 `TV <= sqrt(tail)` 仅属于精确相干截断态在相同理想通道下的构造，数值状态与实际采样误差需另行预算，不能套到现有 retained/forest 分布。
+
+## 第八、九轮（历史）
+
+**第八轮实现了共享 Schur 事件内核，提高了小系统质量与数值可靠性，但速度目标失败。** 在 12 个新输入（4 个独立 Haar 干涉仪、各 3 种亮度）上完成 72 个完整分布，全部零失败质量；72 项 Python 编排核对和 24 项独立表事件核对均通过。四种 chain/tree 候选相对各自较强 retained 基线的 TV 比值中位数为 0.726–0.915，但完整原生成本中位比为 34.73–40.43，24 个配对计时单元全部更慢。历史 4 行数值失败已消除；正式面板未触发 quad，改善发生于新的 long-double 共享/缩放路径。该轮完整回归 **268 项通过，0 失败、0 错误、0 跳过**。
+
+**第九轮随即转向纯态核心分解、全局截断预算与压缩表示。** 已核对有损 Gaussian 态的已知纯态核心加经典位移分解，推导保留相干性的总光子数截断界 `TV <= sqrt(tail)`，并完成 42 行固定资源比较及 20 项检查。1024 模式最轻配置的核心截断为 K=36（TV 预算 0.1），但稠密偶数 Fock 表仍约有 10^67 个复振幅；因此排除大规模稠密展开。第十轮只实现其中小窗口的稠密验证原型，压缩表示仍待研究；第九轮理论不为现有 forest 分布提供 TV 证书。
 
 ![第八轮：质量改善与实际成本失败](results/iteration8_analysis/quality_cost.png)
 
@@ -168,7 +184,10 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 | `calibration.py` | 精确校准第一个点击的位置和无点击类别 | 保证前向 KL 不增加，不保证 TV 单调 |
 | `zero_memory.py` | 保留全部零观测、保留 k 个点击约束 | 固定 k 仍有大矩阵行列式成本；选择策略不是普适最优 |
 | `positive_completion.py` | 对所有遗漏点击做单点或不相交块的条件似然补全 | 无通用 TV 保证；直接包含排除有数值失败，失败质量不删除 |
-| `positive_forest.py` | 用固定链或静态无条件 MI 树补入跨块依赖 | 无条件 MI 不优化条件 TV；当前为 Python 质量参考，未实现共享小核 |
+| `positive_forest.py` | 用固定链或静态无条件 MI 树补入跨块依赖 | 无条件 MI 不优化条件 TV；Python 直接事件参考与原生共享核分别保留 |
+| `batched_forest.py`、`cpp_forest.py` | 第八轮共享 Schur 事件核与完整原生 forest 采样 | 数值保护仍非严格区间；固定面板完整采样明显更慢 |
+| `coherent_core.py` 与原生核心采样器 | 相干总光子截断、相关位移及秩一隐藏通道阈值采样 | 稠密全奇偶 Fock 空间；不输出冒充边缘似然的隐藏路径 logQ |
+| `experiments/iteration10_reference.py` | 小系统 Gaussian tilt/Wick 平均完整构造参考 | 指数规模的独立数值参考；不积分全部有限 native 失败路径 |
 | `photon_tail.py` | 均匀损耗下可计算的光子数尾界 | 高计数时界很松；不支持一般非均匀输出损耗 |
 | `cache.py` | 以配置和引擎代码哈希缓存精确参考 | 单写者；不允许多个进程同时写同一缓存目录 |
 
@@ -187,14 +206,18 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
 - `results/analysis/`：图、摘要和所有反例索引。
 - `research/`：方法审计、查新记录和下一轮问题。
 - `results/iteration6_completion/`、`results/iteration7_forest/`：本轮连续探索的冻结完整 P/Q、元数据、源码快照与全部失败记录；各自事后诊断另存。
+- `results/iteration8_quality/`、`iteration8_timing/`、`iteration9_core_budget/`：第八轮原生质量/成本及第九轮固定理论资源预算。
+- `results/iteration10_quality/`、`iteration10_timing/`、`iteration10_analysis/`：第十轮完整构造参考、实际采样成本、失败轨迹和独立汇总；`iteration10_validation/` 保存绑定源码与二进制的完整门禁。
 - `.cache/targets/`：可重建的精确参考缓存；不跟踪到 Git。历史独立归档可能保留缓存；最新恢复包只包含Git跟踪的研究成果。
 
 未下载或复制论文全文。`third_party/FrugalGBS`（MIT）和 `third_party/xsimd`（BSD-3-Clause）保存用于可复现对赛的上游源码子集，文件均核对固定提交的 Git blob；参见 [上游说明](third_party/README.md)。本项目自有新增代码尚未选择对外开放源码许可证。
 
-## GitHub 与历史恢复状态
+## GitHub 与完整研究历史
 
-目标远程地址为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**。本次恢复了原四轮本地研究历史，并将 `37518d5` 与已知远端初始化提交 `52e38ae` 合并为本地 `ce73c2e`；第五至七轮继续在其后提交。Python包名仍为 `gbslab`。
+公开仓库为 **[qiyuanhuakai/deziroGBS](https://github.com/qiyuanhuakai/deziroGBS)**。项目包名仍为 `gbslab`。本次按项目所有者明确授权，将本地 GBS 研究代码、正式与探索结果、失败记录、研究报告、历史草稿、复现信息和原始 Git 提交一起公开。
 
-**本轮尚未公开发布。** 自动审批审查拒绝了将具体研究源码、实验结果和历史推送至公开仓库的操作，要求用户明确批准这批内容和目的地。没有用其他接口绕过；因此不能把远程克隆描述为已经包含完整研究。最新交付包内的Git bundle可恢复全部历史及最终源码，确切提交和恢复命令见包内清单。
+完整研究目录直接保存在主分支；原始研究提交通过合并保留，不重写既有提交。第 1—9 轮完整历史另有一份经过 SHA-256 核验的分卷 Git bundle，永久保存在 [公开归档提交 d5fa167](https://github.com/qiyuanhuakai/deziroGBS/tree/d5fa1679fbfbe2523af62750dd75bbdffddf6efc)。它包含原研究头 `8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff` 的全部 4,169 个跟踪文件及此前提交历史；归档中的 `restore_complete_history.py` 可独立恢复并逐卷核验。
 
-编译产物、计算缓存和作者原始协方差不包含在该恢复包或拟公开源码树中。九章模型复现需按来源说明独立取得协方差并校验散列。上游FrugalGBS和xsimd许可证保留；项目自有新增代码尚未选择对外开放源码许可证。
+[PUBLICATION.md](PUBLICATION.md) 记录公开范围、补漏材料、构建产物和归档入口。未提交历史草稿独立归档，并明确标记为历史材料，不覆盖正式实验版本。实际用于实验的原生可执行文件和构建记录位于 `native_builds/`；它们依赖构建平台，跨平台请按源码重新构建。
+
+此前发布受阻的过程保留在历史提交中；该旧状态不代表当前发布状态。上游 FrugalGBS 和 xsimd 的许可证继续保留；公开研究资料不替代各自许可证，本项目自有新增代码尚未指定开放源码许可证。

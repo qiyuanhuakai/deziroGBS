@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/click_sampler.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/click-build/click_sampler.building"
+  ],
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_sha256": "40fe4687ff9ceb43e399726a9bc40886f424d93559083cf16dea2ec4058f0c22",
+  "builder_sha256": "87a1601fac040f29d46906e317ad34b546bc57f26e8dc44805ae413ab40f96db",
+  "dependencies": {
+    "eigen": {
+      "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+      "files": 530,
+      "bytes": 8669110
+    }
+  },
+  "cache_key": "0415befc7316a2a32a9d01f81bdb4e249130d948382691044ec400c899e97962",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE"
+  ],
+  "native": false,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "executable_sha256": "67abf002b371cf56a0aa68ef4de2b2cbf89ab6bd4c1f9d46f20e4111da4760b8",
+  "build_seconds": 16.8230428400002,
+  "implementation": "native C++ retained-click sampler with Gaussian zero updates",
+  "threads": 1,
+  "precision": "double; long-double inclusion-exclusion sums",
+  "maximum_modes": 256,
+  "maximum_click_budget": 8,
+  "maximum_enumeration_modes": 14
+}

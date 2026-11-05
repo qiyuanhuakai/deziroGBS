@@ -1,0 +1,61 @@
+{
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+  "sampler_body_sha256": "9c14a870f2875e808025d9e3535a71ba86144e5639ab14f0b7be5b594dabb3fb",
+  "cache_key": "858f1086b398ba18d19bda396b99cba61302e333802a54d8bc1533e02b69b901",
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-build/generated",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "-I",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/xsimd/include",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_adapter.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/cumulant_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/file_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/matrix_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/mmpy_format.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/result.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/string_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/thread_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/time_utils.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/layout.cpp",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/cpu/cpu_sampler.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-build/frugal_adapter.building"
+  ],
+  "modes": [
+    2,
+    4,
+    8,
+    10,
+    12
+  ],
+  "precision": "float64",
+  "cutoff_max": 5,
+  "gpu": false,
+  "build_seconds": 18.757641021999916,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "dependencies": {
+    "eigen": {
+      "sha256": "dc70ce0aa482936d7dece6e97e5cbf9c271e7778dfeae8958b754e27d6be822b",
+      "files": 530,
+      "bytes": 8669110
+    },
+    "xsimd": {
+      "sha256": "acc75980f3a43d38d5ae6ec2bd07b29c48fc16ba367c29110e500680f9f594c8",
+      "files": 120,
+      "bytes": 2189803
+    }
+  },
+  "executable_sha256": "862780de4ba8c2bec550b6b165431888d3741830e07200e0f332b1144bf0dc6a",
+  "trace": "generated SIMD forced-branch instrumentation; not an official API"
+}
