@@ -1,0 +1,123 @@
+{
+  "schema": "gbslab.iteration6_positive_completion_validation.v1",
+  "passed": true,
+  "completed_at_utc": "2026-11-04T15:43:31.582330+00:00",
+  "tests_run": 18,
+  "tests": [
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_bounded_caches_preserve_law_samples_and_returned_details",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_exact_empty_or_single_block_boundaries",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_existing_selectors_are_reused_including_nonidentity_order",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_failure_mass_and_sampling_abort_are_unconditional",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_final_positive_branch_rounding_is_not_certified_zero",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_fixed_partition_and_formula_match_independent_dense_sums",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_gaussian_and_table_event_oracles_agree_with_identical_selectors",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_gaussian_vacuum_is_analytic_but_tmsv_roundoff_is_not_a_zero_certificate",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_general_discrete_parity_can_have_false_support",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_generic_pure_gaussian_crosscheck_does_not_request_full_target",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_independent_modes_are_exact_for_orders_budgets_and_blocks",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_invalid_arguments_are_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_log_scores_avoid_intermediate_product_underflow",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_propagated_roundoff_guard_checks_whole_product",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_samples_match_enumerated_surrogate",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_table_analytic_zero_branches_and_nonadjacent_squeezed_pairs",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_two_zero_scores_fail_without_epsilon_or_redraw",
+      "status": "passed"
+    },
+    {
+      "name": "test_positive_completion.PositiveCompletionTests.test_uncertified_zeros_invalid_values_and_inconsistent_events_fail_closed",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "skips": [],
+  "source_hashes": {
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "tests/test_positive_completion.py": "c1cb2223a284f57f98ab60c2a118bc2931a6a7bcf44991616b595c6196f0d4c8",
+    "src/gbslab/conditional_memory.py": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c",
+    "src/gbslab/zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0",
+    "src/gbslab/schur_memory.py": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/gaussian.py": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+  },
+  "source_unchanged_during_validation": true,
+  "test_log": "results/iteration6_completion_validation/test.log",
+  "test_log_sha256": "194be7e86c655b8ad8ded1220b374ecc9b53e6e0943025395ae424bd0a677c60",
+  "replay_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONPATH=src python -m unittest discover -s tests -p test_positive_completion.py -v",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    }
+  },
+  "validated_scope": [
+    "fixed product and adjacent disjoint pair formula from independent dense event sums",
+    "Gaussian direct event oracle versus independent table oracle with identical retained-click selection",
+    "recent/click_influence with k=0,2,4 and nonidentity measurement order",
+    "original recent/pairwise/click_influence selector agreement",
+    "empty or one-block exactness and independent-mode full-law exactness",
+    "explicit failure symbol with unnormalized successful law and no redraw",
+    "analytic zeros distinguished from cancellation zeros and final endpoint rounding",
+    "log-score underflow resistance, aggregate roundoff guard and bounded-cache equivalence",
+    "non-Gaussian parity counterexample and pure/mixed Gaussian boundary checks"
+  ],
+  "limitations": [
+    "This gate is for the small-system Python research module, not the 18-case formal experiment.",
+    "Default direct Gaussian determinants include all historical zeros; timings are not native C++ throughput.",
+    "Roundoff indicators are heuristic guards, not verified error bounds or numerical support certificates.",
+    "Table support certificates refer to the supplied table only; a floating Gaussian full-P table may include prior numerical corrections."
+  ]
+}

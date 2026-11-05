@@ -1,0 +1,22 @@
+{
+  "materialized_utc": "2026-11-04T14:51:05.408806+00:00",
+  "config_sha256": "60543065c0166763595f38ae9db4c3e356d0e20ac5c4c85d3cbd089138dc390c",
+  "artifact_sha256": {
+    "witness_schedules.json": "d197941135c7a1dc481b5b589df4a309310abc09fa4d4c35304312766b92e13a",
+    "split_protocols.json": "fdfecc4694ae3a726d22d88b06544c2594763d44eb821735d85c542e3fe4181b",
+    "confidence_plan.json": "4532b4f5ade63ae12faf77617364a795fed68dd21bdd6289903ffe71b875f0f2"
+  },
+  "preexisting_artifacts": [],
+  "sampling_attempts_already_started": [
+    "jiuzhang1_frugal"
+  ],
+  "completed_batch_artifacts_present": [],
+  "sample_values_read_to_choose_schedule": false,
+  "rule_and_split_fixed_in_config_before_sampling": true,
+  "explicit_indices_materialized_before_all_sampling": false,
+  "basis": "The frozen configuration fixed the window rule and positional split. These dimension-only indices and hashes were materialized at the timestamp above, independently of every pilot and held-out sample value.",
+  "source_hashes": {
+    "experiments/iteration5_quality.py": "0bc026f93e6a20d57551b4df21afae35e988a46dba9a97429d96b0a474276b11",
+    "src/gbslab/marginal_witness.py": "473b1013b9a9ace7a4ac64712831fc3ff564ac29a0c4fee26265d81a401be29a"
+  }
+}

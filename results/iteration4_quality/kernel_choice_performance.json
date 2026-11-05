@@ -1,0 +1,303 @@
+{
+  "row_count": 192,
+  "paired_cases": 32,
+  "product_cold_wins": 30,
+  "median_paired_cold_speedup": 1.0948485014464369,
+  "range_paired_cold_speedup": [
+    0.843956107342742,
+    1.3753365281400451
+  ],
+  "median_paired_sampling_speedup": 1.095179937433138,
+  "aggregation": "Median of3 runs per kernel per case, then paired log/product ratio; no pooling rows across cases",
+  "quality_kernel_choice": "product selected on cross-mode performance after prior numerical equivalence gates; default CLI remains log",
+  "cases": [
+    {
+      "case_id": "m100_bright_s95101",
+      "modes": 100,
+      "profile": "bright",
+      "log_cold_seconds": 0.587942118,
+      "product_cold_seconds": 0.539688418,
+      "cold_speedup": 1.0894102937743606,
+      "sampling_speedup": 1.08978804001555
+    },
+    {
+      "case_id": "m100_bright_s95102",
+      "modes": 100,
+      "profile": "bright",
+      "log_cold_seconds": 0.6232562749999999,
+      "product_cold_seconds": 0.5796420219999999,
+      "cold_speedup": 1.0752434284345245,
+      "sampling_speedup": 1.0759584672254314
+    },
+    {
+      "case_id": "m100_lossy_s95101",
+      "modes": 100,
+      "profile": "lossy",
+      "log_cold_seconds": 0.232743702,
+      "product_cold_seconds": 0.197801688,
+      "cold_speedup": 1.1766517482904393,
+      "sampling_speedup": 1.1771222928850567
+    },
+    {
+      "case_id": "m100_lossy_s95102",
+      "modes": 100,
+      "profile": "lossy",
+      "log_cold_seconds": 0.223219579,
+      "product_cold_seconds": 0.217596512,
+      "cold_speedup": 1.0258417147789576,
+      "sampling_speedup": 1.030656762191992
+    },
+    {
+      "case_id": "m12_bright_s95101",
+      "modes": 12,
+      "profile": "bright",
+      "log_cold_seconds": 0.007754543,
+      "product_cold_seconds": 0.009188325,
+      "cold_speedup": 0.843956107342742,
+      "sampling_speedup": 0.8427212332713824
+    },
+    {
+      "case_id": "m12_bright_s95102",
+      "modes": 12,
+      "profile": "bright",
+      "log_cold_seconds": 0.007241778,
+      "product_cold_seconds": 0.006270003,
+      "cold_speedup": 1.1549879641205913,
+      "sampling_speedup": 1.1678797344609797
+    },
+    {
+      "case_id": "m12_lossy_s95101",
+      "modes": 12,
+      "profile": "lossy",
+      "log_cold_seconds": 0.001673803,
+      "product_cold_seconds": 0.00149252,
+      "cold_speedup": 1.1214610189478198,
+      "sampling_speedup": 1.1290435837944945
+    },
+    {
+      "case_id": "m12_lossy_s95102",
+      "modes": 12,
+      "profile": "lossy",
+      "log_cold_seconds": 0.001693154,
+      "product_cold_seconds": 0.001679312,
+      "cold_speedup": 1.008242661280334,
+      "sampling_speedup": 1.0047128122420967
+    },
+    {
+      "case_id": "m144_bright_s95101",
+      "modes": 144,
+      "profile": "bright",
+      "log_cold_seconds": 1.359786502,
+      "product_cold_seconds": 1.264789735,
+      "cold_speedup": 1.075108742877329,
+      "sampling_speedup": 1.0760067629332668
+    },
+    {
+      "case_id": "m144_bright_s95102",
+      "modes": 144,
+      "profile": "bright",
+      "log_cold_seconds": 1.33055215,
+      "product_cold_seconds": 1.173868148,
+      "cold_speedup": 1.1334766619802688,
+      "sampling_speedup": 1.1335010340264662
+    },
+    {
+      "case_id": "m144_lossy_s95101",
+      "modes": 144,
+      "profile": "lossy",
+      "log_cold_seconds": 0.577832859,
+      "product_cold_seconds": 0.514841072,
+      "cold_speedup": 1.1223519070755104,
+      "sampling_speedup": 1.1250237671751255
+    },
+    {
+      "case_id": "m144_lossy_s95102",
+      "modes": 144,
+      "profile": "lossy",
+      "log_cold_seconds": 0.542752373,
+      "product_cold_seconds": 0.506845916,
+      "cold_speedup": 1.0708429443081475,
+      "sampling_speedup": 1.0727279396793408
+    },
+    {
+      "case_id": "m16_bright_s95101",
+      "modes": 16,
+      "profile": "bright",
+      "log_cold_seconds": 0.015960436,
+      "product_cold_seconds": 0.014047,
+      "cold_speedup": 1.1362167010749626,
+      "sampling_speedup": 1.1370895126474152
+    },
+    {
+      "case_id": "m16_bright_s95102",
+      "modes": 16,
+      "profile": "bright",
+      "log_cold_seconds": 0.015551609,
+      "product_cold_seconds": 0.014146851,
+      "cold_speedup": 1.0992982819992942,
+      "sampling_speedup": 1.0996102330588067
+    },
+    {
+      "case_id": "m16_lossy_s95101",
+      "modes": 16,
+      "profile": "lossy",
+      "log_cold_seconds": 0.002616786,
+      "product_cold_seconds": 0.002450925,
+      "cold_speedup": 1.0676728174056733,
+      "sampling_speedup": 1.0684188866034618
+    },
+    {
+      "case_id": "m16_lossy_s95102",
+      "modes": 16,
+      "profile": "lossy",
+      "log_cold_seconds": 0.002720442,
+      "product_cold_seconds": 0.002348081,
+      "cold_speedup": 1.1585809859199916,
+      "sampling_speedup": 1.1664194734058013
+    },
+    {
+      "case_id": "m256_bright_s95101",
+      "modes": 256,
+      "profile": "bright",
+      "log_cold_seconds": 5.009500585,
+      "product_cold_seconds": 4.657954091,
+      "cold_speedup": 1.07547229687799,
+      "sampling_speedup": 1.0784597018678572
+    },
+    {
+      "case_id": "m256_bright_s95102",
+      "modes": 256,
+      "profile": "bright",
+      "log_cold_seconds": 4.860064375,
+      "product_cold_seconds": 4.505218329,
+      "cold_speedup": 1.0787633406611759,
+      "sampling_speedup": 1.0798547496817827
+    },
+    {
+      "case_id": "m256_lossy_s95101",
+      "modes": 256,
+      "profile": "lossy",
+      "log_cold_seconds": 2.470215865,
+      "product_cold_seconds": 2.320948454,
+      "cold_speedup": 1.0643131090407234,
+      "sampling_speedup": 1.067701966795006
+    },
+    {
+      "case_id": "m256_lossy_s95102",
+      "modes": 256,
+      "profile": "lossy",
+      "log_cold_seconds": 2.393803483,
+      "product_cold_seconds": 2.273537792,
+      "cold_speedup": 1.0528980390927234,
+      "sampling_speedup": 1.0530760679524556
+    },
+    {
+      "case_id": "m32_bright_s95101",
+      "modes": 32,
+      "profile": "bright",
+      "log_cold_seconds": 0.097184434,
+      "product_cold_seconds": 0.083653284,
+      "cold_speedup": 1.1617527651395014,
+      "sampling_speedup": 1.161260876842171
+    },
+    {
+      "case_id": "m32_bright_s95102",
+      "modes": 32,
+      "profile": "bright",
+      "log_cold_seconds": 0.098700901,
+      "product_cold_seconds": 0.087504809,
+      "cold_speedup": 1.1279483051040085,
+      "sampling_speedup": 1.1282810276065762
+    },
+    {
+      "case_id": "m32_lossy_s95101",
+      "modes": 32,
+      "profile": "lossy",
+      "log_cold_seconds": 0.021472237,
+      "product_cold_seconds": 0.016969074,
+      "cold_speedup": 1.265374704594959,
+      "sampling_speedup": 1.266068025672402
+    },
+    {
+      "case_id": "m32_lossy_s95102",
+      "modes": 32,
+      "profile": "lossy",
+      "log_cold_seconds": 0.023329514,
+      "product_cold_seconds": 0.018883792,
+      "cold_speedup": 1.2354252789905755,
+      "sampling_speedup": 1.234828400573268
+    },
+    {
+      "case_id": "m64_bright_s95101",
+      "modes": 64,
+      "profile": "bright",
+      "log_cold_seconds": 0.447008864,
+      "product_cold_seconds": 0.40192534,
+      "cold_speedup": 1.1121689018164418,
+      "sampling_speedup": 1.112770804796537
+    },
+    {
+      "case_id": "m64_bright_s95102",
+      "modes": 64,
+      "profile": "bright",
+      "log_cold_seconds": 0.515131402,
+      "product_cold_seconds": 0.472424804,
+      "cold_speedup": 1.0903987208935795,
+      "sampling_speedup": 1.0907496418074691
+    },
+    {
+      "case_id": "m64_lossy_s95101",
+      "modes": 64,
+      "profile": "lossy",
+      "log_cold_seconds": 0.138637663,
+      "product_cold_seconds": 0.1308766529999999,
+      "cold_speedup": 1.0593001870241907,
+      "sampling_speedup": 1.0619971123181007
+    },
+    {
+      "case_id": "m64_lossy_s95102",
+      "modes": 64,
+      "profile": "lossy",
+      "log_cold_seconds": 0.145396063,
+      "product_cold_seconds": 0.140299282,
+      "cold_speedup": 1.036327919340314,
+      "sampling_speedup": 1.0359590345272593
+    },
+    {
+      "case_id": "m8_bright_s95101",
+      "modes": 8,
+      "profile": "bright",
+      "log_cold_seconds": 0.001745582,
+      "product_cold_seconds": 0.001532261,
+      "cold_speedup": 1.1392197543368918,
+      "sampling_speedup": 1.1413003354039732
+    },
+    {
+      "case_id": "m8_bright_s95102",
+      "modes": 8,
+      "profile": "bright",
+      "log_cold_seconds": 0.002229371,
+      "product_cold_seconds": 0.001620964,
+      "cold_speedup": 1.3753365281400451,
+      "sampling_speedup": 1.3812909918455578
+    },
+    {
+      "case_id": "m8_lossy_s95101",
+      "modes": 8,
+      "profile": "lossy",
+      "log_cold_seconds": 0.000819896,
+      "product_cold_seconds": 0.0006119029999999,
+      "cold_speedup": 1.3399117180339595,
+      "sampling_speedup": 1.3540649993222178
+    },
+    {
+      "case_id": "m8_lossy_s95102",
+      "modes": 8,
+      "profile": "lossy",
+      "log_cold_seconds": 0.000662459,
+      "product_cold_seconds": 0.000736972,
+      "cold_speedup": 0.8988930379987299,
+      "sampling_speedup": 0.8955092411636608
+    }
+  ]
+}

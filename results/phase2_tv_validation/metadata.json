@@ -1,0 +1,131 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T02:48:39.365365+00:00",
+  "config": {
+    "name": "phase2_tv_validation",
+    "modes": [
+      10,
+      16,
+      32
+    ],
+    "seeds": [
+      7101,
+      7102
+    ],
+    "topology": "haar",
+    "squeezing": 0.6,
+    "transmissivity": 0.25,
+    "sampler": "schur_pairwise",
+    "retained_clicks": 2,
+    "sample_count": 512,
+    "sample_seed_offset": 200000,
+    "exact_click_cutoffs": [
+      4,
+      6
+    ],
+    "familywise_alpha": 0.05,
+    "planned_comparisons": 12,
+    "dense_calibration_modes": [
+      10
+    ],
+    "max_relative_roundoff": 1e-06,
+    "notes": "One iid Q batch per case reused for both cutoffs. Confidence is conditional on floating point oracle accuracy. No full distribution enumeration above 10 modes."
+  },
+  "source_sha256": "d47b7a503ba8bc7ad5c5310bd6252c836b0a83581783e3daf391b286f81af727",
+  "source_files": [
+    {
+      "file": "__init__.py",
+      "sha256": "88f563e00234bc472ad6d6faa1f72d83acd03343627613134497039c3e7d40e8"
+    },
+    {
+      "file": "cache.py",
+      "sha256": "67520317e7ad523da61e2b2a99f781bb31cd25442f5c732eefb522f2116a1427"
+    },
+    {
+      "file": "calibration.py",
+      "sha256": "b243bdeecaabdf2f4f8f02408a557744a75a255a8d24bd085a64c0e22624adc9"
+    },
+    {
+      "file": "conditional_memory.py",
+      "sha256": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c"
+    },
+    {
+      "file": "exact.py",
+      "sha256": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff"
+    },
+    {
+      "file": "experiment.py",
+      "sha256": "a38cc6b76471e15765a6ded06c663fceab8feaadd4685420c2c809c8238e7b0c"
+    },
+    {
+      "file": "fock.py",
+      "sha256": "64694710a3ed2e22bde884d3144781d7c9720cd094b37079ae67768aa536a17c"
+    },
+    {
+      "file": "frugal.py",
+      "sha256": "5c614a082d12c17c841e67e1a557042e725742673f2f19f8ae3aba923d174ed8"
+    },
+    {
+      "file": "gaussian.py",
+      "sha256": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+    },
+    {
+      "file": "paired_stress.py",
+      "sha256": "4290628ad327b59eca23651feedbd7e50ec390b62a5d21ce3c541cb8518e3da8"
+    },
+    {
+      "file": "phase2.py",
+      "sha256": "4a3386c8357bde48f52793cc72606d77a1fd4ed789056663730be63a26522586"
+    },
+    {
+      "file": "photon_tail.py",
+      "sha256": "27039bc995de09846dc7e8696ea5bba5d8e03ff1e781a399efa15d0f6ca15a99"
+    },
+    {
+      "file": "scaling.py",
+      "sha256": "70b2a9b9163a9cd734cf1a92540bf722e6a0a4fcb9cb9d4861ba050863c4a804"
+    },
+    {
+      "file": "schur_memory.py",
+      "sha256": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227"
+    },
+    {
+      "file": "surrogates.py",
+      "sha256": "0f6e2d765b4dec501fb5f5c583a8d3918276e551b76eb661edee1945be981666"
+    },
+    {
+      "file": "tv_validation.py",
+      "sha256": "3b04843f380df8e647466b945a8c3cd38aae9b6056313bd3beaa89159c9498b3"
+    },
+    {
+      "file": "zero_memory.py",
+      "sha256": "c415c9f6b3059e5fb0e5228b2a57a4365b8fab52450ae8aff9457e81def29c3f"
+    }
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "confidence_schedule": {
+    "planned_bounds": 12,
+    "familywise_alpha": 0.05,
+    "per_bound_alpha": 0.004166666666666667,
+    "per_bound_nominal_confidence": 0.9958333333333333,
+    "familywise_nominal_confidence": 0.95,
+    "method": "union bound over the fixed 12 comparisons; shared batches need not be independent",
+    "numerical_qualification": "conditional on correct floating point target and Q probabilities; not outward-rounded arithmetic"
+  },
+  "batch_policy": "512 iid Q draws per case, identical batch reused for cutoffs 4 and 6; no retries",
+  "cost_notes": "descriptive shared-CPU timing only; Q caches may be warm across validation cutoffs; each cutoff has a new target oracle",
+  "dense_reference_policy": "only m=10, after draws and both validations; never used in fitting or density scoring",
+  "completed_utc": "2026-11-04T02:48:45.277481+00:00",
+  "elapsed_seconds": 5.911599227999886,
+  "completed_bounds": 12,
+  "completed_sample_batches": 6,
+  "unique_iid_draws": 3072
+}

@@ -1,0 +1,213 @@
+{
+  "analysis_role": "posthoc_counterexample_to_local_error_monotonicity",
+  "arrays_file": "counterexample.npz",
+  "arrays_sha256": "42dcb357fa727568f733d4eeda263a2a3f87c424ec584842f91bddd384f6dacf",
+  "block_order": "measurement",
+  "claim": "A larger disjoint block can have greater one-step probability error.",
+  "conditioning_history_probability": 0.0010823257466514025,
+  "construction_order": [
+    "haar_unitary(7, rng)",
+    "rng.uniform(.2, 1.4, 7)",
+    "rng.uniform(.1, 1., 7)"
+  ],
+  "covariance_array_sha256": "794cf9d144b01f7ad7e97161814737455d6b8419c1fabe112b5e0a935a90fc10",
+  "covariance_convention": "zero mean, hbar=2, xxpp; loss argument is transmissivity",
+  "current_mode": 6,
+  "discovery": "Exploratory search, separate from all frozen formal cases. Earlier homogeneous m=6, r=.9, eta=.65, k=0 searches over seeds 0..99 did not find the requested full-TV or all-click-final-prefix local inequality. The heterogeneous m=7 search planned seeds 0..199, prefixes in ascending bit-mask order and k in (0,1,2), and stopped at this seed=0, prefix=31, k=2 local counterexample.",
+  "exact_click_probability": 0.14558312733059908,
+  "formal_iteration6_case_member": false,
+  "history": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "k": 2,
+  "measurement_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "minimum_target_probability": 5.413067096673996e-05,
+  "minimum_uncertainty_eigenvalue": 0.012706816592501245,
+  "modes": 7,
+  "not_claimed": [
+    "global TV ordering",
+    "statistical confirmation",
+    "speed advantage",
+    "new algorithm or theorem novelty"
+  ],
+  "numerical_scope": "Full 128-cell inclusion-exclusion target in float64 with long-double accumulation. Complete here means no model/Fock cutoff; no outward rounded numerical certificate is asserted.",
+  "numpy_version": "2.3.5",
+  "omitted": [
+    0,
+    1,
+    2
+  ],
+  "pair_error_greater_than_product": true,
+  "pre_registered": false,
+  "retained": [
+    3,
+    4
+  ],
+  "retention_rule": "recent",
+  "rng": "numpy.random.default_rng (PCG64)",
+  "rows": [
+    {
+      "absolute_conditional_error": 0.0004301784856486912,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "branches": [
+        {
+          "base_joint_mass": 0.030222610129620464,
+          "block_joint_masses": [
+            0.017660072366814605,
+            0.0033699253487273206,
+            0.014921470499404788
+          ],
+          "block_likelihoods": [
+            0.5843331297685102,
+            0.11150345169640184,
+            0.4937187898533161
+          ],
+          "correlation_ratio_C": 0.9511901830560073,
+          "log_score": -6.935937892864647,
+          "outcome": 0,
+          "product_likelihood": 0.03216832719706004,
+          "true_full_joint_mass": 0.0009247573796634656,
+          "true_full_likelihood": 0.030598197035177077
+        },
+        {
+          "base_joint_mass": 0.004084504321154869,
+          "block_joint_masses": [
+            0.0026918490333597833,
+            0.0004489169755991229,
+            0.0022790816431828287
+          ],
+          "block_likelihoods": [
+            0.6590393403228617,
+            0.10990733276350025,
+            0.557982429196802
+          ],
+          "correlation_ratio_C": 0.9544894721133996,
+          "log_score": -8.70907245215156,
+          "outcome": 1,
+          "product_likelihood": 0.04041648418276757,
+          "true_full_joint_mass": 0.00015756836698793686,
+          "true_full_likelihood": 0.03857710865228938
+        }
+      ],
+      "click_probability": 0.1451529488449504,
+      "method": "product"
+    },
+    {
+      "absolute_conditional_error": 0.0018589272104605759,
+      "blocks": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "branches": [
+        {
+          "base_joint_mass": 0.030222610129620464,
+          "block_joint_masses": [
+            0.002146003979548977,
+            0.014921470499404788
+          ],
+          "block_likelihoods": [
+            0.07100657323590094,
+            0.4937187898533161
+          ],
+          "correlation_ratio_C": 0.8728058066806486,
+          "log_score": -6.849936955560617,
+          "outcome": 0,
+          "product_likelihood": 0.03505727940965987,
+          "true_full_joint_mass": 0.0009247573796634656,
+          "true_full_likelihood": 0.030598197035177077
+        },
+        {
+          "base_joint_mass": 0.004084504321154869,
+          "block_joint_masses": [
+            0.00031871748204989614,
+            0.0022790816431828287
+          ],
+          "block_likelihoods": [
+            0.07803088379639189,
+            0.557982429196802
+          ],
+          "correlation_ratio_C": 0.8860181635351797,
+          "log_score": -8.634633289785333,
+          "outcome": 1,
+          "product_likelihood": 0.04353986209308412,
+          "true_full_joint_mass": 0.00015756836698793686,
+          "true_full_likelihood": 0.03857710865228938
+        }
+      ],
+      "click_probability": 0.1437242001201385,
+      "method": "pair_block"
+    }
+  ],
+  "sampling_runs": 0,
+  "schema_version": 1,
+  "seed": 0,
+  "source_sha256": {
+    "reproduce.py": "2c17c4ec83e471dcc8e5c580a9f440456fca591e3c6c8ab101b69809ca8243af",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/gaussian.py": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+  },
+  "squeezing": [
+    0.7759855085693985,
+    0.4788475035671646,
+    1.1622566944619694,
+    1.3082361917401633,
+    0.519356326750751,
+    0.8467212891466243,
+    0.7313033947694378
+  ],
+  "strict_floating_point_certificate": false,
+  "target_array_sha256": "536b27d624db2012ca888f220bcc80d53859e2bf5428f31b609f03568c3e01e3",
+  "target_encoding": "little-endian physical-mode mask; 1 means >=1 photon",
+  "target_numerical_diagnostics": {
+    "determinant_evaluations": 127,
+    "largest_l1_numerical_correction": 0.0,
+    "largest_negative_probability": 0.0,
+    "largest_normalization_error": 0.0,
+    "marginal_evaluations": 1,
+    "negative_entries_clipped": 0,
+    "vacuum_cache_evictions": 0,
+    "vacuum_cache_hits": 1,
+    "vacuum_cache_peak_entries": 128
+  },
+  "target_probability_sum": 1.0,
+  "transmissivity": [
+    0.9379155843830395,
+    0.1364596400695912,
+    0.7588055760909047,
+    0.652935922254097,
+    0.12552882860216896,
+    0.7472977955440663,
+    0.11439255657121478
+  ],
+  "zeros": [
+    5
+  ]
+}

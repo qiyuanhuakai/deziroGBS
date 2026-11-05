@@ -1,0 +1,86 @@
+{
+  "name": "iteration5_bounded_prefix_cache_benchmark",
+  "frozen_before_timings": true,
+  "modes": [
+    8,
+    12,
+    16,
+    32,
+    64,
+    100,
+    144,
+    256
+  ],
+  "interferometer_seed": 120501,
+  "profiles": [
+    {
+      "name": "lossy",
+      "squeezing": 0.6,
+      "transmissivity": 0.35
+    },
+    {
+      "name": "bright",
+      "squeezing": 0.9,
+      "transmissivity": 0.65
+    }
+  ],
+  "candidate": {
+    "selector": "click_influence",
+    "k": 4,
+    "vacuum_kernel": "product"
+  },
+  "cache_capacities": [
+    0,
+    65536
+  ],
+  "sample_counts_by_modes": {
+    "8": [
+      128,
+      8192
+    ],
+    "12": [
+      128,
+      8192
+    ],
+    "16": [
+      128,
+      8192
+    ],
+    "32": [
+      128,
+      2048
+    ],
+    "64": [
+      128,
+      1024
+    ],
+    "100": [
+      64,
+      512
+    ],
+    "144": [
+      64,
+      256
+    ],
+    "256": [
+      64,
+      256
+    ]
+  },
+  "repetitions": 3,
+  "sample_seed_base": 7120501,
+  "threads": 1,
+  "timeout_seconds": 600,
+  "official_frugal_modes": [
+    8,
+    12
+  ],
+  "official_frugal_cutoff": 5,
+  "rotation": "rotate method order by case_index plus repetition; candidate variants use the same seed and binary",
+  "raw_samples": false,
+  "profile": false,
+  "record_log_probabilities": false,
+  "prewarming": false,
+  "primary_metric": "native setup plus complete timed sample batch including all cache allocation, insertion and cold misses; sampling-only is also reported",
+  "claim_scope": "Cache implementation speed at unchanged candidate law; only small-mode Frugal cost comparison. No equal-quality or quantum-speedup claim from timing alone."
+}

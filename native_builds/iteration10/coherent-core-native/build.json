@@ -1,0 +1,50 @@
+{
+  "command": [
+    "/usr/bin/g++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-march=native",
+    "/workspace/scratch/7ca85676bed2/deziroGBS-iteration8/experiments/coherent_core_sampler.cpp",
+    "-o",
+    "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/coherent-core-native/coherent_core_sampler.building"
+  ],
+  "source_hashes": {
+    "experiments/coherent_core_sampler.cpp": "2200a4c70a5fae77b9e73a06ac935bd7396bd015a892f82cdcd2a7bdc3f7710d",
+    "experiments/build_coherent_core_sampler.py": "b6a37c45b4604a93b771630b4bf0161f49ab5a9637001443d0ac4eee5934afe3"
+  },
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-march=native"
+  ],
+  "cache_key": "1357d47d0502f863720f8e0aa1e59e2c7e0d4d0decbebaaa5bf20b818f235bca",
+  "executable_sha256": "f6a9f7c8447a73d07485314c9c1ebd8ea0b1a09383e5dcbfde6d2eb4c794aac2",
+  "native": true,
+  "threads": 1,
+  "built_utc": "2026-11-05T03:02:16.307540+00:00",
+  "build_seconds": 5.712044932999561,
+  "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "precision": "complex<long double>; compensated real sums",
+  "maximum_modes": 64,
+  "maximum_cutoff": 8,
+  "maximum_basis": 100000,
+  "maximum_stage_basis": 1000000,
+  "representation": "dense total-photon Fock vector; not MPS",
+  "measurement": "complete rank-one refinement of displaced threshold POVM",
+  "state": "coherent normalized total-N projection before correlated Gaussian displacement",
+  "failure_policy": "stop, preserve completed samples, no refill or clipping",
+  "no_implicit_compilation": true
+}

@@ -1,0 +1,84 @@
+{
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/click_sampler.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/click-iteration4-native/click_sampler.building"
+  ],
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_sha256": "9f365a5aabb2815406936ae92e7bd0ddd244f021a4b9ebf1f8e4db688ffea7ab",
+  "builder_sha256": "15eb7d4212299a9418a4b8fd0cbff4434a5c5c0f4161962770dce8c3136d9682",
+  "dependencies": {
+    "eigen": {
+      "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+      "files": 530,
+      "bytes": 8669110
+    }
+  },
+  "cache_key": "594ad93ebf64d6941f9af1ed0281208db3637d578a91ec7a32e107284f1f21a6",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native"
+  ],
+  "native": true,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "executable_sha256": "5e667bc45ccf6d4a3775d1fb644c7f69d921bcf16aa7adb5c355b2d5de70cbf0",
+  "build_seconds": 19.639650846000222,
+  "implementation": "native C++ retained-click sampler with Gaussian zero updates",
+  "threads": 1,
+  "precision": "double; long-double inclusion-exclusion sums",
+  "maximum_modes": 256,
+  "maximum_click_budget": 8,
+  "maximum_enumeration_modes": 14,
+  "vacuum_kernel_options": {
+    "default": "log",
+    "available": [
+      "log",
+      "product"
+    ],
+    "log": "exp(-sum(log(Cholesky diagonals)))",
+    "product": "reciprocal diagonal product; logarithmic fallback on a nonnormal intermediate product",
+    "sampling_guards": "unchanged; no fast-math and no score-floor policy change"
+  },
+  "sample_log_probabilities": {
+    "flag": "--record-log-probabilities",
+    "default": false,
+    "array_key": "sample_log_probabilities",
+    "meaning": "natural log of actual computed conditional chain under ideal continuous uniforms",
+    "accumulation": "long double log(p_one) or log1p(-p_one), double output",
+    "timing": "allocation and evaluation included in sampling"
+  },
+  "pairwise_score_policy": {
+    "version": 3,
+    "structural_zero": "exact zero original 2x2 covariance crossblock gives MI=0",
+    "precision": "explicit long-double scalar 2x2 factors and whitening",
+    "delta": "qa*qb*expm1(-0.5*log1p(-(sum(T^2)-det(T)^2)))",
+    "mutual_information": "sum product_cell*h(signed_delta/product_cell)",
+    "h": "(1+x)*log1p(x)-x; h(-1)=1",
+    "h_series_abs_x_max": 0.001,
+    "h_series_powers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "probability_tolerance": 2e-10,
+    "maximum_l1_correction": 2e-09,
+    "score_floor": null,
+    "tie_break": "physical mode index"
+  }
+}

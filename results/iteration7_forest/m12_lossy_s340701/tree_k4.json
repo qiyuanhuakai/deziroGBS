@@ -1,0 +1,10021 @@
+{
+  "case_id": "m12_lossy_s340701",
+  "modes": 12,
+  "profile": "lossy",
+  "seed": 352701,
+  "method": "tree_k4",
+  "completion": "static_mi_tree",
+  "k": 4,
+  "status": "complete_with_failure_mass",
+  "extended_tv": 0.0017327604718612784,
+  "failure_mass": 0.0017327604718612721,
+  "unresolved_prefixes": 557,
+  "target_mean_clicks": 1.4405508435026277,
+  "success_subprobability_mean_clicks": 1.4292774796894276,
+  "setup_seconds": 0.03843053099990357,
+  "enumeration_seconds": 14.726659572999779,
+  "diagnostics": {
+    "conditional_requests": 3587,
+    "conditional_evaluations": 3587,
+    "conditional_cache_hits": 0,
+    "conditional_failures": 557,
+    "conditional_seconds": 14.67218792103813,
+    "selector_calls": 3587,
+    "selector_seconds": 10.156209401957312,
+    "event_requests": 20505,
+    "event_cache_hits": 1758,
+    "event_oracle_calls": 18747,
+    "event_oracle_seconds": 4.090015805057192,
+    "structural_zero_returns": 0,
+    "event_exact_zero_returns": 0,
+    "analytic_zero_score_branches": 0,
+    "maximum_event_relative_indicator": 2.415038958162175e-06,
+    "maximum_log_score_indicator": 2.048328033543972e-06,
+    "maximum_factor_count": 9,
+    "conditional_cache_evictions": 0,
+    "event_cache_evictions": 10279,
+    "sampling_attempts": 0,
+    "sampling_failures": 0,
+    "initialization_seconds": 0.00887874099862529,
+    "static_mi_setup_seconds": 0.008686041001055855,
+    "forest_selections": 3587,
+    "forest_selection_seconds": 0.016582219901465578,
+    "forest_vertices_processed": 3440,
+    "forest_edges_selected": 1438,
+    "forest_maximum_vertices": 5,
+    "forest_maximum_edges": 4,
+    "forest_weight_lookups": 1826,
+    "forest_cut_candidates_examined": 1826,
+    "forest_update_comparisons": 388,
+    "forest_singleton_requests": 6880,
+    "forest_edge_event_requests": 2864,
+    "forest_maximum_local_event_width": 7,
+    "forest_maximum_event_ones": 7,
+    "forest_maximum_event_constraints": 12,
+    "oracle_kind": "direct_vacuum_inclusion_exclusion",
+    "completion": "forest",
+    "selection": "click_influence",
+    "block_order": "not_applicable",
+    "max_clicks": 4,
+    "cache_size_limit_each": 8192,
+    "conditional_cache_entries": 3030,
+    "event_cache_entries": 8192,
+    "isolated_vacuum_modes": [],
+    "selector": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 0,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 0,
+      "maximum_inclusion_terms": 0,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 0,
+      "pairwise_precompute_seconds": 0.0,
+      "pairwise_mi_policy": "not_used",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "selection_requests": 3587,
+      "selection_computations": 2002,
+      "selection_cache_hits": 0,
+      "selection_cache_evictions": 0,
+      "selection_cache_peak_entries": 2002,
+      "selection_compute_seconds": 10.130221387003985,
+      "selection_score_evaluations": 33780,
+      "selection_small_vacuum_calls": 418612,
+      "selection_small_determinant_evaluations": 382830,
+      "selection_conditional_kernel_calls": 35782,
+      "selection_max_candidate_count": 9,
+      "selection_max_small_mode_count": 5,
+      "selection_probability_corrections": 0,
+      "selection_max_l1_probability_correction": 0.0,
+      "selection_max_conditional_roundoff_indicator": 3.4026034126963564e-09,
+      "selection_conditional_event_corrections": 0,
+      "selection_conditional_probability_corrections": 0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 8192,
+      "selection": "click_influence",
+      "selection_cache_entries": 2002,
+      "selection_cache_size_limit": 8192,
+      "zero_conditioner": {
+        "requests": 2002,
+        "base_returns": 5,
+        "cache_hits": 766,
+        "cache_misses": 1231,
+        "parent_cache_reuses": 766,
+        "rank_two_updates": 775,
+        "direct_factorizations": 456,
+        "maximum_direct_factorization_dimension": 12,
+        "cache_evictions": 1103,
+        "peak_cache_entries": 128,
+        "peak_cache_payload_bytes": 279296,
+        "oversized_states_not_cached": 0,
+        "maximum_asymmetry_correction": 0.0,
+        "cache_entries": 128,
+        "cache_size_limit": 128,
+        "cache_payload_bytes": 279296,
+        "cache_payload_bytes_limit": 67108864,
+        "base_payload_bytes": 4704
+      }
+    },
+    "event_backend": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 18747,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 783099,
+      "maximum_inclusion_terms": 128,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 0,
+      "pairwise_precompute_seconds": 0.0,
+      "pairwise_mi_policy": "not_used",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 0
+    },
+    "shared_model_totals": {
+      "determinant_evaluations": 3612,
+      "marginal_evaluations": 66,
+      "negative_entries_clipped": 0,
+      "largest_negative_probability": 0.0,
+      "largest_normalization_error": 0.0,
+      "largest_l1_numerical_correction": 0.0,
+      "vacuum_cache_hits": 779751,
+      "vacuum_cache_evictions": 0,
+      "vacuum_cache_peak_entries": 3613,
+      "vacuum_cache_entries": 3613,
+      "vacuum_cache_size_limit": 8192,
+      "marginal_cache_entries": 67,
+      "marginal_cache_bytes": 2120
+    },
+    "timing_scope": "descriptive_python_reference_only",
+    "roundoff_indicators_are_rigorous_bounds": false,
+    "forest": "static_mi_tree",
+    "tree_scope": "all omitted clicks, including zero-weight spanning edges",
+    "static_pairwise_weight_kind": "unconditional_input_gaussian_threshold_MI",
+    "static_pairwise_payload_bytes": 1152,
+    "static_pairwise_precompute": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 0,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 0,
+      "maximum_inclusion_terms": 0,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 66,
+      "pairwise_precompute_seconds": 0.00866979700003867,
+      "pairwise_mi_policy": "gaussian_structural_zero_stable_kl_v3",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 0
+    },
+    "tree_tie_rule": "negative MI then sorted physical edge indices",
+    "tree_fitted_to_samples": false,
+    "local_event_width_limit": 7,
+    "event_evaluator_scope": "direct determinants include all zeros; no small-k Schur event optimization",
+    "tree_optimization_scope": "static unconditional MI, not conditional-likelihood or global-TV optimization"
+  },
+  "target_oracle_diagnostics": {
+    "determinant_evaluations": 3612,
+    "marginal_evaluations": 66,
+    "negative_entries_clipped": 0,
+    "largest_negative_probability": 0.0,
+    "largest_normalization_error": 0.0,
+    "largest_l1_numerical_correction": 0.0,
+    "vacuum_cache_hits": 779751,
+    "vacuum_cache_evictions": 0,
+    "vacuum_cache_peak_entries": 3613
+  },
+  "law_sha256": "4d16383161f602a967ebd581e27089bc6689fa9ef116cabf9bb92e834a98572d",
+  "strict_floating_point_certificate": false,
+  "failures": [
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.358162138617949e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.007549983004899e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 7.291575394752227e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.19e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5114642403224465e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.89917554774766e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.2937842455439394e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.166113896421964e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.23e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.934156261349187e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.531430684517891e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.34e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.565582869764385e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.52e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 5.1751522409104744e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1565243714928286e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.869162122640325e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.2829768746053274e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.33e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.8491926975228166e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.8296457022821704e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.31e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5391515271190313e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.024155083383941e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.46e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.603701401731161e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6755271366464262e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.6999998719932705e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.354305050327446e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.945633191006828e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.391168893531528e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.162781412826335e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.195934264652259e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.33e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.288996478973851e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4197265531534777e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.766694239988213e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.33e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.574931671357363e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.47e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.248315158634665e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.759692551981056e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.68e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.373156693104897e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.294067509376e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.928143549411735e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4529329018797552e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.245220775718096e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.53e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.045436929611679e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1009736174405482e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 8.173005439038317e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6646217638194294e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 6.270537575348012e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6517342676380942e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3626320785053991e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.592892732886324e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.8265865563416033e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 6.319396953113897e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.211707650194408e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.34e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.0895025673040024e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.949755761651797e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.42e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5866789638274703e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.0726137057764964e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.39e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6204915215811686e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 6.188848655441781e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.453325420341933e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.8549819226776343e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.975181372795067e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.56e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.817657866889147e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.72e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.8688344450043e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.59e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 5.03901056608802e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3600784981582239e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.997506750508251e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.39e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 3.874730198527575e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.54e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.049968557628958e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.34e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.0809078406226469e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.262074835670315e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.92e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.978775615949171e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.734853891019685e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.28e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1360291700124314e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3422963073272951e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.1398046356232455e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.075645167469279e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5502950942436475e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.880946798513364e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.77e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3468198784560848e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.7403450300879086e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.139096274111907e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.691009764468124e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.85e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 5.0323139614838475e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1607968807836322e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.392719695851422e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.26e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1305718572440782e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5422685592514365e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.730211613375058e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.32e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.3285809477014965e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6396334968638016e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.893332067678029e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.278492565271946e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.3347671700999504e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3062660555451804e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.137577720442209e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.169472253152564e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.287177766932771e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.199763964762849e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.72564638212647e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.24e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2048800668296169e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.247524433589664e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7507495365665095e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6141064846375566e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.477809822847398e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.8330898570768674e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4649316394943486e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.9158300650912174e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5029986387138374e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.8423892268470965e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.7355365801163813e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.5077846064419687e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.4732451676642964e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.29469790142112e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.714698922794522e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.147867450845278e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3216045423036782e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.894837653368621e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.26e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.347353289549158e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3467691056812112e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.7974255025476889e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4429069602472924e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.833307036406943e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.23e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.553019328359717e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.685878813439956e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.104633122335109e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6421307417191502e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5200269853909985e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.8246573984526113e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.4787188601927956e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.9008620421590017e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.367613705291425e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.630261509413496e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.764966333363873e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.675912438800723e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.19e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.862935162386339e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.653506150724795e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.6118242238435406e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.33e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.255855409196485e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.475981741580703e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.4829170225125768e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4022043032246856e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.684168664949918e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.491573673686244e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.44e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.29095347817643e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.830931276789131e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.42e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1366440810789415e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.749095585232509e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 3.2972298525391067e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.7e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.9249919569762635e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.5e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.157621066675944e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.7545751682133144e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.0909767308442397e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 6.019220248121293e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.0899442164369333e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.7013106929116866e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.6363055768151575e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3465430968029324e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.410460913786604e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4787574200703089e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3231641181610243e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.857030878104631e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.6590928577087107e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3721586304971112e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.1798454942767447e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.402786225627842e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.449502375576288e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4903275577515809e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.414991252061796e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4645871495577722e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.510026727217898e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.308719202230968e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 7.092749347126226e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3046152113060927e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.98312421040292e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.941429809390829e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 3.874651214097469e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.24e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4436288630070848e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.46737352574711e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3593688504842662e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.764538545172115e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3259476108751225e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.578263788715173e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.862500864484143e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.2132532492300526e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3649318483799353e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.897471003184605e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.22e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1107902368467924e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3244970403780696e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.587536855478081e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.314650024064612e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.4614286282244038e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.1069235776605133e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.182269862484932e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.45e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 3.770544007242193e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.56e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.537160810835772e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.175115724702749e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.61e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.2964149878366165e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1363721183488271e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 8.023162821113594e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2768909083415993e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6857971553707607e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 3.5349770056702923e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.68e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.496211134963346e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 5.399301466202377e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1866957164152758e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 6.006782479250905e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2996697884015695e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.2704926186944974e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.248732539346989e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.36e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.7030287551309544e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1770408730460422e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.094842967123814e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.27e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1622378576769952e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.2498873188659942e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.560494670904138e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.204759034700853e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.509863967963376e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.5074762722151714e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.6994750486892705e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.452961463758843e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2499695656309484e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.780619474311962e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.9157007238306267e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.235030787233866e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.242690517297642e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.2160423686654624e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.031786933868855e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.24e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.199227775694478e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.606348575131315e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.4673158777208685e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.43e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.16740493439194e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.090828410880822e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.45e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.101631417843034e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.573798077584958e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.32e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.177340342717326e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.421323114347288e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.28e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.341282638178676e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5350755427911977e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6369972251628617e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.670457782824824e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3664786084888194e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.105707386932058e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.005620339422091e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6577178894583437e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.387750343532893e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2026787264418637e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.841715360750289e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5278147988961877e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6186586848654372e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.9508190166606103e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.0137168851872565e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.32e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.1364321636548915e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.21e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2838720579999572e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.7168562080091014e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.312404548762917e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.148889634428052e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 3.849592049798289e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.88e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.120351502130305e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1352295921085442e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5222164794215232e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.766954889518949e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.395719987862254e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 3.7669551034014152e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 2e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.93894029490738e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1356612446555838e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.378037911725638e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.919135846406572e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.702086274317342e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.45e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.40434613282725e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.4146137874426754e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7582977751007258e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.540970494850473e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2891196520814494e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5880171981286217e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.3982778721919e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.7358668813571935e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.4888865978198744e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.742579243544042e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.45e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.6048764710260315e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.169489275587576e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.299768360305212e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.728681441579231e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.57e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.529555399201968e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1701055163126917e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.145367311969572e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.87e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.677604753200448e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 7.3831097203713725e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6616987646433934e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.9948672340982556e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.26e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2275720268628554e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2547186487577022e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.231385745401273e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.328791034069467e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.67e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1267443015827716e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 3.4326514729010604e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.79e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.833331321478895e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.29e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.506841039420007e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.65e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.2019248881167677e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 5.497704163692774e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1703681018770953e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.354892226472341e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.48e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.09850603058748e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.813494844326584e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.23e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5552617956271495e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 7.047606127408289e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3370902873788282e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.3e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5509310051231573e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.431737181593732e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.57e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3401185426920037e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 6.486439313335702e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1786204164865313e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.297523135023742e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.5157037548951815e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.612453626231858e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.0923934767602685e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.415134037067837e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.3963373057852584e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.34e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6420155961038847e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.313387437921868e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 5.344646214489046e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.368595418993479e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.501761933841443e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.21e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4632413015691625e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.813940542942486e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2602090950220026e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.952044441477785e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 5.096885323907507e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.5685394772232435e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.65e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 5.055144373100617e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2479539240883852e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.818285465169048e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.56e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4508387643497043e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2402230932795353e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.061137587883177e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.81946193270355e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.61e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.658523402756298e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1770801309762824e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 6.230921029082292e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3425381515386192e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.813179019653614e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.4368137281617344e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6285595610954218e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.647272574914274e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.2617155714151654e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.753586304444667e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.3e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.230731625309847e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.72e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 4.996163574078061e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 3.0624014610292068e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 2.42e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.879219129783063e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 7.35988247407837e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5775734766299006e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 3.5228184367408484e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 2.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.534116309851121e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.97324086412565e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.12e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.115250518268773e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.114257485949735e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.1311657092671899e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6920446656021324e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.135603273114351e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 2.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.270663167049714e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.1069645212136157e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3083849674799806e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4878163215881197e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 6.1825506670332145e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5401189760178011e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.1370386146974843e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.6713136534971465e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.0951527379171635e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2774849869612304e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.9418034720164452e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.891635738190807e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.404312234642921e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.935833272630031e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1670686352327488e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.7569129904269083e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.29e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.167894744639855e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.4e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.907932376119194e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.634365914608529e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.21e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.9383326140552946e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.29e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.1366159987091784e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7411695029667658e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.718001761079171e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.14e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.4496207491609956e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2066878921079827e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.9582731615175315e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.1032536691743e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4732055713118082e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.6691996465917374e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.03e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4590374693979056e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6270131433793187e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.570888823576588e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.230786796679321e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.2900707673790812e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.817798129332697e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5949261016334757e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.57533313926983e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.67287302554886e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.043034147858336e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.8354404033305014e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7037359444360687e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.9131466699739974e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.8639726349078953e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.1490311419579697e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.602835441816275e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.737976522475648e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.909029494377548e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3685424858356217e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6224062669989436e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.0493576706193117e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.141002544228891e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.177028510132797e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3387442390211392e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.429759353137165e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.3e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3780785381167784e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5518521077617644e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.8879075793232225e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5699551234038545e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.873786885601806e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.538795286637473e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.3499779561443324e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.973946358539539e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.5707618023497183e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.533131851694236e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.059754937888577e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.260706883419876e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.7365779184652652e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.1679969824136585e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.44e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5025911828114857e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.9794264866646034e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.44658435277767e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.332496271799215e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6120197497415667e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 2.0640520955739206e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.828425460759231e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.963889553650682e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.21e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2061854456901777e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6022643389290716e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 2.163097669691926e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 4.518746096069748e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.180065360244723e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.625021967048394e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.3e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6215352079962384e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5507879481124751e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7429384860934147e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.803706756763894e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2797380051221552e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6014395443630924e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 3.2524352756648062e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.593005307712054e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.4627785223425604e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.614175284325725e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.8323090076877158e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 2.995370256608787e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.353276315010645e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 8.535191912946705e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.570432225765476e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.3281980163482032e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.019262827810068e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.19e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.763973149661926e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.7243349036411004e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.665355717470288e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.33e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2494386067984922e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.226189911052167e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.0027746052450075e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.35e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 3.1878911094795903e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6076241887152953e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 7.1023897018629425e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.01e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.504633193818218e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5005264280554265e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.447443765349557e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.34e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 6.053093387858865e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.9351747350127013e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.460123024488169e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6183053825336022e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.277920326702712e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.2e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 3.9290973319339165e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.08e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.422344000689968e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.419825154146962e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.6133089877912175e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3866038771070952e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.6223933442249814e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 6.0284035655056015e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.06e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.9276698754475694e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5834206321119202e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.926142633005947e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.13e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.482840109372055e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.18e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.3979011589948518e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.4467684977259585e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.8929151333058059e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.540954414515962e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.40233344003704e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 7.925902557159857e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.02e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.6799434833236757e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5816108842603425e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.5057780524417868e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.80422582940887e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.5231409765670274e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.4529848515465458e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.930634591695845e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.3351816924561994e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.609640681995773e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.203936819826338e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.197896519564369e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.04e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4028219342820945e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.079203930224985e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.21e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4435630178444294e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2813402268663232e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.5904385288201262e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.138670094577801e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.5206505142306703e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.952972698424318e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.23e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5709103590166862e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4553382017279404e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 5.361351294697059e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.19e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.5136620084565955e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.5814495658572625e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.697500932559846e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.29349601352415e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 5.524130777312397e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.17e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 3.842689930644293e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.25e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.4985303403713957e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 4.793628005650419e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2480199709785644e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.07e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.2091037541184235e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mass": 4.975605173151987e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.16e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2889309165542429e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.449526776386989e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.768951009225122e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 3.97686009793636e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mass": 4.90611029735355e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.09e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.3081864211894612e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.1956542492197466e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.6120757522775087e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.8642183425559345e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.6751679036512996e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 4.558024763123836e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.6e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mass": 4.053382258339955e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.29e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.326331252660129e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.916426804086772e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.3262368254718382e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mass": 1.2987338225967093e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mass": 5.89867872075045e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.11e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.2488045643688217e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 2.266345153012896e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 4.4677983321821195e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mass": 3.5895007340358553e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.74e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.1222049557946256e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.2442092091058399e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.8062687797693044e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mass": 1.6194780627715807e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.487266582709297e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mass": 4.3927523341591446e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.38e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.1623047228570549e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mass": 1.1894172621818022e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mass": 2.1433236910839426e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mass": 1.974603951156556e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 7.07037576789699e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mass": 1.669078608101217e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 5.131813345126311e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass": 4.2823253367347134e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.4338698740322595e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    }
+  ]
+}

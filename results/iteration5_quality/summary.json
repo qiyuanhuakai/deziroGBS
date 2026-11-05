@@ -1,0 +1,389 @@
+{
+  "rows": [
+    {
+      "case_id": "m12_lossy",
+      "modes": 12,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "accepted_within_tolerance_conditional",
+      "original_decision": "accepted_within_tolerance_conditional",
+      "full_tv": 0.00023000845742530716,
+      "global_tv_upper": 0.08281197504602929,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 1.4356518274147216,
+      "sample_mean_clicks": 1.36328125,
+      "timings_seconds": {
+        "input": 0.001385689,
+        "setup": 4.6871e-05,
+        "sampling": 0.002919399,
+        "cold_batch": 0.00296627,
+        "aggregation": 1.6435e-05,
+        "enumeration": 0.064122646
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m12_bright",
+      "modes": 12,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "accepted_within_tolerance_conditional",
+      "original_decision": "accepted_within_tolerance_conditional",
+      "full_tv": 0.011509752849771359,
+      "global_tv_upper": 0.2904227293666909,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 4.639067906512993,
+      "sample_mean_clicks": 4.93359375,
+      "timings_seconds": {
+        "input": 0.000203597,
+        "setup": 5.941e-05,
+        "sampling": 0.01678091,
+        "cold_batch": 0.01684032,
+        "aggregation": 1.5433e-05,
+        "enumeration": 0.055603658
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m32_lossy",
+      "modes": 32,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 0.25383269721206253,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 3.9207996659829742,
+      "sample_mean_clicks": 3.94677734375,
+      "timings_seconds": {
+        "input": 0.000952105,
+        "setup": 0.000260583,
+        "sampling": 0.247656422,
+        "cold_batch": 0.247917005,
+        "aggregation": 4.1742e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m32_bright",
+      "modes": 32,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 12.776281979501272,
+      "sample_mean_clicks": 12.82470703125,
+      "timings_seconds": {
+        "input": 0.001144895,
+        "setup": 0.000263588,
+        "sampling": 1.732865735,
+        "cold_batch": 1.733129323,
+        "aggregation": 7.935e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m64_lossy",
+      "modes": 64,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 0.822653466221865,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 7.915338844239263,
+      "sample_mean_clicks": 7.94580078125,
+      "timings_seconds": {
+        "input": 0.003605855,
+        "setup": 0.001294021,
+        "sampling": 2.676251804,
+        "cold_batch": 2.677545825,
+        "aggregation": 8.1253e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m64_bright",
+      "modes": 64,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.001882951386286448,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 25.86821681535607,
+      "sample_mean_clicks": 24.91015625,
+      "timings_seconds": {
+        "input": 0.004362095,
+        "setup": 0.001609796,
+        "sampling": 8.601401396,
+        "cold_batch": 8.603011192,
+        "aggregation": 0.000149665,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m100_lossy",
+      "modes": 100,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 12.382338779405409,
+      "sample_mean_clicks": 12.3046875,
+      "timings_seconds": {
+        "input": 0.009881622,
+        "setup": 0.003847408,
+        "sampling": 4.098266575,
+        "cold_batch": 4.102113983000001,
+        "aggregation": 0.000115524,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m100_bright",
+      "modes": 100,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.02110389486912234,
+      "marginal_tv_lower": 0.002629714880857059,
+      "target_mean_clicks": 40.47955982383765,
+      "sample_mean_clicks": 37.8876953125,
+      "timings_seconds": {
+        "input": 0.010282801,
+        "setup": 0.004203024,
+        "sampling": 10.502798269,
+        "cold_batch": 10.507001293,
+        "aggregation": 6.1983e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m144_lossy",
+      "modes": 144,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 17.845111086472755,
+      "sample_mean_clicks": 17.4169921875,
+      "timings_seconds": {
+        "input": 0.021580161,
+        "setup": 0.01106878,
+        "sampling": 9.360371589,
+        "cold_batch": 9.371440369,
+        "aggregation": 8.8784e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m144_bright",
+      "modes": 144,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.05710895578024225,
+      "marginal_tv_lower": 0.021053214374539497,
+      "target_mean_clicks": 58.35039915958448,
+      "sample_mean_clicks": 53.2392578125,
+      "timings_seconds": {
+        "input": 0.02147275,
+        "setup": 0.011404357,
+        "sampling": 22.802821127,
+        "cold_batch": 22.814225484,
+        "aggregation": 8.9515e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m256_lossy",
+      "modes": 256,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 31.765193466676063,
+      "sample_mean_clicks": 29.8974609375,
+      "timings_seconds": {
+        "input": 0.065998902,
+        "setup": 0.046642962,
+        "sampling": 45.593181553,
+        "cold_batch": 45.639824515,
+        "aggregation": 0.000288014,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "m256_bright",
+      "modes": 256,
+      "method": "candidate",
+      "synthetic": true,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.08969517900047702,
+      "marginal_tv_lower": 0.09616700765464792,
+      "target_mean_clicks": 103.90068848849972,
+      "sample_mean_clicks": 91.537109375,
+      "timings_seconds": {
+        "input": 0.066609917,
+        "setup": 0.047640599,
+        "sampling": 87.010910007,
+        "cold_batch": 87.05855060600001,
+        "aggregation": 0.000288495,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "different_or_incomplete_task",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "jiuzhang1_candidate",
+      "modes": 100,
+      "method": "candidate",
+      "synthetic": false,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": 1.0,
+      "original_witness_lower": 0.004292664136568536,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 41.04230284287318,
+      "sample_mean_clicks": 39.8642578125,
+      "timings_seconds": {
+        "input": 0.013240333,
+        "setup": 0.005205073,
+        "sampling": 12.900246684,
+        "cold_batch": 12.905451757000002,
+        "aggregation": 0.000115974,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "insufficient_evidence",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    },
+    {
+      "case_id": "jiuzhang1_frugal",
+      "modes": 100,
+      "method": "frugal",
+      "synthetic": false,
+      "sampling_status": "ok",
+      "decision": "insufficient_evidence",
+      "original_decision": "insufficient_evidence",
+      "full_tv": null,
+      "global_tv_upper": null,
+      "original_witness_lower": 0.0,
+      "marginal_tv_lower": 0.0,
+      "target_mean_clicks": 41.04230284287318,
+      "sample_mean_clicks": 41.1533203125,
+      "timings_seconds": {
+        "input": 0.009220406,
+        "bitstring_layout": 41.231782707,
+        "cumulant_layout": 2.2184e-05,
+        "layout": 41.231804891,
+        "target": 807.48293736,
+        "sampling": 149.120999727,
+        "density": 0,
+        "sample_checkpoint": 0.004787365,
+        "histogram": 5.6816e-05,
+        "enumeration": 0
+      },
+      "jiuzhang_gaps": {
+        "jiuzhang1": "insufficient_evidence",
+        "jiuzhang4_l1024": "different_or_incomplete_task"
+      }
+    }
+  ],
+  "familywise_alpha": 0.05,
+  "epsilon": 0.1,
+  "quality_scope": "Specified zero-mean Gaussian threshold target. Marginal witnesses can reject full-law closeness but cannot accept it. Statistical bounds assume iid attempts and accurate floating-point target probabilities."
+}

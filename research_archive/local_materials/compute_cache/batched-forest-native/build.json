@@ -1,0 +1,60 @@
+{
+  "command": [
+    "/usr/bin/g++",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-fPIC",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "/workspace/scratch/7ca85676bed2/deziroGBS-iteration8/experiments/batched_forest_kernel.cpp",
+    "-o",
+    "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/batched-forest-native/libbatched_forest.building.so",
+    "-lquadmath"
+  ],
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_hashes": {
+    "experiments/batched_forest_kernel.cpp": "37f19f146db72b87b9d46d549a640dc13ef746cf96d1b57dd9f1c660772dc984",
+    "experiments/batched_forest_kernel.h": "ab19c485daae4525a6fa20274ed2db3c4f97a56313df7a50b5d65dfc3ae9cf87",
+    "experiments/build_batched_forest.py": "78df04c106f9f6e0e8b4849500a79553866435ecff49de7328131209e7388064"
+  },
+  "quadmath_library": "/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0",
+  "quadmath_library_sha256": "353d31394be238ed265989ac09741a2892c14ddabfac0b30f3f26a237a8bd5d2",
+  "quadmath_header": "/usr/lib/gcc/x86_64-linux-gnu/13/include/quadmath.h",
+  "quadmath_header_sha256": "e8711f597c69a64800a00b80644f66156623323615b03d0cdba4b4c845e44736",
+  "cache_key": "26dc8186719a475e10973f34f3bbe8a0aa74bf14c6e93bbc0b672333d616c4a7",
+  "library_sha256": "21f7c167e5b8ec8a4f2ba00f3d25f4bdd01d52cd977479b389e174d08d99d93b",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-fPIC",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "native": false,
+  "threads": 1,
+  "built_utc": "2026-11-05T01:31:01.627992+00:00",
+  "build_seconds": 3.0979653870001584,
+  "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "abi_version": 1,
+  "precision_formats": [
+    "C long double",
+    "GNU __float128"
+  ],
+  "input_precision": "original binary64 covariance, exactly widened before Q construction",
+  "indicator_policy": "per-scalar absolute forward indicator, mu=8*format epsilon; not certified intervals",
+  "auto_policy": "one long-double batch; on numerical failure at most one independent quad batch, fixed R/E and guard",
+  "state_policy": "one canonical zero-sequence state per precision; append canonical prefixes, otherwise replay original input",
+  "maximum_modes": 512,
+  "maximum_retained": 16,
+  "maximum_local_determinant_dimension": 6,
+  "no_implicit_compilation": true
+}

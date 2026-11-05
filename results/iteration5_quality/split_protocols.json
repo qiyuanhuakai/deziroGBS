@@ -1,0 +1,422 @@
+{
+  "m12_lossy": {
+    "original": {
+      "requested_draws": 512,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 512,
+      "pilot_size": 128,
+      "heldout_size": 384,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "cf0ddda175493339ead94a67c757a5644a694ee397230b58df8c0f340092de64",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m12_bright": {
+    "original": {
+      "requested_draws": 512,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 512,
+      "pilot_size": 128,
+      "heldout_size": 384,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "cf0ddda175493339ead94a67c757a5644a694ee397230b58df8c0f340092de64",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m32_lossy": {
+    "original": {
+      "requested_draws": 2048,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 2048,
+      "pilot_size": 512,
+      "heldout_size": 1536,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "0348660c54c494a2d0ff653090d9f99892a1491d5b1d2e8a47926423c3454627",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m32_bright": {
+    "original": {
+      "requested_draws": 2048,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 2048,
+      "pilot_size": 512,
+      "heldout_size": 1536,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "0348660c54c494a2d0ff653090d9f99892a1491d5b1d2e8a47926423c3454627",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m64_lossy": {
+    "original": {
+      "requested_draws": 2048,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 2048,
+      "pilot_size": 512,
+      "heldout_size": 1536,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "19b635fe537c08db95a6d1260de1d77dd05dfacb138ca368bfda22f784f2204c",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m64_bright": {
+    "original": {
+      "requested_draws": 2048,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 2048,
+      "pilot_size": 512,
+      "heldout_size": 1536,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "19b635fe537c08db95a6d1260de1d77dd05dfacb138ca368bfda22f784f2204c",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m100_lossy": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "4f82e830e552238db8ea335df13c54e8eee0860c59a0a70b49a81a1dff7c775a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m100_bright": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "4f82e830e552238db8ea335df13c54e8eee0860c59a0a70b49a81a1dff7c775a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m144_lossy": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "8aa5d521fb59f637bbac30251b40228f4a874be3c7f0b8e1b7f112c93ebe6637",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m144_bright": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "8aa5d521fb59f637bbac30251b40228f4a874be3c7f0b8e1b7f112c93ebe6637",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m256_lossy": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "6c6456b8a697b498329d86a3a4d716ac317450fc797d7243ba4c1afd492e3f6a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "m256_bright": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "6c6456b8a697b498329d86a3a4d716ac317450fc797d7243ba4c1afd492e3f6a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "jiuzhang1_candidate": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "4f82e830e552238db8ea335df13c54e8eee0860c59a0a70b49a81a1dff7c775a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "jiuzhang1_frugal": {
+    "original": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    },
+    "marginal": {
+      "requested_draws": 1024,
+      "pilot_size": 256,
+      "heldout_size": 768,
+      "split_rule": "first_pilot_rows_then_all_remaining_rows",
+      "split_fixed_before_samples": true,
+      "windows_fixed_before_samples": true,
+      "windows_sha256": "4f82e830e552238db8ea335df13c54e8eee0860c59a0a70b49a81a1dff7c775a",
+      "target_and_sampler_fixed_before_samples": true,
+      "pilot_not_used_to_modify_sampler": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "source": "iteration5_frozen_first_batch_and_positional_split",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "description": "Independent six-pair formula audit. No production MI helper is imported. Inputs are frozen; reference uses80-digit Decimal arithmetic on exact float64 entries except the explicitly intended analytic TMSV boundary reference.",
+  "fixtures": [
+    {
+      "name": "local4_22_pair8_1",
+      "array_key": "covariance_0",
+      "pair": [
+        8,
+        1
+      ],
+      "source_archive": "results/phase2_holdout/instances/22c3418bd5ab4f76.npz",
+      "source_archive_sha256": "973b057f99fc5a302c320af7338c116def938ba4eb14484b725822ce83d10d5f",
+      "covariance_sha256": "b47c4e19621ba9848fe24fe6af528c3b58d2613db5b881628b21793b4a9a6478"
+    },
+    {
+      "name": "local4_22_pair8_2",
+      "array_key": "covariance_1",
+      "pair": [
+        8,
+        2
+      ],
+      "source_archive": "results/phase2_holdout/instances/22c3418bd5ab4f76.npz",
+      "source_archive_sha256": "973b057f99fc5a302c320af7338c116def938ba4eb14484b725822ce83d10d5f",
+      "covariance_sha256": "b47c4e19621ba9848fe24fe6af528c3b58d2613db5b881628b21793b4a9a6478"
+    },
+    {
+      "name": "local4_867_pair8_2",
+      "array_key": "covariance_2",
+      "pair": [
+        8,
+        2
+      ],
+      "source_archive": "results/phase2_holdout/instances/8670a2147006a38a.npz",
+      "source_archive_sha256": "7695ea87c523adee4de3f71306447ad6416a91cbeaaf7d6fb19da6de732f8e29",
+      "covariance_sha256": "631a02644f8f9ce5b7dc178b42eef392af3669566fcf25930b278d39ef434b9a"
+    },
+    {
+      "name": "local2_a71_pair9_7",
+      "array_key": "covariance_3",
+      "pair": [
+        9,
+        7
+      ],
+      "source_archive": "results/phase2_holdout/instances/a71ab6f032848177.npz",
+      "source_archive_sha256": "f8df5e89c06b298066f734de5b0db1fe8a0e386e960dd000fd01289558c455b1",
+      "covariance_sha256": "e3b389385114f894d1fb5b3848ff4c32c145c217b4acf1d8d7f179fc6e6ae4f8"
+    },
+    {
+      "name": "weak_classical_cI",
+      "array_key": "covariance_4",
+      "pair": [
+        0,
+        1
+      ],
+      "construction": "xxpp diagonal [2.4,3.2,2.4,3.2]; V01=V10=V23=V32=1e-4; all other offdiagonal entries zero. Classical Gaussian covariance V-I is positive definite.",
+      "covariance_sha256": "cda370417f8766e2d3ed0888e3f6cd0a6caf7f44f70d5dae4216d98c712ba8d3"
+    },
+    {
+      "name": "tmsv_half_boundary",
+      "array_key": "covariance_5",
+      "pair": [
+        0,
+        1
+      ],
+      "construction": "p=0.5; diagonal c=(1+p)/(1-p); V01=V10=2*sqrt(p)/(1-p); V23=V32=-V01; other entries zero. Formula evaluated in float64, so stored covariance has a tiny boundary inconsistency.",
+      "analytic_reference": "binary_entropy_half",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6"
+    }
+  ]
+}

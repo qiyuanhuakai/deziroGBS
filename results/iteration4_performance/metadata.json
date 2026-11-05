@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T05:41:32.043040+00:00",
+  "executable_sha256": "5e667bc45ccf6d4a3775d1fb644c7f69d921bcf16aa7adb5c355b2d5de70cbf0",
+  "source_hashes": {
+    "iteration4_benchmark.py": "52874dd9540ccd3d1d7eae724e03d25e5ed3c0f975498eca71221c6a30bf1689",
+    "cpp_click.py": "35e1932cb7afd9b8ab6fc2b45ae0e5f1ce4ca591cc3b03477fea99fa19c160b8",
+    "click_sampler.cpp": "9f365a5aabb2815406936ae92e7bd0ddd244f021a4b9ebf1f8e4db688ffea7ab",
+    "build_click_sampler.py": "15eb7d4212299a9418a4b8fd0cbff4434a5c5c0f4161962770dce8c3136d9682"
+  },
+  "config_sha256": "1ce1707dfde91ca191db72514f03b2b33d08a164e741e4e627e8cd9da034593f",
+  "kernel_validation_sha256": "76b431ab57a31508cf8af38edf5600fb31ab368a571cb1637e4ebfdbbc2199b2",
+  "planned_cases": 32,
+  "host": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "threads": 1,
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "scope": "Same mathematical approximation, same binary, different determinant evaluation. Synthetic inputs only. No large-mode quality claim.",
+  "timing": "Native setup+draw and draw-only; profile/logQ disabled. Full Q follows timed draws at first repeat for small inputs. Harness wall then includes enumeration.",
+  "completed_utc": "2026-11-04T05:43:47.504747+00:00",
+  "rows": 192,
+  "failed_rows": 0,
+  "full_q_checks": 8,
+  "all_new_full_q_checks_passed": true,
+  "elapsed_seconds": 135.4566077010004
+}

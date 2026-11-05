@@ -1,0 +1,744 @@
+{
+  "paired": [
+    {
+      "case_id": "m8_lossy",
+      "modes": 8,
+      "samples": 128,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 2.6069e-05,
+          "sampling_seconds": 0.000669329,
+          "cold_seconds": 0.0006962,
+          "harness_seconds": 0.005485997000505449
+        },
+        "prefix_cached": {
+          "setup_seconds": 2.2394e-05,
+          "sampling_seconds": 0.000173832,
+          "cold_seconds": 0.000204017,
+          "harness_seconds": 0.0038521349997608922
+        },
+        "official_frugal": {
+          "setup_seconds": 0.001306349,
+          "sampling_seconds": 0.000107902,
+          "cold_seconds": 0.001414251,
+          "harness_seconds": 0.0038091599999461323
+        }
+      },
+      "cold_speedup": 3.4124607263120232,
+      "sampling_speedup": 3.850436053200791,
+      "frugal_over_cached_sampling": 0.6207257582033227,
+      "frugal_over_cached_cold": 6.932025272403771
+    },
+    {
+      "case_id": "m8_lossy",
+      "modes": 8,
+      "samples": 8192,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 2.2634e-05,
+          "sampling_seconds": 0.045081882,
+          "cold_seconds": 0.045103424999999996,
+          "harness_seconds": 0.0497340539986908
+        },
+        "prefix_cached": {
+          "setup_seconds": 2.2574e-05,
+          "sampling_seconds": 0.002982254,
+          "cold_seconds": 0.0030047480000000002,
+          "harness_seconds": 0.007537689001765102
+        },
+        "official_frugal": {
+          "setup_seconds": 0.001178827,
+          "sampling_seconds": 0.006715761,
+          "cold_seconds": 0.007696519,
+          "harness_seconds": 0.010862580998946214
+        }
+      },
+      "cold_speedup": 15.010718036920231,
+      "sampling_speedup": 15.116714404608055,
+      "frugal_over_cached_sampling": 2.251907785185299,
+      "frugal_over_cached_cold": 2.561452407988956
+    },
+    {
+      "case_id": "m8_bright",
+      "modes": 8,
+      "samples": 128,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 2.2854e-05,
+          "sampling_seconds": 0.000946076,
+          "cold_seconds": 0.000996392,
+          "harness_seconds": 0.0044025650022376794
+        },
+        "official_frugal": {
+          "setup_seconds": 0.001004364,
+          "sampling_seconds": 0.000107532,
+          "cold_seconds": 0.001111896,
+          "harness_seconds": 0.0036900410013913643
+        },
+        "uncached": {
+          "setup_seconds": 2.1813e-05,
+          "sampling_seconds": 0.001778891,
+          "cold_seconds": 0.001800704,
+          "harness_seconds": 0.007412521001242567
+        }
+      },
+      "cold_speedup": 1.8072244658728693,
+      "sampling_speedup": 1.880283402179106,
+      "frugal_over_cached_sampling": 0.11366105894241055,
+      "frugal_over_cached_cold": 1.1159222474688677
+    },
+    {
+      "case_id": "m8_bright",
+      "modes": 8,
+      "samples": 8192,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 2.4067e-05,
+          "sampling_seconds": 0.004116653,
+          "cold_seconds": 0.004149422999999999,
+          "harness_seconds": 0.009038101001351606
+        },
+        "official_frugal": {
+          "setup_seconds": 0.001171836,
+          "sampling_seconds": 0.006885828,
+          "cold_seconds": 0.008057664,
+          "harness_seconds": 0.011274571999820182
+        },
+        "uncached": {
+          "setup_seconds": 2.5699e-05,
+          "sampling_seconds": 0.107855462,
+          "cold_seconds": 0.107875873,
+          "harness_seconds": 0.11229201300011482
+        }
+      },
+      "cold_speedup": 25.997800899064764,
+      "sampling_speedup": 26.199794347495406,
+      "frugal_over_cached_sampling": 1.6726763222452805,
+      "frugal_over_cached_cold": 1.9418757740534052
+    },
+    {
+      "case_id": "m12_lossy",
+      "modes": 12,
+      "samples": 128,
+      "medians": {
+        "official_frugal": {
+          "setup_seconds": 0.011812042,
+          "sampling_seconds": 0.00069024,
+          "cold_seconds": 0.012618828,
+          "harness_seconds": 0.0162257590018271
+        },
+        "uncached": {
+          "setup_seconds": 4.0781e-05,
+          "sampling_seconds": 0.001426219,
+          "cold_seconds": 0.001465759,
+          "harness_seconds": 0.007513202999689383
+        },
+        "prefix_cached": {
+          "setup_seconds": 4.1101e-05,
+          "sampling_seconds": 0.000620014,
+          "cold_seconds": 0.000661115,
+          "harness_seconds": 0.00751934700019774
+        }
+      },
+      "cold_speedup": 2.217101412008501,
+      "sampling_speedup": 2.3003012835194045,
+      "frugal_over_cached_sampling": 1.1132651843345471,
+      "frugal_over_cached_cold": 19.087190579551212
+    },
+    {
+      "case_id": "m12_lossy",
+      "modes": 12,
+      "samples": 8192,
+      "medians": {
+        "official_frugal": {
+          "setup_seconds": 0.010527605,
+          "sampling_seconds": 0.045335514,
+          "cold_seconds": 0.056518994,
+          "harness_seconds": 0.061105901000701124
+        },
+        "uncached": {
+          "setup_seconds": 4.0281e-05,
+          "sampling_seconds": 0.091714657,
+          "cold_seconds": 0.091751542,
+          "harness_seconds": 0.09814950000145473
+        },
+        "prefix_cached": {
+          "setup_seconds": 4.4166e-05,
+          "sampling_seconds": 0.015197148,
+          "cold_seconds": 0.015241314,
+          "harness_seconds": 0.02280235400030506
+        }
+      },
+      "cold_speedup": 6.019923347816337,
+      "sampling_speedup": 6.034991368117228,
+      "frugal_over_cached_sampling": 2.9831593401604035,
+      "frugal_over_cached_cold": 3.708275677543288
+    },
+    {
+      "case_id": "m12_bright",
+      "modes": 12,
+      "samples": 128,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 5.2389e-05,
+          "sampling_seconds": 0.005933882,
+          "cold_seconds": 0.005986951999999999,
+          "harness_seconds": 0.011709357000654563
+        },
+        "prefix_cached": {
+          "setup_seconds": 3.9309e-05,
+          "sampling_seconds": 0.005017201,
+          "cold_seconds": 0.00505651,
+          "harness_seconds": 0.010523348999413429
+        },
+        "official_frugal": {
+          "setup_seconds": 0.010519364,
+          "sampling_seconds": 0.00072315,
+          "cold_seconds": 0.01119384,
+          "harness_seconds": 0.014680333999422146
+        }
+      },
+      "cold_speedup": 1.1840087332962852,
+      "sampling_speedup": 1.18270764914541,
+      "frugal_over_cached_sampling": 0.14413414969820823,
+      "frugal_over_cached_cold": 2.213748217644185
+    },
+    {
+      "case_id": "m12_bright",
+      "modes": 12,
+      "samples": 8192,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 4.3436e-05,
+          "sampling_seconds": 0.384676118,
+          "cold_seconds": 0.384720434,
+          "harness_seconds": 0.39072604100147146
+        },
+        "prefix_cached": {
+          "setup_seconds": 4.2574e-05,
+          "sampling_seconds": 0.069476166,
+          "cold_seconds": 0.06951874000000001,
+          "harness_seconds": 0.07610654400195926
+        },
+        "official_frugal": {
+          "setup_seconds": 0.011599401,
+          "sampling_seconds": 0.04820556,
+          "cold_seconds": 0.058930272,
+          "harness_seconds": 0.06320254099773592
+        }
+      },
+      "cold_speedup": 5.534053609141937,
+      "sampling_speedup": 5.536806938943637,
+      "frugal_over_cached_sampling": 0.6938431231222517,
+      "frugal_over_cached_cold": 0.847689011624779
+    },
+    {
+      "case_id": "m16_lossy",
+      "modes": 16,
+      "samples": 128,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 7.4362e-05,
+          "sampling_seconds": 0.002678907,
+          "cold_seconds": 0.002776164,
+          "harness_seconds": 0.007679709000512958
+        },
+        "prefix_cached": {
+          "setup_seconds": 7.1568e-05,
+          "sampling_seconds": 0.002000255,
+          "cold_seconds": 0.002071192,
+          "harness_seconds": 0.006723423000948969
+        }
+      },
+      "cold_speedup": 1.3403701829671029,
+      "sampling_speedup": 1.339282741450465
+    },
+    {
+      "case_id": "m16_lossy",
+      "modes": 16,
+      "samples": 8192,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 7.5344e-05,
+          "sampling_seconds": 0.188067833,
+          "cold_seconds": 0.188140603,
+          "harness_seconds": 0.1935004899969499
+        },
+        "prefix_cached": {
+          "setup_seconds": 7.4783e-05,
+          "sampling_seconds": 0.059378243,
+          "cold_seconds": 0.059451452999999994,
+          "harness_seconds": 0.06497619499714347
+        }
+      },
+      "cold_speedup": 3.1646089961838277,
+      "sampling_speedup": 3.167285246213836
+    },
+    {
+      "case_id": "m16_bright",
+      "modes": 16,
+      "samples": 128,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 7.6095e-05,
+          "sampling_seconds": 0.01393414,
+          "cold_seconds": 0.014012989,
+          "harness_seconds": 0.019894062999810558
+        },
+        "uncached": {
+          "setup_seconds": 7.5764e-05,
+          "sampling_seconds": 0.017131969,
+          "cold_seconds": 0.017205129,
+          "harness_seconds": 0.022812570998212323
+        }
+      },
+      "cold_speedup": 1.2277986516652515,
+      "sampling_speedup": 1.2294959717643141
+    },
+    {
+      "case_id": "m16_bright",
+      "modes": 16,
+      "samples": 8192,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.000103666,
+          "sampling_seconds": 0.484052289,
+          "cold_seconds": 0.484130206,
+          "harness_seconds": 0.49005985199983115
+        },
+        "uncached": {
+          "setup_seconds": 7.7506e-05,
+          "sampling_seconds": 0.910112875,
+          "cold_seconds": 0.910280388,
+          "harness_seconds": 0.9164268210006412
+        }
+      },
+      "cold_speedup": 1.8802387802259957,
+      "sampling_speedup": 1.8801953749257034
+    },
+    {
+      "case_id": "m32_lossy",
+      "modes": 32,
+      "samples": 128,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.000520134,
+          "sampling_seconds": 0.019005172,
+          "cold_seconds": 0.019545606,
+          "harness_seconds": 0.027808484999695793
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.000279431,
+          "sampling_seconds": 0.018215623,
+          "cold_seconds": 0.018491959,
+          "harness_seconds": 0.0269982270001492
+        }
+      },
+      "cold_speedup": 1.0569786575884146,
+      "sampling_speedup": 1.0433446058913274
+    },
+    {
+      "case_id": "m32_lossy",
+      "modes": 32,
+      "samples": 2048,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.000295144,
+          "sampling_seconds": 0.30882543,
+          "cold_seconds": 0.30912057400000004,
+          "harness_seconds": 0.31716523399882135
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.00027218,
+          "sampling_seconds": 0.274222827,
+          "cold_seconds": 0.274484271,
+          "harness_seconds": 0.28208982800060767
+        }
+      },
+      "cold_speedup": 1.1261868407752955,
+      "sampling_speedup": 1.1261842545296201
+    },
+    {
+      "case_id": "m32_bright",
+      "modes": 32,
+      "samples": 128,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.000286181,
+          "sampling_seconds": 0.098560297,
+          "cold_seconds": 0.098889033,
+          "harness_seconds": 0.10648339799809037
+        },
+        "uncached": {
+          "setup_seconds": 0.000286832,
+          "sampling_seconds": 0.091410897,
+          "cold_seconds": 0.091670919,
+          "harness_seconds": 0.09916428599899518
+        }
+      },
+      "cold_speedup": 0.9270079423266279,
+      "sampling_speedup": 0.9274616633917002
+    },
+    {
+      "case_id": "m32_bright",
+      "modes": 32,
+      "samples": 2048,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.000262165,
+          "sampling_seconds": 1.442076255,
+          "cold_seconds": 1.442360463,
+          "harness_seconds": 1.4501242740007
+        },
+        "uncached": {
+          "setup_seconds": 0.000260562,
+          "sampling_seconds": 1.614540901,
+          "cold_seconds": 1.614799451,
+          "harness_seconds": 1.624166511999647
+        }
+      },
+      "cold_speedup": 1.1195533241678992,
+      "sampling_speedup": 1.1195946784381385
+    },
+    {
+      "case_id": "m64_lossy",
+      "modes": 64,
+      "samples": 128,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.00179792,
+          "sampling_seconds": 0.156995843,
+          "cold_seconds": 0.15950578599999998,
+          "harness_seconds": 0.18220529600148438
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.00179791,
+          "sampling_seconds": 0.156255188,
+          "cold_seconds": 0.158053098,
+          "harness_seconds": 0.18068320599923027
+        }
+      },
+      "cold_speedup": 1.0091911390436648,
+      "sampling_speedup": 1.0047400346156827
+    },
+    {
+      "case_id": "m64_lossy",
+      "modes": 64,
+      "samples": 1024,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.00184453,
+          "sampling_seconds": 1.213552207,
+          "cold_seconds": 1.216381421,
+          "harness_seconds": 1.236814449999656
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.001838762,
+          "sampling_seconds": 1.168180725,
+          "cold_seconds": 1.170019487,
+          "harness_seconds": 1.1884628660009184
+        }
+      },
+      "cold_speedup": 1.0396249246402507,
+      "sampling_speedup": 1.0388394372797067
+    },
+    {
+      "case_id": "m64_bright",
+      "modes": 64,
+      "samples": 128,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.001903138,
+          "sampling_seconds": 0.512612505,
+          "cold_seconds": 0.51488517,
+          "harness_seconds": 0.5451352600030077
+        },
+        "uncached": {
+          "setup_seconds": 0.00155282,
+          "sampling_seconds": 0.519107714,
+          "cold_seconds": 0.520660534,
+          "harness_seconds": 0.544357888000377
+        }
+      },
+      "cold_speedup": 1.0112168000488342,
+      "sampling_speedup": 1.0126707970185003
+    },
+    {
+      "case_id": "m64_bright",
+      "modes": 64,
+      "samples": 1024,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.001802746,
+          "sampling_seconds": 3.551312329,
+          "cold_seconds": 3.553115075,
+          "harness_seconds": 3.571805809999205
+        },
+        "uncached": {
+          "setup_seconds": 0.00144672,
+          "sampling_seconds": 3.891469133,
+          "cold_seconds": 3.892886469,
+          "harness_seconds": 3.9097302480004146
+        }
+      },
+      "cold_speedup": 1.0956263410635525,
+      "sampling_speedup": 1.095783409761592
+    },
+    {
+      "case_id": "m100_lossy",
+      "modes": 100,
+      "samples": 64,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.00424036,
+          "sampling_seconds": 0.23043991,
+          "cold_seconds": 0.235950354,
+          "harness_seconds": 0.27736202599771786
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.004211997,
+          "sampling_seconds": 0.219376427,
+          "cold_seconds": 0.223551939,
+          "harness_seconds": 0.25953583600130514
+        }
+      },
+      "cold_speedup": 1.055461004075657,
+      "sampling_speedup": 1.0504315032900047
+    },
+    {
+      "case_id": "m100_lossy",
+      "modes": 100,
+      "samples": 512,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.004269094,
+          "sampling_seconds": 1.774744452,
+          "cold_seconds": 1.780160284,
+          "harness_seconds": 1.8520974310013116
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.004371558,
+          "sampling_seconds": 1.646189233,
+          "cold_seconds": 1.649984933,
+          "harness_seconds": 1.6864057470011176
+        }
+      },
+      "cold_speedup": 1.0788948725509362,
+      "sampling_speedup": 1.0780926131837967
+    },
+    {
+      "case_id": "m100_bright",
+      "modes": 100,
+      "samples": 64,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.004104105,
+          "sampling_seconds": 0.602298717,
+          "cold_seconds": 0.6063627610000001,
+          "harness_seconds": 0.6425347599979432
+        },
+        "uncached": {
+          "setup_seconds": 0.004570779,
+          "sampling_seconds": 0.590800864,
+          "cold_seconds": 0.595225602,
+          "harness_seconds": 0.631519518999994
+        }
+      },
+      "cold_speedup": 0.9816328446990495,
+      "sampling_speedup": 0.9809100489915205
+    },
+    {
+      "case_id": "m100_bright",
+      "modes": 100,
+      "samples": 512,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.00395483,
+          "sampling_seconds": 4.674745229,
+          "cold_seconds": 4.678854722,
+          "harness_seconds": 4.714899272999901
+        },
+        "uncached": {
+          "setup_seconds": 0.004836749,
+          "sampling_seconds": 4.586985791,
+          "cold_seconds": 4.59182254,
+          "harness_seconds": 4.629337082002166
+        }
+      },
+      "cold_speedup": 0.9813988278817947,
+      "sampling_speedup": 0.9812269046330953
+    },
+    {
+      "case_id": "m144_lossy",
+      "modes": 144,
+      "samples": 64,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.009529111,
+          "sampling_seconds": 0.524562391,
+          "cold_seconds": 0.533620783,
+          "harness_seconds": 0.5974674470016907
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.009575912,
+          "sampling_seconds": 0.534527559,
+          "cold_seconds": 0.5440958290000001,
+          "harness_seconds": 0.6175598480003828
+        }
+      },
+      "cold_speedup": 0.9807477921320363,
+      "sampling_speedup": 0.9813570547819032
+    },
+    {
+      "case_id": "m144_lossy",
+      "modes": 144,
+      "samples": 256,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.009878668,
+          "sampling_seconds": 2.147363948,
+          "cold_seconds": 2.1566839040000003,
+          "harness_seconds": 2.2276609239997924
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.009217321,
+          "sampling_seconds": 2.147662737,
+          "cold_seconds": 2.156880058,
+          "harness_seconds": 2.2244586020024144
+        }
+      },
+      "cold_speedup": 0.9999090566027201,
+      "sampling_speedup": 0.9998608771317524
+    },
+    {
+      "case_id": "m144_bright",
+      "modes": 144,
+      "samples": 64,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.012468921,
+          "sampling_seconds": 1.3707692,
+          "cold_seconds": 1.383238121,
+          "harness_seconds": 1.4626904689976072
+        },
+        "uncached": {
+          "setup_seconds": 0.011171345,
+          "sampling_seconds": 1.468686446,
+          "cold_seconds": 1.48146936,
+          "harness_seconds": 1.5595734369999263
+        }
+      },
+      "cold_speedup": 1.071015422080028,
+      "sampling_speedup": 1.0714323359468538
+    },
+    {
+      "case_id": "m144_bright",
+      "modes": 144,
+      "samples": 256,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.01090221,
+          "sampling_seconds": 5.132738573,
+          "cold_seconds": 5.1443075480000005,
+          "harness_seconds": 5.218871198998386
+        },
+        "uncached": {
+          "setup_seconds": 0.010372171,
+          "sampling_seconds": 5.348071562,
+          "cold_seconds": 5.357807073,
+          "harness_seconds": 5.440039386001445
+        }
+      },
+      "cold_speedup": 1.0415020919740703,
+      "sampling_speedup": 1.0419528456276201
+    },
+    {
+      "case_id": "m256_lossy",
+      "modes": 256,
+      "samples": 64,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.046216411,
+          "sampling_seconds": 2.329260153,
+          "cold_seconds": 2.375476564,
+          "harness_seconds": 2.6099718139994366
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.044262335,
+          "sampling_seconds": 2.358328937,
+          "cold_seconds": 2.401449493,
+          "harness_seconds": 2.6305489859987574
+        }
+      },
+      "cold_speedup": 0.9891844783428889,
+      "sampling_speedup": 0.9876739908738185
+    },
+    {
+      "case_id": "m256_lossy",
+      "modes": 256,
+      "samples": 256,
+      "medians": {
+        "uncached": {
+          "setup_seconds": 0.045033958,
+          "sampling_seconds": 9.757416316,
+          "cold_seconds": 9.802450274,
+          "harness_seconds": 10.067474929997843
+        },
+        "prefix_cached": {
+          "setup_seconds": 0.044867707,
+          "sampling_seconds": 9.834381199,
+          "cold_seconds": 9.879125985,
+          "harness_seconds": 10.119911316996877
+        }
+      },
+      "cold_speedup": 0.9922386139101352,
+      "sampling_speedup": 0.9921738967157563
+    },
+    {
+      "case_id": "m256_bright",
+      "modes": 256,
+      "samples": 64,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.054477915,
+          "sampling_seconds": 4.91106077,
+          "cold_seconds": 4.958701069,
+          "harness_seconds": 5.204166154999257
+        },
+        "uncached": {
+          "setup_seconds": 0.050449007,
+          "sampling_seconds": 4.850527885,
+          "cold_seconds": 4.901113028,
+          "harness_seconds": 5.143556041999545
+        }
+      },
+      "cold_speedup": 0.9883864664962324,
+      "sampling_speedup": 0.987674173089086
+    },
+    {
+      "case_id": "m256_bright",
+      "modes": 256,
+      "samples": 256,
+      "medians": {
+        "prefix_cached": {
+          "setup_seconds": 0.044170154,
+          "sampling_seconds": 19.1383607,
+          "cold_seconds": 19.191640911,
+          "harness_seconds": 19.429552411002078
+        },
+        "uncached": {
+          "setup_seconds": 0.047298756,
+          "sampling_seconds": 19.253567229,
+          "cold_seconds": 19.300865985,
+          "harness_seconds": 19.57802814200113
+        }
+      },
+      "cold_speedup": 1.0056912837472587,
+      "sampling_speedup": 1.0060196654669593
+    }
+  ],
+  "rows": 216,
+  "failures": 0,
+  "all_same_seed_summary_checks_passed": true,
+  "claim_scope": "Cache implementation speed at unchanged candidate law; only small-mode Frugal cost comparison. No equal-quality or quantum-speedup claim from timing alone."
+}

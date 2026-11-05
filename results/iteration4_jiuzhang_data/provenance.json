@@ -1,0 +1,52 @@
+{
+  "path": ".cache/jiuzhang_data/cov_0.npy",
+  "npy_sha256": "892a143db06952cd939bf080dc3321894108630b01a89c74751e85ca5a9531d5",
+  "shape": [
+    200,
+    200
+  ],
+  "dtype": "float64",
+  "finite": true,
+  "symmetry_max": 1.5543122344752192e-15,
+  "uncertainty_min_xxpp_hbar2": -3.874207204496769e-15,
+  "eigen_min": 0.5976594255440328,
+  "diagonal_range": [
+    1.2681586672187442,
+    6.043104715874
+  ],
+  "mean_photons_if_hbar2": 78.61550479612197,
+  "source": "https://github.com/polyquantique/cov_matrix_optimization/blob/main/cov_0.npy",
+  "git_blob_sha": "72c4d387461a1dc79da4c7a9504a5de5e31dfb93",
+  "license": "not stated in repository listing; original Zenodo metadata not accessible through web tool",
+  "label": "author-distributed Jiuzhang1 ground-truth covariance; not independently reconstructed from original official optical calibration",
+  "retrieved_utc_date": "2026-11-04",
+  "repository_commit": "b1bb0949aeb40de71e55e292489ba83b45be1f7b",
+  "repository_commit_date": "2024-08-14T16:17:46Z",
+  "repository_url": "https://github.com/polyquantique/cov_matrix_optimization",
+  "original_archive": "https://zenodo.org/records/7992736",
+  "raw_covariance_array_sha256": "d674b2651c9c82f1316d5b48443a6090d27d9bec2ba2cc569979183558a65452",
+  "wrapper_symmetrized_covariance_sha256": "2af0a953bec2d0a42ddd7ef98baeaa256f44525d3a6b94cb0576ec80bebc31ae",
+  "source_file_role": "Unoptimized ground-truth covariance. opt_cov_example.py reads cov_0.npy and saves opt_cov_0.npy; get_decomposition.py reads cov.npy and writes sq_cov.npy.",
+  "covariance_convention_evidence": "Both scripts use Omega=kron([[0,1],[-1,0]],I_m) and the uncertainty constraint X+iOmega>=0, consistent with xxpp,hbar2,vacuumI. Numerical physicality checks are consistency evidence, not reconstruction of official experimental calibration.",
+  "calibration_mapping_verified": false,
+  "empirical_hardware_samples_imported": false,
+  "public_binary_redistribution_performed": false,
+  "license_observation": "No LICENSE file appeared in the fetched repository root listing; no explicit license occurred in the fetched README. Original Zenodo metadata was inaccessible through the browsing tool. No legal conclusion is inferred.",
+  "source_file_hashes": {
+    "README.md": {
+      "git_blob_sha": "7cd1c54178fdbb649821b4a1a50e7f410c6f81d0",
+      "sha256": "8f8ae8d649479f29a9f6e355fc5a8745999bca527eb8b5ae3898e060cc4eda99",
+      "utf8_bytes": 988
+    },
+    "opt_cov_example.py": {
+      "git_blob_sha": "dd7a3fe9027ddd92b75263b0a36e0a65581591a5",
+      "sha256": "ebfc50f0ef0eb449f2dd16a23b5cd8bc16e22d0e8c73524187dccdda6189ad06",
+      "utf8_bytes": 498
+    },
+    "get_decomposition.py": {
+      "git_blob_sha": "5a640a64b37775013b96fbe3738db0ca929a6187",
+      "sha256": "6f6de4e1c196a250b1e6638e396d0871c7c76d8f4e2c06525c430e2a4ed68e54",
+      "utf8_bytes": 743
+    }
+  }
+}

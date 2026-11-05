@@ -1,0 +1,4314 @@
+{
+  "schema_version": 1,
+  "decision": "insufficient_evidence",
+  "evidence_scope": "global_tv_upper",
+  "epsilon": 0.1,
+  "confidence_plan": {
+    "comparison_ids": [
+      "m12_lossy",
+      "m12_bright",
+      "m32_lossy",
+      "m32_bright",
+      "m64_lossy",
+      "m64_bright",
+      "m100_lossy",
+      "m100_bright",
+      "m144_lossy",
+      "m144_bright",
+      "m256_lossy",
+      "m256_bright",
+      "jiuzhang1_candidate",
+      "jiuzhang1_frugal"
+    ],
+    "planned_comparisons": 14,
+    "familywise_alpha": 0.025,
+    "familywise_nominal_confidence": 0.975,
+    "per_comparison_alpha": 0.0017857142857142859,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "67a3d9d7282c9b665c36692d1c34d03ff7ee9a2e79eb5cfe0ab48d870de8dce1",
+    "comparison_id": "m100_bright",
+    "alpha_global_tv": 0.0008928571428571429,
+    "alpha_witnesses": 0.0008928571428571429
+  },
+  "model_check": {
+    "valid": true,
+    "in_scope": true,
+    "minimum_uncertainty_eigenvalue": 0.21177402097381304,
+    "physicality_is_distribution_validation": false,
+    "resource_max_modes": 256
+  },
+  "target": {
+    "target_id": "m100_bright",
+    "detector_model": "threshold",
+    "state_model": "zero_mean_gaussian",
+    "quadrature_order": "xxpp",
+    "hbar": 2,
+    "covariance_convention": "xxpp;hbar=2;vacuum=I",
+    "modes": 100,
+    "covariance_sha256": "4d1de0d49c503b20c1b2795e19bcc7e68f7aedef56b1df0c6b52ed3c862b2c94",
+    "mean_photons": 68.49287823031116
+  },
+  "full_law": null,
+  "global_tv": {
+    "status": "ok",
+    "n_requested": 1024,
+    "n_observed": 1024,
+    "alpha": 0.0008928571428571429,
+    "nominal_confidence": 0.9991071428571429,
+    "mean_score": 1.0,
+    "statistical_margin": 0.058551376195936304,
+    "upper": 1.0,
+    "max_exact_clicks": 6,
+    "cutoff_count": 1024,
+    "target_probability_failure_count": 0,
+    "successfully_evaluated_count": 0,
+    "unique_target_probability_evaluations": 0,
+    "pattern_cache_hits": 0,
+    "failure_reasons": {},
+    "density_check": {
+      "distinct_patterns": 1024,
+      "observed_distinct_mass": 1.181470860882421e-24,
+      "normalization_scope": "necessary partial-mass check only; total law follows from the declared output-process construction"
+    },
+    "output_space": "binary_patterns_plus_failure",
+    "target_failure_probability": 0.0,
+    "observed_sampling_failures": 0,
+    "unseen_failure_mass_assumed_zero": false,
+    "confidence_scope": "unconditional false-accept guarantee for first fixed-N iid attempts; validation aborts on any sampling failure",
+    "conditional_on_success_coverage_claimed": false,
+    "conditional_success_law_tv_also_bounded": true,
+    "strict_floating_point_certificate": false,
+    "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+    "elapsed_seconds": 0.000359141002263641,
+    "target_probability_mode": "floating_gaussian_point_estimate",
+    "target_oracle_diagnostics": {
+      "point_evaluations": 0,
+      "large_no_click_determinants": 0,
+      "maximum_large_determinant_dimension": 0,
+      "small_vacuum_determinants": 0,
+      "maximum_small_determinant_dimension": 0,
+      "maximum_all_click_terms": 0,
+      "maximum_relative_cancellation_indicator": 0.0,
+      "log_probability_roundoff_corrections": 0,
+      "gaussian_conditioner": {
+        "requests": 0,
+        "base_returns": 0,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "parent_cache_reuses": 0,
+        "rank_two_updates": 0,
+        "direct_factorizations": 0,
+        "maximum_direct_factorization_dimension": 0,
+        "cache_evictions": 0,
+        "peak_cache_entries": 0,
+        "peak_cache_payload_bytes": 0,
+        "oversized_states_not_cached": 0,
+        "maximum_asymmetry_correction": 0.0,
+        "cache_entries": 0,
+        "cache_size_limit": 128,
+        "cache_payload_bytes": 0,
+        "cache_payload_bytes_limit": 67108864,
+        "base_payload_bytes": 320800
+      }
+    },
+    "fixed_iid_no_retry_assumptions": {
+      "requested_draws": 1024,
+      "target_and_sampler_fixed_before_samples": true,
+      "iid_attempts": true,
+      "first_batch_no_retry": true,
+      "no_postselection": true,
+      "density_is_unconditional_path_mass": true,
+      "source": "iteration5_frozen_first_batch",
+      "unseen_failure_mass_assumed_zero": false,
+      "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+    }
+  },
+  "witnesses": {
+    "status": "ok",
+    "planned_witnesses": 275,
+    "evaluated_witnesses": 275,
+    "witness_schedule_sha256": "76227a340d88f44954775f7cf1c4f03b33b609cf1a3a5683f3a68e47ac22446c",
+    "predeclared_subsets": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ],
+      [
+        13
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ],
+      [
+        18
+      ],
+      [
+        19
+      ],
+      [
+        20
+      ],
+      [
+        21
+      ],
+      [
+        22
+      ],
+      [
+        23
+      ],
+      [
+        24
+      ],
+      [
+        25
+      ],
+      [
+        26
+      ],
+      [
+        27
+      ],
+      [
+        28
+      ],
+      [
+        29
+      ],
+      [
+        30
+      ],
+      [
+        31
+      ],
+      [
+        32
+      ],
+      [
+        33
+      ],
+      [
+        34
+      ],
+      [
+        35
+      ],
+      [
+        36
+      ],
+      [
+        37
+      ],
+      [
+        38
+      ],
+      [
+        39
+      ],
+      [
+        40
+      ],
+      [
+        41
+      ],
+      [
+        42
+      ],
+      [
+        43
+      ],
+      [
+        44
+      ],
+      [
+        45
+      ],
+      [
+        46
+      ],
+      [
+        47
+      ],
+      [
+        48
+      ],
+      [
+        49
+      ],
+      [
+        50
+      ],
+      [
+        51
+      ],
+      [
+        52
+      ],
+      [
+        53
+      ],
+      [
+        54
+      ],
+      [
+        55
+      ],
+      [
+        56
+      ],
+      [
+        57
+      ],
+      [
+        58
+      ],
+      [
+        59
+      ],
+      [
+        60
+      ],
+      [
+        61
+      ],
+      [
+        62
+      ],
+      [
+        63
+      ],
+      [
+        64
+      ],
+      [
+        65
+      ],
+      [
+        66
+      ],
+      [
+        67
+      ],
+      [
+        68
+      ],
+      [
+        69
+      ],
+      [
+        70
+      ],
+      [
+        71
+      ],
+      [
+        72
+      ],
+      [
+        73
+      ],
+      [
+        74
+      ],
+      [
+        75
+      ],
+      [
+        76
+      ],
+      [
+        77
+      ],
+      [
+        78
+      ],
+      [
+        79
+      ],
+      [
+        80
+      ],
+      [
+        81
+      ],
+      [
+        82
+      ],
+      [
+        83
+      ],
+      [
+        84
+      ],
+      [
+        85
+      ],
+      [
+        86
+      ],
+      [
+        87
+      ],
+      [
+        88
+      ],
+      [
+        89
+      ],
+      [
+        90
+      ],
+      [
+        91
+      ],
+      [
+        92
+      ],
+      [
+        93
+      ],
+      [
+        94
+      ],
+      [
+        95
+      ],
+      [
+        96
+      ],
+      [
+        97
+      ],
+      [
+        98
+      ],
+      [
+        99
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        38,
+        39
+      ],
+      [
+        39,
+        40
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        44,
+        45
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        48,
+        49
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        51,
+        52
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        56,
+        57
+      ],
+      [
+        57,
+        58
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        59,
+        60
+      ],
+      [
+        60,
+        61
+      ],
+      [
+        61,
+        62
+      ],
+      [
+        62,
+        63
+      ],
+      [
+        63,
+        64
+      ],
+      [
+        64,
+        65
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        66,
+        67
+      ],
+      [
+        67,
+        68
+      ],
+      [
+        68,
+        69
+      ],
+      [
+        69,
+        70
+      ],
+      [
+        70,
+        71
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        72,
+        73
+      ],
+      [
+        73,
+        74
+      ],
+      [
+        74,
+        75
+      ],
+      [
+        75,
+        76
+      ],
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        78
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        80
+      ],
+      [
+        80,
+        81
+      ],
+      [
+        81,
+        82
+      ],
+      [
+        82,
+        83
+      ],
+      [
+        83,
+        84
+      ],
+      [
+        84,
+        85
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        86,
+        87
+      ],
+      [
+        87,
+        88
+      ],
+      [
+        88,
+        89
+      ],
+      [
+        89,
+        90
+      ],
+      [
+        90,
+        91
+      ],
+      [
+        91,
+        92
+      ],
+      [
+        92,
+        93
+      ],
+      [
+        93,
+        94
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        95,
+        96
+      ],
+      [
+        96,
+        97
+      ],
+      [
+        97,
+        98
+      ],
+      [
+        98,
+        99
+      ],
+      [
+        0,
+        50
+      ],
+      [
+        1,
+        51
+      ],
+      [
+        2,
+        52
+      ],
+      [
+        3,
+        53
+      ],
+      [
+        4,
+        54
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        6,
+        56
+      ],
+      [
+        7,
+        57
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        9,
+        59
+      ],
+      [
+        10,
+        60
+      ],
+      [
+        11,
+        61
+      ],
+      [
+        12,
+        62
+      ],
+      [
+        13,
+        63
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        65
+      ],
+      [
+        16,
+        66
+      ],
+      [
+        17,
+        67
+      ],
+      [
+        18,
+        68
+      ],
+      [
+        19,
+        69
+      ],
+      [
+        20,
+        70
+      ],
+      [
+        21,
+        71
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        73
+      ],
+      [
+        24,
+        74
+      ],
+      [
+        25,
+        75
+      ],
+      [
+        26,
+        76
+      ],
+      [
+        27,
+        77
+      ],
+      [
+        28,
+        78
+      ],
+      [
+        29,
+        79
+      ],
+      [
+        30,
+        80
+      ],
+      [
+        31,
+        81
+      ],
+      [
+        32,
+        82
+      ],
+      [
+        33,
+        83
+      ],
+      [
+        34,
+        84
+      ],
+      [
+        35,
+        85
+      ],
+      [
+        36,
+        86
+      ],
+      [
+        37,
+        87
+      ],
+      [
+        38,
+        88
+      ],
+      [
+        39,
+        89
+      ],
+      [
+        40,
+        90
+      ],
+      [
+        41,
+        91
+      ],
+      [
+        42,
+        92
+      ],
+      [
+        43,
+        93
+      ],
+      [
+        44,
+        94
+      ],
+      [
+        45,
+        95
+      ],
+      [
+        46,
+        96
+      ],
+      [
+        47,
+        97
+      ],
+      [
+        48,
+        98
+      ],
+      [
+        49,
+        99
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        16,
+        17,
+        18,
+        19
+      ],
+      [
+        20,
+        21,
+        22,
+        23
+      ],
+      [
+        24,
+        25,
+        26,
+        27
+      ],
+      [
+        28,
+        29,
+        30,
+        31
+      ],
+      [
+        32,
+        33,
+        34,
+        35
+      ],
+      [
+        36,
+        37,
+        38,
+        39
+      ],
+      [
+        40,
+        41,
+        42,
+        43
+      ],
+      [
+        44,
+        45,
+        46,
+        47
+      ],
+      [
+        48,
+        49,
+        50,
+        51
+      ],
+      [
+        52,
+        53,
+        54,
+        55
+      ],
+      [
+        56,
+        57,
+        58,
+        59
+      ],
+      [
+        60,
+        61,
+        62,
+        63
+      ],
+      [
+        64,
+        65,
+        66,
+        67
+      ],
+      [
+        68,
+        69,
+        70,
+        71
+      ],
+      [
+        72,
+        73,
+        74,
+        75
+      ],
+      [
+        76,
+        77,
+        78,
+        79
+      ],
+      [
+        80,
+        81,
+        82,
+        83
+      ],
+      [
+        84,
+        85,
+        86,
+        87
+      ],
+      [
+        88,
+        89,
+        90,
+        91
+      ],
+      [
+        92,
+        93,
+        94,
+        95
+      ],
+      [
+        96,
+        97,
+        98,
+        99
+      ]
+    ],
+    "alpha": 0.0008928571428571429,
+    "simultaneous_hoeffding_radius": 0.08068009939711496,
+    "tv_lower": 0.02110389486912234,
+    "target_mean_clicks": 40.47955982383765,
+    "observed_mean_clicks": 37.8876953125,
+    "rows": [
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0
+        ],
+        "target": 0.5939460960465792,
+        "observed": 0.5703125,
+        "absolute_difference": 0.02363359604657922,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1
+        ],
+        "target": 0.5941134196183527,
+        "observed": 0.5986328125,
+        "absolute_difference": 0.004519392881647266,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2
+        ],
+        "target": 0.5973676283041265,
+        "observed": 0.6005859375,
+        "absolute_difference": 0.0032183091958735144,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3
+        ],
+        "target": 0.5950284632501172,
+        "observed": 0.57421875,
+        "absolute_difference": 0.020809713250117157,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4
+        ],
+        "target": 0.594747231000365,
+        "observed": 0.580078125,
+        "absolute_difference": 0.014669106000364973,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5
+        ],
+        "target": 0.5936520753572283,
+        "observed": 0.6064453125,
+        "absolute_difference": 0.012793237142771696,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          6
+        ],
+        "target": 0.5973734104785329,
+        "observed": 0.5859375,
+        "absolute_difference": 0.011435910478532874,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          7
+        ],
+        "target": 0.5939117092139189,
+        "observed": 0.6064453125,
+        "absolute_difference": 0.012533603286081108,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8
+        ],
+        "target": 0.5946185133051879,
+        "observed": 0.595703125,
+        "absolute_difference": 0.0010846116948121098,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          9
+        ],
+        "target": 0.5935668577776142,
+        "observed": 0.5927734375,
+        "absolute_difference": 0.0007934202776141985,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          10
+        ],
+        "target": 0.5949123004907488,
+        "observed": 0.5810546875,
+        "absolute_difference": 0.013857612990748835,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          11
+        ],
+        "target": 0.5951196312546287,
+        "observed": 0.568359375,
+        "absolute_difference": 0.026760256254628745,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          12
+        ],
+        "target": 0.5935613787407953,
+        "observed": 0.58203125,
+        "absolute_difference": 0.011530128740795287,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          13
+        ],
+        "target": 0.5944234449031837,
+        "observed": 0.6005859375,
+        "absolute_difference": 0.006162492596816338,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          14
+        ],
+        "target": 0.6008216097961409,
+        "observed": 0.6396484375,
+        "absolute_difference": 0.038826827703859146,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          15
+        ],
+        "target": 0.5967868130481115,
+        "observed": 0.5546875,
+        "absolute_difference": 0.04209931304811154,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          16
+        ],
+        "target": 0.5959676694051197,
+        "observed": 0.6005859375,
+        "absolute_difference": 0.004618268094880307,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          17
+        ],
+        "target": 0.5969808009737795,
+        "observed": 0.6015625,
+        "absolute_difference": 0.00458169902622052,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          18
+        ],
+        "target": 0.5958770115924608,
+        "observed": 0.59375,
+        "absolute_difference": 0.002127011592460759,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          19
+        ],
+        "target": 0.594058152464573,
+        "observed": 0.5556640625,
+        "absolute_difference": 0.03839408996457305,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          20
+        ],
+        "target": 0.5937090843492329,
+        "observed": 0.630859375,
+        "absolute_difference": 0.03715029065076714,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          21
+        ],
+        "target": 0.5976719977954607,
+        "observed": 0.61328125,
+        "absolute_difference": 0.015609252204539348,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          22
+        ],
+        "target": 0.5942547746969534,
+        "observed": 0.6181640625,
+        "absolute_difference": 0.023909287803046575,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          23
+        ],
+        "target": 0.593515080809841,
+        "observed": 0.599609375,
+        "absolute_difference": 0.006094294190159055,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          24
+        ],
+        "target": 0.5961257275388914,
+        "observed": 0.6162109375,
+        "absolute_difference": 0.02008520996110863,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          25
+        ],
+        "target": 0.5957043077111148,
+        "observed": 0.5771484375,
+        "absolute_difference": 0.018555870211114822,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          26
+        ],
+        "target": 0.5953715440829299,
+        "observed": 0.587890625,
+        "absolute_difference": 0.0074809190829299155,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          27
+        ],
+        "target": 0.5944946719232324,
+        "observed": 0.6279296875,
+        "absolute_difference": 0.033435015576767646,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          28
+        ],
+        "target": 0.5935613948115382,
+        "observed": 0.5986328125,
+        "absolute_difference": 0.0050714176884617546,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          29
+        ],
+        "target": 0.5937514114169983,
+        "observed": 0.6064453125,
+        "absolute_difference": 0.012693901083001724,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          30
+        ],
+        "target": 0.5958490416481261,
+        "observed": 0.6025390625,
+        "absolute_difference": 0.006690020851873868,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          31
+        ],
+        "target": 0.5956698124859255,
+        "observed": 0.5947265625,
+        "absolute_difference": 0.0009432499859255428,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          32
+        ],
+        "target": 0.5937229693876972,
+        "observed": 0.6025390625,
+        "absolute_difference": 0.008816093112302803,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          33
+        ],
+        "target": 0.5947425567605019,
+        "observed": 0.62890625,
+        "absolute_difference": 0.03416369323949808,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          34
+        ],
+        "target": 0.5970597790490483,
+        "observed": 0.623046875,
+        "absolute_difference": 0.025987095950951722,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          35
+        ],
+        "target": 0.5955860341501263,
+        "observed": 0.6201171875,
+        "absolute_difference": 0.024531153349873658,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          36
+        ],
+        "target": 0.5960624707339293,
+        "observed": 0.6015625,
+        "absolute_difference": 0.005500029266070738,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          37
+        ],
+        "target": 0.5949043956534485,
+        "observed": 0.6220703125,
+        "absolute_difference": 0.027165916846551452,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          38
+        ],
+        "target": 0.5938101683733167,
+        "observed": 0.607421875,
+        "absolute_difference": 0.013611706626683318,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          39
+        ],
+        "target": 0.5936362653601267,
+        "observed": 0.642578125,
+        "absolute_difference": 0.0489418596398733,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          40
+        ],
+        "target": 0.5945259008692492,
+        "observed": 0.6064453125,
+        "absolute_difference": 0.011919411630750831,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          41
+        ],
+        "target": 0.5957015391631624,
+        "observed": 0.6220703125,
+        "absolute_difference": 0.026368773336837625,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          42
+        ],
+        "target": 0.5944027109059257,
+        "observed": 0.6318359375,
+        "absolute_difference": 0.03743322659407433,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          43
+        ],
+        "target": 0.5939989589433385,
+        "observed": 0.607421875,
+        "absolute_difference": 0.01342291605666146,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          44
+        ],
+        "target": 0.5941381760431237,
+        "observed": 0.61328125,
+        "absolute_difference": 0.01914307395687631,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          45
+        ],
+        "target": 0.5950639433475517,
+        "observed": 0.626953125,
+        "absolute_difference": 0.03188918165244825,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          46
+        ],
+        "target": 0.5945252151584417,
+        "observed": 0.6015625,
+        "absolute_difference": 0.0070372848415583,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          47
+        ],
+        "target": 0.5960409036719617,
+        "observed": 0.5947265625,
+        "absolute_difference": 0.0013143411719617193,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          48
+        ],
+        "target": 0.5935273159964649,
+        "observed": 0.6357421875,
+        "absolute_difference": 0.04221487150353509,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          49
+        ],
+        "target": 0.5940324469530028,
+        "observed": 0.6240234375,
+        "absolute_difference": 0.029990990546997165,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          50
+        ],
+        "target": 0.5943484732313635,
+        "observed": 0.615234375,
+        "absolute_difference": 0.020885901768636472,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          51
+        ],
+        "target": 0.5936142245209155,
+        "observed": 0.6142578125,
+        "absolute_difference": 0.0206435879790845,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          52
+        ],
+        "target": 0.5944002997921561,
+        "observed": 0.6416015625,
+        "absolute_difference": 0.04720126270784386,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          53
+        ],
+        "target": 0.5947043527875628,
+        "observed": 0.611328125,
+        "absolute_difference": 0.01662377221243716,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          54
+        ],
+        "target": 0.5989879173283741,
+        "observed": 0.642578125,
+        "absolute_difference": 0.043590207671625913,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          55
+        ],
+        "target": 0.5984675399997192,
+        "observed": 0.6337890625,
+        "absolute_difference": 0.035321522500280755,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          56
+        ],
+        "target": 0.5935703955312734,
+        "observed": 0.61328125,
+        "absolute_difference": 0.019710854468726557,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          57
+        ],
+        "target": 0.5938279116507402,
+        "observed": 0.62109375,
+        "absolute_difference": 0.027265838349259774,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          58
+        ],
+        "target": 0.5955482066225211,
+        "observed": 0.6201171875,
+        "absolute_difference": 0.02456898087747894,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          59
+        ],
+        "target": 0.5979676461794643,
+        "observed": 0.62890625,
+        "absolute_difference": 0.030938603820535704,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          60
+        ],
+        "target": 0.5947106876496384,
+        "observed": 0.611328125,
+        "absolute_difference": 0.016617437350361586,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          61
+        ],
+        "target": 0.5936750830906908,
+        "observed": 0.6318359375,
+        "absolute_difference": 0.038160854409309164,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          62
+        ],
+        "target": 0.5934975780717137,
+        "observed": 0.62890625,
+        "absolute_difference": 0.03540867192828634,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          63
+        ],
+        "target": 0.5941894075259662,
+        "observed": 0.625,
+        "absolute_difference": 0.030810592474033838,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          64
+        ],
+        "target": 0.5966074055958708,
+        "observed": 0.6318359375,
+        "absolute_difference": 0.03522853190412922,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          65
+        ],
+        "target": 0.5957489519813536,
+        "observed": 0.634765625,
+        "absolute_difference": 0.03901667301864642,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          66
+        ],
+        "target": 0.5939708056570484,
+        "observed": 0.6416015625,
+        "absolute_difference": 0.047630756842951594,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          67
+        ],
+        "target": 0.5956652536042765,
+        "observed": 0.6552734375,
+        "absolute_difference": 0.05960818389572353,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          68
+        ],
+        "target": 0.5946793384356596,
+        "observed": 0.615234375,
+        "absolute_difference": 0.020555036564340434,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          69
+        ],
+        "target": 0.5970920979528953,
+        "observed": 0.623046875,
+        "absolute_difference": 0.025954777047104693,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          70
+        ],
+        "target": 0.5957282502588385,
+        "observed": 0.6376953125,
+        "absolute_difference": 0.041967062241161535,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          71
+        ],
+        "target": 0.5973202588452223,
+        "observed": 0.6259765625,
+        "absolute_difference": 0.02865630365477767,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          72
+        ],
+        "target": 0.5938376098257555,
+        "observed": 0.625,
+        "absolute_difference": 0.031162390174244492,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          73
+        ],
+        "target": 0.5952105401294451,
+        "observed": 0.6650390625,
+        "absolute_difference": 0.06982852237055492,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          74
+        ],
+        "target": 0.5946785376574502,
+        "observed": 0.6396484375,
+        "absolute_difference": 0.04496989984254984,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          75
+        ],
+        "target": 0.5941269705430396,
+        "observed": 0.6279296875,
+        "absolute_difference": 0.033802716956960355,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          76
+        ],
+        "target": 0.5952940308265003,
+        "observed": 0.619140625,
+        "absolute_difference": 0.023846594173499658,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          77
+        ],
+        "target": 0.5969148658198008,
+        "observed": 0.6552734375,
+        "absolute_difference": 0.0583585716801992,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          78
+        ],
+        "target": 0.5970281146760749,
+        "observed": 0.6298828125,
+        "absolute_difference": 0.03285469782392514,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          79
+        ],
+        "target": 0.5935483342877552,
+        "observed": 0.65234375,
+        "absolute_difference": 0.05879541571224478,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          80
+        ],
+        "target": 0.594723278880324,
+        "observed": 0.6494140625,
+        "absolute_difference": 0.05469078361967605,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          81
+        ],
+        "target": 0.5940227935192991,
+        "observed": 0.6787109375,
+        "absolute_difference": 0.0846881439807009,
+        "tv_lower": 0.004008044583585946
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          82
+        ],
+        "target": 0.5972905897461485,
+        "observed": 0.642578125,
+        "absolute_difference": 0.04528753525385154,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          83
+        ],
+        "target": 0.5948865225900452,
+        "observed": 0.654296875,
+        "absolute_difference": 0.05941035240995485,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          84
+        ],
+        "target": 0.5967047796481969,
+        "observed": 0.6513671875,
+        "absolute_difference": 0.054662407851803096,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          85
+        ],
+        "target": 0.5946857385339274,
+        "observed": 0.6494140625,
+        "absolute_difference": 0.054728323966072634,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          86
+        ],
+        "target": 0.5963222756573616,
+        "observed": 0.642578125,
+        "absolute_difference": 0.04625584934263838,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          87
+        ],
+        "target": 0.5959899079012696,
+        "observed": 0.6513671875,
+        "absolute_difference": 0.0553772795987304,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          88
+        ],
+        "target": 0.5967068617674598,
+        "observed": 0.65234375,
+        "absolute_difference": 0.055636888232540205,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          89
+        ],
+        "target": 0.5939117894714548,
+        "observed": 0.6474609375,
+        "absolute_difference": 0.05354914802854516,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          90
+        ],
+        "target": 0.5942781298514451,
+        "observed": 0.6689453125,
+        "absolute_difference": 0.07466718264855488,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          91
+        ],
+        "target": 0.5950404748915742,
+        "observed": 0.638671875,
+        "absolute_difference": 0.04363140010842581,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          92
+        ],
+        "target": 0.5951598176536507,
+        "observed": 0.6416015625,
+        "absolute_difference": 0.04644174484634933,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          93
+        ],
+        "target": 0.5955197504312766,
+        "observed": 0.6201171875,
+        "absolute_difference": 0.024597437068723416,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          94
+        ],
+        "target": 0.5956785283940762,
+        "observed": 0.63671875,
+        "absolute_difference": 0.0410402216059238,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          95
+        ],
+        "target": 0.5953621749799233,
+        "observed": 0.650390625,
+        "absolute_difference": 0.055028450020076725,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          96
+        ],
+        "target": 0.5960026694526879,
+        "observed": 0.6865234375,
+        "absolute_difference": 0.09052076804731213,
+        "tv_lower": 0.00984066865019717
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          97
+        ],
+        "target": 0.5946822643937796,
+        "observed": 0.658203125,
+        "absolute_difference": 0.06352086060622042,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          98
+        ],
+        "target": 0.5985762468607154,
+        "observed": 0.63671875,
+        "absolute_difference": 0.03814250313928458,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          99
+        ],
+        "target": 0.5939396746464263,
+        "observed": 0.6611328125,
+        "absolute_difference": 0.06719313785357373,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          1
+        ],
+        "target": 0.35430313122165097,
+        "observed": 0.3447265625,
+        "absolute_difference": 0.009576568721650969,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1,
+          2
+        ],
+        "target": 0.35526817417109346,
+        "observed": 0.3623046875,
+        "absolute_difference": 0.007036513328906535,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2,
+          3
+        ],
+        "target": 0.3555595150381769,
+        "observed": 0.3515625,
+        "absolute_difference": 0.003997015038176899,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3,
+          4
+        ],
+        "target": 0.35398737656943785,
+        "observed": 0.330078125,
+        "absolute_difference": 0.02390925156943785,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          5
+        ],
+        "target": 0.3535992974855345,
+        "observed": 0.357421875,
+        "absolute_difference": 0.0038225775144655194,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5,
+          6
+        ],
+        "target": 0.3556805504323972,
+        "observed": 0.373046875,
+        "absolute_difference": 0.017366324567602787,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          6,
+          7
+        ],
+        "target": 0.35570168473240565,
+        "observed": 0.3564453125,
+        "absolute_difference": 0.0007436277675943459,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          7,
+          8
+        ],
+        "target": 0.35356102534637557,
+        "observed": 0.365234375,
+        "absolute_difference": 0.011673349653624432,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8,
+          9
+        ],
+        "target": 0.3561878964124414,
+        "observed": 0.3505859375,
+        "absolute_difference": 0.005601958912441418,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          9,
+          10
+        ],
+        "target": 0.3544839824036027,
+        "observed": 0.337890625,
+        "absolute_difference": 0.016593357403602682,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          10,
+          11
+        ],
+        "target": 0.35648525112814744,
+        "observed": 0.32421875,
+        "absolute_difference": 0.03226650112814744,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          11,
+          12
+        ],
+        "target": 0.3533438530407768,
+        "observed": 0.349609375,
+        "absolute_difference": 0.003734478040776812,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          12,
+          13
+        ],
+        "target": 0.35300226978485383,
+        "observed": 0.357421875,
+        "absolute_difference": 0.004419605215146172,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          13,
+          14
+        ],
+        "target": 0.3579571983533052,
+        "observed": 0.39453125,
+        "absolute_difference": 0.036574051646694805,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          14,
+          15
+        ],
+        "target": 0.36176000848048423,
+        "observed": 0.3525390625,
+        "absolute_difference": 0.00922094598048423,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          15,
+          16
+        ],
+        "target": 0.3596078238474563,
+        "observed": 0.337890625,
+        "absolute_difference": 0.02171719884745632,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          16,
+          17
+        ],
+        "target": 0.3600681885002076,
+        "observed": 0.3671875,
+        "absolute_difference": 0.007119311499792391,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          17,
+          18
+        ],
+        "target": 0.3575209116050897,
+        "observed": 0.3671875,
+        "absolute_difference": 0.009666588394910303,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          18,
+          19
+        ],
+        "target": 0.3542080726599995,
+        "observed": 0.35546875,
+        "absolute_difference": 0.0012606773400005156,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          19,
+          20
+        ],
+        "target": 0.3531943107347617,
+        "observed": 0.3427734375,
+        "absolute_difference": 0.010420873234761707,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          20,
+          21
+        ],
+        "target": 0.35503438914536634,
+        "observed": 0.38671875,
+        "absolute_difference": 0.031684360854633664,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          21,
+          22
+        ],
+        "target": 0.35536450837999023,
+        "observed": 0.388671875,
+        "absolute_difference": 0.03330736662000977,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          22,
+          23
+        ],
+        "target": 0.35327192078659636,
+        "observed": 0.365234375,
+        "absolute_difference": 0.01196245421340364,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          23,
+          24
+        ],
+        "target": 0.35604836036392234,
+        "observed": 0.3701171875,
+        "absolute_difference": 0.014068827136077655,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          24,
+          25
+        ],
+        "target": 0.35711726655934944,
+        "observed": 0.3564453125,
+        "absolute_difference": 0.0006719540593494444,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          25,
+          26
+        ],
+        "target": 0.3558495552832517,
+        "observed": 0.34375,
+        "absolute_difference": 0.012099555283251684,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          26,
+          27
+        ],
+        "target": 0.35554483674808673,
+        "observed": 0.36328125,
+        "absolute_difference": 0.0077364132519132656,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          27,
+          28
+        ],
+        "target": 0.354105662098372,
+        "observed": 0.3720703125,
+        "absolute_difference": 0.01796465040162798,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          28,
+          29
+        ],
+        "target": 0.3536067065779732,
+        "observed": 0.3671875,
+        "absolute_difference": 0.013580793422026782,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          29,
+          30
+        ],
+        "target": 0.3556185497788253,
+        "observed": 0.369140625,
+        "absolute_difference": 0.013522075221174712,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          30,
+          31
+        ],
+        "target": 0.3555332023803298,
+        "observed": 0.357421875,
+        "absolute_difference": 0.0018886726196701842,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          31,
+          32
+        ],
+        "target": 0.35466952192407886,
+        "observed": 0.3662109375,
+        "absolute_difference": 0.011541415575921143,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          32,
+          33
+        ],
+        "target": 0.35413043034463076,
+        "observed": 0.3759765625,
+        "absolute_difference": 0.021846132155369236,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          33,
+          34
+        ],
+        "target": 0.3562744605018581,
+        "observed": 0.3955078125,
+        "absolute_difference": 0.039233351998141874,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          34,
+          35
+        ],
+        "target": 0.35636445764597785,
+        "observed": 0.3828125,
+        "absolute_difference": 0.02644804235402215,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          35,
+          36
+        ],
+        "target": 0.35730948286607583,
+        "observed": 0.3720703125,
+        "absolute_difference": 0.014760829633924166,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          36,
+          37
+        ],
+        "target": 0.3549241867633715,
+        "observed": 0.388671875,
+        "absolute_difference": 0.03374768823662849,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          37,
+          38
+        ],
+        "target": 0.3538999031934117,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.02012353430658831,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          38,
+          39
+        ],
+        "target": 0.3555677581369001,
+        "observed": 0.3916015625,
+        "absolute_difference": 0.036033804363099886,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          39,
+          40
+        ],
+        "target": 0.35342002394323346,
+        "observed": 0.3984375,
+        "absolute_difference": 0.04501747605676654,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          40,
+          41
+        ],
+        "target": 0.35452913312921336,
+        "observed": 0.373046875,
+        "absolute_difference": 0.01851774187078664,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          41,
+          42
+        ],
+        "target": 0.3561279019591697,
+        "observed": 0.3994140625,
+        "absolute_difference": 0.04328616054083029,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          42,
+          43
+        ],
+        "target": 0.3582708983444741,
+        "observed": 0.3837890625,
+        "absolute_difference": 0.02551816415552588,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          43,
+          44
+        ],
+        "target": 0.3549403207877445,
+        "observed": 0.3681640625,
+        "absolute_difference": 0.013223741712255488,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          44,
+          45
+        ],
+        "target": 0.35431598399511904,
+        "observed": 0.3759765625,
+        "absolute_difference": 0.021660578504880956,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          45,
+          46
+        ],
+        "target": 0.3572213956283966,
+        "observed": 0.3779296875,
+        "absolute_difference": 0.02070829187160339,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          46,
+          47
+        ],
+        "target": 0.35544928464232967,
+        "observed": 0.3701171875,
+        "absolute_difference": 0.014667902857670334,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          47,
+          48
+        ],
+        "target": 0.3545787318452688,
+        "observed": 0.375,
+        "absolute_difference": 0.02042126815473122,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          48,
+          49
+        ],
+        "target": 0.35349502428351687,
+        "observed": 0.41015625,
+        "absolute_difference": 0.05666122571648313,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          49,
+          50
+        ],
+        "target": 0.35428902271855617,
+        "observed": 0.3935546875,
+        "absolute_difference": 0.03926566478144383,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          50,
+          51
+        ],
+        "target": 0.35402934256987645,
+        "observed": 0.3837890625,
+        "absolute_difference": 0.02975971993012355,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          51,
+          52
+        ],
+        "target": 0.35424271535322416,
+        "observed": 0.388671875,
+        "absolute_difference": 0.03442915964677584,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          52,
+          53
+        ],
+        "target": 0.3535497337493295,
+        "observed": 0.380859375,
+        "absolute_difference": 0.02730964125067048,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          53,
+          54
+        ],
+        "target": 0.3586320459466868,
+        "observed": 0.3955078125,
+        "absolute_difference": 0.036875766553313205,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          54,
+          55
+        ],
+        "target": 0.35858071383831547,
+        "observed": 0.4072265625,
+        "absolute_difference": 0.04864584866168453,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          55,
+          56
+        ],
+        "target": 0.3563387776883534,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.017684659811646575,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          56,
+          57
+        ],
+        "target": 0.35292713672244497,
+        "observed": 0.373046875,
+        "absolute_difference": 0.020119738277555033,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          57,
+          58
+        ],
+        "target": 0.35579579987340465,
+        "observed": 0.375,
+        "absolute_difference": 0.01920420012659535,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          58,
+          59
+        ],
+        "target": 0.3574686744918974,
+        "observed": 0.37890625,
+        "absolute_difference": 0.021437575508102602,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          59,
+          60
+        ],
+        "target": 0.3557069574073016,
+        "observed": 0.384765625,
+        "absolute_difference": 0.029058667592698373,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          60,
+          61
+        ],
+        "target": 0.3533533996966228,
+        "observed": 0.39453125,
+        "absolute_difference": 0.04117785030337717,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          61,
+          62
+        ],
+        "target": 0.35344556500608254,
+        "observed": 0.39453125,
+        "absolute_difference": 0.04108568499391746,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          62,
+          63
+        ],
+        "target": 0.35327406531789496,
+        "observed": 0.3994140625,
+        "absolute_difference": 0.04613999718210504,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          63,
+          64
+        ],
+        "target": 0.35497747441301547,
+        "observed": 0.40234375,
+        "absolute_difference": 0.04736627558698453,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          64,
+          65
+        ],
+        "target": 0.35551204981780327,
+        "observed": 0.4033203125,
+        "absolute_difference": 0.047808262682196734,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          65,
+          66
+        ],
+        "target": 0.3542610429941097,
+        "observed": 0.40234375,
+        "absolute_difference": 0.04808270700589029,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          66,
+          67
+        ],
+        "target": 0.3538506947950277,
+        "observed": 0.4296875,
+        "absolute_difference": 0.07583680520497232,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          67,
+          68
+        ],
+        "target": 0.3558617769004793,
+        "observed": 0.396484375,
+        "absolute_difference": 0.04062259809952068,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          68,
+          69
+        ],
+        "target": 0.35629321356387994,
+        "observed": 0.388671875,
+        "absolute_difference": 0.03237866143612006,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          69,
+          70
+        ],
+        "target": 0.35854885943972314,
+        "observed": 0.3984375,
+        "absolute_difference": 0.039888640560276856,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          70,
+          71
+        ],
+        "target": 0.35773184905538097,
+        "observed": 0.390625,
+        "absolute_difference": 0.03289315094461903,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          71,
+          72
+        ],
+        "target": 0.35758310765421436,
+        "observed": 0.3876953125,
+        "absolute_difference": 0.03011220484578564,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          72,
+          73
+        ],
+        "target": 0.3540381371582287,
+        "observed": 0.4150390625,
+        "absolute_difference": 0.06100092534177132,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          73,
+          74
+        ],
+        "target": 0.35707270239897754,
+        "observed": 0.431640625,
+        "absolute_difference": 0.07456792260102246,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          74,
+          75
+        ],
+        "target": 0.35497255563432994,
+        "observed": 0.4033203125,
+        "absolute_difference": 0.048347756865670055,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          75,
+          76
+        ],
+        "target": 0.3556324806259877,
+        "observed": 0.376953125,
+        "absolute_difference": 0.02132064437401232,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          76,
+          77
+        ],
+        "target": 0.3554387277982846,
+        "observed": 0.392578125,
+        "absolute_difference": 0.037139397201715385,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          77,
+          78
+        ],
+        "target": 0.3574564353106184,
+        "observed": 0.4033203125,
+        "absolute_difference": 0.04586387718938162,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          78,
+          79
+        ],
+        "target": 0.35603354686474986,
+        "observed": 0.4150390625,
+        "absolute_difference": 0.05900551563525014,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          79,
+          80
+        ],
+        "target": 0.35568380289532947,
+        "observed": 0.4208984375,
+        "absolute_difference": 0.06521463460467053,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          80,
+          81
+        ],
+        "target": 0.3542706932337627,
+        "observed": 0.4560546875,
+        "absolute_difference": 0.1017839942662373,
+        "tv_lower": 0.02110389486912234
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          81,
+          82
+        ],
+        "target": 0.35645275088728384,
+        "observed": 0.431640625,
+        "absolute_difference": 0.07518787411271616,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          82,
+          83
+        ],
+        "target": 0.3564865614708112,
+        "observed": 0.421875,
+        "absolute_difference": 0.0653884385291888,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          83,
+          84
+        ],
+        "target": 0.3553562210504953,
+        "observed": 0.4267578125,
+        "absolute_difference": 0.0714015914495047,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          84,
+          85
+        ],
+        "target": 0.35614739787117655,
+        "observed": 0.419921875,
+        "absolute_difference": 0.06377447712882345,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          85,
+          86
+        ],
+        "target": 0.35513735408028074,
+        "observed": 0.4150390625,
+        "absolute_difference": 0.05990170841971926,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          86,
+          87
+        ],
+        "target": 0.35555946500896907,
+        "observed": 0.4189453125,
+        "absolute_difference": 0.06338584749103093,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          87,
+          88
+        ],
+        "target": 0.35566910857012257,
+        "observed": 0.423828125,
+        "absolute_difference": 0.06815901642987743,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          88,
+          89
+        ],
+        "target": 0.35602687742065453,
+        "observed": 0.4208984375,
+        "absolute_difference": 0.06487156007934547,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          89,
+          90
+        ],
+        "target": 0.35417134713803644,
+        "observed": 0.4365234375,
+        "absolute_difference": 0.08235209036196356,
+        "tv_lower": 0.001671990964848602
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          90,
+          91
+        ],
+        "target": 0.35412084995262094,
+        "observed": 0.42578125,
+        "absolute_difference": 0.07166040004737906,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          91,
+          92
+        ],
+        "target": 0.35608943325514475,
+        "observed": 0.4072265625,
+        "absolute_difference": 0.05113712924485525,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          92,
+          93
+        ],
+        "target": 0.35490912964112287,
+        "observed": 0.3935546875,
+        "absolute_difference": 0.03864555785887713,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          93,
+          94
+        ],
+        "target": 0.35533739843348777,
+        "observed": 0.38671875,
+        "absolute_difference": 0.03138135156651223,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          94,
+          95
+        ],
+        "target": 0.3557635993742649,
+        "observed": 0.40625,
+        "absolute_difference": 0.05048640062573512,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          95,
+          96
+        ],
+        "target": 0.355114438513997,
+        "observed": 0.439453125,
+        "absolute_difference": 0.08433868648600301,
+        "tv_lower": 0.0036585870888880545
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          96,
+          97
+        ],
+        "target": 0.3547610719295076,
+        "observed": 0.4404296875,
+        "absolute_difference": 0.08566861557049238,
+        "tv_lower": 0.004988516173377422
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          97,
+          98
+        ],
+        "target": 0.35650272387029663,
+        "observed": 0.4150390625,
+        "absolute_difference": 0.058536338629703366,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          98,
+          99
+        ],
+        "target": 0.35621343747069667,
+        "observed": 0.4267578125,
+        "absolute_difference": 0.07054437502930333,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          50
+        ],
+        "target": 0.3540377374033493,
+        "observed": 0.3447265625,
+        "absolute_difference": 0.009311174903349317,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          1,
+          51
+        ],
+        "target": 0.35468230516150473,
+        "observed": 0.3642578125,
+        "absolute_difference": 0.00957550733849527,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          2,
+          52
+        ],
+        "target": 0.3568706743482051,
+        "observed": 0.376953125,
+        "absolute_difference": 0.020082450651794925,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          3,
+          53
+        ],
+        "target": 0.3540484376968156,
+        "observed": 0.3525390625,
+        "absolute_difference": 0.0015093751968155988,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          54
+        ],
+        "target": 0.3575234820303932,
+        "observed": 0.37890625,
+        "absolute_difference": 0.02138276796960681,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          5,
+          55
+        ],
+        "target": 0.35626582962231906,
+        "observed": 0.3828125,
+        "absolute_difference": 0.026546670377680937,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          6,
+          56
+        ],
+        "target": 0.360581748248301,
+        "observed": 0.3603515625,
+        "absolute_difference": 0.00023018574830102612,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          7,
+          57
+        ],
+        "target": 0.3528651131411047,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.02115832435889531,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8,
+          58
+        ],
+        "target": 0.35974877881038897,
+        "observed": 0.3720703125,
+        "absolute_difference": 0.01232153368961103,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          9,
+          59
+        ],
+        "target": 0.3552582527223688,
+        "observed": 0.3701171875,
+        "absolute_difference": 0.014858934777631227,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          10,
+          60
+        ],
+        "target": 0.35657307197806376,
+        "observed": 0.357421875,
+        "absolute_difference": 0.0008488030219362397,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          11,
+          61
+        ],
+        "target": 0.3546067592307103,
+        "observed": 0.361328125,
+        "absolute_difference": 0.006721365769289722,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          12,
+          62
+        ],
+        "target": 0.35293369775465927,
+        "observed": 0.37109375,
+        "absolute_difference": 0.01816005224534073,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          13,
+          63
+        ],
+        "target": 0.35419956644801154,
+        "observed": 0.375,
+        "absolute_difference": 0.020800433551988462,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          14,
+          64
+        ],
+        "target": 0.35892602640524995,
+        "observed": 0.4013671875,
+        "absolute_difference": 0.042441161094750046,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          15,
+          65
+        ],
+        "target": 0.3570308577063846,
+        "observed": 0.35546875,
+        "absolute_difference": 0.0015621077063845967,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          16,
+          66
+        ],
+        "target": 0.35402793715060843,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.01999550034939157,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          17,
+          67
+        ],
+        "target": 0.35743397813999994,
+        "observed": 0.38671875,
+        "absolute_difference": 0.02928477186000006,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          18,
+          68
+        ],
+        "target": 0.3588597129398617,
+        "observed": 0.375,
+        "absolute_difference": 0.016140287060138314,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          19,
+          69
+        ],
+        "target": 0.35495232507663504,
+        "observed": 0.337890625,
+        "absolute_difference": 0.017061700076635045,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          20,
+          70
+        ],
+        "target": 0.3548270848276312,
+        "observed": 0.4111328125,
+        "absolute_difference": 0.0563057276723688,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          21,
+          71
+        ],
+        "target": 0.35946377830481513,
+        "observed": 0.3876953125,
+        "absolute_difference": 0.02823153419518487,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          22,
+          72
+        ],
+        "target": 0.3538371300813097,
+        "observed": 0.3896484375,
+        "absolute_difference": 0.03581130741869032,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          23,
+          73
+        ],
+        "target": 0.35838514789205955,
+        "observed": 0.404296875,
+        "absolute_difference": 0.04591172710794045,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          24,
+          74
+        ],
+        "target": 0.35526676151045417,
+        "observed": 0.3857421875,
+        "absolute_difference": 0.030475425989545835,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          25,
+          75
+        ],
+        "target": 0.35537170659504796,
+        "observed": 0.373046875,
+        "absolute_difference": 0.017675168404952035,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          26,
+          76
+        ],
+        "target": 0.3559177654274135,
+        "observed": 0.3525390625,
+        "absolute_difference": 0.0033787029274134905,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          27,
+          77
+        ],
+        "target": 0.3551572638748944,
+        "observed": 0.42578125,
+        "absolute_difference": 0.07062398612510562,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          28,
+          78
+        ],
+        "target": 0.35479495836454455,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.019228479135455445,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          29,
+          79
+        ],
+        "target": 0.3532844429201118,
+        "observed": 0.3974609375,
+        "absolute_difference": 0.044176494579888204,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          30,
+          80
+        ],
+        "target": 0.35451670167464344,
+        "observed": 0.3818359375,
+        "absolute_difference": 0.027319235825356558,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          31,
+          81
+        ],
+        "target": 0.3540502715683084,
+        "observed": 0.396484375,
+        "absolute_difference": 0.04243410343169163,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          32,
+          82
+        ],
+        "target": 0.35598750029214304,
+        "observed": 0.3994140625,
+        "absolute_difference": 0.043426562207856956,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          33,
+          83
+        ],
+        "target": 0.35472731680960895,
+        "observed": 0.4091796875,
+        "absolute_difference": 0.05445237069039105,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          34,
+          84
+        ],
+        "target": 0.359436321064903,
+        "observed": 0.3984375,
+        "absolute_difference": 0.039001178935097025,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          35,
+          85
+        ],
+        "target": 0.35423015693336724,
+        "observed": 0.390625,
+        "absolute_difference": 0.036394843066632765,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          36,
+          86
+        ],
+        "target": 0.359522225054876,
+        "observed": 0.3984375,
+        "absolute_difference": 0.03891527494512398,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          37,
+          87
+        ],
+        "target": 0.35487077431877134,
+        "observed": 0.41015625,
+        "absolute_difference": 0.05528547568122866,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          38,
+          88
+        ],
+        "target": 0.3559967545618415,
+        "observed": 0.4033203125,
+        "absolute_difference": 0.04732355793815851,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          39,
+          89
+        ],
+        "target": 0.3537854398066725,
+        "observed": 0.419921875,
+        "absolute_difference": 0.06613643519332751,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          40,
+          90
+        ],
+        "target": 0.35450587342300005,
+        "observed": 0.412109375,
+        "absolute_difference": 0.05760350157699995,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          41,
+          91
+        ],
+        "target": 0.35455695015823524,
+        "observed": 0.404296875,
+        "absolute_difference": 0.04973992484176476,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          42,
+          92
+        ],
+        "target": 0.35389267860244494,
+        "observed": 0.416015625,
+        "absolute_difference": 0.06212294639755506,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          43,
+          93
+        ],
+        "target": 0.3544548128359631,
+        "observed": 0.3740234375,
+        "absolute_difference": 0.019568624664036915,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          44,
+          94
+        ],
+        "target": 0.35497194119339054,
+        "observed": 0.3916015625,
+        "absolute_difference": 0.03662962130660946,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          45,
+          95
+        ],
+        "target": 0.3551386723828959,
+        "observed": 0.4208984375,
+        "absolute_difference": 0.06575976511710407,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          46,
+          96
+        ],
+        "target": 0.3581276002200692,
+        "observed": 0.416015625,
+        "absolute_difference": 0.057888024779930825,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          47,
+          97
+        ],
+        "target": 0.3555964652041871,
+        "observed": 0.3857421875,
+        "absolute_difference": 0.030145722295812916,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          48,
+          98
+        ],
+        "target": 0.35614079747675376,
+        "observed": 0.4072265625,
+        "absolute_difference": 0.05108576502324624,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          49,
+          99
+        ],
+        "target": 0.353191141382906,
+        "observed": 0.4052734375,
+        "absolute_difference": 0.052082296117093974,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "target": 0.12720613279950593,
+        "observed": 0.1181640625,
+        "absolute_difference": 0.009042070299505933,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "target": 0.12675005678441498,
+        "observed": 0.1318359375,
+        "absolute_difference": 0.005085880715585023,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "target": 0.1286430628638543,
+        "observed": 0.109375,
+        "absolute_difference": 0.019268062863854296,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "target": 0.12840043170294813,
+        "observed": 0.1416015625,
+        "absolute_difference": 0.013201130797051874,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "target": 0.1303349714586902,
+        "observed": 0.134765625,
+        "absolute_difference": 0.004430653541309809,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "target": 0.12755816251841728,
+        "observed": 0.134765625,
+        "absolute_difference": 0.007207462481582716,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "target": 0.1294618399153814,
+        "observed": 0.1357421875,
+        "absolute_difference": 0.006280347584618595,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "target": 0.1271544415790645,
+        "observed": 0.1318359375,
+        "absolute_difference": 0.004681495920935502,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          32,
+          33,
+          34,
+          35
+        ],
+        "target": 0.128299913988528,
+        "observed": 0.1552734375,
+        "absolute_difference": 0.026973523511472003,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          36,
+          37,
+          38,
+          39
+        ],
+        "target": 0.1292551290194869,
+        "observed": 0.15625,
+        "absolute_difference": 0.02699487098051309,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          40,
+          41,
+          42,
+          43
+        ],
+        "target": 0.12903089991710864,
+        "observed": 0.146484375,
+        "absolute_difference": 0.017453475082891357,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          44,
+          45,
+          46,
+          47
+        ],
+        "target": 0.1294396140841917,
+        "observed": 0.1435546875,
+        "absolute_difference": 0.01411507341580831,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "target": 0.12909754735297796,
+        "observed": 0.1572265625,
+        "absolute_difference": 0.02812901514702204,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          52,
+          53,
+          54,
+          55
+        ],
+        "target": 0.1284055207075316,
+        "observed": 0.1552734375,
+        "absolute_difference": 0.026867916792468388,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "target": 0.1290263008767253,
+        "observed": 0.1484375,
+        "absolute_difference": 0.019411199123274714,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          60,
+          61,
+          62,
+          63
+        ],
+        "target": 0.12583853767522749,
+        "observed": 0.158203125,
+        "absolute_difference": 0.032364587324772515,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          64,
+          65,
+          66,
+          67
+        ],
+        "target": 0.12692721957620248,
+        "observed": 0.173828125,
+        "absolute_difference": 0.04690090542379752,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          68,
+          69,
+          70,
+          71
+        ],
+        "target": 0.13101064089078704,
+        "observed": 0.15625,
+        "absolute_difference": 0.02523935910921296,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          72,
+          73,
+          74,
+          75
+        ],
+        "target": 0.12777866650675745,
+        "observed": 0.1630859375,
+        "absolute_difference": 0.035307270993242545,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          76,
+          77,
+          78,
+          79
+        ],
+        "target": 0.1275800344665271,
+        "observed": 0.1494140625,
+        "absolute_difference": 0.021834028033472896,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          80,
+          81,
+          82,
+          83
+        ],
+        "target": 0.12725157290675992,
+        "observed": 0.1953125,
+        "absolute_difference": 0.06806092709324008,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          84,
+          85,
+          86,
+          87
+        ],
+        "target": 0.12769840816955597,
+        "observed": 0.1748046875,
+        "absolute_difference": 0.047106279330444034,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          88,
+          89,
+          90,
+          91
+        ],
+        "target": 0.12834693756533283,
+        "observed": 0.1826171875,
+        "absolute_difference": 0.05427024993466717,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          92,
+          93,
+          94,
+          95
+        ],
+        "target": 0.12721219137859668,
+        "observed": 0.162109375,
+        "absolute_difference": 0.034897183621403316,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "no_click_subset",
+        "modes": [
+          96,
+          97,
+          98,
+          99
+        ],
+        "target": 0.13023403893821234,
+        "observed": 0.2021484375,
+        "absolute_difference": 0.07191439856178766,
+        "tv_lower": 0.0
+      },
+      {
+        "kind": "normalized_total_clicks",
+        "normalization": 100,
+        "target": 0.40479559823837646,
+        "observed": 0.378876953125,
+        "absolute_difference": 0.025918645113376472,
+        "tv_lower": 0.0
+      }
+    ],
+    "numerical_failures": [],
+    "scope": "necessary bounded-observable tests; passing does not certify the full law",
+    "output_space": "binary_patterns_plus_failure",
+    "failure_symbol_observable_value": 0.0,
+    "strict_floating_point_certificate": false
+  },
+  "sampling_protocol": {
+    "requested_draws": 1024,
+    "target_and_sampler_fixed_before_samples": true,
+    "iid_attempts": true,
+    "first_batch_no_retry": true,
+    "no_postselection": true,
+    "density_is_unconditional_path_mass": true,
+    "source": "iteration5_frozen_first_batch",
+    "unseen_failure_mass_assumed_zero": false,
+    "randomness_qualification": "iid mathematical model; finite PRNG streams are not independent random real numbers"
+  },
+  "strict_floating_point_certificate": false,
+  "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+  "evidence_trust_boundary": "A provided full law or provenance hash is evidence to verify, not cryptographic proof of an arbitrary sampler's honesty; implementation-equivalence checks and sample consistency remain required",
+  "identity_scope": "agreement with the specified target, not existence of some Gaussian model that could fit the data",
+  "reasons": [
+    "Passing witnesses or obtaining an upper bound above tolerance does not decide full-distribution agreement"
+  ],
+  "samples_sha256": "67977e0e371927d63b193eb16a302a18df1e29561b44fb720441363bf8e82c92",
+  "n_observed": 1024,
+  "density_check": {
+    "distinct_patterns": 1024,
+    "observed_distinct_mass": 1.181470860882421e-24,
+    "normalization_scope": "necessary partial-mass check only; total law follows from the declared output-process construction"
+  },
+  "statistical_protocol_valid": true,
+  "statistical_protocol_issues": [],
+  "decision_basis": "no_global_acceptance_or_rejection_bound",
+  "elapsed_seconds": 0.028565990000060992,
+  "native_provenance": {
+    "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+    "build_cache_key": "131c28526865f9f25d0c9d2464a7dc0be5b8c3eae098ee840a35a7684c4b2a88",
+    "build_metadata_matches_binary": true,
+    "covariance_sha256": "4d1de0d49c503b20c1b2795e19bcc7e68f7aedef56b1df0c6b52ed3c862b2c94",
+    "selector": "click_influence",
+    "k": 4,
+    "vacuum_kernel": "product",
+    "seed": 7120608,
+    "sample_count": 1024,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "uniform_source": "mt19937_64 upper 53 bits / 2^53",
+    "sample_log_probability_semantics": "Natural logarithm of the product of computed chosen-branch conditional probabilities under ideal continuous uniforms; not a finite PRNG-state law. Computed during sampling, never from a target distribution.",
+    "uniforms_sha256": null,
+    "binding_scope": "Traceability to the declared covariance and executable/selector/kernel; not cryptographic verification of implementation correctness"
+  }
+}

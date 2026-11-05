@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "tests_run": 19,
+  "tests_passed": 19,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "unittest_seconds": 4.923,
+  "archived_utc": "2026-11-05T03:04:44.286913+00:00",
+  "scope": "Independent reference algebra and native kernel fixtures; no formal quality or timing panel",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_coherent_core_independent.py",
+    "-v"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONPATH": "src",
+    "GBSLAB_COHERENT_CORE_EXECUTABLE": "/workspace/scratch/7ca85676bed2/deziroGBS-iteration8/.cache/coherent-core-native/coherent_core_sampler"
+  },
+  "source_hashes": {
+    "experiments/iteration10_reference.py": "fa90d4edb1426de93ee75ff5ca11f9f0161ff4a5afae49032ead609be79d6f29",
+    "tests/test_coherent_core_independent.py": "257fecdf606f4f0fbc406847d8f5559233b817af3b247b988cfcf2a0afc0f7dd",
+    "experiments/coherent_core_sampler.cpp": "2200a4c70a5fae77b9e73a06ac935bd7396bd015a892f82cdcd2a7bdc3f7710d",
+    "experiments/build_coherent_core_sampler.py": "b6a37c45b4604a93b771630b4bf0161f49ab5a9637001443d0ac4eee5934afe3",
+    "src/gbslab/coherent_core.py": "dece7c45bc38addf64a96c951b2df5182d142ad8cfb46595cb70bfb9f333171d"
+  },
+  "executable_sha256": "f6a9f7c8447a73d07485314c9c1ebd8ea0b1a09383e5dcbfde6d2eb4c794aac2",
+  "build_json_sha256": "341e4825fad8d233221c9ce0660817d15b96be5b9402af4339d13d0dd6f519e5",
+  "test_log_sha256": "4e3d9c919f990c923dc11d15766da47ed183ca979ce8b4133e41d5d55d99e993",
+  "native_executable_unchanged_during_tests": true,
+  "development_gh_check": {
+    "modes": 2,
+    "seed": 101105,
+    "squeezing": 0.4,
+    "loss": 0.4,
+    "cutoff": 4,
+    "orders": [
+      8,
+      14
+    ],
+    "max_abs_difference": 2.5127122604828855e-11,
+    "threshold": 2e-11,
+    "passed": false,
+    "resolution": "Fixed orders12/20/28 before any formal panel; no tolerance relaxation"
+  },
+  "outward_rounded_certificate": false
+}

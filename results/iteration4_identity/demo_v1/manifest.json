@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T05:46:16.501609+00:00",
+  "confidence_plan": {
+    "comparison_ids": [
+      "full_tmsv",
+      "iid_tmsv",
+      "matched_means_impostor",
+      "witness_only_tmsv",
+      "unresolved_target",
+      "wrong_detector",
+      "independent_fock",
+      "native_complete"
+    ],
+    "planned_comparisons": 8,
+    "familywise_alpha": 0.05,
+    "familywise_nominal_confidence": 0.95,
+    "per_comparison_alpha": 0.00625,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "1cfa47c54ee032e471c7fec194db204ce5248a7f7a35652d7718c4d3ae0d104b"
+  },
+  "sources": [
+    {
+      "source": "experiments/validate_gbs_identity.py",
+      "snapshot": "source_snapshot/validate_gbs_identity.py",
+      "sha256": "26ce1a81ccbefafb72bddfacf991fe8b4c21cfe8b30b5911c5016507eda5604f"
+    },
+    {
+      "source": "src/gbslab/gbs_identity.py",
+      "snapshot": "source_snapshot/gbs_identity.py",
+      "sha256": "d7390397b6236bfe68c95fdbb6114da4796ca377e9801532112deea3e4087d47"
+    },
+    {
+      "source": "src/gbslab/cpp_click.py",
+      "snapshot": "source_snapshot/cpp_click.py",
+      "sha256": "35e1932cb7afd9b8ab6fc2b45ae0e5f1ce4ca591cc3b03477fea99fa19c160b8"
+    },
+    {
+      "source": "src/gbslab/exact.py",
+      "snapshot": "source_snapshot/exact.py",
+      "sha256": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff"
+    },
+    {
+      "source": "src/gbslab/schur_memory.py",
+      "snapshot": "source_snapshot/schur_memory.py",
+      "sha256": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227"
+    },
+    {
+      "source": "src/gbslab/tv_validation.py",
+      "snapshot": "source_snapshot/tv_validation.py",
+      "sha256": "3b04843f380df8e647466b945a8c3cd38aae9b6056313bd3beaa89159c9498b3"
+    },
+    {
+      "source": "src/gbslab/fock.py",
+      "snapshot": "source_snapshot/fock.py",
+      "sha256": "64694710a3ed2e22bde884d3144781d7c9720cd094b37079ae67768aa536a17c"
+    },
+    {
+      "source": "src/gbslab/gaussian.py",
+      "snapshot": "source_snapshot/gaussian.py",
+      "sha256": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406"
+    },
+    {
+      "source": "src/gbslab/paired_stress.py",
+      "snapshot": "source_snapshot/paired_stress.py",
+      "sha256": "4290628ad327b59eca23651feedbd7e50ec390b62a5d21ce3c541cb8518e3da8"
+    }
+  ],
+  "cases": [
+    {
+      "case": "full_tmsv",
+      "decision": "accepted_within_tolerance_conditional",
+      "expected_decision": "accepted_within_tolerance_conditional",
+      "evidence_scope": "full_distribution",
+      "input": "full_tmsv.npz",
+      "input_sha256": "c7ece228a2605d16fef981b14c0ed3faa2a1c5609e42493e8266272286d04676",
+      "assessment": "full_tmsv.json",
+      "assessment_sha256": "1454f54902f9a925bd83f430f5856c22beb30146775032cb4b0f6e163bbdf286",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": null
+    },
+    {
+      "case": "iid_tmsv",
+      "decision": "accepted_within_tolerance_conditional",
+      "expected_decision": "accepted_within_tolerance_conditional",
+      "evidence_scope": "global_tv_upper",
+      "input": "iid_tmsv.npz",
+      "input_sha256": "df108dbef77918d68e65ca7aa647918e7077090b0b7df790677fd0245bc7018d",
+      "assessment": "iid_tmsv.json",
+      "assessment_sha256": "d3341a8ae419e2bbfcd9ae168f46a15d2f1c67e7b796a34ba2b9482405832ac0",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": null
+    },
+    {
+      "case": "matched_means_impostor",
+      "decision": "rejected",
+      "expected_decision": "rejected",
+      "evidence_scope": "global_tv_upper",
+      "input": "matched_means_impostor.npz",
+      "input_sha256": "2b37564fc6333a19f74d6b32f091f80e3b149708c1e4214a874bb232c25acd91",
+      "assessment": "matched_means_impostor.json",
+      "assessment_sha256": "e0b47921f23c55b5d0d3a7865de7cdcdd91779f7aa281b2beaef49223fd8992a",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": "Independent thermal clicks are themselves a different Gaussian target. Rejection concerns the specified correlated TMSV target; single-mode theoretical means match exactly."
+    },
+    {
+      "case": "witness_only_tmsv",
+      "decision": "insufficient_evidence",
+      "expected_decision": "insufficient_evidence",
+      "evidence_scope": "witnesses_only",
+      "input": "witness_only_tmsv.npz",
+      "input_sha256": "1620fc1ca26735b2e172b1786c0e659acf6cd680c33df2b586fc4d4a254bd967",
+      "assessment": "witness_only_tmsv.json",
+      "assessment_sha256": "1bf5b71ca2065f91cb1ec6a8be11f6f67fe09cfa2780ef314399e8fd9343ec77",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": null
+    },
+    {
+      "case": "unresolved_target",
+      "decision": "insufficient_evidence",
+      "expected_decision": "insufficient_evidence",
+      "evidence_scope": "global_tv_upper",
+      "input": "unresolved_target.npz",
+      "input_sha256": "3de4eca37971a1e1c6285eec3d1d86ba34d0c1a8abb8cf3cad879314fca5e416",
+      "assessment": "unresolved_target.json",
+      "assessment_sha256": "4d928aa6f475e38aaae6862395ef5965875011cc99828635857d397a5f8d8e5d",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": null
+    },
+    {
+      "case": "wrong_detector",
+      "decision": "out_of_scope",
+      "expected_decision": "out_of_scope",
+      "evidence_scope": "none",
+      "input": "wrong_detector.npz",
+      "input_sha256": "0ea249c93371c0f8b5e7961b1ba169321f57cdce4c3441af11c6f1898359effe",
+      "assessment": "wrong_detector.json",
+      "assessment_sha256": "74b0f5df38a0539448b088a7d849f3b3de10b4121d11e9a25aee101407641505",
+      "covariance_sha256": "909d40ff914d1cfac37b275e6275b173ad90ff4e8e946de90edec5a7eecbf1a6",
+      "notes": "PNR GBS is not declared invalid; it is outside the threshold evaluator."
+    },
+    {
+      "case": "independent_fock",
+      "decision": "accepted_within_tolerance_conditional",
+      "expected_decision": "accepted_within_tolerance_conditional",
+      "evidence_scope": "full_distribution",
+      "input": "independent_fock.npz",
+      "input_sha256": "899e08959d125529f2330118b72aee1aac165320d8e6255a7dff36ef89f91389",
+      "assessment": "independent_fock.json",
+      "assessment_sha256": "8d771a67fe3eb92e5a881b48338cff27bbb8ef5bdbf86e04c3c6aa87a8328e99",
+      "covariance_sha256": "a0e56bc875af5536fa73a15af70becfa35993e2f24f895affc9274c2a072703b",
+      "notes": null
+    },
+    {
+      "case": "native_complete",
+      "decision": "accepted_within_tolerance_conditional",
+      "expected_decision": "accepted_within_tolerance_conditional",
+      "evidence_scope": "full_distribution",
+      "input": "native_complete.npz",
+      "input_sha256": "7e072cc3ad36ba204f4f47c5a79bae621d470bb97a61ece3e1a7b6748b4ef3ee",
+      "assessment": "native_complete.json",
+      "assessment_sha256": "fcb78ff62f2bbc5eb596abae8087dd3d72cde6bfe059dbde2a6dc3a825272034",
+      "covariance_sha256": "96a03497b66c3a1d6bd22e9eb91d5e7b97f40d7d6d94b9ae05107c722214642c",
+      "notes": null
+    }
+  ],
+  "completed_utc": "2026-11-04T05:46:16.560969+00:00",
+  "completed_cases": 8,
+  "planned_cases": 8,
+  "native_demo_skipped": false,
+  "numpy": "2.3.5"
+}

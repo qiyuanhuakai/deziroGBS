@@ -1,0 +1,69 @@
+{
+  "method": "source inspection plus exact container payload arithmetic; no sampling pilot",
+  "precision": "float64",
+  "real_precision": 2,
+  "threads": 1,
+  "simd_lanes": 8,
+  "source_hashes": {
+    "third_party/FrugalGBS/include/fgbs/core/type_utils.hpp": "e101dbb2283b20af44a09c0aca913d844729decdc034ea8266bf165e3b9d5ee2",
+    "third_party/FrugalGBS/include/fgbs/core/structs.hpp": "7f5e4e89fafcaa4b89c9b8e3b4792917b5d6738bd34d3008e16966536ed51443",
+    "third_party/FrugalGBS/include/fgbs/layout.hpp": "2e7afdc1ada8633557d7ddd448ed79cef0dd3b26b2e38a09d4380ef91f31adb7",
+    "third_party/FrugalGBS/include/fgbs/data.hpp": "9583a776af388ddfd3fef3adbae4af806499748adca11823bb3aa45e4cbce74e",
+    "third_party/FrugalGBS/include/fgbs/core/correlator_utils.hpp": "7c200d6cc1cd53c24e0aa19985f094a3dd40f27701f0750909b06f12c5516f2f",
+    "third_party/FrugalGBS/include/fgbs/cpu/cpu_cumulants.hpp": "96f1bba3e30056af7813203e8999c5bca14db4466ee7e033aa7b617f85d52cfe",
+    "third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp": "734f6c32dbfd93e2b78fd2f8d781d2c5dac5f548a1cd3d2be3270232777bf151",
+    "third_party/FrugalGBS/src/fgbs/layout.cpp": "dfd0654dc1efd927733d7e8fc2cc88220756ffb9110d965afa0587d3d54d4a16"
+  },
+  "cases": [
+    {
+      "modes": 64,
+      "cutoff": 5,
+      "layout_entries": 8303633,
+      "bitstring_layout_bytes": 116250862,
+      "target_payload_bytes": 66429576,
+      "trace_workspace_bytes": 5591040,
+      "persistent_payload_plus_one_trace_workspace_bytes": 188271478,
+      "is_peak_rss_estimate": false,
+      "excludes": "target-construction temporaries, allocator overhead, cumulant layout, samples, serialization",
+      "extra_target_correlator_bytes": 66429064,
+      "target_stage_large_vector_payload_bytes": 249108990
+    },
+    {
+      "modes": 100,
+      "cutoff": 5,
+      "layout_entries": 79375496,
+      "bitstring_layout_bytes": 1746260912,
+      "target_payload_bytes": 635004768,
+      "trace_workspace_bytes": 21331200,
+      "persistent_payload_plus_one_trace_workspace_bytes": 2402596880,
+      "is_peak_rss_estimate": false,
+      "excludes": "target-construction temporaries, allocator overhead, cumulant layout, samples, serialization",
+      "extra_target_correlator_bytes": 635003968,
+      "target_stage_large_vector_payload_bytes": 3016268848
+    },
+    {
+      "modes": 144,
+      "cutoff": 5,
+      "layout_entries": 498685189,
+      "bitstring_layout_bytes": 12965814914,
+      "target_payload_bytes": 3989482664,
+      "trace_workspace_bytes": 63697920,
+      "persistent_payload_plus_one_trace_workspace_bytes": 17018995498,
+      "is_peak_rss_estimate": false,
+      "excludes": "target-construction temporaries, allocator overhead, cumulant layout, samples, serialization",
+      "extra_target_correlator_bytes": 3989481512,
+      "target_stage_large_vector_payload_bytes": 20944777938
+    }
+  ],
+  "observed_cgroup_memory_max_bytes": 8589934592,
+  "observed_cgroup_memory_current_bytes": 785211392,
+  "qualifications": [
+    "Payload calculation is not an allocator or peak-RSS guarantee.",
+    "Cumulant target construction holds correlator and cumulant vectors simultaneously.",
+    "Remaining correlator temporaries are matrices at most10x10 and depth at most5 per thread for K5.",
+    "Cumulant partition layout depends on K only, not the number of mode subsets.",
+    "No O(L^2) allocation found in the inspected CPU source path.",
+    "144-mode K5 is not run and exceeds the observed memory limit by explicit payload alone.",
+    "100-mode K5 is reserved for the separately authorized first-batch experiment; do not retry or reduce K on failure."
+  ]
+}

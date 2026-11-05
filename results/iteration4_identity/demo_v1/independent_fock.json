@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "decision": "accepted_within_tolerance_conditional",
+  "evidence_scope": "full_distribution",
+  "epsilon": 1e-05,
+  "confidence_plan": {
+    "comparison_ids": [
+      "full_tmsv",
+      "iid_tmsv",
+      "matched_means_impostor",
+      "witness_only_tmsv",
+      "unresolved_target",
+      "wrong_detector",
+      "independent_fock",
+      "native_complete"
+    ],
+    "planned_comparisons": 8,
+    "familywise_alpha": 0.05,
+    "familywise_nominal_confidence": 0.95,
+    "per_comparison_alpha": 0.00625,
+    "channel_split": {
+      "global_tv_upper": 0.5,
+      "simultaneous_witnesses": 0.5
+    },
+    "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+    "plan_sha256": "1cfa47c54ee032e471c7fec194db204ce5248a7f7a35652d7718c4d3ae0d104b",
+    "comparison_id": "independent_fock",
+    "alpha_global_tv": 0.003125,
+    "alpha_witnesses": 0.003125
+  },
+  "model_check": {
+    "valid": true,
+    "in_scope": true,
+    "minimum_uncertainty_eigenvalue": 0.02488772798157284,
+    "physicality_is_distribution_validation": false,
+    "resource_max_modes": 256
+  },
+  "target": {
+    "target_id": null,
+    "detector_model": "threshold",
+    "state_model": "zero_mean_gaussian",
+    "quadrature_order": "xxpp",
+    "hbar": 2,
+    "covariance_convention": "xxpp;hbar=2;vacuum=I",
+    "modes": 2,
+    "covariance_sha256": "a0e56bc875af5536fa73a15af70becfa35993e2f24f895affc9274c2a072703b",
+    "mean_photons": 0.13397823979306311
+  },
+  "full_law": {
+    "tv": 7.355697041223908e-08,
+    "within_tolerance": true,
+    "patterns": 4,
+    "epsilon": 1e-05,
+    "candidate_normalization": {
+      "supplied_mass": 1.0,
+      "normalization_l1_change": 0.0
+    },
+    "target_diagnostics": {
+      "determinant_evaluations": 3,
+      "marginal_evaluations": 1,
+      "negative_entries_clipped": 0,
+      "largest_negative_probability": 0.0,
+      "largest_normalization_error": 0.0,
+      "largest_l1_numerical_correction": 0.0,
+      "vacuum_cache_hits": 1,
+      "vacuum_cache_evictions": 0,
+      "vacuum_cache_peak_entries": 4,
+      "vacuum_cache_entries": 4,
+      "vacuum_cache_size_limit": 8192,
+      "marginal_cache_entries": 2,
+      "marginal_cache_bytes": 40
+    },
+    "scope": "all bitstrings, numerically enumerated; complete provided Q has no declared failure mass",
+    "strict_floating_point_certificate": false
+  },
+  "global_tv": null,
+  "witnesses": null,
+  "sampling_protocol": null,
+  "strict_floating_point_certificate": false,
+  "qualification": "Gaussian probabilities and the confidence arithmetic use guarded floating point, not outward-rounded intervals. Statistical statements assume a target and sampler fixed before validation, iid attempts under the random number model, unconditional path densities, and a first fixed-size batch with no retries, filtering, or postselection.",
+  "evidence_trust_boundary": "A provided full law or provenance hash is evidence to verify, not cryptographic proof of an arbitrary sampler's honesty; implementation-equivalence checks and sample consistency remain required",
+  "identity_scope": "agreement with the specified target, not existence of some Gaussian model that could fit the data",
+  "reasons": [
+    "Full numerical TV is within the preset tolerance"
+  ],
+  "decision_basis": "complete_numerical_law",
+  "elapsed_seconds": 0.0008915840007830411,
+  "independent_fock_reference": {
+    "omitted_mass": 7.838550186711757e-08,
+    "retained_mass": 0.9999999216144981,
+    "max_photons": 12,
+    "states_enumerated": 49,
+    "method": "creation-operator amplitude recurrence, loss thinning, and threshold aggregation; no covariance determinant oracle"
+  }
+}

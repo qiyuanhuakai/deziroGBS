@@ -1,0 +1,64 @@
+{
+  "config": {
+    "name": "phase2_discovery_k3_control",
+    "modes": [
+      10
+    ],
+    "topologies": [
+      "haar",
+      "local2",
+      "local4"
+    ],
+    "squeezing": [
+      0.4,
+      0.8
+    ],
+    "transmissivity": [
+      0.3,
+      0.7,
+      1.0
+    ],
+    "profiles": [
+      "uniform"
+    ],
+    "seeds": [
+      4101,
+      4102
+    ],
+    "samples_per_method": 128,
+    "methods": [
+      {
+        "strategy": "schur_recent",
+        "k": 3
+      },
+      {
+        "strategy": "schur_pairwise",
+        "k": 3
+      }
+    ],
+    "purpose": "Post-discovery equal-click-budget controls; not a new held-out selector tuning run."
+  },
+  "config_sha256": "f73b524b87c2273f81517589c08cb35392041c6e9145322b3d07c79fadcb1964",
+  "source_sha256": "0621ac4b2a3510a94e30198ab2dc4f995e77f4dddadac872567419cc7e543978",
+  "started_utc": "2026-11-04T02:46:33.224022+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "notes": [
+    "Fresh candidate oracle, sampling before dense evaluation.",
+    "Dense TV/KL and prefix diagnostics are evaluation-only.",
+    "Sample timing includes lazy selection; fit-only timings are insufficient.",
+    "Profiles/parameters share interferometers; no iid case-population inference."
+  ],
+  "status": "complete",
+  "completed_utc": "2026-11-04T02:46:58.447077+00:00",
+  "elapsed_seconds": 25.22266797300017,
+  "cases": 36,
+  "successful_rows": 72,
+  "failed_rows": 0
+}

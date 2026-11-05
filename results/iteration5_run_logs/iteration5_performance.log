@@ -1,0 +1,69 @@
+{"completed": "m8_lossy", "samples": 128, "rows": 9, "failures": 0}
+{"completed": "m8_lossy", "samples": 8192, "rows": 18, "failures": 0}
+{"completed": "m8_bright", "samples": 128, "rows": 27, "failures": 0}
+{"completed": "m8_bright", "samples": 8192, "rows": 36, "failures": 0}
+{"completed": "m12_lossy", "samples": 128, "rows": 45, "failures": 0}
+{"completed": "m12_lossy", "samples": 8192, "rows": 54, "failures": 0}
+{"completed": "m12_bright", "samples": 128, "rows": 63, "failures": 0}
+{"completed": "m12_bright", "samples": 8192, "rows": 72, "failures": 0}
+{"completed": "m16_lossy", "samples": 128, "rows": 78, "failures": 0}
+{"completed": "m16_lossy", "samples": 8192, "rows": 84, "failures": 0}
+{"completed": "m16_bright", "samples": 128, "rows": 90, "failures": 0}
+{"completed": "m16_bright", "samples": 8192, "rows": 96, "failures": 0}
+{"completed": "m32_lossy", "samples": 128, "rows": 102, "failures": 0}
+{"completed": "m32_lossy", "samples": 2048, "rows": 108, "failures": 0}
+{"completed": "m32_bright", "samples": 128, "rows": 114, "failures": 0}
+{"completed": "m32_bright", "samples": 2048, "rows": 120, "failures": 0}
+{"completed": "m64_lossy", "samples": 128, "rows": 126, "failures": 0}
+{"completed": "m64_lossy", "samples": 1024, "rows": 132, "failures": 0}
+{"completed": "m64_bright", "samples": 128, "rows": 138, "failures": 0}
+{"completed": "m64_bright", "samples": 1024, "rows": 144, "failures": 0}
+{"completed": "m100_lossy", "samples": 64, "rows": 150, "failures": 0}
+{"completed": "m100_lossy", "samples": 512, "rows": 156, "failures": 0}
+{"completed": "m100_bright", "samples": 64, "rows": 162, "failures": 0}
+{"completed": "m100_bright", "samples": 512, "rows": 168, "failures": 0}
+{"completed": "m144_lossy", "samples": 64, "rows": 174, "failures": 0}
+{"completed": "m144_lossy", "samples": 256, "rows": 180, "failures": 0}
+{"completed": "m144_bright", "samples": 64, "rows": 186, "failures": 0}
+{"completed": "m144_bright", "samples": 256, "rows": 192, "failures": 0}
+{"completed": "m256_lossy", "samples": 64, "rows": 198, "failures": 0}
+{"completed": "m256_lossy", "samples": 256, "rows": 204, "failures": 0}
+{"completed": "m256_bright", "samples": 64, "rows": 210, "failures": 0}
+{"completed": "m256_bright", "samples": 256, "rows": 216, "failures": 0}
+{
+  "status": "complete",
+  "started_utc": "2026-11-04T15:01:50.407091+00:00",
+  "config_sha256": "8c0e7cc3d3234381dec283deb6a2a980abec0b6f18f1d0fe818aeb7006be4ebb",
+  "threads": 1,
+  "source_hashes": {
+    "click_sampler.cpp": "c74c377e81137786cfdd2ae02c66967f3c7920393adf067ab9b3c4348a7fbd28",
+    "cpp_click.py": "675b92a67aa4bb87962b1d6b0cffc8de3465fa0e6dd4601f69856df00fec484d",
+    "frugal_scaling.py": "1c37c2bdbcfda3d23c61d7116fd244b597f8156f0655233049d3d695ada323d4",
+    "iteration5_benchmark.py": "1ff1a62f58046f6bb241da39d60dea0ea59a31399dbf0ef3ee03fb8f17368c71"
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "timing_scope": "native setup plus complete timed sample batch including all cache allocation, insertion and cold misses; sampling-only is also reported",
+  "claim_scope": "Cache implementation speed at unchanged candidate law; only small-mode Frugal cost comparison. No equal-quality or quantum-speedup claim from timing alone.",
+  "dedicated_host": false,
+  "prewarming": false,
+  "rows": 216,
+  "failures": 0,
+  "elapsed_seconds": 380.7857477340003,
+  "completed_utc": "2026-11-04T15:08:11.194729+00:00"
+}

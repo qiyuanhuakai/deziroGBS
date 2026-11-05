@@ -1,0 +1,582 @@
+{
+  "status": "complete",
+  "phase": "cold",
+  "started_utc": "2026-11-04T04:08:15.356850+00:00",
+  "cpp_binary": {
+    "executable": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/click-native/click_sampler",
+    "sha256": "3e63591bc1f2b133864da1482f75091a1dd816a762c0cd32203550decbc2ca46",
+    "build": {
+      "command": [
+        "/usr/bin/c++",
+        "-O3",
+        "-std=c++20",
+        "-ffp-contract=off",
+        "-DEIGEN_DONT_PARALLELIZE",
+        "-march=native",
+        "-I",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/click_sampler.cpp",
+        "-o",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/click-native/click_sampler.building"
+      ],
+      "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+      "source_sha256": "bf4c1bb6cea479b64aa95e2711429e955aaefa53cc0a9765cbe79c06c8ffa1c2",
+      "builder_sha256": "fce7e6c534c7eb015f12e42bf08719f5063b3e675a31f411536724712e466932",
+      "dependencies": {
+        "eigen": {
+          "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+          "files": 530,
+          "bytes": 8669110
+        }
+      },
+      "cache_key": "2de15a48eefcef4f8f1e10558b320bb11310667b0524aefb56cb90238c77cd9c",
+      "flags": [
+        "-O3",
+        "-std=c++20",
+        "-ffp-contract=off",
+        "-DEIGEN_DONT_PARALLELIZE",
+        "-march=native"
+      ],
+      "native": true,
+      "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "executable_sha256": "3e63591bc1f2b133864da1482f75091a1dd816a762c0cd32203550decbc2ca46",
+      "build_seconds": 20.89455722799994,
+      "implementation": "native C++ retained-click sampler with Gaussian zero updates",
+      "threads": 1,
+      "precision": "double; long-double inclusion-exclusion sums",
+      "maximum_modes": 256,
+      "maximum_click_budget": 8,
+      "maximum_enumeration_modes": 14,
+      "pairwise_score_policy": {
+        "version": 3,
+        "structural_zero": "exact zero original 2x2 covariance crossblock gives MI=0",
+        "precision": "explicit long-double scalar 2x2 factors and whitening",
+        "delta": "qa*qb*expm1(-0.5*log1p(-(sum(T^2)-det(T)^2)))",
+        "mutual_information": "sum product_cell*h(signed_delta/product_cell)",
+        "h": "(1+x)*log1p(x)-x; h(-1)=1",
+        "h_series_abs_x_max": 0.001,
+        "h_series_powers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "probability_tolerance": 2e-10,
+        "maximum_l1_correction": 2e-09,
+        "score_floor": null,
+        "tie_break": "physical mode index"
+      }
+    },
+    "validation_path": "results/cpp_validation/native_stable_v3.json",
+    "validation_sha256": "6359c2367b1081d1d0cb98d90e8d63d42a2ea3f2435700f47443bc373c7b3d58"
+  },
+  "frugal_binary": {
+    "executable": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/frugal_sampling_adapter",
+    "sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+    "build": {
+      "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+      "native": true,
+      "modes": [
+        8,
+        10,
+        12,
+        16,
+        32,
+        64
+      ],
+      "flags": [
+        "-O3",
+        "-std=c++20",
+        "-ffp-contract=off",
+        "-fopenmp",
+        "-DFGBS_GPU_ENABLED=0",
+        "-march=native"
+      ],
+      "command": [
+        "/usr/bin/c++",
+        "-O3",
+        "-std=c++20",
+        "-ffp-contract=off",
+        "-fopenmp",
+        "-DFGBS_GPU_ENABLED=0",
+        "-march=native",
+        "-I",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/generated",
+        "-I",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/include",
+        "-I",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+        "-I",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/xsimd/include",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/frugal_sampling_adapter.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/correlator_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/cumulant_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/file_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/matrix_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/mmpy_format.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/result.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/string_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/thread_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/core/time_utils.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/layout.cpp",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/third_party/FrugalGBS/src/fgbs/cpu/cpu_sampler.cpp",
+        "-o",
+        "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/frugal-native/frugal_sampling_adapter.building"
+      ],
+      "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+      "dependencies": {
+        "eigen": {
+          "sha256": "dc70ce0aa482936d7dece6e97e5cbf9c271e7778dfeae8958b754e27d6be822b",
+          "files": 530,
+          "bytes": 8669110
+        },
+        "xsimd": {
+          "sha256": "acc75980f3a43d38d5ae6ec2bd07b29c48fc16ba367c29110e500680f9f594c8",
+          "files": 120,
+          "bytes": 2189803
+        }
+      },
+      "cache_key": "09258f1cc04217fde37f13a626432b61b51b3d8a1ea295a339663c629dcfe788",
+      "executable_sha256": "3131fc80e293eb748032a7e8d7c27b7e4f8a53ecfe78be306e7ffa632170e1a0",
+      "build_seconds": 22.381562290999682,
+      "precision": "float64",
+      "full_law_max_modes": 14,
+      "sampling_api": "unmodified official generate_samples",
+      "fast_math": false
+    },
+    "validation_path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_frugal_validation/validation.json",
+    "validation_sha256": "4857f5a66b5c4c3dacafbf67d6472d880abdaaf8c428e932e17dafd5939c8f5d"
+  },
+  "planned_cases": 27,
+  "methods": [
+    {
+      "method": "cpp_pairwise",
+      "k": 4
+    },
+    {
+      "method": "cpp_click_influence",
+      "k": 4
+    },
+    {
+      "method": "frugal_native",
+      "K": 5
+    }
+  ],
+  "pilot_overrides": {
+    "case_limit": null,
+    "samples": null,
+    "repeats": null
+  },
+  "timing_scope": "Single-thread native C++ setup and draws; wrapper validation/I/O separately measured; full Q only after timed sampling",
+  "wrapper_timing_scope": "Individual wrappers have different internal timer/validation scopes. Harness_call_seconds times each complete wrapper invocation with the same outer clock. Cold repeat0 includes post-sampling full-Q enumeration; exclude it from sampling-only harness latency. Validation instrumentation still differs, so native core times are the primary comparison.",
+  "large_quality_scope": "No full target or matched-error claim above14 modes",
+  "reference_sources": {
+    "6cb27d80dbb0f492": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/6cb27d80dbb0f492.npz",
+        "sha256": "edbe8598d03a3b10ffbc41deb9936c90d5e2177b26bd2fefc15ed85f260e96e2",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_6cb27d80dbb0f492.npz",
+        "sha256": "76b182be0ff32316a7fa23129cc553e5b876ae04a35b217ca31d4245cf8c171c",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "30c7f8dec79228c4": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/30c7f8dec79228c4.npz",
+        "sha256": "cf9c2f61f21fddebfc84cc7af32d9c40b0f2f76c311fc9123f4a5a7589b95d38",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_30c7f8dec79228c4.npz",
+        "sha256": "1f23ee9dd4e7ca66dc70c539f9766cb0d5556d3c80fdc0886ce0b93ce4966806",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "66ce38d6166576dd": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/66ce38d6166576dd.npz",
+        "sha256": "bd0c55583968e3d350dc94ebc9d1b196edd02c92953fbf8cd6a9283c1b2f25e5",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_66ce38d6166576dd.npz",
+        "sha256": "656bd593164df4443baaa4f7d70854d8cef53bbcaf308f0db2b4529e12ad153b",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "6b6ab968ca92af1a": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/6b6ab968ca92af1a.npz",
+        "sha256": "b4ffce0096f5883341fe2142fa1194b7d460355d1ff70b6c3f7796aa24515368",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_6b6ab968ca92af1a.npz",
+        "sha256": "221e90ef7fb55bbe0d7a1fdcde2784f8652d903758dd3f51e6d4b6ad1b42db02",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "3445658f5f6ad186": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/3445658f5f6ad186.npz",
+        "sha256": "1c0a4d0abe0f9455fc9499bcfb05c2c2bb4f773075a7feec38f16c9e9c854ebf",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_3445658f5f6ad186.npz",
+        "sha256": "1694ffa2b56b95380d7d5cb125bde8dcbceaae55c025271b449050506dec291f",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "61056b2fd9255bb9": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/61056b2fd9255bb9.npz",
+        "sha256": "214c628cc124080ba7b3734dc40f74c8ae0ca05b4303411b88225bf7c4861ef2",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_61056b2fd9255bb9.npz",
+        "sha256": "f31ed1e86fe36ec798b22501f397860e7f7501149924df16c56961946eafd325",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "e8d14e27ec08c56c": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/e8d14e27ec08c56c.npz",
+        "sha256": "ce49d9af2359f582b027801cafeed4b704342c2850ea26eb0c09ff3bed482c37",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_e8d14e27ec08c56c.npz",
+        "sha256": "e95f83933dae071854a6eef7a58c49af8fb1ccfba647359a9c0c557728bf6dcf",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "d9306c98bdd064f3": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/d9306c98bdd064f3.npz",
+        "sha256": "693e8162735b55d1b2d83a812efba26ee85e4c5b43c4fdb012260a09092186d8",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_d9306c98bdd064f3.npz",
+        "sha256": "dfe72f1a49b4853c16312f4af0e948e7aa062df9a69d9e6c2579f0ddafefe264",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "b2b9ae4c30d7745a": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/b2b9ae4c30d7745a.npz",
+        "sha256": "a1ccb385acacf4e959e95d3a406d67afb46d3843840355b0a78f0317ed61e95e",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_b2b9ae4c30d7745a.npz",
+        "sha256": "ab7bd677a4174e0753f9763310d24e159c4c020f728df59f94beb119ef8da362",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "3da1dce90e21feb1": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/3da1dce90e21feb1.npz",
+        "sha256": "c312ccc694730c6f69689f1fb7adcebbf1af53b4ebf6c5a3f802ffbdaae33bb4",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_3da1dce90e21feb1.npz",
+        "sha256": "196048fae99ac60f7e0c784ab71cae9c24e063d1e4e43692142417685ad177e3",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "317b2844d264918f": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/317b2844d264918f.npz",
+        "sha256": "1299a21e2c8583b98770977ec04ff3e4326582e59a0f454fb984dd08281fe04c",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_317b2844d264918f.npz",
+        "sha256": "b3cd47f30d7e18b5511d1db5534ccf9d4361a2056629bf71a9cec640d09ab960",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "03df3a69dcd002f3": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/03df3a69dcd002f3.npz",
+        "sha256": "0315d61d46cf38710729e8a8edcd322b73e766a83b23925b6c67f8de4d4a8522",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_03df3a69dcd002f3.npz",
+        "sha256": "38314433be806d30f756e54b21f753aa7535aa9e9e8660318ef5cb1734073e98",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "a71ab6f032848177": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/a71ab6f032848177.npz",
+        "sha256": "6483debc8420ef583da532717084df7ed789425a55c7fa836ed7373af20c4929",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_a71ab6f032848177.npz",
+        "sha256": "e46b061d501d5191c8fab567dcc1deab0db88b5c09dc765787625764eee960c7",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "afa34a299ca346b0": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/afa34a299ca346b0.npz",
+        "sha256": "642dc0aee21dd4f4ede16a9dc40a6b21bfe8d41a7477edeea90a697750db3078",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_afa34a299ca346b0.npz",
+        "sha256": "ea333b2c1503bdd56c6224e85000029b31b82522837b12903ac0a2e9c527e93a",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "b710263cce141760": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/b710263cce141760.npz",
+        "sha256": "e9d1dc844aee55f53492df38a6ae0b4f44dd97d3febf83cce7e4e56c03cfa71f",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_b710263cce141760.npz",
+        "sha256": "aea88dc2cc685c5bfd7c8b26497d140878b12b02ba80c065205e59ce439a83be",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "cff4485e43200629": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/cff4485e43200629.npz",
+        "sha256": "39ef55c9b064a17a3310e7ed732bd41db5e84ed181d00afec340ab15e56fb0e5",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_cff4485e43200629.npz",
+        "sha256": "6cf6ab3b2413ec9fed4ffbbe2b54c1283a486b74f2c28161c72ff3fb949e51e4",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "22c3418bd5ab4f76": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/22c3418bd5ab4f76.npz",
+        "sha256": "96e98cd992316b3a39633e24ff7428df30cd833b6e651bc4fd02546b34298b5b",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_22c3418bd5ab4f76.npz",
+        "sha256": "aaba2e57d8a798cdcc7e2ae6f94a3099a9bfa3fd96db10308a6c4a1d67855090",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "aa8205f11e479aae": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/aa8205f11e479aae.npz",
+        "sha256": "10f9ad734991269597cbd9ab5a08e2a37a8412ec845500fbc8cd3139d1c468d0",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_aa8205f11e479aae.npz",
+        "sha256": "95e585433c63c5deaf24c9d49ae85ff657f8f188d6b129966cf176ec5d2f4144",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "a6ab077cd37e9a1f": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/a6ab077cd37e9a1f.npz",
+        "sha256": "a7b0c493cd70f08cbbcad3a100f9fece9f7c6540a0d97c9dc4fe9412de4a0683",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_a6ab077cd37e9a1f.npz",
+        "sha256": "eb383ca1d26a3835b1e6ba079d33ba863e19208f88fe8e780ca265881382962c",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "e3af7adb350d6fa7": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/e3af7adb350d6fa7.npz",
+        "sha256": "9710b87214b8e940333778c598b7fd2c3c23cbacd85377e3c22ce6364fa764e9",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_e3af7adb350d6fa7.npz",
+        "sha256": "1e6e875a76ef28c5b0d718108cb6782119f9c3935d9afab568957d14f32e1414",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "8670a2147006a38a": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/8670a2147006a38a.npz",
+        "sha256": "3e0e703cc2260d408ac234155853e96eda3c5aacde77427de73665c607ec7c1e",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_8670a2147006a38a.npz",
+        "sha256": "b25825c2825333380e701c11d0a11a783783eccd0ed2b6a8308a4d4d25a029d7",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "d2601daee0737d9b": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/d2601daee0737d9b.npz",
+        "sha256": "f50883c2b13b44a47fb4a2ed1b8575bd35f8d3bcd6684188603a1d37682fe5cb",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_d2601daee0737d9b.npz",
+        "sha256": "bc44520836edc0fcb50b9dee5d5ef0bcd208a3097315df3a29e4d44dc53abe38",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "b7e6861062dd571a": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/b7e6861062dd571a.npz",
+        "sha256": "7c24749d31c791b5133a256e0ddabcc6582fd16e4665a816c1d1c52b59798f1b",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_b7e6861062dd571a.npz",
+        "sha256": "fa53fa296962c7f2c612730bea907a927455e03e5b7e2b4bae7114078c57c816",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "cbdf99aba78a9599": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/cbdf99aba78a9599.npz",
+        "sha256": "bcce50f5cb1ccb1eccf1c1cf9beb74bafed6a9a753dba41704426057265629ef",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_holdout_k4_extension/surrogates_cbdf99aba78a9599.npz",
+        "sha256": "6f9baea2661b9eeaf4b345a26015f9f7a7aea9cd19f5118871a6886374099e6e",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "73d4f80934cf605f": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/73d4f80934cf605f.npz",
+        "sha256": "5190e070967fa18b22cc60903b74a221f47111fe91f97155704f76f89394d91e",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_bright_k4_extension/surrogates_73d4f80934cf605f.npz",
+        "sha256": "eae4b86b90026eb2ad207af1060bc8099c76defb6d0919591de4d7897c914bb9",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "5ce0588ea53b1413": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/5ce0588ea53b1413.npz",
+        "sha256": "5cee2dd081a8d4c15f4bb6392ac54c0efc47ea52464b08ee9dde79983ab6592e",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_bright_k4_extension/surrogates_5ce0588ea53b1413.npz",
+        "sha256": "976c87700e2cae31beb535c6b0ccddf9074fb582f8bcf5dd6826795ea311cab4",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    },
+    "c4f3ca91e2875d23": {
+      "cpp_pairwise": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/cpp_pairwise_reference/c4f3ca91e2875d23.npz",
+        "sha256": "bba54eb91caba19cd5abf35b4153d25b7326475c43b472a7d4aa560ccb1446cb",
+        "key": "distribution",
+        "policy": "Stable Gaussian binary MI; exact structural-zero handling; physical-ID tie break"
+      },
+      "cpp_click_influence": {
+        "path": "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/results/phase2_bright_k4_extension/surrogates_c4f3ca91e2875d23.npz",
+        "sha256": "503e430c76a7bce9b5a9267a5e0c8bfba4df7b21d8b6b7d615166b70ac0ddfa7",
+        "key": "click_influence_k4",
+        "policy": "Unchanged historical click-influence rule"
+      }
+    }
+  },
+  "host": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": null
+    }
+  },
+  "completed_utc": "2026-11-04T04:08:18.778566+00:00",
+  "elapsed_seconds": 3.4197603399998115,
+  "rows": 243,
+  "failed_rows": 0
+}

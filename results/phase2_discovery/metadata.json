@@ -1,0 +1,87 @@
+{
+  "config": {
+    "name": "phase2_discovery",
+    "modes": [
+      10
+    ],
+    "topologies": [
+      "haar",
+      "local2",
+      "local4"
+    ],
+    "squeezing": [
+      0.4,
+      0.8
+    ],
+    "transmissivity": [
+      0.3,
+      0.7,
+      1.0
+    ],
+    "profiles": [
+      "uniform"
+    ],
+    "seeds": [
+      4101,
+      4102
+    ],
+    "samples_per_method": 128,
+    "methods": [
+      {
+        "strategy": "old_recent",
+        "k": 2
+      },
+      {
+        "strategy": "old_pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "schur_recent",
+        "k": 2
+      },
+      {
+        "strategy": "schur_pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "conditional_mi",
+        "k": 2
+      },
+      {
+        "strategy": "click_influence",
+        "k": 2
+      },
+      {
+        "strategy": "conditional_mi",
+        "k": 3
+      },
+      {
+        "strategy": "click_influence",
+        "k": 3
+      }
+    ]
+  },
+  "config_sha256": "08e0e0d18e54437089e8251401da7399b584e6fb9bb2556388234ff0eac32607",
+  "source_sha256": "93843e709a6d26d5c516138d3aaebb15da35697f6e2e994ce50fa650054d0154",
+  "started_utc": "2026-11-04T02:39:58.222576+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "notes": [
+    "Fresh candidate oracle, sampling before dense evaluation.",
+    "Dense TV/KL and prefix diagnostics are evaluation-only.",
+    "Sample timing includes lazy selection; fit-only timings are insufficient.",
+    "Profiles/parameters share interferometers; no iid case-population inference."
+  ],
+  "status": "complete",
+  "completed_utc": "2026-11-04T02:42:59.678613+00:00",
+  "elapsed_seconds": 181.45562218299983,
+  "cases": 36,
+  "successful_rows": 288,
+  "failed_rows": 0
+}

@@ -1,0 +1,96 @@
+{
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "/workspace/scratch/7ca85676bed2/deziroGBS/experiments/click_sampler.cpp",
+    "-o",
+    "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/click-prefix-native/click_sampler.building"
+  ],
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_sha256": "c74c377e81137786cfdd2ae02c66967f3c7920393adf067ab9b3c4348a7fbd28",
+  "builder_sha256": "5a048f5c4818d0ca8d773dddc0892ff5789855ff90170ae937dd3bffdff658cc",
+  "dependencies": {
+    "eigen": {
+      "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+      "files": 530,
+      "bytes": 8669110
+    }
+  },
+  "cache_key": "131c28526865f9f25d0c9d2464a7dc0be5b8c3eae098ee840a35a7684c4b2a88",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native"
+  ],
+  "native": true,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+  "build_seconds": 23.18053577399951,
+  "implementation": "native C++ retained-click sampler with Gaussian zero updates",
+  "threads": 1,
+  "precision": "double; long-double inclusion-exclusion sums",
+  "maximum_modes": 256,
+  "maximum_click_budget": 8,
+  "maximum_enumeration_modes": 14,
+  "vacuum_kernel_options": {
+    "default": "log",
+    "available": [
+      "log",
+      "product"
+    ],
+    "log": "exp(-sum(log(Cholesky diagonals)))",
+    "product": "reciprocal diagonal product; logarithmic fallback on a nonnormal intermediate product",
+    "sampling_guards": "unchanged; no fast-math and no score-floor policy change"
+  },
+  "sample_log_probabilities": {
+    "flag": "--record-log-probabilities",
+    "default": false,
+    "array_key": "sample_log_probabilities",
+    "meaning": "natural log of actual computed conditional chain under ideal continuous uniforms",
+    "accumulation": "long double log(p_one) or log1p(-p_one), double output",
+    "timing": "allocation and evaluation included in sampling"
+  },
+  "prefix_cache": {
+    "flag": "--prefix-cache-entries",
+    "default_entries": 0,
+    "maximum_entries": 1048576,
+    "maximum_payload_bytes": 67108864,
+    "key": "complete fixed-order measured prefix; trie local to this batch",
+    "value": "successful computed conditional, retained clicks, and child indices",
+    "state": "lazy reconstruction on first miss; replay every prior zero in original order",
+    "law": "unchanged computed conditional chain; no target-law access or smoothing",
+    "enumeration_uses_cache": false,
+    "timing": "allocation, insertion, lookup and reconstruction included in sampling"
+  },
+  "pairwise_score_policy": {
+    "version": 3,
+    "structural_zero": "exact zero original 2x2 covariance crossblock gives MI=0",
+    "precision": "explicit long-double scalar 2x2 factors and whitening",
+    "delta": "qa*qb*expm1(-0.5*log1p(-(sum(T^2)-det(T)^2)))",
+    "mutual_information": "sum product_cell*h(signed_delta/product_cell)",
+    "h": "(1+x)*log1p(x)-x; h(-1)=1",
+    "h_series_abs_x_max": 0.001,
+    "h_series_powers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "probability_tolerance": 2e-10,
+    "maximum_l1_correction": 2e-09,
+    "score_floor": null,
+    "tie_break": "physical mode index"
+  }
+}

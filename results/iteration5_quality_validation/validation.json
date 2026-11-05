@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "recorded_utc": "2026-11-04T14:58:22.221534+00:00",
+  "tests_run": 13,
+  "tests_passed": 13,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONPATH=src python -m unittest discover -s tests -p test_iteration5_quality.py -v",
+  "test_observed_runtime_seconds": 0.108,
+  "record_source": "Recorded from the observed successful unittest output; full-project verification is separate.",
+  "generation_functions_unchanged_from_37518d5": {
+    "frugal_evidence_sample": true,
+    "_sample_checkpoint_summary": true
+  },
+  "source_hashes": {
+    "experiments/iteration5_quality.py": "d23f15f8739cb776eed2f6403a4dff7b5fb56af26a9ffe63046db0182e55902d",
+    "src/gbslab/frugal_evidence.py": "2ff0a0096a3783c27c60fd8010cbb775622f238deb6a2d87a0b7b425141ec727",
+    "tests/test_iteration5_quality.py": "c1ea11dd36d2c8bb09d1868f7ba356ebe85d5cfa50ac50f365cd363d8a6e52b7",
+    "src/gbslab/marginal_witness.py": "473b1013b9a9ace7a4ac64712831fc3ff564ac29a0c4fee26265d81a401be29a",
+    "src/gbslab/gbs_identity.py": "d7390397b6236bfe68c95fdbb6114da4796ca377e9801532112deea3e4087d47",
+    "src/gbslab/jiuzhang_gap.py": "145911175e23c8d002c5d86b29eb1ffe000c7f7d1b89dcdb1800fdd135aa4593"
+  },
+  "quality_config_sha256": "60543065c0166763595f38ae9db4c3e356d0e20ac5c4c85d3cbd089138dc390c",
+  "limitations": [
+    "Regression and evidence-binding tests use unit fixtures, not this iteration's actual quality samples.",
+    "The original Frugal run was already launched; its gate identity check is separately recorded as post-launch."
+  ]
+}

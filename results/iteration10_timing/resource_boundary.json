@@ -1,0 +1,31 @@
+{
+  "modes": 64,
+  "cutoff": 6,
+  "profile": "lossy",
+  "expectation": "reject by basis resource cap before allocation; this is not a numerical failure or a replacement timing input",
+  "resources": {
+    "modes": 64,
+    "cutoff": 6,
+    "full_basis": 131115985,
+    "even_initial_basis": 120646033,
+    "all_stage_basis": 1329890705,
+    "fiber_index_entries": 8391423040,
+    "planned_major_payload_bytes": 87072514697,
+    "max_basis": 100000,
+    "max_stage_basis": 1000000,
+    "max_payload_bytes": 268435456,
+    "feasible": false,
+    "rejection_reasons": [
+      "full_basis",
+      "all_stage_basis",
+      "fiber_index_capacity",
+      "planned_payload"
+    ],
+    "memory_scope": "major numerical/index/sample containers; not allocator peak, RSS or JSON transport"
+  },
+  "preflight_rejected": true,
+  "backend_invoked": false,
+  "state_allocated": false,
+  "is_numerical_failure": false,
+  "is_replacement_timing_input": false
+}

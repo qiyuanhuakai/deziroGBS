@@ -1,0 +1,178 @@
+{
+  "schema": "gbslab.iteration7_numerical_diagnostic_plan.v1",
+  "analysis_role": "post_hoc_numerical_diagnostic",
+  "selection_reason": "Nonzero primary failure mass was observed for m10 lossy in pair_k4, chain_k4 and tree_k4; inspect all fixed m10 and m12 inputs for these three methods",
+  "case_selection_was_preregistered": false,
+  "fixed_before_diagnostic_enumeration": true,
+  "all_cases_in_fixed_m10_m12_stratum_included": true,
+  "new_samples_or_inputs": false,
+  "primary_results_replaced": false,
+  "algorithm_or_budget_tuned": false,
+  "table_oracle_is_exponential_reference": true,
+  "table_oracle_allowed_for_speed_claims": false,
+  "floating_point_certificate": false,
+  "successes_renormalized": false,
+  "interpretation": "Separate complete extended-law distances; not an additive error decomposition or replacement primary result",
+  "selector_and_tree_scope": "Identical Gaussian source, saved covariance, selector, static unconditional MI tree, tie rules, budgets and guards; event evaluator alone is replaced",
+  "frozen_utc": "2026-11-04T16:20:23.079796+00:00",
+  "primary_directory": "/workspace/scratch/7ca85676bed2/deziroGBS/results/iteration7_forest",
+  "primary_status_at_plan": "complete",
+  "primary_config_sha256": "24e5e4b8026d925438261102c13a44cf254155bbe8d3c58e9aeb3a33c8beaa99",
+  "primary_validation_sha256": "17627d24acdd505a71d4337c9fe7967a63063816a1f49dafb308acf1ed209ae2",
+  "primary_native_executable_sha256": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+  "source_hashes": {
+    "experiments/iteration7_forest.py": "5547cfd30b9b0866a74595fd2fa4b92b9eafd6df2e4b25a96b8ef99f5f6945b9",
+    "src/gbslab/positive_forest.py": "5d11d277a3b4de2318dad50a686d08dc1c5138518db30da5ae5f867ba8122c5f",
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "src/gbslab/conditional_memory.py": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c",
+    "src/gbslab/zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0",
+    "src/gbslab/schur_memory.py": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/gaussian.py": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406",
+    "src/gbslab/cpp_click.py": "675b92a67aa4bb87962b1d6b0cffc8de3465fa0e6dd4601f69856df00fec484d",
+    "tests/test_positive_forest.py": "961be3e8ac66622e5be56a81f86ead32b6be55f53359fa52715e0cb92e62b268",
+    "experiments/iteration7_numerical_diagnostic.py": "d6da3047633c6c7b6e7c8d403416d8e84eb2a81a5bb66ad4beee5b2c09cf2082"
+  },
+  "modes": [
+    10,
+    12
+  ],
+  "profiles": [
+    {
+      "name": "lossy",
+      "squeezing": 0.6,
+      "transmissivity": 0.35
+    },
+    {
+      "name": "bright",
+      "squeezing": 0.9,
+      "transmissivity": 0.65
+    },
+    {
+      "name": "stress",
+      "squeezing": 1.2,
+      "transmissivity": 0.85
+    }
+  ],
+  "methods": [
+    {
+      "id": "pair_k4",
+      "completion": "pair_block",
+      "k": 4
+    },
+    {
+      "id": "chain_k4",
+      "completion": "chain",
+      "k": 4
+    },
+    {
+      "id": "tree_k4",
+      "completion": "static_mi_tree",
+      "k": 4
+    }
+  ],
+  "fixed_case_ids": [
+    "m10_lossy_s340701",
+    "m10_bright_s340701",
+    "m10_stress_s340701",
+    "m12_lossy_s340701",
+    "m12_bright_s340701",
+    "m12_stress_s340701"
+  ],
+  "fixed_rows": [
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "tree_k4"
+    },
+    {
+      "case_id": "m10_bright_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m10_bright_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m10_bright_s340701",
+      "method": "tree_k4"
+    },
+    {
+      "case_id": "m10_stress_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m10_stress_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m10_stress_s340701",
+      "method": "tree_k4"
+    },
+    {
+      "case_id": "m12_lossy_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m12_lossy_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m12_lossy_s340701",
+      "method": "tree_k4"
+    },
+    {
+      "case_id": "m12_bright_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m12_bright_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m12_bright_s340701",
+      "method": "tree_k4"
+    },
+    {
+      "case_id": "m12_stress_s340701",
+      "method": "pair_k4"
+    },
+    {
+      "case_id": "m12_stress_s340701",
+      "method": "chain_k4"
+    },
+    {
+      "case_id": "m12_stress_s340701",
+      "method": "tree_k4"
+    }
+  ],
+  "planned_instances": 6,
+  "planned_method_evaluations": 18,
+  "observations_available_at_plan": [
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "pair_k4",
+      "failure_mass": 3.6159472984464987e-05,
+      "primary_report_sha256": "5d12dc11a36b2878f12383f6e0030e0dbf1f99630ebbad584772ad63d1be9311"
+    },
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "chain_k4",
+      "failure_mass": 9.791315575729668e-05,
+      "primary_report_sha256": "36f034ae6dcf1e02976b685b7f565f9ad47a97be4edb0559f5298bd8d85634a1"
+    },
+    {
+      "case_id": "m10_lossy_s340701",
+      "method": "tree_k4",
+      "failure_mass": 8.308112448148984e-05,
+      "primary_report_sha256": "4ab66a0038b84d304bb088b31931a11bbce498139c14365864314c8bd92c7e33"
+    }
+  ]
+}

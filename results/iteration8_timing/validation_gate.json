@@ -1,0 +1,273 @@
+{
+  "created_utc": "2026-11-05T01:40:48.870333+00:00",
+  "passed": true,
+  "tests_run": 268,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "source_hashes": {
+    "experiments/batched_forest_kernel.cpp": "37f19f146db72b87b9d46d549a640dc13ef746cf96d1b57dd9f1c660772dc984",
+    "experiments/batched_forest_kernel.h": "ab19c485daae4525a6fa20274ed2db3c4f97a56313df7a50b5d65dfc3ae9cf87",
+    "experiments/batched_forest_sampler.cpp": "eb6773cf76738ce30296bfdef2c1c42d60d84a57cf101b701349ca429dbce948",
+    "experiments/build_batched_forest.py": "78df04c106f9f6e0e8b4849500a79553866435ecff49de7328131209e7388064",
+    "experiments/build_batched_forest_sampler.py": "adece4b5cbd5422f74df8c4fa19158014bd682bc4118f689e6547561831a0a8d",
+    "experiments/build_click_sampler.py": "5a048f5c4818d0ca8d773dddc0892ff5789855ff90170ae937dd3bffdff658cc",
+    "experiments/click_sampler.cpp": "c74c377e81137786cfdd2ae02c66967f3c7920393adf067ab9b3c4348a7fbd28",
+    "experiments/iteration6_completion.py": "c8258466a1d86512120d091a86c1fa74b17abbdaf746d5d9a85b438965a84e47",
+    "experiments/iteration7_forest.py": "5547cfd30b9b0866a74595fd2fa4b92b9eafd6df2e4b25a96b8ef99f5f6945b9",
+    "experiments/iteration8_analyze.py": "c91c455ed85619d70ef1d202a58f0d0e1620b615ccb498b064cbe3ab5cdc497d",
+    "experiments/iteration8_common.py": "eb09523b717130ab02ded3d62da7e1da94592f2cce6ab527eb80186a21d1ccb0",
+    "experiments/iteration8_experiment.py": "bd93ab2547d5f749879ce71ab6b726135119f65e62e7d457e055de70bd2c304e",
+    "experiments/verify_iteration8.py": "2b8f4f72c0eea07ec9dc885688fe0deec0f76e9bda8563b8c780b58f816c365a",
+    "src/gbslab/__init__.py": "88f563e00234bc472ad6d6faa1f72d83acd03343627613134497039c3e7d40e8",
+    "src/gbslab/batched_forest.py": "2b93fcb732c93979189d86f7c743efd2abf6eb8be6d97b0751703e45f8747638",
+    "src/gbslab/binomial_refinement.py": "955719cbaebe56e89b3f4b98b2419371cec2990e03688ed47d55ff9d1a05df7a",
+    "src/gbslab/cache.py": "67520317e7ad523da61e2b2a99f781bb31cd25442f5c732eefb522f2116a1427",
+    "src/gbslab/calibration.py": "b243bdeecaabdf2f4f8f02408a557744a75a255a8d24bd085a64c0e22624adc9",
+    "src/gbslab/conditional_memory.py": "58a0ce996015112423750191afdc16543a20157f72aae10594423a5f6b00fb0c",
+    "src/gbslab/cpp_click.py": "675b92a67aa4bb87962b1d6b0cffc8de3465fa0e6dd4601f69856df00fec484d",
+    "src/gbslab/cpp_forest.py": "3988149b0f731e1027e56c2e1973c35f31164011950a2e0b5b4e08940a33f999",
+    "src/gbslab/exact.py": "499a8aa009ae1630ffb44db3555f80498db2032966194f82ef2eae95d8d0dfff",
+    "src/gbslab/experiment.py": "a38cc6b76471e15765a6ded06c663fceab8feaadd4685420c2c809c8238e7b0c",
+    "src/gbslab/fock.py": "64694710a3ed2e22bde884d3144781d7c9720cd094b37079ae67768aa536a17c",
+    "src/gbslab/frugal.py": "5c614a082d12c17c841e67e1a557042e725742673f2f19f8ae3aba923d174ed8",
+    "src/gbslab/frugal_evidence.py": "2ff0a0096a3783c27c60fd8010cbb775622f238deb6a2d87a0b7b425141ec727",
+    "src/gbslab/frugal_scaling.py": "1c37c2bdbcfda3d23c61d7116fd244b597f8156f0655233049d3d695ada323d4",
+    "src/gbslab/gaussian.py": "de8f0274ed1c8f4d9ff2654546e94bb3112a33c801e122ddf9c0108564256406",
+    "src/gbslab/gbs_identity.py": "d7390397b6236bfe68c95fdbb6114da4796ca377e9801532112deea3e4087d47",
+    "src/gbslab/jiuzhang_gap.py": "145911175e23c8d002c5d86b29eb1ffe000c7f7d1b89dcdb1800fdd135aa4593",
+    "src/gbslab/marginal_witness.py": "473b1013b9a9ace7a4ac64712831fc3ff564ac29a0c4fee26265d81a401be29a",
+    "src/gbslab/paired_stress.py": "4290628ad327b59eca23651feedbd7e50ec390b62a5d21ce3c541cb8518e3da8",
+    "src/gbslab/phase2.py": "4a3386c8357bde48f52793cc72606d77a1fd4ed789056663730be63a26522586",
+    "src/gbslab/photon_tail.py": "27039bc995de09846dc7e8696ea5bba5d8e03ff1e781a399efa15d0f6ca15a99",
+    "src/gbslab/positive_completion.py": "35aa0f227dadb0884ad9d3f93eb77d9962c7be70afbe2071860545b6c87790dc",
+    "src/gbslab/positive_forest.py": "5d11d277a3b4de2318dad50a686d08dc1c5138518db30da5ae5f867ba8122c5f",
+    "src/gbslab/scaling.py": "70b2a9b9163a9cd734cf1a92540bf722e6a0a4fcb9cb9d4861ba050863c4a804",
+    "src/gbslab/schur_memory.py": "a79ed9d6e27d86b9434eaf3687e4035760249d7e73d93724043177c90a7ee227",
+    "src/gbslab/surrogates.py": "0f6e2d765b4dec501fb5f5c583a8d3918276e551b76eb661edee1945be981666",
+    "src/gbslab/tv_validation.py": "3b04843f380df8e647466b945a8c3cd38aae9b6056313bd3beaa89159c9498b3",
+    "src/gbslab/zero_memory.py": "c873e9a8bfce5319dfe4ee41f26ad675cd103ac0e6eba74e434f87d1e929e3e0",
+    "tests/test_batched_forest.py": "6625095f49163b19a491b4849843fe2b6284fa07d4da28dddfceffa0d26e4dac",
+    "tests/test_batched_forest_numerics.py": "27c65c76e047eb178bef4a55deff873d85960ac9ea26935fbb76e7a6b0d91cb5",
+    "tests/test_binomial_refinement.py": "0f6ff75242c1fe9ace03831566c752fb6afd1cd0db8a59d2dd51c0aae0f8bf47",
+    "tests/test_cache.py": "c65d5d73be2bb2db1bb1c73850a7d7dd43e998261718a6eddd2ca1207dd5b144",
+    "tests/test_calibration.py": "59f5020a528e0cbd339fda2e011b4eec0d6ac600cd9e9c8ed4e9715d4940a899",
+    "tests/test_chain_diagnostics.py": "a8549b2996bf9b128923e1064c820586539d30f5fba3aa69235ff5f0bf0248b2",
+    "tests/test_conditional_memory.py": "abcdf7c790dcba1f8f2c6ce440ceba740a2633cb77035f60724a1a895aaaa46f",
+    "tests/test_cpp_click.py": "5d6619b4d24fccb70bd27c9981cb3c0f15257d90292abc67507a72ceb0965de2",
+    "tests/test_cpp_forest.py": "046932584a5d68dbe4e8e45ee8139bc289b1fa3586ebae7d258751e5deaf4ec4",
+    "tests/test_exact.py": "09edc4c6a889763b738b423c922bbb8e7f1ff054ece25e0bb87ee949bb897338",
+    "tests/test_fock.py": "8a8b686f660e4f584efc96677add657c83fab20b05cce05d3e9432ae43714309",
+    "tests/test_frugal_evidence.py": "c3148a61ac2616cf1bc485e0133e860927f9cc18993fa319187b7366443c8e2d",
+    "tests/test_gbs_identity.py": "c675d0d6969b9202a4e788e44d69aa540c036ec940160c1fd32e96071b0e2232",
+    "tests/test_iteration5_quality.py": "c1ea11dd36d2c8bb09d1868f7ba356ebe85d5cfa50ac50f365cd363d8a6e52b7",
+    "tests/test_iteration6_runner.py": "d8615b4fe68d0b5f6fca9299434d333238e3054df9eb6c4da63386a7687101d0",
+    "tests/test_jiuzhang_gap.py": "7d9bc140362939f183e9279e038f95f293a058e0c2f37175b0f80e775cfa864f",
+    "tests/test_marginal_witness.py": "3f036977a4f05c2d25ff1e501c7aeb53bc630bf1ed00cf3fbb9813240af15277",
+    "tests/test_paired_stress.py": "fb46e31b29065415f85a9ea928bdc15a865cc7d284cd64278fa65b6f01cafb30",
+    "tests/test_photon_tail.py": "965b31f2960ae8d09cf48f183ad8bfb15600c92667f9cfdbe03739d9f5de4114",
+    "tests/test_positive_completion.py": "c1cb2223a284f57f98ab60c2a118bc2931a6a7bcf44991616b595c6196f0d4c8",
+    "tests/test_positive_forest.py": "961be3e8ac66622e5be56a81f86ead32b6be55f53359fa52715e0cb92e62b268",
+    "tests/test_prefix_cache.py": "f8952f18c54bc8bf0d62ade6a0230705cc5d3d2d1673e79de2f10a3885c50c65",
+    "tests/test_schur_memory.py": "29c423fc5908be43ff9e91250e92a1340a68253a42aa79f9c67f059837532b2c",
+    "tests/test_surrogates.py": "d37bfe70d3cde4afd59593797a7567b1c2ec50bb22bfae8890d782a0565dc73f",
+    "tests/test_tv_validation.py": "3cde99ecb6d330d71066d7621360823a89f8e02ad68b26f98d84ba3aec0b6519",
+    "tests/test_zero_memory.py": "accb61f968bd3395264d994baa89cae3f46e8a20e9a7601da31af223a04227a3"
+  },
+  "binary_hashes": {
+    "library": "8c4217c57559c741be9a65adcd390e92fa52ed8daacb68136452eab04b282263",
+    "retained": "a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f",
+    "forest": "770aea52bd8a0e39e52b77a389b00a5bc7f0d6e5c8f5fe9476993b9bf2a76f00"
+  },
+  "sources_and_binaries_stable_during_tests": true,
+  "actual_candidate_paths": {
+    "library": "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/iteration8-batched-native/libbatched_forest.so",
+    "retained": "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/iteration8-retained-native/click_sampler",
+    "forest": "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/iteration8-forest-native/batched_forest_sampler"
+  },
+  "explicit_native_environment": true,
+  "tests_never_compile": true,
+  "numerical_validation_checks": [
+    {
+      "name": "loaded_library_binding",
+      "passed": true,
+      "details": {
+        "path": "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/iteration8-batched-native/libbatched_forest.so",
+        "sha256": "8c4217c57559c741be9a65adcd390e92fa52ed8daacb68136452eab04b282263",
+        "explicit_path": true
+      }
+    },
+    {
+      "name": "thermal_real_refinement",
+      "passed": true,
+      "details": {
+        "covariance": "(1+2^-8) I",
+        "modes": 8,
+        "budget": 4,
+        "exact_click_probability": "1/513",
+        "actual_click_probability": 0.0019493177387914231,
+        "first_error": "relative event indicator 2.39e-05 exceeds guard 1e-06",
+        "attempts": 2,
+        "retained": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "name": "positive_branches_binary64_endpoint_remains_failure",
+      "passed": true,
+      "details": {
+        "covariance": "2^60 I",
+        "modes": 1
+      }
+    },
+    {
+      "name": "gaussian_table_same_R_E_full_law",
+      "passed": true,
+      "details": {
+        "modes": 6,
+        "seed": 180707,
+        "order": [
+          4,
+          0,
+          5,
+          2,
+          1,
+          3
+        ],
+        "budgets": [
+          0,
+          2,
+          4
+        ],
+        "forests": [
+          "chain",
+          "static_mi_tree"
+        ],
+        "conditional_comparisons": 378,
+        "maximum_conditional_difference": 5.767608612927688e-14,
+        "maximum_extended_law_tv": 5.2617415632894016e-15
+      }
+    },
+    {
+      "name": "canonical_state_history_order_cache_invariance",
+      "passed": true,
+      "details": {
+        "order": [
+          6,
+          2,
+          0,
+          7,
+          3,
+          5,
+          1,
+          4
+        ],
+        "precisions": [
+          "longdouble",
+          "quad",
+          "auto"
+        ],
+        "capacities": [
+          0,
+          1,
+          32
+        ],
+        "exact_conditional_comparisons": 108
+      }
+    },
+    {
+      "name": "injected_numeric_failure_extends_output_space",
+      "passed": true,
+      "details": {
+        "failure_mass": 1.0,
+        "rng_calls": 0
+      }
+    },
+    {
+      "name": "extended_law_preserves_failure_mass",
+      "passed": true,
+      "details": {
+        "failure_mass": 7.38545354345751e-08,
+        "failure_count": 10,
+        "zero_atom": 0.9883609432364693,
+        "analytic_zero_atom": 0.9883609432364693,
+        "success_renormalization": false
+      }
+    },
+    {
+      "name": "nonnumerical_errors_propagate",
+      "passed": true,
+      "details": {
+        "error_types": [
+          "RuntimeError",
+          "ValueError",
+          "MemoryError"
+        ],
+        "entrypoints": [
+          "conditional",
+          "sample",
+          "enumerate"
+        ],
+        "swallowed_errors": 0
+      }
+    },
+    {
+      "name": "positive_thermal_event_beyond_quad_budget_fails",
+      "passed": true,
+      "details": {
+        "covariance": "(1+2^-40) I",
+        "modes": 8,
+        "budget": 4,
+        "exact_click_probability": "1/2199023255553",
+        "repeated_attempts": 2,
+        "zero_certificate_claimed": false
+      }
+    },
+    {
+      "name": "real_failure_stops_before_uniform",
+      "passed": true,
+      "details": {
+        "failed_prefix": [
+          1,
+          1
+        ],
+        "rng_calls": 2,
+        "completed_outputs": 0,
+        "requested_outputs": 2
+      }
+    },
+    {
+      "name": "same_uniform_refinement_cache_invariance",
+      "passed": true,
+      "details": {
+        "samples": 3,
+        "modes": 8,
+        "conditional_trace_entries": 24,
+        "refinements": {
+          "0": 13,
+          "1": 13,
+          "128": 8
+        },
+        "rng_calls_per_run": 24
+      }
+    }
+  ],
+  "elapsed_seconds": 36.46241725499999,
+  "scope": "Analytic event and thermal fixtures, real refinement/failure, state/order/cache invariance, independent table events, native injected uniforms/logQ/partial checkpoint, and all prior project regressions. This is not a large-mode TV or rigorous rounding certificate."
+}

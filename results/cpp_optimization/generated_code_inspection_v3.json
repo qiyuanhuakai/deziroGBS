@@ -1,0 +1,133 @@
+{
+  "binary_sha256": "3e63591bc1f2b133864da1482f75091a1dd816a762c0cd32203550decbc2ca46",
+  "build_flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native"
+  ],
+  "objdump_version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+  "inspection": "Static generated-code inspection only; no runtime was measured. Instruction presence/counts are not speed claims.",
+  "hotspot_basis": "Prior same-binary v2 component profile identified event kernels, not this static inspection.",
+  "functions": [
+    {
+      "symbol": "(anonymous namespace)::State::project_zero(int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&)",
+      "address": "0x0000000000016c40",
+      "vector_arithmetic_examples": [],
+      "ymm_zmm_arithmetic_examples": [],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "double (anonymous namespace)::fixed_vacuum<10>((anonymous namespace)::State const&, std::array<int, 18ul> const&, (anonymous namespace)::Counters&)",
+      "address": "0x0000000000017fb0",
+      "vector_arithmetic_examples": [
+        "18321:\tvaddpd %ymm1,%ymm0,%ymm0"
+      ],
+      "ymm_zmm_arithmetic_examples": [
+        "18321:\tvaddpd %ymm1,%ymm0,%ymm0"
+      ],
+      "long_double_examples": [],
+      "transcendental_call_examples": [
+        "185f2:\tcall   3670 <log@plt>",
+        "18618:\tcall   38a0 <exp@plt>"
+      ]
+    },
+    {
+      "symbol": "(anonymous namespace)::event_conditional((anonymous namespace)::State const&, std::vector<int, std::allocator<int> > const&, int, (anonymous namespace)::Counters&, (anonymous namespace)::Profile&, (anonymous namespace)::Context&, (anonymous namespace)::KernelRole, (anonymous namespace)::StepVacuumCache*)",
+      "address": "0x000000000001bd50",
+      "vector_arithmetic_examples": [],
+      "ymm_zmm_arithmetic_examples": [],
+      "long_double_examples": [
+        "1bfda:\tfstpt  -0x2040(%rbp)",
+        "1c044:\tfstpt  (%rbx,%rax,1)",
+        "1c088:\tfaddp  %st,%st(2)",
+        "1c08a:\tfldt   (%rbx,%rcx,1)",
+        "1c097:\tfaddp  %st,%st(1)",
+        "1c09d:\tfaddp  %st,%st(3)"
+      ],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 2, 2, 0, 2, 2> >(Eigen::Matrix<double, 2, 2, 0, 2, 2>&)",
+      "address": "0x0000000000029460",
+      "vector_arithmetic_examples": [],
+      "ymm_zmm_arithmetic_examples": [],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 4, 4, 0, 4, 4> >(Eigen::Matrix<double, 4, 4, 0, 4, 4>&)",
+      "address": "0x00000000000294c0",
+      "vector_arithmetic_examples": [
+        "2960c:\tvdivpd %xmm0,%xmm4,%xmm0",
+        "29653:\tvdivpd %xmm0,%xmm5,%xmm0",
+        "297e5:\tvmulpd -0x8(%r9,%rbx,1),%xmm0,%xmm0",
+        "29803:\tvsubpd %xmm0,%xmm6,%xmm0"
+      ],
+      "ymm_zmm_arithmetic_examples": [],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 6, 6, 0, 6, 6> >(Eigen::Matrix<double, 6, 6, 0, 6, 6>&)",
+      "address": "0x00000000000298d0",
+      "vector_arithmetic_examples": [
+        "29b5d:\tvdivpd %ymm1,%ymm4,%ymm1",
+        "29bb2:\tvdivpd %ymm1,%ymm5,%ymm1",
+        "29be9:\tvdivpd %xmm1,%xmm7,%xmm1",
+        "29f46:\tvdivpd %xmm1,%xmm6,%xmm1"
+      ],
+      "ymm_zmm_arithmetic_examples": [
+        "29b5d:\tvdivpd %ymm1,%ymm4,%ymm1",
+        "29bb2:\tvdivpd %ymm1,%ymm5,%ymm1"
+      ],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 8, 8, 0, 8, 8> >(Eigen::Matrix<double, 8, 8, 0, 8, 8>&)",
+      "address": "0x000000000002a0d0",
+      "vector_arithmetic_examples": [
+        "2a1a8:\tvdivpd %ymm0,%ymm2,%ymm0",
+        "2a1d9:\tvdivpd %xmm0,%xmm4,%xmm0",
+        "2a232:\tvdivpd %ymm0,%ymm3,%ymm0",
+        "2a267:\tvdivpd %xmm0,%xmm5,%xmm0"
+      ],
+      "ymm_zmm_arithmetic_examples": [
+        "2a1a8:\tvdivpd %ymm0,%ymm2,%ymm0",
+        "2a232:\tvdivpd %ymm0,%ymm3,%ymm0"
+      ],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    },
+    {
+      "symbol": "long Eigen::internal::llt_inplace<double, 1>::unblocked<Eigen::Matrix<double, 10, 10, 0, 10, 10> >(Eigen::Matrix<double, 10, 10, 0, 10, 10>&)",
+      "address": "0x000000000002a4f0",
+      "vector_arithmetic_examples": [
+        "2a5c0:\tvdivpd %zmm0,%zmm2,%zmm0",
+        "2a60b:\tvdivpd %ymm0,%ymm3,%ymm0",
+        "2a698:\tvdivpd %zmm1,%zmm5,%zmm0",
+        "2a6b8:\tvdivpd %zmm1,%zmm7,%zmm0",
+        "2a98b:\tvdivpd %zmm1,%zmm6,%zmm0",
+        "2a9ac:\tvdivpd %zmm1,%zmm7,%zmm0"
+      ],
+      "ymm_zmm_arithmetic_examples": [
+        "2a5c0:\tvdivpd %zmm0,%zmm2,%zmm0",
+        "2a60b:\tvdivpd %ymm0,%ymm3,%ymm0",
+        "2a698:\tvdivpd %zmm1,%zmm5,%zmm0",
+        "2a6b8:\tvdivpd %zmm1,%zmm7,%zmm0",
+        "2a98b:\tvdivpd %zmm1,%zmm6,%zmm0",
+        "2a9ac:\tvdivpd %zmm1,%zmm7,%zmm0"
+      ],
+      "long_double_examples": [],
+      "transcendental_call_examples": []
+    }
+  ],
+  "old_profile": {
+    "path": ".cache/click-native/cache_equivalence_and_profile.json",
+    "executable_sha256": "021e7d14ee43f9659809a0c7fe2add871dc9f0a551d4cbf389fcb8321adf4bd5",
+    "scope": "Old v2 same-binary cache on/off example; not v3 formal throughput"
+  }
+}

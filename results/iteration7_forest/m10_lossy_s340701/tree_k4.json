@@ -1,0 +1,705 @@
+{
+  "case_id": "m10_lossy_s340701",
+  "modes": 10,
+  "profile": "lossy",
+  "seed": 350701,
+  "method": "tree_k4",
+  "completion": "static_mi_tree",
+  "k": 4,
+  "status": "complete_with_failure_mass",
+  "extended_tv": 8.326414184284836e-05,
+  "failure_mass": 8.308112448148984e-05,
+  "unresolved_prefixes": 31,
+  "target_mean_clicks": 1.1945206095027032,
+  "success_subprobability_mean_clicks": 1.1939570014731173,
+  "setup_seconds": 0.013519886000722181,
+  "enumeration_seconds": 2.2289366490003886,
+  "diagnostics": {
+    "conditional_requests": 1023,
+    "conditional_evaluations": 1023,
+    "conditional_cache_hits": 0,
+    "conditional_failures": 31,
+    "conditional_seconds": 2.2182735209644306,
+    "selector_calls": 1023,
+    "selector_seconds": 1.5198404279508395,
+    "event_requests": 4817,
+    "event_cache_hits": 736,
+    "event_oracle_calls": 4081,
+    "event_oracle_seconds": 0.6241992879804457,
+    "structural_zero_returns": 0,
+    "event_exact_zero_returns": 0,
+    "analytic_zero_score_branches": 0,
+    "maximum_event_relative_indicator": 1.1913170494179733e-06,
+    "maximum_log_score_indicator": 1.4503896926448165e-06,
+    "maximum_factor_count": 9,
+    "conditional_cache_evictions": 0,
+    "event_cache_evictions": 0,
+    "sampling_attempts": 0,
+    "sampling_failures": 0,
+    "initialization_seconds": 0.007055403999402188,
+    "static_mi_setup_seconds": 0.006880500000988832,
+    "forest_selections": 1023,
+    "forest_selection_seconds": 0.0028795239959436003,
+    "forest_vertices_processed": 630,
+    "forest_edges_selected": 244,
+    "forest_maximum_vertices": 5,
+    "forest_maximum_edges": 4,
+    "forest_weight_lookups": 325,
+    "forest_cut_candidates_examined": 325,
+    "forest_update_comparisons": 81,
+    "forest_singleton_requests": 1260,
+    "forest_edge_event_requests": 488,
+    "forest_maximum_local_event_width": 7,
+    "forest_maximum_event_ones": 7,
+    "forest_maximum_event_constraints": 10,
+    "oracle_kind": "direct_vacuum_inclusion_exclusion",
+    "completion": "forest",
+    "selection": "click_influence",
+    "block_order": "not_applicable",
+    "max_clicks": 4,
+    "cache_size_limit_each": 8192,
+    "conditional_cache_entries": 992,
+    "event_cache_entries": 4076,
+    "isolated_vacuum_modes": [],
+    "selector": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 0,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 0,
+      "maximum_inclusion_terms": 0,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 0,
+      "pairwise_precompute_seconds": 0.0,
+      "pairwise_mi_policy": "not_used",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "selection_requests": 1023,
+      "selection_computations": 386,
+      "selection_cache_hits": 0,
+      "selection_cache_evictions": 0,
+      "selection_cache_peak_entries": 386,
+      "selection_compute_seconds": 1.5158665879826003,
+      "selection_score_evaluations": 6380,
+      "selection_small_vacuum_calls": 78716,
+      "selection_small_determinant_evaluations": 71950,
+      "selection_conditional_kernel_calls": 6766,
+      "selection_max_candidate_count": 9,
+      "selection_max_small_mode_count": 5,
+      "selection_probability_corrections": 0,
+      "selection_max_l1_probability_correction": 0.0,
+      "selection_max_conditional_roundoff_indicator": 1.7570986687646692e-09,
+      "selection_conditional_event_corrections": 0,
+      "selection_conditional_probability_corrections": 0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 8192,
+      "selection": "click_influence",
+      "selection_cache_entries": 386,
+      "selection_cache_size_limit": 8192,
+      "zero_conditioner": {
+        "requests": 386,
+        "base_returns": 5,
+        "cache_hits": 126,
+        "cache_misses": 255,
+        "parent_cache_reuses": 126,
+        "rank_two_updates": 135,
+        "direct_factorizations": 120,
+        "maximum_direct_factorization_dimension": 8,
+        "cache_evictions": 127,
+        "peak_cache_entries": 128,
+        "peak_cache_payload_bytes": 212960,
+        "oversized_states_not_cached": 0,
+        "maximum_asymmetry_correction": 0.0,
+        "cache_entries": 128,
+        "cache_size_limit": 128,
+        "cache_payload_bytes": 212960,
+        "cache_payload_bytes_limit": 67108864,
+        "base_payload_bytes": 3280
+      }
+    },
+    "event_backend": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 4081,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 149309,
+      "maximum_inclusion_terms": 128,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 0,
+      "pairwise_precompute_seconds": 0.0,
+      "pairwise_mi_policy": "not_used",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 0
+    },
+    "shared_model_totals": {
+      "determinant_evaluations": 1023,
+      "marginal_evaluations": 45,
+      "negative_entries_clipped": 0,
+      "largest_negative_probability": 0.0,
+      "largest_normalization_error": 0.0,
+      "largest_l1_numerical_correction": 0.0,
+      "vacuum_cache_hits": 148466,
+      "vacuum_cache_evictions": 0,
+      "vacuum_cache_peak_entries": 1024,
+      "vacuum_cache_entries": 1024,
+      "vacuum_cache_size_limit": 8192,
+      "marginal_cache_entries": 46,
+      "marginal_cache_bytes": 1448
+    },
+    "timing_scope": "descriptive_python_reference_only",
+    "roundoff_indicators_are_rigorous_bounds": false,
+    "forest": "static_mi_tree",
+    "tree_scope": "all omitted clicks, including zero-weight spanning edges",
+    "static_pairwise_weight_kind": "unconditional_input_gaussian_threshold_MI",
+    "static_pairwise_payload_bytes": 800,
+    "static_pairwise_precompute": {
+      "conditional_evaluations": 0,
+      "conditional_cache_hits": 0,
+      "event_evaluations": 0,
+      "event_cache_hits": 0,
+      "vacuum_probability_calls": 0,
+      "maximum_inclusion_terms": 0,
+      "maximum_conditional_roundoff_indicator": 0.0,
+      "event_roundoff_corrections": 0,
+      "conditional_roundoff_corrections": 0,
+      "minimum_conditioning_probability": null,
+      "pairwise_marginals_requested": 45,
+      "pairwise_precompute_seconds": 0.006864625996968243,
+      "pairwise_mi_policy": "gaussian_structural_zero_stable_kl_v3",
+      "pairwise_structural_zero_pairs": 0,
+      "pairwise_stable_probability_corrections": 0,
+      "pairwise_max_stable_l1_correction": 0.0,
+      "conditional_cache_entries": 0,
+      "event_cache_entries": 0,
+      "cache_size_limit_each": 0
+    },
+    "tree_tie_rule": "negative MI then sorted physical edge indices",
+    "tree_fitted_to_samples": false,
+    "local_event_width_limit": 7,
+    "event_evaluator_scope": "direct determinants include all zeros; no small-k Schur event optimization",
+    "tree_optimization_scope": "static unconditional MI, not conditional-likelihood or global-TV optimization"
+  },
+  "target_oracle_diagnostics": {
+    "determinant_evaluations": 1023,
+    "marginal_evaluations": 45,
+    "negative_entries_clipped": 0,
+    "largest_negative_probability": 0.0,
+    "largest_normalization_error": 0.0,
+    "largest_l1_numerical_correction": 0.0,
+    "vacuum_cache_hits": 148466,
+    "vacuum_cache_evictions": 0,
+    "vacuum_cache_peak_entries": 1024
+  },
+  "law_sha256": "78a34e6b744abe51c9d9dedfa04d0844a6a5512c1a64cdc8fa593b3c08d789bf",
+  "strict_floating_point_certificate": false,
+  "failures": [
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.9731135917128215e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.2551911024737414e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.9019638715377387e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 8.028703057141067e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 8.361672746703965e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.4289489727880036e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.5093281678656427e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.5307710347366456e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.1275860446756667e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.073128588488664e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.4127982766781785e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.19e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.965938811410162e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.370402260147402e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.15e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.2154670950014226e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.512337997584435e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.652118487822542e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.645363903235442e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 5.518245266996776e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 8.041486109222618e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "relative event indicator 1.05e-06 exceeds guard 1e-06"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.6714768047164657e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.532366042640177e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 2.6738028194861485e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.689735004261599e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 2.8571473389416013e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 2.847609771261528e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 1.9173597465838017e-06,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 6.535255949166961e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mass": 7.688703965933683e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mass": 7.920398589396765e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mass": 6.525924384083945e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mass": 1.7886400371673894e-07,
+      "error_type": "NumericalProbabilityError",
+      "error": "forest log-score roundoff guard failed"
+    }
+  ]
+}

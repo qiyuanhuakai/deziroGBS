@@ -1,0 +1,64 @@
+{
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/experiments/click_sampler.cpp",
+    "-o",
+    "/workspace/scratch/9ac441d5b1a5/gbs-classical-lab/.cache/click-build/click_sampler.building"
+  ],
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_sha256": "bf4c1bb6cea479b64aa95e2711429e955aaefa53cc0a9765cbe79c06c8ffa1c2",
+  "builder_sha256": "fce7e6c534c7eb015f12e42bf08719f5063b3e675a31f411536724712e466932",
+  "dependencies": {
+    "eigen": {
+      "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+      "files": 530,
+      "bytes": 8669110
+    }
+  },
+  "cache_key": "e3b0cd7053f4c235ffadfb2a62a6261f2218773c4a210039c3fd4c61dea92ba5",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE"
+  ],
+  "native": false,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "executable_sha256": "54c361675c80c00dc7837d5afebc075e20281f60bcfb735ea6c5e5c3ddf04b73",
+  "build_seconds": 19.13881861899972,
+  "implementation": "native C++ retained-click sampler with Gaussian zero updates",
+  "threads": 1,
+  "precision": "double; long-double inclusion-exclusion sums",
+  "maximum_modes": 256,
+  "maximum_click_budget": 8,
+  "maximum_enumeration_modes": 14,
+  "pairwise_score_policy": {
+    "version": 3,
+    "structural_zero": "exact zero original 2x2 covariance crossblock gives MI=0",
+    "precision": "explicit long-double scalar 2x2 factors and whitening",
+    "delta": "qa*qb*expm1(-0.5*log1p(-(sum(T^2)-det(T)^2)))",
+    "mutual_information": "sum product_cell*h(signed_delta/product_cell)",
+    "h": "(1+x)*log1p(x)-x; h(-1)=1",
+    "h_series_abs_x_max": 0.001,
+    "h_series_powers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "probability_tolerance": 2e-10,
+    "maximum_l1_correction": 2e-09,
+    "score_floor": null,
+    "tie_break": "physical mode index"
+  }
+}

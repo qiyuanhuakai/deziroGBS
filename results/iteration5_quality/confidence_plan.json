@@ -1,0 +1,28 @@
+{
+  "comparison_ids": [
+    "m12_lossy",
+    "m12_bright",
+    "m32_lossy",
+    "m32_bright",
+    "m64_lossy",
+    "m64_bright",
+    "m100_lossy",
+    "m100_bright",
+    "m144_lossy",
+    "m144_bright",
+    "m256_lossy",
+    "m256_bright",
+    "jiuzhang1_candidate",
+    "jiuzhang1_frugal"
+  ],
+  "planned_comparisons": 14,
+  "familywise_alpha": 0.025,
+  "familywise_nominal_confidence": 0.975,
+  "per_comparison_alpha": 0.0017857142857142859,
+  "channel_split": {
+    "global_tv_upper": 0.5,
+    "simultaneous_witnesses": 0.5
+  },
+  "schedule_rule": "fixed before samples; no reuse of unused alpha or posthoc selection",
+  "plan_sha256": "67a3d9d7282c9b665c36692d1c34d03ff7ee9a2e79eb5cfe0ab48d870de8dce1"
+}

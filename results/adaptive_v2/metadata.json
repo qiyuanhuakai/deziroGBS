@@ -1,0 +1,88 @@
+{
+  "started_utc": "2026-11-03T14:58:28.507550+00:00",
+  "config": {
+    "name": "adaptive_v2",
+    "modes": [
+      8,
+      10
+    ],
+    "topologies": [
+      "haar",
+      "local2"
+    ],
+    "squeezing": [
+      0.4,
+      0.8
+    ],
+    "transmissivity": [
+      0.25,
+      0.6,
+      1.0
+    ],
+    "seeds": [
+      1701,
+      1702,
+      1703
+    ],
+    "methods": [
+      {
+        "strategy": "pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "calibrated_pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "calibrated_greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 0
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 1
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 2
+      },
+      {
+        "strategy": "zero_pairwise",
+        "k": 1
+      },
+      {
+        "strategy": "zero_pairwise",
+        "k": 2
+      }
+    ],
+    "samples_per_method": 250,
+    "save_distributions": false
+  },
+  "config_sha256": "96dfdc125f2b8547def1312a38f0880f759024d850251c4593db5e9320fa9bb2",
+  "source_sha256": "49933a83f38fef70c7e2335b0873a53c46d5bed4625c74d83fefd58def1b6def",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "timing_notes": "Fresh oracle for every method. Sampling before dense validation; no GPU. Wall times are descriptive, not hardware speedup claims.",
+  "statistics_notes": "TV/KL computed from full small distributions, not sampling estimates. Seeds share an interferometer across loss/squeezing; rows are not independent repetitions.",
+  "status": "complete",
+  "completed_utc": "2026-11-03T14:59:10.103487+00:00",
+  "elapsed_seconds": 41.58975075999933,
+  "cases": 72,
+  "successful_method_rows": 648,
+  "failed_method_rows": 0
+}

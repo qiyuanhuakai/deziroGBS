@@ -1,0 +1,33 @@
+{
+  "started_utc": "2026-11-04T02:48:17.087910+00:00",
+  "suites": [
+    "phase2_discovery",
+    "phase2_holdout",
+    "phase2_bright"
+  ],
+  "cutoffs": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "sample_count": 128,
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+  "binary_sha256": "862780de4ba8c2bec550b6b165431888d3741830e07200e0f332b1144bf0dc6a",
+  "precision": "double",
+  "threads": 1,
+  "distribution": "instrumented continuous-uniform threshold law of pinned SIMD code",
+  "sampling": "unmodified official generate_samples",
+  "notes": [
+    "128-draw timings are latency probes, not steady-state throughput.",
+    "Python wrapper/process I/O is separately reported.",
+    "Target P is evaluator-only; no target vector is passed to sampler.",
+    "Cumulant cutoff K is not the same resource as retained-click k.",
+    "No quantum hardware, MPS, or Gaussian-reset baseline in this run."
+  ],
+  "status": "complete",
+  "completed_utc": "2026-11-04T02:48:22.210238+00:00",
+  "elapsed_seconds": 5.122228565000114,
+  "rows": 252,
+  "failures": 0
+}

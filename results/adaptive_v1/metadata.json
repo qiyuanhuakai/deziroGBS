@@ -1,0 +1,80 @@
+{
+  "started_utc": "2026-11-03T14:50:35.439114+00:00",
+  "config": {
+    "name": "adaptive_v1",
+    "modes": [
+      8,
+      10
+    ],
+    "topologies": [
+      "haar",
+      "local2"
+    ],
+    "squeezing": [
+      0.4,
+      0.8
+    ],
+    "transmissivity": [
+      0.25,
+      0.6,
+      1.0
+    ],
+    "seeds": [
+      1701,
+      1702,
+      1703
+    ],
+    "methods": [
+      {
+        "strategy": "pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "calibrated_pairwise",
+        "k": 2
+      },
+      {
+        "strategy": "calibrated_greedy_cmi",
+        "k": 2
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 0
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 1
+      },
+      {
+        "strategy": "zero_memory",
+        "k": 2
+      }
+    ],
+    "samples_per_method": 250,
+    "save_distributions": false
+  },
+  "config_sha256": "e6e37fe4125624d8badacb21ac2d53db8692cdf90eb2cd647fbed02d1463f7bc",
+  "source_sha256": "639c81c177001e5a1e37be7343625ac4d22ec7421c793a7a14d16bd56bfc7418",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "timing_notes": "Fresh oracle for every method. Sampling before dense validation; no GPU. Wall times are descriptive, not hardware speedup claims.",
+  "statistics_notes": "TV/KL computed from full small distributions, not sampling estimates. Seeds share an interferometer across loss/squeezing; rows are not independent repetitions.",
+  "status": "complete",
+  "completed_utc": "2026-11-03T14:50:53.930092+00:00",
+  "elapsed_seconds": 18.48639554500005,
+  "cases": 72,
+  "successful_method_rows": 504,
+  "failed_method_rows": 0
+}
