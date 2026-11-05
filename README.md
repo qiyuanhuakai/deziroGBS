@@ -1,31 +1,15 @@
-# deziroGBS / GBS Classical Lab
+# deziroGBS：完整本地 GBS 研究公开归档
 
-量子项目的经典 Gaussian Boson Sampling 研究。当前公开成果截至第八轮原生算法实验与第九轮理论/资源筛查，原始研究提交 `8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff`。
+本公开传输提交包含第 1—10 轮研究、全部原始 Git 历史与本地补漏资料。项目原始研究目录由经核验的 Git bundle 导入 main；该传输提交永久保留全部恢复数据。
 
-## 完整源码、数据和历史
+- [第十轮报告](RESEARCH_REPORT_ITERATION10.md)
+- [完整项目说明](PROJECT_README.md)
+- [公开范围、来源与历史说明](PUBLICATION.md)
+- [第十轮质量与计时完整汇总](results/iteration10_analysis/summary_tables.md)
+- 第 1—9 轮完整历史：`research_archive/iteration9/MANIFEST.json` 和 66 个分卷。
+- 第十轮和 609 份独有本地补漏资料：`research_archive/iteration10/MANIFEST.json` 及其增量分卷；它以第九轮原始研究头为唯一前提。
+- 导入请求：`.github/gbs-publication.json`；导入工具：`publication_support/import_history.py`。工具核验全部分卷、Git 原始提交及完整文件树，只作普通快进推送。
 
-本仓库提供代码、报告和结果汇总的浏览副本；全部原始实验结果和原始 Git 历史保存在 `research_archive/iteration9/` 的完整 Git bundle 分片中。分片按字节切分，清单记录每片及合并后的 SHA-256，不依赖外部网盘。完整恢复后包含原始提交号、全部科学代码、测试、供应商源码与许可证、成功及失败实验记录。
+第十轮通过 298 项测试、51 个完整质量分布和 76 项交叉检查。66 个预定计时有 60 个完整成功、6 个基线数值失败。16 个质量和成本比较没有取得联合优势，所有失败及证据限制均公开。
 
-```bash
-git clone https://github.com/qiyuanhuakai/deziroGBS.git
-cd deziroGBS
-python restore_complete_history.py --destination ../deziroGBS-complete
-cd ../deziroGBS-complete
-git rev-parse HEAD
-```
-
-最后一条应得到上述原始研究提交。请在恢复后的完整仓库中执行构建、测试和原始实验复跑；当前浏览副本不展开全部原始结果目录。恢复脚本只读取本仓库内的分片、核验散列并创建指定的新仓库，不下载第三方内容。
-
-原始原生构建资产位于 `native_builds/iteration8/`，对应的跨环境构建说明见 [LEGACY_NATIVE_REBUILD.md](LEGACY_NATIVE_REBUILD.md)。这些产物使用 `-march=native`，移植到其他机器需重新验证或重建；原始构建和验证记录保持原样。
-
-## 当前结果
-
-- 第八轮：268 项测试通过；72 个新完整分布、96 项交叉核对、12 个历史回归分布和 108 次完整原生计时全部完成。共享事件核改善小系统质量和数值可靠性，但相对较强 retained 基线慢 34.73–40.43 倍；没有速度突破。
-- 第九轮：纯态核心加经典位移的已知分解、相干截断的 `TV <= sqrt(tail)` 预算及 42 行资源筛查完成。大模式稠密 Fock 展开被资源规模排除；新的压缩态采样器尚未实现。
-- 没有宣称通用低复杂度 GBS、方法原创性或九章规模完整分布模拟突破。
-
-先读 [第八轮报告](RESEARCH_REPORT_ITERATION8.md)、[第九轮报告](RESEARCH_REPORT_ITERATION9.md) 和 [项目完整说明](PROJECT_README.md)。
-
-![第八轮质量与成本](results/iteration8_analysis/quality_cost.png)
-
-![第九轮截断与表示规模](results/iteration9_visualization/core_budget.png)
+原始历史不重写。完整 Git clone 后可通过本提交中的 manifests、bundle 和主分支合并的原始 source parent 独立核验公开内容。

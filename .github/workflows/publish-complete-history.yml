@@ -1,0 +1,30 @@
+name: Publish complete research history
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/gbs-publication.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-complete-history-main
+  cancel-in-progress: false
+
+jobs:
+  import-history:
+    if: github.repository == 'qiyuanhuakai/deziroGBS' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the exact publication trigger
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify archives and publish a fast-forward merge
+        run: python3 publication_support/import_history.py
