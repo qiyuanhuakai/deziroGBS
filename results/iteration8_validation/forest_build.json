@@ -1,0 +1,80 @@
+{
+  "command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native",
+    "-I",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/casadi/include/eigen3",
+    "/workspace/scratch/7ca85676bed2/deziroGBS-iteration8/experiments/batched_forest_sampler.cpp",
+    "/workspace/scratch/7ca85676bed2/deziroGBS-iteration8/experiments/batched_forest_kernel.cpp",
+    "-lquadmath",
+    "-o",
+    "/workspace/scratch/7ca85676bed2/deziroGBS/.cache/iteration8-forest-native/batched_forest_sampler.building"
+  ],
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiler_sha256": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+  "source_hashes": {
+    "experiments/batched_forest_sampler.cpp": "eb6773cf76738ce30296bfdef2c1c42d60d84a57cf101b701349ca429dbce948",
+    "experiments/batched_forest_kernel.cpp": "37f19f146db72b87b9d46d549a640dc13ef746cf96d1b57dd9f1c660772dc984",
+    "experiments/batched_forest_kernel.h": "ab19c485daae4525a6fa20274ed2db3c4f97a56313df7a50b5d65dfc3ae9cf87",
+    "experiments/click_sampler.cpp": "c74c377e81137786cfdd2ae02c66967f3c7920393adf067ab9b3c4348a7fbd28"
+  },
+  "source_sha256": "eb6773cf76738ce30296bfdef2c1c42d60d84a57cf101b701349ca429dbce948",
+  "builder_hashes": {
+    "experiments/build_batched_forest_sampler.py": "adece4b5cbd5422f74df8c4fa19158014bd682bc4118f689e6547561831a0a8d",
+    "experiments/build_click_sampler.py": "5a048f5c4818d0ca8d773dddc0892ff5789855ff90170ae937dd3bffdff658cc"
+  },
+  "builder_sha256": "adece4b5cbd5422f74df8c4fa19158014bd682bc4118f689e6547561831a0a8d",
+  "dependencies": {
+    "eigen": {
+      "sha256": "c6a7ca7efb21bcb64ac55fc32f2c66d1b1b2a42f96aa06ac2b81c2ed06f1d31e",
+      "files": 530,
+      "bytes": 8669110
+    }
+  },
+  "quadmath_library": "/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0",
+  "quadmath_library_sha256": "353d31394be238ed265989ac09741a2892c14ddabfac0b30f3f26a237a8bd5d2",
+  "quadmath_header": "/usr/lib/gcc/x86_64-linux-gnu/13/include/quadmath.h",
+  "quadmath_header_sha256": "e8711f597c69a64800a00b80644f66156623323615b03d0cdba4b4c845e44736",
+  "link_libraries": [
+    "quadmath"
+  ],
+  "cache_key": "1edfc78e76be7e9b53462e2feb7c9ef61123874a17342ddb51536314d3dbfa97",
+  "flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-march=native"
+  ],
+  "native": true,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "executable_sha256": "770aea52bd8a0e39e52b77a389b00a5bc7f0d6e5c8f5fe9476993b9bf2a76f00",
+  "build_seconds": 38.53489671199986,
+  "implementation": "complete native batched forest sampler ABI 1",
+  "threads": 1,
+  "maximum_modes": 256,
+  "maximum_click_budget": 8,
+  "maximum_enumeration_modes": 14,
+  "measurement_order": "natural only",
+  "forest_options": [
+    "chain",
+    "static_mi_tree"
+  ],
+  "precision_options": [
+    "longdouble",
+    "quad",
+    "auto"
+  ],
+  "precision_policy": "shared bf_probability; one whole-prefix LD-to-quad refinement only on numerical failure",
+  "quad_input": "original validated/symmetrized binary64 covariance, never an LD Schur state",
+  "prefix_cache_entries": 0,
+  "selector_step_cache": "legacy within-prefix workspace; cleared at each selected prefix",
+  "sample_log_probabilities": "actual returned binary64 conditional chain, long-double log/log1p accumulation",
+  "failure_policy": "stop sample batch and retain completed raw/logQ; full-law enumeration retains failure mass without renormalization",
+  "timing_scope": "setup plus sampling includes state, selector, tree, refinement, RNG, packed storage, requested logQ",
+  "source_unchanged_during_build": true
+}

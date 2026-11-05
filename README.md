@@ -1,6 +1,25 @@
 # deziroGBS / GBS Classical Lab
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第七轮，2026-11-04**。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第八轮原生内核实验与第九轮理论/资源筛查，2026-11-05（北京时间）**。
+
+## 当前结论与方向
+
+**第八轮实现了共享 Schur 事件内核，提高了小系统质量与数值可靠性，但速度目标失败。** 在 12 个新输入（4 个独立 Haar 干涉仪、各 3 种亮度）上完成 72 个完整分布，全部零失败质量；72 项 Python 编排核对和 24 项独立表事件核对均通过。四种 chain/tree 候选相对各自较强 retained 基线的 TV 比值中位数为 0.726–0.915，但完整原生成本中位比为 34.73–40.43，24 个配对计时单元全部更慢。历史 4 行数值失败已消除；正式面板未触发 quad，改善发生于新的 long-double 共享/缩放路径。完整回归 **268 项通过，0 失败、0 错误、0 跳过**。
+
+**第九轮随即转向纯态核心分解、全局截断预算与压缩表示。** 已核对有损 Gaussian 态的已知纯态核心加经典位移分解，推导保留相干性的总光子数截断界 `TV <= sqrt(tail)`，并完成 42 行固定资源比较及 20 项检查。1024 模式最轻配置的核心截断为 K=36（TV 预算 0.1），但稠密偶数 Fock 表仍约有 10^67 个复振幅；因此排除大规模稠密展开，后续考察保留相干性的压缩表示及其独立误差预算。新的压缩态采样器尚未实现；本轮理论不为现有 forest 分布提供 TV 证书。
+
+| 当前交付 | 入口 |
+|---|---|
+| 第八轮实现、质量、失败与完整成本 | [研究报告](RESEARCH_REPORT_ITERATION8.md)、[完整结果表](results/iteration8_analysis/summary_tables.md) |
+| 第八轮独立复核 | [数值审查](research/iteration8_numerical_audit.md)、[理论/协议审查](research/iteration8_theory_and_protocol_audit.md)、[最终产物审计](research/iteration8_final_audit.md) |
+| 第九轮理论与固定资源面板 | [研究报告](RESEARCH_REPORT_ITERATION9.md)、[完整推导与先前工作](research/iteration9_core_budget_theory.md)、[资源计算说明](results/iteration9_core_budget/README.md) |
+| 排除的快捷方案 | [边界路线审查](research/iteration9_boundary_route_review.md) |
+
+![第八轮：质量改善与实际成本失败](results/iteration8_analysis/quality_cost.png)
+
+第八轮构建与复跑命令见 [报告第 7 节](RESEARCH_REPORT_ITERATION8.md#7-文件与复现)，第九轮解析预算入口见 [报告第 8 节](RESEARCH_REPORT_ITERATION9.md#8-复现来源与完整数据)。新编译必须建立新的源码/二进制绑定门禁；全部复跑使用新输出目录，保留原始成功与失败结果。所有结论均限于所声明的模型、参数和实验，不构成通用低复杂度 GBS 算法、方法原创性或完整九章任务的模拟突破。
+
+## 第七轮（历史）
 
 **第七轮以条件依赖树补入遗漏点击之间的关联，9 个新输入上的 72 个完整分布、27 项交叉检查均完成。** chain-k2 在 8/9 项比 retained-k4 的 TV 更低，tree-k2 为 7/9 项，两个 k2 方法均无数值失败；TV 比值中位数分别为 0.918156、0.880217。不过 Python 准备加完整枚举的成本中位比分别为 1.183、1.119，尚未建立速度优势。
 
