@@ -1,0 +1,39 @@
+{
+  "name": "phase2_holdout_k4_extension",
+  "modes": [
+    10
+  ],
+  "topologies": [
+    "haar",
+    "local2",
+    "local4"
+  ],
+  "squeezing": [
+    0.4,
+    0.8
+  ],
+  "transmissivity": [
+    0.5
+  ],
+  "profiles": [
+    "uniform",
+    "heterogeneous"
+  ],
+  "seeds": [
+    5101,
+    5102
+  ],
+  "samples_per_method": 128,
+  "methods": [
+    {
+      "strategy": "schur_pairwise",
+      "k": 4
+    },
+    {
+      "strategy": "click_influence",
+      "k": 4
+    }
+  ],
+  "purpose": "post-baseline exploratory budget extension; not preregistered held-out selection",
+  "parent_config": "configs/phase2_holdout.json"
+}

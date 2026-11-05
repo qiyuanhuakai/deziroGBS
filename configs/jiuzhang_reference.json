@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "checked_as_of": "2026-11-04",
+  "latest_verified_published_reference": "jiuzhang4_l1024",
+  "search_scope": "Primary experimental articles, author preprints and official USTC data pages; recency search included Jiuzhang generations after 3.0. This is the latest verified target, not a guarantee of exhaustive indexing.",
+  "target_kinds": {
+    "published_gaussian_model": "Sampling law specified by a particular calibrated Gaussian model and detector map.",
+    "empirical_hardware_samples": "Underlying hardware law represented by measured samples; not identical by definition to its Gaussian target model."
+  },
+  "historical_cost_claim_policy": "Old supercomputer estimates and extrapolated MPS construction costs are not timing benchmarks or universal lower bounds for current classical algorithms.",
+  "sources": {
+    "jz1_paper": {
+      "title": "Quantum computational advantage using photons",
+      "doi": "10.1126/science.abe8770",
+      "url": "https://arxiv.org/pdf/2012.01625",
+      "year": 2020,
+      "kind": "author_paper"
+    },
+    "jz1_data": {
+      "title": "Official Jiuzhang raw data",
+      "url": "https://quantum.ustc.edu.cn/web/en/node/915",
+      "kind": "official_data_landing_page",
+      "access": "metadata_read; original archive not downloaded",
+      "license": "not stated on observed landing page"
+    },
+    "jz2_paper": {
+      "title": "Phase-Programmable Gaussian Boson Sampling Using Stimulated Squeezed Light",
+      "doi": "10.1103/PhysRevLett.127.180502",
+      "url": "https://arxiv.org/pdf/2106.15534",
+      "year": 2021,
+      "kind": "author_paper"
+    },
+    "jz2_data": {
+      "title": "Raw data of Jiuzhang 2.0 for sharing",
+      "url": "https://quantum.ustc.edu.cn/web/node/951",
+      "kind": "official_data_landing_page",
+      "access": "metadata_read; archive not downloaded",
+      "license": "not stated on observed landing page"
+    },
+    "jz3_paper": {
+      "title": "Gaussian Boson Sampling with Pseudo-Photon-Number-Resolving Detectors and Quantum Computational Advantage",
+      "doi": "10.1103/PhysRevLett.131.150601",
+      "url": "https://arxiv.org/pdf/2304.12240",
+      "published": "2023-10-10",
+      "kind": "author_paper"
+    },
+    "jz3_data": {
+      "title": "Official Jiuzhang 3.0 raw data",
+      "url": "https://quantum.ustc.edu.cn/index.php/en/node/1121",
+      "kind": "official_data_landing_page",
+      "access": "metadata_read; ten RAR parts not downloaded",
+      "license": "not stated on observed landing page"
+    },
+    "jz4_paper": {
+      "title": "Gaussian boson sampling with 1,024 squeezed states in 8,176 modes",
+      "doi": "10.1038/s41586-026-10523-6",
+      "url": "https://www.nature.com/articles/s41586-026-10523-6",
+      "published": "2026-05-13",
+      "kind": "published_primary_paper",
+      "access": "publication metadata and abstract verified; final full text unavailable in browsing tool"
+    },
+    "jz4_preprint": {
+      "title": "Robust quantum computational advantage with programmable 3050-photon Gaussian boson sampling",
+      "url": "https://arxiv.org/html/2508.09092v3",
+      "version": "v3, 2025-08-24",
+      "kind": "author_preprint",
+      "note": "Detailed detector and subgroup parameters read here; final publication abstract agrees on headline scale."
+    },
+    "jz4_data": {
+      "title": "Official Jiuzhang 4.0 raw-data landing page",
+      "url": "https://quantum.ustc.edu.cn/node/1227",
+      "dataset_url": "https://pan.ustc.edu.cn/share/index/eab75b7ad8fb46d8bb4c",
+      "kind": "official_data_landing_page",
+      "access": "landing page read; shared folder inaccessible through browsing tool; files and hashes unverified",
+      "license": "not stated on observed landing page"
+    },
+    "jz1_author_cov0": {
+      "title": "Author-group covariance decomposition repository",
+      "url": "https://github.com/polyquantique/cov_matrix_optimization",
+      "commit": "b1bb0949aeb40de71e55e292489ba83b45be1f7b",
+      "file_url": "https://github.com/polyquantique/cov_matrix_optimization/blob/b1bb0949aeb40de71e55e292489ba83b45be1f7b/cov_0.npy",
+      "git_blob_sha": "72c4d387461a1dc79da4c7a9504a5de5e31dfb93",
+      "kind": "author_group_data_mirror",
+      "access": "cov_0.npy and README read through GitHub connector",
+      "license": "No LICENSE file in observed root listing; no explicit license in read README. Original Zenodo metadata unavailable; this is an observation, not a legal conclusion.",
+      "original_archive": "https://zenodo.org/records/7992736"
+    },
+    "mps2024": {
+      "title": "Classical algorithm for simulating experimental Gaussian boson sampling",
+      "doi": "10.1038/s41567-024-02535-8",
+      "url": "https://www.nature.com/articles/s41567-024-02535-8",
+      "year": 2024,
+      "kind": "classical_algorithm_primary_paper"
+    },
+    "mps2026": {
+      "title": "Efficient simulation of low-entanglement bosonic Gaussian states in polynomial time",
+      "url": "https://www.nature.com/articles/s41534-026-01254-7",
+      "year": 2026,
+      "kind": "classical_algorithm_primary_paper",
+      "access": "indexed abstract and results excerpts; final page unavailable through browsing tool"
+    }
+  },
+  "targets": {
+    "jiuzhang1": {
+      "label": "Jiuzhang 1.0 (2020)",
+      "optical_output_modes": 100,
+      "squeezed_input_states": 50,
+      "measurement": {
+        "detector_model": "threshold",
+        "output_encoding": "binary_threshold_bins",
+        "binary_detection_bins": 100,
+        "hardware_detector_channels": 100
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": 76,
+        "mean_detection_events": 43,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false
+      },
+      "required_model_features": [
+        "mode_dependent_loss"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": null,
+        "laser_repetition_rate_hz": 250000,
+        "matched_throughput_protocol_verified": false,
+        "reported_collection_seconds": 200,
+        "exactly_43_click_events_in_200_seconds": 3097810,
+        "note": "The 43-click count is postselected; the laser clock is not substituted for accepted unconditional throughput."
+      },
+      "instances": {
+        "jiuzhang1_author_cov0": {
+          "covariance_sha256": "2af0a953bec2d0a42ddd7ef98baeaa256f44525d3a6b94cb0576ec80bebc31ae",
+          "covariance_hash_encoding": "C-contiguous float64 bytes after V*0.5+V.T*0.5; xxpp; hbar=2; vacuum=I",
+          "raw_covariance_array_sha256": "d674b2651c9c82f1316d5b48443a6090d27d9bec2ba2cc569979183558a65452",
+          "source_file_sha256": "892a143db06952cd939bf080dc3321894108630b01a89c74751e85ca5a9531d5",
+          "provenance_scope": "Author-distributed unoptimized cov_0.npy, identified by the repository as Jiuzhang1 ground-truth covariance. Optical calibration and hardware sample mapping have not been independently reconstructed.",
+          "model_noise_features": [
+            "mode_dependent_loss"
+          ],
+          "calibration_sha256": null,
+          "hardware_dataset_sha256": null,
+          "postselection": "none",
+          "matched_timing_reference": null,
+          "source_id": "jz1_author_cov0"
+        }
+      },
+      "source_ids": [
+        "jz1_paper",
+        "jz1_data",
+        "jz1_author_cov0"
+      ],
+      "data_artifacts": [
+        "data.bin (~50 million samples)",
+        "matrix re.xlsx",
+        "matrix im.xlsx",
+        "squeezing parameters.txt",
+        "readme.docx"
+      ],
+      "calibration_notes": [
+        "Official complex transfer matrix already contains input phases and efficiencies. Do not apply loss a second time.",
+        "Official row order changes from interleaved H/V to all H followed by all V.",
+        "Mean 43 is for the paper's high-power setting, not every calibration in the data archive."
+      ]
+    },
+    "jiuzhang2": {
+      "label": "Jiuzhang 2.0 (2021)",
+      "optical_output_modes": 144,
+      "squeezed_input_states": 50,
+      "measurement": {
+        "detector_model": "threshold",
+        "output_encoding": "binary_threshold_bins",
+        "binary_detection_bins": 144,
+        "hardware_detector_channels": 144
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": 113,
+        "mean_detection_events": null,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false
+      },
+      "required_model_features": [
+        "mode_dependent_loss"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": null,
+        "laser_repetition_rate_hz": 250000,
+        "matched_throughput_protocol_verified": false,
+        "reported_collection_seconds": 200
+      },
+      "instances": {},
+      "source_ids": [
+        "jz2_paper",
+        "jz2_data"
+      ],
+      "source_architecture": "25 two-mode squeezed pairs, equivalent to 50 single-mode squeezed inputs",
+      "data_artifacts": [
+        "GBS144 Data.part1_.rar through part4_.rar"
+      ],
+      "calibration_notes": [
+        "Includes low-click datasets suitable for classical bridge experiments.",
+        "Correct the same H/V row-order convention before reconstruction.",
+        "Pump and programmed phases define different instances; a maximum 113-click event does not identify one complete target."
+      ]
+    },
+    "jiuzhang3": {
+      "label": "Jiuzhang 3.0 (2023)",
+      "optical_output_modes": 144,
+      "squeezed_input_states": 50,
+      "measurement": {
+        "detector_model": "pseudo_pnr_fanout8",
+        "output_encoding": "grouped_fanout_click_counts",
+        "binary_detection_bins": 1152,
+        "hardware_detector_channels": 144,
+        "fanout_grouping": "8 binary bins per main optical mode",
+        "grouped_count_range": [
+          0,
+          8
+        ],
+        "note": "Eight fanout bins use two paths and four time bins; grouped counts are pseudo-PNR, not true photon numbers."
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": 255,
+        "mean_detection_events": null,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false
+      },
+      "required_model_features": [
+        "mode_dependent_loss",
+        "partial_distinguishability",
+        "fanout8_response"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "fanout8_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": 1.27e-06,
+        "laser_repetition_rate_hz": null,
+        "matched_throughput_protocol_verified": false
+      },
+      "instances": {},
+      "source_ids": [
+        "jz3_paper",
+        "jz3_data"
+      ],
+      "source_architecture": "25 two-mode squeezed pairs",
+      "reported_overall_efficiency": 0.43,
+      "squeezing_r_range": [
+        1.2,
+        1.6
+      ],
+      "data_artifacts": [
+        "jiuzhang3.part01.rar through part10.rar (~135 million samples)"
+      ]
+    },
+    "jiuzhang4_s64": {
+      "label": "Jiuzhang 4.0 S64 (2026)",
+      "optical_output_modes": 4336,
+      "squeezed_input_states": 64,
+      "measurement": {
+        "detector_model": "threshold",
+        "output_encoding": "binary_threshold_bins",
+        "binary_detection_bins": 4336,
+        "hardware_detector_channels": 16,
+        "time_bin_seconds": 5e-08,
+        "detector_recovery_seconds": 4.3e-08,
+        "reported_average_detector_efficiency": 0.93
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": null,
+        "mean_detection_events": null,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false,
+        "note": "3050 is a reported maximum detection-event count in the largest configuration; subgroup means and maxima need their specific data."
+      },
+      "required_model_features": [
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": null,
+        "laser_repetition_rate_hz": null,
+        "matched_throughput_protocol_verified": false,
+        "note": "The cited 25.6 microsecond interval is cataloged on L1024; a matched subgroup timing protocol has not been verified."
+      },
+      "instances": {},
+      "source_ids": [
+        "jz4_paper",
+        "jz4_preprint",
+        "jz4_data"
+      ],
+      "topology": "Three 16-mode interferometers linked by delay arrays; hybrid spatial/temporal modes; connectivity 4096, not a generic Haar circuit.",
+      "reported_overall_efficiency": 0.51,
+      "reported_source_efficiency": 0.92,
+      "squeezing_r_range": [
+        0.9,
+        1.8
+      ]
+    },
+    "jiuzhang4_m256": {
+      "label": "Jiuzhang 4.0 M256 (2026)",
+      "optical_output_modes": 5104,
+      "squeezed_input_states": 256,
+      "measurement": {
+        "detector_model": "threshold",
+        "output_encoding": "binary_threshold_bins",
+        "binary_detection_bins": 5104,
+        "hardware_detector_channels": 16,
+        "time_bin_seconds": 5e-08,
+        "detector_recovery_seconds": 4.3e-08,
+        "reported_average_detector_efficiency": 0.93
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": null,
+        "mean_detection_events": null,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false,
+        "note": "3050 is a reported maximum detection-event count in the largest configuration; subgroup means and maxima need their specific data."
+      },
+      "required_model_features": [
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": null,
+        "laser_repetition_rate_hz": null,
+        "matched_throughput_protocol_verified": false,
+        "note": "The cited 25.6 microsecond interval is cataloged on L1024; a matched subgroup timing protocol has not been verified."
+      },
+      "instances": {},
+      "source_ids": [
+        "jz4_paper",
+        "jz4_preprint",
+        "jz4_data"
+      ],
+      "topology": "Three 16-mode interferometers linked by delay arrays; hybrid spatial/temporal modes; connectivity 4096, not a generic Haar circuit.",
+      "reported_overall_efficiency": 0.51,
+      "reported_source_efficiency": 0.92,
+      "squeezing_r_range": [
+        0.9,
+        1.8
+      ]
+    },
+    "jiuzhang4_l1024": {
+      "label": "Jiuzhang 4.0 L1024 (2026)",
+      "optical_output_modes": 8176,
+      "squeezed_input_states": 1024,
+      "measurement": {
+        "detector_model": "threshold",
+        "output_encoding": "binary_threshold_bins",
+        "binary_detection_bins": 8176,
+        "hardware_detector_channels": 16,
+        "time_bin_seconds": 5e-08,
+        "detector_recovery_seconds": 4.3e-08,
+        "reported_average_detector_efficiency": 0.93
+      },
+      "reported_detection_statistics": {
+        "observed_maximum_detection_events": 3050,
+        "mean_detection_events": null,
+        "maximum_is_not_typical": true,
+        "true_PNR_photons": false,
+        "note": "3050 is a reported maximum detection-event count in the largest configuration; subgroup means and maxima need their specific data."
+      },
+      "required_model_features": [
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "required_hardware_features": [
+        "background_and_drift_characterization",
+        "calibrated_detector_response",
+        "mode_dependent_loss",
+        "partial_distinguishability"
+      ],
+      "sampling_protocol": {
+        "postselection": "none",
+        "reported_sample_period_seconds": 2.56e-05,
+        "laser_repetition_rate_hz": null,
+        "matched_throughput_protocol_verified": false
+      },
+      "instances": {},
+      "source_ids": [
+        "jz4_paper",
+        "jz4_preprint",
+        "jz4_data"
+      ],
+      "topology": "Three 16-mode interferometers linked by delay arrays; hybrid spatial/temporal modes; connectivity 4096, not a generic Haar circuit.",
+      "reported_overall_efficiency": 0.51,
+      "reported_source_efficiency": 0.92,
+      "squeezing_r_range": [
+        0.9,
+        1.8
+      ]
+    }
+  }
+}

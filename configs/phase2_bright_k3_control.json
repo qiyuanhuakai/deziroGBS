@@ -1,0 +1,35 @@
+{
+  "name": "phase2_bright_k3_control",
+  "modes": [
+    12
+  ],
+  "topologies": [
+    "haar"
+  ],
+  "squeezing": [
+    0.8
+  ],
+  "transmissivity": [
+    0.8
+  ],
+  "profiles": [
+    "uniform"
+  ],
+  "seeds": [
+    6101,
+    6102,
+    6103
+  ],
+  "samples_per_method": 128,
+  "methods": [
+    {
+      "strategy": "schur_recent",
+      "k": 3
+    },
+    {
+      "strategy": "schur_pairwise",
+      "k": 3
+    }
+  ],
+  "purpose": "Post-discovery equal-click-budget controls; not a new held-out selector tuning run."
+}

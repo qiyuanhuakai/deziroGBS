@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "checked_as_of": "2026-11-04",
+  "purpose": "Primary-source claim ledger; reported literature results are not local replications or global-TV certificates.",
+  "paper": {
+    "title": "A fast and frugal Gaussian boson sampling emulator",
+    "authors": [
+      "Tom Dodd",
+      "Javier Mart\u00ednez-Cifuentes",
+      "Oliver Thomson Brown",
+      "Nicol\u00e1s Quesada",
+      "Ra\u00fal Garc\u00eda-Patr\u00f3n"
+    ],
+    "latest_verified_publication": "Science Advances 12(42), eaef8431",
+    "published_online": "2026-10-14",
+    "issue_date": "2026-10-16",
+    "doi": "10.1126/sciadv.aef8431",
+    "arxiv": "2511.14923v1",
+    "arxiv_date": "2025-11-18",
+    "article_license": "CC BY 4.0",
+    "version_scope": "Final publication metadata, abstract, captions and indexed full-text passages covering experimental comparisons, TV limitations, implementation resources and data availability were verified. Details not confirmed in final text remain explicitly tied to the author preprint; no unobserved final-version changes are assumed."
+  },
+  "sources": {
+    "published": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13665930/",
+      "doi": "10.1126/sciadv.aef8431",
+      "access": "Indexed final full-text passages were retrieved, including experimental comparisons, implementation and data availability. Direct subsequent opens returned a browser challenge; archive destinations in refs34/35 remain unresolved.",
+      "retrieval_evidence": [
+        "turn129search1: final comparison/TV/implementation passages",
+        "turn130search1: final data availability; refs34/35/36 roles confirmed"
+      ]
+    },
+    "published_captions": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42873857/",
+      "kind": "Published-paper metadata, abstract and figure captions"
+    },
+    "author_preprint": {
+      "url": "https://arxiv.org/html/2511.14923v1",
+      "kind": "Author primary preprint including appendices",
+      "access": "full HTML read"
+    },
+    "author_publication_record": {
+      "url": "https://www.research.ed.ac.uk/en/publications/a-fast-and-frugal-gaussian-boson-sampling-emulator/",
+      "kind": "Author institution publication record",
+      "access": "metadata read; linked final PDF returned 403"
+    },
+    "library": {
+      "url": "https://github.com/tomdodd4598/FrugalGBS",
+      "commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+      "license": "MIT",
+      "kind": "Public library derived from original paper implementation",
+      "tree_checked": true
+    },
+    "chicago_reconstruction": {
+      "url": "https://github.com/sss441803/BosonSupremacy",
+      "commit": "ff3d49e2cb6aaa594869f3ba568566db44c4fcc8",
+      "license": "README states original code MIT and the Walrus-derived portions Apache-2.0; experimental dataset license is separate",
+      "kind": "Classical-paper author code for reconstructing JZ2/JZ3 inputs"
+    }
+  },
+  "claims": [
+    {
+      "id": "benchmark_scope",
+      "reported_paraphrase": "Classical samples match or improve established experimental benchmarks on a CPU/GPU.",
+      "sources": [
+        "published",
+        "author_preprint"
+      ],
+      "locator": "Abstract; introduction; Comparison to experiments",
+      "scope": "Benchmark scores against a chosen lossy ground-truth model.",
+      "does_not_establish": [
+        "Faster sampling than quantum hardware",
+        "A full-distribution TV guarantee",
+        "Every Jiuzhang generation reproduced"
+      ]
+    },
+    {
+      "id": "jiuzhang1_not_benchmarked",
+      "reported_paraphrase": "The authors explicitly omit Jiuzhang1 benchmarking, citing prior reproduction of most of its advantage evidence using unentangled squashed Gaussian states.",
+      "sources": [
+        "published"
+      ],
+      "locator": "Final Comparison to experiments",
+      "scope_note": "This explains their benchmark selection; it does not assert full-distribution reproduction of the Jiuzhang1 hardware. Our same-input Jiuzhang1 control is a distinct local experiment."
+    },
+    {
+      "id": "jz2_low",
+      "reported_paraphrase": "J2-P65-2: cumulants and selected-sector XEB.",
+      "sources": [
+        "published",
+        "author_preprint",
+        "published_captions"
+      ],
+      "locator": "Section II.1; final Fig. 2",
+      "configuration": {
+        "modes": 144,
+        "detector": "threshold",
+        "output_photon_density": 0.093,
+        "K": 5,
+        "samples_each": 10000000,
+        "xeb_click_min": 5,
+        "xeb_click_max": 20,
+        "xeb_samples_per_click_sector": 4000
+      },
+      "d2_quality_status": "witnesses_only",
+      "scope_note": "Postselected XEB sectors do not constitute an unconditional full-law TV bound.",
+      "version_evidence": {
+        "final": "144-mode Jiuzhang comparisons, double-elision K=5, J2-P65-2, photon density .093, cumulants through order five and XEB confirmed.",
+        "preprint_detail": "The explicit 4000 samples per XEB sector is retained from the preprint."
+      }
+    },
+    {
+      "id": "jz2_high",
+      "reported_paraphrase": "J2-P65-5: cumulants and total-click histogram; XEB omitted at relevant C>40.",
+      "sources": [
+        "author_preprint",
+        "published",
+        "published_captions"
+      ],
+      "locator": "Section II.2; final Fig. 3",
+      "configuration": {
+        "modes": 144,
+        "detector": "threshold",
+        "output_photon_density": 0.975,
+        "K": 5,
+        "samples_each": 10000000
+      },
+      "d2_quality_status": "witnesses_only",
+      "scope_note": "Good low-order correlations and a count marginal do not identify the joint distribution."
+    },
+    {
+      "id": "jz3_coarse",
+      "reported_paraphrase": "J3-high is coarse-grained from 1152 detection bins to 144 binary outputs.",
+      "sources": [
+        "published",
+        "author_preprint",
+        "published_captions"
+      ],
+      "locator": "Section II.3; final Fig. 4",
+      "configuration": {
+        "simulated_binary_outputs": 144,
+        "full_hardware_binary_bins": 1152,
+        "output_photon_density": 0.81,
+        "K": 5,
+        "samples_each": 10000000,
+        "metrics": [
+          "click cumulants",
+          "total-click histogram"
+        ]
+      },
+      "full_jiuzhang3_measurement_gate": "fail",
+      "d2_quality_status": "witnesses_only",
+      "scope_note": "A separately named coarse-grained task is meaningful; it is not the complete eight-bin pseudo-PNR task.",
+      "version_evidence": {
+        "final": "The 144 spatial modes, eight time bins per output, actual 1152-bin task, reduced 144-bit test, high-click XEB cost and retained witness types are explicit in final text."
+      }
+    },
+    {
+      "id": "cumulant_coverage",
+      "reported_paraphrase": "All cumulants through order four; a 1/24 subset at order five; 100 bootstrap resamples for correlations.",
+      "sources": [
+        "author_preprint",
+        "published_captions"
+      ],
+      "locator": "Appendix F.1; Figs. 2-4",
+      "scope_note": "The subset and bootstrap are finite witness procedures, not all high-order correlations."
+    },
+    {
+      "id": "global_tv",
+      "reported_paraphrase": "Large-system full TV is not efficiently evaluated; K is chosen heuristically.",
+      "sources": [
+        "published",
+        "author_preprint"
+      ],
+      "locator": "Section I; Section II.1",
+      "global_tv_bound": null,
+      "d2_quality_status": "unknown",
+      "scope_note": "No numerical full-TV value, epsilon guarantee, or theorem is fabricated from witness acceptance.",
+      "version_evidence": {
+        "final": "The final comparison section explains that full-law TV estimation is impractical at the experimental size and uses established metrics.",
+        "preprint_detail": "The heuristic K-selection statement is retained from the preprint."
+      }
+    },
+    {
+      "id": "sampling_resources",
+      "reported_paraphrase": "Ten million samples in 115 minutes on eight H100 SXM 80 GB GPUs.",
+      "sources": [
+        "published",
+        "author_preprint",
+        "published_captions"
+      ],
+      "locator": "Implementation; final Fig. 1",
+      "reported": {
+        "samples": 10000000,
+        "seconds": 6900,
+        "gpus": 8,
+        "gpu_model": "NVIDIA H100 SXM 80 GB",
+        "nodes": 1,
+        "cpu_scaling_benchmark": "AMD EPYC 9654"
+      },
+      "derived_sampling_rate_per_second": 1449.2753623188405,
+      "setup_inclusion_in_headline_timing_verified": false,
+      "scope_note": "This is a reported sample-generation time; a fully matched end-to-end timing boundary has not been established here.",
+      "version_evidence": {
+        "final": "Final Implementation confirms the ten-million/115-minute/eight-H100 benchmark and EPYC 9654 CPU platform."
+      }
+    },
+    {
+      "id": "hardware_rate",
+      "reported_paraphrase": "The paper's workflow figure gives approximately ten seconds for ten million quantum samples.",
+      "sources": [
+        "published_captions"
+      ],
+      "locator": "Final Fig. 1",
+      "reported": {
+        "samples": 10000000,
+        "approximately_seconds": 10
+      },
+      "inference": "6900/10 is approximately 690, with classical generation slower in that schematic comparison.",
+      "matched_jiuzhang_speed_ratio_authorized": false,
+      "scope_note": "The schematic does not specify a matched calibration, acceptance protocol or all timing boundaries; it cannot support a precise end-to-end speedup claim."
+    },
+    {
+      "id": "preprocessing",
+      "reported_paraphrase": "Phase I depends on M,K; Phase II computes instance-dependent cumulants before sampling.",
+      "sources": [
+        "author_preprint"
+      ],
+      "locator": "Section III; Fig. 5",
+      "scope_note": "Count both stages for a new instance, with an explicitly stated amortization policy. Synthetic scaling plots are not new hardware-instance benchmarks."
+    },
+    {
+      "id": "memory_and_precision",
+      "reported_paraphrase": "At M=144,K=5: approximately 2 GB cumulants, 2.5 GB auxiliary indices, and 2 MB per sampling thread.",
+      "sources": [
+        "published",
+        "author_preprint",
+        "library"
+      ],
+      "locator": "Section III; Implementation; library CMakeLists.txt",
+      "publication_numeric_precision_explicitly_verified": false,
+      "library_default_precision": "single, FGBS_REAL_PRECISION=1",
+      "this_project_control_precision": "double, FGBS_REAL_PRECISION=2",
+      "scope_note": "Two GB is not total peak memory. The library default alone does not prove the precision used in the publication.",
+      "version_evidence": {
+        "final": "Final Implementation confirms 2 GB of cumulants per GPU and approximately 2 MB of per-thread sampling tables.",
+        "preprint_detail": "The additional 2.5 GB auxiliary-index figure is retained from the preprint.",
+        "library_only": "The source default is single precision; this is not proof of the publication arithmetic setting."
+      }
+    },
+    {
+      "id": "jiuzhang4_future_work",
+      "reported_paraphrase": "Scaling to Jiuzhang4 is proposed as future work requiring implementation and numerical improvements.",
+      "sources": [
+        "author_preprint"
+      ],
+      "locator": "Discussion",
+      "demonstrated_full_jz4_replication": false,
+      "scope_note": "No 8176-output benchmark or full-JZ4 distribution certificate was found in the audited results."
+    }
+  ],
+  "data_routes": {
+    "frugal_published_data": {
+      "source_id": "published",
+      "reference_number": 34,
+      "description": "Generated samples and cumulant/XEB/count-histogram data",
+      "resolved_url": null,
+      "status": "Final data-availability statement independently confirmed by a bounded primary search; destination and files remain unresolved after direct access and reference-link retrieval failed.",
+      "raw_files_imported": false
+    },
+    "frugal_original_implementation": {
+      "source_id": "published",
+      "reference_number": 35,
+      "resolved_url": null,
+      "status": "Distinguished from public derived library; destination not resolved."
+    },
+    "frugal_public_library": {
+      "source_id": "library",
+      "reference_number": 36,
+      "status": "Pinned source tree read; it contains code/tests, not JZ2/JZ3 covariance/sample files."
+    },
+    "jiuzhang2_official": {
+      "landing_url": "https://quantum.ustc.edu.cn/web/node/951",
+      "archive_urls_from_author_readme": [
+        "http://quantum.ustc.edu.cn/web/sites/default/files/2021-07/GBS144%20Data.part1_.rar",
+        "http://quantum.ustc.edu.cn/web/sites/default/files/2021-07/GBS144%20Data.part2_.rar",
+        "http://quantum.ustc.edu.cn/web/sites/default/files/2021-07/GBS144%20Data.part3_.rar",
+        "http://quantum.ustc.edu.cn/web/sites/default/files/2021-07/GBS144%20Data.part4_.rar"
+      ],
+      "bridge_mapping": {
+        "J2-P65-2": "waist=65um/0.3",
+        "J2-P65-5": "waist=65um/1.65"
+      },
+      "required_calibration_files": [
+        "waist=65um/matrix.mtx",
+        "setting-specific squeezing parameters"
+      ],
+      "status": "Landing metadata and author import instructions verified; raw archive not imported",
+      "license": "not established by the observed official landing page"
+    },
+    "jiuzhang3_official": {
+      "landing_url": "https://quantum.ustc.edu.cn/index.php/en/node/1121",
+      "archive_names": "jiuzhang3.part01.rar through jiuzhang3.part10.rar",
+      "required_calibration_files_from_author_code": [
+        "sq_parameter/high_power.xlsx",
+        "matrix/high power.mtx"
+      ],
+      "loader_binary_width": 1152,
+      "status": "Landing metadata and author reconstruction/loader code verified; raw archive not imported",
+      "calibration_warning": "The Chicago make_cov.py combines two squeezing components into an effective scalar squeezing before making a 144-mode covariance. This reduced model is not silently promoted to the full partially distinguishable fanout law.",
+      "license": "not established by the observed official landing page"
+    }
+  },
+  "evaluation_policy": {
+    "all_output_modes_required_for_declared_target": true,
+    "partial_readout_requires_separate_target_name": true,
+    "witness_acceptance_implies_global_tv_acceptance": false,
+    "paper_report_implies_local_replication": false,
+    "speed_comparison_requires_all_d2_gates": true,
+    "data_missing_policy": "unknown; no invented covariance, dataset hash, license or successful download"
+  }
+}

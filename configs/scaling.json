@@ -1,0 +1,16 @@
+{
+  "name": "scaling_v1",
+  "modes": [16, 32, 64],
+  "topologies": ["haar", "local2"],
+  "squeezing": 0.6,
+  "transmissivity": [0.25, 0.6],
+  "seed": 3901,
+  "samples_per_method": 128,
+  "methods": [
+    {"strategy": "pairwise", "k": 2},
+    {"strategy": "greedy_cmi", "k": 2},
+    {"strategy": "calibrated_greedy_cmi", "k": 2},
+    {"strategy": "zero_memory", "k": 2},
+    {"strategy": "zero_pairwise", "k": 2}
+  ]
+}

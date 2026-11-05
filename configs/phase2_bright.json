@@ -1,0 +1,17 @@
+{
+  "name": "phase2_bright",
+  "modes": [12],
+  "topologies": ["haar"],
+  "squeezing": [0.8],
+  "transmissivity": [0.8],
+  "profiles": ["uniform"],
+  "seeds": [6101, 6102, 6103],
+  "samples_per_method": 128,
+  "methods": [
+    {"strategy": "schur_pairwise", "k": 2},
+    {"strategy": "conditional_mi", "k": 2},
+    {"strategy": "click_influence", "k": 2},
+    {"strategy": "conditional_mi", "k": 3},
+    {"strategy": "click_influence", "k": 3}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "phase2_tv_validation",
+  "modes": [10, 16, 32],
+  "seeds": [7101, 7102],
+  "topology": "haar",
+  "squeezing": 0.6,
+  "transmissivity": 0.25,
+  "sampler": "schur_pairwise",
+  "retained_clicks": 2,
+  "sample_count": 512,
+  "sample_seed_offset": 200000,
+  "exact_click_cutoffs": [4, 6],
+  "familywise_alpha": 0.05,
+  "planned_comparisons": 12,
+  "dense_calibration_modes": [10],
+  "max_relative_roundoff": 0.000001,
+  "notes": "One iid Q batch per case reused for both cutoffs. Confidence is conditional on floating point oracle accuracy. No full distribution enumeration above 10 modes."
+}

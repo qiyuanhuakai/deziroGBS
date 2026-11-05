@@ -1,0 +1,36 @@
+{
+  "name": "phase2_bright_k4_extension",
+  "modes": [
+    12
+  ],
+  "topologies": [
+    "haar"
+  ],
+  "squeezing": [
+    0.8
+  ],
+  "transmissivity": [
+    0.8
+  ],
+  "profiles": [
+    "uniform"
+  ],
+  "seeds": [
+    6101,
+    6102,
+    6103
+  ],
+  "samples_per_method": 128,
+  "methods": [
+    {
+      "strategy": "schur_pairwise",
+      "k": 4
+    },
+    {
+      "strategy": "click_influence",
+      "k": 4
+    }
+  ],
+  "purpose": "post-baseline exploratory budget extension; not preregistered held-out selection",
+  "parent_config": "configs/phase2_bright.json"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "iteration5_fixed_quality_and_marginal_witnesses",
+  "frozen_before_sampling": true,
+  "synthetic_modes": [12, 32, 64, 100, 144, 256],
+  "interferometer_seed": 120601,
+  "profiles": [
+    {"name": "lossy", "squeezing": 0.6, "transmissivity": 0.35},
+    {"name": "bright", "squeezing": 0.9, "transmissivity": 0.65}
+  ],
+  "candidate": {"selector": "click_influence", "k": 4, "vacuum_kernel": "product", "prefix_cache_entries": 65536},
+  "sample_count_by_modes": {"12": 512, "32": 2048, "64": 2048, "100": 1024, "144": 1024, "256": 1024},
+  "pilot_size_by_modes": {"12": 128, "32": 512, "64": 512, "100": 256, "144": 256, "256": 256},
+  "sample_seed_base": 7120601,
+  "epsilon": 0.1,
+  "familywise_alpha": 0.05,
+  "planned_comparisons": 14,
+  "old_identity_suite_alpha": 0.025,
+  "marginal_suite_alpha": 0.025,
+  "marginal_window_width": 8,
+  "marginal_windows": "deterministic early, middle, late contiguous and evenly spaced physical-mode windows; deduplicate before allocating alpha",
+  "split": "first pilot_size rows choose a positive-discrepancy event; all remaining rows evaluate it; no held-out sign reversal",
+  "full_law_max_modes": 12,
+  "point_probability_max_clicks": 6,
+  "threads": 1,
+  "candidate_timeout_seconds": 600,
+  "jiuzhang1": {
+    "input": ".cache/jiuzhang_data/cov_0.npy",
+    "input_file_sha256": "892a143db06952cd939bf080dc3321894108630b01a89c74751e85ca5a9531d5",
+    "canonical_covariance_sha256": "2af0a953bec2d0a42ddd7ef98baeaa256f44525d3a6b94cb0576ec80bebc31ae",
+    "instance_id": "jiuzhang1_author_cov0",
+    "sample_count": 1024,
+    "pilot_size": 256,
+    "sample_seed": 7120602,
+    "frugal_cutoff": 5,
+    "frugal_timeout_seconds": 1500,
+    "frugal_record_log_probabilities": false,
+    "candidate_record_log_probabilities": true,
+    "scope": "New independently seeded generation-only Frugal batch with an atomic checkpoint. The failed iteration4 v1 density audit remains unchanged. This is the published JZ1 Gaussian model, not raw hardware samples or a reproduction of the Frugal JZ2/JZ3 GPU study."
+  },
+  "failure_policy": "one fixed batch per comparison; preserve failure, no retries, no K reduction, no postselection; unused confidence budgets are not reassigned",
+  "quality_scope": "Specified zero-mean Gaussian threshold target. Marginal witnesses can reject full-law closeness but cannot accept it. Statistical bounds assume iid attempts and accurate floating-point target probabilities."
+}

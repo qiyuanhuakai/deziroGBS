@@ -1,0 +1,21 @@
+{
+  "name": "adaptive_v2",
+  "modes": [8, 10],
+  "topologies": ["haar", "local2"],
+  "squeezing": [0.4, 0.8],
+  "transmissivity": [0.25, 0.6, 1.0],
+  "seeds": [1701, 1702, 1703],
+  "methods": [
+    {"strategy": "pairwise", "k": 2},
+    {"strategy": "greedy_cmi", "k": 2},
+    {"strategy": "calibrated_pairwise", "k": 2},
+    {"strategy": "calibrated_greedy_cmi", "k": 2},
+    {"strategy": "zero_memory", "k": 0},
+    {"strategy": "zero_memory", "k": 1},
+    {"strategy": "zero_memory", "k": 2},
+    {"strategy": "zero_pairwise", "k": 1},
+    {"strategy": "zero_pairwise", "k": 2}
+  ],
+  "samples_per_method": 250,
+  "save_distributions": false
+}

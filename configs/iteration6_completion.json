@@ -1,0 +1,37 @@
+{
+  "name": "iteration6_positive_completion_full_laws",
+  "frozen_before_formal_evaluation": true,
+  "analysis_role": "theory_driven_exploration_with_complete_small_system_laws",
+  "modes": [8, 10, 12],
+  "seeds_per_mode": [240611, 240612],
+  "seed_rule": "base_seed + 1000 * modes; same U for the three profiles at each size and seed",
+  "profiles": [
+    {"name": "lossy", "squeezing": 0.6, "transmissivity": 0.35},
+    {"name": "bright", "squeezing": 0.9, "transmissivity": 0.65},
+    {"name": "stress", "squeezing": 1.2, "transmissivity": 0.85}
+  ],
+  "methods": [
+    {"id": "retained_k2", "completion": "none", "k": 2},
+    {"id": "retained_k4", "completion": "none", "k": 4},
+    {"id": "retained_k6", "completion": "none", "k": 6},
+    {"id": "product_k2", "completion": "product", "k": 2},
+    {"id": "product_k4", "completion": "product", "k": 4},
+    {"id": "pair_k2", "completion": "pair_block", "k": 2},
+    {"id": "pair_k4", "completion": "pair_block", "k": 4}
+  ],
+  "selector": "click_influence",
+  "order": "natural physical-mode order",
+  "block_order": "measurement",
+  "cache_size": 8192,
+  "max_relative_roundoff": 1e-6,
+  "planned_instances": 18,
+  "planned_method_evaluations": 126,
+  "full_law_max_modes": 12,
+  "native_crosscheck": "retained_k4 on every instance, independent frozen C++ product binary; validation only, no cross-language speed claims",
+  "table_crosscheck": "all four completion laws on the six m8 instances, same Gaussian selector and independently summed complete-target event probabilities",
+  "failure_policy": "Every unresolved reachable prefix contributes its full probability weight to an explicit failure symbol; never renormalize successes or retry a case",
+  "primary_metric": "complete extended TV, 0.5 * (sum(abs(Q_success-P)) + Q_failure)",
+  "secondary_metrics": ["failure_mass", "mean_clicks_of_success_subprobability", "same_backend_wall_time_descriptive_only", "event_and_selector_work_counters"],
+  "continuation_rule": "Compare each completion to its same-k baseline and the stronger k4/k6 baselines. If completion has no material TV improvement on any fixed input, retain the failure and start an alternative route without waiting for user input.",
+  "claim_scope": "No universal TV guarantee, classical-limit breakthrough, asymptotic exact-GBS speedup, native throughput claim, or novelty claim follows from this exploratory matrix. The Gaussian support theorem assumes exact local probabilities."
+}
