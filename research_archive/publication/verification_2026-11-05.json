@@ -1,0 +1,219 @@
+{
+  "format": "deziroGBS-publication-verification-v1",
+  "verified_at_utc": "2026-11-05T03:53:08Z",
+  "repository": "qiyuanhuakai/deziroGBS",
+  "user_authorized_scope": "All local GBS research, history, code and related information, published publicly in this repository.",
+  "scope": "Verification of the complete research import commit; the commit adding this receipt only adds this publication record.",
+  "local_preflight_note": "The local trigger commit is an ephemeral preflight object. Its transport tree f2cab0f856b7bd4dac04b4483b6eded626f7b54a is identical to the actual public trigger d380627d31846613c9765c45eb01088cb99a0546. The resulting final research/publication tree matches exactly.",
+  "local_preflight": {
+    "base": {
+      "advertised_refs": {
+        "HEAD": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+        "refs/heads/research/iteration7": "108b732443e273ee1b898dff21b351a14b2a6ce8",
+        "refs/heads/research/iteration8": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+        "refs/remotes/origin/research/iteration5": "d0b57b3996c5f87370634aac3fc80db33ad72bd7",
+        "refs/remotes/origin/research/iteration6": "5cf42049a628dadf79c97b255ca8f191755b790e",
+        "refs/remotes/origin/research/iteration7": "108b732443e273ee1b898dff21b351a14b2a6ce8"
+      },
+      "branch": "research/iteration8",
+      "bytes": 68173945,
+      "commit": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+      "inventory_files": 4169,
+      "parts": 66,
+      "prerequisites": [],
+      "sha256": "8bb4650e2a17f15609c1d4ed220fb9e209a55078bf4b46c0b70f8818af08fb4d"
+    },
+    "delta": {
+      "advertised_refs": {
+        "refs/heads/research/iteration10": "a9f34da5c45dd73921d3a8c38e50362e689822b5"
+      },
+      "branch": "research/iteration10",
+      "bytes": 6676342,
+      "commit": "a9f34da5c45dd73921d3a8c38e50362e689822b5",
+      "inventory_files": 5268,
+      "parts": 7,
+      "prerequisites": [
+        "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff"
+      ],
+      "sha256": "fca2c1edd40b58e836a61e60fb048f0702352298aa989ba4da30e1df4c3836e4"
+    },
+    "final_tree": "acdfcbda37eed04484c60183297ce92524872758",
+    "merge_commit": "292daf57818e23dc50818441b1e4f8e5f1727228",
+    "mode": "dry-run",
+    "parents": [
+      "4f56d255810ce7d0b8d5400520043a86f7b4f0d4",
+      "a9f34da5c45dd73921d3a8c38e50362e689822b5"
+    ],
+    "pushed": false,
+    "repository": "qiyuanhuakai/deziroGBS",
+    "request_sha256": "8be5b71d555f2b91ff204af0f9bf8775277526496f524bbdacb5e8bb74b742cc",
+    "source_commit": "a9f34da5c45dd73921d3a8c38e50362e689822b5",
+    "source_tree": "ec060b72905ea361ee01295d665fba68836338ed",
+    "tree_validation": {
+      "all_other_source_paths_unchanged": true,
+      "changed_paths": [
+        ".github/gbs-publication.json",
+        ".github/workflows/publish-complete-history.yml",
+        "LEGACY_NATIVE_REBUILD.md",
+        "native_builds/iteration8/click-iteration4-native/build.json",
+        "native_builds/iteration8/click-iteration4-native/click_sampler",
+        "native_builds/iteration8/click-prefix-native/build.json",
+        "native_builds/iteration8/click-prefix-native/click_sampler",
+        "native_builds/iteration8/frugal-evidence-checkpoint-native/build.json",
+        "native_builds/iteration8/frugal-evidence-checkpoint-native/frugal_evidence_adapter",
+        "native_builds/iteration8/frugal-evidence-native/build.json",
+        "native_builds/iteration8/frugal-evidence-native/frugal_evidence_adapter",
+        "native_builds/iteration8/frugal-native/build.json",
+        "native_builds/iteration8/frugal-native/frugal_sampling_adapter",
+        "native_builds/iteration8/iteration8-batched-native/build.json",
+        "native_builds/iteration8/iteration8-batched-native/libbatched_forest.so",
+        "native_builds/iteration8/iteration8-forest-native/batched_forest_sampler",
+        "native_builds/iteration8/iteration8-forest-native/build.json",
+        "native_builds/iteration8/iteration8-retained-native/build.json",
+        "native_builds/iteration8/iteration8-retained-native/click_sampler",
+        "publication_support/import_history.py"
+      ],
+      "final_files": 5288,
+      "github_exact": true,
+      "source_files": 5268,
+      "source_only_native_files_preserved": 4,
+      "trigger_native_files": 16
+    },
+    "trigger_commit": "4f56d255810ce7d0b8d5400520043a86f7b4f0d4"
+  },
+  "github_workflow": {
+    "run_id": 41964078198,
+    "job_id": 127036901642,
+    "url": "https://github.com/qiyuanhuakai/deziroGBS/actions/runs/41964078198",
+    "conclusion": "success",
+    "import_audit": {
+      "base": {
+        "advertised_refs": {
+          "HEAD": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+          "refs/heads/research/iteration7": "108b732443e273ee1b898dff21b351a14b2a6ce8",
+          "refs/heads/research/iteration8": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+          "refs/remotes/origin/research/iteration5": "d0b57b3996c5f87370634aac3fc80db33ad72bd7",
+          "refs/remotes/origin/research/iteration6": "5cf42049a628dadf79c97b255ca8f191755b790e",
+          "refs/remotes/origin/research/iteration7": "108b732443e273ee1b898dff21b351a14b2a6ce8"
+        },
+        "branch": "research/iteration8",
+        "bytes": 68173945,
+        "commit": "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff",
+        "inventory_files": 4169,
+        "parts": 66,
+        "prerequisites": [],
+        "sha256": "8bb4650e2a17f15609c1d4ed220fb9e209a55078bf4b46c0b70f8818af08fb4d"
+      },
+      "delta": {
+        "advertised_refs": {
+          "refs/heads/research/iteration10": "a9f34da5c45dd73921d3a8c38e50362e689822b5"
+        },
+        "branch": "research/iteration10",
+        "bytes": 6676342,
+        "commit": "a9f34da5c45dd73921d3a8c38e50362e689822b5",
+        "inventory_files": 5268,
+        "parts": 7,
+        "prerequisites": [
+          "8675497ae2ff16f7f6fbaba4ad6eb0545c1612ff"
+        ],
+        "sha256": "fca2c1edd40b58e836a61e60fb048f0702352298aa989ba4da30e1df4c3836e4"
+      },
+      "final_tree": "acdfcbda37eed04484c60183297ce92524872758",
+      "merge_commit": "683862ba481d87569e993ee30bf960d7cc1251d4",
+      "mode": "publish",
+      "parents": [
+        "d380627d31846613c9765c45eb01088cb99a0546",
+        "a9f34da5c45dd73921d3a8c38e50362e689822b5"
+      ],
+      "pushed": true,
+      "repository": "qiyuanhuakai/deziroGBS",
+      "request_sha256": "8be5b71d555f2b91ff204af0f9bf8775277526496f524bbdacb5e8bb74b742cc",
+      "source_commit": "a9f34da5c45dd73921d3a8c38e50362e689822b5",
+      "source_tree": "ec060b72905ea361ee01295d665fba68836338ed",
+      "tree_validation": {
+        "all_other_source_paths_unchanged": true,
+        "changed_paths": [
+          ".github/gbs-publication.json",
+          ".github/workflows/publish-complete-history.yml",
+          "LEGACY_NATIVE_REBUILD.md",
+          "native_builds/iteration8/click-iteration4-native/build.json",
+          "native_builds/iteration8/click-iteration4-native/click_sampler",
+          "native_builds/iteration8/click-prefix-native/build.json",
+          "native_builds/iteration8/click-prefix-native/click_sampler",
+          "native_builds/iteration8/frugal-evidence-checkpoint-native/build.json",
+          "native_builds/iteration8/frugal-evidence-checkpoint-native/frugal_evidence_adapter",
+          "native_builds/iteration8/frugal-evidence-native/build.json",
+          "native_builds/iteration8/frugal-evidence-native/frugal_evidence_adapter",
+          "native_builds/iteration8/frugal-native/build.json",
+          "native_builds/iteration8/frugal-native/frugal_sampling_adapter",
+          "native_builds/iteration8/iteration8-batched-native/build.json",
+          "native_builds/iteration8/iteration8-batched-native/libbatched_forest.so",
+          "native_builds/iteration8/iteration8-forest-native/batched_forest_sampler",
+          "native_builds/iteration8/iteration8-forest-native/build.json",
+          "native_builds/iteration8/iteration8-retained-native/build.json",
+          "native_builds/iteration8/iteration8-retained-native/click_sampler",
+          "publication_support/import_history.py"
+        ],
+        "final_files": 5288,
+        "github_exact": true,
+        "source_files": 5268,
+        "source_only_native_files_preserved": 4,
+        "trigger_native_files": 16
+      },
+      "trigger_commit": "d380627d31846613c9765c45eb01088cb99a0546"
+    }
+  },
+  "post_publish_verification": {
+    "remote_commit": "683862ba481d87569e993ee30bf960d7cc1251d4",
+    "remote_tree": "acdfcbda37eed04484c60183297ce92524872758",
+    "remote_file_count": 5288,
+    "source_commit": "a9f34da5c45dd73921d3a8c38e50362e689822b5",
+    "source_file_count": 5268,
+    "source_history_commits": 13,
+    "published_reachable_commits": 16,
+    "all_source_commits_preserved": true,
+    "all_scientific_paths_unchanged": true,
+    "publication_only_changed_paths": [
+      ".github/gbs-publication.json",
+      ".github/workflows/publish-complete-history.yml",
+      "LEGACY_NATIVE_REBUILD.md",
+      "native_builds/iteration8/click-iteration4-native/build.json",
+      "native_builds/iteration8/click-iteration4-native/click_sampler",
+      "native_builds/iteration8/click-prefix-native/build.json",
+      "native_builds/iteration8/click-prefix-native/click_sampler",
+      "native_builds/iteration8/frugal-evidence-checkpoint-native/build.json",
+      "native_builds/iteration8/frugal-evidence-checkpoint-native/frugal_evidence_adapter",
+      "native_builds/iteration8/frugal-evidence-native/build.json",
+      "native_builds/iteration8/frugal-evidence-native/frugal_evidence_adapter",
+      "native_builds/iteration8/frugal-native/build.json",
+      "native_builds/iteration8/frugal-native/frugal_sampling_adapter",
+      "native_builds/iteration8/iteration8-batched-native/build.json",
+      "native_builds/iteration8/iteration8-batched-native/libbatched_forest.so",
+      "native_builds/iteration8/iteration8-forest-native/batched_forest_sampler",
+      "native_builds/iteration8/iteration8-forest-native/build.json",
+      "native_builds/iteration8/iteration8-retained-native/build.json",
+      "native_builds/iteration8/iteration8-retained-native/click_sampler",
+      "publication_support/import_history.py"
+    ],
+    "supplement_files_verified": 609,
+    "supplement_bytes_verified": 7228889,
+    "parents": [
+      "d380627d31846613c9765c45eb01088cb99a0546",
+      "a9f34da5c45dd73921d3a8c38e50362e689822b5"
+    ],
+    "expected_final_tree_matches_preflight": true
+  },
+  "research_evidence": {
+    "report": "RESEARCH_REPORT_ITERATION10.md",
+    "summary": "results/iteration10_analysis/summary.json",
+    "summary_sha256": "c35a9cb7f88f4c04e795bc73ede83079ed53c281968f4ba31a1250053123f9c0",
+    "tests_passed": 298,
+    "quality_laws": 51,
+    "quality_checks_passed": 76,
+    "timing_runs": 66,
+    "successful_timing_runs": 60,
+    "failed_timing_runs": 6,
+    "quality_and_cost_joint_wins": 0,
+    "scope_note": "The core construction-reference law is not a certified complete law of all finite-precision native sampling paths."
+  }
+}
