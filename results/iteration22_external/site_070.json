@@ -1,0 +1,84 @@
+{
+  "site": 70,
+  "recurrence_seconds": 0.5101347000017995,
+  "pco_seconds": 20.82368519999727,
+  "pco_info": {
+    "pair_operators": 2335,
+    "coefficient_updates": 1216432,
+    "elements": 160000,
+    "active_local_modes": 89
+  },
+  "status": "passed",
+  "errors": {
+    "recurrence_reference": {
+      "max_abs": 2.862338417284328e-15,
+      "frobenius": 1.952675188689079e-14,
+      "relative_frobenius": 1.4686018898623216e-15
+    },
+    "pco_reference": {
+      "max_abs": 2.862338417284328e-15,
+      "frobenius": 1.953766339528466e-14,
+      "relative_frobenius": 1.4694225415478302e-15
+    },
+    "recurrence_pco": {
+      "max_abs": 3.376611507232129e-16,
+      "frobenius": 1.2277515793027022e-15,
+      "relative_frobenius": 9.233887438575441e-17
+    }
+  },
+  "entries": [
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/Q/70.npy",
+      "sha256": "2a9ba47b1b1d7448e7131f2732688f23dbf5eb2603cd796321d8e70e18424c5d",
+      "bytes": 322752,
+      "shape": [
+        142,
+        142
+      ],
+      "dtype": "complex128"
+    },
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/List_vst/69.npy",
+      "sha256": "12c2bb2d15b46a86940707706400aa6eb9a1cb2a9e62ee8b2e7bb6ff2ce180fc",
+      "bytes": 5600128,
+      "shape": [
+        10000,
+        70
+      ],
+      "dtype": "int64"
+    },
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/List_vst/70.npy",
+      "sha256": "f1b3236364215585a5a4fdeb23245f07a707c7762c66798ee22cd2b7bf6f2045",
+      "bytes": 5680128,
+      "shape": [
+        10000,
+        71
+      ],
+      "dtype": "int64"
+    },
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/ts/D200/70.npy",
+      "sha256": "7f2bcbf85daafd22845d8c66fcb073a97a5855118cce0e4f8aef80c0c6a2743f",
+      "bytes": 2560128,
+      "shape": [
+        200,
+        4,
+        200
+      ],
+      "dtype": "complex128"
+    }
+  ],
+  "shape": [
+    200,
+    4,
+    200
+  ],
+  "recurrence_info": {
+    "cache_entries": 80000,
+    "elements": 160000
+  },
+  "output_sha256": "2db78609010c67b5c4458147ea6a1e66f5c8b489c341f21d49338a22085deb7d",
+  "seconds": 21.65752040001098,
+  "peak_working_set_bytes": 213635072
+}

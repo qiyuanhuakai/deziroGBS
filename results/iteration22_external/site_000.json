@@ -1,0 +1,74 @@
+{
+  "site": 0,
+  "recurrence_seconds": 0.000549700009287335,
+  "pco_seconds": 0.0015438999980688095,
+  "pco_info": {
+    "pair_operators": 3,
+    "coefficient_updates": 62,
+    "elements": 24,
+    "active_local_modes": 2
+  },
+  "status": "passed",
+  "errors": {
+    "recurrence_reference": {
+      "max_abs": 1.2807100721815152e-15,
+      "frobenius": 1.598081763208317e-15,
+      "relative_frobenius": 8.149903961817944e-16
+    },
+    "pco_reference": {
+      "max_abs": 1.3870254885456267e-15,
+      "frobenius": 1.8658389094609774e-15,
+      "relative_frobenius": 9.51541295972343e-16
+    },
+    "recurrence_pco": {
+      "max_abs": 3.3306690783513653e-16,
+      "frobenius": 3.5704796148821147e-16,
+      "relative_frobenius": 1.8208746654175252e-16
+    }
+  },
+  "entries": [
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/Q/0.npy",
+      "sha256": "13159962b31d194f583dcbb4111a2ec580de5d689815efd0514df89d09d88a3b",
+      "bytes": 192,
+      "shape": [
+        2,
+        2
+      ],
+      "dtype": "complex128"
+    },
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/List_vst/0.npy",
+      "sha256": "f2c7c73d1f755245639134905ed82449a6499dd1aae0797810f9c61bd21f7fe7",
+      "bytes": 176,
+      "shape": [
+        6,
+        1
+      ],
+      "dtype": "int64"
+    },
+    {
+      "name": "PCO mapping/data/J2_P65_5_L144_thermal10/ts/D200/0.npy",
+      "sha256": "9f8d0baf7f28c7b0c05f431dfa540b2fcdf2015095c0212185967e62a267dde6",
+      "bytes": 512,
+      "shape": [
+        1,
+        4,
+        6
+      ],
+      "dtype": "complex128"
+    }
+  ],
+  "shape": [
+    1,
+    4,
+    6
+  ],
+  "recurrence_info": {
+    "cache_entries": 12,
+    "elements": 24
+  },
+  "output_sha256": "dbf8a12ce95c189f18cad62257c6f975ece293c58d6dbba41543e769af4e8224",
+  "seconds": 0.02124539999931585,
+  "peak_working_set_bytes": 97099776
+}

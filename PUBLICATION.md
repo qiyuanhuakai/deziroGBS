@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第二十二轮：144模式外部参考与局部递推](RESEARCH_REPORT_ITERATION22.md)
+- [第二十二轮产物核验](results/iteration22_validation/validation.json)
 - [第二十一轮：原4个纯核心预算难例实际构造达标](RESEARCH_REPORT_ITERATION21.md)
 - [第二十一轮发布验证](results/iteration21_validation_release/validation.json)
 - [第二十轮：直接带状MPS与窄带失败诊断](RESEARCH_REPORT_ITERATION20.md)
@@ -20,6 +22,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第二十二轮持续发布
+
+追加完整144站点的两种本地张量重建、四组全链比较、30次串行局部计时、推导、源码快照及报告。144/144站点通过作者PCO参考检查，新增11项测试、2,590项产物核验通过。全库367运行、333通过；原有4失败、1错误及29案例/7类跳过保留。该轮验证给定局部核到有限MPS的转换，不构成完整实验输出TV或端到端速度优势。
+
+仅发布本项目重建数组与第三方来源元数据，不重新发布外部压缩包或其中程序。原始冻结字节通过`experiments/iteration22_seal.py`逐项核对暂存Git内容后普通快进发布；发布完成另行追加回执。
 
 ## 2026-11-09：第二十一轮持续发布
 
