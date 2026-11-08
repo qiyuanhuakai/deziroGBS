@@ -1,0 +1,70 @@
+{
+  "format": "deziroGBS-rounds11-19-publication-preflight-v1",
+  "verified_at_utc": "2026-11-08T15:46:59.858407+00:00",
+  "repository": "qiyuanhuakai/deziroGBS",
+  "base_commit": "369b2023da4c342fd3473b03668e48dbd4b0a90c",
+  "science_commit": "cba52ff1d64a42e770aebb32ccae29289b9b07c5",
+  "science_tree": "4b286e352676e4a2649a3b46fe015b3711520faa",
+  "commits": [
+    "64f5fd720fed195868178efc47c6758cb5cd33cd Research iteration 11: coherent MPS feasibility and low-degree GBS controls",
+    "99b82a43478210b3280f9dfa4618c0c840e9ff53 Research iteration 12: direct local MPS construction with layerwise error budgets",
+    "6e9fa02478e4723cec1987bb4289c76f87af9fcb Audit conditional MPS sampling arithmetic and uniform-grid error",
+    "56251ca5e42078343c739cf1e86a9c518e03c210 Propagate correlated GBS displacements through local gates and benchmark peak memory",
+    "3e5c9be62ba5519939161a4110342f2409fcb1bd Select local GBS MPS dimensions and cut ranks from measured construction budgets",
+    "3e5dfa53c08d5e06594d2686257296ea464c0433 Evaluate layer checkpoint retries and local versus Haar Schmidt obstructions",
+    "172dcdaf918865a4ae93ca86d2f8da2b77015be2 Research iteration 17: high-order Meixner laws and retained controls",
+    "8cb223afcb1624f8758f844456a08db278a4cf5a Research iteration 18: vacuum series and mean-matched high-degree controls",
+    "cba52ff1d64a42e770aebb32ccae29289b9b07c5 Research iteration 19: all-cut finite MPS feasibility and construction gap"
+  ],
+  "changed_paths": 4576,
+  "frozen_manifests": [
+    {
+      "path": "results/iteration11_analysis_release/artifact_manifest.json",
+      "sha256": "53302e8d505aa4a57a5dba2811ed12b5858f243110b285838778a72dd5f3cb25",
+      "entries": 333
+    },
+    {
+      "path": "results/iteration12_analysis/artifact_manifest.json",
+      "sha256": "822966e1c66445e9e8f16f42f2575630a8595be868eba9eae91b75c3f051cc3c",
+      "entries": 831
+    },
+    {
+      "path": "results/iteration13_manifest.json",
+      "sha256": "1040b273c5fe7a0b6836db5253f936d12686e2ddd95a756360793a9c707f71b2",
+      "entries": 123
+    },
+    {
+      "path": "results/iteration14_manifest.json",
+      "sha256": "041d0d0dec2d61fbcf441575495140911ab8196653487c91f7451b4d293455fa",
+      "entries": 454
+    },
+    {
+      "path": "results/iteration15_manifest.json",
+      "sha256": "82086898ee94cd9fede4ed39edc52fdf9e020b889e2ffbf411859e0354d34ecd",
+      "entries": 391
+    },
+    {
+      "path": "results/iteration16_manifest.json",
+      "sha256": "4c198f8bff09b1f3778e1e29a662831af3320187054c8fc741251160de7d285d",
+      "entries": 146
+    },
+    {
+      "path": "results/iteration17_manifest.json",
+      "sha256": "e0b73094182ff97d8d562f58f84d51a15f5fdb553869f2a9b16d770662b4084a",
+      "entries": 710
+    },
+    {
+      "path": "results/iteration18_manifest.json",
+      "sha256": "5172aa502cf3364c7ed617099fe62361d3db5e00ad294ed0eb8bb1bfae881f59",
+      "entries": 354
+    },
+    {
+      "path": "results/iteration19_manifest.json",
+      "sha256": "43230a9285cec2e04e97ff812bae6fbceb16afd1d81c695a92360946fd003d89",
+      "entries": 1136
+    }
+  ],
+  "unique_artifacts_verified": 4478,
+  "artifact_bytes_verified": 608891780,
+  "scope": "Exact committed artifact bytes verified. Publication preserves successful and failed evidence; this check is not a claim that the full scientific test gate passes."
+}

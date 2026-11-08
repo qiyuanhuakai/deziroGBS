@@ -7,12 +7,23 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第十九轮：最终态MPS存在性与构造障碍](RESEARCH_REPORT_ITERATION19.md)
+- [第十八轮：高阶真空级数与强基线](RESEARCH_REPORT_ITERATION18.md)
+- [第十九轮验证记录](results/iteration19_validation/validation.json)
 - [第十轮完整研究报告](RESEARCH_REPORT_ITERATION10.md)
 - [第十轮全部质量与计时数据表](results/iteration10_analysis/summary_tables.md)
 - [第十轮完整项目门禁](results/iteration10_validation/validation.json)
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-08：第11至19轮持续发布
+
+项目所有者明确要求持续探索并持续发布到GitHub。第11至19轮原始研究提交从`64f5fd7`至`cba52ff`按原历史发布至主分支，包含代码、报告、推导、配置、完整成功/失败结果、图表、源快照和验证记录。后续完整研究轮次继续核验后发布；不把发布成功等同科学问题已解决。
+
+发布前核对远端主分支是本地研究头的祖先，使用普通快进推送，不强制覆盖远端。`publication_support/verify_rounds_11_19.py`按9份冻结清单核对已提交Git blob的SHA-256；记录见[本次发布前核验](research_archive/publication/preflight_2026-11-08.json)。
+
+最新全库记录为341项运行、307通过、4失败、1错误、29个案例跳过，另有7个类级跳过。新轮针对性测试和产物核对通过；遗留Windows数值范围/容差、Unix resource导入和原生依赖问题仍如实公开。深层大模式MPS实际构造、可扩展高阶采样与完整有限精度保证仍未完成，详见各轮报告。
 
 ## 原始提交历史与独立恢复归档
 
