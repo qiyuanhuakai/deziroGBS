@@ -2,6 +2,7 @@
 # Generated SVG paths and historical source snapshots retain their whitespace.
 results/iteration11*/** -text -whitespace
 results/iteration12*/** -text -whitespace
+results/iteration13*/** -text -whitespace
 
 # New executable sources keep stable line endings across platforms.
 src/gbslab/mps_probe.py text eol=lf
@@ -16,3 +17,7 @@ tests/test_local_mps.py text eol=lf
 experiments/iteration12*.py text eol=lf
 experiments/verify_iteration12.py text eol=lf
 configs/iteration12_local_mps.json text eol=lf
+src/gbslab/sampling_audit.py text eol=lf
+tests/test_sampling_audit.py text eol=lf
+experiments/iteration13*.py text eol=lf
+experiments/verify_iteration13.py text eol=lf

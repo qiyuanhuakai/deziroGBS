@@ -282,6 +282,17 @@ class LocalSamplingError(ArithmeticError):
         self.prefix=list(prefix)
 
 
+def threshold_step(left, tensor, displacement):
+    """One floating sampling step shared with the exhaustive arithmetic audit."""
+    local=np.tensordot(left,tensor,axes=(0,0))
+    branches=threshold_channels(displacement,tensor.shape[1])@local
+    weights=np.sum(np.abs(branches)**2,axis=1)
+    total=float(weights.sum())
+    if not np.all(np.isfinite(weights)) or abs(total-1)>1e-9:
+        raise ArithmeticError('Conditional norm check failed')
+    return branches,weights,total
+
+
 def sample_local_threshold(tensors, displacements, rng):
     """Right-canonical rank-one sampling with explicit partial-failure records."""
     alpha=np.asarray(displacements,dtype=complex)
@@ -297,12 +308,7 @@ def sample_local_threshold(tensors, displacements, rng):
         left=np.ones(1,complex)
         for j,(a,z) in enumerate(zip(tensors,row)):
             try:
-                local=np.tensordot(left,a,axes=(0,0))
-                branches=threshold_channels(z,a.shape[1])@local
-                weights=np.sum(np.abs(branches)**2,axis=1)
-                total=float(weights.sum())
-                if not np.all(np.isfinite(weights)) or abs(total-1)>1e-9:
-                    raise ArithmeticError('Conditional norm check failed')
+                branches,weights,total=threshold_step(left,a,z)
                 max_residual=max(max_residual,abs(total-1))
                 channel=int(rng.choice(len(weights),p=weights/total))
                 if weights[channel]<=0:
