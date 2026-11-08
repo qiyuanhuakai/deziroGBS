@@ -1,0 +1,119 @@
+{
+  "panel": "quality",
+  "modes": 4,
+  "seed": 250801,
+  "dimension": 4,
+  "rank": 4,
+  "max_seconds": 120.0,
+  "sequence": 0,
+  "info": {
+    "decomposition": {
+      "seconds": 0.004572100006043911,
+      "final_scalar_abs": 0.9407324031733694,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.06555582048216876
+        ],
+        "kernel_scale": 0.9993383533840248,
+        "reconstruction_residual": 5.594315114139762e-17,
+        "scale_residual": 2.2204460657939253e-16,
+        "normalization_log_residual": 1.6653345369377348e-16,
+        "covariance_residual": 4.440892098500626e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.1403097625713614
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.10266492504803691,
+          0.020159055633644687
+        ],
+        "kernel_scale": 0.9774947030844314,
+        "reconstruction_residual": 8.441528768080323e-17,
+        "scale_residual": 2.3417010050710765e-16,
+        "normalization_log_residual": 2.0816681711721685e-16,
+        "covariance_residual": 4.6629367034256575e-15,
+        "symplectic_residual": 4.565842079557196e-16,
+        "minimum_raw_nu": 1.0411476081899826
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.10227908873091848,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9834368449600709,
+        "reconstruction_residual": 2.2887833992611187e-16,
+        "scale_residual": 5.551771700266573e-16,
+        "normalization_log_residual": 1.734723475976807e-16,
+        "covariance_residual": 1.9984014443252818e-15,
+        "symplectic_residual": 1.3322676295501878e-15,
+        "minimum_raw_nu": 0.9999999999999982
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 8,
+        "elements": 16
+      },
+      {
+        "cache_entries": 32,
+        "elements": 64
+      },
+      {
+        "cache_entries": 32,
+        "elements": 64
+      },
+      {
+        "cache_entries": 8,
+        "elements": 16
+      }
+    ],
+    "cut_tail_estimates": [
+      1.84690700785195e-05,
+      0.0034945768817806755,
+      0.00010943277188901757
+    ],
+    "marginal_tail_estimates": [
+      5.678933259767978e-05,
+      0.0007703112213212282,
+      0.00022805658670928548,
+      0.0014018307494415173
+    ],
+    "original_loss_sum": 0.006079466613817924,
+    "construction_trace_budget": 0.07797093441672945,
+    "projection_success": 0.9946780981702056,
+    "stored_complex_elements": 160,
+    "max_bond_actual": 4,
+    "total_seconds": 0.007108700010576285,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.004578899999614805,
+      "basis_selection": 0.00019690000044647604,
+      "local_tensors": 0.0014340000052470714,
+      "canonicalization": 0.00031230000604409724,
+      "error_budget": 0.0005865999992238358
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_seconds": 0.0082377000071574,
+  "construction_trace_budget": 0.07797093441672945,
+  "status": "accepted",
+  "state": {
+    "path": "results/iteration25_panel_retry/run_00.state.npz",
+    "sha256": "f3485012a38705f64cebe8633da7037fc18586afa0b532a873ae9c2b6612460e",
+    "array_fingerprint": "dc36b93479d648aeb6e2a168f4d605e51206ac441998ec4b4342f97e2eeea565"
+  },
+  "independent_spectrum_max_error": 2.220446049250313e-15,
+  "actual_original_distance": 0.07301570327905245,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.020712999990792014,
+  "peak_working_set_bytes": 97132544,
+  "process_wall_seconds": 2.6006026999966707
+}

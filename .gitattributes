@@ -87,3 +87,11 @@ experiments/iteration24*.py text eol=lf
 experiments/verify_iteration24.py text eol=lf
 # Keep the exact runner bytes captured by the frozen test snapshot.
 experiments/iteration24_tests.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+results/iteration25*/** -text -whitespace
+src/gbslab/gaussian_general_spectra.py text eol=lf
+tests/test_gaussian_general_spectra.py text eol=lf
+experiments/iteration25*.py text eol=lf
+experiments/verify_iteration25.py text eol=lf
+publication_support/iteration25_large_artifacts.py text eol=lf
+publication_support/publish_iteration25.py text eol=lf
+research_archive/publication/iteration25_large_artifacts/** -text -whitespace

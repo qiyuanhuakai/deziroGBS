@@ -1,0 +1,584 @@
+{
+  "physical_cuts": 143,
+  "budget_rows": 21,
+  "small_quality_runs": 16,
+  "small_quality_accepted": 13,
+  "small_quality_all_actual_distances_bounded": true,
+  "small_quality_max_actual_distance": 0.14931276426059267,
+  "candidates": [
+    {
+      "panel": "candidate",
+      "modes": 144,
+      "dimension": 4,
+      "rank": 32,
+      "max_seconds": 600.0,
+      "sequence": 16,
+      "construction_seconds": 10.102071199988131,
+      "construction_trace_budget": 1.0,
+      "status": "budget_missed",
+      "state": {
+        "path": "results/iteration25_panel_retry/run_16.state.npz",
+        "sha256": "7bbded011dfec132b5605288f330dba7529634e0945b60315bc95c22357dbb85",
+        "array_fingerprint": "31eb65de229674f0652b73d7ca0b2148c0cb8d7f9a491d9c32f3f03fab457d44"
+      },
+      "independent_spectrum_max_error": 9.314771176605063e-14,
+      "low_sector": {
+        "left_selected_mass": 0.7015854679827394,
+        "right_selected_mass": 0.30660943536856533,
+        "left_vacuum_probability": 0.2287098141758577,
+        "right_vacuum_probability": 0.09450411012696813,
+        "vacuum_probability_gap": 0.13420570404888957,
+        "pnr_coarse_tv_lower_estimate": 0.40063542940105157,
+        "overlap_upper_estimate": 0.9027327377760237,
+        "pure_trace_lower_estimate": 0.43020181792666196,
+        "scope": "Bounds in exact arithmetic for the specified pure states, evaluated in complex128. Vacuum gap also lower-bounds zero-displacement threshold TV; other PNR bounds do not automatically transfer to threshold or displaced-mixture outputs."
+      },
+      "validation_status": "passed",
+      "worker_seconds": 10.941812200006098,
+      "peak_working_set_bytes": 203927552,
+      "process_wall_seconds": 13.630727699986892,
+      "pure_rank_distance_lower_estimate": 0.5892288299898134
+    },
+    {
+      "panel": "candidate",
+      "modes": 144,
+      "dimension": 4,
+      "rank": 64,
+      "max_seconds": 600.0,
+      "sequence": 17,
+      "construction_seconds": 16.015015299999504,
+      "construction_trace_budget": 1.0,
+      "status": "budget_missed",
+      "state": {
+        "path": "results/iteration25_panel_retry/run_17.state.npz",
+        "sha256": "725ee30c5295b8cae83062a304164a2b27b494203845a670c4fbb6097ee81c73",
+        "array_fingerprint": "09d7e2c919c62ae824b11bfc759986ccde1468713ab1f0cd5c4935cf25866fb4"
+      },
+      "independent_spectrum_max_error": 9.314771176605063e-14,
+      "low_sector": {
+        "left_selected_mass": 0.6528484006129113,
+        "right_selected_mass": 0.30660943536856533,
+        "left_vacuum_probability": 0.20283269633082368,
+        "right_vacuum_probability": 0.09450411012696813,
+        "vacuum_probability_gap": 0.10832858620385555,
+        "pnr_coarse_tv_lower_estimate": 0.3471619762517655,
+        "overlap_upper_estimate": 0.9334219036754484,
+        "pure_trace_lower_estimate": 0.3587806429267079,
+        "scope": "Bounds in exact arithmetic for the specified pure states, evaluated in complex128. Vacuum gap also lower-bounds zero-displacement threshold TV; other PNR bounds do not automatically transfer to threshold or displaced-mixture outputs."
+      },
+      "validation_status": "passed",
+      "worker_seconds": 19.08308950001083,
+      "peak_working_set_bytes": 393703424,
+      "process_wall_seconds": 22.201932199997827,
+      "pure_rank_distance_lower_estimate": 0.5474444135964492
+    },
+    {
+      "panel": "candidate",
+      "modes": 144,
+      "dimension": 4,
+      "rank": 128,
+      "max_seconds": 600.0,
+      "sequence": 18,
+      "construction_seconds": 35.720740699995076,
+      "construction_trace_budget": 1.0,
+      "status": "budget_missed",
+      "state": {
+        "path": "results/iteration25_panel_retry/run_18.state.npz",
+        "sha256": "3e8f60a68cb1c66972b3318589093d32dd5e90b2de55ede3086281d4569cbf60",
+        "array_fingerprint": "b71ff8b8df60e9c698e648573bdbeebcf939c003a5314430e8f0ee3272c6b324"
+      },
+      "independent_spectrum_max_error": 9.314771176605063e-14,
+      "low_sector": {
+        "left_selected_mass": 0.5810309139899364,
+        "right_selected_mass": 0.30660943536856533,
+        "left_vacuum_probability": 0.17837318291995408,
+        "right_vacuum_probability": 0.09450411012696813,
+        "vacuum_probability_gap": 0.08386907279298594,
+        "pnr_coarse_tv_lower_estimate": 0.274887800876797,
+        "overlap_upper_estimate": 0.9588061767247886,
+        "pure_trace_lower_estimate": 0.2840611122177646,
+        "scope": "Bounds in exact arithmetic for the specified pure states, evaluated in complex128. Vacuum gap also lower-bounds zero-displacement threshold TV; other PNR bounds do not automatically transfer to threshold or displaced-mixture outputs."
+      },
+      "validation_status": "passed",
+      "worker_seconds": 45.80119410000043,
+      "peak_working_set_bytes": 1016012800,
+      "process_wall_seconds": 49.340019099996425,
+      "pure_rank_distance_lower_estimate": 0.5006798582705517
+    },
+    {
+      "panel": "candidate",
+      "modes": 144,
+      "dimension": 4,
+      "rank": 200,
+      "max_seconds": 600.0,
+      "sequence": 19,
+      "construction_seconds": 76.15022589999717,
+      "construction_trace_budget": 1.0,
+      "status": "budget_missed",
+      "state": {
+        "path": "results/iteration25_panel_retry/run_19.state.npz",
+        "sha256": "93c547725209dd312d8283255c0ee81751f7377c836625949bda65b3e4ecaabe",
+        "array_fingerprint": "9df2163666314de100631989b45378f328e1ad1351118d9b220d2712f9dbe79f"
+      },
+      "independent_spectrum_max_error": 9.314771176605063e-14,
+      "low_sector": {
+        "left_selected_mass": 0.5282395538300174,
+        "right_selected_mass": 0.30660943536856533,
+        "left_vacuum_probability": 0.16147709346601893,
+        "right_vacuum_probability": 0.09450411012696813,
+        "vacuum_probability_gap": 0.0669729833390508,
+        "pnr_coarse_tv_lower_estimate": 0.22195215128206702,
+        "overlap_upper_estimate": 0.973092590057826,
+        "pure_trace_lower_estimate": 0.23041443352045426,
+        "scope": "Bounds in exact arithmetic for the specified pure states, evaluated in complex128. Vacuum gap also lower-bounds zero-displacement threshold TV; other PNR bounds do not automatically transfer to threshold or displaced-mixture outputs."
+      },
+      "validation_status": "passed",
+      "worker_seconds": 103.58677769999485,
+      "peak_working_set_bytes": 2100703232,
+      "process_wall_seconds": 106.28374189999886,
+      "pure_rank_distance_lower_estimate": 0.4633528181091693
+    }
+  ],
+  "rank_bounds": [
+    {
+      "rank": 32,
+      "dimension": 4,
+      "max_cut_tail": 0.3471906140911645,
+      "schmidt_tail_sum": 27.46065840032566,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.5892288299898134,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 27.463177212733537,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 64,
+      "dimension": 4,
+      "max_cut_tail": 0.2996953859779602,
+      "schmidt_tail_sum": 22.71445216292651,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.5474444135964492,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 22.716970975334387,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 128,
+      "dimension": 4,
+      "max_cut_tail": 0.25068032047781974,
+      "schmidt_tail_sum": 17.66127904118529,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.5006798582705517,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 17.663797853593167,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 200,
+      "dimension": 4,
+      "max_cut_tail": 0.21469583404970893,
+      "schmidt_tail_sum": 14.385211784658189,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.4633528181091693,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 14.387730597066065,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 512,
+      "dimension": 4,
+      "max_cut_tail": 0.14210630968156845,
+      "schmidt_tail_sum": 8.985780231856223,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.37696990553831805,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 8.9882990442641,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 1024,
+      "dimension": 4,
+      "max_cut_tail": 0.10889319141206866,
+      "schmidt_tail_sum": 6.608704735807083,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.32998968379643123,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 6.6112235482149595,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    },
+    {
+      "rank": 2048,
+      "dimension": 4,
+      "max_cut_tail": 0.08193082405876684,
+      "schmidt_tail_sum": 4.661776894635973,
+      "physical_tail_union": 0.002518812407876672,
+      "pure_rank_distance_lower_estimate": 0.28623560934790565,
+      "original_projector_trace_upper_estimate": 1.0,
+      "unclipped_squared_upper": 4.664295707043849,
+      "scope": "Original physical Gaussian state, ideal spectral/projector bounds evaluated in float64; no output-TV lower bound or finite-precision certificate"
+    }
+  ],
+  "full_comparisons": [
+    {
+      "pair": "new_32:own_recurrence",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": 1.8215455364295638,
+      "raw_log_fidelity": -0.34818857981859686,
+      "fidelity_from_overlap": 0.7059657327708743,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.5653005043772489,
+      "pure_trace_distance_from_difference": 0.542249266693031,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": 1.8207657603852567e-14,
+      "phase_alignment": [
+        0.9999998107346315,
+        0.0006152484873712349
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 23.97269189999497
+    },
+    {
+      "pair": "new_64:own_recurrence",
+      "log_norm_squared_left": -2.4060614611798314e-15,
+      "log_norm_squared_right": 1.8215455364295638,
+      "raw_log_fidelity": -0.22587756931938086,
+      "fidelity_from_overlap": 0.797815772814654,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.4621572539490872,
+      "pure_trace_distance_from_difference": 0.44964900443050015,
+      "log_norm_qr_residual_left": 4.763550665032312e-15,
+      "log_norm_qr_residual_right": 1.8207657603852567e-14,
+      "phase_alignment": [
+        0.9999999509921782,
+        0.0003130744977335515
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 27.64039280000725
+    },
+    {
+      "pair": "new_128:own_recurrence",
+      "log_norm_squared_left": 6.794911855401153e-15,
+      "log_norm_squared_right": 1.8215455364295638,
+      "raw_log_fidelity": -0.09949447088537333,
+      "fidelity_from_overlap": 0.905294955334249,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.3115448860929996,
+      "pure_trace_distance_from_difference": 0.30774184743994104,
+      "log_norm_qr_residual_left": -8.168812848374785e-15,
+      "log_norm_qr_residual_right": 1.8207657603852567e-14,
+      "phase_alignment": [
+        0.9999999082192312,
+        0.0004284408118210348
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 42.93124419999367
+    },
+    {
+      "pair": "new_200:own_recurrence",
+      "log_norm_squared_left": -5.977857098216077e-15,
+      "log_norm_squared_right": 1.8215455364295638,
+      "raw_log_fidelity": 2.353672812205332e-14,
+      "fidelity_from_overlap": 1.0,
+      "overlap_positive_log_clipped": true,
+      "phase_aligned_difference_norm": 7.77922136001856e-09,
+      "pure_trace_distance_from_difference": 7.77922136001856e-09,
+      "log_norm_qr_residual_left": 3.930883396563445e-15,
+      "log_norm_qr_residual_right": 1.8207657603852567e-14,
+      "phase_alignment": [
+        0.9999999300692207,
+        0.00037398068640721096
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 72.66983299999265
+    },
+    {
+      "pair": "new_32:author_pco",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": 1.821545536429563,
+      "raw_log_fidelity": -0.34818857981859797,
+      "fidelity_from_overlap": 0.7059657327708735,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.565300504377249,
+      "pure_trace_distance_from_difference": 0.5422492666930311,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": 1.7319479184152442e-14,
+      "phase_alignment": [
+        0.9999998107346315,
+        0.000615248487371178
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 23.73489890000201
+    },
+    {
+      "pair": "new_64:author_pco",
+      "log_norm_squared_left": -2.4060614611798314e-15,
+      "log_norm_squared_right": 1.821545536429563,
+      "raw_log_fidelity": -0.22587756931938308,
+      "fidelity_from_overlap": 0.7978157728146522,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.46215725394908747,
+      "pure_trace_distance_from_difference": 0.44964900443050043,
+      "log_norm_qr_residual_left": 4.763550665032312e-15,
+      "log_norm_qr_residual_right": 1.7319479184152442e-14,
+      "phase_alignment": [
+        0.9999999509921782,
+        0.00031307449773345996
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 28.86585099999502
+    },
+    {
+      "pair": "new_128:author_pco",
+      "log_norm_squared_left": 6.794911855401153e-15,
+      "log_norm_squared_right": 1.821545536429563,
+      "raw_log_fidelity": -0.09949447088537333,
+      "fidelity_from_overlap": 0.905294955334249,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.31154488609299963,
+      "pure_trace_distance_from_difference": 0.3077418474399411,
+      "log_norm_qr_residual_left": -8.168812848374785e-15,
+      "log_norm_qr_residual_right": 1.7319479184152442e-14,
+      "phase_alignment": [
+        0.9999999082192312,
+        0.0004284408118210438
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 45.656483099999605
+    },
+    {
+      "pair": "new_200:author_pco",
+      "log_norm_squared_left": -5.977857098216077e-15,
+      "log_norm_squared_right": 1.821545536429563,
+      "raw_log_fidelity": 2.4868995751603507e-14,
+      "fidelity_from_overlap": 1.0,
+      "overlap_positive_log_clipped": true,
+      "phase_aligned_difference_norm": 7.779221359841042e-09,
+      "pure_trace_distance_from_difference": 7.779221359841042e-09,
+      "log_norm_qr_residual_left": 3.930883396563445e-15,
+      "log_norm_qr_residual_right": 1.7319479184152442e-14,
+      "phase_alignment": [
+        0.9999999300692207,
+        0.0003739806864071202
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 75.40619579999475
+    },
+    {
+      "pair": "new_32:author_hafnian",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": -0.5582396884629406,
+      "raw_log_fidelity": -0.3481884924574947,
+      "fidelity_from_overlap": 0.7059657944448214,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.5653004394539575,
+      "pure_trace_distance_from_difference": 0.5422492098244035,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": -4.218847493575595e-15,
+      "phase_alignment": [
+        0.9999998107318886,
+        0.0006152529456095878
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 27.186914100006106
+    },
+    {
+      "pair": "new_64:author_hafnian",
+      "log_norm_squared_left": -2.4060614611798314e-15,
+      "log_norm_squared_right": -0.5582396884629406,
+      "raw_log_fidelity": -0.22587750922083139,
+      "fidelity_from_overlap": 0.7978158207622261,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.4621571958732474,
+      "pure_trace_distance_from_difference": 0.4496489511138383,
+      "log_norm_qr_residual_left": 4.763550665032312e-15,
+      "log_norm_qr_residual_right": -4.218847493575595e-15,
+      "phase_alignment": [
+        0.9999999509899868,
+        0.0003130814971489818
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 30.013813099998515
+    },
+    {
+      "pair": "new_128:author_hafnian",
+      "log_norm_squared_left": 6.794911855401153e-15,
+      "log_norm_squared_right": -0.5582396884629406,
+      "raw_log_fidelity": -0.09949444487986003,
+      "fidelity_from_overlap": 0.9052949788769094,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.31154484638209234,
+      "pure_trace_distance_from_difference": 0.3077418091892812,
+      "log_norm_qr_residual_left": -8.168812848374785e-15,
+      "log_norm_qr_residual_right": -4.218847493575595e-15,
+      "phase_alignment": [
+        0.9999999082159932,
+        0.00042844836935648295
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 44.82186080000247
+    },
+    {
+      "pair": "new_200:author_hafnian",
+      "log_norm_squared_left": -5.977857098216077e-15,
+      "log_norm_squared_right": -0.5582396884629406,
+      "raw_log_fidelity": -4.429170363806634e-10,
+      "fidelity_from_overlap": 0.999999999557083,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 2.1045867094648096e-05,
+      "pure_trace_distance_from_difference": 2.104586709348287e-05,
+      "log_norm_qr_residual_left": 3.930883396563445e-15,
+      "log_norm_qr_residual_right": -4.218847493575595e-15,
+      "phase_alignment": [
+        0.9999999300666468,
+        0.00037398756871652466
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 75.51746180000191
+    },
+    {
+      "pair": "new_32:new_64",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": -2.4060614611798314e-15,
+      "raw_log_fidelity": -0.1209596655179092,
+      "fidelity_from_overlap": 0.8860696980344915,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.3425996132275739,
+      "pure_trace_distance_from_difference": 0.33753563066069714,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": 4.763550665032312e-15,
+      "phase_alignment": [
+        0.9999999575495536,
+        0.00029137757516335515
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 1.4572325000044657
+    },
+    {
+      "pair": "new_32:new_128",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": 6.794911855401153e-15,
+      "raw_log_fidelity": -0.24873654687907912,
+      "fidelity_from_overlap": 0.7797853832184388,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.483622630886287,
+      "pure_trace_distance_from_difference": 0.46927030247136414,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": -8.168812848374785e-15,
+      "phase_alignment": [
+        0.9999999651391224,
+        0.00026404877228365246
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 8.64290429999528
+    },
+    {
+      "pair": "new_32:new_200",
+      "log_norm_squared_left": -3.989863994746656e-15,
+      "log_norm_squared_right": -5.977857098216077e-15,
+      "raw_log_fidelity": -0.3481885798217491,
+      "fidelity_from_overlap": 0.7059657327686488,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.5653005043796048,
+      "pure_trace_distance_from_difference": 0.5422492666950945,
+      "log_norm_qr_residual_left": 2.7495367094232392e-15,
+      "log_norm_qr_residual_right": 3.930883396563445e-15,
+      "phase_alignment": [
+        0.9999999708949171,
+        0.00024126782869311834
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 24.772899999996298
+    },
+    {
+      "pair": "new_64:new_128",
+      "log_norm_squared_left": -2.4060614611798314e-15,
+      "log_norm_squared_right": 6.794911855401153e-15,
+      "raw_log_fidelity": -0.12653389905966403,
+      "fidelity_from_overlap": 0.881144279074739,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.3501632287295628,
+      "pure_trace_distance_from_difference": 0.3447545807168411,
+      "log_norm_qr_residual_left": 4.763550665032312e-15,
+      "log_norm_qr_residual_right": -8.168812848374785e-15,
+      "phase_alignment": [
+        0.9999999992310235,
+        3.921674721062471e-05
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 12.450711900004535
+    },
+    {
+      "pair": "new_64:new_200",
+      "log_norm_squared_left": -2.4060614611798314e-15,
+      "log_norm_squared_right": -5.977857098216077e-15,
+      "raw_log_fidelity": -0.22587756932223715,
+      "fidelity_from_overlap": 0.7978157728123753,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.46215725395187035,
+      "pure_trace_distance_from_difference": 0.4496490044330552,
+      "log_norm_qr_residual_left": 4.763550665032312e-15,
+      "log_norm_qr_residual_right": 3.930883396563445e-15,
+      "phase_alignment": [
+        0.9999999981452179,
+        -6.090619225050386e-05
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 30.274402800001553
+    },
+    {
+      "pair": "new_128:new_200",
+      "log_norm_squared_left": 6.794911855401153e-15,
+      "log_norm_squared_right": -5.977857098216077e-15,
+      "raw_log_fidelity": -0.09949447088691603,
+      "fidelity_from_overlap": 0.9052949553328524,
+      "overlap_positive_log_clipped": false,
+      "phase_aligned_difference_norm": 0.3115448860953814,
+      "pure_trace_distance_from_difference": 0.30774184744223526,
+      "log_norm_qr_residual_left": -8.168812848374785e-15,
+      "log_norm_qr_residual_right": 3.930883396563445e-15,
+      "phase_alignment": [
+        0.9999999985170471,
+        5.4460129785177875e-05
+      ],
+      "arithmetic": "complex128 diagnostics; no finite precision certificate",
+      "status": "passed",
+      "seconds": 43.82985880000342
+    }
+  ],
+  "validation_checks": 2079,
+  "validation_passed": 2079,
+  "complement_spectrum_max_error": 1.84297022087776e-14,
+  "direct_low_amplitudes": 152,
+  "independent_hafnian_coefficients": 298,
+  "tests": {
+    "tests_run": 385,
+    "passed": 351,
+    "failures": 4,
+    "errors": 1,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 5,
+    "full_gate_passed": false,
+    "unchanged_failure_ids": true,
+    "unchanged_sources": true
+  },
+  "preserved_initial_path_failures": 17,
+  "analyzer_sha256": "ec7de0ecdaa60c82ae130344302b9a344a92159c6fad11544b3f7623d6c93c82"
+}

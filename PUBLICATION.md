@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第二十五轮：物理Schmidt谱与有限MPS重建](RESEARCH_REPORT_ITERATION25.md)
+- [第二十五轮产物核验](results/iteration25_validation/validation.json)
 - [第二十四轮：核链候选态与有限参考质量差距](RESEARCH_REPORT_ITERATION24.md)
 - [第二十四轮产物核验](results/iteration24_validation/validation.json)
 - [第二十三轮：递推完整流程与参考精度](RESEARCH_REPORT_ITERATION23.md)
@@ -26,6 +28,14 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第二十五轮持续发布
+
+追加143个物理切口谱、21组预算、20项实际构造、18对完整有限态比较及2,079项产物检查。相同站点顺序下，秩200纯态距离必要下界约0.46335，秩2048约0.28624；不是输出TV下界。新秩200与旧PCO/递推有限参考距离约7.78×10⁻⁹，仍不代表它们接近Gaussian候选态，也未识别原实验态。
+
+712个新冻结产物共537,210,526字节，引用145个历史文件共347,883,200字节。两个大型状态按40MiB分为12卷，已在独立目录无损还原并核对SHA-256；发布前同时核对全部新旧引用的暂存Git字节。首次相对路径错误的17项失败、残留状态与中止记录保留；绝对路径重跑20项完整结束，13项接受、7项预算未达。新增5项测试通过；全库385运行、351通过，原4失败、1错误与依赖跳过保留。
+
+完整上传后核对远端提交及文件树，发布回执另存。未重新发布或执行第三方压缩包程序。详见[报告](RESEARCH_REPORT_ITERATION25.md)和[完整核验](results/iteration25_validation/validation.json)。
 
 ## 2026-11-09：第二十四轮持续发布
 

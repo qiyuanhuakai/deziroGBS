@@ -1,0 +1,15 @@
+{
+  "panel": "quality",
+  "modes": 6,
+  "seed": 250801,
+  "dimension": 4,
+  "rank": 16,
+  "max_seconds": 120.0,
+  "sequence": 9,
+  "status": "failed",
+  "error": "ValueError(\"'results\\\\\\\\iteration25_panel\\\\\\\\run_09.state.npz' is not in the subpath of 'C:\\\\\\\\Users\\\\\\\\qiyuaner\\\\\\\\Documents\\\\\\\\ChatGPT\\\\\\\\閲忓瓙\\\\\\\\deziroGBS' OR one path is relative and the other is absolute.\")",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\閲忓瓙\\deziroGBS\\experiments\\iteration25_worker.py\", line 51, in main\n    row.update(info=info,construction_seconds=elapsed,construction_trace_budget=info['construction_trace_budget'],status='accepted' if info['construction_trace_budget']<=.1 else 'budget_missed',state=dict(path=path.relative_to(ROOT).as_posix(),sha256=digest(path),array_fingerprint=mps_fingerprint(tensors)))\n                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\qiyuaner\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py\", line 730, in relative_to\n    raise ValueError(\"{!r} is not in the subpath of {!r}\"\nValueError: 'results\\\\iteration25_panel\\\\run_09.state.npz' is not in the subpath of 'C:\\\\Users\\\\qiyuaner\\\\Documents\\\\ChatGPT\\\\閲忓瓙\\\\deziroGBS' OR one path is relative and the other is absolute.\n",
+  "worker_seconds": 0.045777300008921884,
+  "peak_working_set_bytes": 97099776,
+  "process_wall_seconds": 3.006176199996844
+}
