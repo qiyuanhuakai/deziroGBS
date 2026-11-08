@@ -72,3 +72,10 @@ tests/test_gaussian_pair_recurrence.py text eol=lf
 tests/test_mps_overlap.py text eol=lf
 experiments/iteration22*.py text eol=lf
 experiments/verify_iteration22.py text eol=lf
+results/iteration23*/** -text -whitespace
+experiments/iteration23*.py text eol=lf
+experiments/verify_iteration23.py text eol=lf
+tests/test_schmidt_recurrence_backend.py text eol=lf
+research_archive/publication/iteration23_large_artifacts/** -text -whitespace
+publication_support/iteration23_large_artifacts.py text eol=lf
+publication_support/publish_iteration23.py text eol=lf

@@ -1,0 +1,143 @@
+{
+  "modes": 4,
+  "seed": 230801,
+  "ensemble": "haar",
+  "dimension": 4,
+  "rank": 32,
+  "panel": "quality",
+  "max_seconds": 120.0,
+  "backend": "recurrence",
+  "repetition": 0,
+  "samples": 16,
+  "depth": 12,
+  "target": 0.1,
+  "sequence": 4,
+  "baseline_rss_bytes": 95244288,
+  "status": "budget_missed",
+  "target_met": false,
+  "info": {
+    "decomposition": {
+      "seconds": 0.005394699997850694,
+      "final_scalar_abs": 0.9453539256102318,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.07817192813317349
+        ],
+        "kernel_scale": 0.9843695860656834,
+        "reconstruction_residual": 5.551115123125783e-17,
+        "scale_residual": 1.6185761136659696e-18,
+        "normalization_log_residual": 1.942890293094024e-16,
+        "covariance_residual": 6.661338147750939e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.1696019692150723
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.07920686999032829,
+          0.019403050915032367
+        ],
+        "kernel_scale": 0.9691532275400554,
+        "reconstruction_residual": 2.0014830212433607e-16,
+        "scale_residual": 2.2754703426922086e-16,
+        "normalization_log_residual": 2.7755575615628914e-17,
+        "covariance_residual": 1.3322676295501878e-15,
+        "symplectic_residual": 3.3306690738754696e-16,
+        "minimum_raw_nu": 1.039573957339227
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.07724061351437596,
+          6.661338147750935e-16,
+          0.0
+        ],
+        "kernel_scale": 0.9587841921763518,
+        "reconstruction_residual": 1.1857187100668868e-16,
+        "scale_residual": 4.450383350039609e-16,
+        "normalization_log_residual": 0.0,
+        "covariance_residual": 1.5543122344752192e-15,
+        "symplectic_residual": 7.9564816542129635e-16,
+        "minimum_raw_nu": 0.9999999999999998
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 64,
+        "elements": 128
+      },
+      {
+        "cache_entries": 2048,
+        "elements": 4096
+      },
+      {
+        "cache_entries": 2048,
+        "elements": 4096
+      },
+      {
+        "cache_entries": 64,
+        "elements": 128
+      }
+    ],
+    "cut_tail_estimates": [
+      1.1102230246251565e-16,
+      5.993197049747323e-10,
+      0.0
+    ],
+    "marginal_tail_estimates": [
+      0.0029198049235577405,
+      0.0051376704970295395,
+      0.005749661510795872,
+      0.0029590742950379428
+    ],
+    "original_loss_sum": 0.01676621182574091,
+    "construction_trace_budget": 0.12948440765490227,
+    "projection_success": 0.9833455282682397,
+    "stored_complex_elements": 2448,
+    "max_bond_actual": 32,
+    "total_seconds": 0.02985859999898821,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0054032000043662265,
+      "basis_selection": 0.00048260000767186284,
+      "local_tensors": 0.02273389999754727,
+      "canonicalization": 0.0006349999894155189,
+      "error_budget": 0.000603899999987334
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.12948440765490227,
+  "pipeline_seconds": 0.037271299996064045,
+  "phase_seconds": {
+    "input": 0.0007049999985611066,
+    "construction": 0.03125210000143852,
+    "displacement": 0.0001767999929143116,
+    "sampling": 0.0051374000031501055
+  },
+  "construction_peak_working_set_bytes": 97300480,
+  "pipeline_peak_working_set_bytes": 97390592,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 8.881784197001252e-16,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "state": {
+    "path": "results/iteration23_quality/run_04.state.npz",
+    "file_sha256": "c09c19b7c649de8bc92a32fad1ff19a1a4e3d5b3135dd9a6ec936326feb5094b",
+    "reused": false,
+    "array_fingerprint": "ebc818688430e5643200bf553e2bc9ae7a805436700553130a62d46c3bfbfbc9"
+  },
+  "independent_spectrum_max_error": 8.881784197001252e-16,
+  "actual_original_distance": 0.12905224634312487,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.05150470000808127,
+  "process_peak_working_set_bytes": 97837056,
+  "process_wall_seconds": 2.9914395999949193
+}

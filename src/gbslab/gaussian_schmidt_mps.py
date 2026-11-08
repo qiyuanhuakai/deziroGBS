@@ -164,24 +164,32 @@ def decompose_gaussian(B,*,max_seconds=120.):
     return kernels,records,scalar,dict(seconds=perf_counter()-start,final_scalar_abs=abs(scalar),virtual_mode_policy='All prefix modes retained; no small symplectic mode frozen')
 
 
-def build_schmidt_core(B,dimension,rank,*,max_seconds=240.,max_elements=4_000_000,return_maps=False):
+def build_schmidt_core(B,dimension,rank,*,max_seconds=240.,max_elements=4_000_000,return_maps=False,coefficient_backend='pco'):
     """Construct the physical-box projection of original Schmidt-projector MPS.
 
     Ideal trace upper sqrt(sum original cut tails + original marginal tails)
     follows from gentle sequential measurement after identifying the product
     of original prefix projectors. This is not a conditional-loss formula.
     """
+    if coefficient_backend not in ('pco','recurrence'): raise ValueError('Unknown Gaussian coefficient backend')
+    coefficient_function=projected_pair_tensor
+    if coefficient_backend=='recurrence':
+        # Lazy import avoids coupling module initialization through basis validation.
+        from .gaussian_pair_recurrence import pair_recurrence_tensor
+        coefficient_function=pair_recurrence_tensor
     start=perf_counter(); B=np.asarray(B,complex); m=len(B)
     kernels,records,scalar,decomposition=decompose_gaussian(B,max_seconds=max_seconds)
+    decomposition_end=perf_counter()
     bases=[np.zeros((1,0),int)]; weights=[]
     for record in records:
         basis,values=top_occupations(record['parameters'],rank); bases.append(basis); weights.append(values)
-    bases.append(np.zeros((1,0),int)); tensors=[]; local=[]
+    bases.append(np.zeros((1,0),int)); tensors=[]; local=[]; basis_end=perf_counter()
     for site,K in enumerate(kernels):
         if perf_counter()-start>max_seconds: raise TimeoutError('Gaussian MPS tensor construction time cap between sites')
-        A,info=projected_pair_tensor(K,bases[site],dimension,bases[site+1],max_elements=max_elements)
+        A,info=coefficient_function(K,bases[site],dimension,bases[site+1],max_elements=max_elements)
         A*=records[site]['kernel_scale'] if site<m-1 else scalar
         tensors.append(A); local.append(info)
+    tensors_end=perf_counter()
     # Exact right QR only. The saved success mass is not the fidelity.
     for i in range(m-1,0,-1):
         A=tensors[i]; q,r=np.linalg.qr(A.reshape(A.shape[0],-1).T,mode='reduced')
@@ -189,11 +197,16 @@ def build_schmidt_core(B,dimension,rank,*,max_seconds=240.,max_elements=4_000_00
     success=float(np.linalg.norm(tensors[0])**2)
     if not 0<success<=1+1e-8: raise ArithmeticError(f'Invalid projection success {success}')
     tensors[0]/=math.sqrt(success)
+    canonicalization_end=perf_counter()
     inverse=np.linalg.solve(np.eye(m)-B@B.conj().T,np.eye(m)); N=inverse-np.eye(m); M=inverse@B
     tails=[float(marginal_photon_tails(max(0.,float(N[i,i].real)),abs(M[i,i]),[dimension])['tail_upper_estimates'][0]) for i in range(m)]
     cut_tails=[max(0.,1-math.fsum(w)) for w in weights]; loss=math.fsum(tails)+math.fsum(cut_tails)
+    budget_end=perf_counter()
+    phases=dict(gaussian_decomposition=decomposition_end-start,basis_selection=basis_end-decomposition_end,
+        local_tensors=tensors_end-basis_end,canonicalization=canonicalization_end-tensors_end,error_budget=budget_end-canonicalization_end)
     info=dict(decomposition=decomposition,cuts=records,local=local,cut_tail_estimates=cut_tails,marginal_tail_estimates=tails,
         original_loss_sum=loss,construction_trace_budget=math.sqrt(min(1.,loss)),projection_success=success,
-        stored_complex_elements=sum(a.size for a in tensors),max_bond_actual=max(a.shape[2] for a in tensors),total_seconds=perf_counter()-start,
+        stored_complex_elements=sum(a.size for a in tensors),max_bond_actual=max(a.shape[2] for a in tensors),total_seconds=budget_end-start,
+        coefficient_backend=coefficient_backend,phase_seconds=phases,
         scope='Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate')
     return (tensors,info,dict(kernels=kernels,bases=bases,weights=weights,final_scalar=scalar)) if return_maps else (tensors,info)

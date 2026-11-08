@@ -1,0 +1,143 @@
+{
+  "modes": 4,
+  "seed": 230801,
+  "ensemble": "local",
+  "dimension": 6,
+  "rank": 32,
+  "panel": "quality",
+  "max_seconds": 120.0,
+  "backend": "recurrence",
+  "repetition": 0,
+  "samples": 16,
+  "depth": 12,
+  "target": 0.1,
+  "sequence": 31,
+  "baseline_rss_bytes": 94883840,
+  "status": "accepted",
+  "target_met": true,
+  "info": {
+    "decomposition": {
+      "seconds": 0.004989099994418211,
+      "final_scalar_abs": 0.9305270646273933,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.11176054892335786
+        ],
+        "kernel_scale": 0.9931186121470584,
+        "reconstruction_residual": 8.777083671441753e-17,
+        "scale_residual": 1.1102230246504985e-16,
+        "normalization_log_residual": 3.0531133177191805e-16,
+        "covariance_residual": 2.220446049250313e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.2516450913948756
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.11312074247648403,
+          0.00046271761076683985
+        ],
+        "kernel_scale": 0.9639126728711668,
+        "reconstruction_residual": 3.002224531865041e-16,
+        "scale_residual": 5.567598678914739e-16,
+        "normalization_log_residual": 4.163336342344337e-17,
+        "covariance_residual": 5.773159728050814e-15,
+        "symplectic_residual": 8.881784197001252e-16,
+        "minimum_raw_nu": 1.0009258636349427
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.13056145913831224,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9692780973232663,
+        "reconstruction_residual": 1.6184142622847341e-16,
+        "scale_residual": 7.772561287553373e-16,
+        "normalization_log_residual": 5.551115123125783e-16,
+        "covariance_residual": 1.7763568394002505e-15,
+        "symplectic_residual": 1.1102230246251565e-15,
+        "minimum_raw_nu": 0.9999999999999994
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 96,
+        "elements": 192
+      },
+      {
+        "cache_entries": 3072,
+        "elements": 6144
+      },
+      {
+        "cache_entries": 3072,
+        "elements": 6144
+      },
+      {
+        "cache_entries": 96,
+        "elements": 192
+      }
+    ],
+    "cut_tail_estimates": [
+      0.0,
+      1.2927436898735323e-12,
+      0.0
+    ],
+    "marginal_tail_estimates": [
+      9.674426433814132e-05,
+      0.0008094004210302679,
+      4.884650074163962e-05,
+      2.9776259824138544e-05
+    ],
+    "original_loss_sum": 0.0009847674472269312,
+    "construction_trace_budget": 0.0313810045605129,
+    "projection_success": 0.9990170965149334,
+    "stored_complex_elements": 7524,
+    "max_bond_actual": 32,
+    "total_seconds": 0.05375809999532066,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0049986999947577715,
+      "basis_selection": 0.00048010000318754464,
+      "local_tensors": 0.0464265000045998,
+      "canonicalization": 0.001378500004648231,
+      "error_budget": 0.00047429998812731355
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.0313810045605129,
+  "pipeline_seconds": 0.06746829999610782,
+  "phase_seconds": {
+    "input": 0.0013934999878983945,
+    "construction": 0.05568720000155736,
+    "displacement": 0.0002545000024838373,
+    "sampling": 0.010133100004168227
+  },
+  "construction_peak_working_set_bytes": 97447936,
+  "pipeline_peak_working_set_bytes": 97677312,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 8.881784197001252e-16,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "state": {
+    "path": "results/iteration23_quality/run_31.state.npz",
+    "file_sha256": "724690570050c823a5b370d2270fce290c0c57bef0e63422c8b9de54b116f727",
+    "reused": false,
+    "array_fingerprint": "98ca9ff2a523c947249e207e88c26d90907b603e92177032429db6b62eb493a3"
+  },
+  "independent_spectrum_max_error": 7.077671781985373e-16,
+  "actual_original_distance": 0.03135129130052425,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.09880049999628682,
+  "process_peak_working_set_bytes": 98308096,
+  "process_wall_seconds": 3.4559728000022005
+}

@@ -1,0 +1,143 @@
+{
+  "modes": 4,
+  "seed": 230801,
+  "ensemble": "haar",
+  "dimension": 6,
+  "rank": 32,
+  "panel": "quality",
+  "max_seconds": 120.0,
+  "backend": "recurrence",
+  "repetition": 0,
+  "samples": 16,
+  "depth": 12,
+  "target": 0.1,
+  "sequence": 11,
+  "baseline_rss_bytes": 95432704,
+  "status": "accepted",
+  "target_met": true,
+  "info": {
+    "decomposition": {
+      "seconds": 0.005033699999330565,
+      "final_scalar_abs": 0.9453539256102318,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.07817192813317349
+        ],
+        "kernel_scale": 0.9843695860656834,
+        "reconstruction_residual": 5.551115123125783e-17,
+        "scale_residual": 1.6185761136659696e-18,
+        "normalization_log_residual": 1.942890293094024e-16,
+        "covariance_residual": 6.661338147750939e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.1696019692150723
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.07920686999032829,
+          0.019403050915032367
+        ],
+        "kernel_scale": 0.9691532275400554,
+        "reconstruction_residual": 2.0014830212433607e-16,
+        "scale_residual": 2.2754703426922086e-16,
+        "normalization_log_residual": 2.7755575615628914e-17,
+        "covariance_residual": 1.3322676295501878e-15,
+        "symplectic_residual": 3.3306690738754696e-16,
+        "minimum_raw_nu": 1.039573957339227
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.07724061351437596,
+          6.661338147750935e-16,
+          0.0
+        ],
+        "kernel_scale": 0.9587841921763518,
+        "reconstruction_residual": 1.1857187100668868e-16,
+        "scale_residual": 4.450383350039609e-16,
+        "normalization_log_residual": 0.0,
+        "covariance_residual": 1.5543122344752192e-15,
+        "symplectic_residual": 7.9564816542129635e-16,
+        "minimum_raw_nu": 0.9999999999999998
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 96,
+        "elements": 192
+      },
+      {
+        "cache_entries": 3072,
+        "elements": 6144
+      },
+      {
+        "cache_entries": 3072,
+        "elements": 6144
+      },
+      {
+        "cache_entries": 96,
+        "elements": 192
+      }
+    ],
+    "cut_tail_estimates": [
+      1.1102230246251565e-16,
+      5.993197049747323e-10,
+      0.0
+    ],
+    "marginal_tail_estimates": [
+      0.0002434266676322194,
+      0.0005108223719275432,
+      0.0005943205279364082,
+      0.00024791090428682246
+    ],
+    "original_loss_sum": 0.0015964810711028093,
+    "construction_trace_budget": 0.03995598917687822,
+    "projection_success": 0.9984044793548705,
+    "stored_complex_elements": 7524,
+    "max_bond_actual": 32,
+    "total_seconds": 0.04366830000071786,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.005042100005084649,
+      "basis_selection": 0.0004501000075833872,
+      "local_tensors": 0.03647859999909997,
+      "canonicalization": 0.0010971999872708693,
+      "error_budget": 0.0006003000016789883
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.03995598917687822,
+  "pipeline_seconds": 0.05185730000084732,
+  "phase_seconds": {
+    "input": 0.0006020000000717118,
+    "construction": 0.04505729999800678,
+    "displacement": 0.0001799000019673258,
+    "sampling": 0.006018100000801496
+  },
+  "construction_peak_working_set_bytes": 98074624,
+  "pipeline_peak_working_set_bytes": 98275328,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 1.2212453270876722e-15,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "state": {
+    "path": "results/iteration23_quality/run_11.state.npz",
+    "file_sha256": "3d766f11eec17c52a6a8cd77c63896df7b11f41fc8a706590a13abde5203a6f1",
+    "reused": false,
+    "array_fingerprint": "7030ef1e854cdab18f1a5d2562911c029cf419b07a596a5bfe39036b2a09ef7e"
+  },
+  "independent_spectrum_max_error": 8.881784197001252e-16,
+  "actual_original_distance": 0.039943972461675775,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.08227030000125524,
+  "process_peak_working_set_bytes": 98914304,
+  "process_wall_seconds": 3.190607099997578
+}

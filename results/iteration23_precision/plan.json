@@ -1,0 +1,17 @@
+{
+  "pairs": [
+    "pco128:pco64",
+    "hafnian_promoted:hafnian_single_product",
+    "pco128:hafnian_single_product",
+    "pco64:hafnian_single_product"
+  ],
+  "source_hashes": {
+    "experiments/iteration23_precision.py": "16a86d0453360dbd4d4387851c8bed90904d9eceee260989e5386e31ecf7ba77",
+    "experiments/iteration22_external.py": "df1cad9f98606e895f7d2d41091d543c07aa2b545a83e748c91eac8631365c7a",
+    "experiments/iteration22_global.py": "69b9caa6a2928fbf45f8dea52bd86658a6f8bfbd1109a5a11e7e6518aef4f7ad",
+    "src/gbslab/mps_overlap.py": "9d2e38d42f5fa90b3fbf6335585459afd1f9d41a438d80c53dc36c08b407a8bf"
+  },
+  "archive_sha256": "bd9422c2a194f8f0109a7463291089288d2b0156db771386633824fb6bb8f8a9",
+  "scope": "Fixed stored MPS and deterministic cast/product transformations. Cannot reconstruct unknown pre-storage hafnian tensors or isolate all original arithmetic errors.",
+  "supplementary_inventory": "All S_, res_, num_ npy members: metadata and hashes only; semantics unassigned."
+}

@@ -1,0 +1,200 @@
+{
+  "modes": 6,
+  "seed": 230801,
+  "ensemble": "local",
+  "dimension": 6,
+  "rank": 32,
+  "panel": "quality",
+  "max_seconds": 120.0,
+  "backend": "pco",
+  "repetition": 0,
+  "samples": 16,
+  "depth": 12,
+  "target": 0.1,
+  "sequence": 6,
+  "baseline_rss_bytes": 95436800,
+  "status": "accepted",
+  "target_met": true,
+  "info": {
+    "decomposition": {
+      "seconds": 0.010174400013056584,
+      "final_scalar_abs": 0.9326780866587204,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.10475899410084819
+        ],
+        "kernel_scale": 0.9913071553066883,
+        "reconstruction_residual": 5.721958498152797e-17,
+        "scale_residual": 2.2204848831076487e-16,
+        "normalization_log_residual": 6.938893903907228e-16,
+        "covariance_residual": 4.440892098500626e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.2340352897388376
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.10996371173066251,
+          0.014112385217779968
+        ],
+        "kernel_scale": 0.9687297449637505,
+        "reconstruction_residual": 6.736447455048117e-17,
+        "scale_residual": 4.493165844264116e-16,
+        "normalization_log_residual": 8.326672684688674e-16,
+        "covariance_residual": 1.3322676295501878e-15,
+        "symplectic_residual": 4.440892098500626e-16,
+        "minimum_raw_nu": 1.028628790961934
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.10700419796114445,
+          0.015586093177930232,
+          0.003518476330834929
+        ],
+        "kernel_scale": 0.964057449921408,
+        "reconstruction_residual": 2.618455766672135e-16,
+        "scale_residual": 8.913222796952808e-16,
+        "normalization_log_residual": 7.216449660063518e-16,
+        "covariance_residual": 2.4424906541753444e-15,
+        "symplectic_residual": 1.1102230246251565e-15,
+        "minimum_raw_nu": 1.007061799435838
+      },
+      {
+        "cut": 4,
+        "parameters": [
+          0.133105295881857,
+          0.04583100417038685,
+          1.6653345369377319e-15,
+          1.5543122344752168e-15
+        ],
+        "kernel_scale": 0.9789006496813341,
+        "reconstruction_residual": 1.1857187100668868e-16,
+        "scale_residual": 9.18237566486535e-16,
+        "normalization_log_residual": 6.800116025829084e-16,
+        "covariance_residual": 5.995204332975845e-15,
+        "symplectic_residual": 1.0159847663222304e-15,
+        "minimum_raw_nu": 1.000000000000003
+      },
+      {
+        "cut": 5,
+        "parameters": [
+          0.12324456599478924,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9504926968480907,
+        "reconstruction_residual": 1.586058478642405e-16,
+        "scale_residual": 8.917014927099502e-16,
+        "normalization_log_residual": 6.800116025829084e-16,
+        "covariance_residual": 2.220446049250313e-15,
+        "symplectic_residual": 1.7763568394002505e-15,
+        "minimum_raw_nu": 0.9999999999999983
+      }
+    ],
+    "local": [
+      {
+        "pair_operators": 3,
+        "coefficient_updates": 2077,
+        "elements": 192,
+        "active_local_modes": 2
+      },
+      {
+        "pair_operators": 10,
+        "coefficient_updates": 124074,
+        "elements": 6144,
+        "active_local_modes": 4
+      },
+      {
+        "pair_operators": 21,
+        "coefficient_updates": 86388,
+        "elements": 6144,
+        "active_local_modes": 6
+      },
+      {
+        "pair_operators": 21,
+        "coefficient_updates": 87628,
+        "elements": 6144,
+        "active_local_modes": 6
+      },
+      {
+        "pair_operators": 10,
+        "coefficient_updates": 124600,
+        "elements": 6144,
+        "active_local_modes": 4
+      },
+      {
+        "pair_operators": 3,
+        "coefficient_updates": 2077,
+        "elements": 192,
+        "active_local_modes": 2
+      }
+    ],
+    "cut_tail_estimates": [
+      0.0,
+      1.4252244939783054e-09,
+      5.955555603120999e-07,
+      7.668244517144984e-08,
+      0.0
+    ],
+    "marginal_tail_estimates": [
+      0.00012501413257786316,
+      0.0005633765379508448,
+      0.0006559485174428399,
+      8.455911054662445e-05,
+      0.0002280174577732298,
+      5.393601729485246e-05
+    ],
+    "original_loss_sum": 0.001711525436816232,
+    "construction_trace_budget": 0.04137058661435963,
+    "projection_success": 0.9982906050510267,
+    "stored_complex_elements": 19812,
+    "max_bond_actual": 32,
+    "total_seconds": 0.19193780000205152,
+    "coefficient_backend": "pco",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.010180700002820231,
+      "basis_selection": 0.0006564999930560589,
+      "local_tensors": 0.17821950001234654,
+      "canonicalization": 0.001960299996426329,
+      "error_budget": 0.0009207999974023551
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.04137058661435963,
+  "pipeline_seconds": 0.2021424999984447,
+  "phase_seconds": {
+    "input": 0.001704599999357015,
+    "construction": 0.1919645999878412,
+    "displacement": 0.00017920001118909568,
+    "sampling": 0.00829410000005737
+  },
+  "construction_peak_working_set_bytes": 97857536,
+  "pipeline_peak_working_set_bytes": 98033664,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 1.2212453270876722e-15,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "state": {
+    "path": "results/iteration23_quality/run_06.state.npz",
+    "file_sha256": "c26a3719579a01c0cb73ac089d0ab05a87ef2bc5051ecba184290db458935da7",
+    "reused": false,
+    "array_fingerprint": "b542f86889714d9e582db23c5112267fc18350359710ea84c29076b3f9ebc22c"
+  },
+  "independent_spectrum_max_error": 4.6629367034256575e-15,
+  "actual_original_distance": 0.041346488604978415,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.5327790000010282,
+  "process_peak_working_set_bytes": 110780416,
+  "process_wall_seconds": 3.46607569999469
+}

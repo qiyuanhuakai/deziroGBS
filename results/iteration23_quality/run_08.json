@@ -1,0 +1,188 @@
+{
+  "modes": 6,
+  "seed": 230801,
+  "ensemble": "haar",
+  "dimension": 4,
+  "rank": 8,
+  "panel": "quality",
+  "max_seconds": 120.0,
+  "backend": "recurrence",
+  "repetition": 0,
+  "samples": 16,
+  "depth": 12,
+  "target": 0.1,
+  "sequence": 8,
+  "baseline_rss_bytes": 95137792,
+  "status": "budget_missed",
+  "target_met": false,
+  "info": {
+    "decomposition": {
+      "seconds": 0.008632299999590032,
+      "final_scalar_abs": 0.9289721993439385,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.12625196373736766
+        ],
+        "kernel_scale": 0.9968478921868046,
+        "reconstruction_residual": 8.441528768080323e-17,
+        "scale_residual": 1.7488441602681704e-20,
+        "normalization_log_residual": 4.440892098500626e-16,
+        "covariance_residual": 8.881784197001252e-16,
+        "symplectic_residual": 3.042940080599196e-19,
+        "minimum_raw_nu": 1.288989407695604
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.12591652206866652,
+          0.025616845780450714
+        ],
+        "kernel_scale": 0.9702843378672793,
+        "reconstruction_residual": 1.3877787807814457e-16,
+        "scale_residual": 6.693161669736933e-16,
+        "normalization_log_residual": 4.996003610813204e-16,
+        "covariance_residual": 3.552713678800501e-15,
+        "symplectic_residual": 2.893317036506437e-16,
+        "minimum_raw_nu": 1.0525806417516916
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.13556692624681274,
+          0.05345807562239326,
+          0.000536451520961005
+        ],
+        "kernel_scale": 0.9744630095636478,
+        "reconstruction_residual": 1.9824481816090938e-16,
+        "scale_residual": 1.112802960004203e-15,
+        "normalization_log_residual": 1.4988010832439613e-15,
+        "covariance_residual": 5.10702591327572e-15,
+        "symplectic_residual": 6.813677110086046e-16,
+        "minimum_raw_nu": 1.0010734789113167
+      },
+      {
+        "cut": 4,
+        "parameters": [
+          0.13523668745148756,
+          0.1297348543855288,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9850920496806288,
+        "reconstruction_residual": 2.237726045655905e-16,
+        "scale_residual": 8.369744436473945e-16,
+        "normalization_log_residual": 1.1379786002407855e-15,
+        "covariance_residual": 2.886579864025407e-15,
+        "symplectic_residual": 7.729062605467487e-16,
+        "minimum_raw_nu": 0.9999999999999989
+      },
+      {
+        "cut": 5,
+        "parameters": [
+          0.13577294771610532,
+          7.771561172376089e-16,
+          2.2204460492503126e-16,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9309358173758792,
+        "reconstruction_residual": 1.2412670766236366e-16,
+        "scale_residual": 1.9985507503126397e-15,
+        "normalization_log_residual": 6.938893903907228e-16,
+        "covariance_residual": 2.886579864025407e-15,
+        "symplectic_residual": 2.6645352591003757e-15,
+        "minimum_raw_nu": 0.9999999999999994
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 16,
+        "elements": 32
+      },
+      {
+        "cache_entries": 128,
+        "elements": 256
+      },
+      {
+        "cache_entries": 128,
+        "elements": 256
+      },
+      {
+        "cache_entries": 128,
+        "elements": 256
+      },
+      {
+        "cache_entries": 128,
+        "elements": 256
+      },
+      {
+        "cache_entries": 16,
+        "elements": 32
+      }
+    ],
+    "cut_tail_estimates": [
+      6.455132117721973e-08,
+      0.0003920949290699971,
+      0.0015011920199852202,
+      0.004734811119418536,
+      1.1547978828740924e-07
+    ],
+    "marginal_tail_estimates": [
+      0.0009526080271061918,
+      0.005452233150347349,
+      0.001385002033536503,
+      0.0006703481576918812,
+      0.0006396334440095199,
+      0.0005083222142156604
+    ],
+    "original_loss_sum": 0.016236425126490324,
+    "construction_trace_budget": 0.12742223168070133,
+    "projection_success": 0.9861958672490891,
+    "stored_complex_elements": 944,
+    "max_bond_actual": 8,
+    "total_seconds": 0.016201300008106045,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.008641299995360896,
+      "basis_selection": 0.00037629999860655516,
+      "local_tensors": 0.0057899000094039366,
+      "canonicalization": 0.0005715000006603077,
+      "error_budget": 0.00082230000407435
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.12742223168070133,
+  "pipeline_seconds": 0.026143600000068545,
+  "phase_seconds": {
+    "input": 0.0008479999960400164,
+    "construction": 0.017334400006802753,
+    "displacement": 0.00018769998860079795,
+    "sampling": 0.007773500008624978
+  },
+  "construction_peak_working_set_bytes": 96497664,
+  "pipeline_peak_working_set_bytes": 96571392,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 9.992007221626409e-16,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "state": {
+    "path": "results/iteration23_quality/run_08.state.npz",
+    "file_sha256": "c5869abaff653fdaa6ef0df4c5e3ccdd985efa5e9bef2fa2f28dafeffd6cc166",
+    "reused": false,
+    "array_fingerprint": "b2d48ec8090e98d223061f8f4d62e66a6185d381f3e1d39dfc6f49c8ad51bab1"
+  },
+  "independent_spectrum_max_error": 1.1102230246251565e-15,
+  "actual_original_distance": 0.11781088788702981,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.06335419999959413,
+  "process_peak_working_set_bytes": 97841152,
+  "process_wall_seconds": 3.137889700010419
+}
