@@ -19,22 +19,26 @@ def _integer(x, name, lo, hi):
     return int(x)
 
 
-def local_circuit(modes, depth, rng):
-    """Same random ensemble/stream as gaussian.local_unitary; return its gates."""
+def local_circuit(modes, depth, rng, *, materialize_unitary=True):
+    """Same random ensemble/stream as gaussian.local_unitary; return its gates.
+
+    With materialize_unitary=False, return (gates, None) without an m by m
+    allocation. Random draws and the emitted gate sequence are unchanged.
+    """
     m = _integer(modes, 'modes', 2, 1024)
     depth = _integer(depth, 'depth', 0, 128)
-    u = np.eye(m, dtype=complex)
+    u = np.eye(m, dtype=complex) if materialize_unitary else None
     gates = []
     for layer in range(depth):
         phases = rng.uniform(0, 2*np.pi, m)
         gates.append(('phases', phases))
-        u *= np.exp(1j*phases)[:, None]
+        if u is not None: u *= np.exp(1j*phases)[:, None]
         for i in range(layer % 2, m-1, 2):
             theta, phi = rng.uniform(0, np.pi/2), rng.uniform(0, 2*np.pi)
             c, s, z = math.cos(theta), math.sin(theta), np.exp(1j*phi)
             pair = np.array([[c, -z*s], [z.conjugate()*s, c]])
             gates.append(('pair', i, pair))
-            u[[i, i+1]] = pair @ u[[i, i+1]]
+            if u is not None: u[[i, i+1]] = pair @ u[[i, i+1]]
     return gates, u
 
 

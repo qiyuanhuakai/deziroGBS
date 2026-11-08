@@ -3,6 +3,7 @@
 results/iteration11*/** -text -whitespace
 results/iteration12*/** -text -whitespace
 results/iteration13*/** -text -whitespace
+results/iteration14*/** -text -whitespace
 
 # New executable sources keep stable line endings across platforms.
 src/gbslab/mps_probe.py text eol=lf
@@ -21,3 +22,7 @@ src/gbslab/sampling_audit.py text eol=lf
 tests/test_sampling_audit.py text eol=lf
 experiments/iteration13*.py text eol=lf
 experiments/verify_iteration13.py text eol=lf
+src/gbslab/local_displacement.py text eol=lf
+tests/test_local_displacement.py text eol=lf
+experiments/iteration14*.py text eol=lf
+experiments/verify_iteration14.py text eol=lf
