@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第28轮：可构造分解与宿主精度](RESEARCH_REPORT_ITERATION28.md)
+- [第28轮核验](results/iteration28_validation/validation.json)
 - [第27轮：混合低点击与外部协方差审计](RESEARCH_REPORT_ITERATION27.md)
 - [第27轮核验](results/iteration27_validation/validation.json)
 - [第26轮：直接阈值输出下界与数值门禁](RESEARCH_REPORT_ITERATION26.md)
@@ -33,6 +35,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第28轮持续发布
+
+发布16项资源分解正式计算（15接受、1拒绝）、两个无余量探索结果、12项独立SDP校准、完整144模主纯B与噪声因子，以及568项产物核验。另发布三版标量编码原型：前两版各保留21项失败，宿主精度守卫版本301/301通过，未启用原生采样接口。
+
+475个新产物共11,599,808字节，引用5个历史文件共1,401,395字节，无新增分卷。424项全库运行、395通过、0失败、0错误；29案例与7类依赖跳过保留。新模型与原协方差的数值差明确记录，不宣称原实验身份或严格区间证书。
 
 ## 2026-11-09：第27轮持续发布
 

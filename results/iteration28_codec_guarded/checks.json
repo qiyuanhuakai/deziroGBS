@@ -1,0 +1,2930 @@
+[
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 0,
+    "input": "0x0p+0",
+    "wire": "000000000000000000000000000000000000000000000000",
+    "expected": "000000000000000000000000000000000000000000000000",
+    "decoded": "0x0p+0",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 1,
+    "input": "-0x1p+0",
+    "wire": "010100000000000001000000000000000000000000000000",
+    "expected": "010100000000000001000000000000000000000000000000",
+    "decoded": "-0x8p-3",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 2,
+    "input": "0x1p-16445",
+    "wire": "01000000c3bfffff01000000000000000000000000000000",
+    "expected": "01000000c3bfffff01000000000000000000000000000000",
+    "decoded": "0x0.000000000000001p-16385",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 3,
+    "input": "0xffffffffffffffffp+16320",
+    "wire": "01000000c03f0000ffffffffffffffff0000000000000000",
+    "expected": "01000000c03f0000ffffffffffffffff0000000000000000",
+    "decoded": "0xf.fffffffffffffffp+16380",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 4,
+    "input": "-0x1p-16382",
+    "wire": "0101000002c0ffff01000000000000000000000000000000",
+    "expected": "0101000002c0ffff01000000000000000000000000000000",
+    "decoded": "-0x8p-16385",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 5,
+    "input": "-0xffffffffffffffffp-64",
+    "wire": "01010000c0ffffffffffffffffffffff0000000000000000",
+    "expected": "01010000c0ffffffffffffffffffffff0000000000000000",
+    "decoded": "-0xf.fffffffffffffffp-4",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 6,
+    "input": "-0xefp+8675",
+    "wire": "01010000e3210000ef000000000000000000000000000000",
+    "expected": "01010000e3210000ef000000000000000000000000000000",
+    "decoded": "-0xe.fp+8679",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 7,
+    "input": "-0x1e578e8123ebbdp-2850",
+    "wire": "01010000def4ffffbdeb23818e571e000000000000000000",
+    "expected": "01010000def4ffffbdeb23818e571e000000000000000000",
+    "decoded": "-0xf.2bc74091f5de8p-2801",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 8,
+    "input": "0x5p+10327",
+    "wire": "010000005728000005000000000000000000000000000000",
+    "expected": "010000005728000005000000000000000000000000000000",
+    "decoded": "0xap+10326",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 9,
+    "input": "-0x784c2b09d3p+12042",
+    "wire": "010100000a2f0000d3092b4c780000000000000000000000",
+    "expected": "010100000a2f0000d3092b4c780000000000000000000000",
+    "decoded": "-0xf.0985613a6p+12077",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 10,
+    "input": "-0x72c06c99p-12764",
+    "wire": "0101000024ceffff996cc072000000000000000000000000",
+    "expected": "0101000024ceffff996cc072000000000000000000000000",
+    "decoded": "-0xe.580d932p-12737",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 11,
+    "input": "0x35p+14564",
+    "wire": "01000000e438000035000000000000000000000000000000",
+    "expected": "01000000e438000035000000000000000000000000000000",
+    "decoded": "0xd.4p+14566",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 12,
+    "input": "0x65b5p-8286",
+    "wire": "01000000a2dfffffb5650000000000000000000000000000",
+    "expected": "01000000a2dfffffb5650000000000000000000000000000",
+    "decoded": "0xc.b6ap-8275",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 13,
+    "input": "0x1fed8fa5p-4764",
+    "wire": "0100000064edffffa58fed1f000000000000000000000000",
+    "expected": "0100000064edffffa58fed1f000000000000000000000000",
+    "decoded": "0xf.f6c7d28p-4739",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 14,
+    "input": "0xd5183p-14878",
+    "wire": "01000000e2c5ffff83510d00000000000000000000000000",
+    "expected": "01000000e2c5ffff83510d00000000000000000000000000",
+    "decoded": "0xd.5183p-14862",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 15,
+    "input": "0x2670cfp-6073",
+    "wire": "0100000047e8ffffcf702600000000000000000000000000",
+    "expected": "0100000047e8ffffcf702600000000000000000000000000",
+    "decoded": "0x9.9c33cp-6055",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 16,
+    "input": "-0xbdp+15054",
+    "wire": "01010000ce3a0000bd000000000000000000000000000000",
+    "expected": "01010000ce3a0000bd000000000000000000000000000000",
+    "decoded": "-0xb.dp+15058",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 17,
+    "input": "0xff054e84bf1p+6296",
+    "wire": "0100000098180000f14be854f00f00000000000000000000",
+    "expected": "0100000098180000f14be854f00f00000000000000000000",
+    "decoded": "0xf.f054e84bf1p+6336",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 18,
+    "input": "-0xba1092ccdp+9990",
+    "wire": "0101000006270000cd2c09a10b0000000000000000000000",
+    "expected": "0101000006270000cd2c09a10b0000000000000000000000",
+    "decoded": "-0xb.a1092ccdp+10022",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 19,
+    "input": "-0x59f01c49p-2410",
+    "wire": "0101000096f6ffff491cf059000000000000000000000000",
+    "expected": "0101000096f6ffff491cf059000000000000000000000000",
+    "decoded": "-0xb.3e03892p-2383",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 20,
+    "input": "0x5a65p-143",
+    "wire": "0100000071ffffff655a0000000000000000000000000000",
+    "expected": "0100000071ffffff655a0000000000000000000000000000",
+    "decoded": "0xb.4cap-132",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 21,
+    "input": "-0x39fbdb3p+8909",
+    "wire": "01010000cd220000b3bd9f03000000000000000000000000",
+    "expected": "01010000cd220000b3bd9f03000000000000000000000000",
+    "decoded": "-0xe.7ef6ccp+8931",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 22,
+    "input": "0x5p+2478",
+    "wire": "01000000ae09000005000000000000000000000000000000",
+    "expected": "01000000ae09000005000000000000000000000000000000",
+    "decoded": "0xap+2477",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 23,
+    "input": "0x6d1f7bbp+609",
+    "wire": "0100000061020000bbf7d106000000000000000000000000",
+    "expected": "0100000061020000bbf7d106000000000000000000000000",
+    "decoded": "0xd.a3ef76p+632",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 24,
+    "input": "-0x23291p-7297",
+    "wire": "010100007fe3ffff91320200000000000000000000000000",
+    "expected": "010100007fe3ffff91320200000000000000000000000000",
+    "decoded": "-0x8.ca44p-7283",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 25,
+    "input": "0x216be56141e04efp-5901",
+    "wire": "01000000f3e8ffffef041e1456be16020000000000000000",
+    "expected": "01000000f3e8ffffef041e1456be16020000000000000000",
+    "decoded": "0x8.5af958507813bcp-5847",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 26,
+    "input": "0x6d6d8a8bp+8369",
+    "wire": "01000000b12000008b8a6d6d000000000000000000000000",
+    "expected": "01000000b12000008b8a6d6d000000000000000000000000",
+    "decoded": "0xd.adb1516p+8396",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 27,
+    "input": "-0x64780cdb77p+7743",
+    "wire": "010100003f1e000077db0c78640000000000000000000000",
+    "expected": "010100003f1e000077db0c78640000000000000000000000",
+    "decoded": "-0xc.8f019b6eep+7778",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 28,
+    "input": "-0x2b27p-9842",
+    "wire": "010100008ed9ffff272b0000000000000000000000000000",
+    "expected": "010100008ed9ffff272b0000000000000000000000000000",
+    "decoded": "-0xa.c9cp-9832",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 29,
+    "input": "0x9325bbb43p-14222",
+    "wire": "0100000072c8ffff43bb5b32090000000000000000000000",
+    "expected": "0100000072c8ffff43bb5b32090000000000000000000000",
+    "decoded": "0x9.325bbb43p-14190",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 30,
+    "input": "0x1f319cf194bp+11300",
+    "wire": "01000000242c00004b19cf19f30100000000000000000000",
+    "expected": "01000000242c00004b19cf19f30100000000000000000000",
+    "decoded": "0xf.98ce78ca58p+11337",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 31,
+    "input": "-0x718abp+469",
+    "wire": "01010000d5010000ab180700000000000000000000000000",
+    "expected": "01010000d5010000ab180700000000000000000000000000",
+    "decoded": "-0xe.3156p+484",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 32,
+    "input": "0x3p+13981",
+    "wire": "010000009d36000003000000000000000000000000000000",
+    "expected": "010000009d36000003000000000000000000000000000000",
+    "decoded": "0xcp+13979",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 33,
+    "input": "-0x1298fp+8371",
+    "wire": "01010000b32000008f290100000000000000000000000000",
+    "expected": "01010000b32000008f290100000000000000000000000000",
+    "decoded": "-0x9.4c78p+8384",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 34,
+    "input": "0x4dp+7779",
+    "wire": "01000000631e00004d000000000000000000000000000000",
+    "expected": "01000000631e00004d000000000000000000000000000000",
+    "decoded": "0x9.ap+7782",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 35,
+    "input": "0x35p+10526",
+    "wire": "010000001e29000035000000000000000000000000000000",
+    "expected": "010000001e29000035000000000000000000000000000000",
+    "decoded": "0xd.4p+10528",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 36,
+    "input": "0xccb415aa9dp-15057",
+    "wire": "010000002fc5ffff9daa15b4cc0000000000000000000000",
+    "expected": "010000002fc5ffff9daa15b4cc0000000000000000000000",
+    "decoded": "0xc.cb415aa9dp-15021",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 37,
+    "input": "-0x360a72bbp-9561",
+    "wire": "01010000a7daffffbb720a36000000000000000000000000",
+    "expected": "01010000a7daffffbb720a36000000000000000000000000",
+    "decoded": "-0xd.829caecp-9535",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 38,
+    "input": "-0x8b850bab6391217p-14128",
+    "wire": "01010000d0c8ffff171239b6ba50b8080000000000000000",
+    "expected": "01010000d0c8ffff171239b6ba50b8080000000000000000",
+    "decoded": "-0x8.b850bab6391217p-14072",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 39,
+    "input": "0x1d508fp+11489",
+    "wire": "01000000e12c00008f501d00000000000000000000000000",
+    "expected": "01000000e12c00008f501d00000000000000000000000000",
+    "decoded": "0xe.a8478p+11506",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 40,
+    "input": "0xb3p+1233",
+    "wire": "01000000d1040000b3000000000000000000000000000000",
+    "expected": "01000000d1040000b3000000000000000000000000000000",
+    "decoded": "0xb.3p+1237",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 41,
+    "input": "0xe2383eb2ac3dp-15707",
+    "wire": "01000000a5c2ffff3dacb23e38e200000000000000000000",
+    "expected": "01000000a5c2ffff3dacb23e38e200000000000000000000",
+    "decoded": "0xe.2383eb2ac3dp-15663",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 42,
+    "input": "-0xb1p+6685",
+    "wire": "010100001d1a0000b1000000000000000000000000000000",
+    "expected": "010100001d1a0000b1000000000000000000000000000000",
+    "decoded": "-0xb.1p+6689",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 43,
+    "input": "0xd2772be1a2b2a93p+8240",
+    "wire": "0100000030200000932a2b1abe72270d0000000000000000",
+    "expected": "0100000030200000932a2b1abe72270d0000000000000000",
+    "decoded": "0xd.2772be1a2b2a93p+8296",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 44,
+    "input": "-0x3p+7825",
+    "wire": "01010000911e000003000000000000000000000000000000",
+    "expected": "01010000911e000003000000000000000000000000000000",
+    "decoded": "-0xcp+7823",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 45,
+    "input": "0x2ab1f764fa90c1p+2263",
+    "wire": "01000000d7080000c190fa64f7b12a000000000000000000",
+    "expected": "01000000d7080000c190fa64f7b12a000000000000000000",
+    "decoded": "0xa.ac7dd93ea4304p+2313",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 46,
+    "input": "0x39d7p-11659",
+    "wire": "0100000075d2ffffd7390000000000000000000000000000",
+    "expected": "0100000075d2ffffd7390000000000000000000000000000",
+    "decoded": "0xe.75cp-11649",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 47,
+    "input": "0x14b7169fcffc7p+6113",
+    "wire": "01000000e1170000c7fffc69714b01000000000000000000",
+    "expected": "01000000e1170000c7fffc69714b01000000000000000000",
+    "decoded": "0xa.5b8b4fe7fe38p+6158",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 48,
+    "input": "-0x4310871e4e0a8fp+4183",
+    "wire": "01010000571000008f0a4e1e871043000000000000000000",
+    "expected": "01010000571000008f0a4e1e871043000000000000000000",
+    "decoded": "-0x8.6210e3c9c151ep+4234",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 49,
+    "input": "0x1p+13524",
+    "wire": "01000000d434000001000000000000000000000000000000",
+    "expected": "01000000d434000001000000000000000000000000000000",
+    "decoded": "0x8p+13521",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 50,
+    "input": "0x2c078059c796fp-11662",
+    "wire": "0100000072d2ffff6f799c0578c002000000000000000000",
+    "expected": "0100000072d2ffff6f799c0578c002000000000000000000",
+    "decoded": "0xb.01e01671e5bcp-11616",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 51,
+    "input": "0x11576dp-10414",
+    "wire": "0100000052d7ffff6d571100000000000000000000000000",
+    "expected": "0100000052d7ffff6d571100000000000000000000000000",
+    "decoded": "0x8.abb68p-10397",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 52,
+    "input": "0x14965013c88d9bp-2549",
+    "wire": "010000000bf6ffff9b8dc813509614000000000000000000",
+    "expected": "010000000bf6ffff9b8dc813509614000000000000000000",
+    "decoded": "0xa.4b2809e446cd8p-2500",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 53,
+    "input": "-0x1723c0c382f56f41p-8633",
+    "wire": "0101000047deffff416ff582c3c023170000000000000000",
+    "expected": "0101000047deffff416ff582c3c023170000000000000000",
+    "decoded": "-0xb.91e061c17ab7a08p-8576",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 54,
+    "input": "-0x11p+14596",
+    "wire": "010100000439000011000000000000000000000000000000",
+    "expected": "010100000439000011000000000000000000000000000000",
+    "decoded": "-0x8.8p+14597",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 55,
+    "input": "0x327p-13312",
+    "wire": "0100000000ccffff27030000000000000000000000000000",
+    "expected": "0100000000ccffff27030000000000000000000000000000",
+    "decoded": "0xc.9cp-13306",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 56,
+    "input": "-0x93f776b7ddp-13309",
+    "wire": "0101000003ccffffddb776f7930000000000000000000000",
+    "expected": "0101000003ccffffddb776f7930000000000000000000000",
+    "decoded": "-0x9.3f776b7ddp-13273",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 57,
+    "input": "-0x8125p+6105",
+    "wire": "01010000d917000025810000000000000000000000000000",
+    "expected": "01010000d917000025810000000000000000000000000000",
+    "decoded": "-0x8.125p+6117",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 58,
+    "input": "-0x4a6164dp-5182",
+    "wire": "01010000c2ebffff4d16a604000000000000000000000000",
+    "expected": "01010000c2ebffff4d16a604000000000000000000000000",
+    "decoded": "-0x9.4c2c9ap-5159",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 59,
+    "input": "-0x359a4cfbp+9243",
+    "wire": "010100001b240000fb4c9a35000000000000000000000000",
+    "expected": "010100001b240000fb4c9a35000000000000000000000000",
+    "decoded": "-0xd.66933ecp+9269",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 60,
+    "input": "-0xf9b339f4321e961p+4821",
+    "wire": "01010000d512000061e921439f339b0f0000000000000000",
+    "expected": "01010000d512000061e921439f339b0f0000000000000000",
+    "decoded": "-0xf.9b339f4321e961p+4877",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 61,
+    "input": "0x2a9p+4706",
+    "wire": "0100000062120000a9020000000000000000000000000000",
+    "expected": "0100000062120000a9020000000000000000000000000000",
+    "decoded": "0xa.a4p+4712",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 62,
+    "input": "0xc6dd4553845fp+13594",
+    "wire": "010000001a3500005f845345ddc600000000000000000000",
+    "expected": "010000001a3500005f845345ddc600000000000000000000",
+    "decoded": "0xc.6dd4553845fp+13638",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 63,
+    "input": "0x3bcfc72f79a187p+13065",
+    "wire": "010000000933000087a1792fc7cf3b000000000000000000",
+    "expected": "010000000933000087a1792fc7cf3b000000000000000000",
+    "decoded": "0xe.f3f1cbde6861cp+13115",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 64,
+    "input": "0x21p+5727",
+    "wire": "010000005f16000021000000000000000000000000000000",
+    "expected": "010000005f16000021000000000000000000000000000000",
+    "decoded": "0x8.4p+5729",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 65,
+    "input": "-0x3dea1p-7224",
+    "wire": "01010000c8e3ffffa1de0300000000000000000000000000",
+    "expected": "01010000c8e3ffffa1de0300000000000000000000000000",
+    "decoded": "-0xf.7a84p-7210",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 66,
+    "input": "-0x1d18905b2ff3d43p-8608",
+    "wire": "0101000060deffff433dffb20589d1010000000000000000",
+    "expected": "0101000060deffff433dffb20589d1010000000000000000",
+    "decoded": "-0xe.8c482d97f9ea18p-8555",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 67,
+    "input": "-0x151c87ec50c8997p+4735",
+    "wire": "010100007f12000097890cc57ec851010000000000000000",
+    "expected": "010100007f12000097890cc57ec851010000000000000000",
+    "decoded": "-0xa.8e43f628644cb8p+4788",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 68,
+    "input": "-0x91p-10074",
+    "wire": "01010000a6d8ffff91000000000000000000000000000000",
+    "expected": "01010000a6d8ffff91000000000000000000000000000000",
+    "decoded": "-0x9.1p-10070",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 69,
+    "input": "-0x33abp+3700",
+    "wire": "01010000740e0000ab330000000000000000000000000000",
+    "expected": "01010000740e0000ab330000000000000000000000000000",
+    "decoded": "-0xc.eacp+3710",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 70,
+    "input": "0x7fdp-11681",
+    "wire": "010000005fd2fffffd070000000000000000000000000000",
+    "expected": "010000005fd2fffffd070000000000000000000000000000",
+    "decoded": "0xf.fap-11674",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 71,
+    "input": "0xa4dp+959",
+    "wire": "01000000bf0300004d0a0000000000000000000000000000",
+    "expected": "01000000bf0300004d0a0000000000000000000000000000",
+    "decoded": "0xa.4dp+967",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 72,
+    "input": "0x2541a263c2dp+12387",
+    "wire": "01000000633000002d3c261a540200000000000000000000",
+    "expected": "01000000633000002d3c261a540200000000000000000000",
+    "decoded": "0x9.506898f0b4p+12425",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 73,
+    "input": "-0x2a7217p+12403",
+    "wire": "010100007330000017722a00000000000000000000000000",
+    "expected": "010100007330000017722a00000000000000000000000000",
+    "decoded": "-0xa.9c85cp+12421",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 74,
+    "input": "-0x3090b8c4fp+2905",
+    "wire": "01010000590b00004f8c0b09030000000000000000000000",
+    "expected": "01010000590b00004f8c0b09030000000000000000000000",
+    "decoded": "-0xc.242e313cp+2935",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 75,
+    "input": "0x5a339f89p+10526",
+    "wire": "010000001e290000899f335a000000000000000000000000",
+    "expected": "010000001e290000899f335a000000000000000000000000",
+    "decoded": "0xb.4673f12p+10553",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 76,
+    "input": "0x2c285p-8150",
+    "wire": "010000002ae0ffff85c20200000000000000000000000000",
+    "expected": "010000002ae0ffff85c20200000000000000000000000000",
+    "decoded": "0xb.0a14p-8136",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 77,
+    "input": "0xfdp-15165",
+    "wire": "01000000c3c4fffffd000000000000000000000000000000",
+    "expected": "01000000c3c4fffffd000000000000000000000000000000",
+    "decoded": "0xf.dp-15161",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 78,
+    "input": "0x32bp+12304",
+    "wire": "01000000103000002b030000000000000000000000000000",
+    "expected": "01000000103000002b030000000000000000000000000000",
+    "decoded": "0xc.acp+12310",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 79,
+    "input": "0x26fp-542",
+    "wire": "01000000e2fdffff6f020000000000000000000000000000",
+    "expected": "01000000e2fdffff6f020000000000000000000000000000",
+    "decoded": "0x9.bcp-536",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 80,
+    "input": "-0x65a3p-10602",
+    "wire": "0101000096d6ffffa3650000000000000000000000000000",
+    "expected": "0101000096d6ffffa3650000000000000000000000000000",
+    "decoded": "-0xc.b46p-10591",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 81,
+    "input": "0x1p+10284",
+    "wire": "010000002c28000001000000000000000000000000000000",
+    "expected": "010000002c28000001000000000000000000000000000000",
+    "decoded": "0x8p+10281",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 82,
+    "input": "-0xeddc893p-11821",
+    "wire": "01010000d3d1ffff93c8dd0e000000000000000000000000",
+    "expected": "01010000d3d1ffff93c8dd0e000000000000000000000000",
+    "decoded": "-0xe.ddc893p-11797",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 83,
+    "input": "-0x69321fc5117fp-15697",
+    "wire": "01010000afc2ffff7f11c51f326900000000000000000000",
+    "expected": "01010000afc2ffff7f11c51f326900000000000000000000",
+    "decoded": "-0xd.2643f8a22fep-15654",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 84,
+    "input": "0x4347190bcdp-3135",
+    "wire": "01000000c1f3ffffcd0b1947430000000000000000000000",
+    "expected": "01000000c1f3ffffcd0b1947430000000000000000000000",
+    "decoded": "0x8.68e32179ap-3100",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 85,
+    "input": "-0x7p+1622",
+    "wire": "010100005606000007000000000000000000000000000000",
+    "expected": "010100005606000007000000000000000000000000000000",
+    "decoded": "-0xep+1621",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 86,
+    "input": "0x24f5d18ebp-1715",
+    "wire": "010000004df9ffffeb185d4f020000000000000000000000",
+    "expected": "010000004df9ffffeb185d4f020000000000000000000000",
+    "decoded": "0x9.3d7463acp-1685",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 87,
+    "input": "-0xa7d2c17baaedp-108",
+    "wire": "0101000094ffffffedaa7bc1d2a700000000000000000000",
+    "expected": "0101000094ffffffedaa7bc1d2a700000000000000000000",
+    "decoded": "-0xa.7d2c17baaedp-64",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 88,
+    "input": "-0xe10f919184e0bb1p+2957",
+    "wire": "010100008d0b0000b10b4e1819f9100e0000000000000000",
+    "expected": "010100008d0b0000b10b4e1819f9100e0000000000000000",
+    "decoded": "-0xe.10f919184e0bb1p+3013",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 89,
+    "input": "0x7f8b7499d5p-9206",
+    "wire": "010000000adcffffd599748b7f0000000000000000000000",
+    "expected": "010000000adcffffd599748b7f0000000000000000000000",
+    "decoded": "0xf.f16e933aap-9171",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 90,
+    "input": "-0x205p+11892",
+    "wire": "01010000742e000005020000000000000000000000000000",
+    "expected": "01010000742e000005020000000000000000000000000000",
+    "decoded": "-0x8.14p+11898",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 91,
+    "input": "0x1af965910f37dp+13105",
+    "wire": "01000000313300007df3105996af01000000000000000000",
+    "expected": "01000000313300007df3105996af01000000000000000000",
+    "decoded": "0xd.7cb2c8879be8p+13150",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 92,
+    "input": "0xcbp-15187",
+    "wire": "01000000adc4ffffcb000000000000000000000000000000",
+    "expected": "01000000adc4ffffcb000000000000000000000000000000",
+    "decoded": "0xc.bp-15183",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 93,
+    "input": "0x335p-15959",
+    "wire": "01000000a9c1ffff35030000000000000000000000000000",
+    "expected": "01000000a9c1ffff35030000000000000000000000000000",
+    "decoded": "0xc.d4p-15953",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 94,
+    "input": "0x1p+9530",
+    "wire": "010000003a25000001000000000000000000000000000000",
+    "expected": "010000003a25000001000000000000000000000000000000",
+    "decoded": "0x8p+9527",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 95,
+    "input": "0x11d591p-2841",
+    "wire": "01000000e7f4ffff91d51100000000000000000000000000",
+    "expected": "01000000e7f4ffff91d51100000000000000000000000000",
+    "decoded": "0x8.eac88p-2824",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 96,
+    "input": "-0xc12de5p-3507",
+    "wire": "010100004df2ffffe52dc100000000000000000000000000",
+    "expected": "010100004df2ffffe52dc100000000000000000000000000",
+    "decoded": "-0xc.12de5p-3487",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 97,
+    "input": "-0x99edeb6f7fp+5743",
+    "wire": "010100006f1600007f6febed990000000000000000000000",
+    "expected": "010100006f1600007f6febed990000000000000000000000",
+    "decoded": "-0x9.9edeb6f7fp+5779",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 98,
+    "input": "-0x36cb41p-10446",
+    "wire": "0101000032d7ffff41cb3600000000000000000000000000",
+    "expected": "0101000032d7ffff41cb3600000000000000000000000000",
+    "decoded": "-0xd.b2d04p-10428",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 99,
+    "input": "0x7dp+9829",
+    "wire": "01000000652600007d000000000000000000000000000000",
+    "expected": "01000000652600007d000000000000000000000000000000",
+    "decoded": "0xf.ap+9832",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 100,
+    "input": "0x1fe8c359367p+4119",
+    "wire": "01000000171000006793358cfe0100000000000000000000",
+    "expected": "01000000171000006793358cfe0100000000000000000000",
+    "decoded": "0xf.f461ac9b38p+4156",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 101,
+    "input": "0x315p-15618",
+    "wire": "01000000fec2ffff15030000000000000000000000000000",
+    "expected": "01000000fec2ffff15030000000000000000000000000000",
+    "decoded": "0xc.54p-15612",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 102,
+    "input": "-0x1d3ffe48c1p-5869",
+    "wire": "0101000013e9ffffc148fe3f1d0000000000000000000000",
+    "expected": "0101000013e9ffffc148fe3f1d0000000000000000000000",
+    "decoded": "-0xe.9fff24608p-5836",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 103,
+    "input": "0x1p-9442",
+    "wire": "010000001edbffff01000000000000000000000000000000",
+    "expected": "010000001edbffff01000000000000000000000000000000",
+    "decoded": "0x8p-9445",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 104,
+    "input": "-0x44bd9e842063199p-4841",
+    "wire": "0101000017edffff99310642e8d94b040000000000000000",
+    "expected": "0101000017edffff99310642e8d94b040000000000000000",
+    "decoded": "-0x8.97b3d0840c6332p-4786",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 105,
+    "input": "-0x17ee8d82526bffp-11221",
+    "wire": "010100002bd4ffffff6b52828dee17000000000000000000",
+    "expected": "010100002bd4ffffff6b52828dee17000000000000000000",
+    "decoded": "-0xb.f746c12935ff8p-11172",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 106,
+    "input": "0xfb253dbp-3867",
+    "wire": "01000000e5f0ffffdb53b20f000000000000000000000000",
+    "expected": "01000000e5f0ffffdb53b20f000000000000000000000000",
+    "decoded": "0xf.b253dbp-3843",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 107,
+    "input": "0x2b48f1046a82fbp-12924",
+    "wire": "0100000084cdfffffb826a04f1482b000000000000000000",
+    "expected": "0100000084cdfffffb826a04f1482b000000000000000000",
+    "decoded": "0xa.d23c411aa0becp-12874",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 108,
+    "input": "-0x31b7895517p-9003",
+    "wire": "01010000d5dcffff175589b7310000000000000000000000",
+    "expected": "01010000d5dcffff175589b7310000000000000000000000",
+    "decoded": "-0xc.6de25545cp-8969",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 109,
+    "input": "-0xb1p+8263",
+    "wire": "0101000047200000b1000000000000000000000000000000",
+    "expected": "0101000047200000b1000000000000000000000000000000",
+    "decoded": "-0xb.1p+8267",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 110,
+    "input": "0xb2abc5371455a77p+1589",
+    "wire": "0100000035060000775a457153bc2a0b0000000000000000",
+    "expected": "0100000035060000775a457153bc2a0b0000000000000000",
+    "decoded": "0xb.2abc5371455a77p+1645",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 111,
+    "input": "-0x15fdp-6864",
+    "wire": "0101000030e5fffffd150000000000000000000000000000",
+    "expected": "0101000030e5fffffd150000000000000000000000000000",
+    "decoded": "-0xa.fe8p-6855",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 112,
+    "input": "0xd36bea21fa8fad3p+2210",
+    "wire": "01000000a2080000d3faa81fa2be360d0000000000000000",
+    "expected": "01000000a2080000d3faa81fa2be360d0000000000000000",
+    "decoded": "0xd.36bea21fa8fad3p+2266",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 113,
+    "input": "0x9702a1628dbp+8050",
+    "wire": "01000000721f0000db28162a700900000000000000000000",
+    "expected": "01000000721f0000db28162a700900000000000000000000",
+    "decoded": "0x9.702a1628dbp+8090",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 114,
+    "input": "0xfcef6ea3dp-5144",
+    "wire": "01000000e8ebffff3deaf6ce0f0000000000000000000000",
+    "expected": "01000000e8ebffff3deaf6ce0f0000000000000000000000",
+    "decoded": "0xf.cef6ea3dp-5112",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 115,
+    "input": "-0x5a7p-15613",
+    "wire": "0101000003c3ffffa7050000000000000000000000000000",
+    "expected": "0101000003c3ffffa7050000000000000000000000000000",
+    "decoded": "-0xb.4ep-15606",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 116,
+    "input": "-0x15dp+758",
+    "wire": "01010000f60200005d010000000000000000000000000000",
+    "expected": "01010000f60200005d010000000000000000000000000000",
+    "decoded": "-0xa.e8p+763",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 117,
+    "input": "0x167b7p+2227",
+    "wire": "01000000b3080000b7670100000000000000000000000000",
+    "expected": "01000000b3080000b7670100000000000000000000000000",
+    "decoded": "0xb.3db8p+2240",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 118,
+    "input": "-0x61p+1545",
+    "wire": "010100000906000061000000000000000000000000000000",
+    "expected": "010100000906000061000000000000000000000000000000",
+    "decoded": "-0xc.2p+1548",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 119,
+    "input": "0x4dp-11733",
+    "wire": "010000002bd2ffff4d000000000000000000000000000000",
+    "expected": "010000002bd2ffff4d000000000000000000000000000000",
+    "decoded": "0x9.ap-11730",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 120,
+    "input": "-0x29925bp+7296",
+    "wire": "01010000801c00005b922900000000000000000000000000",
+    "expected": "01010000801c00005b922900000000000000000000000000",
+    "decoded": "-0xa.6496cp+7314",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 121,
+    "input": "-0x21p+3004",
+    "wire": "01010000bc0b000021000000000000000000000000000000",
+    "expected": "01010000bc0b000021000000000000000000000000000000",
+    "decoded": "-0x8.4p+3006",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 122,
+    "input": "0x259c01223b5f4a67p+9772",
+    "wire": "010000002c260000674a5f3b22019c250000000000000000",
+    "expected": "010000002c260000674a5f3b22019c250000000000000000",
+    "decoded": "0x9.6700488ed7d299cp+9830",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 123,
+    "input": "-0x3c93f1d7aa5p+2183",
+    "wire": "0101000087080000a57a1d3fc90300000000000000000000",
+    "expected": "0101000087080000a57a1d3fc90300000000000000000000",
+    "decoded": "-0xf.24fc75ea94p+2221",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 124,
+    "input": "-0x431p+15040",
+    "wire": "01010000c03a000031040000000000000000000000000000",
+    "expected": "01010000c03a000031040000000000000000000000000000",
+    "decoded": "-0x8.62p+15047",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 125,
+    "input": "-0x112f941291p+10599",
+    "wire": "01010000672900009112942f110000000000000000000000",
+    "expected": "01010000672900009112942f110000000000000000000000",
+    "decoded": "-0x8.97ca09488p+10632",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 126,
+    "input": "0x74ac8a592752c7p-10376",
+    "wire": "0100000078d7ffffc75227598aac74000000000000000000",
+    "expected": "0100000078d7ffffc75227598aac74000000000000000000",
+    "decoded": "0xe.95914b24ea58ep-10325",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 127,
+    "input": "0x1p-8478",
+    "wire": "01000000e2deffff01000000000000000000000000000000",
+    "expected": "01000000e2deffff01000000000000000000000000000000",
+    "decoded": "0x8p-8481",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 128,
+    "input": "-0x171e73dp-6931",
+    "wire": "01010000ede4ffff3de77101000000000000000000000000",
+    "expected": "01010000ede4ffff3de77101000000000000000000000000",
+    "decoded": "-0xb.8f39e8p-6910",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 129,
+    "input": "0x2a77627cc177p-3135",
+    "wire": "01000000c1f3ffff77c17c62772a00000000000000000000",
+    "expected": "01000000c1f3ffff77c17c62772a00000000000000000000",
+    "decoded": "0xa.9dd89f305dcp-3093",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 130,
+    "input": "-0xdac61fddfd14e63p+9881",
+    "wire": "0101000099260000634ed1dffd61ac0d0000000000000000",
+    "expected": "0101000099260000634ed1dffd61ac0d0000000000000000",
+    "decoded": "-0xd.ac61fddfd14e63p+9937",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 131,
+    "input": "-0x4a84ee9p+11665",
+    "wire": "01010000912d0000e94ea804000000000000000000000000",
+    "expected": "01010000912d0000e94ea804000000000000000000000000",
+    "decoded": "-0x9.509dd2p+11688",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 132,
+    "input": "-0x74656bp-3199",
+    "wire": "0101000081f3ffff6b657400000000000000000000000000",
+    "expected": "0101000081f3ffff6b657400000000000000000000000000",
+    "decoded": "-0xe.8cad6p-3180",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 0,
+    "case": 133,
+    "input": "0x17f48f51a83109abp-8766",
+    "wire": "01000000c2ddffffab0931a8518ff4170000000000000000",
+    "expected": "01000000c2ddffffab0931a8518ff4170000000000000000",
+    "decoded": "0xb.fa47a8d41884d58p-8709",
+    "passed": true
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "nan",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "inf",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "-inf",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "0x1p-99999",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "0x1p+99999",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "not-a-number",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 0,
+    "input": "1 trailing",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 0,
+    "wire": "020000000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 1,
+    "wire": "000100000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 2,
+    "wire": "010200000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 3,
+    "wire": "010001000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 4,
+    "wire": "010000000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 5,
+    "wire": "010000000000000002000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 6,
+    "wire": "01000000214e000001000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 7,
+    "wire": "01000000dfb1ffff01000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 0,
+    "case": 8,
+    "wire": "0100000000000000ffffffffffffffff0100000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 0,
+    "input": "0x0p+0",
+    "wire": "000000000000000000000000000000000000000000000000",
+    "expected": "000000000000000000000000000000000000000000000000",
+    "decoded": "0x0p+0",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 1,
+    "input": "-0x1p+0",
+    "wire": "010100000000000001000000000000000000000000000000",
+    "expected": "010100000000000001000000000000000000000000000000",
+    "decoded": "-0x1p+0",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 2,
+    "input": "0x1p-16494",
+    "wire": "0100000092bfffff01000000000000000000000000000000",
+    "expected": "0100000092bfffff01000000000000000000000000000000",
+    "decoded": "0x0.0000000000000000000000000001p-16382",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 3,
+    "input": "0x1ffffffffffffffffffffffffffffp+16271",
+    "wire": "010000008f3f0000ffffffffffffffffffffffffffff0100",
+    "expected": "010000008f3f0000ffffffffffffffffffffffffffff0100",
+    "decoded": "0x1.ffffffffffffffffffffffffffffp+16383",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 4,
+    "input": "-0x1p-16382",
+    "wire": "0101000002c0ffff01000000000000000000000000000000",
+    "expected": "0101000002c0ffff01000000000000000000000000000000",
+    "decoded": "-0x1p-16382",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 5,
+    "input": "-0x1ffffffffffffffffffffffffffffp-113",
+    "wire": "010100008fffffffffffffffffffffffffffffffffff0100",
+    "expected": "010100008fffffffffffffffffffffffffffffffffff0100",
+    "decoded": "-0x1.ffffffffffffffffffffffffffffp-1",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 6,
+    "input": "-0xe3efa8c0327c22ee660bdc9bp-10905",
+    "wire": "0101000067d5ffff9bdc0b66ee227c32c0a8efe300000000",
+    "expected": "0101000067d5ffff9bdc0b66ee227c32c0a8efe300000000",
+    "decoded": "-0x1.c7df518064f845dccc17b936p-10810",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 7,
+    "input": "0x2927dp-10002",
+    "wire": "01000000eed8ffff7d920200000000000000000000000000",
+    "expected": "01000000eed8ffff7d920200000000000000000000000000",
+    "decoded": "0x1.493e8p-9985",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 8,
+    "input": "-0x27be4730231361p+15063",
+    "wire": "01010000d73a00006113233047be27000000000000000000",
+    "expected": "01010000d73a00006113233047be27000000000000000000",
+    "decoded": "-0x1.3df23981189b08p+15116",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 9,
+    "input": "0x4396579cc1cbc71d3p-11163",
+    "wire": "0100000065d4ffffd371bc1ccc7965390400000000000000",
+    "expected": "0100000065d4ffffd371bc1ccc7965390400000000000000",
+    "decoded": "0x1.0e595e73072f1c74cp-11097",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 10,
+    "input": "0x2d2f4ef8a3p-2211",
+    "wire": "010000005df7ffffa3f84e2f2d0000000000000000000000",
+    "expected": "010000005df7ffffa3f84e2f2d0000000000000000000000",
+    "decoded": "0x1.697a77c518p-2174",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 11,
+    "input": "0x29afbff5726706cd241fp+6108",
+    "wire": "01000000dc1700001f24cd066772f5bfaf29000000000000",
+    "expected": "01000000dc1700001f24cd066772f5bfaf29000000000000",
+    "decoded": "0x1.4d7dffab9338366920f8p+6185",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 12,
+    "input": "-0xf6c0eb077bcf55f3f52432471bp-9287",
+    "wire": "01010000b9dbffff1b473224f5f355cf7b07ebc0f6000000",
+    "expected": "01010000b9dbffff1b473224f5f355cf7b07ebc0f6000000",
+    "decoded": "-0x1.ed81d60ef79eabe7ea48648e36p-9184",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 13,
+    "input": "0xd3afc4392a717b340ffp+10736",
+    "wire": "01000000f0290000ff40b317a79243fc3a0d000000000000",
+    "expected": "01000000f0290000ff40b317a79243fc3a0d000000000000",
+    "decoded": "0x1.a75f887254e2f6681fep+10811",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 14,
+    "input": "-0x50c3b9b5p+11464",
+    "wire": "01010000c82c0000b5b9c350000000000000000000000000",
+    "expected": "01010000c82c0000b5b9c350000000000000000000000000",
+    "decoded": "-0x1.430ee6d4p+11494",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 15,
+    "input": "0x1a2b4535e9d4069a6b646c6245p-5120",
+    "wire": "0100000000ecffff45626c646b9a06d4e935452b1a000000",
+    "expected": "0100000000ecffff45626c646b9a06d4e935452b1a000000",
+    "decoded": "0x1.a2b4535e9d4069a6b646c6245p-5020",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 16,
+    "input": "-0x1dcfac0ce1dp-4683",
+    "wire": "01010000b5edffff1dcec0fadc0100000000000000000000",
+    "expected": "01010000b5edffff1dcec0fadc0100000000000000000000",
+    "decoded": "-0x1.dcfac0ce1dp-4643",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 17,
+    "input": "0x762ea465db82a8de3a01ffp+3349",
+    "wire": "01000000150d0000ff013adea882db65a42e760000000000",
+    "expected": "01000000150d0000ff013adea882db65a42e760000000000",
+    "decoded": "0x1.d8ba91976e0aa378e807fcp+3435",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 18,
+    "input": "-0x403575p+3274",
+    "wire": "01010000ca0c000075354000000000000000000000000000",
+    "expected": "01010000ca0c000075354000000000000000000000000000",
+    "decoded": "-0x1.00d5d4p+3296",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 19,
+    "input": "-0x1721p+14850",
+    "wire": "01010000023a000021170000000000000000000000000000",
+    "expected": "01010000023a000021170000000000000000000000000000",
+    "decoded": "-0x1.721p+14862",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 20,
+    "input": "-0x1432658ea24ed9p-2231",
+    "wire": "0101000049f7ffffd94ea28e653214000000000000000000",
+    "expected": "0101000049f7ffffd94ea28e653214000000000000000000",
+    "decoded": "-0x1.432658ea24ed9p-2179",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 21,
+    "input": "-0x1bd273e26aff9c8e5bde7p-14432",
+    "wire": "01010000a0c7ffffe7bde5c8f9af263e27bd010000000000",
+    "expected": "01010000a0c7ffffe7bde5c8f9af263e27bd010000000000",
+    "decoded": "-0x1.bd273e26aff9c8e5bde7p-14352",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 22,
+    "input": "-0x4e721616aec5p+6054",
+    "wire": "01010000a6170000c5ae1616724e00000000000000000000",
+    "expected": "01010000a6170000c5ae1616724e00000000000000000000",
+    "decoded": "-0x1.39c8585abb14p+6100",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 23,
+    "input": "-0xc25376c0cf9a5d5f7287p+4093",
+    "wire": "01010000fd0f000087725f5d9acfc07653c2000000000000",
+    "expected": "01010000fd0f000087725f5d9acfc07653c2000000000000",
+    "decoded": "-0x1.84a6ed819f34babee50ep+4172",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 24,
+    "input": "0x3dp-14867",
+    "wire": "01000000edc5ffff3d000000000000000000000000000000",
+    "expected": "01000000edc5ffff3d000000000000000000000000000000",
+    "decoded": "0x1.e8p-14862",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 25,
+    "input": "-0x16fef81b5c3a010f99e3371c3c47p-14008",
+    "wire": "0101000048c9ffff473c1c37e3990f013a5c1bf8fe160000",
+    "expected": "0101000048c9ffff473c1c37e3990f013a5c1bf8fe160000",
+    "decoded": "-0x1.6fef81b5c3a010f99e3371c3c47p-13900",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 26,
+    "input": "0x156dc94bf181bd9d3a5p-12943",
+    "wire": "0100000071cdffffa5d3d91b18bf94dc5601000000000000",
+    "expected": "0100000071cdffffa5d3d91b18bf94dc5601000000000000",
+    "decoded": "0x1.56dc94bf181bd9d3a5p-12871",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 27,
+    "input": "-0x6d5921dd2194c82459p-11114",
+    "wire": "0101000096d4ffff5924c89421dd21596d00000000000000",
+    "expected": "0101000096d4ffff5924c89421dd21596d00000000000000",
+    "decoded": "-0x1.b56487748653209164p-11044",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 28,
+    "input": "-0x1p+10930",
+    "wire": "01010000b22a000001000000000000000000000000000000",
+    "expected": "01010000b22a000001000000000000000000000000000000",
+    "decoded": "-0x1p+10930",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 29,
+    "input": "-0x2113bcff7ebf9a8bp-10429",
+    "wire": "0101000043d7ffff8b9abf7effbc13210000000000000000",
+    "expected": "0101000043d7ffff8b9abf7effbc13210000000000000000",
+    "decoded": "-0x1.089de7fbf5fcd458p-10368",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 30,
+    "input": "-0x1d680ce06bp+15445",
+    "wire": "01010000553c00006be00c681d0000000000000000000000",
+    "expected": "01010000553c00006be00c681d0000000000000000000000",
+    "decoded": "-0x1.d680ce06bp+15481",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 31,
+    "input": "0xc8a9ce57dcfp+5302",
+    "wire": "01000000b6140000cf7de59c8a0c00000000000000000000",
+    "expected": "01000000b6140000cf7de59c8a0c00000000000000000000",
+    "decoded": "0x1.91539cafb9ep+5345",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 32,
+    "input": "-0x58b0d29f2641p+12636",
+    "wire": "010100005c31000041269fd2b05800000000000000000000",
+    "expected": "010100005c31000041269fd2b05800000000000000000000",
+    "decoded": "-0x1.62c34a7c9904p+12682",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 33,
+    "input": "0xf454bd27p+10575",
+    "wire": "010000004f29000027bd54f4000000000000000000000000",
+    "expected": "010000004f29000027bd54f4000000000000000000000000",
+    "decoded": "0x1.e8a97a4ep+10606",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 34,
+    "input": "0xceba86fa5ee692098bfp-3381",
+    "wire": "01000000cbf2ffffbf982069eea56fa8eb0c000000000000",
+    "expected": "01000000cbf2ffffbf982069eea56fa8eb0c000000000000",
+    "decoded": "0x1.9d750df4bdcd241317ep-3306",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 35,
+    "input": "-0x449eda91a55p-10173",
+    "wire": "0101000043d8ffff551aa9ed490400000000000000000000",
+    "expected": "0101000043d8ffff551aa9ed490400000000000000000000",
+    "decoded": "-0x1.127b6a46954p-10131",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 36,
+    "input": "-0x4e5b59b5f0f9567aeedaea5p+1986",
+    "wire": "01010000c2070000a5aeedae67950f5f9bb5e50400000000",
+    "expected": "01010000c2070000a5aeedae67950f5f9bb5e50400000000",
+    "decoded": "-0x1.396d66d7c3e559ebbb6ba94p+2076",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 37,
+    "input": "0x1b848198e1ce8cd2ebcbe4d885p-1601",
+    "wire": "01000000bff9ffff85d8e4cbebd28ccee19881841b000000",
+    "expected": "01000000bff9ffff85d8e4cbebd28ccee19881841b000000",
+    "decoded": "0x1.b848198e1ce8cd2ebcbe4d885p-1501",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 38,
+    "input": "-0x2de0095c8f163p+2500",
+    "wire": "01010000c409000063f1c89500de02000000000000000000",
+    "expected": "01010000c409000063f1c89500de02000000000000000000",
+    "decoded": "-0x1.6f004ae478b18p+2549",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 39,
+    "input": "-0x1p+2995",
+    "wire": "01010000b30b000001000000000000000000000000000000",
+    "expected": "01010000b30b000001000000000000000000000000000000",
+    "decoded": "-0x1p+2995",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 40,
+    "input": "-0x1p+15034",
+    "wire": "01010000ba3a000001000000000000000000000000000000",
+    "expected": "01010000ba3a000001000000000000000000000000000000",
+    "decoded": "-0x1p+15034",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 41,
+    "input": "-0x40c77883dc7433d21cea3dc6adbp+8069",
+    "wire": "01010000851f0000db6adca3ce213d43c73d88770c040000",
+    "expected": "01010000851f0000db6adca3ce213d43c73d88770c040000",
+    "decoded": "-0x1.031de20f71d0cf4873a8f71ab6cp+8175",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 42,
+    "input": "0xdp+4212",
+    "wire": "01000000741000000d000000000000000000000000000000",
+    "expected": "01000000741000000d000000000000000000000000000000",
+    "decoded": "0x1.ap+4215",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 43,
+    "input": "0xfb2919fb8e774a6f5p+757",
+    "wire": "01000000f5020000f5a674e7b89f91b20f00000000000000",
+    "expected": "01000000f5020000f5a674e7b89f91b20f00000000000000",
+    "decoded": "0x1.f65233f71cee94deap+824",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 44,
+    "input": "-0x213p-11777",
+    "wire": "01010000ffd1ffff13020000000000000000000000000000",
+    "expected": "01010000ffd1ffff13020000000000000000000000000000",
+    "decoded": "-0x1.098p-11768",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 45,
+    "input": "-0xfdc713f3p-8323",
+    "wire": "010100007ddffffff313c7fd000000000000000000000000",
+    "expected": "010100007ddffffff313c7fd000000000000000000000000",
+    "decoded": "-0x1.fb8e27e6p-8292",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 46,
+    "input": "-0x91140829f3a1801f7280a1fae5p-9991",
+    "wire": "01010000f9d8ffffe5faa180721f80a1f329081491000000",
+    "expected": "01010000f9d8ffffe5faa180721f80a1f329081491000000",
+    "decoded": "-0x1.22281053e743003ee50143f5cap-9888",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 47,
+    "input": "-0x31ea36a9d433eef4cf6d3a0dp-4586",
+    "wire": "0101000016eeffff0d3a6dcff4ee33d4a936ea3100000000",
+    "expected": "0101000016eeffff0d3a6dcff4ee33d4a936ea3100000000",
+    "decoded": "-0x1.8f51b54ea19f77a67b69d068p-4493",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 48,
+    "input": "-0x1e8f77b7ea9ff411c02fp-4155",
+    "wire": "01010000c5efffff2fc011f49feab7778f1e000000000000",
+    "expected": "01010000c5efffff2fc011f49feab7778f1e000000000000",
+    "decoded": "-0x1.e8f77b7ea9ff411c02fp-4079",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 49,
+    "input": "0x388fp-2933",
+    "wire": "010000008bf4ffff8f380000000000000000000000000000",
+    "expected": "010000008bf4ffff8f380000000000000000000000000000",
+    "decoded": "0x1.c478p-2920",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 50,
+    "input": "0x5d93p-9932",
+    "wire": "0100000034d9ffff935d0000000000000000000000000000",
+    "expected": "0100000034d9ffff935d0000000000000000000000000000",
+    "decoded": "0x1.764cp-9918",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 51,
+    "input": "-0x56c5f0ea7c88f50a08dp-3336",
+    "wire": "01010000f8f2ffff8da0508fc8a70e5f6c05000000000000",
+    "expected": "01010000f8f2ffff8da0508fc8a70e5f6c05000000000000",
+    "decoded": "-0x1.5b17c3a9f223d428234p-3262",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 52,
+    "input": "0xb694a9071b3525p+13387",
+    "wire": "010000004b34000025351b07a994b6000000000000000000",
+    "expected": "010000004b34000025351b07a994b6000000000000000000",
+    "decoded": "0x1.6d29520e366a4ap+13442",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 53,
+    "input": "0x7d2645708bf7p-4884",
+    "wire": "01000000ececfffff78b7045267d00000000000000000000",
+    "expected": "01000000ececfffff78b7045267d00000000000000000000",
+    "decoded": "0x1.f49915c22fdcp-4838",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 54,
+    "input": "-0x6de3a0d7ef1cb76847ffp+2082",
+    "wire": "0101000022080000ff4768b71cefd7a0e36d000000000000",
+    "expected": "0101000022080000ff4768b71cefd7a0e36d000000000000",
+    "decoded": "-0x1.b78e835fbc72dda11ffcp+2160",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 55,
+    "input": "0x1p+13111",
+    "wire": "010000003733000001000000000000000000000000000000",
+    "expected": "010000003733000001000000000000000000000000000000",
+    "decoded": "0x1p+13111",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 56,
+    "input": "0x118fea00559b55992eec7e1d89p+8008",
+    "wire": "01000000481f0000891d7eec2e99559b5500ea8f11000000",
+    "expected": "01000000481f0000891d7eec2e99559b5500ea8f11000000",
+    "decoded": "0x1.18fea00559b55992eec7e1d89p+8108",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 57,
+    "input": "0xc52eb66c6cfdc5acab0377p-365",
+    "wire": "0100000093feffff7703abacc5fd6c6cb62ec50000000000",
+    "expected": "0100000093feffff7703abacc5fd6c6cb62ec50000000000",
+    "decoded": "0x1.8a5d6cd8d9fb8b595606eep-278",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 58,
+    "input": "0x70fd9p+2469",
+    "wire": "01000000a5090000d90f0700000000000000000000000000",
+    "expected": "01000000a5090000d90f0700000000000000000000000000",
+    "decoded": "0x1.c3f64p+2487",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 59,
+    "input": "0x1efdbee6163ca3p-9203",
+    "wire": "010000000ddcffffa33c16e6befd1e000000000000000000",
+    "expected": "010000000ddcffffa33c16e6befd1e000000000000000000",
+    "decoded": "0x1.efdbee6163ca3p-9151",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 60,
+    "input": "0xfb52b02bc9c7ee025c025dbbp+7266",
+    "wire": "01000000621c0000bb5d025c02eec7c92bb052fb00000000",
+    "expected": "01000000621c0000bb5d025c02eec7c92bb052fb00000000",
+    "decoded": "0x1.f6a56057938fdc04b804bb76p+7361",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 61,
+    "input": "0x1198d6e034757a9a701p+9280",
+    "wire": "010000004024000001a7a95747036e8d1901000000000000",
+    "expected": "010000004024000001a7a95747036e8d1901000000000000",
+    "decoded": "0x1.198d6e034757a9a701p+9352",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 62,
+    "input": "0x53ff13p-2646",
+    "wire": "01000000aaf5ffff13ff5300000000000000000000000000",
+    "expected": "01000000aaf5ffff13ff5300000000000000000000000000",
+    "decoded": "0x1.4ffc4cp-2624",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 63,
+    "input": "0x75c75171ac0fc45ed21db7697p+9676",
+    "wire": "01000000cc2500009776db21ed45fcc01a17755c07000000",
+    "expected": "01000000cc2500009776db21ed45fcc01a17755c07000000",
+    "decoded": "0x1.d71d45c6b03f117b4876dda5cp+9774",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 64,
+    "input": "0xe9p+8104",
+    "wire": "01000000a81f0000e9000000000000000000000000000000",
+    "expected": "01000000a81f0000e9000000000000000000000000000000",
+    "decoded": "0x1.d2p+8111",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 65,
+    "input": "0x1bp+6342",
+    "wire": "01000000c61800001b000000000000000000000000000000",
+    "expected": "01000000c61800001b000000000000000000000000000000",
+    "decoded": "0x1.bp+6346",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 66,
+    "input": "0xbdf5p-14175",
+    "wire": "01000000a1c8fffff5bd0000000000000000000000000000",
+    "expected": "01000000a1c8fffff5bd0000000000000000000000000000",
+    "decoded": "0x1.7beap-14160",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 67,
+    "input": "-0xbcc7399b7491551468b39p-8103",
+    "wire": "0101000059e0ffff398b46511549b79973cc0b0000000000",
+    "expected": "0101000059e0ffff398b46511549b79973cc0b0000000000",
+    "decoded": "-0x1.798e7336e922aa28d1672p-8020",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 68,
+    "input": "-0x1ffa256e3f6d7505p+12826",
+    "wire": "010100001a32000005756d3f6e25fa1f0000000000000000",
+    "expected": "010100001a32000005756d3f6e25fa1f0000000000000000",
+    "decoded": "-0x1.ffa256e3f6d7505p+12886",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 69,
+    "input": "-0x518f447807e4fadp+724",
+    "wire": "01010000d4020000ad4f7e8047f418050000000000000000",
+    "expected": "01010000d4020000ad4f7e8047f418050000000000000000",
+    "decoded": "-0x1.463d11e01f93eb4p+782",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 70,
+    "input": "-0x215e9c8e970da2492cb5p+7386",
+    "wire": "01010000da1c0000b52c49a20d978e9c5e21000000000000",
+    "expected": "01010000da1c0000b52c49a20d978e9c5e21000000000000",
+    "decoded": "-0x1.0af4e474b86d124965a8p+7463",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 71,
+    "input": "0xc56a2eba02945db54bdp-4656",
+    "wire": "01000000d0edffffbd54db4529a0eba2560c000000000000",
+    "expected": "01000000d0edffffbd54db4529a0eba2560c000000000000",
+    "decoded": "0x1.8ad45d740528bb6a97ap-4581",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 72,
+    "input": "-0x33bp+13536",
+    "wire": "01010000e03400003b030000000000000000000000000000",
+    "expected": "01010000e03400003b030000000000000000000000000000",
+    "decoded": "-0x1.9d8p+13545",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 73,
+    "input": "-0x3p-10783",
+    "wire": "01010000e1d5ffff03000000000000000000000000000000",
+    "expected": "01010000e1d5ffff03000000000000000000000000000000",
+    "decoded": "-0x1.8p-10782",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 74,
+    "input": "-0xfd573718e10d364966c03cdp-8700",
+    "wire": "0101000004deffffcd036c9664d3108e7173d50f00000000",
+    "expected": "0101000004deffffcd036c9664d3108e7173d50f00000000",
+    "decoded": "-0x1.faae6e31c21a6c92cd8079ap-8609",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 75,
+    "input": "0x121a7935eaf33f3b66363p-7700",
+    "wire": "01000000ece1ffff6363b6f333af5e93a721010000000000",
+    "expected": "01000000ece1ffff6363b6f333af5e93a721010000000000",
+    "decoded": "0x1.21a7935eaf33f3b66363p-7620",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 76,
+    "input": "-0x19bcd8da6909p-3570",
+    "wire": "010100000ef2ffff0969dad8bc1900000000000000000000",
+    "expected": "010100000ef2ffff0969dad8bc1900000000000000000000",
+    "decoded": "-0x1.9bcd8da6909p-3526",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 77,
+    "input": "0x1cc2a871d1900d2b83c5p-1372",
+    "wire": "01000000a4faffffc5832b0d90d171a8c21c000000000000",
+    "expected": "01000000a4faffffc5832b0d90d171a8c21c000000000000",
+    "decoded": "0x1.cc2a871d1900d2b83c5p-1296",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 78,
+    "input": "0xe15p-2251",
+    "wire": "0100000035f7ffff150e0000000000000000000000000000",
+    "expected": "0100000035f7ffff150e0000000000000000000000000000",
+    "decoded": "0x1.c2ap-2240",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 79,
+    "input": "0x14f6984952bb7693fb3dcadea19p+12936",
+    "wire": "010000008832000019eaaddcb33f69b72b9584694f010000",
+    "expected": "010000008832000019eaaddcb33f69b72b9584694f010000",
+    "decoded": "0x1.4f6984952bb7693fb3dcadea19p+13040",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 80,
+    "input": "-0x8fe4ba04f7bp-8957",
+    "wire": "0101000003ddffff7b4fa04bfe0800000000000000000000",
+    "expected": "0101000003ddffff7b4fa04bfe0800000000000000000000",
+    "decoded": "-0x1.1fc97409ef6p-8914",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 81,
+    "input": "0xc2f44adfdabf49ac63p-4877",
+    "wire": "01000000f3ecffff63ac49bfdadf4af4c200000000000000",
+    "expected": "01000000f3ecffff63ac49bfdadf4af4c200000000000000",
+    "decoded": "0x1.85e895bfb57e9358c6p-4806",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 82,
+    "input": "-0xebe7bc203c04bf5e3996e9p-10415",
+    "wire": "0101000051d7ffffe996395ebf043c20bce7eb0000000000",
+    "expected": "0101000051d7ffffe996395ebf043c20bce7eb0000000000",
+    "decoded": "-0x1.d7cf784078097ebc732dd2p-10328",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 83,
+    "input": "-0xfcd6aef3p+14589",
+    "wire": "01010000fd380000f3aed6fc000000000000000000000000",
+    "expected": "01010000fd380000f3aed6fc000000000000000000000000",
+    "decoded": "-0x1.f9ad5de6p+14620",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 84,
+    "input": "-0x2d1fd65e5p-4385",
+    "wire": "01010000dfeeffffe565fdd1020000000000000000000000",
+    "expected": "01010000dfeeffffe565fdd1020000000000000000000000",
+    "decoded": "-0x1.68feb2f28p-4352",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 85,
+    "input": "0xed5157a259d0d9p+15487",
+    "wire": "010000007f3c0000d9d059a25751ed000000000000000000",
+    "expected": "010000007f3c0000d9d059a25751ed000000000000000000",
+    "decoded": "0x1.daa2af44b3a1b2p+15542",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 86,
+    "input": "-0x3966f1b5e3e1e328bp-7791",
+    "wire": "0101000091e1ffff8b321e3e5e1b6f960300000000000000",
+    "expected": "0101000091e1ffff8b321e3e5e1b6f960300000000000000",
+    "decoded": "-0x1.cb378daf1f0f19458p-7726",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 87,
+    "input": "-0x2086a99p+8025",
+    "wire": "01010000591f0000996a0802000000000000000000000000",
+    "expected": "01010000591f0000996a0802000000000000000000000000",
+    "decoded": "-0x1.04354c8p+8050",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 88,
+    "input": "0x54b3b82471a17f7p+5467",
+    "wire": "010000005b150000f7171a47823b4b050000000000000000",
+    "expected": "010000005b150000f7171a47823b4b050000000000000000",
+    "decoded": "0x1.52cee091c685fdcp+5525",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 89,
+    "input": "0xf170281p+419",
+    "wire": "01000000a30100008102170f000000000000000000000000",
+    "expected": "01000000a30100008102170f000000000000000000000000",
+    "decoded": "0x1.e2e0502p+446",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 90,
+    "input": "-0x2929b90fdp+14444",
+    "wire": "010100006c380000fd909b92020000000000000000000000",
+    "expected": "010100006c380000fd909b92020000000000000000000000",
+    "decoded": "-0x1.494dc87e8p+14477",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 91,
+    "input": "-0x1e0ed7295a93f442e6d31797cc1p+10924",
+    "wire": "01010000ac2a0000c17c79316d2e443fa99572ede0010000",
+    "expected": "01010000ac2a0000c17c79316d2e443fa99572ede0010000",
+    "decoded": "-0x1.e0ed7295a93f442e6d31797cc1p+11028",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 92,
+    "input": "0x79354827c06beac4c5dp+8367",
+    "wire": "01000000af2000005d4cacbe067c82549307000000000000",
+    "expected": "01000000af2000005d4cacbe067c82549307000000000000",
+    "decoded": "0x1.e4d5209f01afab13174p+8441",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 93,
+    "input": "0x3f18ca7370335c342f21977965e1p-13918",
+    "wire": "01000000a2c9ffffe1657997212f345c337073ca183f0000",
+    "expected": "01000000a2c9ffffe1657997212f345c337073ca183f0000",
+    "decoded": "0x1.f8c6539b819ae1a1790cbbcb2f08p-13809",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 94,
+    "input": "-0x3548a2a0fa895p+3107",
+    "wire": "01010000230c000095a80f2a8a5403000000000000000000",
+    "expected": "01010000230c000095a80f2a8a5403000000000000000000",
+    "decoded": "-0x1.aa451507d44a8p+3156",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 95,
+    "input": "0x1cedcc5158b0435d146345b19ae3p+9099",
+    "wire": "010000008b230000e39ab14563145d43b05851cced1c0000",
+    "expected": "010000008b230000e39ab14563145d43b05851cced1c0000",
+    "decoded": "0x1.cedcc5158b0435d146345b19ae3p+9207",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 96,
+    "input": "-0x1p-5314",
+    "wire": "010100003eebffff01000000000000000000000000000000",
+    "expected": "010100003eebffff01000000000000000000000000000000",
+    "decoded": "-0x1p-5314",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 97,
+    "input": "0x8ae2faef3469p+1943",
+    "wire": "01000000970700006934effae28a00000000000000000000",
+    "expected": "01000000970700006934effae28a00000000000000000000",
+    "decoded": "0x1.15c5f5de68d2p+1990",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 98,
+    "input": "-0x3f78cc5385e03bc858c9p-5929",
+    "wire": "01010000d7e8ffffc958c83be08553cc783f000000000000",
+    "expected": "01010000d7e8ffffc958c83be08553cc783f000000000000",
+    "decoded": "-0x1.fbc6629c2f01de42c648p-5852",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 99,
+    "input": "-0x4c5720695902fde60f85265p-11977",
+    "wire": "0101000037d1ffff6552f860de2f90950672c50400000000",
+    "expected": "0101000037d1ffff6552f860de2f90950672c50400000000",
+    "decoded": "-0x1.315c81a5640bf7983e14994p-11887",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 100,
+    "input": "0x666e3p-11863",
+    "wire": "01000000a9d1ffffe3660600000000000000000000000000",
+    "expected": "01000000a9d1ffffe3660600000000000000000000000000",
+    "decoded": "0x1.99b8cp-11845",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 101,
+    "input": "-0x9f43d51542f51592e7386e5fp-15884",
+    "wire": "01010000f4c1ffff5f6e38e79215f54215d5439f00000000",
+    "expected": "01010000f4c1ffff5f6e38e79215f54215d5439f00000000",
+    "decoded": "-0x1.3e87aa2a85ea2b25ce70dcbep-15789",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 102,
+    "input": "0x1p-11757",
+    "wire": "0100000013d2ffff01000000000000000000000000000000",
+    "expected": "0100000013d2ffff01000000000000000000000000000000",
+    "decoded": "0x1p-11757",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 103,
+    "input": "0xa23dfcee693p+3045",
+    "wire": "01000000e50b000093e6cedf230a00000000000000000000",
+    "expected": "01000000e50b000093e6cedf230a00000000000000000000",
+    "decoded": "0x1.447bf9dcd26p+3088",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 104,
+    "input": "0xc654fd210e0e7p-4404",
+    "wire": "01000000cceeffffe7e010d24f650c000000000000000000",
+    "expected": "01000000cceeffffe7e010d24f650c000000000000000000",
+    "decoded": "0x1.8ca9fa421c1cep-4353",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 105,
+    "input": "-0xf3p-6077",
+    "wire": "0101000043e8fffff3000000000000000000000000000000",
+    "expected": "0101000043e8fffff3000000000000000000000000000000",
+    "decoded": "-0x1.e6p-6070",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 106,
+    "input": "0x5f200d660576eb63678ee01dp+45",
+    "wire": "010000002d0000001de08e6763eb7605660d205f00000000",
+    "expected": "010000002d0000001de08e6763eb7605660d205f00000000",
+    "decoded": "0x1.7c80359815dbad8d9e3b8074p+139",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 107,
+    "input": "0xaabaee57p+11767",
+    "wire": "01000000f72d000057eebaaa000000000000000000000000",
+    "expected": "01000000f72d000057eebaaa000000000000000000000000",
+    "decoded": "0x1.5575dcaep+11798",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 108,
+    "input": "-0x82b1492b71p-10122",
+    "wire": "0101000076d8ffff712b49b1820000000000000000000000",
+    "expected": "0101000076d8ffff712b49b1820000000000000000000000",
+    "decoded": "-0x1.05629256e2p-10083",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 109,
+    "input": "0xcef96856ede5p-13967",
+    "wire": "0100000071c9ffffe5ed5668f9ce00000000000000000000",
+    "expected": "0100000071c9ffffe5ed5668f9ce00000000000000000000",
+    "decoded": "0x1.9df2d0addbcap-13920",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 110,
+    "input": "0x3203p-1397",
+    "wire": "010000008bfaffff03320000000000000000000000000000",
+    "expected": "010000008bfaffff03320000000000000000000000000000",
+    "decoded": "0x1.9018p-1384",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 111,
+    "input": "0x5152aa4f376a0998684b26a1p-9721",
+    "wire": "0100000007daffffa1264b6898096a374faa525100000000",
+    "expected": "0100000007daffffa1264b6898096a374faa525100000000",
+    "decoded": "0x1.454aa93cdda82661a12c9a84p-9627",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 112,
+    "input": "0x1b39b7198d67p-15939",
+    "wire": "01000000bdc1ffff678d19b7391b00000000000000000000",
+    "expected": "01000000bdc1ffff678d19b7391b00000000000000000000",
+    "decoded": "0x1.b39b7198d67p-15895",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 113,
+    "input": "0x2d0c638060660cb2a0ff0311e3p-8755",
+    "wire": "01000000cdddffffe31103ffa0b20c666080630c2d000000",
+    "expected": "01000000cdddffffe31103ffa0b20c666080630c2d000000",
+    "decoded": "0x1.68631c030330659507f8188f18p-8654",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 114,
+    "input": "0x20011c067184a9df8db3p+13627",
+    "wire": "010000003b350000b38ddfa98471061c0120000000000000",
+    "expected": "010000003b350000b38ddfa98471061c0120000000000000",
+    "decoded": "0x1.0008e0338c254efc6d98p+13704",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 115,
+    "input": "0x22815af4f035779edp-7037",
+    "wire": "0100000083e4ffffed7957034faf15280200000000000000",
+    "expected": "0100000083e4ffffed7957034faf15280200000000000000",
+    "decoded": "0x1.140ad7a781abbcf68p-6972",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 116,
+    "input": "0x1757394d2941a5c00c48f70b479p-3848",
+    "wire": "01000000f8f0ffff79b4708fc4005c1a94d2947375010000",
+    "expected": "01000000f8f0ffff79b4708fc4005c1a94d2947375010000",
+    "decoded": "0x1.757394d2941a5c00c48f70b479p-3744",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 117,
+    "input": "0x3bde6231724473fadp-5337",
+    "wire": "0100000027ebffffad3f47241723e6bd0300000000000000",
+    "expected": "0100000027ebffffad3f47241723e6bd0300000000000000",
+    "decoded": "0x1.def3118b92239fd68p-5272",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 118,
+    "input": "-0x4e8cde0eed78b2470a1p+7684",
+    "wire": "01010000041e0000a170248bd7eee0cde804000000000000",
+    "expected": "01010000041e0000a170248bd7eee0cde804000000000000",
+    "decoded": "-0x1.3a33783bb5e2c91c284p+7758",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 119,
+    "input": "-0x11p+10290",
+    "wire": "010100003228000011000000000000000000000000000000",
+    "expected": "010100003228000011000000000000000000000000000000",
+    "decoded": "-0x1.1p+10294",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 120,
+    "input": "0x26f5339586f37p+7370",
+    "wire": "01000000ca1c0000376f5839536f02000000000000000000",
+    "expected": "01000000ca1c0000376f5839536f02000000000000000000",
+    "decoded": "0x1.37a99cac379b8p+7419",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 121,
+    "input": "-0x7p+6674",
+    "wire": "01010000121a000007000000000000000000000000000000",
+    "expected": "01010000121a000007000000000000000000000000000000",
+    "decoded": "-0x1.cp+6676",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 122,
+    "input": "-0x1192e731877df38a9648aa30dp-13214",
+    "wire": "0101000062ccffff0da38a64a938df7718732e1901000000",
+    "expected": "0101000062ccffff0da38a64a938df7718732e1901000000",
+    "decoded": "-0x1.192e731877df38a9648aa30dp-13118",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 123,
+    "input": "0x432aa747ffe2b3b201bp-9722",
+    "wire": "0100000006daffff1b203b2bfe7f74aa3204000000000000",
+    "expected": "0100000006daffff1b203b2bfe7f74aa3204000000000000",
+    "decoded": "0x1.0caa9d1fff8acec806cp-9648",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 124,
+    "input": "-0x24f6eff6b90fda1ca242bp+6402",
+    "wire": "01010000021900002b24caa1fd906bff6e4f020000000000",
+    "expected": "01010000021900002b24caa1fd906bff6e4f020000000000",
+    "decoded": "-0x1.27b77fb5c87ed0e512158p+6483",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 125,
+    "input": "-0xf647c21002a322ff4e0c25p+2701",
+    "wire": "010100008d0a0000250c4eff22a30210c247f60000000000",
+    "expected": "010100008d0a0000250c4eff22a30210c247f60000000000",
+    "decoded": "-0x1.ec8f8420054645fe9c184ap+2788",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 126,
+    "input": "-0xfd59d22e913a48c281p-15690",
+    "wire": "01010000b6c2ffff81c2483a912ed259fd00000000000000",
+    "expected": "01010000b6c2ffff81c2483a912ed259fd00000000000000",
+    "decoded": "-0x1.fab3a45d2274918502p-15619",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 127,
+    "input": "0x412a6ee6da74502ab685p-4380",
+    "wire": "01000000e4eeffff85b62a5074dae66e2a41000000000000",
+    "expected": "01000000e4eeffff85b62a5074dae66e2a41000000000000",
+    "decoded": "0x1.04a9bb9b69d140aada14p-4302",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 128,
+    "input": "-0x623p-12833",
+    "wire": "01010000dfcdffff23060000000000000000000000000000",
+    "expected": "01010000dfcdffff23060000000000000000000000000000",
+    "decoded": "-0x1.88cp-12823",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 129,
+    "input": "0x1f1bddf4ca2d68f9bc8a2fb628b8bp-6736",
+    "wire": "01000000b0e5ffff8b8b62fba2c89b8fd6a24cdfbdf10100",
+    "expected": "01000000b0e5ffff8b8b62fba2c89b8fd6a24cdfbdf10100",
+    "decoded": "0x1.f1bddf4ca2d68f9bc8a2fb628b8bp-6624",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 130,
+    "input": "-0x15846622e856886457e00bp+14877",
+    "wire": "010100001d3a00000be057648856e8226684150000000000",
+    "expected": "010100001d3a00000be057648856e8226684150000000000",
+    "decoded": "-0x1.5846622e856886457e00bp+14961",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 131,
+    "input": "-0x2cb1605bp+220",
+    "wire": "01010000dc0000005b60b12c000000000000000000000000",
+    "expected": "01010000dc0000005b60b12c000000000000000000000000",
+    "decoded": "-0x1.658b02d8p+249",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 132,
+    "input": "-0xe379dd6900d9119p-13575",
+    "wire": "01010000f9caffff19910d90d69d370e0000000000000000",
+    "expected": "01010000f9caffff19910d90d69d370e0000000000000000",
+    "decoded": "-0x1.c6f3bad201b2232p-13516",
+    "passed": true
+  },
+  {
+    "kind": "exact_roundtrip",
+    "precision": 1,
+    "case": 133,
+    "input": "-0x41dc2f0a46bc1p+11702",
+    "wire": "01010000b62d0000c16ba4f0c21d04000000000000000000",
+    "expected": "01010000b62d0000c16ba4f0c21d04000000000000000000",
+    "decoded": "-0x1.0770bc291af04p+11752",
+    "passed": true
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "nan",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "inf",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "-inf",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "0x1p-99999",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "0x1p+99999",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "not-a-number",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_text",
+    "precision": 1,
+    "input": "1 trailing",
+    "passed": true,
+    "error": "Invalid or unrepresentable scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 0,
+    "wire": "020000000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 1,
+    "wire": "000100000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 2,
+    "wire": "010200000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 3,
+    "wire": "010001000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 4,
+    "wire": "010000000000000000000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 5,
+    "wire": "010000000000000002000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 6,
+    "wire": "01000000214e000001000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 7,
+    "wire": "01000000dfb1ffff01000000000000000000000000000000",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "invalid_wire",
+    "precision": 1,
+    "case": 8,
+    "wire": "0100000000000000ffffffffffffffffffffffffffff0300",
+    "passed": true,
+    "error": "Noncanonical or unrepresentable wire scalar"
+  },
+  {
+    "kind": "host_environment_restored",
+    "before": 639,
+    "after": 639,
+    "passed": true
+  }
+]

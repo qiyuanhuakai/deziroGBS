@@ -1,0 +1,58 @@
+[
+  {
+    "name": "small",
+    "baseline": {
+      "mean_photons": 0.2804698536187953,
+      "minimum_remainder": 0.008200973350606463,
+      "purity_residual": 8.548717289613705e-15
+    },
+    "diagnostics": {
+      "primal_trace": 8.569158827829654,
+      "dual_trace": 8.569158833381184,
+      "primal_minus_dual": -5.551530790626202e-09,
+      "pure_mean_photons": 0.1422897069574134,
+      "dual_photon_lower_estimate": 0.14228970834529608,
+      "minimum_remainder_eigenvalue": -1.4131185402993915e-08,
+      "minimum_dual_eigenvalue": -9.534539120807661e-17,
+      "minimum_pure_eigenvalue": 0.5848411129031654,
+      "purity_residual": 3.552713678800501e-15,
+      "riccati_residual": 4.884981308350689e-15,
+      "oracle_residual": 0.0,
+      "complementary_trace": -5.551538027025182e-09,
+      "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+    },
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 30,
+    "evaluations": 36,
+    "seconds": 0.0245574000000488
+  },
+  {
+    "name": "source_full",
+    "baseline": {
+      "mean_photons": 37.18266718577857,
+      "minimum_remainder": -1.2802168717846404e-14,
+      "purity_residual": 9.325873406851315e-15
+    },
+    "diagnostics": {
+      "primal_trace": 307.8583473125753,
+      "dual_trace": 307.8583472866777,
+      "primal_minus_dual": 2.5897577415889828e-08,
+      "pure_mean_photons": 4.964586828143823,
+      "dual_photon_lower_estimate": 4.964586821669428,
+      "minimum_remainder_eigenvalue": -1.2462631924202618e-07,
+      "minimum_dual_eigenvalue": -7.268033002595405e-16,
+      "minimum_pure_eigenvalue": 0.4680974012770655,
+      "purity_residual": 5.329070518200751e-15,
+      "riccati_residual": 1.6209256159527285e-14,
+      "oracle_residual": 0.0,
+      "complementary_trace": 2.5897538648289586e-08,
+      "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+    },
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 27,
+    "evaluations": 32,
+    "seconds": 2.5707166000065627
+  }
+]
