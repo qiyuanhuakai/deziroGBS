@@ -1,0 +1,848 @@
+{
+  "planned": 18,
+  "status_counts": {
+    "search_unaccepted": 10,
+    "accepted": 8
+  },
+  "method_status_counts": {
+    "restart": {
+      "search_unaccepted": 4,
+      "accepted": 4
+    },
+    "checkpoint_rolling": {
+      "accepted": 4,
+      "search_unaccepted": 4
+    },
+    "checkpoint_equal": {
+      "search_unaccepted": 2
+    }
+  },
+  "attempt_status_counts": {
+    "budget_missed": 24,
+    "resource_failed": 10,
+    "projection_budget_exhausted": 3,
+    "accepted": 8,
+    "rank_budget_unmet": 3
+  },
+  "checkpoint_rounding_retry_counts": {
+    "accepted": 119,
+    "rejected": 239
+  },
+  "attempts_total": 48,
+  "small_state_bound_checks": 8,
+  "small_state_bound_failures": 0,
+  "complete_sampling_runs": 8,
+  "complete_sampling_outputs": 256,
+  "checkpoint_scan_costs": [
+    {
+      "sequence": 2,
+      "modes": 4,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 0.05325279996031895,
+      "attempt_seconds": 0.25549989999854006,
+      "fraction": 0.20842591312412742
+    },
+    {
+      "sequence": 4,
+      "modes": 4,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 0.022200000006705523,
+      "attempt_seconds": 0.10097759999916889,
+      "fraction": 0.21985073924205212
+    },
+    {
+      "sequence": 6,
+      "modes": 4,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 0.010815499990712851,
+      "attempt_seconds": 0.08013930000015534,
+      "fraction": 0.13495875295506557
+    },
+    {
+      "sequence": 8,
+      "modes": 128,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 47.96683710004436,
+      "attempt_seconds": 90.66959360000328,
+      "fraction": 0.5290289191286572
+    },
+    {
+      "sequence": 9,
+      "modes": 128,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 14.330911900018691,
+      "attempt_seconds": 72.00007369999366,
+      "fraction": 0.19904023931603215
+    },
+    {
+      "sequence": 11,
+      "modes": 4,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 0.07772479995037429,
+      "attempt_seconds": 0.3214257999934489,
+      "fraction": 0.24181257370117282
+    },
+    {
+      "sequence": 12,
+      "modes": 32,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 25.90210459998343,
+      "attempt_seconds": 68.14517469999555,
+      "fraction": 0.3801018151911073
+    },
+    {
+      "sequence": 14,
+      "modes": 32,
+      "method": "checkpoint_equal",
+      "candidate_copy_and_scan_seconds": 45.97884730003716,
+      "attempt_seconds": 87.99255110000377,
+      "fraction": 0.5225311316156986
+    },
+    {
+      "sequence": 15,
+      "modes": 32,
+      "method": "checkpoint_equal",
+      "candidate_copy_and_scan_seconds": 35.510679800005164,
+      "attempt_seconds": 82.50114670000039,
+      "fraction": 0.4304264997568209
+    },
+    {
+      "sequence": 17,
+      "modes": 32,
+      "method": "checkpoint_rolling",
+      "candidate_copy_and_scan_seconds": 60.81902099993022,
+      "attempt_seconds": 121.19576479999523,
+      "fraction": 0.5018246396670506
+    }
+  ],
+  "pairs": [
+    {
+      "panel": "quality",
+      "modes": 4,
+      "seed": 150801,
+      "target": 0.03,
+      "methods": {
+        "checkpoint_rolling": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.03,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95006720,
+          "search_seconds": 0.26042239999515004,
+          "dimension": 12,
+          "construction_trace_budget": 0.019844092482196173,
+          "stored_complex_elements": 1872,
+          "max_bond_actual": 12,
+          "attempts": 2,
+          "target_met": true,
+          "construction_peak_wset_bytes": 99373056,
+          "state_trace_distance": 0.002575951724330397,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.5543122344752192e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.31862249999539927,
+          "process_peak_wset_bytes": 102174720,
+          "sequence": 2
+        },
+        "restart": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.03,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94617600,
+          "search_seconds": 0.687590999994427,
+          "dimension": 12,
+          "construction_trace_budget": 0.018568747715447684,
+          "stored_complex_elements": 2184,
+          "max_bond_actual": 13,
+          "attempts": 6,
+          "target_met": true,
+          "construction_peak_wset_bytes": 99479552,
+          "state_trace_distance": 0.0026453082174965684,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.3322676295501878e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.7797530999960145,
+          "process_peak_wset_bytes": 102043648,
+          "sequence": 16
+        }
+      },
+      "restart_over_checkpoint_search_seconds": 2.6402913113742605,
+      "restart_over_checkpoint_coefficients": 1.1666666666666667,
+      "checkpoint_actual_distance_not_worse": true
+    },
+    {
+      "panel": "quality",
+      "modes": 4,
+      "seed": 150801,
+      "target": 0.1,
+      "methods": {
+        "checkpoint_rolling": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94871552,
+          "search_seconds": 0.08343529999547172,
+          "dimension": 10,
+          "construction_trace_budget": 0.06009271102554842,
+          "stored_complex_elements": 900,
+          "max_bond_actual": 8,
+          "attempts": 1,
+          "target_met": true,
+          "construction_peak_wset_bytes": 97075200,
+          "state_trace_distance": 0.008446323363668302,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.5543122344752192e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.12993080000160262,
+          "process_peak_wset_bytes": 98852864,
+          "sequence": 6
+        },
+        "restart": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94990336,
+          "search_seconds": 0.07509570001275279,
+          "dimension": 10,
+          "construction_trace_budget": 0.08548348734707581,
+          "stored_complex_elements": 1350,
+          "max_bond_actual": 8,
+          "attempts": 1,
+          "target_met": true,
+          "construction_peak_wset_bytes": 97857536,
+          "state_trace_distance": 0.019111191032427245,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.1102230246251565e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.11357929999940097,
+          "process_peak_wset_bytes": 99217408,
+          "sequence": 13
+        }
+      },
+      "restart_over_checkpoint_search_seconds": 0.9000471025672401,
+      "restart_over_checkpoint_coefficients": 1.5,
+      "checkpoint_actual_distance_not_worse": true
+    },
+    {
+      "panel": "quality",
+      "modes": 4,
+      "seed": 150802,
+      "target": 0.03,
+      "methods": {
+        "restart": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.03,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94773248,
+          "search_seconds": 0.7685938999929931,
+          "dimension": 12,
+          "construction_trace_budget": 0.02011419006050437,
+          "stored_complex_elements": 4200,
+          "max_bond_actual": 24,
+          "attempts": 6,
+          "target_met": true,
+          "construction_peak_wset_bytes": 100122624,
+          "state_trace_distance": 0.0032848176982009903,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.3322676295501878e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.8411820000037551,
+          "process_peak_wset_bytes": 102445056,
+          "sequence": 5
+        },
+        "checkpoint_rolling": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.03,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94892032,
+          "search_seconds": 0.3282854999997653,
+          "dimension": 12,
+          "construction_trace_budget": 0.020972315869350472,
+          "stored_complex_elements": 4032,
+          "max_bond_actual": 23,
+          "attempts": 2,
+          "target_met": true,
+          "construction_peak_wset_bytes": 99303424,
+          "state_trace_distance": 0.0032299321271636334,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 1.2212453270876722e-15,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.3984255000104895,
+          "process_peak_wset_bytes": 102424576,
+          "sequence": 11
+        }
+      },
+      "restart_over_checkpoint_search_seconds": 2.3412362105348623,
+      "restart_over_checkpoint_coefficients": 1.0416666666666667,
+      "checkpoint_actual_distance_not_worse": true
+    },
+    {
+      "panel": "quality",
+      "modes": 4,
+      "seed": 150802,
+      "target": 0.1,
+      "methods": {
+        "restart": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95232000,
+          "search_seconds": 0.17082359999767505,
+          "dimension": 10,
+          "construction_trace_budget": 0.06593693838863197,
+          "stored_complex_elements": 2040,
+          "max_bond_actual": 16,
+          "attempts": 2,
+          "target_met": true,
+          "construction_peak_wset_bytes": 98095104,
+          "state_trace_distance": 0.011141697790298366,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 9.992007221626409e-16,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.2082285999931628,
+          "process_peak_wset_bytes": 99581952,
+          "sequence": 3
+        },
+        "checkpoint_rolling": {
+          "panel": "quality",
+          "modes": 4,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94769152,
+          "search_seconds": 0.10559089999878779,
+          "dimension": 10,
+          "construction_trace_budget": 0.0643541476859196,
+          "stored_complex_elements": 1920,
+          "max_bond_actual": 15,
+          "attempts": 1,
+          "target_met": true,
+          "construction_peak_wset_bytes": 97214464,
+          "state_trace_distance": 0.009724146283203219,
+          "state_bound_check": true,
+          "status": "accepted",
+          "sampling_status": "complete",
+          "completed_samples": 32,
+          "sampling_diagnostics": {
+            "max_observed_conditional_norm_residual": 9.992007221626409e-16,
+            "completed_samples": 32,
+            "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+          },
+          "total_diagnostic_seconds": 0.1415450999920722,
+          "process_peak_wset_bytes": 98795520,
+          "sequence": 4
+        }
+      },
+      "restart_over_checkpoint_search_seconds": 1.6177871388503757,
+      "restart_over_checkpoint_coefficients": 1.0625,
+      "checkpoint_actual_distance_not_worse": true
+    },
+    {
+      "panel": "unresolved",
+      "modes": 32,
+      "seed": 150801,
+      "target": 0.1,
+      "methods": {
+        "restart": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94793728,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 5,
+          "search_seconds": 165.15026730000682,
+          "total_diagnostic_seconds": 165.1515967000014,
+          "process_peak_wset_bytes": 711233536,
+          "sequence": 10
+        },
+        "checkpoint_equal": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "checkpoint_equal",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94941184,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 2,
+          "search_seconds": 88.02450460000546,
+          "total_diagnostic_seconds": 88.0255371999956,
+          "process_peak_wset_bytes": 802529280,
+          "sequence": 14
+        },
+        "checkpoint_rolling": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94863360,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 2,
+          "search_seconds": 121.24679130000004,
+          "total_diagnostic_seconds": 121.2476139000064,
+          "process_peak_wset_bytes": 798150656,
+          "sequence": 17
+        }
+      }
+    },
+    {
+      "panel": "unresolved",
+      "modes": 32,
+      "seed": 150802,
+      "target": 0.1,
+      "methods": {
+        "restart": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95035392,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 4,
+          "search_seconds": 78.35130579999532,
+          "total_diagnostic_seconds": 78.35253229999216,
+          "process_peak_wset_bytes": 341397504,
+          "sequence": 7
+        },
+        "checkpoint_rolling": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94842880,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 1,
+          "search_seconds": 68.16640899999766,
+          "total_diagnostic_seconds": 68.1671820999909,
+          "process_peak_wset_bytes": 686837760,
+          "sequence": 12
+        },
+        "checkpoint_equal": {
+          "panel": "unresolved",
+          "modes": 32,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "checkpoint_equal",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95080448,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 2,
+          "search_seconds": 82.5348745000083,
+          "total_diagnostic_seconds": 82.53599119999853,
+          "process_peak_wset_bytes": 623861760,
+          "sequence": 15
+        }
+      }
+    },
+    {
+      "panel": "unresolved",
+      "modes": 128,
+      "seed": 150801,
+      "target": 0.1,
+      "methods": {
+        "restart": {
+          "panel": "unresolved",
+          "modes": 128,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95182848,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 4,
+          "search_seconds": 98.39411660000042,
+          "total_diagnostic_seconds": 98.39777130000584,
+          "process_peak_wset_bytes": 416256000,
+          "sequence": 1
+        },
+        "checkpoint_rolling": {
+          "panel": "unresolved",
+          "modes": 128,
+          "depth": 12,
+          "seed": 150801,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95977472,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 1,
+          "search_seconds": 72.08184769999934,
+          "total_diagnostic_seconds": 72.0858911999967,
+          "process_peak_wset_bytes": 1158365184,
+          "sequence": 9
+        }
+      }
+    },
+    {
+      "panel": "unresolved",
+      "modes": 128,
+      "seed": 150802,
+      "target": 0.1,
+      "methods": {
+        "restart": {
+          "panel": "unresolved",
+          "modes": 128,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "restart",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 94519296,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 4,
+          "search_seconds": 94.17587040000944,
+          "total_diagnostic_seconds": 94.17972300000838,
+          "process_peak_wset_bytes": 421761024,
+          "sequence": 0
+        },
+        "checkpoint_rolling": {
+          "panel": "unresolved",
+          "modes": 128,
+          "depth": 12,
+          "seed": 150802,
+          "target": 0.1,
+          "method": "checkpoint_rolling",
+          "dimensions": [
+            10,
+            12
+          ],
+          "caps": [
+            8,
+            16,
+            32,
+            64,
+            128
+          ],
+          "max_pair_elements": 8000000,
+          "max_checkpoint_elements": 150000000,
+          "max_attempt_seconds": 60.0,
+          "baseline_rss_bytes": 95936512,
+          "status": "search_unaccepted",
+          "target_met": false,
+          "attempts": 2,
+          "search_seconds": 90.74801009999646,
+          "total_diagnostic_seconds": 90.75086430000374,
+          "process_peak_wset_bytes": 999141376,
+          "sequence": 8
+        }
+      }
+    }
+  ]
+}

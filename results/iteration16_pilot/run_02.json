@@ -1,0 +1,43 @@
+{
+  "panel": "quality",
+  "modes": 4,
+  "depth": 12,
+  "seed": 150801,
+  "target": 0.03,
+  "method": "checkpoint_rolling",
+  "dimensions": [
+    10,
+    12
+  ],
+  "caps": [
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "max_pair_elements": 8000000,
+  "max_checkpoint_elements": 150000000,
+  "max_attempt_seconds": 60.0,
+  "baseline_rss_bytes": 95006720,
+  "search_seconds": 0.26042239999515004,
+  "dimension": 12,
+  "construction_trace_budget": 0.019844092482196173,
+  "stored_complex_elements": 1872,
+  "max_bond_actual": 12,
+  "attempts": 2,
+  "target_met": true,
+  "construction_peak_wset_bytes": 99373056,
+  "state_trace_distance": 0.002575951724330397,
+  "state_bound_check": true,
+  "status": "accepted",
+  "sampling_status": "complete",
+  "completed_samples": 32,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 1.5543122344752192e-15,
+    "completed_samples": 32,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "total_diagnostic_seconds": 0.31862249999539927,
+  "process_peak_wset_bytes": 102174720
+}

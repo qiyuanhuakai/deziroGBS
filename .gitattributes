@@ -5,6 +5,7 @@ results/iteration12*/** -text -whitespace
 results/iteration13*/** -text -whitespace
 results/iteration14*/** -text -whitespace
 results/iteration15*/** -text -whitespace
+results/iteration16*/** -text -whitespace
 
 # New executable sources keep stable line endings across platforms.
 src/gbslab/mps_probe.py text eol=lf
@@ -31,3 +32,7 @@ src/gbslab/adaptive_mps.py text eol=lf
 tests/test_adaptive_mps.py text eol=lf
 experiments/iteration15*.py text eol=lf
 experiments/verify_iteration15.py text eol=lf
+src/gbslab/checkpoint_mps.py text eol=lf
+tests/test_checkpoint_mps.py text eol=lf
+experiments/iteration16*.py text eol=lf
+experiments/verify_iteration16.py text eol=lf

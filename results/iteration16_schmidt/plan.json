@@ -1,0 +1,57 @@
+{
+  "jobs": [
+    {
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "local_L12"
+    },
+    {
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "haar"
+    },
+    {
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "local_L12"
+    },
+    {
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "haar"
+    },
+    {
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "local_L12"
+    },
+    {
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "haar"
+    },
+    {
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "local_L12"
+    },
+    {
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "haar"
+    }
+  ],
+  "cuts": "m/4,m/2,3m/4",
+  "r": 0.9,
+  "eta": 0.65,
+  "ranks": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "scope": "Float64 evaluation of ideal best rank-overlap obstruction at three natural-order cuts. No interval certification, no existence guarantee when obstruction small, no threshold-output TV lower bound."
+}
