@@ -77,7 +77,9 @@ def main():
     assert remote in (data['parent'],head)
     subprocess.run(['git','merge-base','--is-ancestor',data['parent'],head],cwd=ROOT,check=True)
     subprocess.run(['git','push','--atomic','origin','HEAD:refs/heads/main','HEAD:refs/heads/'+BRANCH],cwd=ROOT,check=True)
-    git('update-ref','refs/heads/main',head,data['parent'] if not data['finished'] else head)
+    local_main=git('rev-parse','refs/heads/main').decode().strip()
+    subprocess.run(['git','merge-base','--is-ancestor',local_main,head],cwd=ROOT,check=True)
+    git('update-ref','refs/heads/main',head,local_main)
     data['finished']=True; save(data); print(json.dumps(dict(science_commit=head,tree=data['expected_tree'])))
 
 
