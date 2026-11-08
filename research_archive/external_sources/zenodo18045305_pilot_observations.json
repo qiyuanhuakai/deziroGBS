@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-09",
+  "phase": "exploratory convention pilot, not full external validation",
+  "upstream_url": "https://zenodo.org/records/18045305",
+  "implementation_commit": "608161a2e3dfcb84ba4f8f35c7fe0588cc61efef",
+  "initial_driver": "Inline Python orchestration; called project functions on allow_pickle=False NumPy data loaded directly from the verified ZIP. Upstream scripts were not executed.",
+  "metadata": {
+    "source_sha256": "e3f1039ffecb0b8567884cc0f22d879bb349a71b4d70cdabdee0fccf7e82c5d6",
+    "sites": [
+      0,
+      71,
+      143
+    ],
+    "rank": 200,
+    "dimension": 4,
+    "archive_sha256": "bd9422c2a194f8f0109a7463291089288d2b0156db771386633824fb6bb8f8a9",
+    "scope": "Preliminary convention check only. Upstream scripts not executed; three local tensors do not validate the full 144-mode state."
+  },
+  "rows": [
+    {
+      "site": 0,
+      "convention": "raw",
+      "shape": [
+        1,
+        4,
+        6
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 0.060113545098678216,
+      "reference_maximum": 1.0,
+      "seconds": 0.0017294999997830018
+    },
+    {
+      "site": 0,
+      "convention": "double_diagonal",
+      "shape": [
+        1,
+        4,
+        6
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 1.3870254885456267e-15,
+      "reference_maximum": 1.0,
+      "seconds": 0.001604600009159185
+    },
+    {
+      "site": 71,
+      "convention": "raw",
+      "shape": [
+        200,
+        4,
+        200
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 0.00952727802475465,
+      "reference_maximum": 1.0,
+      "seconds": 18.03686929999094
+    },
+    {
+      "site": 71,
+      "convention": "double_diagonal",
+      "shape": [
+        200,
+        4,
+        200
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 4.794038812829488e-15,
+      "reference_maximum": 1.0,
+      "seconds": 17.69222140000784
+    },
+    {
+      "site": 143,
+      "convention": "raw",
+      "shape": [
+        7,
+        4,
+        1
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 0.02406528992677509,
+      "reference_maximum": 1.0,
+      "seconds": 0.0017952000052900985
+    },
+    {
+      "site": 143,
+      "convention": "double_diagonal",
+      "shape": [
+        7,
+        4,
+        1
+      ],
+      "status": "complete",
+      "maximum_coefficient_error": 2.2204462130419515e-16,
+      "reference_maximum": 1.0,
+      "seconds": 0.0018024000019067898
+    }
+  ],
+  "independent_center": {
+    "site": 71,
+    "method": "independent annihilation recurrence",
+    "convention": "double diagonal",
+    "shape": [
+      200,
+      4,
+      200
+    ],
+    "maximum_coefficient_error": 4.794038812829488e-15,
+    "seconds": 1.2194794999959413,
+    "cache_entries": 160000,
+    "source_sha256": "d842a02de1feb9b28ca2267442580c05a7f67261495f07c3e8a46062706ff1e7",
+    "scope": "One local tensor; timing is exploratory and not an isolated benchmark"
+  }
+}

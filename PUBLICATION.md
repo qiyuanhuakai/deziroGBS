@@ -23,6 +23,8 @@
 
 ## 2026-11-09：第二十一轮持续发布
 
+完整科学提交`608161a2e3dfcb84ba4f8f35c7fe0588cc61efef`已通过远端引用、重新获取的文件树及GitHub分支API交叉核对，且最终文件树与分批上传前的完整暂存树一致。514个原始产物共1,905,383,549字节验证通过，见[第二十一轮发布回执](research_archive/publication/verification_iteration21_2026-11-09.json)。
+
 按持续发布授权追加Gaussian基构造、原态投影误差推导、正式58项工作和1项试运行、独立递推参考及验证。原4个深层局域纯核心构造均达到0.1预算，Haar预算失败和超时完整保留。新增8项测试、6,629项产物检查通过；全库356运行、322通过，既有4失败、1错误及29案例/7类跳过不变。
 
 4个大型NPZ按40MiB分卷公开，`publication_support/iteration21_large_artifacts.py restore`还原并核对原冻结哈希。分批上传验证后的产物到研究分支，完整上传后再普通快进更新主分支；不强制覆盖远端。首次验证流程的版本衔接问题见[审计记录](research/iteration21_audit_note.md)，最终采用`iteration21_validation_release`。
