@@ -35,7 +35,7 @@
 
 712个新冻结产物共537,210,526字节，引用145个历史文件共347,883,200字节。两个大型状态按40MiB分为12卷，已在独立目录无损还原并核对SHA-256；发布前同时核对全部新旧引用的暂存Git字节。首次相对路径错误的17项失败、残留状态与中止记录保留；绝对路径重跑20项完整结束，13项接受、7项预算未达。新增5项测试通过；全库385运行、351通过，原4失败、1错误与依赖跳过保留。
 
-完整上传后核对远端提交及文件树，发布回执另存。未重新发布或执行第三方压缩包程序。详见[报告](RESEARCH_REPORT_ITERATION25.md)和[完整核验](results/iteration25_validation/validation.json)。
+科学提交`4e5a4c6f6bf832f18b08cc628ff8a9a36f1a3e04`及树`a7c87c04768a8ba4a9c070c34862f4bc888bbd86`已通过远端引用、重新获取的主分支及GitHub接口核对，且与分批上传前完整暂存树一致。857个新旧产物、488份Python源码及快照的Git字节核验通过，工作区清洁，见[发布回执](research_archive/publication/verification_iteration25_2026-11-09.json)。未重新发布或执行第三方压缩包程序。详见[报告](RESEARCH_REPORT_ITERATION25.md)和[完整核验](results/iteration25_validation/validation.json)。
 
 ## 2026-11-09：第二十四轮持续发布
 
