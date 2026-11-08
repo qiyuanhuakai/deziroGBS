@@ -1,0 +1,124 @@
+{
+  "modes": 4,
+  "seed": 210901,
+  "depth": 12,
+  "ensemble": "haar",
+  "panel": "quality",
+  "dimension": 6,
+  "rank": 2,
+  "max_seconds": 120.0,
+  "target": 0.1,
+  "samples": 16,
+  "baseline_rss_bytes": 94892032,
+  "info": {
+    "decomposition": {
+      "seconds": 0.00521899999876041,
+      "final_scalar_abs": 0.9550760250361918,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.0981405002081351
+        ],
+        "kernel_scale": 0.9895889289574967,
+        "reconstruction_residual": 5.594315114139762e-17,
+        "scale_residual": 6.971176600830642e-19,
+        "normalization_log_residual": 3.3306690738754696e-16,
+        "covariance_residual": 4.440892098500626e-16,
+        "symplectic_residual": 2.220446049250313e-16,
+        "minimum_raw_nu": 1.2176403314059105
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.11557722926338877,
+          0.003121227859402326
+        ],
+        "kernel_scale": 0.9693845439071689,
+        "reconstruction_residual": 1.1443916996305594e-16,
+        "scale_residual": 3.117081245895825e-17,
+        "normalization_log_residual": 4.579669976578771e-16,
+        "covariance_residual": 1.3322676295501878e-15,
+        "symplectic_residual": 3.61929049769527e-16,
+        "minimum_raw_nu": 1.0062620008503143
+      },
+      {
+        "cut": 3,
+        "parameters": [
+          0.0377713178751973,
+          0.0,
+          0.0
+        ],
+        "kernel_scale": 0.9439381419181117,
+        "reconstruction_residual": 9.639819490876587e-17,
+        "scale_residual": 4.50646885328824e-16,
+        "normalization_log_residual": 2.706168622523819e-16,
+        "covariance_residual": 2.4424906541753444e-15,
+        "symplectic_residual": 4.440892098500626e-16,
+        "minimum_raw_nu": 0.9999999999999993
+      }
+    ],
+    "local": [
+      {
+        "pair_operators": 2,
+        "coefficient_updates": 17,
+        "elements": 12,
+        "active_local_modes": 2
+      },
+      {
+        "pair_operators": 4,
+        "coefficient_updates": 50,
+        "elements": 24,
+        "active_local_modes": 3
+      },
+      {
+        "pair_operators": 4,
+        "coefficient_updates": 50,
+        "elements": 24,
+        "active_local_modes": 3
+      },
+      {
+        "pair_operators": 2,
+        "coefficient_updates": 17,
+        "elements": 12,
+        "active_local_modes": 2
+      }
+    ],
+    "cut_tail_estimates": [
+      0.009631557781103028,
+      0.016437630122457136,
+      0.0014266724540291653
+    ],
+    "marginal_tail_estimates": [
+      0.00015291318856239743,
+      0.0003528395871220638,
+      7.844303353822098e-05,
+      0.00048084040530120824
+    ],
+    "original_loss_sum": 0.02856089657211322,
+    "construction_trace_budget": 0.16899969400005793,
+    "projection_success": 0.979792890912814,
+    "stored_complex_elements": 72,
+    "max_bond_actual": 2,
+    "total_seconds": 0.011176599989994429,
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_trace_budget": 0.16899969400005793,
+  "target_met": false,
+  "status": "budget_missed",
+  "construction_peak_wset_bytes": 96157696,
+  "max_independent_schmidt_weight_error": 4.440892098500626e-16,
+  "actual_state_distance": 0.14210643738582326,
+  "actual_bound_check": true,
+  "sampling_status": "complete",
+  "completed_samples": 16,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 9.992007221626409e-16,
+    "completed_samples": 16,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "total_seconds": 0.04367360001197085,
+  "process_peak_wset_bytes": 96849920
+}

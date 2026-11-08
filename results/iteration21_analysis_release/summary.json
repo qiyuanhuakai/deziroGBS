@@ -1,0 +1,233 @@
+{
+  "panel_jobs": 58,
+  "statuses": {
+    "budget_missed": 27,
+    "accepted": 30,
+    "time_rejected": 1
+  },
+  "panels": {
+    "confirmation": {
+      "accepted": 4
+    },
+    "haar_control": {
+      "time_rejected": 1,
+      "budget_missed": 1
+    },
+    "original": {
+      "accepted": 4
+    },
+    "quality": {
+      "budget_missed": 26,
+      "accepted": 22
+    }
+  },
+  "primary": [
+    {
+      "sequence": 12,
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.017875495238102248,
+      "total_seconds": 33.96483189999708,
+      "process_peak_wset_bytes": 193540096,
+      "projection_success": 0.9997628707289878,
+      "construction_seconds": 27.779878999994253,
+      "schmidt_weight_error": 1.3655743202889425e-14
+    },
+    {
+      "sequence": 1,
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.027555545794076368,
+      "total_seconds": 35.950430299999425,
+      "process_peak_wset_bytes": 193032192,
+      "projection_success": 0.9994353000634616,
+      "construction_seconds": 29.72800200000347,
+      "schmidt_weight_error": 1.454392162258955e-14
+    },
+    {
+      "sequence": 19,
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.05385783309510898,
+      "total_seconds": 149.7336374000006,
+      "process_peak_wset_bytes": 524038144,
+      "projection_success": 0.9979184408292547,
+      "construction_seconds": 123.7375955000025,
+      "schmidt_weight_error": 7.394085344003543e-14
+    },
+    {
+      "sequence": 35,
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.026523819490372472,
+      "total_seconds": 144.22990279999794,
+      "process_peak_wset_bytes": 521072640,
+      "projection_success": 0.9994339305113848,
+      "construction_seconds": 115.22849290000158,
+      "schmidt_weight_error": 7.271960811294775e-14
+    }
+  ],
+  "large": [
+    {
+      "sequence": 1,
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.027555545794076368,
+      "total_seconds": 35.950430299999425,
+      "process_peak_wset_bytes": 193032192
+    },
+    {
+      "sequence": 2,
+      "modes": 32,
+      "seed": 190801,
+      "ensemble": "local",
+      "panel": "confirmation",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.02911495171240672,
+      "total_seconds": 35.83365590000176,
+      "process_peak_wset_bytes": 193007616
+    },
+    {
+      "sequence": 12,
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.017875495238102248,
+      "total_seconds": 33.96483189999708,
+      "process_peak_wset_bytes": 193540096
+    },
+    {
+      "sequence": 19,
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.05385783309510898,
+      "total_seconds": 149.7336374000006,
+      "process_peak_wset_bytes": 524038144
+    },
+    {
+      "sequence": 25,
+      "modes": 128,
+      "seed": 190802,
+      "ensemble": "local",
+      "panel": "confirmation",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.03190849850271848,
+      "total_seconds": 147.96689790001255,
+      "process_peak_wset_bytes": 524685312
+    },
+    {
+      "sequence": 35,
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "local",
+      "panel": "original",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.026523819490372472,
+      "total_seconds": 144.22990279999794,
+      "process_peak_wset_bytes": 521072640
+    },
+    {
+      "sequence": 41,
+      "modes": 128,
+      "seed": 190801,
+      "ensemble": "local",
+      "panel": "confirmation",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.04631810710118044,
+      "total_seconds": 146.19657220000227,
+      "process_peak_wset_bytes": 528388096
+    },
+    {
+      "sequence": 45,
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "haar",
+      "panel": "haar_control",
+      "dimension": 10,
+      "rank": 128,
+      "status": "budget_missed",
+      "construction_trace_budget": 1.0,
+      "total_seconds": 41.10128290001012,
+      "process_peak_wset_bytes": 194695168
+    },
+    {
+      "sequence": 53,
+      "modes": 32,
+      "seed": 190802,
+      "ensemble": "local",
+      "panel": "confirmation",
+      "dimension": 10,
+      "rank": 128,
+      "status": "accepted",
+      "construction_trace_budget": 0.01649919770803846,
+      "total_seconds": 29.406429800001206,
+      "process_peak_wset_bytes": 194088960
+    }
+  ],
+  "all_small_bounds_hold": true,
+  "max_small_actual_distance": 0.4085223589385815,
+  "max_success_shortcut_distance_error": 0.005572920432767581,
+  "max_schmidt_weight_error": 9.126033262418787e-14,
+  "max_reconstruction_residual": 1.4939101778741347e-15,
+  "minimum_raw_symplectic_value": 0.9999999999999774,
+  "max_recurrence_amplitude_error": 1.1657391910493736e-15,
+  "max_full_tensor_replay_error": 7.77156400412811e-16,
+  "observed_panel_samples": 912,
+  "observed_pilot_samples": 16,
+  "max_peak_wset_bytes": 528388096,
+  "failed_case_rank_lower_estimates": [
+    {
+      "phase": "panel",
+      "sequence": 36,
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "haar",
+      "rank": 128,
+      "max_cut_rank_distance_lower_estimate": 0.9756442019967653,
+      "scope": "Pure-state rank obstruction only; not threshold-output TV"
+    }
+  ],
+  "scope": "Actual saved MPS with ideal original-projector bounds evaluated in float64. No same-quality speed comparison or complete finite-precision sampler TV certificate."
+}

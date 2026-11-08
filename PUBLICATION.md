@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第二十一轮：原4个纯核心预算难例实际构造达标](RESEARCH_REPORT_ITERATION21.md)
+- [第二十一轮发布验证](results/iteration21_validation_release/validation.json)
 - [第二十轮：直接带状MPS与窄带失败诊断](RESEARCH_REPORT_ITERATION20.md)
 - [第二十轮验证记录](results/iteration20_validation/validation.json)
 - [第十九轮：最终态MPS存在性与构造障碍](RESEARCH_REPORT_ITERATION19.md)
@@ -18,6 +20,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第二十一轮持续发布
+
+按持续发布授权追加Gaussian基构造、原态投影误差推导、正式58项工作和1项试运行、独立递推参考及验证。原4个深层局域纯核心构造均达到0.1预算，Haar预算失败和超时完整保留。新增8项测试、6,629项产物检查通过；全库356运行、322通过，既有4失败、1错误及29案例/7类跳过不变。
+
+4个大型NPZ按40MiB分卷公开，`publication_support/iteration21_large_artifacts.py restore`还原并核对原冻结哈希。分批上传验证后的产物到研究分支，完整上传后再普通快进更新主分支；不强制覆盖远端。首次验证流程的版本衔接问题见[审计记录](research/iteration21_audit_note.md)，最终采用`iteration21_validation_release`。
 
 ## 2026-11-09：第二十轮持续发布
 

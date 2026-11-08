@@ -1,0 +1,20 @@
+{
+  "phase": "pilot",
+  "jobs": [
+    {
+      "modes": 32,
+      "seed": 150801,
+      "depth": 12,
+      "ensemble": "local",
+      "panel": "pilot_original",
+      "dimension": 10,
+      "rank": 128,
+      "max_seconds": 240.0,
+      "target": 0.1,
+      "samples": 16
+    }
+  ],
+  "case_count": 1,
+  "worker_timeout_seconds": 900,
+  "scope": "Original fixed Schmidt projectors followed by global physical box. Ideal float64 error estimates, not finite-precision sampler TV. All successes and failures retained."
+}
