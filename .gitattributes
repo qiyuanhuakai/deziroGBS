@@ -1,0 +1,12 @@
+# Frozen experiment evidence must retain exact bytes and source hashes.
+# Generated SVG paths and historical source snapshots retain their whitespace.
+results/iteration11*/** -text -whitespace
+
+# New executable sources keep stable line endings across platforms.
+src/gbslab/mps_probe.py text eol=lf
+src/gbslab/meixner_probe.py text eol=lf
+tests/test_mps_probe.py text eol=lf
+tests/test_meixner_probe.py text eol=lf
+experiments/iteration11*.py text eol=lf
+experiments/verify_iteration11.py text eol=lf
+configs/iteration11_mps_probe.json text eol=lf

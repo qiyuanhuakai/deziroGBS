@@ -1,0 +1,23 @@
+{
+  "name": "iteration11_mps_feasibility_and_small_coherent_measurement",
+  "date": "2026-11-08",
+  "seeds": [110801, 110802],
+  "profiles": [
+    {"name": "lossy", "squeezing": 0.6, "transmissivity": 0.35},
+    {"name": "bright", "squeezing": 0.9, "transmissivity": 0.65},
+    {"name": "stress", "squeezing": 1.2, "transmissivity": 0.85}
+  ],
+  "spectral_modes": [8, 16, 32, 64],
+  "ensembles": ["haar", "local_depth4"],
+  "orders": ["natural", "spectral_graph"],
+  "cut_policy": "all cuts for m<=16; quarter, half, three-quarter cuts otherwise",
+  "rank_cap": 2048,
+  "cut_tail_targets": [0.01, 0.0001],
+  "compression_modes": [4, 6],
+  "compression_profiles": ["lossy", "bright"],
+  "cutoffs": [2, 4],
+  "bonds": [2, 4, 8],
+  "samples": 512,
+  "averaged_law_policy": "m4 K2 only; all other quality laws condition on one fixed correlated displacement",
+  "scope": "Exploratory panel, not independent confirmation. Dense TT-SVD initialization; no scalable Gaussian-to-MPS construction or native performance superiority claim. Preserve every failure."
+}

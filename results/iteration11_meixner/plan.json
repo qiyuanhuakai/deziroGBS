@@ -1,0 +1,53 @@
+{
+  "modes": [
+    4,
+    8,
+    12
+  ],
+  "seeds": [
+    110801,
+    110802
+  ],
+  "profiles": [
+    {
+      "name": "lossy",
+      "squeezing": 0.6,
+      "transmissivity": 0.35
+    },
+    {
+      "name": "bright",
+      "squeezing": 0.9,
+      "transmissivity": 0.65
+    },
+    {
+      "name": "stress",
+      "squeezing": 1.2,
+      "transmissivity": 0.85
+    }
+  ],
+  "degrees": [
+    0,
+    1,
+    2
+  ],
+  "budget_modes": [
+    8,
+    32,
+    64,
+    128,
+    1024
+  ],
+  "l1_errors": [
+    0.1,
+    0.01
+  ],
+  "haar_failure": 0.05,
+  "scope": "Exploratory degree-two threshold projection; not the paper randomized rejection sampler",
+  "source": "https://arxiv.org/html/2611.08444v1",
+  "equations": [
+    "G.12",
+    "G.28",
+    "G.38",
+    "G.40"
+  ]
+}
