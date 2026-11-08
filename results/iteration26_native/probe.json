@@ -1,0 +1,22 @@
+{
+  "status": "abi_mismatch_rejected",
+  "kernel_created": false,
+  "native_formats": {
+    "abi_version": 1,
+    "long_double_bytes": 16,
+    "long_double_mantissa_bits": 64,
+    "quad_bytes": 16,
+    "quad_mantissa_bits": 113,
+    "maximum_modes": 512,
+    "maximum_retained": 16,
+    "query_bytes": 56,
+    "output_bytes": 32,
+    "conditional_bytes": 640,
+    "diagnostics_bytes": 688
+  },
+  "ctypes_long_double_bytes": 8,
+  "numpy_long_double_bytes": 8,
+  "numpy_long_double_mantissa_bits": 53,
+  "scalar_format_compatible": false,
+  "adapter_error": "Native forest ABI / NumPy long-double format mismatch"
+}

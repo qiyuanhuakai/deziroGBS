@@ -13,7 +13,10 @@ import math
 import os
 from pathlib import Path
 import platform
-import resource
+try:
+    import resource
+except ImportError:
+    resource = None
 import shutil
 from time import perf_counter
 
@@ -234,6 +237,17 @@ def validate_binary_gate(executable, method, *, validation_path=None, modes=None
     }
 
 
+def child_resource_measurement():
+    """Keep Unix child high-water semantics; unsupported measurements are null."""
+    if resource is None:
+        return {"native_child_peak_rss_bytes": None, "available": False,
+            "scope": "Child peak RSS unavailable: this platform has no resource.getrusage"}
+    usage = resource.getrusage(resource.RUSAGE_CHILDREN)
+    unit = 1 if platform.system() == "Darwin" else 1024
+    return {"native_child_peak_rss_bytes": int(usage.ru_maxrss) * unit, "available": True,
+        "scope": "RUSAGE_CHILDREN high-water over native children in this worker; --case uses one child; --all does not isolate per-case RSS"}
+
+
 def sample_case(config, case, output, executable, validation_path=None):
     binding = validate_binary_gate(executable, case["method"],
         validation_path=validation_path, modes=case["modes"])
@@ -277,10 +291,7 @@ def sample_case(config, case, output, executable, validation_path=None):
             "payload": getattr(exc, "payload", None), "stderr": getattr(exc, "stderr", None),
             "returncode": getattr(exc, "returncode", None)}
     native["harness_call_seconds"] = perf_counter() - started
-    usage = resource.getrusage(resource.RUSAGE_CHILDREN)
-    native["resource_measurement"] = {
-        "native_child_peak_rss_bytes": int(usage.ru_maxrss) * 1024,
-        "scope": "RUSAGE_CHILDREN high-water over native children in this worker; --case uses one child; --all does not isolate per-case RSS"}
+    native["resource_measurement"] = child_resource_measurement()
     if digest(executable) != provenance["executable_sha256"]:
         raise RuntimeError("Binary changed while sampling; saved attempt cannot be claimed valid")
     # Keep complete native evidence; zero truncation or sample filtering.

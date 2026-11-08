@@ -37,7 +37,7 @@ def physical_box(B,d):
 
 
 def main():
-    job=json.loads(Path(sys.argv[1]).read_text()); output=Path(sys.argv[2]); row=dict(job); start=perf_counter(); process=psutil.Process()
+    job=json.loads(Path(sys.argv[1]).read_text(encoding='utf-8')); output=Path(sys.argv[2]).resolve(); row=dict(job); start=perf_counter(); process=psutil.Process()
     try:
         m=job['modes']; d=job['dimension']; rank=job['rank']
         if job['panel']=='quality':

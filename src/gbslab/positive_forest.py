@@ -32,7 +32,18 @@ from .positive_completion import PositiveCompletionSampler
 from .zero_memory import ZeroMemorySampler
 
 
-def _normalized_click_probability(log_scores):
+def _positive_log_ratio(first, second):
+    """Log ratio without subtracting two large, almost equal logarithms."""
+    with np.errstate(over="ignore", under="ignore"):
+        ratio = first / second
+    if np.isfinite(ratio) and ratio > 0:
+        return np.log(ratio)
+    a, ea = np.frexp(first)
+    b, eb = np.frexp(second)
+    return np.log(a / b) + (int(ea) - int(eb)) * np.log(np.longdouble(2))
+
+
+def _normalized_click_probability(log_scores, *, log_odds=None):
     """Copied normalization policy from PositiveCompletionSampler, unchanged.
 
     None denotes a separately certified zero score.  A finite log score is
@@ -44,7 +55,7 @@ def _normalized_click_probability(log_scores):
         return 1.0
     if log_scores[1] is None:
         return 0.0
-    difference = log_scores[0] - log_scores[1]
+    difference = log_scores[0] - log_scores[1] if log_odds is None else log_odds
     with np.errstate(under="ignore"):
         if difference >= 0:
             small = np.exp(-difference)
@@ -203,6 +214,7 @@ class ForestCompletionSampler(PositiveCompletionSampler):
             raise NumericalProbabilityError("branch masses do not sum to baseline event mass")
 
         log_scores, log_indicators = [None, None], [0.0, 0.0]
+        score_terms = [None, None]
         node_probabilities, edge_probabilities = [[], []], [[], []]
         zero_reasons = [None, None]
         for outcome, branch in enumerate(branches):
@@ -266,6 +278,22 @@ class ForestCompletionSampler(PositiveCompletionSampler):
                 raise NumericalProbabilityError("forest log-score roundoff guard failed")
             log_scores[outcome] = log_score
             log_indicators[outcome] = float(log_indicator)
+            score_terms[outcome] = [(coefficient, estimate.value) for coefficient, estimate in terms if coefficient]
+
+        # Pair the same events across branches before logarithmic summation.
+        # Common tiny event scales then cancel in ratios, not in two ~-1000 logs.
+        log_odds, odds_indicator = None, None
+        if all(score is not None for score in log_scores):
+            differences = []
+            for (coefficient, first), (other, second) in zip(*score_terms):
+                if coefficient != other:
+                    raise RuntimeError("Forest branch exponents differ")
+                differences.append(coefficient * _positive_log_ratio(first, second))
+            log_odds = np.sum(np.asarray(differences, dtype=np.longdouble), dtype=np.longdouble)
+            odds_indicator = (sum(log_indicators) + 16 * np.finfo(np.longdouble).eps
+                * (1 + abs(log_odds) + sum(abs(x) for x in differences) + len(differences)))
+            if not np.isfinite(log_odds) or not np.isfinite(odds_indicator) or odds_indicator > self.max_relative_roundoff:
+                raise NumericalProbabilityError("forest log-odds roundoff guard failed")
 
         return {"prefix": prefix, "mode": mode, "zeros": zeros, "clicks": clicks,
             "retained_clicks": retained, "omitted_clicks": omitted,
@@ -279,7 +307,9 @@ class ForestCompletionSampler(PositiveCompletionSampler):
             "edge_probabilities": tuple(tuple(v) for v in edge_probabilities),
             "log_scores_up_to_common_baseline": tuple(None if v is None else float(v) for v in log_scores),
             "log_score_indicators": tuple(log_indicators), "zero_score_reasons": tuple(zero_reasons),
-            "click_probability": _normalized_click_probability(log_scores),
+            "log_odds_from_paired_events": None if log_odds is None else float(log_odds),
+            "log_odds_roundoff_indicator": None if odds_indicator is None else float(odds_indicator),
+            "click_probability": _normalized_click_probability(log_scores, log_odds=log_odds),
             "log_score_common_factor_omitted": "1/P(B)"}
 
     def cache_info(self):

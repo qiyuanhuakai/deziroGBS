@@ -14,6 +14,7 @@ from gbslab.positive_completion import (
     TableEventOracle,
 )
 from gbslab.zero_memory import ZeroMemorySampler
+from positive_event_fixtures import ConditionalIndependentEvents
 
 
 def event_from_table(p, zeros=(), ones=()):
@@ -310,11 +311,11 @@ class PositiveCompletionTests(unittest.TestCase):
 
     def test_final_positive_branch_rounding_is_not_certified_zero(self):
         for log_odds in (40, 800, -800):
-            small = np.exp(-np.longdouble(abs(log_odds)))
-            p = np.array([small, 1] if log_odds > 0 else [1, small], dtype=np.longdouble)
-            sampler = PositiveCompletionSampler(TableEventOracle(p), 0)
+            oracle = ConditionalIndependentEvents(log_odds)
+            sampler = PositiveCompletionSampler(TableEventOracle(np.full(64,1/64)), 0, event_oracle=oracle)
             with self.assertRaisesRegex(NumericalProbabilityError, "Bernoulli endpoint"):
-                sampler.conditional_click_probability(())
+                sampler.conditional_click_probability((1,)*5)
+            self.assertTrue(oracle.queried and all(e[2]>0 for e in oracle.queried))
         p = np.array([1, np.exp(np.longdouble(-40))], dtype=np.longdouble)
         self.assertGreater(PositiveCompletionSampler(TableEventOracle(p), 0)
                            .conditional_click_probability(()), 0.)

@@ -80,7 +80,7 @@ def extended_law(sampler, modes):
                 if child == 0 or not np.isfinite(child):
                     # An enumeration arithmetic failure is not an invented
                     # sampler failure. Abort instead of dropping the branch.
-                    raise ArithmeticError("Positive enumeration branch underflowed")
+                    raise ArithmeticError("Positive output mass cannot be represented: enumeration branch underflowed")
                 stack.append((prefix+(bit,),mask | ((1<<pos) if bit else 0),child))
     failure_mass = float(sum(r["mass"] for r in failures))
     cast_q=q.astype(np.float64)

@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--output',type=Path,required=True); args=p.parse_args(); out=args.output; out.mkdir(parents=True,exist_ok=False)
+    p=argparse.ArgumentParser(); p.add_argument('--output',type=Path,required=True); args=p.parse_args(); out=args.output.resolve(); out.mkdir(parents=True,exist_ok=False)
     jobs=[dict(panel='quality',modes=m,seed=s,dimension=d,rank=r,max_seconds=120.) for m in (4,6) for s in (250801,250802) for d in (4,6) for r in (4,16)]
     jobs+=[dict(panel='candidate',modes=144,dimension=4,rank=r,max_seconds=600.) for r in (32,64,128,200)]
     for i,job in enumerate(jobs): job['sequence']=i
@@ -20,8 +20,8 @@ def main():
     for f in files:
         dest=out/'source_snapshot'/f; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(ROOT/f,dest)
     deps=['results/iteration24_chain/case_56.npz','results/iteration25_spectra/spectra.npz']; dependencies={f:digest(ROOT/f) for f in deps}
-    old=json.loads((ROOT/'results/iteration24_manifest.json').read_text())['artifacts']; assert dependencies[deps[0]]==old[deps[0]]
-    spectrum=json.loads((ROOT/'results/iteration25_spectra/summary.json').read_text()); assert dependencies[deps[1]]==spectrum['output_sha256']
+    old=json.loads((ROOT/'results/iteration24_manifest.json').read_text(encoding='utf-8'))['artifacts']; assert dependencies[deps[0]]==old[deps[0]]
+    spectrum=json.loads((ROOT/'results/iteration25_spectra/summary.json').read_text(encoding='utf-8')); assert dependencies[deps[1]]==spectrum['output_sha256']
     save(out/'plan.json',dict(jobs=jobs,source_hashes=hashes,dependencies=dependencies,worker_timeout_seconds=900,timing_scope='Single diagnostic construction per case, not repeated isolated speed evidence'))
     shutil.copy2(ROOT/'research/iteration25_plan.md',out/'frozen_plan.md'); env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1'); rows=[]
     for job in jobs:
@@ -30,7 +30,7 @@ def main():
             child=subprocess.run([sys.executable,str(ROOT/'experiments/iteration25_worker.py'),str(spec),str(target)],cwd=ROOT,env=env,capture_output=True,text=True,timeout=900)
             (out/f'run_{i:02d}.stdout.log').write_text(child.stdout,encoding='utf-8'); (out/f'run_{i:02d}.stderr.log').write_text(child.stderr,encoding='utf-8')
             if child.returncode: raise RuntimeError(child.stderr)
-            row=json.loads(target.read_text())
+            row=json.loads(target.read_text(encoding='utf-8'))
         except Exception as e:
             if target.exists(): shutil.copy2(target,target.with_suffix('.partial.json'))
             row=dict(job,status='worker_failed',error=repr(e))

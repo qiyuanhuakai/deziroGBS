@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\����\deziroGBS\experiments\build_batched_forest.py", line 101, in <module>
+    main()
+  File "C:\Users\qiyuaner\Documents\ChatGPT\����\deziroGBS\experiments\build_batched_forest.py", line 96, in main
+    print(build(build_dir=args.build_dir, compiler=args.compiler,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\qiyuaner\Documents\ChatGPT\����\deziroGBS\experiments\build_batched_forest.py", line 42, in build
+    raise FileNotFoundError("The selected compiler must supply libquadmath and quadmath.h")
+FileNotFoundError: The selected compiler must supply libquadmath and quadmath.h

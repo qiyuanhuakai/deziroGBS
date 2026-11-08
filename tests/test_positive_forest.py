@@ -15,6 +15,7 @@ from gbslab.positive_completion import (
 )
 from gbslab.positive_forest import ForestCompletionSampler
 from gbslab.zero_memory import ZeroMemorySampler
+from positive_event_fixtures import ConditionalIndependentEvents
 
 
 def event(p, zeros=(), ones=()):
@@ -331,10 +332,13 @@ class ForestCompletionTests(unittest.TestCase):
 
     def test_endpoint_rounding_is_failure_but_analytic_vacuum_is_exact(self):
         for log_odds in (40, 800, -800):
-            small = np.exp(-np.longdouble(abs(log_odds)))
-            p = np.array([small, 1] if log_odds > 0 else [1, small], dtype=np.longdouble)
-            with self.assertRaisesRegex(NumericalProbabilityError, "Bernoulli endpoint"):
-                self.generic(p).conditional_click_probability(())
+            for forest in ("chain", "static_mi_tree"):
+                oracle = ConditionalIndependentEvents(log_odds)
+                sampler = ForestCompletionSampler(ThresholdModel(1.8*np.eye(12)),0,
+                    selection="recent",forest=forest,event_oracle=oracle)
+                with self.assertRaisesRegex(NumericalProbabilityError, "Bernoulli endpoint"):
+                    sampler.conditional_click_probability((1,)*5)
+                self.assertTrue(oracle.queried and all(e[2]>0 for e in oracle.queried))
         for forest in ("chain", "static_mi_tree"):
             sampler = ForestCompletionSampler(ThresholdModel(np.eye(8)), 0, forest=forest)
             expected = np.zeros(16); expected[0] = 1

@@ -1,0 +1,76 @@
+{
+  "panel": "quality",
+  "modes": 2,
+  "seed": 260901,
+  "dimension": 4,
+  "rank": 4,
+  "max_seconds": 120,
+  "info": {
+    "decomposition": {
+      "seconds": 0.0020447999995667487,
+      "final_scalar_abs": 0.9499226495323541,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.06542124607558321
+        ],
+        "kernel_scale": 0.9890849388980711,
+        "reconstruction_residual": 5.721958498152797e-17,
+        "scale_residual": 2.168404344971009e-19,
+        "normalization_log_residual": 7.632783294297951e-17,
+        "covariance_residual": 2.220446049250313e-16,
+        "symplectic_residual": 4.7388436915916936e-18,
+        "minimum_raw_nu": 1.1400015692650212
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 8,
+        "elements": 16
+      },
+      {
+        "cache_entries": 8,
+        "elements": 16
+      }
+    ],
+    "cut_tail_estimates": [
+      1.8317881593676866e-05
+    ],
+    "marginal_tail_estimates": [
+      0.0014220766615482656,
+      0.0030049839685640217
+    ],
+    "original_loss_sum": 0.004445378511705964,
+    "construction_trace_budget": 0.06667367180308854,
+    "projection_success": 0.995724419507563,
+    "stored_complex_elements": 32,
+    "max_bond_actual": 4,
+    "total_seconds": 0.0031774999952176586,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0020518999954219908,
+      "basis_selection": 7.380000897683203e-05,
+      "local_tensors": 0.0006074999982956797,
+      "canonicalization": 0.0001387999946018681,
+      "error_budget": 0.000305499997921288
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "construction_seconds": 0.004206799989333376,
+  "construction_trace_budget": 0.06667367180308854,
+  "status": "accepted",
+  "state": {
+    "path": "results/iteration26_native/path_result.state.npz",
+    "sha256": "1009fa754873e7595348d92de90a0480761ed04b7bdaba32994f63e9e757d827",
+    "array_fingerprint": "6dc40e19b83d284457e2629e96072c672c56054adfdbe4668bdc4929598e4582"
+  },
+  "independent_spectrum_max_error": 0.0,
+  "actual_original_distance": 0.06486500210457101,
+  "actual_bound_check": true,
+  "validation_status": "passed",
+  "worker_seconds": 0.012150499998824671,
+  "peak_working_set_bytes": 96247808
+}

@@ -95,3 +95,15 @@ experiments/verify_iteration25.py text eol=lf
 publication_support/iteration25_large_artifacts.py text eol=lf
 publication_support/publish_iteration25.py text eol=lf
 research_archive/publication/iteration25_large_artifacts/** -text -whitespace
+results/iteration26*/** -text -whitespace
+src/gbslab/low_clicks.py text eol=lf
+src/gbslab/positive_forest.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_low_clicks.py text eol=lf
+tests/test_iteration26_platform.py text eol=lf
+tests/positive_event_fixtures.py text eol=lf
+tests/test_positive_completion.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_positive_forest.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+experiments/iteration26*.py text eol=lf
+experiments/verify_iteration26.py text eol=lf
+experiments/iteration5_quality.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+experiments/iteration6_completion.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
