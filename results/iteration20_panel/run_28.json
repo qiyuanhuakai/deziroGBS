@@ -1,0 +1,60 @@
+{
+  "modes": 4,
+  "seed": 200801,
+  "depth": 12,
+  "ensemble": "haar",
+  "panel": "quality",
+  "dimension": 6,
+  "width": 3,
+  "rank": 16,
+  "target": 0.1,
+  "max_elements": 40000000,
+  "max_seconds": 120.0,
+  "baseline_rss_bytes": 94855168,
+  "info": {
+    "box_mass": 0.9994570167737767,
+    "frontier_bonds": [
+      56,
+      36,
+      6
+    ],
+    "transition_counts": [
+      80,
+      1020,
+      158,
+      12
+    ],
+    "conservative_element_bound": 49284,
+    "frontier_elements": 13764,
+    "seconds": 0.0028196000057505444,
+    "band_distance": 0.0,
+    "rounding_losses": [
+      0.0,
+      8.670256657832728e-06,
+      0.0
+    ],
+    "rounding_joint_tail": 8.670256657832728e-06,
+    "distance_to_band_gaussian": 0.02348720449685711,
+    "construction_trace_budget": 0.02348720449685711,
+    "unclipped_construction_trace_budget": 0.02348720449685711,
+    "stored_complex_elements": 1224,
+    "max_bond_actual": 16,
+    "total_seconds": 0.004396700009237975,
+    "scope": "Band Gaussian approximation plus exact-box/nested compression distance in ideal arithmetic; float64, no complete sampler TV certificate"
+  },
+  "construction_trace_budget": 0.02348720449685711,
+  "target_met": true,
+  "status": "accepted",
+  "construction_peak_wset_bytes": 96911360,
+  "actual_state_distance": 0.02348720449687129,
+  "actual_bound_check": true,
+  "sampling_status": "complete",
+  "completed_samples": 32,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 1.3322676295501878e-15,
+    "completed_samples": 32,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "total_seconds": 0.16139120000298135,
+  "process_peak_wset_bytes": 97210368
+}

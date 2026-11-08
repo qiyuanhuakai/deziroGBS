@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第二十轮：直接带状MPS与窄带失败诊断](RESEARCH_REPORT_ITERATION20.md)
+- [第二十轮验证记录](results/iteration20_validation/validation.json)
 - [第十九轮：最终态MPS存在性与构造障碍](RESEARCH_REPORT_ITERATION19.md)
 - [第十八轮：高阶真空级数与强基线](RESEARCH_REPORT_ITERATION18.md)
 - [第十九轮验证记录](results/iteration19_validation/validation.json)
@@ -16,6 +18,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第二十轮持续发布
+
+两个约188MB的NPZ超过GitHub普通文件上限，以10个40MiB以内分卷公开，附完整还原工具和分卷清单。`python publication_support/iteration20_large_artifacts.py restore`还原后与原冻结SHA-256完全一致；发布核验直接对已暂存分卷重组哈希。首次未发布的整文件提交仅在本地备份分支保留，公开历史从此前主分支正常快进，没有改写既有公开提交。
+
+按既有持续发布授权，追加直接前沿构造代码、推导、60项工作（含4项预分配拒绝）、250条带宽扫描、56个MPS、20个小盒参考和1,792条观测样本。新增7项测试与4,324项产物核验通过；全库348运行、314通过，既有4失败、1错误及29案例/7类跳过不变。冻结字节由`experiments/iteration20_seal.py`核对后普通快进发布。原深层4个输入仍未解决，窄带候选的纯态失败下界与输出TV严格区分。
 
 ## 2026-11-08：第11至19轮持续发布
 
