@@ -1,0 +1,153 @@
+{
+  "panel": "known",
+  "modes": 4,
+  "ensemble": "local",
+  "seed": 240801,
+  "squeezing": 0.6,
+  "sequence": 1,
+  "bond_modes": [
+    0,
+    1,
+    2,
+    3,
+    0
+  ],
+  "directions": {
+    "forward": {
+      "status": "reconstructed",
+      "steps": [
+        {
+          "site": 0,
+          "shared_modes": 0,
+          "left_internal_norm": 0.0,
+          "right_internal_norm": 0.0,
+          "contraction_norm_bound": 0.0,
+          "condition": 1.0,
+          "solve_residual": 0.0,
+          "symmetry_residual": 0.0,
+          "log_factor_real": 0.0,
+          "log_factor_imag": 0.0
+        },
+        {
+          "site": 1,
+          "shared_modes": 1,
+          "left_internal_norm": 0.10880071370056868,
+          "right_internal_norm": 0.03144052044980945,
+          "contraction_norm_bound": 0.003420751064056593,
+          "condition": 1.0,
+          "solve_residual": 0.0,
+          "minimum_real_eigenvalue": 1.0018300190962302,
+          "symmetry_residual": 5.551115123125783e-17,
+          "log_factor_real": -0.000916253837267723,
+          "log_factor_imag": -0.00144239685715469
+        },
+        {
+          "site": 2,
+          "shared_modes": 2,
+          "left_internal_norm": 0.5368845146613662,
+          "right_internal_norm": 0.05975995960207074,
+          "contraction_norm_bound": 0.0320841969071406,
+          "condition": 1.0217690591513835,
+          "solve_residual": 1.378869738733834e-20,
+          "minimum_real_eigenvalue": 1.000054181785962,
+          "symmetry_residual": 1.2412670766236366e-16,
+          "log_factor_real": -0.01082187580268608,
+          "log_factor_imag": 0.0010032974617782337
+        },
+        {
+          "site": 3,
+          "shared_modes": 3,
+          "left_internal_norm": 0.5370495669980351,
+          "right_internal_norm": 0.02166237390291604,
+          "contraction_norm_bound": 0.011633768524710594,
+          "condition": 1.001657905244198,
+          "solve_residual": 1.0428713148246451e-32,
+          "minimum_real_eigenvalue": 1.0,
+          "symmetry_residual": 3.1031676915590914e-17,
+          "log_factor_real": -0.000828266218206478,
+          "log_factor_imag": -4.7284853143108674e-17
+        }
+      ],
+      "final_pairing_norm": 0.5370495669980355,
+      "normalized_log_vacuum_amplitude": -0.3402705735561719,
+      "raw_log_norm_squared": 2.7755575615628914e-15,
+      "log_scalar_real": -0.3402705735561705,
+      "log_scalar_imag": -8.716985466783456e-17,
+      "scope": "Untruncated state defined by supplied kernels; sufficient float64 convergence checks, no original experimental-state identification",
+      "original_pairing_max_error": 1.7772239894833365e-16,
+      "original_log_normalization_error": 1.6653345369377348e-15,
+      "original_phase_error": 8.716985466783456e-17
+    },
+    "reverse": {
+      "status": "reconstructed",
+      "steps": [
+        {
+          "site": 0,
+          "shared_modes": 0,
+          "left_internal_norm": 0.0,
+          "right_internal_norm": 0.0,
+          "contraction_norm_bound": 0.0,
+          "condition": 1.0,
+          "solve_residual": 0.0,
+          "symmetry_residual": 0.0,
+          "log_factor_real": 0.0,
+          "log_factor_imag": 0.0
+        },
+        {
+          "site": 1,
+          "shared_modes": 3,
+          "left_internal_norm": 0.02166237390291604,
+          "right_internal_norm": 0.3512419212654312,
+          "contraction_norm_bound": 0.007608733828830367,
+          "condition": 1.0037977024556224,
+          "solve_residual": 5.435147558104767e-20,
+          "minimum_real_eigenvalue": 0.9999999999999997,
+          "symmetry_residual": 3.925231146709438e-17,
+          "log_factor_real": -0.0009672515000930105,
+          "log_factor_imag": 0.0010032974617783382
+        },
+        {
+          "site": 2,
+          "shared_modes": 2,
+          "left_internal_norm": 0.058724347257964445,
+          "right_internal_norm": 0.5427631600208186,
+          "contraction_norm_bound": 0.03187341228789268,
+          "condition": 1.0201631981390207,
+          "solve_residual": 2.2248303755754155e-16,
+          "minimum_real_eigenvalue": 1.0000547561237794,
+          "symmetry_residual": 5.721958498152797e-17,
+          "log_factor_real": -0.00995917985295203,
+          "log_factor_imag": -0.0014423968571548355
+        },
+        {
+          "site": 3,
+          "shared_modes": 1,
+          "left_internal_norm": 0.030195701400727585,
+          "right_internal_norm": 0.10880071370056868,
+          "contraction_norm_bound": 0.0032853138630884226,
+          "condition": 1.0,
+          "solve_residual": 0.0,
+          "minimum_real_eigenvalue": 1.0032853138630884,
+          "symmetry_residual": 5.551115123125783e-17,
+          "log_factor_real": -0.0016399645051150646,
+          "log_factor_imag": 5.4032594592202824e-18
+        }
+      ],
+      "final_pairing_norm": 0.5370495669980355,
+      "normalized_log_vacuum_amplitude": -0.3402705735561718,
+      "raw_log_norm_squared": 2.886579864025407e-15,
+      "log_scalar_real": -0.34027057355617035,
+      "log_scalar_imag": -7.547822260819835e-17,
+      "scope": "Untruncated state defined by supplied kernels; sufficient float64 convergence checks, no original experimental-state identification",
+      "original_pairing_max_error": 3.002224531865041e-16,
+      "original_log_normalization_error": 1.8318679906315083e-15,
+      "original_phase_error": 7.547822260819835e-17
+    }
+  },
+  "bidirectional_pairing_max_error": 1.2412670766236366e-16,
+  "bidirectional_log_magnitude_error": 1.6653345369377348e-16,
+  "bidirectional_phase_error": 1.1691632059636211e-17,
+  "status": "passed",
+  "seconds": 0.007813599993824027,
+  "output_sha256": "35bb96c71f73eadf9deefb95f716efd8c306fc0a0de811899e863eafe6b794ce"
+}

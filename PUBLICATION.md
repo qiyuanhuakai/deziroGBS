@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第二十四轮：核链候选态与有限参考质量差距](RESEARCH_REPORT_ITERATION24.md)
+- [第二十四轮产物核验](results/iteration24_validation/validation.json)
 - [第二十三轮：递推完整流程与参考精度](RESEARCH_REPORT_ITERATION23.md)
 - [第二十三轮产物核验](results/iteration23_validation/validation.json)
 - [第二十二轮：144模式外部参考与局部递推](RESEARCH_REPORT_ITERATION22.md)
@@ -24,6 +26,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第二十四轮持续发布
+
+追加57项Gaussian核链重建、整体稀疏消元、三条有限MPS的低光子质量诊断及301项几何检查（含校准与源码检查）。有限链到核链Gaussian候选态的纯态距离下界约0.2304；其中145项外部上界前提失败，因此不套用原态投影上界，也不把候选态等同原实验态。
+
+434个新冻结产物共14,778,738字节，另引用并核对161个历史文件共514,246,393字节。本轮无新增大文件分卷；暂存Git字节核验包括所有引用依赖。2,073项产物审计与8项新增测试通过；全库380运行、346通过，原4失败、1错误和依赖跳过保留。公开源码、推导、全部结果和失败条件，不重新发布或执行第三方压缩包程序。
 
 ## 2026-11-09：第二十三轮持续发布
 

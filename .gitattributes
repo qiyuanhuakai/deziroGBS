@@ -79,3 +79,11 @@ tests/test_schmidt_recurrence_backend.py text eol=lf
 research_archive/publication/iteration23_large_artifacts/** -text -whitespace
 publication_support/iteration23_large_artifacts.py text eol=lf
 publication_support/publish_iteration23.py text eol=lf
+results/iteration24*/** -text -whitespace
+src/gbslab/gaussian_kernel_chain.py text eol=lf
+tests/test_gaussian_kernel_chain.py text eol=lf
+tests/test_gaussian_chain_reference.py text eol=lf
+experiments/iteration24*.py text eol=lf
+experiments/verify_iteration24.py text eol=lf
+# Keep the exact runner bytes captured by the frozen test snapshot.
+experiments/iteration24_tests.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
