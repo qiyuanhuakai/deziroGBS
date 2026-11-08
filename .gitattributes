@@ -107,3 +107,9 @@ experiments/iteration26*.py text eol=lf
 experiments/verify_iteration26.py text eol=lf
 experiments/iteration5_quality.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 experiments/iteration6_completion.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+results/iteration27*/** -text -whitespace
+src/gbslab/mixed_low_clicks.py text eol=lf
+tests/test_mixed_low_clicks.py text eol=lf
+experiments/iteration27*.py text eol=lf
+experiments/verify_iteration27.py text eol=lf

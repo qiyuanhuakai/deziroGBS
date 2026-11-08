@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第27轮：混合低点击与外部协方差审计](RESEARCH_REPORT_ITERATION27.md)
+- [第27轮核验](results/iteration27_validation/validation.json)
 - [第26轮：直接阈值输出下界与数值门禁](RESEARCH_REPORT_ITERATION26.md)
 - [第26轮主审核](results/iteration26_validation/validation.json)
 - [第26轮回归审核](results/iteration26_analysis/regression_checks.json)
@@ -31,6 +33,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第27轮持续发布
+
+新增混合Gaussian低点击事件实现及44项正式计算，369项产物核验和8项新测试通过。找到作者混合与优化协方差，完成单位转换、候选身份对比和两组负PSD残差见证。第三方5个小文件仅在外部缓存按区间读取，仓库公开目录/CRC/哈希、获取脚本及自身诊断，不重发原代码和矩阵。
+
+459个新冻结产物共4,209,959字节，引用2个历史文件共1,219,941字节；无新增分卷。全库416运行、387通过、0失败、0错误，29案例与7类依赖跳过保留。本机接口迁移设计公开，尚未实现或启用；实验输入映射与有效位移分解继续开放。
 
 ## 2026-11-09：第26轮持续发布
 

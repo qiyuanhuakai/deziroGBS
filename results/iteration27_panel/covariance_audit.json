@@ -1,0 +1,63 @@
+{
+  "source_mixed": {
+    "shape": [
+      288,
+      288
+    ],
+    "symmetry_residual": 0.0,
+    "minimum_eigenvalue": 0.4684732226781784,
+    "minimum_uncertainty_eigenvalue": -6.179534647115795e-15,
+    "purity_symplectic_residual": 6.67630067124179,
+    "mean_photons": 140.3789499108675
+  },
+  "source_pure_times_two": {
+    "shape": [
+      288,
+      288
+    ],
+    "symmetry_residual": 0.0,
+    "minimum_eigenvalue": 0.46609887066839234,
+    "minimum_uncertainty_eigenvalue": -1.6764902596088218e-13,
+    "purity_symplectic_residual": 3.6415315207705135e-13,
+    "mean_photons": 5.0234098703651995
+  },
+  "kernel_chain_candidate": {
+    "shape": [
+      288,
+      288
+    ],
+    "symmetry_residual": 0.0,
+    "minimum_eigenvalue": 0.4685037600753487,
+    "minimum_uncertainty_eigenvalue": -5.117895040054887e-15,
+    "purity_symplectic_residual": 2.6645352591003757e-15,
+    "mean_photons": 4.964414218470495
+  },
+  "candidate_vs_author_pure": {
+    "max_absolute": 0.004778750644699348,
+    "frobenius": 0.061718997998808985
+  },
+  "mixed_minus_author_pure": {
+    "minimum_eigenvalue": -0.011804751418828564,
+    "maximum_eigenvalue": 16.853451418931712,
+    "scipy_minimum_eigenvalue": -0.011804751418822788,
+    "rayleigh_float64": -0.011804751418823804,
+    "rayleigh_80_digit": "-0.0118047514188238616267794097348711078031736920934898719490396906607195231376",
+    "witness_norm": 1.0000000000000004,
+    "eigenvector_residual": 9.357544845868208e-15,
+    "positive_semidefinite_at_supplied_precision": false,
+    "displacement_covariance_convention": "hbar=2; source stored pure covariance multiplied by two"
+  },
+  "mixed_minus_candidate_pure": {
+    "minimum_eigenvalue": -0.0004068678608886795,
+    "maximum_eigenvalue": 16.860376047498487,
+    "scipy_minimum_eigenvalue": -0.0004068678608912606,
+    "rayleigh_float64": -0.00040686786089140915,
+    "rayleigh_80_digit": "-0.000406867860891578870383907904297828614918550763430432408371058122721116786997",
+    "witness_norm": 0.9999999999999999,
+    "eigenvector_residual": 1.1721302321118098e-14,
+    "positive_semidefinite_at_supplied_precision": false,
+    "displacement_covariance_convention": "hbar=2; source stored pure covariance multiplied by two"
+  },
+  "checks": 8,
+  "checks_passed": 8
+}
