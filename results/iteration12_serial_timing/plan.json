@@ -1,0 +1,30 @@
+{
+  "modes": 128,
+  "depth": 4,
+  "profile": {
+    "name": "lossy",
+    "r": 0.6,
+    "eta": 0.35
+  },
+  "circuit_seeds": [
+    120901,
+    120902
+  ],
+  "repeats": 3,
+  "samples": 128,
+  "nominal_construction_budget": 0.1,
+  "methods": [
+    {
+      "builder": "gatewise",
+      "d": 8,
+      "chi": 16
+    },
+    {
+      "builder": "layerwise",
+      "d": 6,
+      "chi": 8
+    }
+  ],
+  "ordering_seed": 120999,
+  "scope": "Serial full compute pipeline. Two new circuits; repetitions are timing replicates, not independent quality instances. No global finite-precision sampler certificate."
+}

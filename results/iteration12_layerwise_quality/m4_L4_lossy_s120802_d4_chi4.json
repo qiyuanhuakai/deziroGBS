@@ -1,0 +1,183 @@
+{
+  "input": "m4_L4_lossy_s120802_d4_chi4",
+  "modes": 4,
+  "depth": 4,
+  "profile": "lossy",
+  "seed": 120802,
+  "d": 4,
+  "chi": 4,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.00017780000052880496,
+  "single_mode_input_tail": 0.00014224577665591953,
+  "joint_input_tail": 0.0005688617149701351,
+  "input_trace_budget": 0.0238508221026055,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 4.403554774047222e-05,
+      "bond_tail": 0.0,
+      "combined_step_tail": 4.403554774047222e-05,
+      "step_trace_budget": 0.006635928551489401,
+      "rank": 4,
+      "gate_isometry_residual": 6.661610816350127e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 2.252311273619966e-08,
+      "bond_tail": 0.0,
+      "combined_step_tail": 2.252311273619966e-08,
+      "step_trace_budget": 0.00015007702267902192,
+      "rank": 4,
+      "gate_isometry_residual": 6.661338147750939e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 2.3847112886233427e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 2.3847112886233427e-10,
+      "step_trace_budget": 1.5442510445595764e-05,
+      "rank": 16,
+      "gate_isometry_residual": 9.992007221626409e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 2.275706271785056e-08,
+      "bond_tail": 0.0,
+      "combined_step_tail": 2.275706271785056e-08,
+      "step_trace_budget": 0.00015085444215484859,
+      "rank": 4,
+      "gate_isometry_residual": 4.440892098500626e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 2.167664187095718e-05,
+      "bond_tail": 0.0,
+      "combined_step_tail": 2.167664187095718e-05,
+      "step_trace_budget": 0.004655818066780228,
+      "rank": 4,
+      "gate_isometry_residual": 3.3306690738754696e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 1.7769033991031373e-05,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.7769033991031373e-05,
+      "step_trace_budget": 0.0042153332004755415,
+      "rank": 16,
+      "gate_isometry_residual": 3.331103923426739e-16,
+      "norm_residual": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 4.4058069861390806e-05,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.006637625317942464
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 2.3847112886233427e-10,
+      "rounding_conditional_losses": [
+        0.0,
+        6.466798069063036e-07,
+        0.0
+      ],
+      "rounding_tail": 6.466798069063036e-07,
+      "layer_trace_budget": 0.000819606552731934
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 2.169939844037833e-05,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.004658261310873224
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 1.7769033991031373e-05,
+      "rounding_conditional_losses": [
+        0.0,
+        5.987716271278411e-05,
+        0.0
+      ],
+      "rounding_tail": 5.987716271278412e-05,
+      "layer_trace_budget": 0.011953366717641523
+    }
+  ],
+  "layer_trace_budget_sum": 0.024068859899189145,
+  "construction_trace_budget": 0.047919682001794646,
+  "unclipped_construction_trace_budget": 0.047919682001794646,
+  "max_bond_actual": 4,
+  "stored_complex_elements": 160,
+  "peak_stored_mps_elements": 544,
+  "max_pair_branch_elements": 448,
+  "construction_seconds": 0.0022801000013714656,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 3.540000761859119e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 1.2212453270876722e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.01263430000108201,
+  "end_to_end_compute_seconds": 0.015131799998925999,
+  "status": "complete",
+  "state_trace_distance": 0.02379961824778811,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 8.391724815037804e-16,
+  "averaged_tv": 0.0009404326571428736,
+  "averaged_bound_check": true,
+  "averaged_status": "complete",
+  "averaged_diagnostics": {
+    "raw_mass": 0.9999999999999994,
+    "raw_sum_error": 5.551115123125783e-16,
+    "raw_minimum": 0.00119300622800389,
+    "raw_negative_mass": -0.0,
+    "correction_l1": 5.319095858213885e-16,
+    "internal_longdouble_correction_l1": 5.319095858213885e-16,
+    "correction_max_absolute": 3.3306690738754696e-16,
+    "raw_export_conversion_l1": 0.0,
+    "corrected_export_conversion_l1": 0.0,
+    "negative_atom_tolerance": 1e-11,
+    "sum_error_tolerance": 1e-11,
+    "correction_l1_tolerance": 1e-09,
+    "repair_rule": "zero negative atoms then divide by remaining mass; raw values retained",
+    "outward_rounded_certificate": false,
+    "compatible_unordered_pairs": 81792,
+    "max_pairs": 2500000,
+    "basis_size_for_count": 256,
+    "modes": 4,
+    "marginals": 16,
+    "max_modes": 12,
+    "method": "analytic_gaussian_tilt_wick",
+    "actual_compatible_pairs": 81792,
+    "max_moments": 100000,
+    "input_state_norm_float": 0.9999999999999994,
+    "wick_cache_peak": 16506,
+    "wick_cache_hits": 130797,
+    "input_covariance_symmetry_residual": 0.0,
+    "input_covariance_minimum_eigenvalue_float": -6.171055973153193e-17,
+    "tilted_covariance_max_asymmetry_before_symmetrization": 1.0408340855860843e-17,
+    "tilted_covariance_asymmetry_tolerance": 1e-12,
+    "diagonal_expectation_max_imaginary_residual": 2.5024360783124437e-24,
+    "diagonal_expectation_imaginary_tolerance": 1e-11,
+    "maximum_moment_degree": 24,
+    "exact_zero_coefficients_omitted": 0,
+    "seconds": 0.3232943999901181
+  },
+  "reference_seconds": 0.3555882000073325
+}

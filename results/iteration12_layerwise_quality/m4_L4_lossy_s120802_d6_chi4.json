@@ -1,0 +1,143 @@
+{
+  "input": "m4_L4_lossy_s120802_d6_chi4",
+  "modes": 4,
+  "depth": 4,
+  "profile": "lossy",
+  "seed": 120802,
+  "d": 6,
+  "chi": 4,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.00018060000729747117,
+  "single_mode_input_tail": 2.3030384263466386e-06,
+  "joint_input_tail": 9.212121881519457e-06,
+  "input_trace_budget": 0.003035147752831723,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 6.243215276068745e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 6.243215276068745e-07,
+      "step_trace_budget": 0.0007901401949064954,
+      "rank": 6,
+      "gate_isometry_residual": 1.110255526414674e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 8.880548379670055e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 8.880548379670055e-10,
+      "step_trace_budget": 2.980024895813801e-05,
+      "rank": 6,
+      "gate_isometry_residual": 8.881900996792294e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.984577288650333e-12,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.984577288650333e-12,
+      "step_trace_budget": 1.9961405984174394e-06,
+      "rank": 24,
+      "gate_isometry_residual": 1.6653345369378975e-15,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 4.256895493846318e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 4.256895493846318e-10,
+      "step_trace_budget": 2.0632245379130014e-05,
+      "rank": 6,
+      "gate_isometry_residual": 6.662025205490556e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 1.909071361351946e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.909071361351946e-07,
+      "step_trace_budget": 0.00043692921181261683,
+      "rank": 6,
+      "gate_isometry_residual": 1.1102238859256687e-15,
+      "norm_residual": 3.3306690738754696e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.1815235028906617e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.1815235028906617e-07,
+      "step_trace_budget": 0.0005640499537178123,
+      "rank": 24,
+      "gate_isometry_residual": 9.992422007038758e-16,
+      "norm_residual": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 6.252095818904096e-07,
+      "rounding_conditional_losses": [
+        2.9317092247828793e-09,
+        0.0,
+        2.416571175315963e-10
+      ],
+      "rounding_tail": 3.173366341606007e-09,
+      "layer_trace_budget": 0.0008470345952664351
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.984577288650333e-12,
+      "rounding_conditional_losses": [
+        0.0,
+        1.6015760851533058e-06,
+        0.0
+      ],
+      "rounding_tail": 1.6015760851533058e-06,
+      "layer_trace_budget": 0.0012675300536775201
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 1.9133282560331207e-07,
+      "rounding_conditional_losses": [
+        2.067839061473273e-08,
+        0.0,
+        2.827295422939068e-07
+      ],
+      "rounding_tail": 3.0340792706224764e-07,
+      "layer_trace_budget": 0.0009882408481884308
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.181523502890661e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        4.8323223852526465e-05,
+        0.0
+      ],
+      "rounding_tail": 4.8323223852526465e-05,
+      "layer_trace_budget": 0.007515540718476581
+    }
+  ],
+  "layer_trace_budget_sum": 0.010618346215608967,
+  "construction_trace_budget": 0.01365349396844069,
+  "unclipped_construction_trace_budget": 0.01365349396844069,
+  "max_bond_actual": 4,
+  "stored_complex_elements": 240,
+  "peak_stored_mps_elements": 1200,
+  "max_pair_branch_elements": 1056,
+  "construction_seconds": 0.004300799992051907,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 4.2100000428035855e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 1.4432899320127035e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.012249599996721372,
+  "end_to_end_compute_seconds": 0.016777800003183074,
+  "status": "complete",
+  "state_trace_distance": 0.0074491954889854195,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 1.410709656729514e-15,
+  "reference_seconds": 0.5200321000011172
+}

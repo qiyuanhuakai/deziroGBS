@@ -1,0 +1,143 @@
+{
+  "input": "m4_L4_lossy_s120802_d6_chi2",
+  "modes": 4,
+  "depth": 4,
+  "profile": "lossy",
+  "seed": 120802,
+  "d": 6,
+  "chi": 2,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.0001905999961309135,
+  "single_mode_input_tail": 2.3030384263466386e-06,
+  "joint_input_tail": 9.212121881519457e-06,
+  "input_trace_budget": 0.003035147752831723,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 6.243215276068745e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 6.243215276068745e-07,
+      "step_trace_budget": 0.0007901401949064954,
+      "rank": 6,
+      "gate_isometry_residual": 1.110255526414674e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 8.880548379670055e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 8.880548379670055e-10,
+      "step_trace_budget": 2.980024895813801e-05,
+      "rank": 6,
+      "gate_isometry_residual": 8.881900996792294e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.885850709458536e-12,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.885850709458536e-12,
+      "step_trace_budget": 1.9712561247738804e-06,
+      "rank": 12,
+      "gate_isometry_residual": 1.6653345369378975e-15,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 3.996665573983144e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.996665573983144e-10,
+      "step_trace_budget": 1.999166219698388e-05,
+      "rank": 6,
+      "gate_isometry_residual": 6.662025205490556e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 1.8751721451796327e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.8751721451796327e-07,
+      "step_trace_budget": 0.0004330325790491557,
+      "rank": 6,
+      "gate_isometry_residual": 1.1102238859256687e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.5220495318228436e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.5220495318228436e-07,
+      "step_trace_budget": 0.0005934685780917844,
+      "rank": 12,
+      "gate_isometry_residual": 9.992422007038758e-16,
+      "norm_residual": 1.1102230246251565e-16
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 6.252095818904096e-07,
+      "rounding_conditional_losses": [
+        0.0001444196076154601,
+        0.0,
+        2.3266944994264145e-09
+      ],
+      "rounding_tail": 0.00014442193397393922,
+      "layer_trace_budget": 0.012808269678035
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.885850709458537e-12,
+      "rounding_conditional_losses": [
+        0.0,
+        1.6134890762203177e-05,
+        0.0
+      ],
+      "rounding_tail": 1.6134890762203177e-05,
+      "layer_trace_budget": 0.00401879721230002
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 1.879168810004172e-07,
+      "rounding_conditional_losses": [
+        4.159227461330247e-06,
+        0.0,
+        0.0002190991171386297
+      ],
+      "rounding_tail": 0.00022325743331689523,
+      "layer_trace_budget": 0.015375295349216944
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.5220495318228436e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        0.002280755310969564,
+        0.0
+      ],
+      "rounding_tail": 0.002280755310969564,
+      "layer_trace_budget": 0.048350722592215796
+    }
+  ],
+  "layer_trace_budget_sum": 0.08055308483176776,
+  "construction_trace_budget": 0.08358823258459949,
+  "unclipped_construction_trace_budget": 0.08358823258459949,
+  "max_bond_actual": 2,
+  "stored_complex_elements": 72,
+  "peak_stored_mps_elements": 312,
+  "max_pair_branch_elements": 264,
+  "construction_seconds": 0.003957200009608641,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 5.399998917710036e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 1.3322676295501878e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.012635499995667487,
+  "end_to_end_compute_seconds": 0.01684279998880811,
+  "status": "complete",
+  "state_trace_distance": 0.05169806232837807,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 2.0320117116723324e-15,
+  "reference_seconds": 0.49674139999842737
+}

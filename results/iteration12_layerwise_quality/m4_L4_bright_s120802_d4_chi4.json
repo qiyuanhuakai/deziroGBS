@@ -1,0 +1,183 @@
+{
+  "input": "m4_L4_bright_s120802_d4_chi4",
+  "modes": 4,
+  "depth": 4,
+  "profile": "bright",
+  "seed": 120802,
+  "d": 4,
+  "chi": 4,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.00020170000789221376,
+  "single_mode_input_tail": 0.007563074411257369,
+  "joint_input_tail": 0.02991082424016302,
+  "input_trace_budget": 0.17294746092430216,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 0.0020009471995538998,
+      "bond_tail": 0.0,
+      "combined_step_tail": 0.0020009471995538998,
+      "step_trace_budget": 0.04473194830938956,
+      "rank": 4,
+      "gate_isometry_residual": 6.661610816350127e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 1.0234358754964407e-06,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.0234358754964407e-06,
+      "step_trace_budget": 0.0010116500756172763,
+      "rank": 4,
+      "gate_isometry_residual": 6.661338147750939e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 7.137158701624803e-08,
+      "bond_tail": 0.0,
+      "combined_step_tail": 7.137158701624803e-08,
+      "step_trace_budget": 0.0002671546125677938,
+      "rank": 16,
+      "gate_isometry_residual": 9.992007221626409e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 3.623131822567094e-06,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.623131822567094e-06,
+      "step_trace_budget": 0.0019034526058105817,
+      "rank": 4,
+      "gate_isometry_residual": 4.440892098500626e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 0.0009802868752962883,
+      "bond_tail": 0.0,
+      "combined_step_tail": 0.0009802868752962883,
+      "step_trace_budget": 0.03130953329732477,
+      "rank": 4,
+      "gate_isometry_residual": 3.3306690738754696e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 0.0008722735874554333,
+      "bond_tail": 0.0,
+      "combined_step_tail": 0.0008722735874554333,
+      "step_trace_budget": 0.02953427817732191,
+      "rank": 16,
+      "gate_isometry_residual": 3.331103923426739e-16,
+      "norm_residual": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 0.0020019685875882474,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.04474336361504628
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 7.137158701624803e-08,
+      "rounding_conditional_losses": [
+        0.0,
+        8.315671933443084e-05,
+        0.0
+      ],
+      "rounding_tail": 8.315671933443084e-05,
+      "layer_trace_budget": 0.00938618522631347
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 0.000983906455410282,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.031367283200976814
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 0.0008722735874554333,
+      "rounding_conditional_losses": [
+        0.0,
+        0.003022440365483458,
+        0.0
+      ],
+      "rounding_tail": 0.003022440365483458,
+      "layer_trace_budget": 0.08451100384813154
+    }
+  ],
+  "layer_trace_budget_sum": 0.17000783589046808,
+  "construction_trace_budget": 0.3429552968147702,
+  "unclipped_construction_trace_budget": 0.3429552968147702,
+  "max_bond_actual": 4,
+  "stored_complex_elements": 160,
+  "peak_stored_mps_elements": 544,
+  "max_pair_branch_elements": 448,
+  "construction_seconds": 0.0021807000011904165,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 4.130000888835639e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 1.1102230246251565e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.012141300001530908,
+  "end_to_end_compute_seconds": 0.014570300001651049,
+  "status": "complete",
+  "state_trace_distance": 0.17362433508288191,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 4.649058915617843e-16,
+  "averaged_tv": 0.01884559283913001,
+  "averaged_bound_check": true,
+  "averaged_status": "complete",
+  "averaged_diagnostics": {
+    "raw_mass": 1.0,
+    "raw_sum_error": 0.0,
+    "raw_minimum": 0.024990676900769115,
+    "raw_negative_mass": -0.0,
+    "correction_l1": 0.0,
+    "internal_longdouble_correction_l1": 0.0,
+    "correction_max_absolute": 0.0,
+    "raw_export_conversion_l1": 0.0,
+    "corrected_export_conversion_l1": 0.0,
+    "negative_atom_tolerance": 1e-11,
+    "sum_error_tolerance": 1e-11,
+    "correction_l1_tolerance": 1e-09,
+    "repair_rule": "zero negative atoms then divide by remaining mass; raw values retained",
+    "outward_rounded_certificate": false,
+    "compatible_unordered_pairs": 81792,
+    "max_pairs": 2500000,
+    "basis_size_for_count": 256,
+    "modes": 4,
+    "marginals": 16,
+    "max_modes": 12,
+    "method": "analytic_gaussian_tilt_wick",
+    "actual_compatible_pairs": 81792,
+    "max_moments": 100000,
+    "input_state_norm_float": 1.0,
+    "wick_cache_peak": 16506,
+    "wick_cache_hits": 130797,
+    "input_covariance_symmetry_residual": 0.0,
+    "input_covariance_minimum_eigenvalue_float": -3.522445048006231e-16,
+    "tilted_covariance_max_asymmetry_before_symmetrization": 2.7755575615628914e-17,
+    "tilted_covariance_asymmetry_tolerance": 1e-12,
+    "diagonal_expectation_max_imaginary_residual": 1.5121547903435984e-21,
+    "diagonal_expectation_imaginary_tolerance": 1e-11,
+    "maximum_moment_degree": 24,
+    "exact_zero_coefficients_omitted": 0,
+    "seconds": 0.35285369999473915
+  },
+  "reference_seconds": 0.39502210001228377
+}

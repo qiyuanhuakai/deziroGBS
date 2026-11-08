@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08",
+  "platform": "Windows-10-10.0.29704-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.16.2",
+  "base_commit": "64f5fd720fed195868178efc47c6758cb5cd33cd",
+  "source_hashes": {
+    "src/gbslab/local_mps.py": "5a975db79cba49e1c2227fe6e911506b521ae86f53b26a0190687d968c39d8c8",
+    "src/gbslab/mps_probe.py": "d1b94ea7aba6ac493e76a6632fe3a5568c9bf8218ff859fc65052af4ad21d8a1",
+    "src/gbslab/gaussian.py": "9385e5ad920989196a509a39b45bca538ba7f51b3e0c0085dd844110fe806ee4",
+    "src/gbslab/exact.py": "39c5133c2dae4407d22d55de3d4a50f2a82e715a958721972029e22c2b9f8427",
+    "experiments/iteration12_run.py": "e2919754aaae9ff9aee338dc17ff904147750327ca1eae6bdef20f4aaecc3612",
+    "experiments/iteration12_reference.py": "9246a5358694864cce131ce8f72b03044eca7213344e768c1b0f40a41c6ef6f3",
+    "experiments/iteration10_reference.py": "43c06c79d698d6db2a3db2fc386b1c0d0efe1ef571898aa3c6c10380ef69626a",
+    "configs/iteration12_local_mps.json": "51afd42df0a3d540fa9525732cd8bf19efcba16f901bc23686dd808846ba1881",
+    "tests/test_local_mps.py": "3a484eea81a3d0c1dbcdbdd60b042c341f7caf5d7af4a6dbbaf9097e7c8bf179"
+  },
+  "cost_scope": "Circuit, parameters, product construction, gates, all QR/SVD, correlated displacements, canonical validation, sampling and output array creation. Excludes file IO and independent quality references."
+}

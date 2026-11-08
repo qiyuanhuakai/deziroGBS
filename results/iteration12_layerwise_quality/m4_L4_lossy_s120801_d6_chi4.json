@@ -1,0 +1,143 @@
+{
+  "input": "m4_L4_lossy_s120801_d6_chi4",
+  "modes": 4,
+  "depth": 4,
+  "profile": "lossy",
+  "seed": 120801,
+  "d": 6,
+  "chi": 4,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.00019069999689236283,
+  "single_mode_input_tail": 2.3030384263466386e-06,
+  "joint_input_tail": 9.212121881519457e-06,
+  "input_trace_budget": 0.003035147752831723,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 7.406864298663059e-08,
+      "bond_tail": 0.0,
+      "combined_step_tail": 7.406864298663059e-08,
+      "step_trace_budget": 0.00027215554924827566,
+      "rank": 6,
+      "gate_isometry_residual": 6.661338235754623e-16,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 2.3594104443723333e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 2.3594104443723333e-07,
+      "step_trace_budget": 0.00048573762921687807,
+      "rank": 6,
+      "gate_isometry_residual": 5.008035812649783e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 1.1054472917530372e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.1054472917530372e-07,
+      "step_trace_budget": 0.0003324826750002227,
+      "rank": 24,
+      "gate_isometry_residual": 4.441423749899269e-16,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 8.60127448883404e-09,
+      "bond_tail": 0.0,
+      "combined_step_tail": 8.60127448883404e-09,
+      "step_trace_budget": 9.274305628365953e-05,
+      "rank": 6,
+      "gate_isometry_residual": 8.881794094444949e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 3.603802826605079e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.603802826605079e-07,
+      "step_trace_budget": 0.0006003168185720835,
+      "rank": 6,
+      "gate_isometry_residual": 1.1102234101109195e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 8.428873630704661e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 8.428873630704661e-07,
+      "step_trace_budget": 0.0009180889733955343,
+      "rank": 24,
+      "gate_isometry_residual": 1.1102261854595413e-15,
+      "norm_residual": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 3.10009669948031e-07,
+      "rounding_conditional_losses": [
+        7.383210954265069e-09,
+        0.0,
+        2.7576007954824423e-09
+      ],
+      "rounding_tail": 1.0140811729387564e-08,
+      "layer_trace_budget": 0.0006574867175369813
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 1.1054472917530372e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        2.8044640127284787e-06,
+        0.0
+      ],
+      "rounding_tail": 2.8044640127284783e-06,
+      "layer_trace_budget": 0.0020071360757755825
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 3.689815540496122e-07,
+      "rounding_conditional_losses": [
+        1.5216527313927987e-08,
+        0.0,
+        8.389131619428916e-07
+      ],
+      "rounding_tail": 8.541296764914744e-07,
+      "layer_trace_budget": 0.0015316298823072737
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 8.42887363070466e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        3.220739052556864e-06,
+        0.0
+      ],
+      "rounding_tail": 3.220739052556864e-06,
+      "layer_trace_budget": 0.002712730735017297
+    }
+  ],
+  "layer_trace_budget_sum": 0.006908983410637134,
+  "construction_trace_budget": 0.009944131163468857,
+  "unclipped_construction_trace_budget": 0.009944131163468857,
+  "max_bond_actual": 4,
+  "stored_complex_elements": 240,
+  "peak_stored_mps_elements": 1200,
+  "max_pair_branch_elements": 1056,
+  "construction_seconds": 0.003922999996575527,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 4.4200001866556704e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 1.3322676295501878e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.012412800002493896,
+  "end_to_end_compute_seconds": 0.016575800007558428,
+  "status": "complete",
+  "state_trace_distance": 0.00367088045281728,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 1.7069679003611782e-15,
+  "reference_seconds": 0.5218051000119885
+}

@@ -1,0 +1,143 @@
+{
+  "input": "m4_L4_lossy_s120802_d6_chi8",
+  "modes": 4,
+  "depth": 4,
+  "profile": "lossy",
+  "seed": 120802,
+  "d": 6,
+  "chi": 8,
+  "requested_samples": 128,
+  "builder": "layerwise",
+  "circuit_and_parameters_seconds": 0.0001917999907163903,
+  "single_mode_input_tail": 2.3030384263466386e-06,
+  "joint_input_tail": 9.212121881519457e-06,
+  "input_trace_budget": 0.003035147752831723,
+  "gates": [
+    {
+      "first": 0,
+      "local_projection_tail": 6.243215276068745e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 6.243215276068745e-07,
+      "step_trace_budget": 0.0007901401949064954,
+      "rank": 6,
+      "gate_isometry_residual": 1.110255526414674e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 8.880548379670055e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 8.880548379670055e-10,
+      "step_trace_budget": 2.980024895813801e-05,
+      "rank": 6,
+      "gate_isometry_residual": 8.881900996792294e-16,
+      "norm_residual": 1.1102230246251565e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.988066827833819e-12,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.988066827833819e-12,
+      "step_trace_budget": 1.9970144786239832e-06,
+      "rank": 36,
+      "gate_isometry_residual": 1.6653345369378975e-15,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 0,
+      "local_projection_tail": 4.559378172535221e-10,
+      "bond_tail": 0.0,
+      "combined_step_tail": 4.559378172535221e-10,
+      "step_trace_budget": 2.135270046747067e-05,
+      "rank": 6,
+      "gate_isometry_residual": 6.662025205490556e-16,
+      "norm_residual": 0.0
+    },
+    {
+      "first": 2,
+      "local_projection_tail": 1.9135207083602241e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 1.9135207083602241e-07,
+      "step_trace_budget": 0.00043743807657315614,
+      "rank": 6,
+      "gate_isometry_residual": 1.1102238859256687e-15,
+      "norm_residual": 2.220446049250313e-16
+    },
+    {
+      "first": 1,
+      "local_projection_tail": 3.169178629848731e-07,
+      "bond_tail": 0.0,
+      "combined_step_tail": 3.169178629848731e-07,
+      "step_trace_budget": 0.0005629545834122617,
+      "rank": 36,
+      "gate_isometry_residual": 9.992422007038758e-16,
+      "norm_residual": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "gate_count": 2,
+      "local_projection_tail": 6.252095818904096e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.0007907019551578266
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.988066827833819e-12,
+      "rounding_conditional_losses": [
+        0.0,
+        2.3548521290517604e-09,
+        0.0
+      ],
+      "rounding_tail": 2.3548521290517604e-09,
+      "layer_trace_budget": 5.052383313647297e-05
+    },
+    {
+      "gate_count": 2,
+      "local_projection_tail": 1.9180800856603132e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rounding_tail": -0.0,
+      "layer_trace_budget": 0.0004379589119609639
+    },
+    {
+      "gate_count": 1,
+      "local_projection_tail": 3.169178629848731e-07,
+      "rounding_conditional_losses": [
+        0.0,
+        5.600245063175952e-07,
+        0.0
+      ],
+      "rounding_tail": 5.600245063175952e-07,
+      "layer_trace_budget": 0.0013113024345601054
+    }
+  ],
+  "layer_trace_budget_sum": 0.0025904871348153688,
+  "construction_trace_budget": 0.005625634887647092,
+  "unclipped_construction_trace_budget": 0.005625634887647092,
+  "max_bond_actual": 8,
+  "stored_complex_elements": 648,
+  "peak_stored_mps_elements": 2664,
+  "max_pair_branch_elements": 2376,
+  "construction_seconds": 0.004634600001736544,
+  "scope": "Observed paths only; no global finite-precision failure or TV certificate",
+  "displacement_seconds": 5.259999306872487e-05,
+  "sampling_status": "complete",
+  "max_observed_conditional_norm_residual": 2.220446049250313e-15,
+  "completed_samples": 128,
+  "sampling_seconds": 0.012529500003438443,
+  "end_to_end_compute_seconds": 0.017414100002497435,
+  "status": "complete",
+  "state_trace_distance": 0.00305320115397791,
+  "state_bound_check": true,
+  "fixed_reference_max_error": 1.7763568394002505e-15,
+  "reference_seconds": 0.5266598000016529
+}

@@ -1,0 +1,65 @@
+{
+  "name": "iteration12_direct_local_circuit_mps",
+  "date": "2026-11-08",
+  "seeds": [
+    120801,
+    120802
+  ],
+  "profiles": [
+    {
+      "name": "lossy",
+      "r": 0.6,
+      "eta": 0.35
+    },
+    {
+      "name": "bright",
+      "r": 0.9,
+      "eta": 0.65
+    }
+  ],
+  "scaling_modes": [
+    8,
+    32,
+    64,
+    128
+  ],
+  "depths": [
+    4,
+    12
+  ],
+  "representations": [
+    {
+      "d": 4,
+      "chi": 4
+    },
+    {
+      "d": 6,
+      "chi": 8
+    },
+    {
+      "d": 8,
+      "chi": 16
+    }
+  ],
+  "samples": 128,
+  "quality_modes": [
+    2,
+    4
+  ],
+  "quality_depth": 4,
+  "quality_dimensions": [
+    4,
+    6
+  ],
+  "quality_bonds": [
+    2,
+    4,
+    8
+  ],
+  "averaged_reference_policy": "all m2; m4 d4 chi4 only",
+  "max_reference_pairs": 2500000,
+  "max_reference_moments": 100000,
+  "scope": "New exploratory local-network inputs. No Haar generalization. Pure construction budget excludes finite-precision and RNG error. Preserve reference resource refusals and all sampling failures.",
+  "builder": "layerwise",
+  "panel": "scaling"
+}

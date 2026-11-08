@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-08",
+  "rows_by_group": {
+    "gate_quality": 48,
+    "gate_scaling": 96,
+    "layer_quality": 48,
+    "layer_scaling": 96,
+    "timing": 12
+  },
+  "all_completed": true,
+  "sample_count": 38400,
+  "quality_full_averaged_laws": 56,
+  "quality_averaged_failures": 0,
+  "quality_state_checks": 96,
+  "gate_scaling_budget_at_most_01": 18,
+  "layer_scaling_budget_at_most_01": 27,
+  "layer_quality_actual_state_improved": 6,
+  "layer_quality_actual_state_worsened": 2,
+  "artifact_checks": 16923,
+  "artifact_checks_passed": 16923,
+  "serial_timing": [
+    {
+      "seed": 120901,
+      "gatewise": {
+        "median_seconds": 1.176282500004163,
+        "min_seconds": 1.1481198999972548,
+        "max_seconds": 1.2384824000037042,
+        "construction_budget": 0.033887982366007006,
+        "stored_complex_elements": 256128,
+        "repeats": 3
+      },
+      "layerwise": {
+        "median_seconds": 0.6241259000089485,
+        "min_seconds": 0.6193119999952614,
+        "max_seconds": 0.6589043000130914,
+        "construction_budget": 0.07105206614815361,
+        "stored_complex_elements": 48264,
+        "repeats": 3
+      },
+      "gate_over_layer_time_ratio": 1.884687849017799
+    },
+    {
+      "seed": 120902,
+      "gatewise": {
+        "median_seconds": 1.1384604000049876,
+        "min_seconds": 1.1208884999941802,
+        "max_seconds": 1.1458327000000281,
+        "construction_budget": 0.029216152453553034,
+        "stored_complex_elements": 256128,
+        "repeats": 3
+      },
+      "layerwise": {
+        "median_seconds": 0.6578156000032322,
+        "min_seconds": 0.6470623000059277,
+        "max_seconds": 0.6885581999958958,
+        "construction_budget": 0.061985410752872255,
+        "stored_complex_elements": 48264,
+        "repeats": 3
+      },
+      "gate_over_layer_time_ratio": 1.7306679865898493
+    }
+  ],
+  "source_bindings": {
+    "results\\iteration12_quality\\rows.json": "b394ba369ae0b826dec5537ea8ca154846619e916e298eea4ea23740b135eff3",
+    "results\\iteration12_scaling\\rows.json": "2278a3ce2b8c5d4c108ebc55fb05897200979cc9686fad4bde327eebfe41964e",
+    "results\\iteration12_layerwise_quality\\rows.json": "51f1fc69103ccb7530a4d212fb4f90de6c65f303a52eb31e472db7dbee000e23",
+    "results\\iteration12_layerwise_scaling\\rows.json": "f2198250af2f143fe23297a59ed255ae3ecbb52a38148a0d7933e73de399e5c8",
+    "results\\iteration12_serial_timing\\rows.json": "dfc66f404b2b78b368e04e5e692eafcf7a13982e8b321c9072f0c61247e413ff"
+  },
+  "scope": "Construction bounds are ideal-arithmetic state bounds, not certified finite-precision sampler TV."
+}
