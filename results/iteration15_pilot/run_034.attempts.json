@@ -1,0 +1,329 @@
+[
+  {
+    "single_mode_input_tail": 0.007563074411257369,
+    "joint_input_tail": 0.02991082424016302,
+    "input_trace_budget": 0.17294746092430216,
+    "status": "input_budget_rejected",
+    "dimension": 4,
+    "cap": 8,
+    "seconds": 0.00018440000712871552
+  },
+  {
+    "single_mode_input_tail": 0.0008788971185985031,
+    "joint_input_tail": 0.003510956428578816,
+    "input_trace_budget": 0.05925332419855291,
+    "dimension": 6,
+    "cap": 8,
+    "layers": [
+      {
+        "conditional_losses": [
+          4.46151441389379e-06,
+          0.0,
+          1.4587590940736308e-06
+        ],
+        "joint_tail": 5.920266999692697e-06,
+        "ranks": [
+          4,
+          1,
+          5
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 8.647426803130158e-06,
+        "joint_allowance": 2.5942056076066157e-05,
+        "projection_tail": 0.0004423604973007191,
+        "projection_trace": 0.021032367848169618,
+        "rounding_trace": 0.002433159879599509
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          4.1317636648528144e-05,
+          0.0
+        ],
+        "joint_tail": 4.131763664852815e-05,
+        "ranks": [
+          4,
+          8,
+          5
+        ],
+        "rank_cap_misses": 1,
+        "per_cut_allowance": 8.647426803130158e-06,
+        "joint_allowance": 2.5942056076066157e-05,
+        "projection_tail": 0.00018561018330349563,
+        "projection_trace": 0.013623882827721898,
+        "rounding_trace": 0.006427879638615533
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_tail": -0.0,
+        "ranks": [
+          6,
+          8,
+          6
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 8.647426803130158e-06,
+        "joint_allowance": 2.5942056076066157e-05,
+        "projection_tail": 0.00021229498083760807,
+        "projection_trace": 0.014570345940903671,
+        "rounding_trace": -0.0
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          1.255788348293031e-07,
+          0.0
+        ],
+        "joint_tail": 1.255788348293031e-07,
+        "ranks": [
+          6,
+          8,
+          6
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 8.647426803130158e-06,
+        "joint_allowance": 2.5942056076066157e-05,
+        "projection_tail": 2.2877734351286185e-08,
+        "projection_trace": 0.0001512538738389407,
+        "rounding_trace": 0.0003543710411832534
+      }
+    ],
+    "gates": [
+      {
+        "first": 0,
+        "local_projection_tail": 5.151693431204719e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 5.151693431204719e-05,
+        "step_trace_budget": 0.007177529819655728,
+        "rank": 6,
+        "gate_isometry_residual": 1.110223050057982e-15,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 0.0003908636990881828,
+        "bond_tail": 0.0,
+        "combined_step_tail": 0.0003908636990881828,
+        "step_trace_budget": 0.019770273116175782,
+        "rank": 6,
+        "gate_isometry_residual": 4.756441378550613e-16,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 0.0001856101833034956,
+        "bond_tail": 0.0,
+        "combined_step_tail": 0.0001856101833034956,
+        "step_trace_budget": 0.013623882827721897,
+        "rank": 24,
+        "gate_isometry_residual": 4.440990162969134e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 0,
+        "local_projection_tail": 3.136593555946076e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 3.136593555946076e-05,
+        "step_trace_budget": 0.005600529935591877,
+        "rank": 6,
+        "gate_isometry_residual": 4.442679889837449e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 0.0001809347204649299,
+        "bond_tail": 0.0,
+        "combined_step_tail": 0.0001809347204649299,
+        "step_trace_budget": 0.013451197733470796,
+        "rank": 6,
+        "gate_isometry_residual": 4.441622244915824e-16,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 2.287773435128619e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.287773435128619e-08,
+        "step_trace_budget": 0.0001512538738389407,
+        "rank": 36,
+        "gate_isometry_residual": 4.440892165987368e-16,
+        "norm_residual": 0.0
+      }
+    ],
+    "projection_trace_sum": 0.04937785049063413,
+    "rounding_trace_sum": 0.009215410559398295,
+    "completed_layers": 4,
+    "pending_gate_count": 0,
+    "rank_cap_misses": 1,
+    "stored_complex_elements": 648,
+    "max_bond_actual": 8,
+    "max_pair_branch_elements": 2376,
+    "seconds": 0.0054795000032754615,
+    "status": "budget_missed",
+    "construction_trace_budget": 0.11784658524858534,
+    "unclipped_construction_trace_budget": 0.11784658524858534
+  },
+  {
+    "single_mode_input_tail": 0.00010697854080905554,
+    "joint_input_tail": 0.00042784550168415374,
+    "input_trace_budget": 0.020684426549560268,
+    "dimension": 8,
+    "cap": 8,
+    "layers": [
+      {
+        "conditional_losses": [
+          7.290354842753521e-06,
+          0.0,
+          3.157416713479398e-05
+        ],
+        "joint_tail": 3.886429179066523e-05,
+        "ranks": [
+          3,
+          1,
+          4
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.2766491296705085e-05,
+        "joint_allowance": 9.829625299643909e-05,
+        "projection_tail": 7.71549403926135e-05,
+        "projection_trace": 0.00878378849885478,
+        "rounding_trace": 0.006234123177373482
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          2.3568048788251514e-05,
+          0.0
+        ],
+        "joint_tail": 2.3568048788251514e-05,
+        "ranks": [
+          3,
+          8,
+          4
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.2766491296705085e-05,
+        "joint_allowance": 9.829625299643909e-05,
+        "projection_tail": 1.665374692371012e-05,
+        "projection_trace": 0.0040809002589759676,
+        "rounding_trace": 0.004854693480360168
+      },
+      {
+        "conditional_losses": [
+          2.538173789127644e-05,
+          1.9143391924504304e-05,
+          2.5863579886185904e-05
+        ],
+        "joint_tail": 7.038707224272545e-05,
+        "ranks": [
+          5,
+          7,
+          5
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.2766491296705085e-05,
+        "joint_allowance": 9.829625299643909e-05,
+        "projection_tail": 3.575068781791409e-05,
+        "projection_trace": 0.005979187889497544,
+        "rounding_trace": 0.008389700366683274
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          2.408179901635767e-07,
+          0.0
+        ],
+        "joint_tail": 2.408179901635767e-07,
+        "ranks": [
+          5,
+          7,
+          5
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.2766491296705085e-05,
+        "joint_allowance": 9.829625299643909e-05,
+        "projection_tail": 4.319142192073992e-09,
+        "projection_trace": 6.572018101066059e-05,
+        "rounding_trace": 0.0004907320961212713
+      }
+    ],
+    "gates": [
+      {
+        "first": 0,
+        "local_projection_tail": 1.0618086126989383e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.0618086126989383e-05,
+        "step_trace_budget": 0.0032585404903099457,
+        "rank": 8,
+        "gate_isometry_residual": 1.7763568394002505e-15,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 6.653756076717502e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 6.653756076717502e-05,
+        "step_trace_budget": 0.008157055888442535,
+        "rank": 8,
+        "gate_isometry_residual": 9.485749680535094e-16,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 1.665374692371012e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.665374692371012e-05,
+        "step_trace_budget": 0.0040809002589759676,
+        "rank": 24,
+        "gate_isometry_residual": 1.3322676295501878e-15,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 0,
+        "local_projection_tail": 3.964649625114237e-06,
+        "bond_tail": 0.0,
+        "combined_step_tail": 3.964649625114237e-06,
+        "step_trace_budget": 0.0019911427937529336,
+        "rank": 8,
+        "gate_isometry_residual": 8.88290255040845e-16,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 3.178616421380389e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 3.178616421380389e-05,
+        "step_trace_budget": 0.005637921976562277,
+        "rank": 8,
+        "gate_isometry_residual": 6.661456158669491e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 4.319142192073993e-09,
+        "bond_tail": 0.0,
+        "combined_step_tail": 4.319142192073993e-09,
+        "step_trace_budget": 6.572018101066059e-05,
+        "rank": 40,
+        "gate_isometry_residual": 4.440892165987369e-16,
+        "norm_residual": 2.220446049250313e-16
+      }
+    ],
+    "projection_trace_sum": 0.01890959682833895,
+    "rounding_trace_sum": 0.019969249120538195,
+    "completed_layers": 4,
+    "pending_gate_count": 0,
+    "rank_cap_misses": 0,
+    "stored_complex_elements": 640,
+    "max_bond_actual": 7,
+    "max_pair_branch_elements": 3000,
+    "seconds": 0.008845000003930181,
+    "status": "accepted",
+    "construction_trace_budget": 0.05956327249843742,
+    "unclipped_construction_trace_budget": 0.05956327249843742
+  }
+]

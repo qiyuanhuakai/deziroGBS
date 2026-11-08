@@ -1,0 +1,48 @@
+{
+  "panel": "quality",
+  "modes": 4,
+  "depth": 12,
+  "profile": "bright",
+  "r": 0.9,
+  "eta": 0.65,
+  "seed": 150802,
+  "target": 0.1,
+  "method": "adaptive",
+  "dimensions": [
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "caps": [
+    8,
+    16,
+    32
+  ],
+  "max_pair_elements": 500000,
+  "max_attempt_seconds": 20.0,
+  "baseline_rss_bytes": 94720000,
+  "dimension": 8,
+  "cap": 32,
+  "construction_search_seconds": 0.10661650000838563,
+  "construction_trace_budget": 0.09660551939388906,
+  "target_met": true,
+  "stored_complex_elements": 2400,
+  "max_bond_actual": 19,
+  "attempts": 5,
+  "construction_pipeline_seconds": 0.10703670000657439,
+  "construction_peak_wset_bytes": 96989184,
+  "state_trace_distance": 0.03114058920735873,
+  "state_bound_check": true,
+  "sampling_status": "complete",
+  "completed_samples": 32,
+  "sampling_diagnostics": {
+    "max_observed_conditional_norm_residual": 8.881784197001252e-16,
+    "completed_samples": 32,
+    "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+  },
+  "status": "accepted",
+  "total_diagnostic_seconds": 0.1238259000092512,
+  "process_peak_wset_bytes": 97501184
+}

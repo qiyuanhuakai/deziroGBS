@@ -1,0 +1,127 @@
+[
+  {
+    "single_mode_input_tail": 3.9139073673826486e-08,
+    "joint_input_tail": 1.5655628550410366e-07,
+    "input_trace_budget": 0.00039567194177007756,
+    "gates": [
+      {
+        "first": 0,
+        "local_projection_tail": 3.3370608312606897e-09,
+        "bond_tail": 0.0,
+        "combined_step_tail": 3.3370608312606897e-09,
+        "step_trace_budget": 5.7767298978407235e-05,
+        "rank": 8,
+        "gate_isometry_residual": 1.7763568394002505e-15,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 2.55974779068453e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.55974779068453e-08,
+        "step_trace_budget": 0.0001599921182647611,
+        "rank": 8,
+        "gate_isometry_residual": 9.485749680535094e-16,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 5.1147007142981415e-09,
+        "bond_tail": 0.0,
+        "combined_step_tail": 5.1147007142981415e-09,
+        "step_trace_budget": 7.151713580882656e-05,
+        "rank": 64,
+        "gate_isometry_residual": 1.3322676295501878e-15,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 0,
+        "local_projection_tail": 8.555322935669822e-10,
+        "bond_tail": 0.0,
+        "combined_step_tail": 8.555322935669822e-10,
+        "step_trace_budget": 2.9249483646160014e-05,
+        "rank": 8,
+        "gate_isometry_residual": 8.88290255040845e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 1.2385546065749235e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.2385546065749235e-08,
+        "step_trace_budget": 0.00011129036825237499,
+        "rank": 8,
+        "gate_isometry_residual": 6.661456158669491e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 6.12727279704726e-13,
+        "bond_tail": 0.0,
+        "combined_step_tail": 6.12727279704726e-13,
+        "step_trace_budget": 7.827689823343321e-07,
+        "rank": 64,
+        "gate_isometry_residual": 4.440892165987369e-16,
+        "norm_residual": 2.220446049250313e-16
+      }
+    ],
+    "layers": [
+      {
+        "gate_count": 2,
+        "local_projection_tail": 2.8934538652685644e-08,
+        "rounding_conditional_losses": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounding_tail": -0.0,
+        "layer_trace_budget": 0.00017010155393965584
+      },
+      {
+        "gate_count": 1,
+        "local_projection_tail": 5.1147007142981415e-09,
+        "rounding_conditional_losses": [
+          0.0,
+          3.884579436133567e-11,
+          0.0
+        ],
+        "rounding_tail": 3.884579436133567e-11,
+        "layer_trace_budget": 7.774977524660376e-05
+      },
+      {
+        "gate_count": 2,
+        "local_projection_tail": 1.3241078348719985e-08,
+        "rounding_conditional_losses": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounding_tail": -0.0,
+        "layer_trace_budget": 0.00011506988462981956
+      },
+      {
+        "gate_count": 1,
+        "local_projection_tail": 6.12727279704726e-13,
+        "rounding_conditional_losses": [
+          0.0,
+          2.8744059468074825e-13,
+          0.0
+        ],
+        "rounding_tail": 2.874405946807482e-13,
+        "layer_trace_budget": 1.3189038484648125e-06
+      }
+    ],
+    "layer_trace_budget_sum": 0.000364240117664544,
+    "construction_trace_budget": 0.0007599120594346216,
+    "unclipped_construction_trace_budget": 0.0007599120594346216,
+    "max_bond_actual": 16,
+    "stored_complex_elements": 2176,
+    "peak_stored_mps_elements": 8320,
+    "max_pair_branch_elements": 7680,
+    "construction_seconds": 0.012531100001069717,
+    "scope": "Layer projection plus nested sweep triangle bound in ideal arithmetic, evaluated in float64; excludes numerical state and sampling errors",
+    "status": "accepted",
+    "dimension": 8,
+    "cap": 16
+  }
+]

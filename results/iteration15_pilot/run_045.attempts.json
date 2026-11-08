@@ -1,0 +1,127 @@
+[
+  {
+    "single_mode_input_tail": 3.9139073673826486e-08,
+    "joint_input_tail": 1.5655628550410366e-07,
+    "input_trace_budget": 0.00039567194177007756,
+    "gates": [
+      {
+        "first": 0,
+        "local_projection_tail": 1.2901842637381241e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.2901842637381241e-08,
+        "step_trace_budget": 0.00011358627838511675,
+        "rank": 8,
+        "gate_isometry_residual": 1.998416316061626e-15,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 2.4539632439020596e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.4539632439020596e-08,
+        "step_trace_budget": 0.000156651308449756,
+        "rank": 8,
+        "gate_isometry_residual": 3.1086244689504383e-15,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 9.1836042655921e-09,
+        "bond_tail": 0.0,
+        "combined_step_tail": 9.1836042655921e-09,
+        "step_trace_budget": 9.583112367906421e-05,
+        "rank": 64,
+        "gate_isometry_residual": 6.661708475036901e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 0,
+        "local_projection_tail": 4.229127179726107e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 4.229127179726107e-08,
+        "step_trace_budget": 0.00020564841793036258,
+        "rank": 8,
+        "gate_isometry_residual": 1.4433706352861588e-15,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 2.8573101779555056e-08,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.8573101779555056e-08,
+        "step_trace_budget": 0.00016903580028962816,
+        "rank": 8,
+        "gate_isometry_residual": 3.774758283725532e-15,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 6.539227332097142e-09,
+        "bond_tail": 0.0,
+        "combined_step_tail": 6.539227332097142e-09,
+        "step_trace_budget": 8.086548912915288e-05,
+        "rank": 64,
+        "gate_isometry_residual": 2.55351295663786e-15,
+        "norm_residual": 0.0
+      }
+    ],
+    "layers": [
+      {
+        "gate_count": 2,
+        "local_projection_tail": 3.744147475979536e-08,
+        "rounding_conditional_losses": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounding_tail": -0.0,
+        "layer_trace_budget": 0.00019349799678496768
+      },
+      {
+        "gate_count": 1,
+        "local_projection_tail": 9.1836042655921e-09,
+        "rounding_conditional_losses": [
+          0.0,
+          7.50450024613993e-11,
+          0.0
+        ],
+        "rounding_tail": 7.50450024613993e-11,
+        "layer_trace_budget": 0.00010449397554559173
+      },
+      {
+        "gate_count": 2,
+        "local_projection_tail": 7.086437236842331e-08,
+        "rounding_conditional_losses": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rounding_tail": -0.0,
+        "layer_trace_budget": 0.00026620362951774963
+      },
+      {
+        "gate_count": 1,
+        "local_projection_tail": 6.539227332097143e-09,
+        "rounding_conditional_losses": [
+          0.0,
+          3.22815923966802e-09,
+          0.0
+        ],
+        "rounding_tail": 3.2281592396680194e-09,
+        "layer_trace_budget": 0.00013768238133268703
+      }
+    ],
+    "layer_trace_budget_sum": 0.0007018779831809961,
+    "construction_trace_budget": 0.0010975499249510736,
+    "unclipped_construction_trace_budget": 0.0010975499249510736,
+    "max_bond_actual": 16,
+    "stored_complex_elements": 2176,
+    "peak_stored_mps_elements": 8320,
+    "max_pair_branch_elements": 7680,
+    "construction_seconds": 0.01160169999639038,
+    "scope": "Layer projection plus nested sweep triangle bound in ideal arithmetic, evaluated in float64; excludes numerical state and sampling errors",
+    "status": "accepted",
+    "dimension": 8,
+    "cap": 16
+  }
+]

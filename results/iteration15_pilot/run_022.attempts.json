@@ -1,0 +1,161 @@
+[
+  {
+    "single_mode_input_tail": 0.00014224577665591953,
+    "joint_input_tail": 0.0005688617149701351,
+    "input_trace_budget": 0.0238508221026055,
+    "dimension": 4,
+    "cap": 8,
+    "layers": [
+      {
+        "conditional_losses": [
+          6.254584130433235e-07,
+          0.0,
+          2.8207408786692117e-06
+        ],
+        "joint_tail": 3.446197527456422e-06,
+        "ranks": [
+          3,
+          1,
+          3
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.0202460588030853e-05,
+        "joint_allowance": 9.060464522576618e-05,
+        "projection_tail": 4.176638011255814e-05,
+        "projection_trace": 0.0064626913985241586,
+        "rounding_trace": 0.0018563936887030245
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          2.441408516682633e-05,
+          0.0
+        ],
+        "joint_tail": 2.4414085166826334e-05,
+        "ranks": [
+          3,
+          4,
+          3
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.0202460588030853e-05,
+        "joint_allowance": 9.060464522576618e-05,
+        "projection_tail": 1.1404975896810344e-05,
+        "projection_trace": 0.0033771253895599354,
+        "rounding_trace": 0.004941061137734113
+      },
+      {
+        "conditional_losses": [
+          6.208737034145377e-06,
+          0.0,
+          0.0
+        ],
+        "joint_tail": 6.208737034145378e-06,
+        "ranks": [
+          3,
+          4,
+          4
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.0202460588030853e-05,
+        "joint_allowance": 9.060464522576618e-05,
+        "projection_tail": 9.00210714195332e-05,
+        "projection_trace": 0.009487943476830645,
+        "rounding_trace": 0.002491733740620249
+      },
+      {
+        "conditional_losses": [
+          0.0,
+          3.737368402424251e-06,
+          0.0
+        ],
+        "joint_tail": 3.737368402424251e-06,
+        "ranks": [
+          3,
+          5,
+          4
+        ],
+        "rank_cap_misses": 0,
+        "per_cut_allowance": 3.0202460588030853e-05,
+        "joint_allowance": 9.060464522576618e-05,
+        "projection_tail": 2.9740367076421608e-06,
+        "projection_trace": 0.0017245395639538575,
+        "rounding_trace": 0.001933227457498018
+      }
+    ],
+    "gates": [
+      {
+        "first": 0,
+        "local_projection_tail": 1.5338382661804758e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.5338382661804758e-05,
+        "step_trace_budget": 0.00391642472949561,
+        "rank": 4,
+        "gate_isometry_residual": 8.882097247987952e-16,
+        "norm_residual": 1.1102230246251565e-16
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 2.6428402819708977e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.6428402819708977e-05,
+        "step_trace_budget": 0.005140856234102348,
+        "rank": 4,
+        "gate_isometry_residual": 7.771561172376096e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 1.1404975896810344e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 1.1404975896810344e-05,
+        "step_trace_budget": 0.0033771253895599354,
+        "rank": 12,
+        "gate_isometry_residual": 3.3321679072204937e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 0,
+        "local_projection_tail": 5.3679120480990384e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 5.3679120480990384e-05,
+        "step_trace_budget": 0.007326603611564528,
+        "rank": 4,
+        "gate_isometry_residual": 4.440974204133529e-16,
+        "norm_residual": 0.0
+      },
+      {
+        "first": 2,
+        "local_projection_tail": 3.6343901847228814e-05,
+        "bond_tail": 0.0,
+        "combined_step_tail": 3.6343901847228814e-05,
+        "step_trace_budget": 0.006028590369831808,
+        "rank": 4,
+        "gate_isometry_residual": 9.992007221626409e-16,
+        "norm_residual": 2.220446049250313e-16
+      },
+      {
+        "first": 1,
+        "local_projection_tail": 2.9740367076421608e-06,
+        "bond_tail": 0.0,
+        "combined_step_tail": 2.9740367076421608e-06,
+        "step_trace_budget": 0.0017245395639538575,
+        "rank": 12,
+        "gate_isometry_residual": 9.992007221626409e-16,
+        "norm_residual": 2.220446049250313e-16
+      }
+    ],
+    "projection_trace_sum": 0.021052299828868595,
+    "rounding_trace_sum": 0.011222416024555405,
+    "completed_layers": 4,
+    "pending_gate_count": 0,
+    "rank_cap_misses": 0,
+    "stored_complex_elements": 168,
+    "max_bond_actual": 5,
+    "max_pair_branch_elements": 336,
+    "seconds": 0.0032522999972570688,
+    "status": "accepted",
+    "construction_trace_budget": 0.0561255379560295,
+    "unclipped_construction_trace_budget": 0.0561255379560295
+  }
+]
