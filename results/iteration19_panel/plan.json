@@ -1,0 +1,160 @@
+{
+  "jobs": [
+    {
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "local_L12",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 32,
+      "seed": 150801,
+      "ensemble": "haar",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "local_L12",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 32,
+      "seed": 150802,
+      "ensemble": "haar",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "local_L12",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 128,
+      "seed": 150801,
+      "ensemble": "haar",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "local_L12",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 128,
+      "seed": 150802,
+      "ensemble": "haar",
+      "phase": "original_failure_and_haar_control"
+    },
+    {
+      "modes": 32,
+      "seed": 190801,
+      "ensemble": "local_L12",
+      "phase": "new_local_confirmation"
+    },
+    {
+      "modes": 32,
+      "seed": 190802,
+      "ensemble": "local_L12",
+      "phase": "new_local_confirmation"
+    },
+    {
+      "modes": 128,
+      "seed": 190801,
+      "ensemble": "local_L12",
+      "phase": "new_local_confirmation"
+    },
+    {
+      "modes": 128,
+      "seed": 190802,
+      "ensemble": "local_L12",
+      "phase": "new_local_confirmation"
+    },
+    {
+      "modes": 4,
+      "seed": 190801,
+      "ensemble": "local_L12",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 4,
+      "seed": 190801,
+      "ensemble": "haar",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 4,
+      "seed": 190802,
+      "ensemble": "local_L12",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 4,
+      "seed": 190802,
+      "ensemble": "haar",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 6,
+      "seed": 190801,
+      "ensemble": "local_L12",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 6,
+      "seed": 190801,
+      "ensemble": "haar",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 6,
+      "seed": 190802,
+      "ensemble": "local_L12",
+      "phase": "small_construction"
+    },
+    {
+      "modes": 6,
+      "seed": 190802,
+      "ensemble": "haar",
+      "phase": "small_construction"
+    }
+  ],
+  "dimensions": [
+    6,
+    8,
+    10,
+    12,
+    16
+  ],
+  "ranks": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "target": 0.1,
+  "physical_parameters": {
+    "squeezing": 0.9,
+    "loss": 0.65,
+    "a": 0.45744427734403126,
+    "b": 4.282270851868415,
+    "core_squeezing": 0.3910500999198408,
+    "residual_variance": 2.0962122442362383
+  },
+  "small_dimensions": [
+    6,
+    8
+  ],
+  "small_ranks": [
+    8,
+    16,
+    32
+  ],
+  "small_box_cap": 1000000,
+  "scope": "All cuts, not only selected cuts. Existence diagnostics are float64 and do not construct large MPS. Small one-shot TT-SVD is exponential in modes. Local layerwise controls included only when gates are available."
+}
