@@ -1,0 +1,48 @@
+{
+  "sequence": 5,
+  "panel": "small",
+  "modes": 2,
+  "dimension": 4,
+  "seed": 291201,
+  "state_kind": "gaussian",
+  "samples": 8192,
+  "batch": 256,
+  "independent_moment_vacuum": 0.7187149295185912,
+  "independent_quadrature_vacuum": 0.7187149295185914,
+  "input_log_norm_squared": 6.661338147750939e-16,
+  "preparation_seconds": 0.013779100001556799,
+  "importance": {
+    "samples": 8192,
+    "mean_ratio": 1.003016284528449,
+    "ratio_standard_error": 7.79152570486499e-06,
+    "probability_estimate": 0.7187127423921352,
+    "probability_standard_error": 5.583028803360869e-06,
+    "relative_standard_error": 7.768094920341243e-06,
+    "empirical_effective_sample_size": 8191.995950926108,
+    "maximum_ratio": 1.0033079011736528,
+    "numeric_zero_weights": 0,
+    "normal_approximation_interval": [
+      0.7187017996556806,
+      0.7187236851285899
+    ],
+    "estimate_outside_unit_interval": false,
+    "scope": "Unbiased importance identity in exact arithmetic; finite Monte Carlo and floating diagnostics. Standard error and normal interval are not rigorous confidence guarantees, output samples, or full-TV certificates."
+  },
+  "reference_mixed_vacuum": 0.7165514194318647,
+  "direct_coherent_log_max_error": 1.4988010832439613e-15,
+  "monte_carlo_standardized_error": -0.39174550821357934,
+  "marginals": {
+    "single_mode_tv_max": 0.0022854013874451518,
+    "single_mode_witness": 1,
+    "pair_tv_max": 0.0022854013874451518,
+    "pair_witness": [
+      0,
+      1
+    ],
+    "full_threshold_tv_lower_diagnostic": 0.0022854013874451518,
+    "maximum_density_trace_residual": 4.440901029481244e-16,
+    "scope": "Fixed normalized finite MPS and fixed Gaussian reference through the SAME Gaussian displacement channel. Deterministic local threshold-TV lower diagnostic in floating point; not an experimental identity or interval certificate."
+  },
+  "status": "completed",
+  "seconds": 0.06998359999852255
+}

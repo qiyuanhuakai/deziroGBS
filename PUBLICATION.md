@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第29轮：同通道有限MPS输出](RESEARCH_REPORT_ITERATION29.md)
+- [第29轮核验](results/iteration29_validation/validation.json)
 - [第28轮：可构造分解与宿主精度](RESEARCH_REPORT_ITERATION28.md)
 - [第28轮核验](results/iteration28_validation/validation.json)
 - [第27轮：混合低点击与外部协方差审计](RESEARCH_REPORT_ITERATION27.md)
@@ -35,6 +37,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第29轮持续发布
+
+发布22项同通道输出工作，覆盖16个小系统校准与六种144模式有限态。确定性局部阈值见证及固定样本真空重要性积分分别报告；4,153项独立核验通过，1,072项局部积分最大互差4.44e−16。完整混合输出采样及TV上界仍未解决。
+
+465个新冻结产物共28,505,010字节，引用6个历史文件共511,999,265字节，沿用既有大文件分卷。全库435运行、406通过、0失败、0错误，29案例和7类依赖跳过保留。没有执行或重发第三方程序。
 
 ## 2026-11-09：第28轮持续发布
 
