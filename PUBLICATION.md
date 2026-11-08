@@ -23,6 +23,8 @@
 
 发布前核对远端主分支是本地研究头的祖先，使用普通快进推送，不强制覆盖远端。`publication_support/verify_rounds_11_19.py`按9份冻结清单核对已提交Git blob的SHA-256；记录见[本次发布前核验](research_archive/publication/preflight_2026-11-08.json)。
 
+发布后通过GitHub分支API、远端Git引用与重新获取的主分支交叉核对，确认公开提交`b2199b2`及文件树与本地一致。4,478个冻结产物共608,891,780字节通过核验，见[发布完成记录](research_archive/publication/verification_2026-11-08.json)。
+
 最新全库记录为341项运行、307通过、4失败、1错误、29个案例跳过，另有7个类级跳过。新轮针对性测试和产物核对通过；遗留Windows数值范围/容差、Unix resource导入和原生依赖问题仍如实公开。深层大模式MPS实际构造、可扩展高阶采样与完整有限精度保证仍未完成，详见各轮报告。
 
 ## 原始提交历史与独立恢复归档
