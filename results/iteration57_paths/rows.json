@@ -1,0 +1,152 @@
+[
+  {
+    "job": {
+      "label": "local_4",
+      "modes": 10,
+      "cutoff": 4,
+      "samples": 257,
+      "seed": 391004,
+      "csv": "results/iteration39_local/case_03.csv",
+      "reference": "results/iteration39_local/case_03.stdout.json",
+      "reference_iteration": 39,
+      "depth": 10
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.002122,
+      "layout": 0.000155,
+      "cumulants": 2.9e-05,
+      "target": 0.003089,
+      "official_sampling": 0.001835,
+      "audit_replay": 0.001819,
+      "prefix_tree": 0.02095
+    },
+    "probe_seconds": 0.080925,
+    "probe_control_checks": 1024,
+    "public_path_checks": 2570,
+    "replayed_steps": 2570,
+    "paths": 1024,
+    "steps": 10240,
+    "seconds": 0.5637468000059016
+  },
+  {
+    "job": {
+      "label": "global_1",
+      "modes": 144,
+      "cutoff": 1,
+      "samples": 17,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_00.csv",
+      "reference": "results/iteration56_prefix/global_1.stdout.json.gz",
+      "reference_iteration": 56,
+      "depth": 8
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.201464,
+      "layout": 0.000368,
+      "cumulants": 4.4e-05,
+      "target": 0.001031,
+      "official_sampling": 0.005341,
+      "audit_replay": 0.005224,
+      "prefix_tree": 0.005313
+    },
+    "probe_seconds": 0.015448,
+    "probe_control_checks": 25,
+    "public_path_checks": 2448,
+    "replayed_steps": 2448,
+    "paths": 5,
+    "steps": 720,
+    "seconds": 0.4764011999941431
+  },
+  {
+    "job": {
+      "label": "global_2",
+      "modes": 144,
+      "cutoff": 2,
+      "samples": 17,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_01.csv",
+      "reference": "results/iteration56_prefix/global_2.stdout.json.gz",
+      "reference_iteration": 56,
+      "depth": 8
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.233467,
+      "layout": 0.01119,
+      "cumulants": 2.6e-05,
+      "target": 0.014443,
+      "official_sampling": 3.512548,
+      "audit_replay": 3.405876,
+      "prefix_tree": 0.006182
+    },
+    "probe_seconds": 12.597579,
+    "probe_control_checks": 25,
+    "public_path_checks": 2448,
+    "replayed_steps": 2448,
+    "paths": 5,
+    "steps": 720,
+    "seconds": 20.0344669999904
+  },
+  {
+    "job": {
+      "label": "global_3",
+      "modes": 144,
+      "cutoff": 3,
+      "samples": 17,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_02.csv",
+      "reference": "results/iteration56_prefix/global_3.stdout.json.gz",
+      "reference_iteration": 56,
+      "depth": 8
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.23427,
+      "layout": 0.434984,
+      "cumulants": 3.3e-05,
+      "target": 1.534074,
+      "official_sampling": 3.508071,
+      "audit_replay": 3.504854,
+      "prefix_tree": 0.006439
+    },
+    "probe_seconds": 12.136461,
+    "probe_control_checks": 25,
+    "public_path_checks": 2448,
+    "replayed_steps": 2448,
+    "paths": 5,
+    "steps": 720,
+    "seconds": 21.5936314999999
+  },
+  {
+    "job": {
+      "label": "global_4",
+      "modes": 144,
+      "cutoff": 4,
+      "samples": 17,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_03.csv",
+      "reference": "results/iteration56_prefix/global_4.stdout.json.gz",
+      "reference_iteration": 56,
+      "depth": 8
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.222767,
+      "layout": 12.701966,
+      "cumulants": 5.5e-05,
+      "target": 114.588196,
+      "official_sampling": 6.676592,
+      "audit_replay": 6.43119,
+      "prefix_tree": 0.005658
+    },
+    "probe_seconds": 23.42223,
+    "probe_control_checks": 25,
+    "public_path_checks": 2448,
+    "replayed_steps": 2448,
+    "paths": 5,
+    "steps": 720,
+    "seconds": 164.3737967000052
+  }
+]
