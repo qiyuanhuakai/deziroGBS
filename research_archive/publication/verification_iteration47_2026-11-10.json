@@ -1,0 +1,231 @@
+{
+  "iteration": 47,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T18:23:53.251012+00:00",
+  "scientific_commit": "44c1009d46dffef2e7137a1c16ba9de6b55d0556",
+  "scientific_tree": "7ad19571f10eb92b4036c5d47ad25abc2532fc5e",
+  "parent": "1790899952b52d791d3752b67a59ad2e8918334c",
+  "prepublication_verification": {
+    "parent": "1790899952b52d791d3752b67a59ad2e8918334c",
+    "expected_tree": "7ad19571f10eb92b4036c5d47ad25abc2532fc5e",
+    "new_artifacts": 1171,
+    "dependencies": 275,
+    "base_manifest_working_checks": 1446,
+    "base_manifest_git_or_archived_git_checks": 1446,
+    "archived_dependency_inputs": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "changed_paths": 1200,
+    "changed_source_git_byte_checks": 788,
+    "full_suite_source_and_snapshot_checks": 486,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "remote_main_before": "1790899952b52d791d3752b67a59ad2e8918334c"
+  },
+  "remote_verified_refs": {
+    "main": "44c1009d46dffef2e7137a1c16ba9de6b55d0556",
+    "research/iteration47-20261110": "44c1009d46dffef2e7137a1c16ba9de6b55d0556"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration47_manifest.json",
+    "sha256": "add6448e2fd2ea3a6919f9c73a59c7c2f204ddddb8656b069fc80c68865e9132",
+    "new_artifacts": 1171,
+    "bytes": 382657026,
+    "dependencies": 275,
+    "dependency_bytes": 99653788,
+    "dependency_archives": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration47_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    }
+  },
+  "scientific_validations": {
+    "input_validation": {
+      "count": 1713,
+      "passed": 1713
+    },
+    "native_validation": {
+      "count": 49300,
+      "passed": 49300
+    },
+    "prefix_validation": {
+      "count": 160758,
+      "passed": 160758
+    },
+    "displacement_validation": {
+      "count": 1505,
+      "passed": 1505
+    },
+    "mixture_validation": {
+      "count": 678,
+      "passed": 678
+    }
+  },
+  "scientific_checks_total": 213954,
+  "tests": {
+    "tests_run": 616,
+    "passed": 587,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 13,
+    "executed_gate_passed": true,
+    "full_gate_passed": false,
+    "unchanged_sources": true
+  },
+  "post_suite_source_additions": [],
+  "scope": "Actual144-mode 13-bit marginal lower bounds, fixed equal forward/reverse law mixtures with held-out inputs, and higher-occupancy finite-input displaced threshold controls. No full144-mode TV upper bound, end-to-end mixed sampler throughput, infinite Gaussian input certificate, or Jiuzhang simulation claim. Goal remains active."
+}
