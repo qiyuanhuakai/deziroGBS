@@ -1,0 +1,33 @@
+{
+  "checked_date": "2026-11-10",
+  "frugal": {
+    "repository": "https://github.com/tomdodd4598/FrugalGBS",
+    "head": "fa8b796f2afebd4845a2e335e457735952617ef8",
+    "arxiv": "https://arxiv.org/abs/2511.14923",
+    "version": "v1",
+    "submitted": "2025-11-18"
+  },
+  "mps": {
+    "url": "https://arxiv.org/abs/2512.10643",
+    "version": "v2",
+    "revised": "2026-05-11",
+    "journal": "npj Quantum Inf. 12,110(2026)"
+  },
+  "thermal_loss": {
+    "url": "https://arxiv.org/abs/2611.08444",
+    "version": "v1",
+    "submitted": "2026-11-05"
+  },
+  "jiuzhang": {
+    "url": "https://arxiv.org/abs/2508.09092",
+    "version": "v3",
+    "revised": "2025-08-24"
+  },
+  "numpy_choice": {
+    "url": "https://raw.githubusercontent.com/numpy/numpy/v2.4.6/numpy/random/_generator.pyx",
+    "source_sha256": "1d307b2ae95162cd5d6f6b3af60ee939400900fcfeaf65c4854ef1e66d1a1cde",
+    "first_line": 907,
+    "excerpt": "                cdf = p.cumsum()\n                cdf /= cdf[-1]\n                uniform_samples = self.random(shape)\n                idx = cdf.searchsorted(uniform_samples, side='right')\n                # searchsorted returns a scalar"
+  },
+  "scope": "Primary abstract/version pages rechecked; not an exhaustive state-of-the-art survey or new full-paper review."
+}

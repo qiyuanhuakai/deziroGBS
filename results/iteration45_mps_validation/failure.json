@@ -1,0 +1,5 @@
+{
+  "status": "stopped",
+  "reason": "NPZ preserves tensor entries but not general strides. At case2 hidden path [2], loaded C-order contraction differs by a few ulps. Rebuilding original layout gives identical tensor entries and original weights. Recovery validates rebuilt layout, preserving this failure.",
+  "first_failed_check": "case2 native arithmetic (2,)"
+}
