@@ -1,0 +1,22 @@
+{
+  "compilation_passed": true,
+  "plot_executed": true,
+  "plot_scientific_dependencies_equal": true,
+  "source_hashes": {
+    "experiments/iteration52_plot_recovery.py": "ed8111fcfcdf3efcc57a049239651a36d30a93da6d054627ae98fd0a1ad5dedd",
+    "experiments/iteration52_seal_recovery.py": "bfebcbfba7340e4547f4531748aea49833d6bd7159946573e8f281afa9daaa56"
+  },
+  "changes": [
+    {
+      "path": "experiments/iteration52_plot_recovery.py",
+      "sha256": "ed8111fcfcdf3efcc57a049239651a36d30a93da6d054627ae98fd0a1ad5dedd",
+      "scope": "Presentation-only: add Panel D headroom so timing bars are unobstructed; same scientific dependencies."
+    },
+    {
+      "path": "experiments/iteration52_seal_recovery.py",
+      "sha256": "bfebcbfba7340e4547f4531748aea49833d6bd7159946573e8f281afa9daaa56",
+      "scope": "Packaging-only: select accepted recovery plot/review; scientific gates unchanged."
+    }
+  ],
+  "scope": "These two scripts were added after the full suite; compilation, actual plot execution, sealer execution and payload checks are separate verification, not unit-suite coverage."
+}
