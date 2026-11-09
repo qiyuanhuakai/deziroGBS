@@ -1,0 +1,355 @@
+{
+  "iteration": 45,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T17:23:39.095070+00:00",
+  "scientific_commit": "c29dea0d09ecbdbc2b336f94c2882ed9ef3f193d",
+  "scientific_tree": "6f4bbd5a15780fe12e0be081a5bf1c7033bb689e",
+  "parent": "1798db323996e4e36bda520c1990622a8146c1fb",
+  "prepublication_verification": {
+    "parent": "1798db323996e4e36bda520c1990622a8146c1fb",
+    "expected_tree": "6f4bbd5a15780fe12e0be081a5bf1c7033bb689e",
+    "new_artifacts": 895,
+    "dependencies": 32,
+    "base_manifest_working_checks": 927,
+    "base_manifest_git_or_archived_git_checks": 927,
+    "archived_dependency_inputs": {
+      "results/iteration41_manifest.json": {
+        "path": "results/iteration45_packaging/inherited_working_bytes/results/iteration41_manifest.json",
+        "sha256": "c5568ecdc13d80208f06ba1570b18cbf1614cc6424fb541965389447bbd1fc33",
+        "inherited_git_sha256": "8a15e2de99f6526afc733eb0d57349c0b46cbf314431c4e9a970c1b671a5adeb"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration45_packaging/inherited_working_bytes/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "annex_artifacts": {
+      "results/iteration45_packaging/failure.json": "9e93262fc5da6e89d3adf5e346f57e3b956e1dbcfd54297729d850ad9c9d91e4",
+      "results/iteration45_packaging/inherited_working_bytes/results/iteration41_manifest.json": "c5568ecdc13d80208f06ba1570b18cbf1614cc6424fb541965389447bbd1fc33",
+      "results/iteration45_packaging/inherited_working_bytes/results/iteration44_manifest.json": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+      "results/iteration45_packaging/source_snapshot/experiments/iteration45_seal_recovery.py": "66e2b5851c8100550bc33409c2be11814e148850003c6ddcb4d4d00babd3033e"
+    },
+    "changed_paths": 924,
+    "changed_source_git_byte_checks": 775,
+    "full_suite_source_and_snapshot_checks": 448,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "post_suite_packaging_source_sha256": "66e2b5851c8100550bc33409c2be11814e148850003c6ddcb4d4d00babd3033e",
+    "remote_main_before": "1798db323996e4e36bda520c1990622a8146c1fb"
+  },
+  "remote_verified_refs": {
+    "main": "c29dea0d09ecbdbc2b336f94c2882ed9ef3f193d",
+    "research/iteration45-20261110": "c29dea0d09ecbdbc2b336f94c2882ed9ef3f193d"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration45_manifest.json",
+    "sha256": "8b6964a20c54a098a4b9053ef46c4971a5fb469334294f52fae5a0db009820ba",
+    "new_artifacts": 895,
+    "bytes": 40074632,
+    "dependencies": 32,
+    "dependency_bytes": 13202360
+  },
+  "packaging_annex": {
+    "path": "results/iteration45_packaging/annex.json",
+    "sha256": "729277c90d8536fdb8b42b4be6685b8ed8e413533729deaa003640086f53f93e",
+    "archived_dependency_inputs": 2,
+    "annex_artifacts": 4,
+    "total_payload_checks": 931,
+    "post_suite_packaging_source_sha256": "66e2b5851c8100550bc33409c2be11814e148850003c6ddcb4d4d00babd3033e",
+    "scope": "Scientific source and suite snapshots unchanged. One packaging-only recovery script was added after the suite and verified separately. Two historical manifest input byte streams archived without modifying their inherited Git blobs."
+  },
+  "scientific_validations": {
+    "mps_recovery": {
+      "count": 17499,
+      "passed": 17499
+    },
+    "hierarchy_validation": {
+      "count": 5753,
+      "passed": 5753
+    },
+    "serialization": {
+      "count": 11168,
+      "passed": 11168
+    }
+  },
+  "scientific_checks_total": 34420,
+  "tests": {
+    "tests_run": 592,
+    "passed": 563,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 13,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "full_gate_passed": false,
+    "resolved_failure_ids": [
+      "test_iteration6_runner.EnumerationMassTests.test_unrepresentable_positive_output_aborts_enumeration",
+      "test_positive_completion.PositiveCompletionTests.test_final_positive_branch_rounding_is_not_certified_zero",
+      "test_positive_forest.ForestCompletionTests.test_endpoint_rounding_is_failure_but_analytic_vacuum_is_exact",
+      "test_positive_forest.ForestCompletionTests.test_log_domain_survives_products_below_float64_range"
+    ],
+    "previously_unimportable_module_tests_passed": 13,
+    "executed_gate_passed": true,
+    "unchanged_sources": true
+  },
+  "preserved_failures": [
+    "results/iteration45_mps_validation/failure.json",
+    "results/iteration45_packaging/failure.json"
+  ],
+  "scope": "Small-system exact laws and selected-input hierarchy improvements. No full144-mode TV upper bound, matched-quality throughput advantage or Jiuzhang simulation claim. Goal remains active."
+}
