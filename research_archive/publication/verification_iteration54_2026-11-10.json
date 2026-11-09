@@ -1,0 +1,249 @@
+{
+  "iteration": 54,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T21:07:27.273835+00:00",
+  "scientific_commit": "c65cf9bb761f85ff37931e95d6f9ba90c7247177",
+  "scientific_tree": "a4fc03f60cdd932233a4cd2ace9c7c305944f5ed",
+  "parent": "661e87a56e0cad3b56133e7f63d2a423f5d50970",
+  "prepublication_verification": {
+    "parent": "661e87a56e0cad3b56133e7f63d2a423f5d50970",
+    "expected_tree": "a4fc03f60cdd932233a4cd2ace9c7c305944f5ed",
+    "new_artifacts": 1033,
+    "dependencies": 132,
+    "base_manifest_working_checks": 1165,
+    "base_manifest_git_or_archived_git_checks": 1165,
+    "archived_dependency_inputs": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "changed_paths": 1051,
+    "changed_source_git_byte_checks": 857,
+    "full_suite_source_and_snapshot_checks": 576,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "remote_main_before": "661e87a56e0cad3b56133e7f63d2a423f5d50970"
+  },
+  "remote_verified_refs": {
+    "main": "c65cf9bb761f85ff37931e95d6f9ba90c7247177",
+    "research/iteration54-20261110": "c65cf9bb761f85ff37931e95d6f9ba90c7247177"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration54_manifest.json",
+    "sha256": "5e5ec3a7fd27010ff8466f091d3789bb884c78a21179bde843a3f139e543c7aa",
+    "new_artifacts": 1033,
+    "bytes": 29374098,
+    "dependencies": 132,
+    "dependency_bytes": 3102977,
+    "working_and_git_payload_checks": 1165,
+    "dependency_archives": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration54_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    }
+  },
+  "scientific_validations": {
+    "noise_validation": {
+      "count": 72961,
+      "passed": 72961
+    },
+    "controls": {
+      "count": 303,
+      "passed": 303
+    },
+    "comparisons": {
+      "count": 155,
+      "passed": 155
+    }
+  },
+  "scientific_checks_total": 73419,
+  "tests": {
+    "tests_run": 687,
+    "passed": 658,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 11,
+    "executed_gate_passed": true,
+    "full_gate_passed": false,
+    "unchanged_sources": true
+  },
+  "post_suite_source_additions": [],
+  "comparison_summary": {
+    "completed": true,
+    "cases": 26,
+    "holdout_cases": 6,
+    "refinement_edges": 14,
+    "physical_refinements": {
+      "improved": 7,
+      "worsened": 7,
+      "unresolved": 0
+    },
+    "finite_refinements": {
+      "improved": 14,
+      "worsened": 0,
+      "unresolved": 0
+    },
+    "dimension_pairs": 13,
+    "nonvacuum_dimension_improved": 11,
+    "storage": {
+      "raw_bytes": 66077388,
+      "compressed_bytes": 11593637,
+      "nodes": 1524,
+      "trace_nodes": 10666
+    },
+    "scope": "Rank-one correlated complex Gaussian drive on two-mode squeezed states. No arbitrary-rank noise or large-scale throughput claim."
+  },
+  "scope": "26 complete two-mode rank-one complex displacement experiments,6 predeclared holdout configurations,1524 grid components and10666 measured tree nodes. Exact continuous finite-state polynomial moments independently checked with density radical grouping;50 old one-mode regressions.14 grid refinements all closer to finite continuous reference,7 physical improvements and7 regressions.11 nonvacuum dimension pairs all improve. Same single-mode marginals can conceal full-law TV0.135009 between common and opposite drives. No arbitrary-rank noise, matched-quality speed, new full144 upper bound or Jiuzhang-scale simulation. Goal remains active."
+}
