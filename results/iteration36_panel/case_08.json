@@ -1,0 +1,9 @@
+{
+  "sequence": 8,
+  "panel": "block",
+  "start": 18,
+  "modes": 8,
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 50, in main\n    assert main_env is not None;first=job['start'];law=main_env.law(tuple(range(first,first+8)));target=law['intervals'];old=decode(json.loads((ROOT/f'results/iteration35_panel/target_{first:03d}.json').read_text()))['target_intervals'];lower=sum(max(F(0),a-d,c-b) for (a,b),(c,d) in zip(target,old))/2;upper=sum(max(abs(a-d),abs(b-c)) for (a,b),(c,d) in zip(target,old))/2;audits=[];chosen=[tuple(j for j in range(8) if mask>>j&1) for mask in range(256)];first_case=21+6*(0,18,54,136).index(first)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "seconds": 0.00023589999182149768
+}

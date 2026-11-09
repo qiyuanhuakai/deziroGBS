@@ -1,0 +1,8 @@
+{
+  "sequence": 11,
+  "panel": "moments",
+  "modes": 144,
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 58, in main\n    assert main_env is not None;moments=main_env.click_moments();bounds={str(k):target_count_tail_upper(k,144,moments['mean_interval'],moments['variance_interval']) for k in thresholds};record.update(moments=moments,tail_probability_upper=bounds);records=envelope_records(main_env)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "seconds": 0.00026790000265464187
+}

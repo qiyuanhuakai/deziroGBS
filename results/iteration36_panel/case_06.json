@@ -1,0 +1,9 @@
+{
+  "sequence": 6,
+  "panel": "model",
+  "modes": 144,
+  "bits": 128,
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 48, in main\n    model=ExactPairingModel(inputs['B'],inputs['F']);assert model.operator_radius==base['operator_radius'] and model.center_denominator==base['center_denominator'] and np.array_equal(model.center_numerators,np.array(base['center_numerators'],dtype=object));assert certificate(model.core)==base['core'] and certificate(model.noise_certificate)==base['noise'];main_env=GaussianEnvelope(model);record.update(core=certificate(model.core),noise=certificate(model.noise_certificate),operator_radius=model.operator_radius,center_numerators=model.center_numerators.tolist(),center_denominator=model.center_denominator,vacuum_interval=model.vacuum_interval);arrays.update(B=inputs['B'],F=inputs['F'],shifted=primary);row['same_exact_model_as_round35']=True\n                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "seconds": 5.636969000013778
+}

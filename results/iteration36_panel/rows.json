@@ -1,0 +1,163 @@
+[
+  {
+    "sequence": 0,
+    "panel": "small",
+    "modes": 2,
+    "bits": 64,
+    "maximum_atom_width": 1.7895542184374194e-17,
+    "enclosures": 3,
+    "status": "completed",
+    "seconds": 0.004225999990012497
+  },
+  {
+    "sequence": 1,
+    "panel": "small",
+    "modes": 2,
+    "bits": 128,
+    "maximum_atom_width": 4.853682084112073e-37,
+    "enclosures": 3,
+    "status": "completed",
+    "seconds": 0.0035586000012699515
+  },
+  {
+    "sequence": 2,
+    "panel": "small",
+    "modes": 4,
+    "bits": 64,
+    "maximum_atom_width": 6.970645140762113e-16,
+    "enclosures": 15,
+    "status": "completed",
+    "seconds": 0.012891599995782599
+  },
+  {
+    "sequence": 3,
+    "panel": "small",
+    "modes": 4,
+    "bits": 128,
+    "maximum_atom_width": 3.404653628726002e-35,
+    "enclosures": 15,
+    "status": "completed",
+    "seconds": 0.0169719000114128
+  },
+  {
+    "sequence": 4,
+    "panel": "small",
+    "modes": 8,
+    "bits": 64,
+    "maximum_atom_width": 7.603808344866124e-14,
+    "enclosures": 255,
+    "status": "completed",
+    "seconds": 0.2734719000000041
+  },
+  {
+    "sequence": 5,
+    "panel": "small",
+    "modes": 8,
+    "bits": 128,
+    "maximum_atom_width": 7.232109082466653e-33,
+    "enclosures": 255,
+    "status": "completed",
+    "seconds": 0.36313139999401756
+  },
+  {
+    "sequence": 6,
+    "panel": "model",
+    "modes": 144,
+    "bits": 128,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 48, in main\n    model=ExactPairingModel(inputs['B'],inputs['F']);assert model.operator_radius==base['operator_radius'] and model.center_denominator==base['center_denominator'] and np.array_equal(model.center_numerators,np.array(base['center_numerators'],dtype=object));assert certificate(model.core)==base['core'] and certificate(model.noise_certificate)==base['noise'];main_env=GaussianEnvelope(model);record.update(core=certificate(model.core),noise=certificate(model.noise_certificate),operator_radius=model.operator_radius,center_numerators=model.center_numerators.tolist(),center_denominator=model.center_denominator,vacuum_interval=model.vacuum_interval);arrays.update(B=inputs['B'],F=inputs['F'],shifted=primary);row['same_exact_model_as_round35']=True\n                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 5.636969000013778
+  },
+  {
+    "sequence": 7,
+    "panel": "block",
+    "start": 0,
+    "modes": 8,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 50, in main\n    assert main_env is not None;first=job['start'];law=main_env.law(tuple(range(first,first+8)));target=law['intervals'];old=decode(json.loads((ROOT/f'results/iteration35_panel/target_{first:03d}.json').read_text()))['target_intervals'];lower=sum(max(F(0),a-d,c-b) for (a,b),(c,d) in zip(target,old))/2;upper=sum(max(abs(a-d),abs(b-c)) for (a,b),(c,d) in zip(target,old))/2;audits=[];chosen=[tuple(j for j in range(8) if mask>>j&1) for mask in range(256)];first_case=21+6*(0,18,54,136).index(first)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.0002817999920807779
+  },
+  {
+    "sequence": 8,
+    "panel": "block",
+    "start": 18,
+    "modes": 8,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 50, in main\n    assert main_env is not None;first=job['start'];law=main_env.law(tuple(range(first,first+8)));target=law['intervals'];old=decode(json.loads((ROOT/f'results/iteration35_panel/target_{first:03d}.json').read_text()))['target_intervals'];lower=sum(max(F(0),a-d,c-b) for (a,b),(c,d) in zip(target,old))/2;upper=sum(max(abs(a-d),abs(b-c)) for (a,b),(c,d) in zip(target,old))/2;audits=[];chosen=[tuple(j for j in range(8) if mask>>j&1) for mask in range(256)];first_case=21+6*(0,18,54,136).index(first)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.00023589999182149768
+  },
+  {
+    "sequence": 9,
+    "panel": "block",
+    "start": 54,
+    "modes": 8,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 50, in main\n    assert main_env is not None;first=job['start'];law=main_env.law(tuple(range(first,first+8)));target=law['intervals'];old=decode(json.loads((ROOT/f'results/iteration35_panel/target_{first:03d}.json').read_text()))['target_intervals'];lower=sum(max(F(0),a-d,c-b) for (a,b),(c,d) in zip(target,old))/2;upper=sum(max(abs(a-d),abs(b-c)) for (a,b),(c,d) in zip(target,old))/2;audits=[];chosen=[tuple(j for j in range(8) if mask>>j&1) for mask in range(256)];first_case=21+6*(0,18,54,136).index(first)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.0002523000002838671
+  },
+  {
+    "sequence": 10,
+    "panel": "block",
+    "start": 136,
+    "modes": 8,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 50, in main\n    assert main_env is not None;first=job['start'];law=main_env.law(tuple(range(first,first+8)));target=law['intervals'];old=decode(json.loads((ROOT/f'results/iteration35_panel/target_{first:03d}.json').read_text()))['target_intervals'];lower=sum(max(F(0),a-d,c-b) for (a,b),(c,d) in zip(target,old))/2;upper=sum(max(abs(a-d),abs(b-c)) for (a,b),(c,d) in zip(target,old))/2;audits=[];chosen=[tuple(j for j in range(8) if mask>>j&1) for mask in range(256)];first_case=21+6*(0,18,54,136).index(first)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.00023430000874213874
+  },
+  {
+    "sequence": 11,
+    "panel": "moments",
+    "modes": 144,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 58, in main\n    assert main_env is not None;moments=main_env.click_moments();bounds={str(k):target_count_tail_upper(k,144,moments['mean_interval'],moments['variance_interval']) for k in thresholds};record.update(moments=moments,tail_probability_upper=bounds);records=envelope_records(main_env)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.00026790000265464187
+  },
+  {
+    "sequence": 12,
+    "panel": "sampling",
+    "modes": 144,
+    "budget": 0,
+    "forest": "chain",
+    "attempts": 64,
+    "seed": 361440,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 62, in main\n    assert main_env is not None and moments is not None;directory=out/f'attempts/case_{i:02d}';directory.mkdir(parents=True,exist_ok=False);outputs=np.full((64,144),-1,dtype=np.int16);attempts=[];calls=0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.00031800000579096377
+  },
+  {
+    "sequence": 13,
+    "panel": "sampling",
+    "modes": 144,
+    "budget": 0,
+    "forest": "static_mi_tree",
+    "attempts": 64,
+    "seed": 361440,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 62, in main\n    assert main_env is not None and moments is not None;directory=out/f'attempts/case_{i:02d}';directory.mkdir(parents=True,exist_ok=False);outputs=np.full((64,144),-1,dtype=np.int16);attempts=[];calls=0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.0002809000143315643
+  },
+  {
+    "sequence": 14,
+    "panel": "sampling",
+    "modes": 144,
+    "budget": 4,
+    "forest": "chain",
+    "attempts": 64,
+    "seed": 361440,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 62, in main\n    assert main_env is not None and moments is not None;directory=out/f'attempts/case_{i:02d}';directory.mkdir(parents=True,exist_ok=False);outputs=np.full((64,144),-1,dtype=np.int16);attempts=[];calls=0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.000287600007141009
+  },
+  {
+    "sequence": 15,
+    "panel": "sampling",
+    "modes": 144,
+    "budget": 4,
+    "forest": "static_mi_tree",
+    "attempts": 64,
+    "seed": 361440,
+    "status": "failed",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration36_run.py\", line 62, in main\n    assert main_env is not None and moments is not None;directory=out/f'attempts/case_{i:02d}';directory.mkdir(parents=True,exist_ok=False);outputs=np.full((64,144),-1,dtype=np.int16);attempts=[];calls=0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.0002578000130597502
+  }
+]
