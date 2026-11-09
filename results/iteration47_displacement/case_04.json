@@ -1,0 +1,420 @@
+{
+  "job": {
+    "state": 1,
+    "displacement": 0,
+    "modes": 1
+  },
+  "stored_strides": [
+    [
+      64,
+      16,
+      16
+    ]
+  ],
+  "target": {
+    "modes": 1,
+    "dimensions": [
+      4
+    ],
+    "fock_states": 4,
+    "displacements": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "radical_bits": 192,
+    "factorial_root_intervals": {
+      "0": [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      "1": [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      "2": [
+        {
+          "rational": "1109645300822441853584793897924632478505655261739860552211/1569275433846670190958947355801916604025588861116008628224"
+        },
+        {
+          "rational": "4438581203289767414339175591698529914022621046959442208845/6277101735386680763835789423207666416102355444464034512896"
+        }
+      ],
+      "3": [
+        {
+          "rational": "80081751641855007988309910976426472889207528879322423541/196159429230833773869868419475239575503198607639501078528"
+        },
+        {
+          "rational": "2562616052539360255625917151245647132454640924138317553313/6277101735386680763835789423207666416102355444464034512896"
+        }
+      ]
+    },
+    "integer_amplitudes": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "integer_norm": 1,
+    "vacuum_records": [
+      {
+        "mask": 0,
+        "coefficient_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ],
+        "exponent": 0,
+        "exponential_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ],
+        "raw_vacuum_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ]
+      },
+      {
+        "mask": 1,
+        "coefficient_interval": [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        "exponent": {
+          "rational": "0"
+        },
+        "exponential_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ],
+        "raw_vacuum_interval": [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      }
+    ],
+    "vacuum_intervals": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "raw_intervals": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ]
+    ],
+    "intervals": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ]
+    ],
+    "scope": "Exact normalized finite input state and displaced threshold POVM; no output truncation, Gaussian tail or displacement integration claim"
+  },
+  "sampling": {
+    "real_law": [
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "1"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "word_law": [
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "1"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "trace": [
+      {
+        "path": [],
+        "mask": 0,
+        "real_mass": {
+          "rational": "1"
+        },
+        "word_mass": {
+          "rational": "1"
+        },
+        "left_hex": [
+          [
+            "0x1.0000000000000p+0",
+            "0x0.0p+0"
+          ]
+        ],
+        "status": "completed",
+        "weights_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ],
+        "total_hex": "0x1.0000000000000p+0",
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ],
+        "cdf_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ],
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          9007199254740992
+        ]
+      }
+    ],
+    "nodes": 1,
+    "leaves": 1,
+    "bits": 53,
+    "original_audit": {
+      "real_cdf_law": [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      "grid_numerators": [
+        0,
+        9007199254740992
+      ],
+      "grid_denominator": 9007199254740992,
+      "real_failure": {
+        "rational": "0"
+      },
+      "grid_failure_numerator": 0,
+      "quantization_tv": {
+        "rational": "0"
+      },
+      "nodes": 2,
+      "failure_records": [],
+      "max_conditional_norm_residual": 0.0,
+      "bits": 53
+    }
+  },
+  "calibration": {
+    "seed": 473004,
+    "samples": 7,
+    "outputs": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "records": [
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 4,
+        "probabilities_hex": [
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x0.0p+0",
+          "0x1.0000000000000p+0"
+        ]
+      }
+    ],
+    "diagnostics": {
+      "max_observed_conditional_norm_residual": 0.0,
+      "completed_samples": 7,
+      "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+    }
+  },
+  "TV_to_exact_measurement_interval": [
+    {
+      "rational": "0"
+    },
+    {
+      "rational": "0"
+    }
+  ]
+}
