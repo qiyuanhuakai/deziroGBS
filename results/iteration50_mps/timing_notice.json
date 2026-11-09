@@ -1,0 +1,7 @@
+{
+  "excluded_field": "rows.json seconds",
+  "reason": "The newly added trace shard loop reuses the variable start, overwriting the per-case timer origin. These values are invalid durations. Raw records are preserved.",
+  "scientific_effect": "None: tensors, complete probability laws, traces, and TV computations precede or do not use this field.",
+  "valid_separate_field": "case_XX.json construction.total_seconds comes from the unchanged constructor but is not full end-to-end time.",
+  "policy": "Do not use rows.json seconds for speed or cost comparisons; no inferred replacement timings."
+}
