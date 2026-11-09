@@ -1,0 +1,63 @@
+{
+  "jobs": [
+    {
+      "label": "global_1",
+      "modes": 144,
+      "cutoff": 1,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_00.csv",
+      "reference": "results/iteration49_prefix/global_1.stdout.json"
+    },
+    {
+      "label": "global_2",
+      "modes": 144,
+      "cutoff": 2,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_01.csv",
+      "reference": "results/iteration49_prefix/global_2.stdout.json"
+    },
+    {
+      "label": "global_3",
+      "modes": 144,
+      "cutoff": 3,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_02.csv",
+      "reference": "results/iteration49_prefix/global_3.stdout.json"
+    },
+    {
+      "label": "global_4",
+      "modes": 144,
+      "cutoff": 4,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_03.csv",
+      "reference": "results/iteration49_prefix/global_4.stdout.json"
+    }
+  ],
+  "depth": 15,
+  "samples": 17,
+  "source_hashes": {
+    "research/iteration53_prefix_plan.md": "8eba7ab6432ab29fef93ad0fc1d399b56269ad7d51fe51c94235c6c8606df481",
+    "experiments/iteration53_prefix_run.py": "5b7680709d93e6c06ca5576384da873650a7da707e514e46202997df1f93486a",
+    "experiments/iteration22_external.py": "df1cad9f98606e895f7d2d41091d543c07aa2b545a83e748c91eac8631365c7a",
+    "experiments/iteration33_run.py": "0fecde3ed729f7e45cdd417158aafe0a2f5ee74a5611bed5792a8522ef718687",
+    "experiments/verify_iteration34.py": "01d52b0f44c3e958d2694c308cf69b11822c2ab2e75c20d48102df920445d1b0",
+    "experiments/iteration39_independent.py": "0a78ed70f43e79464bf8373e590b9eca0a0eba12c5ab121149fa2ad7c63b8350",
+    "src/gbslab/frugal_law.py": "4ab71015708251d53543a2af1976f2de76510c3d40d116a05caf25135e372fd9"
+  },
+  "dependencies": {
+    "results/iteration42_build/frugal_prefix.exe": "f3949df6ffc7c761075d6cdd2fbbafdc7457c8e3896cf63eb09f57bdbd042eea",
+    "results/iteration42_build/build.json": "f22c225cedd2918c63a991ae234b2e13f53c47969fb60ec38683a7ba69763336",
+    "results/iteration42_build/libgcc_s_seh-1.dll": "22e981422d3c02f569d77f963c7b9ba624214fd06e3de2468157b2317a37d71b",
+    "results/iteration42_build/libgomp-1.dll": "b9ea7941da281b3680a4b9d8e3b7e2167a2b0e692f18dc288e34362d8d50b623",
+    "results/iteration42_build/libstdc++-6.dll": "1b0d0ec5911980f5772a4d1c112efabf40bfffcd92a1e46e99480c4ec610f2fa",
+    "results/iteration42_build/libwinpthread-1.dll": "aca408feb0bc4b14a1e6490ef5fe337759a657fc9dcfbeb14b9968e7aae882fc",
+    "results/iteration39_global/case_00.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration49_prefix/global_1.stdout.json": "b474abe270774e0363c58010d6fbd695cecc98b9118a4a4980cebced308c601a",
+    "results/iteration39_global/case_01.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration49_prefix/global_2.stdout.json": "488d78ef425c51b02dabb3e76923dbb1776661db75d6d9047b50c8ab3ff8a67c",
+    "results/iteration39_global/case_02.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration49_prefix/global_3.stdout.json": "a88ea82f1f2ba78876fe517e88b3b24d9eb1ff9fcb889b0304cd3281529bf8c8",
+    "results/iteration39_global/case_03.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration49_prefix/global_4.stdout.json": "5888335ff67c8a64c7532cba6111c65283ce04bf990ca1d2f25597a8153c0c58"
+  }
+}
