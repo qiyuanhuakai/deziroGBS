@@ -1,0 +1,250 @@
+{
+  "iteration": 57,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T22:19:23.360651+00:00",
+  "scientific_commit": "189e9385b5bd4a43a291074b8e09bf82da0050ff",
+  "scientific_tree": "9d31924413001b1a9b9ad695a4466760161ab9c8",
+  "parent": "33827fa364d57727d6c42a1dfea18c37d438cf7c",
+  "prepublication_verification": {
+    "parent": "33827fa364d57727d6c42a1dfea18c37d438cf7c",
+    "expected_tree": "9d31924413001b1a9b9ad695a4466760161ab9c8",
+    "new_artifacts": 1010,
+    "dependencies": 55,
+    "base_manifest_working_checks": 1065,
+    "base_manifest_git_or_archived_git_checks": 1065,
+    "archived_dependency_inputs": {
+      "results/iteration37_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration37_manifest.json",
+        "sha256": "9e0d2f262d604a40a8d89362d2136fc848dd280e206a0aa27036f49f51deb8f3",
+        "inherited_git_sha256": "ea424ad0afa4441f38e71bb4197df74d083d825bc96e4bc1e3d2e2be7700dd2c"
+      },
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "changed_paths": 1035,
+    "changed_source_git_byte_checks": 927,
+    "full_suite_source_and_snapshot_checks": 611,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "remote_main_before": "33827fa364d57727d6c42a1dfea18c37d438cf7c"
+  },
+  "remote_verified_refs": {
+    "main": "189e9385b5bd4a43a291074b8e09bf82da0050ff",
+    "research/iteration57-20261110": "189e9385b5bd4a43a291074b8e09bf82da0050ff"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration57_manifest.json",
+    "sha256": "e2f4dbc84a5f9193be968ca5e0b25c52945424f54013f128d6da6bdcaff0b829",
+    "new_artifacts": 1010,
+    "bytes": 27155200,
+    "dependencies": 55,
+    "dependency_bytes": 62611711,
+    "working_and_git_payload_checks": 1065,
+    "dependency_archives": {
+      "results/iteration37_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration37_manifest.json",
+        "sha256": "9e0d2f262d604a40a8d89362d2136fc848dd280e206a0aa27036f49f51deb8f3",
+        "inherited_git_sha256": "ea424ad0afa4441f38e71bb4197df74d083d825bc96e4bc1e3d2e2be7700dd2c"
+      },
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration57_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    }
+  },
+  "scientific_validations": {
+    "paths_validation": {
+      "count": 37635,
+      "passed": 37635
+    },
+    "target_validation": {
+      "count": 177,
+      "passed": 177
+    },
+    "comparisons": {
+      "count": 1131,
+      "passed": 1131
+    },
+    "rare_events": {
+      "count": 84,
+      "passed": 84
+    }
+  },
+  "scientific_checks_total": 39027,
+  "tests": {
+    "tests_run": 715,
+    "passed": 686,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 8,
+    "executed_gate_passed": true,
+    "full_gate_passed": false,
+    "unchanged_sources": true
+  },
+  "post_suite_source_additions": [],
+  "comparison_summary": {
+    "completed": true,
+    "jobs": 5,
+    "global_cutoffs": 4,
+    "complete_paths": 1044,
+    "path_steps": 13120,
+    "physical_certificates": 7,
+    "local_atoms": 1024,
+    "strict_global_word_uppers": 4,
+    "shifted_uppers_equal_one": 4,
+    "scope": "Selected complete-output overlap certifies full-law upper bounds. Bounds close to one are not useful sampling-accuracy guarantees."
+  },
+  "scope": "Complete output overlap certificates for actual144 K1..4 using5 predeclared outputs;strict upper bounds are nearly1 and shifted-target upper bounds remain1. Independent pinned native adapter provenance,1044 complete paths,13120 steps,12362 unchanged public steps,1124 original-prefix checkpoints;1024 local atoms exactly match old full laws.7 physical matrix certificates.20 rare-output ratios and4 conditional-event distances,not unconditional full-law distances. Interval-plan correction and rejected original plot preserved;plot recovery completed before full suite. No useful full144 accuracy bound or matched-quality Jiuzhang-scale claim. Goal remains active."
+}
