@@ -1,0 +1,252 @@
+{
+  "iteration": 55,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T21:35:08.273868+00:00",
+  "scientific_commit": "d93df63e0785d80488033489abb6b9db00dcadab",
+  "scientific_tree": "7d12cf519f0d3341714f9d4eb7aaf380c6c5fc73",
+  "parent": "dd3190358d79cbdb5f8aca1e2c751512b6d815b0",
+  "prepublication_verification": {
+    "parent": "dd3190358d79cbdb5f8aca1e2c751512b6d815b0",
+    "expected_tree": "7d12cf519f0d3341714f9d4eb7aaf380c6c5fc73",
+    "new_artifacts": 1034,
+    "dependencies": 85,
+    "base_manifest_working_checks": 1119,
+    "base_manifest_git_or_archived_git_checks": 1119,
+    "archived_dependency_inputs": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "changed_paths": 1052,
+    "changed_source_git_byte_checks": 871,
+    "full_suite_source_and_snapshot_checks": 586,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "remote_main_before": "dd3190358d79cbdb5f8aca1e2c751512b6d815b0"
+  },
+  "remote_verified_refs": {
+    "main": "d93df63e0785d80488033489abb6b9db00dcadab",
+    "research/iteration55-20261110": "d93df63e0785d80488033489abb6b9db00dcadab"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration55_manifest.json",
+    "sha256": "f8536b433cad7bbccddf63b4eaeb33b706d85cd82c187aada3bbb1d887fd0970",
+    "new_artifacts": 1034,
+    "bytes": 70787999,
+    "dependencies": 85,
+    "dependency_bytes": 5818734,
+    "working_and_git_payload_checks": 1119,
+    "dependency_archives": {
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration55_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    }
+  },
+  "scientific_validations": {
+    "noise_validation": {
+      "count": 166054,
+      "passed": 166054
+    },
+    "controls": {
+      "count": 455,
+      "passed": 455
+    },
+    "comparisons": {
+      "count": 206,
+      "passed": 206
+    }
+  },
+  "scientific_checks_total": 166715,
+  "tests": {
+    "tests_run": 699,
+    "passed": 670,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 12,
+    "executed_gate_passed": true,
+    "full_gate_passed": false,
+    "unchanged_sources": true
+  },
+  "post_suite_source_additions": [],
+  "comparison_summary": {
+    "completed": true,
+    "cases": 24,
+    "holdout_cases": 8,
+    "refinement_edges": 24,
+    "physical_refinements": {
+      "improved": 19,
+      "worsened": 5,
+      "unresolved": 0
+    },
+    "finite_refinements": {
+      "improved": 14,
+      "worsened": 10,
+      "unresolved": 0
+    },
+    "dimension_pairs": 12,
+    "dimension_improved": 12,
+    "allocation_pairs": 6,
+    "second_axis_better_physical": 2,
+    "second_axis_better_finite": 0,
+    "storage": {
+      "raw_bytes": 174086828,
+      "compressed_bytes": 37646706,
+      "nodes": 3456,
+      "trace_nodes": 24184
+    },
+    "scope": "Two real Gaussian drives on two-mode inputs. Equal grid-node counts do not establish equal runtime. No full phase-space rank4 noise or large-scale speed claim."
+  },
+  "scope": "24 complete two-mode experiments with two independent real Gaussian drives,8 predeclared holdouts,3456 grid nodes and24184 trace nodes. Multivariate Wick integration independently checked with density polynomials and closed two-variable moments;26 rank-one regressions and24 original-density fixed-node controls.24 coordinate refinements:19 physical improvements/5 regressions and14 finite-reference improvements/10 regressions.12 dimension pairs all improve.6 equal-node allocation comparisons;2 choose opposite axes for physical versus finite reference. Exact signed coordinate changes retained. No phase-space rank4 noise, matched-quality speed, new full144 upper bound or Jiuzhang-scale simulation. Goal remains active."
+}
