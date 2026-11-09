@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第30轮：完整混合阈值输出采样](RESEARCH_REPORT_ITERATION30.md)
+- [第30轮核验](results/iteration30_validation/validation.json)
 - [第29轮：同通道有限MPS输出](RESEARCH_REPORT_ITERATION29.md)
 - [第29轮核验](results/iteration29_validation/validation.json)
 - [第28轮：可构造分解与宿主精度](RESEARCH_REPORT_ITERATION28.md)
@@ -37,6 +39,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第30轮持续发布
+
+发布有限MPS经Gaussian位移后的完整阈值输出采样实现，以及22项正式计算、1,073,152条完整字符串、1,471项独立核验。正测量分支覆盖完整点击效应，无新增输出光子截断；不宣称Gaussian目标的精确采样或TV上界。
+
+457个新冻结产物共26,317,717字节，引用29个历史文件共516,585,249字节，沿用原大文件分卷。全库447运行、418通过、0失败、0错误，29案例与7类依赖跳过保留。运行墙钟与环境信息公开，注明部分任务重叠，第三方程序未执行或重发。
 
 ## 2026-11-09：第29轮持续发布
 
