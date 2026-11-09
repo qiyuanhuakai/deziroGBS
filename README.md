@@ -1,6 +1,14 @@
 # deziroGBS / GBS Classical Lab
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第37轮固定预算点击保留规则比较，2026-11-09**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第38轮全局均值证据、官方Frugal基线与Gaussian树反例，2026-11-09**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+
+## 第38轮进展
+
+384次新的144模式尝试全部完成。在独立同分布均匀网格尝试前提下，40项预声明均值/事件检验具有至少99%同时覆盖率；recent规则完整TV下界约0.02174695，其余三种规则未检出，不代表已准确。官方当前主分支FrugalGBS重新构建，在三个同输入十模式块上完成15个截断配置；森林局部数值较小，但官方浮点导出向量与森林严格停止律的认证口径不同，尚无整体精度或速度胜出结论。
+
+另在真实Gaussian四模式边缘中严格证明：联合KL最优树的特定后验误差约0.00343，另一树约0.000329，补上前轮一般二元反例的物理性缺口。主核验137,847项及数学反例304项通过；新增8项测试通过，全库522运行、493通过、0失败、0错误，既有依赖跳过保留。MPS解析控制另明确区分最大键截断权重与完整点击TV。
+
+详见[第38轮报告](RESEARCH_REPORT_ITERATION38.md)、[均值检验推导](research/iteration38_mean_witness.md)、[Gaussian树反例](research/iteration38_gaussian_tree_counterexample.md)、[先进工具与九章对照](research/iteration38_frontier_comparison.md)、[后续方向](research/iteration39_plan.md)。
 
 ## 第37轮进展
 
