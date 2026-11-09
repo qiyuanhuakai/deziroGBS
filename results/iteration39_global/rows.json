@@ -1,0 +1,182 @@
+[
+  {
+    "sequence": 0,
+    "modes": 144,
+    "cutoff": 1,
+    "samples": 1024,
+    "seed": 391440,
+    "command": [
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+      "--input",
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_global\\case_00.csv",
+      "--modes",
+      "144",
+      "--cutoff",
+      "1",
+      "--samples",
+      "1024",
+      "--seed",
+      "391440",
+      "--threads",
+      "1",
+      "--audit"
+    ],
+    "returncode": 0,
+    "mean_clicks": 66.6826171875,
+    "mean_centered_square": 33.7314453125,
+    "full_TV_statistical_lower": 0.0006529828544037569,
+    "observable_TV_lower": {
+      "X": 0.0,
+      "Y": 0.0006529828544037569
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.17863,
+      "layout": 0.000287,
+      "cumulants": 4e-06,
+      "target": 0.00088,
+      "official_sampling": 0.004688,
+      "audit_replay": 0.005815,
+      "prefix_tree": 0
+    },
+    "replayed_steps": 147456,
+    "nonfinite": 0,
+    "saturated": 0,
+    "seconds": 1.3515291000076104
+  },
+  {
+    "sequence": 1,
+    "modes": 144,
+    "cutoff": 2,
+    "samples": 1024,
+    "seed": 391440,
+    "command": [
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+      "--input",
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_global\\case_01.csv",
+      "--modes",
+      "144",
+      "--cutoff",
+      "2",
+      "--samples",
+      "1024",
+      "--seed",
+      "391440",
+      "--threads",
+      "1",
+      "--audit"
+    ],
+    "returncode": 0,
+    "mean_clicks": 66.5029296875,
+    "mean_centered_square": 79.8916015625,
+    "full_TV_statistical_lower": 0.0,
+    "observable_TV_lower": {
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.178828,
+      "layout": 0.009532,
+      "cumulants": 1.2e-05,
+      "target": 0.012349,
+      "official_sampling": 154.380285,
+      "audit_replay": 152.303587,
+      "prefix_tree": 0
+    },
+    "replayed_steps": 147456,
+    "nonfinite": 0,
+    "saturated": 24,
+    "seconds": 308.1706742999959
+  },
+  {
+    "sequence": 2,
+    "modes": 144,
+    "cutoff": 3,
+    "samples": 1024,
+    "seed": 391440,
+    "command": [
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+      "--input",
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_global\\case_02.csv",
+      "--modes",
+      "144",
+      "--cutoff",
+      "3",
+      "--samples",
+      "1024",
+      "--seed",
+      "391440",
+      "--threads",
+      "1",
+      "--audit"
+    ],
+    "returncode": 0,
+    "mean_clicks": 66.5517578125,
+    "mean_centered_square": 78.3330078125,
+    "full_TV_statistical_lower": 0.0,
+    "observable_TV_lower": {
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.153187,
+      "layout": 0.345842,
+      "cumulants": 1.4e-05,
+      "target": 1.210765,
+      "official_sampling": 164.502948,
+      "audit_replay": 160.992941,
+      "prefix_tree": 0
+    },
+    "replayed_steps": 147456,
+    "nonfinite": 0,
+    "saturated": 75,
+    "seconds": 328.4746247000003
+  },
+  {
+    "sequence": 3,
+    "modes": 144,
+    "cutoff": 4,
+    "samples": 1024,
+    "seed": 391440,
+    "command": [
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+      "--input",
+      "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_global\\case_03.csv",
+      "--modes",
+      "144",
+      "--cutoff",
+      "4",
+      "--samples",
+      "1024",
+      "--seed",
+      "391440",
+      "--threads",
+      "1",
+      "--audit"
+    ],
+    "returncode": 0,
+    "mean_clicks": 66.55078125,
+    "mean_centered_square": 80.078125,
+    "full_TV_statistical_lower": 0.0,
+    "observable_TV_lower": {
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "status": "completed",
+    "timings": {
+      "input": 0.151585,
+      "layout": 9.94245,
+      "cumulants": 2.1e-05,
+      "target": 91.711657,
+      "official_sampling": 323.677522,
+      "audit_replay": 373.352775,
+      "prefix_tree": 0
+    },
+    "replayed_steps": 147456,
+    "nonfinite": 0,
+    "saturated": 82,
+    "seconds": 800.2933010999986
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "sequence": 5,
+  "modes": 2,
+  "cutoff": 2,
+  "samples": 129,
+  "kind": "tmsv",
+  "command": [
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+    "--input",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration39_pilot\\case_05.csv",
+    "--modes",
+    "2",
+    "--cutoff",
+    "2",
+    "--samples",
+    "129",
+    "--seed",
+    "390105",
+    "--threads",
+    "1",
+    "--audit",
+    "--prefix-tree"
+  ],
+  "returncode": 0,
+  "status": "completed",
+  "timings": {
+    "input": 0.000318,
+    "layout": 3.3e-05,
+    "cumulants": 6e-06,
+    "target": 4.9e-05,
+    "official_sampling": 1.2e-05,
+    "audit_replay": 1.8e-05,
+    "prefix_tree": 2e-06
+  },
+  "layout_entries": 4,
+  "replayed_steps": 258,
+  "saturated": 0,
+  "nonfinite": 0,
+  "seconds": 0.020799099991563708
+}

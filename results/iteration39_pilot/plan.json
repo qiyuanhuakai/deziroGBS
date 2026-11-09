@@ -1,0 +1,131 @@
+{
+  "jobs": [
+    {
+      "modes": 2,
+      "cutoff": 1,
+      "samples": 129,
+      "kind": "vacuum"
+    },
+    {
+      "modes": 2,
+      "cutoff": 2,
+      "samples": 129,
+      "kind": "vacuum"
+    },
+    {
+      "modes": 2,
+      "cutoff": 1,
+      "samples": 129,
+      "kind": "thermal"
+    },
+    {
+      "modes": 2,
+      "cutoff": 2,
+      "samples": 129,
+      "kind": "thermal"
+    },
+    {
+      "modes": 2,
+      "cutoff": 1,
+      "samples": 129,
+      "kind": "tmsv"
+    },
+    {
+      "modes": 2,
+      "cutoff": 2,
+      "samples": 129,
+      "kind": "tmsv"
+    },
+    {
+      "modes": 10,
+      "cutoff": 1,
+      "samples": 129,
+      "kind": "primary"
+    },
+    {
+      "modes": 10,
+      "cutoff": 2,
+      "samples": 129,
+      "kind": "primary"
+    },
+    {
+      "modes": 10,
+      "cutoff": 5,
+      "samples": 129,
+      "kind": "primary"
+    },
+    {
+      "modes": 32,
+      "cutoff": 1,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 32,
+      "cutoff": 2,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 32,
+      "cutoff": 3,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 64,
+      "cutoff": 1,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 64,
+      "cutoff": 2,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 64,
+      "cutoff": 3,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 144,
+      "cutoff": 1,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 144,
+      "cutoff": 2,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 144,
+      "cutoff": 3,
+      "samples": 2,
+      "kind": "primary"
+    },
+    {
+      "modes": 144,
+      "cutoff": 4,
+      "samples": 2,
+      "kind": "primary"
+    }
+  ],
+  "exploratory_only": true,
+  "timeout_per_case_seconds": 600,
+  "seed_base": 390100,
+  "source_hashes": {
+    "experiments/iteration39_pilot.py": "02911d4ed546053249be4373c6852ce3a33a60c7cff491e7b946051e958c9269",
+    "experiments/build_frugal_extended.py": "21afe34516c479f4310afed9e6099c42f961e4c11f9b52e89f78aa0d1d1f8220",
+    "experiments/frugal_extended.cpp": "e349710e994eca5010c3523c6b82dba2b99f2af4e8b3197551ca6779dcd9c2ae"
+  },
+  "dependencies": {
+    "results/iteration35_panel/inputs.npz": "bfd0024076421b1c033c83993cab93fb5ff69d93c6fee2c996b9fa753bb1a540",
+    "results/iteration39_build/frugal_extended.exe": "a4333f3ede353740b55f4caa213c8e758a16ce846bac4cf1ad68cf4819ac6763",
+    "results/iteration39_build/build.json": "3ea745a031bb89276d35f5c3c318ca8e420a0b3744e9b8a808d22c6bffe51c72"
+  }
+}

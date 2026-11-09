@@ -1,0 +1,45 @@
+{
+  "sequence": 0,
+  "modes": 144,
+  "cutoff": 1,
+  "samples": 1024,
+  "seed": 391440,
+  "command": [
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_build\\frugal_extended.exe",
+    "--input",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration39_global\\case_00.csv",
+    "--modes",
+    "144",
+    "--cutoff",
+    "1",
+    "--samples",
+    "1024",
+    "--seed",
+    "391440",
+    "--threads",
+    "1",
+    "--audit"
+  ],
+  "returncode": 0,
+  "mean_clicks": 66.6826171875,
+  "mean_centered_square": 33.7314453125,
+  "full_TV_statistical_lower": 0.0006529828544037569,
+  "observable_TV_lower": {
+    "X": 0.0,
+    "Y": 0.0006529828544037569
+  },
+  "status": "completed",
+  "timings": {
+    "input": 0.17863,
+    "layout": 0.000287,
+    "cumulants": 4e-06,
+    "target": 0.00088,
+    "official_sampling": 0.004688,
+    "audit_replay": 0.005815,
+    "prefix_tree": 0
+  },
+  "replayed_steps": 147456,
+  "nonfinite": 0,
+  "saturated": 0,
+  "seconds": 1.3515291000076104
+}

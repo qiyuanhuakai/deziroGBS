@@ -192,3 +192,16 @@ experiments/iteration38*.py -text -whitespace
 experiments/verify_iteration38.py -text -whitespace
 research/iteration38_confirmation_plan.md -text -whitespace
 research/iteration38_external_plan.md -text -whitespace
+results/iteration39*/** -text -whitespace
+experiments/build_frugal_extended.py -text -whitespace
+experiments/frugal_extended.cpp -text -whitespace
+experiments/iteration39*.py -text -whitespace
+experiments/verify_iteration39*.py -text -whitespace
+src/gbslab/frugal_law.py -text -whitespace
+tests/test_frugal_law.py -text -whitespace
+research/iteration39_panel_plan.md -text -whitespace
+src/gbslab/binomial_integer.py -text -whitespace
+tests/test_binomial_integer.py -text -whitespace
+
+# Preserve the audited upstream header bytes; normalized content is unchanged.
+third_party/FrugalGBS/include/fgbs/cpu/cpu_sampler.hpp -text -whitespace

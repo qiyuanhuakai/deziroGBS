@@ -1,6 +1,14 @@
 # deziroGBS / GBS Classical Lab
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第38轮全局均值证据、官方Frugal基线与Gaussian树反例，2026-11-09**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。最近完成：**第39轮144模官方Frugal、有限随机数完整局部律与一阶全局解析界，2026-11-09**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+
+## 第39轮进展
+
+官方Frugal CPU扩展至144模式，阶1至4各1024个样本全部完成。三个十模式块、阶1至5获得严格归一化有限随机字完整律；全部前缀及随机轨迹独立核对。一阶配置虽几乎保持目标均值，却显著低估点击波动：在明确随机字及浮点算术前提下，解析证明其完整144模TV至少约0.009042，转移至shifted目标仍约0.009034。二至四阶统计检验未检出，不代表准确。
+
+正式核验1,544项、校准7,516项、一阶证明732项通过；全库533运行、504通过、零失败、零错误，既有依赖跳过保留。尚无完整144模TV上界或超过先进工具、九章的结论。
+
+详见[第39轮报告](RESEARCH_REPORT_ITERATION39.md)、[一阶全局解析界](research/iteration39_k1_global_bound.md)、[有限随机字推导](research/iteration39_finite_word_law.md)、[先进工具与九章对照](research/iteration39_frontier_comparison.md)、[持续方向](research/iteration40_plan.md)。
 
 ## 第38轮进展
 
