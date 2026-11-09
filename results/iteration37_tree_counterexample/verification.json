@@ -1,0 +1,52 @@
+{
+  "passed": 66,
+  "checks": 66,
+  "directed_reconstruction": true,
+  "exact_constant_KL_plus_CMI_product": true,
+  "rows": [
+    {
+      "tree": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "joint_TV": "424681/5128977",
+      "posterior_error": "21065/306963"
+    },
+    {
+      "tree": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "joint_TV": "24989869/116764011",
+      "posterior_error": "69263/246051"
+    },
+    {
+      "tree": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "joint_TV": "96653/1148070",
+      "posterior_error": "71/3024"
+    }
+  ],
+  "verifier_sha256": "c46f387629f598acdb300560d7e33ccfdcd854a0b53d84aa55292ba7907a59bf",
+  "result_sha256": "24ad4e1e0204aa43dba4b191c0672eb2f9105832c6fe3129c173c62ceaeca77b"
+}

@@ -176,3 +176,11 @@ src/gbslab/gaussian_envelope.py text eol=lf
 tests/test_gaussian_envelope.py text eol=lf
 experiments/iteration36*.py text eol=lf
 experiments/verify_iteration36.py text eol=lf
+
+# Preserve bytes already bound by the iteration 37 pilot and confirmation snapshots.
+results/iteration37*/** -text -whitespace
+src/gbslab/positive_completion.py -text -whitespace
+experiments/iteration37*.py -text -whitespace
+experiments/verify_iteration37.py -text -whitespace
+tests/test_forest_conditional_mi.py -text -whitespace
+research/iteration37_panel_plan.md -text -whitespace

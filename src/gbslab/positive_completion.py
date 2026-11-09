@@ -160,7 +160,7 @@ class PositiveCompletionSamplingError(NumericalProbabilityError):
 class PositiveCompletionSampler:
     """Fixed product or adjacent-disjoint-pair positive completion.
 
-    ``selection`` is ``recent``, ``pairwise``, or ``click_influence``; the latter
+    ``selection`` is ``recent``, ``pairwise``, ``conditional_mi``, or ``click_influence``; the latter
     composes ConditionalMemorySampler without changing scores or tie rules.
     ``event_oracle=None`` uses Gaussian direct inclusion-exclusion.  A custom
     oracle supplies ``m`` and ``event_probability(zeros, ones) -> EventEstimate``.
@@ -182,11 +182,11 @@ class PositiveCompletionSampler:
             raise ValueError("completion must be 'product' or 'pair_block'")
         if block_order not in ("measurement", "physical"):
             raise ValueError("block_order must be 'measurement' or 'physical'")
-        if selection not in ("recent", "pairwise", "click_influence"):
-            raise ValueError("selection must be recent, pairwise, or click_influence")
-        if selection == "click_influence":
+        if selection not in ("recent", "pairwise", "conditional_mi", "click_influence"):
+            raise ValueError("selection must be recent, pairwise, conditional_mi, or click_influence")
+        if selection in ("conditional_mi", "click_influence"):
             if not hasattr(model, "V"):
-                raise ValueError("click_influence requires the original Gaussian model")
+                raise ValueError("conditional selection requires the original Gaussian model")
             selector = ConditionalMemorySampler(model, max_clicks, order=order,
                 selection=selection, cache_size=cache_size,
                 max_relative_roundoff=max_relative_roundoff)
