@@ -148,3 +148,12 @@ src/gbslab/threshold_blocks.py text eol=lf
 tests/test_threshold_blocks.py text eol=lf
 experiments/iteration32*.py text eol=lf
 experiments/verify_iteration32.py text eol=lf
+
+results/iteration33*/** -text -whitespace
+src/gbslab/coupling_audit.py text eol=lf
+tests/test_coupling_audit.py text eol=lf
+experiments/iteration33*.py text eol=lf
+experiments/verify_iteration33.py text eol=lf
+# Preserve the exact legacy bytes bound by the published native build.
+experiments/batched_forest_kernel.cpp -text -whitespace
+experiments/batched_forest_kernel.h -text -whitespace

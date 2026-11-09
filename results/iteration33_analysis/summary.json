@@ -1,0 +1,260 @@
+{
+  "analyzer_sha256": "3e2e0b6898ee3746b75939024f7ec73bac084fb143c3fd0714bb77e20a80ad53",
+  "forest_ranges": [
+    {
+      "budget": 0,
+      "minimum_ratio": 1.3390527141452446,
+      "maximum_ratio": 1.7612193028586758,
+      "maximum_tv": 0.0009379322037615531,
+      "maximum_coupling_upper": 0.0014749034922083486,
+      "maximum_absolute_improvement_over_smaller_hybrid": 1.3771416191819819e-06
+    },
+    {
+      "budget": 2,
+      "minimum_ratio": 1.1325258958811277,
+      "maximum_ratio": 1.3519656779794138,
+      "maximum_tv": 9.045947370528413e-05,
+      "maximum_coupling_upper": 0.00010581878991631482,
+      "maximum_absolute_improvement_over_smaller_hybrid": 7.988383888136562e-09
+    },
+    {
+      "budget": 4,
+      "minimum_ratio": 1.0000000005163276,
+      "maximum_ratio": 1.000000133777165,
+      "maximum_tv": 5.6819059186837185e-06,
+      "maximum_coupling_upper": 5.681905921617444e-06,
+      "maximum_absolute_improvement_over_smaller_hybrid": 8.470329472543003e-21
+    }
+  ],
+  "forest_partial_ranges": [
+    {
+      "queries": 0,
+      "minimum_upper": 1.0,
+      "maximum_upper": 1.0
+    },
+    {
+      "queries": 8,
+      "minimum_upper": 1.0,
+      "maximum_upper": 1.0
+    },
+    {
+      "queries": 32,
+      "minimum_upper": 1.0,
+      "maximum_upper": 1.0
+    },
+    {
+      "queries": 128,
+      "minimum_upper": 0.4930065474132425,
+      "maximum_upper": 0.6721427024604605
+    },
+    {
+      "queries": 255,
+      "minimum_upper": 3.572508820300612e-08,
+      "maximum_upper": 0.0014749034922083486
+    }
+  ],
+  "native_cases": [
+    {
+      "case": 24,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 8,
+      "precision": "longdouble",
+      "ideal_tv": 7.385453543522057e-08,
+      "grid53_tv": 7.385453576376543e-08,
+      "ideal_failure_mass": 7.38545354345751e-08,
+      "grid53_failure_mass": 7.385453543458139e-08,
+      "failure_nodes": 10,
+      "queries": 51,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 25,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 8,
+      "precision": "quad",
+      "ideal_tv": 6.429498491140814e-19,
+      "grid53_tv": 3.2919032274640965e-16,
+      "ideal_failure_mass": 0.0,
+      "grid53_failure_mass": 0.0,
+      "failure_nodes": 0,
+      "queries": 63,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 26,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 8,
+      "precision": "auto",
+      "ideal_tv": 6.454613719714663e-19,
+      "grid53_tv": 3.2919032274640965e-16,
+      "ideal_failure_mass": 0.0,
+      "grid53_failure_mass": 0.0,
+      "failure_nodes": 0,
+      "queries": 63,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 27,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 40,
+      "precision": "longdouble",
+      "ideal_tv": 1.0,
+      "grid53_tv": 1.0,
+      "ideal_failure_mass": 1.0,
+      "grid53_failure_mass": 1.0,
+      "failure_nodes": 1,
+      "queries": 1,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 28,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 40,
+      "precision": "quad",
+      "ideal_tv": 2.067951531379372e-24,
+      "grid53_tv": 3.3087224502049637e-24,
+      "ideal_failure_mass": 2.0679515313788076e-24,
+      "grid53_failure_mass": 2.0679515313806884e-24,
+      "failure_nodes": 10,
+      "queries": 31,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 29,
+      "panel": "thermal",
+      "modes": 6,
+      "exponent": 40,
+      "precision": "auto",
+      "ideal_tv": 2.067951531379372e-24,
+      "grid53_tv": 3.3087224502049637e-24,
+      "ideal_failure_mass": 2.0679515313788076e-24,
+      "grid53_failure_mass": 2.0679515313806884e-24,
+      "failure_nodes": 10,
+      "queries": 31,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 30,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 8,
+      "precision": "longdouble",
+      "ideal_tv": 2.577357894686331e-07,
+      "grid53_tv": 2.5773578990498673e-07,
+      "ideal_failure_mass": 2.5773578946777585e-07,
+      "grid53_failure_mass": 2.5773578946779777e-07,
+      "failure_nodes": 35,
+      "queries": 127,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 31,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 8,
+      "precision": "quad",
+      "ideal_tv": 8.539275535044617e-19,
+      "grid53_tv": 4.372109073942843e-16,
+      "ideal_failure_mass": 0.0,
+      "grid53_failure_mass": 0.0,
+      "failure_nodes": 0,
+      "queries": 255,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 32,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 8,
+      "precision": "auto",
+      "ideal_tv": 8.572632080967653e-19,
+      "grid53_tv": 4.372109073942843e-16,
+      "ideal_failure_mass": 0.0,
+      "grid53_failure_mass": 0.0,
+      "failure_nodes": 0,
+      "queries": 255,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 33,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 40,
+      "precision": "longdouble",
+      "ideal_tv": 1.0,
+      "grid53_tv": 1.0,
+      "ideal_failure_mass": 1.0,
+      "grid53_failure_mass": 1.0,
+      "failure_nodes": 1,
+      "queries": 1,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 34,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 40,
+      "precision": "quad",
+      "ideal_tv": 4.342698215893615e-24,
+      "grid53_tv": 5.9970594409929e-24,
+      "ideal_failure_mass": 4.342698215892863e-24,
+      "grid53_failure_mass": 4.3426982158968125e-24,
+      "failure_nodes": 21,
+      "queries": 57,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 35,
+      "panel": "thermal",
+      "modes": 8,
+      "exponent": 40,
+      "precision": "auto",
+      "ideal_tv": 4.342698215893615e-24,
+      "grid53_tv": 5.9970594409929e-24,
+      "ideal_failure_mass": 4.342698215892863e-24,
+      "grid53_failure_mass": 4.3426982158968125e-24,
+      "failure_nodes": 21,
+      "queries": 57,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 36,
+      "panel": "endpoint",
+      "modes": 1,
+      "exponent": null,
+      "precision": "auto",
+      "ideal_tv": 1.0,
+      "grid53_tv": 1.0,
+      "ideal_failure_mass": 1.0,
+      "grid53_failure_mass": 1.0,
+      "failure_nodes": 1,
+      "queries": 1,
+      "identical_query_order_replay": true
+    },
+    {
+      "case": 37,
+      "panel": "vacuum",
+      "modes": 4,
+      "exponent": null,
+      "precision": "auto",
+      "ideal_tv": 0.0,
+      "grid53_tv": 0.0,
+      "ideal_failure_mass": 0.0,
+      "grid53_failure_mass": 0.0,
+      "failure_nodes": 0,
+      "queries": 4,
+      "identical_query_order_replay": true
+    }
+  ],
+  "maximum_target_mass_error": 1.734723475976807e-17,
+  "maximum_target_normalization_l1_change": 1.734723475976807e-17,
+  "maximum_grid_law_tv": 4.380648349477888e-16,
+  "formal_seconds": 16.815162600018084,
+  "scope": "Exact rational bounds for supplied finite laws, including failure. Reused Gaussian target tables are explicitly normalized floating inputs; thermal targets are analytic. No 144-mode Gaussian TV certificate. Grid53 is an abstract independent-uniform grid model, not a deterministic PRNG proof.",
+  "unchanged_source": true
+}

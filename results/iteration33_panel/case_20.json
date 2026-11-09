@@ -1,0 +1,106 @@
+{
+  "sequence": 20,
+  "panel": "reused_forest",
+  "source_case": 44,
+  "modes": 8,
+  "start": 136,
+  "budget": 2,
+  "forest": "chain",
+  "target_origin": "exact normalization of saved binary64 Gaussian table",
+  "status": "completed",
+  "queries": 255,
+  "failure_nodes": 0,
+  "target_original_mass_error": 6.071532165918825e-18,
+  "target_normalization_l1_change": 6.071532165918825e-18,
+  "metrics": {
+    "extended_tv": 4.690016523120727e-05,
+    "coupling_upper": 6.015348795774693e-05,
+    "hybrid_target_upper": 6.015602860166516e-05,
+    "hybrid_proxy_upper": 6.0164089842380296e-05,
+    "failure_mass_seen": 0.0
+  },
+  "grid_law_tv": 8.389830663049454e-17,
+  "partials": [
+    {
+      "budget": 0,
+      "uniform_bits": null,
+      "queries": 0,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 1.0,
+      "complete": false
+    },
+    {
+      "budget": 8,
+      "uniform_bits": null,
+      "queries": 8,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 0.9999999999999992,
+      "complete": false
+    },
+    {
+      "budget": 32,
+      "uniform_bits": null,
+      "queries": 32,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 0.9999999999999977,
+      "complete": false
+    },
+    {
+      "budget": 128,
+      "uniform_bits": null,
+      "queries": 128,
+      "coupling_upper": 0.5574112796157413,
+      "unresolved_matched_mass": 0.5573887364471323,
+      "complete": false
+    },
+    {
+      "budget": 255,
+      "uniform_bits": null,
+      "queries": 255,
+      "coupling_upper": 6.015348795774693e-05,
+      "unresolved_matched_mass": 0.0,
+      "complete": true
+    },
+    {
+      "budget": 0,
+      "uniform_bits": 53,
+      "queries": 0,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 1.0,
+      "complete": false
+    },
+    {
+      "budget": 8,
+      "uniform_bits": 53,
+      "queries": 8,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 0.9999999999999993,
+      "complete": false
+    },
+    {
+      "budget": 32,
+      "uniform_bits": 53,
+      "queries": 32,
+      "coupling_upper": 1.0,
+      "unresolved_matched_mass": 0.9999999999999977,
+      "complete": false
+    },
+    {
+      "budget": 128,
+      "uniform_bits": 53,
+      "queries": 128,
+      "coupling_upper": 0.5574112796157413,
+      "unresolved_matched_mass": 0.5573887364471323,
+      "complete": false
+    },
+    {
+      "budget": 255,
+      "uniform_bits": 53,
+      "queries": 255,
+      "coupling_upper": 6.0153487957719646e-05,
+      "unresolved_matched_mass": 0.0,
+      "complete": true
+    }
+  ],
+  "seconds": 0.4742533000098774
+}

@@ -1,0 +1,558 @@
+{
+  "job": {
+    "panel": "endpoint",
+    "modes": 1,
+    "precision": "auto",
+    "budget": 0,
+    "forest": "chain"
+  },
+  "target": [
+    {
+      "rational": "2/100000000000000001"
+    },
+    {
+      "rational": "99999999999999999/100000000000000001"
+    }
+  ],
+  "raw_target": null,
+  "original_target_mass": {
+    "rational": "1"
+  },
+  "oracle": [
+    {
+      "prefix": [],
+      "q": null,
+      "error": "strictly positive forest branches rounded to a Bernoulli endpoint"
+    }
+  ],
+  "replay_oracle": [
+    {
+      "prefix": [],
+      "q": null,
+      "error": "strictly positive forest branches rounded to a Bernoulli endpoint"
+    }
+  ],
+  "ideal": {
+    "complete": true,
+    "queries": 1,
+    "target": [
+      {
+        "rational": "2/100000000000000001"
+      },
+      {
+        "rational": "99999999999999999/100000000000000001"
+      }
+    ],
+    "distribution": [
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "failure_mass_seen": {
+      "rational": "1"
+    },
+    "unresolved_proxy_mass": {
+      "rational": "0"
+    },
+    "matched_failure_or_disagreement": {
+      "rational": "1"
+    },
+    "unresolved_matched_mass": {
+      "rational": "0"
+    },
+    "confirmed_matched_mass": {
+      "rational": "0"
+    },
+    "coupling_upper": {
+      "rational": "1"
+    },
+    "extended_tv": {
+      "rational": "1"
+    },
+    "hybrid_target_upper": {
+      "rational": "1"
+    },
+    "hybrid_proxy_upper": {
+      "rational": "1"
+    },
+    "level_losses": [
+      {
+        "rational": "1"
+      }
+    ],
+    "records": [
+      {
+        "prefix": [],
+        "status": "failure",
+        "target_mass": {
+          "rational": "1"
+        },
+        "proxy_mass": {
+          "rational": "1"
+        },
+        "matched_mass": {
+          "rational": "1"
+        },
+        "local_disagreement": {
+          "rational": "1"
+        },
+        "charged_loss": {
+          "rational": "1"
+        }
+      }
+    ],
+    "unresolved": [],
+    "uniform_bits": null
+  },
+  "grid53": {
+    "complete": true,
+    "queries": 1,
+    "target": [
+      {
+        "rational": "2/100000000000000001"
+      },
+      {
+        "rational": "99999999999999999/100000000000000001"
+      }
+    ],
+    "distribution": [
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "failure_mass_seen": {
+      "rational": "1"
+    },
+    "unresolved_proxy_mass": {
+      "rational": "0"
+    },
+    "matched_failure_or_disagreement": {
+      "rational": "1"
+    },
+    "unresolved_matched_mass": {
+      "rational": "0"
+    },
+    "confirmed_matched_mass": {
+      "rational": "0"
+    },
+    "coupling_upper": {
+      "rational": "1"
+    },
+    "extended_tv": {
+      "rational": "1"
+    },
+    "hybrid_target_upper": {
+      "rational": "1"
+    },
+    "hybrid_proxy_upper": {
+      "rational": "1"
+    },
+    "level_losses": [
+      {
+        "rational": "1"
+      }
+    ],
+    "records": [
+      {
+        "prefix": [],
+        "status": "failure",
+        "target_mass": {
+          "rational": "1"
+        },
+        "proxy_mass": {
+          "rational": "1"
+        },
+        "matched_mass": {
+          "rational": "1"
+        },
+        "local_disagreement": {
+          "rational": "1"
+        },
+        "charged_loss": {
+          "rational": "1"
+        }
+      }
+    ],
+    "unresolved": [],
+    "uniform_bits": 53
+  },
+  "partials": [
+    {
+      "budget": 0,
+      "complete": false,
+      "queries": 0,
+      "failure_mass_seen": {
+        "rational": "0"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "1"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "0"
+      },
+      "unresolved_matched_mass": {
+        "rational": "1"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": null,
+      "hybrid_target_upper": null,
+      "hybrid_proxy_upper": null,
+      "level_losses": [
+        {
+          "rational": "0"
+        }
+      ],
+      "uniform_bits": null
+    },
+    {
+      "budget": 1,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": null
+    },
+    {
+      "budget": 8,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": null
+    },
+    {
+      "budget": 32,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": null
+    },
+    {
+      "budget": 128,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": null
+    },
+    {
+      "budget": 0,
+      "complete": false,
+      "queries": 0,
+      "failure_mass_seen": {
+        "rational": "0"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "1"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "0"
+      },
+      "unresolved_matched_mass": {
+        "rational": "1"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": null,
+      "hybrid_target_upper": null,
+      "hybrid_proxy_upper": null,
+      "level_losses": [
+        {
+          "rational": "0"
+        }
+      ],
+      "uniform_bits": 53
+    },
+    {
+      "budget": 1,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": 53
+    },
+    {
+      "budget": 8,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": 53
+    },
+    {
+      "budget": 32,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": 53
+    },
+    {
+      "budget": 128,
+      "complete": true,
+      "queries": 1,
+      "failure_mass_seen": {
+        "rational": "1"
+      },
+      "unresolved_proxy_mass": {
+        "rational": "0"
+      },
+      "matched_failure_or_disagreement": {
+        "rational": "1"
+      },
+      "unresolved_matched_mass": {
+        "rational": "0"
+      },
+      "confirmed_matched_mass": {
+        "rational": "0"
+      },
+      "coupling_upper": {
+        "rational": "1"
+      },
+      "extended_tv": {
+        "rational": "1"
+      },
+      "hybrid_target_upper": {
+        "rational": "1"
+      },
+      "hybrid_proxy_upper": {
+        "rational": "1"
+      },
+      "level_losses": [
+        {
+          "rational": "1"
+        }
+      ],
+      "uniform_bits": 53
+    }
+  ],
+  "grid_law_tv": {
+    "rational": "0"
+  }
+}
