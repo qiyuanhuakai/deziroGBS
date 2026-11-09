@@ -1,0 +1,71 @@
+{
+  "source_hashes": {
+    "experiments/iteration42_analyze.py": "ffe363ba8b47a0a04cad621940a9ab05edf94d29521712dfaa691688bd669460"
+  },
+  "dependencies": {
+    "results/iteration42_prefix_recovery/validation.json": "b2f742183bebc454f07c243d726302ae19396c47edd93acaf9cbfc10d3f588b1",
+    "results/iteration42_repair_recovery/validation.json": "f2edba24daacff5e1757f2b301784823fcb4c475787df8d1a3384173a62c053e",
+    "results/iteration42_prefix/rows.json": "04824e4cba2e244a46b4ecce1ef090164b78a1bff8e02232fd3dacd97e327ca8",
+    "results/iteration42_prefix_recovery/depth_bounds.json": "2b184aaba8ffaf2746a2008de93afee603c0a09859ea9197c60b4c0308422515",
+    "results/iteration42_repair/rows.json": "c15f56dfc08bf85ddf10c9be27e7435d62287bcf6d3ec31892e96f71cec219b8",
+    "results/iteration42_fresh/rows.json": "1afd1564aa0825e91ca6c6204ae7cd89dd3f1c11ac234f898bb8d374b13e810e",
+    "results/iteration42_repair_recovery/nonextendability.json": "52b70f305c424b17e3cde86be8610e70b4abd59f5ddea6131c9d8ff7b38d4126",
+    "results/iteration42_prefix/global_1.audit.json": "e1ec34a85ab4f771f5bf2b8ff2fa36783610771c42fa0c9a5707451a3767a5e4",
+    "results/iteration42_prefix/global_2.audit.json": "f6b68822a6540545437fe195aeb4f21a7814244300d5396373f7da5ffd6244c1",
+    "results/iteration42_prefix/global_3.audit.json": "e94997dbbb701bd3f96d3d342d694f74fa2a806667963c7fc03ca1eed93856e6",
+    "results/iteration42_prefix/global_4.audit.json": "ddf265fe50e9583a46969e55ccb86f6b4acf3d48eb91c1c1576e9255e046b24f",
+    "results/iteration42_fresh/case_01.json": "1f0ddb41d153195793dd3f64258c420f44355b88cff0ebffc5a7f122fcb5e41f"
+  },
+  "global_bounds": [
+    {
+      "cutoff": 1,
+      "full144_BF_TV_lower": 0.02477108601657426,
+      "full144_shifted_TV_lower": 0.024762578471584556,
+      "prefix_TV_width": 5.7055831217932355e-30,
+      "event_TV_lower": 0.02477108601657426
+    },
+    {
+      "cutoff": 2,
+      "full144_BF_TV_lower": 0.0021403139850002715,
+      "full144_shifted_TV_lower": 0.0021318064400105696,
+      "prefix_TV_width": 5.7055831217932355e-30,
+      "event_TV_lower": 0.0021403139850002715
+    },
+    {
+      "cutoff": 3,
+      "full144_BF_TV_lower": 0.00031749907682763036,
+      "full144_shifted_TV_lower": 0.00030899153183792835,
+      "prefix_TV_width": 5.7055831217932355e-30,
+      "event_TV_lower": 0.00031749907682763036
+    },
+    {
+      "cutoff": 4,
+      "full144_BF_TV_lower": 5.7335347991008174e-05,
+      "full144_shifted_TV_lower": 4.882780300130619e-05,
+      "prefix_TV_width": 5.7055831217932355e-30,
+      "event_TV_lower": 5.7335347991008174e-05
+    }
+  ],
+  "repair_counts": {
+    "published_exploration": {
+      "cases": 9,
+      "feasible": 4,
+      "infeasible": 5,
+      "improved": 0,
+      "worsened": 4
+    },
+    "new_panel": {
+      "cases": 15,
+      "feasible": 5,
+      "infeasible": 10,
+      "improved": 2,
+      "worsened": 3
+    }
+  },
+  "dual_gap": 0.008362968672214678,
+  "forced_proper_marginal_TV_lower": 0.004214409409619996,
+  "recovered_verifier_issues": [
+    "Serialized absolute path representation mismatch",
+    "Tuple/list representation mismatch in marginal certificate"
+  ]
+}

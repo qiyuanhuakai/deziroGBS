@@ -1,0 +1,31 @@
+[
+  {
+    "args": [
+      "--prefix-tree",
+      "--prefix-depth",
+      "11"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Frugal extended adapter: Prefix depth must be <=min(16,modes)\n"
+  },
+  {
+    "args": [
+      "--prefix-tree",
+      "--prefix-depth",
+      "17"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Frugal extended adapter: Prefix depth must be <=min(16,modes)\n"
+  },
+  {
+    "args": [
+      "--prefix-depth",
+      "5"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Frugal extended adapter: Prefix depth requires prefix-tree\n"
+  }
+]
