@@ -1,0 +1,325 @@
+{
+  "job": {
+    "state": 0,
+    "displacement": 0,
+    "modes": 1
+  },
+  "stored_strides": [
+    [
+      32,
+      16,
+      16
+    ]
+  ],
+  "target": {
+    "modes": 1,
+    "displacements": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "integer_amplitudes": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "integer_norm": 1,
+    "vacuum_records": [
+      {
+        "mask": 0,
+        "coefficient": {
+          "rational": "1"
+        },
+        "exponent": 0,
+        "exponential_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ]
+      },
+      {
+        "mask": 1,
+        "coefficient": {
+          "rational": "1"
+        },
+        "exponent": {
+          "rational": "0"
+        },
+        "exponential_interval": [
+          {
+            "rational": "1"
+          },
+          {
+            "rational": "1"
+          }
+        ]
+      }
+    ],
+    "vacuum_intervals": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ]
+    ],
+    "raw_intervals": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "intervals": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "1"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "scope": "Normalized stored dimension-two state, exact displaced threshold effects, no output-photon truncation; not an untruncated Gaussian target"
+  },
+  "sampling": {
+    "real_law": [
+      {
+        "rational": "1"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "word_law": [
+      {
+        "rational": "1"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "0"
+      }
+    ],
+    "trace": [
+      {
+        "path": [],
+        "mask": 0,
+        "real_mass": {
+          "rational": "1"
+        },
+        "word_mass": {
+          "rational": "1"
+        },
+        "left_hex": [
+          [
+            "0x1.0000000000000p+0",
+            "0x0.0p+0"
+          ]
+        ],
+        "status": "completed",
+        "weights_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ],
+        "total_hex": "0x1.0000000000000p+0",
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ],
+        "cdf_hex": [
+          "0x1.0000000000000p+0",
+          "0x1.0000000000000p+0",
+          "0x1.0000000000000p+0"
+        ],
+        "counts": [
+          9007199254740992,
+          0,
+          0
+        ]
+      }
+    ],
+    "nodes": 1,
+    "leaves": 1,
+    "bits": 53,
+    "original_audit": {
+      "real_cdf_law": [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      "grid_numerators": [
+        9007199254740992,
+        0
+      ],
+      "grid_denominator": 9007199254740992,
+      "real_failure": {
+        "rational": "0"
+      },
+      "grid_failure_numerator": 0,
+      "quantization_tv": {
+        "rational": "0"
+      },
+      "nodes": 2,
+      "failure_records": [],
+      "max_conditional_norm_residual": 0.0,
+      "bits": 53
+    }
+  },
+  "calibration": {
+    "seed": 463000,
+    "samples": 7,
+    "outputs": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "records": [
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      },
+      {
+        "path": [],
+        "channel": 0,
+        "probabilities_hex": [
+          "0x1.0000000000000p+0",
+          "0x0.0p+0",
+          "0x0.0p+0"
+        ]
+      }
+    ],
+    "diagnostics": {
+      "max_observed_conditional_norm_residual": 0.0,
+      "completed_samples": 7,
+      "scope": "Observed paths only; no global finite-precision failure or TV certificate"
+    }
+  },
+  "TV_to_exact_measurement_interval": [
+    {
+      "rational": "0"
+    },
+    {
+      "rational": "0"
+    }
+  ]
+}
