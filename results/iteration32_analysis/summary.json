@@ -1,0 +1,83 @@
+{
+  "analyzer_sha256": "c0c25e2543d585d7b2ae2eee58f4907cb9e7bc46a4faea59c3005f96b3564f7e",
+  "mps_witnesses": [
+    {
+      "family": "new_32",
+      "start": 18,
+      "four_mode_tv": 0.008710263364573534,
+      "four_mode_only_cauchy_upper": 0.010450877713121403
+    },
+    {
+      "family": "new_64",
+      "start": 54,
+      "four_mode_tv": 0.008163174886080274,
+      "four_mode_only_cauchy_upper": 0.01007629507667237
+    },
+    {
+      "family": "new_128",
+      "start": 54,
+      "four_mode_tv": 0.0071472090368876265,
+      "four_mode_only_cauchy_upper": 0.008793167743143735
+    },
+    {
+      "family": "new_200",
+      "start": 54,
+      "four_mode_tv": 0.006252392932239656,
+      "four_mode_only_cauchy_upper": 0.007685432181517471
+    },
+    {
+      "family": "author_pco",
+      "start": 54,
+      "four_mode_tv": 0.0062523929322739966,
+      "four_mode_only_cauchy_upper": 0.007685432181567339
+    },
+    {
+      "family": "author_hafnian",
+      "start": 54,
+      "four_mode_tv": 0.006252393387555642,
+      "four_mode_only_cauchy_upper": 0.007685432764293904
+    }
+  ],
+  "forest_ranges": [
+    {
+      "budget": 0,
+      "forest": "chain",
+      "minimum_tv": 0.0002592425012422698,
+      "maximum_tv": 0.0009379322037615522
+    },
+    {
+      "budget": 0,
+      "forest": "static_mi_tree",
+      "minimum_tv": 0.00012038975722119009,
+      "maximum_tv": 0.0005007389958235616
+    },
+    {
+      "budget": 2,
+      "forest": "chain",
+      "minimum_tv": 2.163651108578763e-05,
+      "maximum_tv": 9.045947370528982e-05
+    },
+    {
+      "budget": 2,
+      "forest": "static_mi_tree",
+      "minimum_tv": 1.3246094811315444e-05,
+      "maximum_tv": 3.676998266098283e-05
+    },
+    {
+      "budget": 4,
+      "forest": "chain",
+      "minimum_tv": 5.3385995436318855e-08,
+      "maximum_tv": 5.681905918686965e-06
+    },
+    {
+      "budget": 4,
+      "forest": "static_mi_tree",
+      "minimum_tv": 3.572508341877136e-08,
+      "maximum_tv": 1.4364719816913106e-06
+    }
+  ],
+  "maximum_full_prefix_check_error": 0.0,
+  "full_prefix_checks": 96,
+  "scope": "MPS four-mode TVs lower-bound the specified full mixed-state output distance. Cauchy upper bounds apply only to each displayed block. Forest eight-mode laws concern the explicitly reordered measurement prefixes and do not certify future numerical success or full-output accuracy.",
+  "unchanged_source": true
+}

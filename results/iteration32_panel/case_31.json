@@ -1,0 +1,236 @@
+{
+  "sequence": 31,
+  "panel": "forest",
+  "start": 18,
+  "length": 8,
+  "budget": 0,
+  "forest": "static_mi_tree",
+  "enumeration_seconds": 0.16471219999948516,
+  "full_prefix_checks": [
+    {
+      "prefix": [],
+      "small_probability": 0.42774322385913005,
+      "full_probability": 0.42774322385913005,
+      "absolute_error": 0.0,
+      "full_retained": [],
+      "full_edges": []
+    },
+    {
+      "prefix": [
+        1,
+        0,
+        1
+      ],
+      "small_probability": 0.27149948018387693,
+      "full_probability": 0.27149948018387693,
+      "absolute_error": 0.0,
+      "full_retained": [],
+      "full_edges": [
+        [
+          18,
+          20
+        ]
+      ]
+    },
+    {
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "small_probability": 0.4684890842996323,
+      "full_probability": 0.4684890842996323,
+      "absolute_error": 0.0,
+      "full_retained": [],
+      "full_edges": [
+        [
+          18,
+          21
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          19,
+          23
+        ],
+        [
+          19,
+          22
+        ]
+      ]
+    },
+    {
+      "prefix": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "small_probability": 0.4240163944801174,
+      "full_probability": 0.4240163944801174,
+      "absolute_error": 0.0,
+      "full_retained": [],
+      "full_edges": [
+        [
+          19,
+          22
+        ],
+        [
+          22,
+          24
+        ],
+        [
+          21,
+          24
+        ]
+      ]
+    }
+  ],
+  "distances": {
+    "tv": 0.0005007389958235616,
+    "hellinger_squared": 7.175980026515472e-07,
+    "hellinger_cauchy_upper_for_this_block": 0.0008471114884800134,
+    "target_mass": 1.0,
+    "proxy_mass": 0.9999999999999999
+  },
+  "native_diagnostics": {
+    "probability_calls": 255,
+    "auto_refinements": 0,
+    "auto_refinement_successes": 0,
+    "auto_refinement_failures": 0,
+    "reset_requests": 3,
+    "original_input_bytes": 2120,
+    "peak_kernel_payload_bytes": 22084,
+    "longdouble": {
+      "queries": 255,
+      "query_successes": 255,
+      "numeric_failures": 0,
+      "state_rebuilds": 128,
+      "state_reuses": 0,
+      "state_appends": 127,
+      "zero_updates": 448,
+      "zero_factorizations": 448,
+      "zero_solve_columns": 4928,
+      "zero_schur_blocks": 8400,
+      "subsets": 255,
+      "subset_factorizations": 0,
+      "subset_dimension_sum": 0,
+      "subset_cubic_work": 0,
+      "shared_solve_columns": 0,
+      "shared_solve_dot_terms": 0,
+      "sparse_schur_blocks": 2315,
+      "sparse_schur_dot_terms": 0,
+      "local_determinants": 2837,
+      "local_dimension_sum": 10344,
+      "local_cubic_work": 203568,
+      "event_accumulations": 3347,
+      "tracked_add_sub": 144518,
+      "tracked_multiply": 103199,
+      "tracked_divide": 70016,
+      "tracked_sqrt": 11240,
+      "output_conversions": 3347,
+      "analytic_zero_events": 0,
+      "maximum_retained": 0,
+      "maximum_omitted": 7,
+      "maximum_zeros": 7,
+      "state_invalidations": 3,
+      "query_seconds": 0.04548399999999999,
+      "state_seconds": 0.032262,
+      "event_seconds": 0.012653999999999995,
+      "output_seconds": 7.299999999999989e-05,
+      "state_payload_bytes": 12640,
+      "peak_state_payload_bytes": 12640,
+      "peak_workspace_payload_bytes": 7324
+    },
+    "quad": {
+      "queries": 0,
+      "query_successes": 0,
+      "numeric_failures": 0,
+      "state_rebuilds": 0,
+      "state_reuses": 0,
+      "state_appends": 0,
+      "zero_updates": 0,
+      "zero_factorizations": 0,
+      "zero_solve_columns": 0,
+      "zero_schur_blocks": 0,
+      "subsets": 0,
+      "subset_factorizations": 0,
+      "subset_dimension_sum": 0,
+      "subset_cubic_work": 0,
+      "shared_solve_columns": 0,
+      "shared_solve_dot_terms": 0,
+      "sparse_schur_blocks": 0,
+      "sparse_schur_dot_terms": 0,
+      "local_determinants": 0,
+      "local_dimension_sum": 0,
+      "local_cubic_work": 0,
+      "event_accumulations": 0,
+      "tracked_add_sub": 0,
+      "tracked_multiply": 0,
+      "tracked_divide": 0,
+      "tracked_sqrt": 0,
+      "output_conversions": 0,
+      "analytic_zero_events": 0,
+      "maximum_retained": 0,
+      "maximum_omitted": 0,
+      "maximum_zeros": 0,
+      "state_invalidations": 3,
+      "query_seconds": 0.0,
+      "state_seconds": 0.0,
+      "event_seconds": 0.0,
+      "output_seconds": 0.0,
+      "state_payload_bytes": 0,
+      "peak_state_payload_bytes": 0,
+      "peak_workspace_payload_bytes": 0
+    },
+    "closed": false,
+    "kind": "wire_shared_schur_batched_forest_native",
+    "library_path": "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration31_build\\libwire_forest.dll",
+    "library_sha256": "0c237559a73fd1ad13702525f26ea93ae8a63e0ab142bd451b93cc54df80e402",
+    "build_metadata_sha256": "d00544a0fad0f15c589a7ac7e91e5f0bf60e3fe98ce08ac1bba7305ff8b74019",
+    "formats": {
+      "abi_version": 2,
+      "wire_bytes": 24,
+      "long_double_mantissa_bits": 64,
+      "quad_mantissa_bits": 113,
+      "maximum_modes": 512,
+      "maximum_retained": 16,
+      "query_bytes": 56,
+      "diagnostics_bytes": 688,
+      "conditional_bytes": 680,
+      "double_bytes": 8
+    },
+    "input_covariance_sha256": "eaab4462a031077fef20d08534db82cded86754cb4f6dbf67fdf4be76b7ec55e",
+    "input_covariance_order": "binary64 xxpp, hbar=2, zero mean",
+    "setup_seconds": 6e-06,
+    "python_glue_initialization_seconds": 0.008479399999487214,
+    "indicator_policy": "absolute scalar propagation, mu=8*format epsilon; quad-to-LD conversion included",
+    "roundoff_indicators_are_rigorous_bounds": false,
+    "counter_semantics": "query_successes means raw event batch completed, including subsequent score failure; numeric_failures may include that score guard",
+    "scalar_counter_scope": "tracked value/indicator operations; not total machine floating-point instruction counts",
+    "memory_scope": "tracked major native numerical containers only; excludes query bookkeeping, scalar stack temporaries, allocator overhead, caller buffers and Python selector/model/caches; not RSS or a complete allocator peak",
+    "state_policy": "at most one current canonical Z state in each precision; no subset-factorization cache",
+    "auto_policy": "one LD batch, at most one whole-prefix quad refinement on numerical failure; fixed R/E; no samples redrawn",
+    "scalar_transport": "24-byte canonical dyadic; exact Fraction decoding",
+    "arithmetic_environment": "x87 extended precision / nearest; SSE nearest with FTZ and DAZ off; control fields restored"
+  },
+  "status": "completed",
+  "seconds": 1.2384535000019241
+}

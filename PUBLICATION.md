@@ -7,6 +7,8 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第32轮：四模式见证与八模式前缀质量](RESEARCH_REPORT_ITERATION32.md)
+- [第32轮独立核验](results/iteration32_validation/validation.json)
 - [第31轮：实际原生森林核的无损接口](RESEARCH_REPORT_ITERATION31.md)
 - [第31轮接口对照](results/iteration31_transport/validation.json)
 - [第31轮独立审核](results/iteration31_validation/validation.json)
@@ -42,6 +44,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第32轮持续发布
+
+发布24项有限MPS四模式完整输出和24项森林八模式前缀法则。秩200同通道完整输出TV下界诊断提高到约0.00625239；局部上界与重排算法范围明确区分。1,192项独立核验通过，旧完整样本用于额外频率校准，没有续抽或按结果修改集合。
+
+533个新冻结产物共33,326,107字节，引用24项文件依赖共517,115,147字节（含本轮测试辅助源码），沿用大MPS分卷。全库473运行、444通过、0失败、0错误，29案例与7类依赖跳过保留。未执行或重发第三方作者程序。
 
 ## 2026-11-09：第31轮持续发布
 

@@ -1,0 +1,4914 @@
+{
+  "count": 1192,
+  "passed": 1192,
+  "independent_effects": 60,
+  "maximum_effect_error": 1.6653345369377348e-16,
+  "maximum_mps_law_error": 9.43689570931383e-16,
+  "maximum_density_single_error": 4.218853663676194e-15,
+  "maximum_full_prefix_probability_error": 0.0,
+  "maximum_old_sample_standardized_error": 3.0073547755547003,
+  "dependencies": {
+    "results/iteration28_panel/case_14.npz": "6e7cbd564cae19400a98a480231c4542ec54aa93f1af94e2caf2c25ddbeab08e",
+    "results/iteration31_panel/large_input.npz": "3196b915e9e670b9f19b9e271dab8e498acba9d3f7b4ff1e92dc93da77cd86f1",
+    "results/iteration31_build/libwire_forest.dll": "0c237559a73fd1ad13702525f26ea93ae8a63e0ab142bd451b93cc54df80e402",
+    "results/iteration31_build/build.json": "d00544a0fad0f15c589a7ac7e91e5f0bf60e3fe98ce08ac1bba7305ff8b74019",
+    "results/iteration25_panel_retry/run_16.state.npz": "7bbded011dfec132b5605288f330dba7529634e0945b60315bc95c22357dbb85",
+    "results/iteration25_panel_retry/run_17.state.npz": "725ee30c5295b8cae83062a304164a2b27b494203845a670c4fbb6097ee81c73",
+    "results/iteration25_panel_retry/run_18.state.npz": "3e8f60a68cb1c66972b3318589093d32dd5e90b2de55ede3086281d4569cbf60",
+    "results/iteration25_panel_retry/run_19.state.npz": "93c547725209dd312d8283255c0ee81751f7377c836625949bda65b3e4ecaabe",
+    "tests/test_threshold_blocks.py": "ce311f1304ee98e81f02034c509a7a7296a7ce43d97bf3fe9acf22ee11946306",
+    "experiments/verify_iteration31.py": "02e1f889fbf224e2c938dcf10d16c9d3b252013305aaab167fe50498f902e661",
+    "results/iteration30_panel/rows.json": "b2a2c5539c7176b7cda084697f300f57bf18e612e2077ead6e6109a5f04cb862",
+    "results/iteration29_panel/case_16.npz": "2800f177747cfd98c9164e9f8302b4faf3a932a21f9ca86726d392228b19c153",
+    "results/iteration30_panel/case_16.npz": "2a7d81940cfba056c5f33475a5194ca53a7c69cc7230788e76e376af12beb3cb",
+    "results/iteration29_panel/case_17.npz": "44d19a23f7625ff9f6d589da4c42d472c80f6bce6d0ab866c195f2c678186225",
+    "results/iteration30_panel/case_17.npz": "ff6f304707ef87891baffd93da504b7e283bb431c294f389c7b78c6ba02272a6",
+    "results/iteration29_panel/case_18.npz": "d4d79727fcd02e5fdfc15cb28b9e2f7895c62b87190d7d78485fdb6d1f17a2ff",
+    "results/iteration30_panel/case_18.npz": "ad315339fb32b0db0d00107b4673fa2eb45ef4f452dafa1d8c5ad634e3586647",
+    "results/iteration29_panel/case_19.npz": "aaeb2673a77f69dd1d25c40b893507dd7e9d23701606039ea065bf651d4b2887",
+    "results/iteration30_panel/case_19.npz": "9548dc232e75735d59f3cce3957cfa07bcd583e2bae162f204f035c3d544ca13",
+    "results/iteration29_panel/case_20.npz": "e98c485b06cf880cabd523686e0b55d373221fbc4163a6bdec759b454a0d60a2",
+    "results/iteration30_panel/case_20.npz": "571863496e574764e176e12a5f60dc48ba2a96077af066d45565315cd485cfe5",
+    "results/iteration29_panel/case_21.npz": "40a83bc1e65686ab9309bce83ed933c0d84b7ea979e26e8b4d4284e372210bd9",
+    "results/iteration30_panel/case_21.npz": "9e42b52e02c20497e98a15078d130f7916e00b477738b3888958adea3b9ec7e2"
+  },
+  "verifier_sha256": "7aa26dc4eb99f8eda8fbb1ac5e02f893f9f2a6d73bffc76084ae4a74cb8ff0d4",
+  "checks": [
+    {
+      "name": "all formal jobs",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration28_panel/case_14.npz",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration31_panel/large_input.npz",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration31_build/libwire_forest.dll",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration31_build/build.json",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration25_panel_retry/run_16.state.npz",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration25_panel_retry/run_17.state.npz",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration25_panel_retry/run_18.state.npz",
+      "passed": true
+    },
+    {
+      "name": "dependency results/iteration25_panel_retry/run_19.state.npz",
+      "passed": true
+    },
+    {
+      "name": "source experiments/iteration32_run.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot experiments/iteration32_run.py",
+      "passed": true
+    },
+    {
+      "name": "source experiments/iteration23_support.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot experiments/iteration23_support.py",
+      "passed": true
+    },
+    {
+      "name": "source experiments/iteration22_global.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot experiments/iteration22_global.py",
+      "passed": true
+    },
+    {
+      "name": "source experiments/iteration22_external.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot experiments/iteration22_external.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/threshold_blocks.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/threshold_blocks.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "source src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot experiments/iteration32_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot experiments/iteration23_support.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/threshold_blocks.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "pilot snapshot src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/rows.json",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_16.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_16.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_17.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_17.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_18.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_18.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_19.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_19.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_20.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_20.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration29_panel/case_21.npz",
+      "passed": true
+    },
+    {
+      "name": "reused results/iteration30_panel/case_21.npz",
+      "passed": true
+    },
+    {
+      "name": "block 0 Bargmann effect 1",
+      "passed": true,
+      "maximum_error": 8.329562444332592e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 2",
+      "passed": true,
+      "maximum_error": 4.1633554555674267e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 3",
+      "passed": true,
+      "maximum_error": 6.938899813121924e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 4",
+      "passed": true,
+      "maximum_error": 1.1102247178402632e-16
+    },
+    {
+      "name": "block 0 Bargmann effect 5",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 6",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "block 0 Bargmann effect 7",
+      "passed": true,
+      "maximum_error": 2.775593640656217e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 8",
+      "passed": true,
+      "maximum_error": 5.551126666583886e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 9",
+      "passed": true,
+      "maximum_error": 2.778087289249003e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 10",
+      "passed": true,
+      "maximum_error": 8.326672750750289e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 11",
+      "passed": true,
+      "maximum_error": 2.7755587215558636e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 12",
+      "passed": true,
+      "maximum_error": 2.7755791887581456e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 13",
+      "passed": true,
+      "maximum_error": 1.387826814727164e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 14",
+      "passed": true,
+      "maximum_error": 2.7755576270830355e-17
+    },
+    {
+      "name": "block 0 Bargmann effect 15",
+      "passed": true,
+      "maximum_error": 9.055522398700297e-18
+    },
+    {
+      "name": "block 0 Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "block 18 Bargmann effect 1",
+      "passed": true,
+      "maximum_error": 5.552282062787183e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 2",
+      "passed": true,
+      "maximum_error": 8.326672684688674e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 3",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 4",
+      "passed": true,
+      "maximum_error": 8.326672684688674e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 5",
+      "passed": true,
+      "maximum_error": 6.939318332238248e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 6",
+      "passed": true,
+      "maximum_error": 5.551116264985515e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 7",
+      "passed": true,
+      "maximum_error": 8.326672684688674e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 8",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "block 18 Bargmann effect 9",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "block 18 Bargmann effect 10",
+      "passed": true,
+      "maximum_error": 8.32667471520977e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 11",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 12",
+      "passed": true,
+      "maximum_error": 8.327475728096171e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 13",
+      "passed": true,
+      "maximum_error": 2.77571344688527e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 14",
+      "passed": true,
+      "maximum_error": 8.326672684688674e-17
+    },
+    {
+      "name": "block 18 Bargmann effect 15",
+      "passed": true,
+      "maximum_error": 1.249000902703301e-16
+    },
+    {
+      "name": "block 18 Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "block 54 Bargmann effect 1",
+      "passed": true,
+      "maximum_error": 2.7755630877991345e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 2",
+      "passed": true,
+      "maximum_error": 2.776080579645785e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 3",
+      "passed": true,
+      "maximum_error": 5.551115165482558e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 4",
+      "passed": true,
+      "maximum_error": 2.775578737305794e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 5",
+      "passed": true,
+      "maximum_error": 2.775558553712286e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 6",
+      "passed": true,
+      "maximum_error": 6.938894044003105e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 7",
+      "passed": true,
+      "maximum_error": 2.0816720064620654e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 8",
+      "passed": true,
+      "maximum_error": 5.552252203320584e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 9",
+      "passed": true,
+      "maximum_error": 3.4694469524387895e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 10",
+      "passed": true,
+      "maximum_error": 5.552246384307772e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 11",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 12",
+      "passed": true,
+      "maximum_error": 4.163337680001804e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 13",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 14",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-17
+    },
+    {
+      "name": "block 54 Bargmann effect 15",
+      "passed": true,
+      "maximum_error": 7.372686879350933e-18
+    },
+    {
+      "name": "block 54 Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "block 140 Bargmann effect 1",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "block 140 Bargmann effect 2",
+      "passed": true,
+      "maximum_error": 5.551120958113844e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 3",
+      "passed": true,
+      "maximum_error": 5.551445779206246e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 4",
+      "passed": true,
+      "maximum_error": 2.7755603417431523e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 5",
+      "passed": true,
+      "maximum_error": 2.77556233172165e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 6",
+      "passed": true,
+      "maximum_error": 3.4694520483064457e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 7",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 8",
+      "passed": true,
+      "maximum_error": 1.3877787807814457e-16
+    },
+    {
+      "name": "block 140 Bargmann effect 9",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "block 140 Bargmann effect 10",
+      "passed": true,
+      "maximum_error": 4.163338817572253e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 11",
+      "passed": true,
+      "maximum_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 12",
+      "passed": true,
+      "maximum_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 13",
+      "passed": true,
+      "maximum_error": 1.7368905267604862e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 14",
+      "passed": true,
+      "maximum_error": 3.8163963430259824e-17
+    },
+    {
+      "name": "block 140 Bargmann effect 15",
+      "passed": true,
+      "maximum_error": 2.0816681711721685e-17
+    },
+    {
+      "name": "block 140 Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "0 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "0 TV",
+      "passed": true
+    },
+    {
+      "name": "0 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "0 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.2244493922352205e-17
+    },
+    {
+      "name": "0 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "0 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "0 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.718447854656915e-16
+    },
+    {
+      "name": "0 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "0 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "0 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "0 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "0 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "0 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "0 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "0 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "0 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "1 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "1 TV",
+      "passed": true
+    },
+    {
+      "name": "1 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "1 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -9.195781266652967e-20
+    },
+    {
+      "name": "1 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "1 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "1 independent full MPS law",
+      "passed": true,
+      "maximum_error": 5.967448757360216e-16
+    },
+    {
+      "name": "1 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "1 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "1 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "1 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "1 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "1 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "1 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "1 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "1 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "2 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "2 TV",
+      "passed": true
+    },
+    {
+      "name": "2 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "2 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.825971849922409e-17
+    },
+    {
+      "name": "2 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "2 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "2 independent full MPS law",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "2 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "2 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "2 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "2 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "2 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "2 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "2 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "2 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "2 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "3 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "3 TV",
+      "passed": true
+    },
+    {
+      "name": "3 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "3 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -6.885128419529402e-18
+    },
+    {
+      "name": "3 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "3 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "3 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-16
+    },
+    {
+      "name": "3 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "3 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "3 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "3 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "3 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "3 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "3 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "3 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "3 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "4 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "4 TV",
+      "passed": true
+    },
+    {
+      "name": "4 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "4 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.3436019558050547e-18
+    },
+    {
+      "name": "4 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "4 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "4 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-16
+    },
+    {
+      "name": "4 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "4 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "4 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "4 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "4 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "4 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "4 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "4 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "4 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "5 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "5 TV",
+      "passed": true
+    },
+    {
+      "name": "5 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "5 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -5.454973687427021e-23
+    },
+    {
+      "name": "5 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "5 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "5 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-16
+    },
+    {
+      "name": "5 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "5 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "5 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "5 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "5 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "5 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "5 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "5 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "5 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "6 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "6 TV",
+      "passed": true
+    },
+    {
+      "name": "6 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "6 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.477115045250514e-23
+    },
+    {
+      "name": "6 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "6 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "6 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.498001805406602e-16
+    },
+    {
+      "name": "6 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "6 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "6 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "6 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "6 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "6 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "6 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "6 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "6 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "7 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "7 TV",
+      "passed": true
+    },
+    {
+      "name": "7 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "7 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -2.4269429657369423e-17
+    },
+    {
+      "name": "7 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "7 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "7 independent full MPS law",
+      "passed": true,
+      "maximum_error": 1.3877787807814457e-16
+    },
+    {
+      "name": "7 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "7 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "7 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "7 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "7 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "7 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "7 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "7 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "7 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "8 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "8 TV",
+      "passed": true
+    },
+    {
+      "name": "8 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "8 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.2125832409655916e-18
+    },
+    {
+      "name": "8 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "8 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "8 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.163336342344337e-16
+    },
+    {
+      "name": "8 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "8 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "8 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "8 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "8 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "8 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "8 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "8 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "8 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "9 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "9 TV",
+      "passed": true
+    },
+    {
+      "name": "9 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "9 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -3.329312898115235e-22
+    },
+    {
+      "name": "9 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "9 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "9 independent full MPS law",
+      "passed": true,
+      "maximum_error": 7.632783294297951e-16
+    },
+    {
+      "name": "9 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "9 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "9 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "9 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "9 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "9 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "9 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "9 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "9 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "10 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "10 TV",
+      "passed": true
+    },
+    {
+      "name": "10 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "10 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -2.3083285572486864e-24
+    },
+    {
+      "name": "10 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "10 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "10 independent full MPS law",
+      "passed": true,
+      "maximum_error": 1.942890293094024e-16
+    },
+    {
+      "name": "10 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "10 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "10 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "10 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "10 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "10 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "10 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "10 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "10 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "11 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "11 TV",
+      "passed": true
+    },
+    {
+      "name": "11 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "11 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -5.136067769287882e-19
+    },
+    {
+      "name": "11 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "11 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "11 independent full MPS law",
+      "passed": true,
+      "maximum_error": 3.0531133177191805e-16
+    },
+    {
+      "name": "11 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "11 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "11 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "11 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "11 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "11 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "11 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "11 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "11 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "12 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "12 TV",
+      "passed": true
+    },
+    {
+      "name": "12 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "12 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -9.351859793259596e-20
+    },
+    {
+      "name": "12 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "12 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "12 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.7755575615628914e-16
+    },
+    {
+      "name": "12 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "12 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "12 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "12 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "12 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "12 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "12 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "12 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "12 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "13 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "13 TV",
+      "passed": true
+    },
+    {
+      "name": "13 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "13 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.6361883544225718e-22
+    },
+    {
+      "name": "13 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "13 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "13 independent full MPS law",
+      "passed": true,
+      "maximum_error": 3.0531133177191805e-16
+    },
+    {
+      "name": "13 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "13 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "13 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "13 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "13 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "13 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "13 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "13 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "13 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "14 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "14 TV",
+      "passed": true
+    },
+    {
+      "name": "14 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "14 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -6.890719604726524e-25
+    },
+    {
+      "name": "14 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "14 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "14 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.0816681711721685e-16
+    },
+    {
+      "name": "14 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "14 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "14 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "14 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "14 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "14 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "14 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "14 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "14 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "15 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "15 TV",
+      "passed": true
+    },
+    {
+      "name": "15 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "15 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -1.676489366523143e-20
+    },
+    {
+      "name": "15 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "15 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "15 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.220446049250313e-16
+    },
+    {
+      "name": "15 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "15 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "15 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "15 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "15 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "15 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "15 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "15 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "15 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "16 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "16 TV",
+      "passed": true
+    },
+    {
+      "name": "16 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "16 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -3.8192618667056446e-19
+    },
+    {
+      "name": "16 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "16 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "16 independent full MPS law",
+      "passed": true,
+      "maximum_error": 3.0531133177191805e-16
+    },
+    {
+      "name": "16 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "16 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "16 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "16 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "16 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "16 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "16 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "16 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "16 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "17 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "17 TV",
+      "passed": true
+    },
+    {
+      "name": "17 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "17 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -9.086753513852844e-23
+    },
+    {
+      "name": "17 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "17 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "17 independent full MPS law",
+      "passed": true,
+      "maximum_error": 4.996003610813204e-16
+    },
+    {
+      "name": "17 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "17 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "17 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "17 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "17 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "17 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "17 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "17 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "17 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "18 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "18 TV",
+      "passed": true
+    },
+    {
+      "name": "18 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "18 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -6.347038070423409e-25
+    },
+    {
+      "name": "18 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "18 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "18 independent full MPS law",
+      "passed": true,
+      "maximum_error": 3.191891195797325e-16
+    },
+    {
+      "name": "18 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "18 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "18 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "18 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "18 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "18 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "18 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "18 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "18 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "19 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "19 TV",
+      "passed": true
+    },
+    {
+      "name": "19 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "19 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -5.153366998060423e-19
+    },
+    {
+      "name": "19 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "19 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "19 independent full MPS law",
+      "passed": true,
+      "maximum_error": 1.942890293094024e-16
+    },
+    {
+      "name": "19 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "19 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "19 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "19 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "19 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "19 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "19 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "19 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "19 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "20 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "20 TV",
+      "passed": true
+    },
+    {
+      "name": "20 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "20 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -3.4139729964012545e-18
+    },
+    {
+      "name": "20 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "20 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "20 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.7755575615628914e-16
+    },
+    {
+      "name": "20 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "20 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "20 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "20 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "20 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "20 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "20 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "20 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "20 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "21 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "21 TV",
+      "passed": true
+    },
+    {
+      "name": "21 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "21 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -5.854271718444279e-23
+    },
+    {
+      "name": "21 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "21 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "21 independent full MPS law",
+      "passed": true,
+      "maximum_error": 9.43689570931383e-16
+    },
+    {
+      "name": "21 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "21 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "21 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "21 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "21 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "21 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "21 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "21 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "21 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "22 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "22 TV",
+      "passed": true
+    },
+    {
+      "name": "22 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "22 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -2.093271511058242e-24
+    },
+    {
+      "name": "22 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "22 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "22 independent full MPS law",
+      "passed": true,
+      "maximum_error": 1.3877787807814457e-16
+    },
+    {
+      "name": "22 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "22 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "22 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "22 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "22 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "22 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "22 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "22 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "22 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "23 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "23 TV",
+      "passed": true
+    },
+    {
+      "name": "23 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "23 density domain",
+      "passed": true,
+      "minimum_eigenvalue": -6.832528976540864e-19
+    },
+    {
+      "name": "23 real integral 1",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 2",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 3",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 4",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 5",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 6",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 7",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 8",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 9",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 10",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 11",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 12",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 13",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 14",
+      "passed": true
+    },
+    {
+      "name": "23 real integral 15",
+      "passed": true
+    },
+    {
+      "name": "23 independent full MPS law",
+      "passed": true,
+      "maximum_error": 2.220446049250313e-16
+    },
+    {
+      "name": "23 prior sampler same state",
+      "passed": true
+    },
+    {
+      "name": "23 old single density 0",
+      "passed": true
+    },
+    {
+      "name": "23 old single density 1",
+      "passed": true
+    },
+    {
+      "name": "23 old single density 2",
+      "passed": true
+    },
+    {
+      "name": "23 old single density 3",
+      "passed": true
+    },
+    {
+      "name": "23 prefix 1",
+      "passed": true
+    },
+    {
+      "name": "23 prefix 2",
+      "passed": true
+    },
+    {
+      "name": "23 prefix 3",
+      "passed": true
+    },
+    {
+      "name": "23 prefix 4",
+      "passed": true
+    },
+    {
+      "name": "24 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "24 TV",
+      "passed": true
+    },
+    {
+      "name": "24 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "24 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "24 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "24 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "24 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "24 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "24 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "24 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "25 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "25 TV",
+      "passed": true
+    },
+    {
+      "name": "25 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "25 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "25 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "25 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "25 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "25 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "25 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "25 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "26 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "26 TV",
+      "passed": true
+    },
+    {
+      "name": "26 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "26 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "26 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "26 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "26 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "26 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "26 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "26 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "27 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "27 TV",
+      "passed": true
+    },
+    {
+      "name": "27 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "27 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "27 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "27 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "27 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "27 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "27 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "27 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "28 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "28 TV",
+      "passed": true
+    },
+    {
+      "name": "28 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "28 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "28 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "28 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "28 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "28 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "28 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "28 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "29 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "29 TV",
+      "passed": true
+    },
+    {
+      "name": "29 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "29 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "29 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "29 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "29 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "29 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "29 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "29 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "30 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "30 TV",
+      "passed": true
+    },
+    {
+      "name": "30 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "30 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "30 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "30 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "30 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "30 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "30 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "30 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "31 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "31 TV",
+      "passed": true
+    },
+    {
+      "name": "31 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "31 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "31 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "31 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "31 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "31 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "31 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "31 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "32 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "32 TV",
+      "passed": true
+    },
+    {
+      "name": "32 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "32 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "32 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "32 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "32 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "32 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "32 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "32 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "33 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "33 TV",
+      "passed": true
+    },
+    {
+      "name": "33 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "33 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "33 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "33 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "33 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "33 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "33 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "33 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "34 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "34 TV",
+      "passed": true
+    },
+    {
+      "name": "34 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "34 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "34 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "34 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "34 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "34 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "34 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "34 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "35 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "35 TV",
+      "passed": true
+    },
+    {
+      "name": "35 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "35 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "35 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "35 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "35 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "35 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "35 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "35 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "36 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "36 TV",
+      "passed": true
+    },
+    {
+      "name": "36 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "36 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "36 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "36 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "36 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "36 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "36 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "36 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "37 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "37 TV",
+      "passed": true
+    },
+    {
+      "name": "37 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "37 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "37 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "37 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "37 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "37 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "37 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "37 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "38 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "38 TV",
+      "passed": true
+    },
+    {
+      "name": "38 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "38 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "38 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "38 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "38 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "38 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "38 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "38 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "39 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "39 TV",
+      "passed": true
+    },
+    {
+      "name": "39 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "39 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "39 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "39 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "39 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "39 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "39 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "39 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "40 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "40 TV",
+      "passed": true
+    },
+    {
+      "name": "40 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "40 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "40 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "40 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "40 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "40 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "40 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "40 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "41 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "41 TV",
+      "passed": true
+    },
+    {
+      "name": "41 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "41 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "41 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "41 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "41 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "41 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "41 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "41 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "42 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "42 TV",
+      "passed": true
+    },
+    {
+      "name": "42 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "42 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "42 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "42 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "42 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "42 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "42 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "42 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "43 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "43 TV",
+      "passed": true
+    },
+    {
+      "name": "43 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "43 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "43 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "43 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "43 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "43 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "43 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "43 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "44 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "44 TV",
+      "passed": true
+    },
+    {
+      "name": "44 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "44 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "44 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "44 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "44 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "44 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "44 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "44 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "45 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "45 TV",
+      "passed": true
+    },
+    {
+      "name": "45 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "45 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "45 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "45 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "45 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "45 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "45 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "45 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "46 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "46 TV",
+      "passed": true
+    },
+    {
+      "name": "46 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "46 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "46 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "46 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "46 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "46 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "46 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "46 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "47 probability law domain",
+      "passed": true
+    },
+    {
+      "name": "47 TV",
+      "passed": true
+    },
+    {
+      "name": "47 Cauchy bound for this block",
+      "passed": true
+    },
+    {
+      "name": "47 direct Gaussian law",
+      "passed": true
+    },
+    {
+      "name": "47 independent prefix law reconstruction",
+      "passed": true
+    },
+    {
+      "name": "47 explicit full ordering",
+      "passed": true
+    },
+    {
+      "name": "47 full prefix 0",
+      "passed": true
+    },
+    {
+      "name": "47 full prefix 1",
+      "passed": true
+    },
+    {
+      "name": "47 full prefix 2",
+      "passed": true
+    },
+    {
+      "name": "47 full prefix 3",
+      "passed": true
+    },
+    {
+      "name": "verifier unchanged",
+      "passed": true
+    }
+  ]
+}
