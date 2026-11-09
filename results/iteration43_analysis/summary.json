@@ -1,0 +1,81 @@
+{
+  "completion_cases": 25,
+  "improved": 25,
+  "exact_maxent_also_better": 25,
+  "relative_reduction_range": [
+    0.4283537230571826,
+    0.9081354055117132
+  ],
+  "maxent_TV_bound_range": [
+    2.785323226293604e-08,
+    0.00011983312899574582
+  ],
+  "max_aligned_order_TV": 2.705993071599383e-15,
+  "order_pairs": 7,
+  "completed_fit_seconds": 5.444427300011739,
+  "optimizer_success": 4,
+  "max_final_gradient": 5.551115123125783e-15,
+  "bounds": [
+    {
+      "cutoff": 1,
+      "lower": 0.036225275461656464,
+      "shifted_lower": 0.03621676791666677,
+      "gain_ratio": 1.4624015853571475
+    },
+    {
+      "cutoff": 2,
+      "lower": 0.003483577848124108,
+      "shifted_lower": 0.0034750703031344063,
+      "gain_ratio": 1.627601311086918
+    },
+    {
+      "cutoff": 3,
+      "lower": 0.0006186445952046772,
+      "shifted_lower": 0.0006101370502149752,
+      "gain_ratio": 1.948492579525005
+    },
+    {
+      "cutoff": 4,
+      "lower": 0.00011817313295237819,
+      "shifted_lower": 0.0001096655879626762,
+      "gain_ratio": 2.061086870370284
+    }
+  ],
+  "source_hashes": {
+    "experiments/iteration43_analyze.py": "c2c1d8b6e38a6ff94f6ba43ff086c34f4ab581f9cc7bb1d1403e83ba0f547af7",
+    "experiments/iteration22_external.py": "df1cad9f98606e895f7d2d41091d543c07aa2b545a83e748c91eac8631365c7a",
+    "experiments/iteration33_run.py": "0fecde3ed729f7e45cdd417158aafe0a2f5ee74a5611bed5792a8522ef718687",
+    "experiments/verify_iteration34.py": "01d52b0f44c3e958d2694c308cf69b11822c2ab2e75c20d48102df920445d1b0"
+  },
+  "dependencies": {
+    "results/iteration43_completion_recovery/comparisons.json": "e9f7863cdaf6d61f7e8f7920a10c1161c460435ef8c5d7bc19646c3bb4457e8c",
+    "results/iteration43_prefix_validation/bounds.json": "8d2c9a0a82614e1ce5b54af3f0d12bcab9b0dd011fb21aee1f4d47dafcf086e9",
+    "results/iteration43_prefix_validation/depth_bounds.json": "9309cff966be759f2f79d36ea6f16ca219698538ebf192b84a16182a6093c2f9",
+    "results/iteration43_completion/rows.json": "bcd8a5ef64db699349c88dbe68bef7618ad3e95b4b386424a1d7bb595a4f5388",
+    "results/iteration43_completion/case_00.json": "fa8cb65d93aa709c1273ee2f4d73d4a82d71058785c8471d8b278f6f8adc2914",
+    "results/iteration43_completion/case_01.json": "ae95df53f0e9b00afe5a1cec45ffffa1199f4e488004b5eb1df78ac8f6e07074",
+    "results/iteration43_completion/case_02.json": "931a63a32474e7abf1fff4119dc8e9f85e6641e9727059e8ab5b5f406e072814",
+    "results/iteration43_completion/case_03.json": "cb3d299f7b1243a853a96a25d91da8ed9e2f711b254f1d9a642d88e720e7edf0",
+    "results/iteration43_completion/case_04.json": "8ba2ff32c6719acc0acfb879b859beb233d72e3c3633e33b8b7b89fb80a5dd79",
+    "results/iteration43_completion/case_05.json": "a7606be27c9a91e18c10a4ab33a5de2d6987165dbafa39bdcd5fbc896dd45e3e",
+    "results/iteration43_completion/case_06.json": "f0aeaeb7a9f357729fb8d06e321dbd9e88856f2ac5f3411872a89815de4504a4",
+    "results/iteration43_completion/case_07.json": "996f9097b737f43a52bd56504f9ed4f74e639e407888da9c1b7698e09f8999d6",
+    "results/iteration43_completion/case_08.json": "4dc220728889c82166d8f8b1b33bf3cf7a51df20fb639a18d1013c79238e1007",
+    "results/iteration43_completion/case_09.json": "3e1eca6aa53d55ac024313145dfd91209bcccf2be44efeed3d365c610850f7d3",
+    "results/iteration43_completion/case_10.json": "3af88337d77df3ec44ac04700d9ec9e9548758e90fba138a7f58f8345760a1c7",
+    "results/iteration43_completion/case_11.json": "1ff52067cc2a219132d2e0f4f6344d9b3e1f564ec02e259cd4a1945fb5811bb5",
+    "results/iteration43_completion/case_12.json": "1abac3586b2c0fd2dc8b888967d431747f779b03ba14c2fd98f7d902c35bc494",
+    "results/iteration43_completion/case_13.json": "354c1208df6ccf2c64c857f3064f9e31c9a1904bb34810862854a27f895cd055",
+    "results/iteration43_completion/case_14.json": "81677658424808aa577ceb8484a9b25c0001c31f16dbe475c6d9b64bde2d7907",
+    "results/iteration43_completion/case_15.json": "8fbcb9b4b376130f64a0bccd23e7d65af829dab70b91807f5a35dd2713e1cf63",
+    "results/iteration43_completion/case_16.json": "505faaa8b5d548b269aa3b1ccefbdb6283cbceab03cc53ba2d777ab4107b0697",
+    "results/iteration43_completion/case_17.json": "f221b7d0053ffb5a19a8ab4cce1e47f34083fc1e4b74664a93c7faf5e6630602",
+    "results/iteration43_completion/case_18.json": "99fd7aa2af033e43b33e86634d3e668138dd0896bc8f18d1a9209ccdb39a4f50",
+    "results/iteration43_completion/case_19.json": "d44391be9d22041ddc8c103ca3e60bfa5b96773547588d04448d43ed2eef0c2f",
+    "results/iteration43_completion/case_20.json": "e39728dee2abc5e0cf925ce906473b8b610db1e3ef0ad6baf8a1d43d758f9bae",
+    "results/iteration43_completion/case_21.json": "0ff4adc0426845e5a10a6efc6a2d9fdfa952ebf53018a39e454de438f80a131b",
+    "results/iteration43_completion/case_22.json": "405decf94710630012487a867dffe82184d2d7d146be1535e2f84e0808f78fd6",
+    "results/iteration43_completion/case_23.json": "f4bfcb515eb0117b44cbfceba285dc8ae8112a4453f5dce0f04ca6186cbe6d35",
+    "results/iteration43_completion/case_24.json": "b9ebaf5dc1d996a5cc755f2409b14718afea43bc2ad0058fea2889c8a5e0dce9"
+  }
+}
