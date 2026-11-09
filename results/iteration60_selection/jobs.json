@@ -1,0 +1,492 @@
+[
+  {
+    "family": "real_pair",
+    "pairing": {
+      "rational": "1/3"
+    },
+    "phase": [
+      1,
+      0
+    ],
+    "rotated": false,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/4"
+      },
+      {
+        "rational": "1/8"
+      }
+    ],
+    "holdout": false,
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "baseline_case": 1,
+    "prior_holdout": false,
+    "action": "grid",
+    "selected_axis": 2
+  },
+  {
+    "family": "real_pair",
+    "pairing": {
+      "rational": "1/3"
+    },
+    "phase": [
+      1,
+      0
+    ],
+    "rotated": false,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/4"
+      },
+      {
+        "rational": "1/8"
+      }
+    ],
+    "holdout": false,
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "baseline_case": 1,
+    "prior_holdout": false,
+    "action": "input",
+    "selected_axis": null
+  },
+  {
+    "family": "complex_rotated",
+    "pairing": {
+      "rational": "2/5"
+    },
+    "phase": [
+      0,
+      1
+    ],
+    "rotated": true,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "1/4"
+      },
+      {
+        "rational": "3/16"
+      }
+    ],
+    "holdout": false,
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "baseline_case": 3,
+    "prior_holdout": false,
+    "action": "grid",
+    "selected_axis": 2
+  },
+  {
+    "family": "complex_rotated",
+    "pairing": {
+      "rational": "2/5"
+    },
+    "phase": [
+      0,
+      1
+    ],
+    "rotated": true,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "1/4"
+      },
+      {
+        "rational": "3/16"
+      }
+    ],
+    "holdout": false,
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "baseline_case": 3,
+    "prior_holdout": false,
+    "action": "input",
+    "selected_axis": null
+  },
+  {
+    "family": "mixed_holdout",
+    "pairing": {
+      "rational": "3/8"
+    },
+    "phase": [
+      {
+        "rational": "3/5"
+      },
+      {
+        "rational": "4/5"
+      }
+    ],
+    "rotated": true,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          {
+            "rational": "1/2"
+          },
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          {
+            "rational": "1/2"
+          },
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/8"
+      }
+    ],
+    "holdout": false,
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "baseline_case": 5,
+    "prior_holdout": true,
+    "action": "grid",
+    "selected_axis": 2
+  },
+  {
+    "family": "mixed_holdout",
+    "pairing": {
+      "rational": "3/8"
+    },
+    "phase": [
+      {
+        "rational": "3/5"
+      },
+      {
+        "rational": "4/5"
+      }
+    ],
+    "rotated": true,
+    "directions": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          {
+            "rational": "1/2"
+          },
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          {
+            "rational": "1/2"
+          },
+          1
+        ]
+      ]
+    ],
+    "sigmas": [
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "1/8"
+      },
+      {
+        "rational": "3/16"
+      },
+      {
+        "rational": "1/8"
+      }
+    ],
+    "holdout": false,
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "baseline_case": 5,
+    "prior_holdout": true,
+    "action": "input",
+    "selected_axis": null
+  }
+]

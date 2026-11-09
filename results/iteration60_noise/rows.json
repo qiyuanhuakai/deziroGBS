@@ -1,0 +1,254 @@
+[
+  {
+    "case": 0,
+    "family": "real_pair",
+    "action": "grid",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.0011422473356319024,
+      0.0011422473356319024
+    ],
+    "finite_TV": [
+      0.001012581282243529,
+      0.001012581282243529
+    ],
+    "reference_TV": [
+      0.00013668404211351684,
+      0.00013668404211351684
+    ],
+    "arithmetic": 1.361940527362572e-16,
+    "total_upper": 0.10411189477979492,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_00.components.json.gz",
+      "raw_bytes": 163527545,
+      "compressed_bytes": 33762384,
+      "raw_sha256": "eb72e3b322d09f9f7d23df7b12d7c1f31dbb17cb713f9f30f06897aa71115b8b",
+      "nodes": 3888,
+      "trace_nodes": 23328
+    },
+    "timing": {
+      "preparation": 0.33621489998768084,
+      "components_and_comparisons": 23.975280500017107,
+      "storage": 7.828528699988965
+    },
+    "seconds": 32.14002829999663
+  },
+  {
+    "case": 1,
+    "family": "real_pair",
+    "action": "input",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.00211027584288099,
+      0.00211027584288099
+    ],
+    "finite_TV": [
+      0.002108797323318366,
+      0.002108797323318366
+    ],
+    "reference_TV": [
+      1.6872482580084515e-06,
+      1.6872482580084515e-06
+    ],
+    "arithmetic": 1.1268004060909043e-16,
+    "total_upper": 0.12168901743910522,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_01.components.json.gz",
+      "raw_bytes": 66415757,
+      "compressed_bytes": 13666033,
+      "raw_sha256": "5b90e00ddabdf2767df61027a02d17d83d03f26a3fa722f715a216279d825852",
+      "nodes": 1296,
+      "trace_nodes": 10368
+    },
+    "timing": {
+      "preparation": 0.3955918000137899,
+      "components_and_comparisons": 13.63829760000226,
+      "storage": 3.161857700004475
+    },
+    "seconds": 17.195750200015027
+  },
+  {
+    "case": 2,
+    "family": "complex_rotated",
+    "action": "grid",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.014102425744923333,
+      0.014102425744923333
+    ],
+    "finite_TV": [
+      0.0011711785907974645,
+      0.0011711785907974645
+    ],
+    "reference_TV": [
+      0.012931247154125868,
+      0.012931247154125868
+    ],
+    "arithmetic": 1.4724383491480534e-16,
+    "total_upper": 0.23989747638419395,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_02.components.json.gz",
+      "raw_bytes": 194258688,
+      "compressed_bytes": 41597179,
+      "raw_sha256": "83136807d51c87729f2536e2d36bf68cbe47caf52dbd1b2204e0ba12e47e15b7",
+      "nodes": 3888,
+      "trace_nodes": 23328
+    },
+    "timing": {
+      "preparation": 0.5162623999931384,
+      "components_and_comparisons": 30.119498999993084,
+      "storage": 8.913004100002581
+    },
+    "seconds": 39.548768599983305
+  },
+  {
+    "case": 3,
+    "family": "complex_rotated",
+    "action": "input",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.0038018491932179776,
+      0.0038018491932179776
+    ],
+    "finite_TV": [
+      0.0022143191248333344,
+      0.0022143191248333344
+    ],
+    "reference_TV": [
+      0.001587530068384643,
+      0.001587530068384643
+    ],
+    "arithmetic": 1.5938266904057938e-16,
+    "total_upper": 0.1821786519814327,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_03.components.json.gz",
+      "raw_bytes": 84970120,
+      "compressed_bytes": 20790722,
+      "raw_sha256": "4aaa92f10cd78486f50ca93eba8368477d7706d780d5714c4b38830c443977ca",
+      "nodes": 1296,
+      "trace_nodes": 10368
+    },
+    "timing": {
+      "preparation": 11.020110399986152,
+      "components_and_comparisons": 20.073493900010362,
+      "storage": 4.662041200004751
+    },
+    "seconds": 35.755649300001096
+  },
+  {
+    "case": 4,
+    "family": "mixed_holdout",
+    "action": "grid",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.011517761612702735,
+      0.011517761612702735
+    ],
+    "finite_TV": [
+      0.001051679652928716,
+      0.001051679652928716
+    ],
+    "reference_TV": [
+      0.01046608195977402,
+      0.01046608195977402
+    ],
+    "arithmetic": 1.1453546850438314e-16,
+    "total_upper": 0.20534727648755555,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_04.components.json.gz",
+      "raw_bytes": 187024371,
+      "compressed_bytes": 42045454,
+      "raw_sha256": "7aa71a2263bf18ecf15a93c16fa54abfe08a61b31c39d3585a81e9df95f45449",
+      "nodes": 3888,
+      "trace_nodes": 23328
+    },
+    "timing": {
+      "preparation": 0.8675526000151876,
+      "components_and_comparisons": 33.15080259999377,
+      "storage": 8.929011100000935
+    },
+    "seconds": 42.94736940000439
+  },
+  {
+    "case": 5,
+    "family": "mixed_holdout",
+    "action": "input",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.003104098872627789,
+      0.003104098872627789
+    ],
+    "finite_TV": [
+      0.001964026717664611,
+      0.001964026717664611
+    ],
+    "reference_TV": [
+      0.001140072154963178,
+      0.001140072154963178
+    ],
+    "arithmetic": 1.5200087317529375e-16,
+    "total_upper": 0.15267521916155471,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_05.components.json.gz",
+      "raw_bytes": 83185686,
+      "compressed_bytes": 19680734,
+      "raw_sha256": "84ed0071a81b0de1f285af0b45974f1d82a7a362e0ef93c99949ef4d5a8684f9",
+      "nodes": 1296,
+      "trace_nodes": 10368
+    },
+    "timing": {
+      "preparation": 23.491411599999992,
+      "components_and_comparisons": 19.957408799993573,
+      "storage": 4.15756930000498
+    },
+    "seconds": 47.60639729999821
+  }
+]

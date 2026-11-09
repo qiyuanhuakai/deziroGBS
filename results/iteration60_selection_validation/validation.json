@@ -1,0 +1,37 @@
+{
+  "count": 164,
+  "passed": 164,
+  "baselines": 3,
+  "candidates": 12,
+  "jobs": 6,
+  "source_hashes": {
+    "experiments/verify_iteration60_selection.py": "fe95f3cdee4714960acf9c2b232ca0d192e8b8fa55926585c1be01d093ceba1a",
+    "experiments/iteration22_external.py": "df1cad9f98606e895f7d2d41091d543c07aa2b545a83e748c91eac8631365c7a",
+    "experiments/iteration33_run.py": "0fecde3ed729f7e45cdd417158aafe0a2f5ee74a5611bed5792a8522ef718687",
+    "experiments/verify_iteration34.py": "01d52b0f44c3e958d2694c308cf69b11822c2ab2e75c20d48102df920445d1b0",
+    "experiments/iteration48_independent.py": "ec5bc532c66b0e3bd267e20dfa5dd664a36e6a0bfd19b40da1f9d762d46a0e09",
+    "experiments/iteration51_normal_independent.py": "8dc7443520313a124ff4925642259bbfbfd323abdce985fb06b5c2b7364385bf"
+  },
+  "dependencies": {
+    "results/iteration60_selection/summary.json": "2eae4af5a4856dd4535035d5770c629b45d0764915c6e51b67571f52375a089e",
+    "results/iteration60_selection/selection.json": "678c32c76e53aee99b6c0c72abae3aa8589ecab454ca1ed6dba647ce8d7163f8",
+    "results/iteration60_selection/jobs.json": "3001cbfaca8aa8a442639ba03bcd4a2736994c9d6e65d9ddf0072dd81a13ba1c",
+    "results/iteration59_manifest.json": "d5d2a071d8108fb94bdf2bb2bc22a86989d9a1d45fe518a819520ed215ffd58d",
+    "results/iteration59_noise_validation/validation.json": "fe662b8cd5dcc889cd2b2720dec2b0fb482f9a98e0a6035ba1625d6f37dd4b13",
+    "results/iteration58_manifest.json": "9ec243f97fcea4b69c9bd242f465436ad1f644d2dafc4475ea88293415948990",
+    "results/iteration58_coupling_validation/validation.json": "46fdc2c16a930ef7d091a446f38690fb84bc8976900b57618113abf2fca8b32f",
+    "results/iteration58_coupling/axis_index.json": "cff8cff342f845f67c0312eb25bc24059c8634042fc652413ebc5c44d5bc2d35",
+    "results/iteration58_coupling/axis_00.json": "286a43954597915b40304abe541ff95fea6a8ed6ee6bd47780169b128df601c1",
+    "results/iteration58_coupling/axis_01.json": "d844ac614f206f2e35916e39c9ce08126aee55b30151f93afe11752e8bbe2033",
+    "results/iteration58_coupling/axis_02.json": "ff44a1d65a96c99db689889e5ba9f33610ae73e6628b0cc3940473f0f2c425b5",
+    "results/iteration58_coupling/axis_03.json": "f8d8327119ed383a3842bef57dc5ef5f0b7d9e07839b0626f9dbe2eed17140e3",
+    "results/iteration58_coupling/axis_04.json": "94cca08e366527cd9ad80f375aaea2363db33cc78b1ef08dc9fe387815b80443",
+    "results/iteration58_coupling/axis_05.json": "2e5461fd4b54540a3154e24af6ac8fc320ff22aeb173bb4fb29d0d31f29fa55d",
+    "results/iteration58_coupling/axis_06.json": "44a43f4db92c2d17849bb82d66ea8983f0e49be894e1e060ff8aa245a9c6754f",
+    "results/iteration58_coupling/axis_07.json": "02c81592cc9952e6ac5ce768311ab37c4bce27eccb1b12f911d479336c96ab5a",
+    "results/iteration59_noise/case_01.json": "f72307ebea209cd85a3236dc901c95c2fa64032a8c49b321b60f04069ff62182",
+    "results/iteration59_noise/case_03.json": "9db00818d5d551a3bdc29b59bce340cf89c3a5faf995404333b2da5311b4857c",
+    "results/iteration59_noise/case_05.json": "1bf8d8bc395943a140fb1276f7b42bdb1bb216447fa24bb43ed74dd933bcc2ae"
+  },
+  "scope": "All axis candidates audited before any iteration60 complete program. Selection minimizes certified bound,not unknown actual TV."
+}
