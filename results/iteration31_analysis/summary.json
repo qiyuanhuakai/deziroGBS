@@ -1,0 +1,52 @@
+{
+  "analyzer_sha256": "579f2b98d23ae1755a6ba2d915438912d1f7705d3e36f0fbd0d71a9fc1a8d76c",
+  "small_maximum_conditional_error": 8.415490526658687e-14,
+  "small_maximum_proxy_law_tv": 4.192067699915203e-15,
+  "small_target_tv_range": [
+    4.909267437014364e-16,
+    0.012696919843282944
+  ],
+  "paired_samples": 2048,
+  "large_successful_samples": 32,
+  "large_outcomes": [
+    "completed",
+    "completed",
+    "completed",
+    "completed"
+  ],
+  "large_rows": [
+    {
+      "budget": 0,
+      "forest": "chain",
+      "preparation_seconds": 0.011327100000926293,
+      "sampling_seconds": 11.101076700011618,
+      "successful_samples": 8,
+      "seconds": 11.124364100003731
+    },
+    {
+      "budget": 0,
+      "forest": "static_mi_tree",
+      "preparation_seconds": 1.9062829000031343,
+      "sampling_seconds": 12.130720300003304,
+      "successful_samples": 8,
+      "seconds": 14.04969090000668
+    },
+    {
+      "budget": 2,
+      "forest": "chain",
+      "preparation_seconds": 0.023789500002749264,
+      "sampling_seconds": 14.596472499993979,
+      "successful_samples": 8,
+      "seconds": 14.626868899998954
+    },
+    {
+      "budget": 2,
+      "forest": "static_mi_tree",
+      "preparation_seconds": 0.7686718000040855,
+      "sampling_seconds": 23.792247799996403,
+      "successful_samples": 8,
+      "seconds": 24.567613999999594
+    }
+  ],
+  "unchanged_source": true
+}

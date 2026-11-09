@@ -1,0 +1,48 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.exe",
+    "-O2",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\batched_forest_wire.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration31_build\\libwire_forest.dll",
+    "-lquadmath"
+  ],
+  "compiler": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.exe",
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "compiler_version": "g++.exe (x86_64-win32-seh-rev0, Built by MinGW-Builds project) 15.1.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "returncode": 0,
+  "build_seconds": 6.521935400000075,
+  "source_hashes": {
+    "experiments/build_wire_forest.py": "fd28bfb893445771bc8cefc8540e8607137c666949897c070b40ba8e234e7a67",
+    "experiments/batched_forest_wire.cpp": "82b637d623f4e6bab07003946ff6c58dd8345b9778b709f375dc427652ace4c6",
+    "experiments/batched_forest_kernel.cpp": "1d70023a14134c92fd74e3019278c55e6c2fdba555b8e99855970d789166b6bc",
+    "experiments/batched_forest_kernel.h": "7d2f6b73378052f43bbeafb5e11c9f1fc77ce64d8ce22ef1216f8a803929309f",
+    "experiments/portable_scalar_codec.cpp": "4b988b01ec319e914bf3893417f97a7410682ef041d3a7e4e5d4a2adea59f336"
+  },
+  "runtime_dependencies": [
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libquadmath-0.dll",
+      "sha256": "6e2836776176e358aa9653869a88c5169a93519ec6a8f7b5ddda179f0f90803a"
+    },
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libstdc++-6.dll",
+      "sha256": "1b0d0ec5911980f5772a4d1c112efabf40bfffcd92a1e46e99480c4ec610f2fa"
+    },
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libgcc_s_seh-1.dll",
+      "sha256": "22e981422d3c02f569d77f963c7b9ba624214fd06e3de2468157b2317a37d71b"
+    }
+  ],
+  "abi_version": 2,
+  "wire_bytes": 24,
+  "scientific_kernel": "Unmodified batched_forest_kernel.cpp; quad-to-native-long-double conversion indicators unchanged",
+  "arithmetic_environment": "x87 precision 64 and nearest; SSE nearest, FTZ/DAZ disabled; controls restored at exit",
+  "unchanged_sources": true,
+  "library_sha256": "0c237559a73fd1ad13702525f26ea93ae8a63e0ab142bd451b93cc54df80e402"
+}

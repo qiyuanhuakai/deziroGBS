@@ -1,0 +1,2674 @@
+{
+  "count": 653,
+  "passed": 653,
+  "maximum_independent_target_law_error": 9.992007221626409e-16,
+  "maximum_law_reconstruction_error": 0.0,
+  "independent_replayed_samples": 2048,
+  "dependencies": {
+    "results/iteration28_panel/case_14.npz": "6e7cbd564cae19400a98a480231c4542ec54aa93f1af94e2caf2c25ddbeab08e",
+    "experiments/iteration28_codec.py": "65ae3bfc21b13954ddda3a0c7b5330e38aaff985cb1986f342d96e7329ebf03b"
+  },
+  "verifier_sha256": "02e1f889fbf224e2c938dcf10d16c9d3b252013305aaab167fe50498f902e661",
+  "checks": [
+    {
+      "name": "formal jobs",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build snapshot experiments/build_wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build current experiments/build_wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build snapshot experiments/batched_forest_wire.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build current experiments/batched_forest_wire.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build snapshot experiments/batched_forest_kernel.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build current experiments/batched_forest_kernel.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build snapshot experiments/batched_forest_kernel.h",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build current experiments/batched_forest_kernel.h",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build snapshot experiments/portable_scalar_codec.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build current experiments/portable_scalar_codec.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_build binary libwire_forest.dll",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/iteration31_reference_build.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/iteration31_reference_build.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/iteration31_native_reference.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/iteration31_native_reference.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/batched_forest_wire.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/batched_forest_wire.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/batched_forest_kernel.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/batched_forest_kernel.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/batched_forest_kernel.h",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/batched_forest_kernel.h",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build snapshot experiments/portable_scalar_codec.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build current experiments/portable_scalar_codec.cpp",
+      "passed": true
+    },
+    {
+      "name": "iteration31_reference_build binary native_reference.exe",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot experiments/iteration31_native_tests.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current experiments/iteration31_native_tests.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot experiments/iteration30_tests.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current experiments/iteration30_tests.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot tests/test_wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current tests/test_wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot tests/test_batched_forest_numerics.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current tests/test_batched_forest_numerics.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests snapshot src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_native_tests current src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot experiments/iteration31_transport.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current experiments/iteration31_transport.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot experiments/iteration28_codec.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current experiments/iteration28_codec.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot tests/test_batched_forest_numerics.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current tests/test_batched_forest_numerics.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport snapshot src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_transport current src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot experiments/iteration31_run.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current experiments/iteration31_run.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/adaptive_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/banded_gaussian_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/binomial_refinement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/cache.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/calibration.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/checkpoint_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/coherent_core.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/conditional_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/cpp_click.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/cpp_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/displaced_marginals.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/displaced_sampling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/displaced_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/exact.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/experiment.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/fock.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/frugal.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/frugal_evidence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/frugal_scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_general_spectra.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_kernel_chain.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_mps_feasibility.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_pair_recurrence.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_resource.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gaussian_schmidt_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/gbs_identity.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/jiuzhang_gap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/local_displacement.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/local_mps.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/marginal_witness.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/meixner_high_order.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/meixner_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/meixner_vacuum.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/mixed_low_clicks.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/mps_overlap.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/mps_probe.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/paired_stress.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/phase2.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/photon_tail.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/positive_completion.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/positive_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/sampling_audit.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/scaling.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/schur_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/surrogates.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/tv_validation.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/wire_forest.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/zero_memory.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel snapshot src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "iteration31_panel current src/gbslab/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged prior scientific source experiments/batched_forest_kernel.cpp",
+      "passed": true
+    },
+    {
+      "name": "unchanged prior scientific source experiments/batched_forest_kernel.h",
+      "passed": true
+    },
+    {
+      "name": "unchanged prior scientific source experiments/portable_scalar_codec.cpp",
+      "passed": true
+    },
+    {
+      "name": "unchanged prior scientific source src/gbslab/batched_forest.py",
+      "passed": true
+    },
+    {
+      "name": "transport all checks",
+      "passed": true
+    },
+    {
+      "name": "transport 0 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 0/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 0/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 0/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 0/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 0/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 0/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 0/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 0/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 0/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 0/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 0/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 0/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 0/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 0/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 0/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 1 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 1/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 1/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 1/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 1/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 1/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 1/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 1/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 1/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 1/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 1/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 1/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 1/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 1/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 1/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 1/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 2 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 2/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 2/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 2/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 2/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 2/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 2/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 2/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 2/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 2/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 2/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 2/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 2/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 2/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 2/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 2/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 3 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 3/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 3/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 3/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 3/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 3/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 3/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 3/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 3/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 3/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 3/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 3/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 3/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 3/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 3/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 3/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 4 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 4/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 4/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 4/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 4/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 4/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 4/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 4/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 4/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 4/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 4/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 4/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 4/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 5 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 5/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 5/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 5/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 5/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 5/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 5/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 5/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 5/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 5/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 5/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 5/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 5/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 5/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 5/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 5/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 6 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 6/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 6/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 6/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 6/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 6/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 6/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 6/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 6/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 6/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 6/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 6/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 6/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 6/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 6/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 6/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 7 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 7/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 7/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 7/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 7/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 7/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 7/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 8 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 8/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 8/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 8/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 8/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 8/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 8/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 9 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 9/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 9/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 9/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 9/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 9/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 9/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 10 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 10/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 10/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 10/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 10/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 10/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 10/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 11 expected status",
+      "passed": true
+    },
+    {
+      "name": "transport 11/0 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 11/0 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 11/0 values",
+      "passed": true
+    },
+    {
+      "name": "transport 11/0 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 11/0 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 11/1 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 11/1 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 11/1 values",
+      "passed": true
+    },
+    {
+      "name": "transport 11/1 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 11/1 scalars",
+      "passed": true
+    },
+    {
+      "name": "transport 11/2 controls",
+      "passed": true
+    },
+    {
+      "name": "transport 11/2 state machine",
+      "passed": true
+    },
+    {
+      "name": "transport 11/2 values",
+      "passed": true
+    },
+    {
+      "name": "transport 11/2 indicators",
+      "passed": true
+    },
+    {
+      "name": "transport 11/2 scalars",
+      "passed": true
+    },
+    {
+      "name": "19 substantive tests",
+      "passed": true
+    },
+    {
+      "name": "0 binary samples",
+      "passed": true
+    },
+    {
+      "name": "0 native wire version",
+      "passed": true
+    },
+    {
+      "name": "0 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "0 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "0 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "0 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "0 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "0 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "1 binary samples",
+      "passed": true
+    },
+    {
+      "name": "1 native wire version",
+      "passed": true
+    },
+    {
+      "name": "1 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "1 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "1 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "1 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "1 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "1 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "2 binary samples",
+      "passed": true
+    },
+    {
+      "name": "2 native wire version",
+      "passed": true
+    },
+    {
+      "name": "2 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "2 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "2 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "2 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "2 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "2 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "3 binary samples",
+      "passed": true
+    },
+    {
+      "name": "3 native wire version",
+      "passed": true
+    },
+    {
+      "name": "3 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "3 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "3 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "3 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "3 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "3 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "4 binary samples",
+      "passed": true
+    },
+    {
+      "name": "4 native wire version",
+      "passed": true
+    },
+    {
+      "name": "4 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "4 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "4 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "4 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "4 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "4 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "5 binary samples",
+      "passed": true
+    },
+    {
+      "name": "5 native wire version",
+      "passed": true
+    },
+    {
+      "name": "5 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "5 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "5 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "5 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "5 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "5 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "6 binary samples",
+      "passed": true
+    },
+    {
+      "name": "6 native wire version",
+      "passed": true
+    },
+    {
+      "name": "6 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "6 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "6 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "6 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "6 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "6 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "7 binary samples",
+      "passed": true
+    },
+    {
+      "name": "7 native wire version",
+      "passed": true
+    },
+    {
+      "name": "7 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "7 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "7 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "7 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "7 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "7 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "8 binary samples",
+      "passed": true
+    },
+    {
+      "name": "8 native wire version",
+      "passed": true
+    },
+    {
+      "name": "8 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-16
+    },
+    {
+      "name": "8 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "8 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "8 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "8 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "8 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "9 binary samples",
+      "passed": true
+    },
+    {
+      "name": "9 native wire version",
+      "passed": true
+    },
+    {
+      "name": "9 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-16
+    },
+    {
+      "name": "9 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "9 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "9 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "9 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "9 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "10 binary samples",
+      "passed": true
+    },
+    {
+      "name": "10 native wire version",
+      "passed": true
+    },
+    {
+      "name": "10 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-16
+    },
+    {
+      "name": "10 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "10 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "10 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "10 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "10 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "11 binary samples",
+      "passed": true
+    },
+    {
+      "name": "11 native wire version",
+      "passed": true
+    },
+    {
+      "name": "11 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 5.551115123125783e-16
+    },
+    {
+      "name": "11 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "11 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "11 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "11 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "11 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "12 binary samples",
+      "passed": true
+    },
+    {
+      "name": "12 native wire version",
+      "passed": true
+    },
+    {
+      "name": "12 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 9.992007221626409e-16
+    },
+    {
+      "name": "12 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "12 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "12 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "12 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "12 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "13 binary samples",
+      "passed": true
+    },
+    {
+      "name": "13 native wire version",
+      "passed": true
+    },
+    {
+      "name": "13 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 9.992007221626409e-16
+    },
+    {
+      "name": "13 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "13 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "13 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "13 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "13 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "14 binary samples",
+      "passed": true
+    },
+    {
+      "name": "14 native wire version",
+      "passed": true
+    },
+    {
+      "name": "14 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 9.992007221626409e-16
+    },
+    {
+      "name": "14 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "14 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "14 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "14 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "14 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "15 binary samples",
+      "passed": true
+    },
+    {
+      "name": "15 native wire version",
+      "passed": true
+    },
+    {
+      "name": "15 independent Gaussian target law",
+      "passed": true,
+      "maximum_error": 9.992007221626409e-16
+    },
+    {
+      "name": "15 conditional domain",
+      "passed": true
+    },
+    {
+      "name": "15 reconstruct native_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "15 reconstruct reference_extended_law",
+      "passed": true,
+      "maximum_error": 0.0
+    },
+    {
+      "name": "15 independent uniform replay",
+      "passed": true
+    },
+    {
+      "name": "15 proxy TV",
+      "passed": true
+    },
+    {
+      "name": "16 binary samples",
+      "passed": true
+    },
+    {
+      "name": "16 native wire version",
+      "passed": true
+    },
+    {
+      "name": "16 large outcome recorded",
+      "passed": true
+    },
+    {
+      "name": "17 binary samples",
+      "passed": true
+    },
+    {
+      "name": "17 native wire version",
+      "passed": true
+    },
+    {
+      "name": "17 large outcome recorded",
+      "passed": true
+    },
+    {
+      "name": "18 binary samples",
+      "passed": true
+    },
+    {
+      "name": "18 native wire version",
+      "passed": true
+    },
+    {
+      "name": "18 large outcome recorded",
+      "passed": true
+    },
+    {
+      "name": "19 binary samples",
+      "passed": true
+    },
+    {
+      "name": "19 native wire version",
+      "passed": true
+    },
+    {
+      "name": "19 large outcome recorded",
+      "passed": true
+    },
+    {
+      "name": "verifier unchanged",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.exe",
+    "-O2",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\experiments\\iteration31_native_reference.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\量子\\deziroGBS\\results\\iteration31_reference_build\\native_reference.exe",
+    "-lquadmath"
+  ],
+  "returncode": 0,
+  "source_hashes": {
+    "experiments/iteration31_reference_build.py": "23bb492f703a6c64898647a3cfbb0fb618fc34831dbda64199a3fdde6ddd9fee",
+    "experiments/iteration31_native_reference.cpp": "b58a6af49d35d520b868cd70b87ab61833d44116398215c687287cc4d82685e1",
+    "experiments/batched_forest_wire.cpp": "82b637d623f4e6bab07003946ff6c58dd8345b9778b709f375dc427652ace4c6",
+    "experiments/batched_forest_kernel.cpp": "1d70023a14134c92fd74e3019278c55e6c2fdba555b8e99855970d789166b6bc",
+    "experiments/batched_forest_kernel.h": "7d2f6b73378052f43bbeafb5e11c9f1fc77ce64d8ce22ef1216f8a803929309f",
+    "experiments/portable_scalar_codec.cpp": "4b988b01ec319e914bf3893417f97a7410682ef041d3a7e4e5d4a2adea59f336"
+  },
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "unchanged_sources": true,
+  "executable_sha256": "0973f2921eecd146fc3a6b6a555a928291e8f89431f76f01e73389e4b8141ed8"
+}

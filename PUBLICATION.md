@@ -7,6 +7,9 @@
 ## 主要入口
 
 - [项目总览与复现](README.md)
+- [第31轮：实际原生森林核的无损接口](RESEARCH_REPORT_ITERATION31.md)
+- [第31轮接口对照](results/iteration31_transport/validation.json)
+- [第31轮独立审核](results/iteration31_validation/validation.json)
 - [第30轮：完整混合阈值输出采样](RESEARCH_REPORT_ITERATION30.md)
 - [第30轮核验](results/iteration30_validation/validation.json)
 - [第29轮：同通道有限MPS输出](RESEARCH_REPORT_ITERATION29.md)
@@ -39,6 +42,12 @@
 - [第十轮独立证据审计](research/iteration10_independent_audit.md)
 - `research_archive/local_materials/`：工作副本之外补回的草稿、图稿、诊断、参考缓存、运行日志及输入来源。
 - `native_builds/`：实际研究构建产物和对应构建记录；跨平台请使用源代码显式重建。
+
+## 2026-11-09：第31轮持续发布
+
+发布实际森林核的显式标量接口、481项独立进程/宿主环境对照、20项正式场景和653项产物审核。19项新模块测试通过，2,048条同随机数小系统输出一致，32条144模式输出完成；4项预设拒绝完整保留，模型误差与接口互差分别报告。
+
+572个新冻结产物共8,008,271字节，引用3个历史文件共1,237,603字节。发布自有构建及参考程序、源码快照和日志；外部编译器及运行库仅记录哈希。全库466运行、437通过、0失败、0错误，29案例和7类依赖跳过保留。新入口显式使用，旧ABI保护不变。
 
 ## 2026-11-09：第30轮持续发布
 
