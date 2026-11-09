@@ -157,3 +157,10 @@ experiments/verify_iteration33.py text eol=lf
 # Preserve the exact legacy bytes bound by the published native build.
 experiments/batched_forest_kernel.cpp -text -whitespace
 experiments/batched_forest_kernel.h -text -whitespace
+
+results/iteration34*/** -text -whitespace
+src/gbslab/atom_certificate.py text eol=lf
+src/gbslab/rational_gaussian.py text eol=lf
+tests/test_atom_certificate.py text eol=lf
+experiments/iteration34*.py text eol=lf
+experiments/verify_iteration34.py text eol=lf
