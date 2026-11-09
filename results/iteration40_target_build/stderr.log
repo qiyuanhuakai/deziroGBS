@@ -1,0 +1,37 @@
+In file included from C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/Core:328,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/Dense:1,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/matrix_utils.hpp:6,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/correlator_utils.hpp:6,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/data.hpp:4,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\experiments\iteration40_target.cpp:2:
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h: In instantiation of 'Eigen::TriangularView<MatrixType, Mode>::Scalar Eigen::TriangularView<MatrixType, Mode>::determinant() const [with _MatrixType = const Eigen::Matrix<double, -1, -1>; unsigned int _Mode = 1; Scalar = double]':
+C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/matrix_utils.hpp:23:67:   required from 'auto fgbs::triangular_determinant(MATRIX&&) [with MATRIX = const Eigen::Matrix<double, -1, -1>&]'
+   23 |     return mat.template triangularView<Eigen::Lower>().determinant();
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/correlator_utils.hpp:33:67:   required from here
+   33 |     const auto sqrt_det_sub_cov = std::fabs(triangular_determinant(sub_cov_l));
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h:323:16: warning: bitwise operation between different enumeration types 'Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>' and 'Eigen::UpLoType' is deprecated [-Wdeprecated-enum-enum-conversion]
+  323 |       if (Mode & UnitDiag)
+      |           ~~~~~^~~~~~~~~~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h:325:21: warning: bitwise operation between different enumeration types 'Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>' and 'Eigen::UpLoType' is deprecated [-Wdeprecated-enum-enum-conversion]
+  325 |       else if (Mode & ZeroDiag)
+      |                ~~~~~^~~~~~~~~~
+In file included from C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/Core:328,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/Dense:1,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/matrix_utils.hpp:6,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/correlator_utils.hpp:6,
+                 from C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\src\fgbs\core\correlator_utils.cpp:1:
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h: In instantiation of 'Eigen::TriangularView<MatrixType, Mode>::Scalar Eigen::TriangularView<MatrixType, Mode>::determinant() const [with _MatrixType = const Eigen::Matrix<double, -1, -1>; unsigned int _Mode = 1; Scalar = double]':
+C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/matrix_utils.hpp:23:67:   required from 'auto fgbs::triangular_determinant(MATRIX&&) [with MATRIX = const Eigen::Matrix<double, -1, -1>&]'
+   23 |     return mat.template triangularView<Eigen::Lower>().determinant();
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\third_party\FrugalGBS\include/fgbs/core/correlator_utils.hpp:33:67:   required from here
+   33 |     const auto sqrt_det_sub_cov = std::fabs(triangular_determinant(sub_cov_l));
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h:323:16: warning: bitwise operation between different enumeration types 'Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>' and 'Eigen::UpLoType' is deprecated [-Wdeprecated-enum-enum-conversion]
+  323 |       if (Mode & UnitDiag)
+      |           ~~~~~^~~~~~~~~~
+C:\Users\qiyuaner\Documents\ChatGPT\量子\external_sources\eigen_3_4_0_iteration38\eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h:325:21: warning: bitwise operation between different enumeration types 'Eigen::TriangularView<const Eigen::Matrix<double, -1, -1>, 1>::<unnamed enum>' and 'Eigen::UpLoType' is deprecated [-Wdeprecated-enum-enum-conversion]
+  325 |       else if (Mode & ZeroDiag)
+      |                ~~~~~^~~~~~~~~~

@@ -205,3 +205,11 @@ tests/test_binomial_integer.py -text -whitespace
 
 # Preserve the audited upstream header bytes; normalized content is unchanged.
 third_party/FrugalGBS/include/fgbs/cpu/cpu_sampler.hpp -text -whitespace
+results/iteration40*/** -text -whitespace
+experiments/iteration40*.py -text -whitespace
+experiments/verify_iteration40*.py -text -whitespace
+src/gbslab/betting_mean.py -text -whitespace
+tests/test_betting_mean.py -text -whitespace
+research/iteration40_confirmation_plan.md -text -whitespace
+experiments/iteration40_target.cpp -text -whitespace
+tests/test_k2_reference.py -text -whitespace
