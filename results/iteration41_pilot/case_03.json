@@ -1,0 +1,513 @@
+{
+  "job": {
+    "modes": 4,
+    "intensity": {
+      "rational": "4"
+    }
+  },
+  "laws": {
+    "matching": [
+      {
+        "rational": "571/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "11776/16875"
+      }
+    ],
+    "unclamped": [
+      {
+        "rational": "571/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "11776/16875"
+      }
+    ],
+    "clamped": [
+      {
+        "rational": "571/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "-256/16875"
+      },
+      {
+        "rational": "256/375"
+      }
+    ],
+    "sampler": [
+      {
+        "rational": "571/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "32/1125"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "32/1125"
+      },
+      {
+        "rational": "32/1125"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "284/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "736/16875"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "0"
+      },
+      {
+        "rational": "256/375"
+      }
+    ],
+    "tree": {
+      "": {
+        "mode": 0,
+        "previous": {
+          "rational": "1"
+        },
+        "zero": {
+          "rational": "1/5"
+        },
+        "threshold": {
+          "rational": "1/5"
+        }
+      },
+      "0": {
+        "mode": 1,
+        "previous": {
+          "rational": "1/5"
+        },
+        "zero": {
+          "rational": "1/9"
+        },
+        "threshold": {
+          "rational": "5/9"
+        }
+      },
+      "00": {
+        "mode": 2,
+        "previous": {
+          "rational": "1/9"
+        },
+        "zero": {
+          "rational": "19/375"
+        },
+        "threshold": {
+          "rational": "57/125"
+        }
+      },
+      "000": {
+        "mode": 3,
+        "previous": {
+          "rational": "19/375"
+        },
+        "zero": {
+          "rational": "571/16875"
+        },
+        "threshold": {
+          "rational": "571/855"
+        }
+      },
+      "1": {
+        "mode": 1,
+        "previous": {
+          "rational": "4/5"
+        },
+        "zero": {
+          "rational": "4/45"
+        },
+        "threshold": {
+          "rational": "1/9"
+        }
+      },
+      "10": {
+        "mode": 2,
+        "previous": {
+          "rational": "4/45"
+        },
+        "zero": {
+          "rational": "68/1125"
+        },
+        "threshold": {
+          "rational": "17/25"
+        }
+      },
+      "100": {
+        "mode": 3,
+        "previous": {
+          "rational": "68/1125"
+        },
+        "zero": {
+          "rational": "284/16875"
+        },
+        "threshold": {
+          "rational": "71/255"
+        }
+      },
+      "01": {
+        "mode": 2,
+        "previous": {
+          "rational": "4/45"
+        },
+        "zero": {
+          "rational": "68/1125"
+        },
+        "threshold": {
+          "rational": "17/25"
+        }
+      },
+      "010": {
+        "mode": 3,
+        "previous": {
+          "rational": "68/1125"
+        },
+        "zero": {
+          "rational": "284/16875"
+        },
+        "threshold": {
+          "rational": "71/255"
+        }
+      },
+      "11": {
+        "mode": 2,
+        "previous": {
+          "rational": "32/45"
+        },
+        "zero": {
+          "rational": "32/1125"
+        },
+        "threshold": {
+          "rational": "1/25"
+        }
+      },
+      "110": {
+        "mode": 3,
+        "previous": {
+          "rational": "32/1125"
+        },
+        "zero": {
+          "rational": "736/16875"
+        },
+        "threshold": {
+          "rational": "23/15"
+        }
+      },
+      "001": {
+        "mode": 3,
+        "previous": {
+          "rational": "68/1125"
+        },
+        "zero": {
+          "rational": "284/16875"
+        },
+        "threshold": {
+          "rational": "71/255"
+        }
+      },
+      "101": {
+        "mode": 3,
+        "previous": {
+          "rational": "32/1125"
+        },
+        "zero": {
+          "rational": "736/16875"
+        },
+        "threshold": {
+          "rational": "23/15"
+        }
+      },
+      "011": {
+        "mode": 3,
+        "previous": {
+          "rational": "32/1125"
+        },
+        "zero": {
+          "rational": "736/16875"
+        },
+        "threshold": {
+          "rational": "23/15"
+        }
+      },
+      "111": {
+        "mode": 3,
+        "previous": {
+          "rational": "256/375"
+        },
+        "zero": {
+          "rational": "0"
+        },
+        "threshold": {
+          "rational": "0"
+        }
+      }
+    },
+    "reachable": [
+      "",
+      "1",
+      "11",
+      "111",
+      "110",
+      "10",
+      "101",
+      "100",
+      "0",
+      "01",
+      "011",
+      "010",
+      "00",
+      "001",
+      "000"
+    ],
+    "saturated": [
+      {
+        "prefix": "110",
+        "threshold": {
+          "rational": "23/15"
+        },
+        "output_prefix_probability": {
+          "rational": "32/1125"
+        }
+      },
+      {
+        "prefix": "101",
+        "threshold": {
+          "rational": "23/15"
+        },
+        "output_prefix_probability": {
+          "rational": "32/1125"
+        }
+      },
+      {
+        "prefix": "011",
+        "threshold": {
+          "rational": "23/15"
+        },
+        "output_prefix_probability": {
+          "rational": "32/1125"
+        }
+      }
+    ]
+  },
+  "target": [
+    {
+      "rational": "1/17"
+    },
+    {
+      "rational": "4/221"
+    },
+    {
+      "rational": "4/221"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "4/221"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "128/3315"
+    },
+    {
+      "rational": "4/221"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "128/3315"
+    },
+    {
+      "rational": "32/1989"
+    },
+    {
+      "rational": "128/3315"
+    },
+    {
+      "rational": "128/3315"
+    },
+    {
+      "rational": "2048/3315"
+    }
+  ],
+  "negative_mass": {
+    "matching": {
+      "rational": "1024/16875"
+    },
+    "unclamped": {
+      "rational": "1024/16875"
+    },
+    "clamped": {
+      "rational": "256/5625"
+    }
+  },
+  "half_L1_to_matching": {
+    "unclamped": {
+      "rational": "0"
+    },
+    "clamped": {
+      "rational": "256/16875"
+    },
+    "sampler": {
+      "rational": "1024/16875"
+    }
+  },
+  "sampler_TV": {
+    "rational": "229376/1243125"
+  }
+}
