@@ -1,0 +1,231 @@
+{
+  "iteration": 53,
+  "date": "2026-11-10",
+  "checked_at_utc": "2026-11-09T20:47:03.859623+00:00",
+  "scientific_commit": "5314767762f2065f1ba28c225fcdf7e0497363dc",
+  "scientific_tree": "b7e793c6e81e858563c3c65d6b6a1b56eee0382b",
+  "parent": "451f571f774957229da0befffb7c3f2614f7eda1",
+  "prepublication_verification": {
+    "parent": "451f571f774957229da0befffb7c3f2614f7eda1",
+    "expected_tree": "b7e793c6e81e858563c3c65d6b6a1b56eee0382b",
+    "new_artifacts": 830,
+    "dependencies": 114,
+    "base_manifest_working_checks": 944,
+    "base_manifest_git_or_archived_git_checks": 944,
+    "archived_dependency_inputs": {
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    },
+    "changed_paths": 849,
+    "changed_source_git_byte_checks": 689,
+    "full_suite_source_and_snapshot_checks": 566,
+    "inherited_suite_git_eol_equivalence": [
+      "experiments/analyze.py",
+      "experiments/analyze_cpp.py",
+      "experiments/analyze_iteration4.py",
+      "experiments/analyze_iteration5.py",
+      "experiments/analyze_iteration6.py",
+      "experiments/analyze_iteration7.py",
+      "experiments/analyze_iteration8_work.py",
+      "experiments/analyze_phase2.py",
+      "experiments/assess_jiuzhang_gap.py",
+      "experiments/benchmark_cpp.py",
+      "experiments/benchmark_frugal.py",
+      "experiments/build_batched_forest.py",
+      "experiments/build_batched_forest_sampler.py",
+      "experiments/build_click_sampler.py",
+      "experiments/build_coherent_core_sampler.py",
+      "experiments/build_frugal.py",
+      "experiments/build_frugal_evidence.py",
+      "experiments/build_frugal_sampling.py",
+      "experiments/build_pairwise_reference.py",
+      "experiments/iteration10_analyze.py",
+      "experiments/iteration10_common.py",
+      "experiments/iteration10_experiment.py",
+      "experiments/iteration10_reference.py",
+      "experiments/iteration4_benchmark.py",
+      "experiments/iteration4_jiuzhang1_control.py",
+      "experiments/iteration4_quality.py",
+      "experiments/iteration5_benchmark.py",
+      "experiments/iteration5_small_laws.py",
+      "experiments/iteration6_numerical_diagnostic.py",
+      "experiments/iteration7_forest.py",
+      "experiments/iteration7_gaussian_phase_witness.py",
+      "experiments/iteration7_numerical_diagnostic.py",
+      "experiments/iteration8_analyze.py",
+      "experiments/iteration8_common.py",
+      "experiments/iteration8_experiment.py",
+      "experiments/iteration9_core_budget.py",
+      "experiments/paired_stress.py",
+      "experiments/phase2_kernel_cost.py",
+      "experiments/phase2_tv_validation.py",
+      "experiments/plot_iteration9_budget.py",
+      "experiments/prepare_iteration4_inputs.py",
+      "experiments/reproduce.py",
+      "experiments/review_iteration4_gap.py",
+      "experiments/validate_frugal_native.py",
+      "experiments/validate_gbs_identity.py",
+      "experiments/validate_prefix_cache.py",
+      "experiments/verify_iteration10.py",
+      "experiments/verify_iteration5.py",
+      "experiments/verify_iteration6.py",
+      "experiments/verify_iteration7.py",
+      "experiments/verify_iteration8.py",
+      "src/gbslab/__init__.py",
+      "src/gbslab/batched_forest.py",
+      "src/gbslab/binomial_refinement.py",
+      "src/gbslab/cache.py",
+      "src/gbslab/calibration.py",
+      "src/gbslab/coherent_core.py",
+      "src/gbslab/conditional_memory.py",
+      "src/gbslab/cpp_click.py",
+      "src/gbslab/cpp_forest.py",
+      "src/gbslab/exact.py",
+      "src/gbslab/experiment.py",
+      "src/gbslab/fock.py",
+      "src/gbslab/frugal.py",
+      "src/gbslab/frugal_evidence.py",
+      "src/gbslab/frugal_scaling.py",
+      "src/gbslab/gaussian.py",
+      "src/gbslab/gbs_identity.py",
+      "src/gbslab/jiuzhang_gap.py",
+      "src/gbslab/marginal_witness.py",
+      "src/gbslab/paired_stress.py",
+      "src/gbslab/phase2.py",
+      "src/gbslab/photon_tail.py",
+      "src/gbslab/scaling.py",
+      "src/gbslab/schur_memory.py",
+      "src/gbslab/surrogates.py",
+      "src/gbslab/tv_validation.py",
+      "src/gbslab/zero_memory.py",
+      "tests/test_batched_forest.py",
+      "tests/test_batched_forest_numerics.py",
+      "tests/test_binomial_refinement.py",
+      "tests/test_cache.py",
+      "tests/test_calibration.py",
+      "tests/test_chain_diagnostics.py",
+      "tests/test_coherent_core.py",
+      "tests/test_coherent_core_independent.py",
+      "tests/test_conditional_memory.py",
+      "tests/test_cpp_click.py",
+      "tests/test_cpp_forest.py",
+      "tests/test_exact.py",
+      "tests/test_fock.py",
+      "tests/test_frugal_evidence.py",
+      "tests/test_gbs_identity.py",
+      "tests/test_iteration5_quality.py",
+      "tests/test_iteration6_runner.py",
+      "tests/test_jiuzhang_gap.py",
+      "tests/test_marginal_witness.py",
+      "tests/test_paired_stress.py",
+      "tests/test_photon_tail.py",
+      "tests/test_prefix_cache.py",
+      "tests/test_schur_memory.py",
+      "tests/test_surrogates.py",
+      "tests/test_tv_validation.py",
+      "tests/test_zero_memory.py"
+    ],
+    "remote_main_before": "451f571f774957229da0befffb7c3f2614f7eda1"
+  },
+  "remote_verified_refs": {
+    "main": "5314767762f2065f1ba28c225fcdf7e0497363dc",
+    "research/iteration53-20261110": "5314767762f2065f1ba28c225fcdf7e0497363dc"
+  },
+  "remote_commit_tree_verified": true,
+  "remote_commit_parent_verified": true,
+  "artifact_manifest": {
+    "path": "results/iteration53_manifest.json",
+    "sha256": "c4e4259c7c6b7d2936e4b3f50e93e613cc8a0b660026451e427b61025a92e9df",
+    "new_artifacts": 830,
+    "bytes": 191550051,
+    "dependencies": 114,
+    "dependency_bytes": 663959481,
+    "working_and_git_payload_checks": 944,
+    "dependency_archives": {
+      "results/iteration35_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration35_manifest.json",
+        "sha256": "4be3af012a03d3dab73df3f050cba64321b4511c50be8141d50b363363d80534",
+        "inherited_git_sha256": "3bf5ad5650efd9b995d7911a328a8fd795d836a69c58088ad0624a479810bb22"
+      },
+      "results/iteration39_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration39_manifest.json",
+        "sha256": "4016b5c6a768ab71a954419724a2e72487bb2040ff8dccfc3bf02ae49fa63211",
+        "inherited_git_sha256": "ae22923ec4e1126ab78f4d2421c25aa0f150efeea5fbee31f70dfbed75e1f225"
+      },
+      "results/iteration42_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration42_manifest.json",
+        "sha256": "dd2ce02ca456c7cf82baa81394a5d64d1f6d2ffc4ffb648d7bbfa2a3fa3521d8",
+        "inherited_git_sha256": "c9e4d7c1c3d95b649c268c1a641f6c0a125b1fb6e72460393388bbdcdba3846e"
+      },
+      "results/iteration43_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration43_manifest.json",
+        "sha256": "eed22d270c46b44cef505ee753d6c40e233eb588393b3b389b778d9a78c0f744",
+        "inherited_git_sha256": "65e21e51ea894a1144e80899f183ad3bc6200f3ef40cd75573935eb94b9f2a0b"
+      },
+      "results/iteration44_manifest.json": {
+        "path": "results/iteration53_dependency_archive/results/iteration44_manifest.json",
+        "sha256": "fa69b4c94d3154c29831bb92ff325131b8aca4e5200419da5a6f00af3b709ab4",
+        "inherited_git_sha256": "7601330b6cf8a3281fa9f8cd0e9af65e8f99b7c84dc158e6a4c33f4d2a2ed66c"
+      }
+    }
+  },
+  "scientific_validations": {
+    "prefix_validation": {
+      "count": 640536,
+      "passed": 640536
+    },
+    "controls": {
+      "count": 32900,
+      "passed": 32900
+    },
+    "comparisons": {
+      "count": 105,
+      "passed": 105
+    }
+  },
+  "scientific_checks_total": 673541,
+  "tests": {
+    "tests_run": 676,
+    "passed": 647,
+    "failures": 0,
+    "errors": 0,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "new_tests_passed": 9,
+    "executed_gate_passed": true,
+    "full_gate_passed": false,
+    "unchanged_sources": true
+  },
+  "post_suite_source_additions": [],
+  "comparison_summary": {
+    "completed": true,
+    "cutoffs": 4,
+    "new_certificates": 16384,
+    "old_controls": 16383,
+    "scope": "Full144 TV lower bounds only. Storage ratios are measured bytes; observations are not isolated timing benchmarks."
+  },
+  "scope": "Actual144 prefix15, unchanged official executable and samples.32767 physical subset certificates independently rechecked,16384 new compact certificates.32768 atom intervals agree with independent direct integer inclusion. Old16383 certificate roundtrips and14-bit law regression exact. K1..4 full144 TV lower bounds strengthened; K4 gain10.49 percent. No full144 TV upper bound, matched-quality speed or Jiuzhang-scale simulation. Goal remains active."
+}
