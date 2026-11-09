@@ -1,0 +1,63 @@
+{
+  "jobs": [
+    {
+      "label": "global_1",
+      "modes": 144,
+      "cutoff": 1,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_00.csv",
+      "reference": "results/iteration53_prefix/global_1.stdout.json.gz"
+    },
+    {
+      "label": "global_2",
+      "modes": 144,
+      "cutoff": 2,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_01.csv",
+      "reference": "results/iteration53_prefix/global_2.stdout.json.gz"
+    },
+    {
+      "label": "global_3",
+      "modes": 144,
+      "cutoff": 3,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_02.csv",
+      "reference": "results/iteration53_prefix/global_3.stdout.json.gz"
+    },
+    {
+      "label": "global_4",
+      "modes": 144,
+      "cutoff": 4,
+      "seed": 391440,
+      "csv": "results/iteration39_global/case_03.csv",
+      "reference": "results/iteration53_prefix/global_4.stdout.json.gz"
+    }
+  ],
+  "depth": 16,
+  "samples": 17,
+  "source_hashes": {
+    "research/iteration56_prefix_plan.md": "6b0e11ff5f1a46002a9d64e9ca6685fac513ff851cc5bec0b0c6c2f6a00f644c",
+    "experiments/iteration56_prefix_run.py": "ee282b847c848dc27f558a48d5ad7df14a380017b2ee71d3b66c4bca5ea49f0e",
+    "experiments/iteration22_external.py": "df1cad9f98606e895f7d2d41091d543c07aa2b545a83e748c91eac8631365c7a",
+    "experiments/iteration33_run.py": "0fecde3ed729f7e45cdd417158aafe0a2f5ee74a5611bed5792a8522ef718687",
+    "experiments/verify_iteration34.py": "01d52b0f44c3e958d2694c308cf69b11822c2ab2e75c20d48102df920445d1b0",
+    "experiments/iteration39_independent.py": "0a78ed70f43e79464bf8373e590b9eca0a0eba12c5ab121149fa2ad7c63b8350",
+    "src/gbslab/frugal_law.py": "4ab71015708251d53543a2af1976f2de76510c3d40d116a05caf25135e372fd9"
+  },
+  "dependencies": {
+    "results/iteration42_build/frugal_prefix.exe": "f3949df6ffc7c761075d6cdd2fbbafdc7457c8e3896cf63eb09f57bdbd042eea",
+    "results/iteration42_build/build.json": "f22c225cedd2918c63a991ae234b2e13f53c47969fb60ec38683a7ba69763336",
+    "results/iteration42_build/libgcc_s_seh-1.dll": "22e981422d3c02f569d77f963c7b9ba624214fd06e3de2468157b2317a37d71b",
+    "results/iteration42_build/libgomp-1.dll": "b9ea7941da281b3680a4b9d8e3b7e2167a2b0e692f18dc288e34362d8d50b623",
+    "results/iteration42_build/libstdc++-6.dll": "1b0d0ec5911980f5772a4d1c112efabf40bfffcd92a1e46e99480c4ec610f2fa",
+    "results/iteration42_build/libwinpthread-1.dll": "aca408feb0bc4b14a1e6490ef5fe337759a657fc9dcfbeb14b9968e7aae882fc",
+    "results/iteration39_global/case_00.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration53_prefix/global_1.stdout.json.gz": "a52165a2dc67c40be19c4048ee032856e630f60aa5da3e5eb137928b1ab69282",
+    "results/iteration39_global/case_01.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration53_prefix/global_2.stdout.json.gz": "de60054e54300457e5daef3700656714d8affbecf87d03ff8b48d9cd611a62ce",
+    "results/iteration39_global/case_02.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration53_prefix/global_3.stdout.json.gz": "ccfdd8bf78ccbaf16908d0313ec2699cad83390761253e41d74b8f0b6bc7c803",
+    "results/iteration39_global/case_03.csv": "9305df595f8fa78ddd4394c9bcc4f071ea529937cbbbfec902aecc00c7daf2b5",
+    "results/iteration53_prefix/global_4.stdout.json.gz": "5620339a83fbb1ca6ff368ed6167259bb8c6ebdc35663dfb8301e42fa2ed3f8b"
+  }
+}
