@@ -1,0 +1,4201 @@
+{
+  "job": {
+    "family_index": 2,
+    "family": "chain3",
+    "real": [
+      [
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "-1/5"
+        },
+        {
+          "rational": "1/5"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "imag": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "modes": 3,
+    "new_holdout": false,
+    "dimension": 6,
+    "rank": 2,
+    "action": "dimension"
+  },
+  "info": {
+    "decomposition": {
+      "seconds": 0.0015579000173602253,
+      "final_scalar_abs": 0.9779990511209496,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.04520838248803004
+        ],
+        "kernel_scale": 0.9907225482142121,
+        "reconstruction_residual": 2.7755575615628914e-17,
+        "scale_residual": 0.0,
+        "normalization_log_residual": 2.0816681711721685e-17,
+        "covariance_residual": 2.220446049250313e-16,
+        "symplectic_residual": 0.0,
+        "minimum_raw_nu": 1.0946979040428437
+      },
+      {
+        "cut": 2,
+        "parameters": [
+          0.04348155492722974,
+          0.0
+        ],
+        "kernel_scale": 0.9689486415257416,
+        "reconstruction_residual": 1.110231165001811e-16,
+        "scale_residual": 2.064788737021247e-18,
+        "normalization_log_residual": 2.498001805406602e-16,
+        "covariance_residual": 1.1102230246251565e-15,
+        "symplectic_residual": 6.661338147750939e-16,
+        "minimum_raw_nu": 1.0
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 6,
+        "elements": 12
+      },
+      {
+        "cache_entries": 12,
+        "elements": 24
+      },
+      {
+        "cache_entries": 6,
+        "elements": 12
+      }
+    ],
+    "cut_tail_estimates": [
+      0.0020437978471840035,
+      0.0018906456188896303
+    ],
+    "marginal_tail_estimates": [
+      3.583317169127615e-05,
+      9.47625847237495e-05,
+      8.883197436075265e-09
+    ],
+    "original_loss_sum": 0.004065048105686095,
+    "construction_trace_budget": 0.0637577297720527,
+    "projection_success": 0.9960200557992303,
+    "stored_complex_elements": 48,
+    "max_bond_actual": 2,
+    "total_seconds": 0.0024809000024106354,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0015620999911334366,
+      "basis_selection": 8.480000542476773e-05,
+      "local_tensors": 0.00044010000419802964,
+      "canonicalization": 0.00013540001236833632,
+      "error_budget": 0.0002584999892860651
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "bridge": {
+    "physical": {
+      "real": [
+        [
+          {
+            "rational": "1/5"
+          },
+          {
+            "rational": "1/5"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "1/5"
+          },
+          {
+            "rational": "-1/5"
+          },
+          {
+            "rational": "1/5"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "1/5"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "imag": [
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "determinant": {
+        "rational": "12099/15625"
+      },
+      "pivots": [
+        {
+          "rational": "4/5"
+        },
+        {
+          "rational": "23/20"
+        },
+        {
+          "rational": "111/115"
+        },
+        {
+          "rational": "6/5"
+        },
+        {
+          "rational": "23/30"
+        },
+        {
+          "rational": "109/115"
+        }
+      ],
+      "covariance": [
+        [
+          {
+            "rational": "179/111"
+          },
+          {
+            "rational": "50/111"
+          },
+          {
+            "rational": "10/111"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "50/111"
+          },
+          {
+            "rational": "89/111"
+          },
+          {
+            "rational": "40/111"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "10/111"
+          },
+          {
+            "rational": "40/111"
+          },
+          {
+            "rational": "119/111"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "81/109"
+          },
+          {
+            "rational": "-50/109"
+          },
+          {
+            "rational": "10/109"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "-50/109"
+          },
+          {
+            "rational": "191/109"
+          },
+          {
+            "rational": "-60/109"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "10/109"
+          },
+          {
+            "rational": "-60/109"
+          },
+          {
+            "rational": "121/109"
+          }
+        ]
+      ]
+    },
+    "dimensions": [
+      6,
+      6,
+      6
+    ],
+    "occupations": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        0,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        5,
+        1
+      ],
+      [
+        0,
+        5,
+        2
+      ],
+      [
+        0,
+        5,
+        3
+      ],
+      [
+        0,
+        5,
+        4
+      ],
+      [
+        0,
+        5,
+        5
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        1,
+        1,
+        5
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        1,
+        4,
+        3
+      ],
+      [
+        1,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ],
+      [
+        1,
+        5,
+        3
+      ],
+      [
+        1,
+        5,
+        4
+      ],
+      [
+        1,
+        5,
+        5
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        2,
+        1,
+        5
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        2,
+        2,
+        5
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        2,
+        4,
+        2
+      ],
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        2,
+        4,
+        5
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        2,
+        5,
+        2
+      ],
+      [
+        2,
+        5,
+        3
+      ],
+      [
+        2,
+        5,
+        4
+      ],
+      [
+        2,
+        5,
+        5
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        3,
+        0,
+        4
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        2,
+        4
+      ],
+      [
+        3,
+        2,
+        5
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        3,
+        4,
+        3
+      ],
+      [
+        3,
+        4,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        5,
+        1
+      ],
+      [
+        3,
+        5,
+        2
+      ],
+      [
+        3,
+        5,
+        3
+      ],
+      [
+        3,
+        5,
+        4
+      ],
+      [
+        3,
+        5,
+        5
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        4,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        4
+      ],
+      [
+        4,
+        0,
+        5
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        4,
+        1,
+        2
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        4,
+        1,
+        4
+      ],
+      [
+        4,
+        1,
+        5
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        4,
+        2,
+        4
+      ],
+      [
+        4,
+        2,
+        5
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        3,
+        4
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        5
+      ],
+      [
+        4,
+        5,
+        0
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        4,
+        5,
+        3
+      ],
+      [
+        4,
+        5,
+        4
+      ],
+      [
+        4,
+        5,
+        5
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        4
+      ],
+      [
+        5,
+        0,
+        5
+      ],
+      [
+        5,
+        1,
+        0
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        5,
+        1,
+        2
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        5,
+        1,
+        4
+      ],
+      [
+        5,
+        1,
+        5
+      ],
+      [
+        5,
+        2,
+        0
+      ],
+      [
+        5,
+        2,
+        1
+      ],
+      [
+        5,
+        2,
+        2
+      ],
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        2,
+        4
+      ],
+      [
+        5,
+        2,
+        5
+      ],
+      [
+        5,
+        3,
+        0
+      ],
+      [
+        5,
+        3,
+        1
+      ],
+      [
+        5,
+        3,
+        2
+      ],
+      [
+        5,
+        3,
+        3
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        3,
+        5
+      ],
+      [
+        5,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        1
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        5,
+        4,
+        3
+      ],
+      [
+        5,
+        4,
+        4
+      ],
+      [
+        5,
+        4,
+        5
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        5,
+        5,
+        2
+      ],
+      [
+        5,
+        5,
+        3
+      ],
+      [
+        5,
+        5,
+        4
+      ],
+      [
+        5,
+        5,
+        5
+      ]
+    ],
+    "hermite": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/5"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-9/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-9/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "24/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-3/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "18/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-3/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "9/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "27/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "18/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-39/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "108/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/15625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-39/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "108/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/15625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/25"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "6/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "3/125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "18/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "-51/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "12/625"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "72/3125"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "projection_unnormalized_norm": {
+      "rational": "443852427399/390625000000"
+    },
+    "integer_amplitudes": [
+      [
+        58479811150878620114713175547543557206331131240837388776789568368592514514948529848320,
+        357863416918156450775163172507470009371640725053137666785575069286400
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -360259079583301267078513029548116674014796733239793820417240680980479369408875069440,
+        -32507065004895744184267107485250425717599423113603927574974402920448
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2718125708910386056984645907610148213922540526978076310237268217736961086258675712,
+        473892974803576943989064300970173542933136980122300347395564634112
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        11695074494036584829266765884374895309794235339033662532550607886051615398723850338304,
+        2433930665053276881185994535387757851307150523044519874862318704656384
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -124787933687637978865092921630127088078213130660662888626054326337005978928940056576,
+        -26735485335891745606061235156601501613470464661309049117023215288320
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1215490507260192817028481146397465653211839307050608971707316835475721858911830016,
+        385411010801096630542952880713812297574467754101638939659263279104
+      ],
+      [
+        -7955691114667383520204046829066421899032773260072652147489641618088022432486707036160,
+        525182603928469341753915732057519826473558049699364483045167946792960
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        49010246476763088822281631331251857567690575732292220679851859224296614199147167744,
+        887064979004765853105941286066997350114841382663236164500087373824
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -369778358126630964272467706447021902931190610347428148420557966214964308141345792,
+        -37796012009913063489948440459798879687854397606954979209752084480
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -2755723065757984385832573305562015631781561990510873877841809464785431852953009913856,
+        -63861689009890330093876153446734474163962490210807442140125384933376
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        29403915927739455385812659150494013898630506708249444410687500241445538505387147264,
+        861702008282473365039328422275707875449410169606995042888874721280
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -286407344286242215027329990684152143342014030556588307744685169982495727732916224,
+        -37846160903185519148189536010604522589571540752337927048901165056
+      ],
+      [
+        1325548107564877098923809883590408980863810980801822210184456402002578441354641489920,
+        -183119608678038863564123156334532538681511682164573701544585765847040
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -8165907717154704189693982320828006884523028218684088786436170522438823311782649856,
+        441230953150713842043518034280104980437965772269341474780046426112
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        61611115334722989614369052581195951204677275016281218638379340175254176916800896,
+        1853245648354554250265238619444585510504785667801170880587890688
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        592758140795371565126023844438178055702810227532802396575014990726100760437249277952,
+        -73729439711796437912973670172165088824801115088939507007855177760768
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -6324804823098633574792876029646137765700352808629692860008460639352735105881735168,
+        747922064668681261220461000268219115912289249039843186218431938560
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        61606438984664847605248578230861903788967882122100057756060305096996035093331968,
+        -949777693673666142863931848862570214927503409514338408514715648
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -7909722231434716192738410760925026568384325536334437551082508575047680,
+        -29635390271788112329818748981313607798448906513614365363376488448000
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        84397743153086373978515829152680800492958154641230819588419050536960,
+        316213386920184594098728063185129616806034034666133820740458250240
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -822071915170456037561675460399403198200724565234174587708637184000,
+        -3080060376928615763623132814536012435945697446727704962064711680
+      ],
+      [
+        11716197241599230269064181237624138514352057731102501091797488189530012620886315827200,
+        -1123175968160961077915870745893788973964825082110883755397541265408000
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -72176471698669912349146099460115681732895580878113571560691562495825920254141235200,
+        848232457729851898234407990661372613215484868089239311409395793920
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        544565659606740215929655682066770283564115413542866396392206626817223896022366720,
+        39405222357673776953478560013659455241410842165888873335692984320
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3313589483597445762292120914110031056003066048664211036961189893938677728802557132800,
+        -66544309658108100455494260877561282500709135884558919101616509419520
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -35356421625023222994186292921945780260881688332594260440692317598247956843027496960,
+        493248901976580799286081237123394067842299970031637408607413207040
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        344387422613137256744069602249038121817194885753578712848594769619198831776235520,
+        30610731652656819295328689329458675944257884860039027663621324800
+      ],
+      [
+        -2760700241636619079120354241580352400370484199195022289892483510254789064699448115200,
+        463792438436178278407625899761518943661307589615147772763341376716800
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        17007020174730216806992428144708166810281357295044985008481042078320704999943659520,
+        -1426635337636021862655165902991745287346476466262221470378460446720
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -128316595996306800289086816429119564928055195712148046629146624512567199854416000,
+        -29249137682052122766619807977206882603054344693099896703549440
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -1104196280605122901134073881330854598423262604756142199765080864373013816765495377920,
+        -143175087972316095839641187447027805938374130472533743602509147013120
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        11781914883274067614049692984575338983374737856269828322052746411799906726528942080,
+        1599937044759169492303089275063428377126158944830648232604545843200
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -114761141360143312819214991253330020582491794872528655581965521580130957137018880,
+        -27385606135956635132828141763689335120543991147526526041241681920
+      ],
+      [
+        593828735136613913912658781906709239658665618353356855097705646474074645882772684800,
+        -142596687494247610782314632280140805420687236861511030534404728422400
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -3658223057500730883860757309542564587154438346448723434527044393551221808417423360,
+        570748530814106271863689664494500933447782853289464604698901217280
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        27600998017934190612326948809126167901741310125975031260015201472976947231512320,
+        -1984648063028922182985592086368769728614969251880144030201282560
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        7910631209193603487568537004457753292135273041743605310898942584743123042951390822400,
+        48408595356055589078802715204744620348175741388999948760250318848000
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -48732659395809414101493101273145949131995466255426228957767301542661511426395340800,
+        -4397268012435261853019820115522484586215057210261864619898684047360
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        367683985981800377232825896917961894169942728270099146652400560996376616202403840,
+        64104046892813036137419129958760552859162109158048235534512291840
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1582006156751754782584840207300605546739639621117479386501912452542083530776410849280,
+        329240596046188117675138906533681913542879721298734222259130340474880
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -16880207089132837303686273163333941656288720030455332861776631840068658117549752320,
+        -3616539802862643294004666196889778400846068297465944530791851622400
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        164420796715698391303433175301757049522676022629652533716861784243091400682373120,
+        52134990014655701601542979873188540105662461996973184022510305280
+      ],
+      [
+        -1076175472934072596738117222389821241297327935708496005685748638769924052070547251200,
+        71042053922564587225794873228343706939266996314280964283524395827200
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6629672321428623062947608081642263846757637432928011652900629476432682862249390080,
+        119994298363809609989810390027986912839660956475724842894287175680
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -50020343135751511060348283026641298445563055561909797960690409314217102725669440,
+        -5112709947323118319633524296705761906422865227591692796402073600
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -372769823617193145717220907864595664980327849328604889593814154690473151753533521920,
+        -8638644007417669546176314535984305357249659197007245432202796728320
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3977501473292393018726757346474760794161991200033571091633406193844484026379796480,
+        116563420188844502409477727825790241395868155802873162031012249600
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -38742650355138243026768402796467912307368134332670231478809935397568525295943680,
+        -5119493645704156039125820764633986829746351754903887797991505920
+      ],
+      [
+        179308414692660862460295442916539070227376110017248461743313785857178998361512934400,
+        -24770799749787665635951769525693114372744730098725677650110368972800
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -1104611714153053686568848989191695752555819759283891808826053910176247603137041920,
+        59685817716664026724408343549801343926604931517755251966701731840
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        8334206321949856168445673727670390790110778044177416607375756694499512158419720,
+        250690667012448266219588323801156443169783587307334792286044160
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        80183074394367157034796479633277826729274838907615455778908878090602716229942640640,
+        -9973465976415559201986105070918402553116542458028006318400088309760
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -855563611458594180421011692199433480844997136852199354301767268592734726531317760,
+        101172276557936431585043696764966757480645524307972662576231219200
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        8333573746707442843616551382768531039986445428702785550566554471199619688693760,
+        -128477519292706241790882963744936877637924812918734663828111360
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -1853220248451602114471057129333860407158977193211165069566982595018752,
+        -6943468267972471074677376728844861473825079462192697408526431027200
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        19774095974359774138772437303921258611555035459503362960304052895744,
+        74087690354412391900716495184698226235886111300654305383689486336
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -192608573891846803262332722442255227435299270549113149312309657600,
+        -721647371420048639742738687405455772214972781557735206370148352
+      ],
+      [
+        2745064027241587859618578291793841810565824193628568525601017655921726759564728238080,
+        -263156200163121350632387941160438802436337785050252577991275262771200
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -16910694825942963078080747238556737692881572474180065417409599878164604981175009280,
+        198737897496774263294656118138968309192114188030434459873326399488
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        127589829006113972611610053209058046960886613339974017129103029820077538577521408,
+        9232505748148478011765881840827809185302787822770948894305026048
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        776362424163814744182457429700589285343285273291768239305069052142350957692237905920,
+        -15591098962683881497088778322799965623961904725543065295706105315328
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -8283885900301723977110588122124854124040998113087160134601574201862581895764639744,
+        115566492213433124366688513609249578803622886798273300744797945856
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        80688768356782061197238878228798388845969132435095378060148833571159712861257728,
+        7171987341498871481895618789013647350062865545102801345676574720
+      ],
+      [
+        -646822408930307862190810627184043407981279307527659521039381592393308283565436641280,
+        108664945852689612054602177325211776899593383234258968872998162923520
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3984685331727262112403160888731406916672742818462187060732957339680405908449251328,
+        -334255668847185507864429958770381362271598206512473211834002833408
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -30064129555356844445829872631237373500616976172084142396003600513303047443582400,
+        -6852970637414619373339460151612158194017525692831532859785216
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -258709325764930985336906715955987088674615845441763609380715588516890605715443417088,
+        -33545422246263566229587752184022944623690273686726692392592492986368
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2760461440787702298485696297446848100487380019020922207651195683887759764238630912,
+        374859652569328332240090604345242710584539456755218458392112660480
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -26888133954794690738243075848811138431000791030130064140910801317062617629458432,
+        -6416351715307913032859778999348246894627969821274592083273842688
+      ],
+      [
+        139131995267040033250979292309125801886496855470580496931246195326216114150792478720,
+        -33409905037655322273055683903467811458836524065500067214382187151360
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -857108864906773856371238222727655546596481359516889944617814181869252173943496704,
+        133724384135149126609192215286720114327340447338082024763993096192
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6466817279755490323194395409220569125210156755438157038060450423055037868165248,
+        -464996098325479708917952927870344165303773997100936983251779584
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1310575197462069610936740874145004514718620499007043199568785134446506286538586849280,
+        8019980042033998897255608358312385086742903628102185165516282265600
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -8073668588707383695607060261417891736582060841991988043321871503483995409885429760,
+        -728507023180827967738546581828106717726448806983886275780324360192
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        60915178547535987547539659926381236665814984574943616424654003660684956373352448,
+        10620287015406243054711136402772505334688565127534860403419906048
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        262095144678409737701009637094243450023906485327147045175963378862195975325447356416,
+        54546160447258205719337684879284529019701507173498029017327506292736
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -2796588559624694575016333469596328092647042959213908435297792341159591081729327104,
+        -599161715535125414652827799200271286322426344530827106355280609280
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        27240028314316208601843117950692977953533558319411886449199760514444284724772864,
+        8637341702104900146284845536975379623726349430046239387723759616
+      ],
+      [
+        -178292837277669409358408520567355468329652044332414963852849858020879800196831472640,
+        11769724992295165539752223304838300751207748152837905326079307939840
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1098355350160590412119824613493075376568621775015977040977585642148363291827826176,
+        19879772816321601156969264229019178001063446515627855457860714496
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -8287002560057483049518063355919495417489223584967231586916931865178558422921768,
+        -847036181005628036712157278453778489151198736843287463639121920
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -61757762721542041318011558886141986109208622104336569025722030862222226106009780224,
+        -1431187003467962300637096134792101174170451456861853482239922274304
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        658963190283425738898658556344554366078664764461106637158450887288568744568160256,
+        19311370153788485951435416970221238133943365246662688013151109120
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -6418597365578006603040931042887522398628253713185629266474508630808100492804096,
+        -848160054260510553050930924722197215893288486335731533583745024
+      ],
+      [
+        29706499364972911077253318973627669644537439352234324020889661000581308665040695680,
+        -4103843917744799005086776519893725445793222813910286050523254620160
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -183003944579364011470762689516686735900573529128207828202987252218981791904524224,
+        9888307300786930010246308252822636412509991135515871032060674048
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1380750006824359801596051486105967583962092841506453669004541047071772996888509,
+        41532585925621611599264627551844497495512859645064464042033152
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        13284142033493410738430644538593490587980140817177759251622152513224084794699153408,
+        -1652330489914784934446806999001873844798375027790381774437164777472
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -141743486629180116172331720070681244134534356701147709576223814107823501656195072,
+        16761478676127167499744812981911491801873347751938358031669002240
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1380645206410674485778175132178886957945137642265428157637378902031849092022272,
+        -21285210467249131228186004143082886880657384566715994175700992
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -396371315359227571284870974948764371817669414315494905682644894220288,
+        -1485086110423631610476417370749424818826574128670882538042739916800
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4229332394757331065723429868161469392073819784948077322133502427136,
+        15846057856448309032343741411819257167605068234637977950181392384
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -41195596609071949261313188439594459424605668886743248760366694400,
+        -154347718828501582976116051682385162765476925048690975008882688
+      ],
+      [
+        587121061369874247870503123645409691258841225490449348360196776122577746500207083520,
+        -56284496832334625520704598816637523277607903595828630995119951052800
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -3616901098181880018800017109979196084722621703423325994330565482117857790654136320,
+        42506551451906922358282471131469171389517703102096301960852406272
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        27289227166531827180732043435311098718471947288790213197070843031116503773162752,
+        1974671089695257863415040516440798681198938974440035566760230912
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        166050309194712156466944893436914965513134367435377572100976516027962973892357652480,
+        -3334662681836270296441993110941895942502763334978125666580254687232
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -1771777938068489514547884039578501751876200708273551824415662848910361385433563136,
+        24717646252982164253221592693962314287691146994687668308634763264
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        17257912692792904984768030980124968464696215236605354058842826495113621334392832,
+        1533962333222303926103711803359627247567156793024632799813959680
+      ],
+      [
+        -138343971390201367851629554637482739808642071045836068989819778525782222124649144320,
+        23241526503423946988358638739181528900951211768584871526206936186880
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        852254321929076551425357342099000760727992730741269411437463636429329389141471232,
+        -71491426471265074667134809346643112774496269223147261229638090752
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -6430190144395149358711722015902138926828521594294755069656718270313472124865600,
+        -1465730254102139508570327020280872938943429907932160253231104
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -55333388373466510449659408766195962221731844339256353344814780046145717407078940672,
+        -7174777607325192254177433449416089939957594281884535001669269716992
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        590414298137334893518945812194728254824629878568480074394863230269317063615971328,
+        80175906608052618971871607023621442248245218675226395756587909120
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -5750900375776577641885228732310812806086712089944974228306647061181550410334208,
+        -1372345122674420295215787974825840179998348980341090586116227072
+      ],
+      [
+        29757894140552124470988469928467863377630799942062851046614548050594770743544135680,
+        -7145792852666516132203732420652114538873789621345124402402783395840
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -183320556999636500063555305157766724665058341294904217000818356411855995278565376,
+        28601300940639881670559945137782977276015720391578384796271771648
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1383138822007861650882513380500252851729356263574195454539495670954860394275712,
+        -99454511833752229459895305455238619437838191324856453060100096
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "integer_norm": 3864537523017259417921270584778041970998799351135793437537957855234587478444910230061727496737147191376532375829956381944118669241078871892838394878373544153117677966096393,
+    "normalization_probability_interval": [
+      {
+        "rational": "1380905316044770397551084536555462205723975496798428244301/1569275433846670190958947355801916604025588861116008628224"
+      },
+      {
+        "rational": "5523621264179081590204338146221848822895901987193712977205/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "projection_mass_interval": [
+      {
+        "rational": "612918176534654602712667116655194850202989236426379329240920638003099/612998216346355543343338810860123673447495648873440870400000000000000"
+      },
+      {
+        "rational": "490334541227723682170133693324155880162391389141103463392825280887959/490398573077084434674671048688098938757996519098752696320000000000000"
+      }
+    ],
+    "tail_mass_interval": [
+      {
+        "rational": "64031849360752504537355363943058595605129957649232927174719112041/490398573077084434674671048688098938757996519098752696320000000000000"
+      },
+      {
+        "rational": "80039811700940630671694204928823244506412447061541159079361996901/612998216346355543343338810860123673447495648873440870400000000000000"
+      }
+    ],
+    "overlap_squared_interval": [
+      {
+        "rational": "10273047702372648968653641245812887325722943038416834520943227911771556826398286762681841777891634566895421968856083610545623314146937800205307728511770224902805663108287689099918494146047913323054294015929514714848076918177345351239184750120661522320146083227561023670961481659795912088353793/2348542582773833227889480596789337027375682548908319870707290971532209025114608443463698998384768703031934976000000000000"
+      },
+      {
+        "rational": "657475052951849533993833039732024788846268354458677409340383250079096122004718934558985598572825276630299804972642463863458056850408165773434225607050889875052276292372259316524431600886331645181331177060094566001460572654695387179314030601694727657833654289379712396742794309732230728131005369/150306725297525326584926758194517569752043683130132471725266622178061377607334940381676735896625196994043838464000000000000"
+      }
+    ],
+    "projected_fidelity_interval": [
+      {
+        "rational": "9512081205900600896901519672048969746039762072608180111984470288677367431850265521001705349899661636014279600792670009764466031617535000190099748622009467502597836211377489907331939024118438262087309274008809921155626776090134584480726620482094002148283410395889836732371742277588807489216475/9548843524467893775737829568528612991543907039105219300430065779420735315935673661338473475277142515924186268685359528503310768519078728055223035309003319920006799446408049868255629316990929851538778558456951475896776777197446673593855872458484149312461710659392498261569448964350582324199424"
+      },
+      {
+        "rational": "16436876323796238349845825993300619721156708861466935233509581251977403050117973363974639964320631915757495124316061596586451421260204144335855640176272246876306907309306482913110790022158291129533279426502364150036514316367384679482850765042368191445841357234492809918569857743305768203275134225/16500401610280520444474969494417443249387871363573818951143153666839030625936844086792882165278902267516993872288301265253721008000968042079425405013957736821771749443393110172345727459760326783459009349013612150349630270997187851970182947608260610011933836019430236995992007810397806256216604672"
+      }
+    ],
+    "full_fidelity_interval": [
+      {
+        "rational": "1576234020465322800390245514160258890635483745626850915848481279113554855723295087153766427375294056194300727643013959645835755398509742347399888996226799633828286938480686684147294114398545355216717510323780396009588149617376096644797142358626241018519354354826913960466353560899485562204565856468646642829534473701991901228928841926398814924887077/1582532487107210235367058869456216046858383201821049514088128483513951094739586980318348478270096465979484603224031938733696077679700852843892665961147404561334490156677327209461434648847690041042196938453311637657869956486465999366496548257198917373558163690257656036405129808464204944031951729183772156861882012089482194039923695157248000000000000"
+      },
+      {
+        "rational": "726328636630420746419825132925047296804830909984852902023130077248058052420956367056138113050399228471821081435144013772096035412836739962474502738013295314199187518766817004548088057307657218085361782890067637415174360431230640910152603452691562050566182006642292651237387802417359110573198025490062994116567873161332690886502629017402039659765922729/729230970059002476457140727045424354392342979399139616091809605203228664456001680530694978786860451523346505165633917368487152594806152990465740474896724021862933064196912378119829086189015570912244349239286002632746475948963532508081609436917261125735601828470727901575483815740305638209923356807882209881955231170833395013596838728459878400000000000"
+      }
+    ],
+    "tail_trace_interval": [
+      {
+        "rational": "35863493761423660673801763252891648080161449785464176167/3138550867693340381917894711603833208051177722232017256448"
+      },
+      {
+        "rational": "71726987522847321347603526505783296160322899570928352385/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "compression_trace_interval": [
+      {
+        "rational": "48685007273917908377952855406741693214285415762432735521/784637716923335095479473677900958302012794430558004314112"
+      },
+      {
+        "rational": "389480058191343267023622843253933545714283326099461884171/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "full_trace_interval": [
+      {
+        "rational": "396004633220071800737181239550572845188105863782270553509/6277101735386680763835789423207666416102355444464034512896"
+      },
+      {
+        "rational": "24750289576254487546073827471910802824256616486391909595/392318858461667547739736838950479151006397215279002157056"
+      }
+    ],
+    "bits": 192,
+    "scope": "Exact infinite pure Gaussian B versus exactly normalized stored binary64 MPS; arbitrary common quantum channel contracts trace distance"
+  },
+  "fold": {
+    "steps": [
+      {
+        "site": 0,
+        "shared_modes": 0,
+        "left_internal_norm": 0.0,
+        "right_internal_norm": 0.0,
+        "contraction_norm_bound": 0.0,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "symmetry_residual": 0.0,
+        "log_factor_real": 0.0,
+        "log_factor_imag": 0.0
+      },
+      {
+        "site": 1,
+        "shared_modes": 1,
+        "left_internal_norm": 0.1913022925828205,
+        "right_internal_norm": 0.009043724461784768,
+        "contraction_norm_bound": 0.0017300852230267606,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "minimum_real_eigenvalue": 1.0017300852230269,
+        "symmetry_residual": 1.5700924586837752e-16,
+        "log_factor_real": -0.0008642951747557171,
+        "log_factor_imag": 0.0
+      },
+      {
+        "site": 2,
+        "shared_modes": 2,
+        "left_internal_norm": 0.28314018976469296,
+        "right_internal_norm": 0.0003788166313743735,
+        "contraction_norm_bound": 0.00010725821289336186,
+        "condition": 1.0001072487348899,
+        "solve_residual": 1.355252715597538e-20,
+        "minimum_real_eigenvalue": 0.999924098922203,
+        "symmetry_residual": 3.9252902032620693e-17,
+        "log_factor_real": 3.7951979215107454e-05,
+        "log_factor_imag": -5.320194086757153e-18
+      }
+    ],
+    "final_pairing_norm": 0.37587704831436364,
+    "normalized_log_vacuum_amplitude": -0.0639373477657812,
+    "raw_log_norm_squared": 9.43689570931383e-16,
+    "log_scalar_real": -0.06393734776578072,
+    "log_scalar_imag": 7.992411486758841e-19,
+    "scope": "Untruncated state defined by supplied kernels; sufficient float64 convergence checks, no original experimental-state identification"
+  },
+  "stored_strides": [
+    [
+      192,
+      32,
+      16
+    ],
+    [
+      192,
+      32,
+      16
+    ],
+    [
+      96,
+      16,
+      16
+    ]
+  ],
+  "fold_residual": 1.11022302463301e-16
+}

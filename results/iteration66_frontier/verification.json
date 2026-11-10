@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-11-10T02:06:44.333093+00:00",
+  "primary_rechecks": [
+    {
+      "url": "https://arxiv.org/html/2512.10643v2",
+      "location": "SectionII.3,Equations32-35",
+      "scope": "Paired-state local kernel and projected creation operators on a kept occupation basis. This project uses its own GSVD/recurrence implementation; no novelty claim for the construction."
+    },
+    {
+      "url": "https://zenodo.org/records/18045305",
+      "location": "File listing and readme.txt",
+      "scope": "Official page lists PCO mapping.zip,filtration of quantum channel.zip,readme.txt,and time log.zip. Readme describes D200 local-reference demonstration and author wall-time logs. This round checks listing and stated scope,not log-based benchmark replication.",
+      "files": {
+        "PCO mapping.zip": "ef160d38704430ac86436d969ae4ca98",
+        "filtration of quantum channel.zip": "8cbbb641abc55c1859fe1908ed29dcf8",
+        "readme.txt": "fd46bbef42d74cad3d5abebe9e30fe5a",
+        "time log.zip": "d5a519b78cc63ccda4760cb2a0175579"
+      }
+    },
+    {
+      "url": "https://arxiv.org/html/2508.09092v3",
+      "location": "Equation1 and fitted-bond extrapolation discussion",
+      "scope": "Authors report1024 squeezed inputs,8176modes,up to3050events,25.6microseconds/sample. Specified MPS runtime extrapolation is not a universal classical lower bound."
+    }
+  ],
+  "reused_same_day_review": "results/iteration64_frontier/verification.json",
+  "new_author_mps_reference_runs": 0,
+  "new_jiuzhang_experimental_inputs": 0,
+  "new_local_gsvd_constructions": 20,
+  "goal": "active"
+}

@@ -1,0 +1,608 @@
+{
+  "job": {
+    "family_index": 0,
+    "family": "pair2",
+    "real": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "1/3"
+        }
+      ],
+      [
+        {
+          "rational": "1/3"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "imag": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "modes": 2,
+    "new_holdout": false,
+    "dimension": 4,
+    "rank": 2,
+    "action": "baseline"
+  },
+  "info": {
+    "decomposition": {
+      "seconds": 0.002648800000315532,
+      "final_scalar_abs": 0.9428090415820634,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.11111111111111122
+        ],
+        "kernel_scale": 1.0,
+        "reconstruction_residual": 0.0,
+        "scale_residual": 0.0,
+        "normalization_log_residual": 2.0816681711721685e-17,
+        "covariance_residual": 2.220446049250313e-16,
+        "symplectic_residual": 0.0,
+        "minimum_raw_nu": 1.2500000000000002
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 4,
+        "elements": 8
+      },
+      {
+        "cache_entries": 4,
+        "elements": 8
+      }
+    ],
+    "cut_tail_estimates": [
+      0.012345679012345623
+    ],
+    "marginal_tail_estimates": [
+      0.00015241579027587264,
+      0.00015241579027587264
+    ],
+    "original_loss_sum": 0.012650510592897369,
+    "construction_trace_budget": 0.11247448863141085,
+    "projection_success": 0.9876543209876543,
+    "stored_complex_elements": 16,
+    "max_bond_actual": 2,
+    "total_seconds": 0.003492299991194159,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0026548999885562807,
+      "basis_selection": 6.33999879937619e-05,
+      "local_tensors": 0.0003980000037699938,
+      "canonicalization": 0.00015979999443516135,
+      "error_budget": 0.00021620001643896103
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "bridge": {
+    "physical": {
+      "real": [
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "1/3"
+          }
+        ],
+        [
+          {
+            "rational": "1/3"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "imag": [
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "determinant": {
+        "rational": "64/81"
+      },
+      "pivots": [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "8/9"
+        },
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "8/9"
+        }
+      ],
+      "covariance": [
+        [
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "3/4"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "3/4"
+          },
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "-3/4"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "-3/4"
+          },
+          {
+            "rational": "5/4"
+          }
+        ]
+      ]
+    },
+    "dimensions": [
+      4,
+      4
+    ],
+    "occupations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "hermite": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/3"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/9"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/9"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "projection_unnormalized_norm": {
+      "rational": "820/729"
+    },
+    "integer_amplitudes": [
+      [
+        8544979495185814,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2848326498395271,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "integer_norm": 81129638414606674395340542006037,
+    "normalization_probability_interval": [
+      {
+        "rational": "697455748376297862648421047023074046233595049384892723655/784637716923335095479473677900958302012794430558004314112"
+      },
+      {
+        "rational": "5579645987010382901187368376184592369868760395079141789241/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "projection_mass_interval": [
+      {
+        "rational": "142978428417141061842926314639730179477886985123903008349275/143000223909277821151134077797449650541831784969196286246912"
+      },
+      {
+        "rational": "1143827427337128494743410517117841435823095880991224066794405/1144001791274222569209072622379597204334654279753570289975296"
+      }
+    ],
+    "tail_mass_interval": [
+      {
+        "rational": "174363937094074465662105261755768511558398762346223180891/1144001791274222569209072622379597204334654279753570289975296"
+      },
+      {
+        "rational": "21795492136759308207763157719471063944799845293277897637/143000223909277821151134077797449650541831784969196286246912"
+      }
+    ],
+    "overlap_squared_interval": [
+      {
+        "rational": "90144042682896304883711713340041"
+      },
+      {
+        "rational": "90144042682896304883711713340041"
+      }
+    ],
+    "projected_fidelity_interval": [
+      {
+        "rational": "65715007115831406260225839024889889/66526303499977473004179244444950340"
+      },
+      {
+        "rational": "65715007115831406260225839024889889/66526303499977473004179244444950340"
+      }
+    ],
+    "full_fidelity_interval": [
+      {
+        "rational": "62871480751064379721167124078717049173558184556837080877996028926053910450283977659369855/63657374260452684467681713129701090751999354197307092336348910588261611444655000748294144"
+      },
+      {
+        "rational": "502971846008515037769336992629736393388465476454696647024058375451114179907155532988298881/509258994083621475741453705037608726015994833578456738690791284706092891557240005986353152"
+      }
+    ],
+    "tail_trace_interval": [
+      {
+        "rational": "38747541576460992369356724834615224790755280521382929089/3138550867693340381917894711603833208051177722232017256448"
+      },
+      {
+        "rational": "77495083152921984738713449669230449581510561042765858225/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "compression_trace_interval": [
+      {
+        "rational": "346594961982909364738576403244361480908115242667817659695/3138550867693340381917894711603833208051177722232017256448"
+      },
+      {
+        "rational": "693189923965818729477152806488722961816230485335635319391/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "full_trace_interval": [
+      {
+        "rational": "697455748376297862648421047023108433456908532173400921637/6277101735386680763835789423207666416102355444464034512896"
+      },
+      {
+        "rational": "697455748376297862648421047023108433456908532173400921643/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "bits": 192,
+    "scope": "Exact infinite pure Gaussian B versus exactly normalized stored binary64 MPS; arbitrary common quantum channel contracts trace distance"
+  },
+  "fold": {
+    "steps": [
+      {
+        "site": 0,
+        "shared_modes": 0,
+        "left_internal_norm": 0.0,
+        "right_internal_norm": 0.0,
+        "contraction_norm_bound": 0.0,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "symmetry_residual": 0.0,
+        "log_factor_real": 0.0,
+        "log_factor_imag": 0.0
+      },
+      {
+        "site": 1,
+        "shared_modes": 1,
+        "left_internal_norm": 0.0,
+        "right_internal_norm": 0.0,
+        "contraction_norm_bound": 0.0,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "minimum_real_eigenvalue": 1.0,
+        "symmetry_residual": 0.0,
+        "log_factor_real": -0.0,
+        "log_factor_imag": 0.0
+      }
+    ],
+    "final_pairing_norm": 0.3333333333333333,
+    "normalized_log_vacuum_amplitude": -0.058891517828191756,
+    "raw_log_norm_squared": 2.7755575615628914e-17,
+    "log_scalar_real": -0.05889151782819174,
+    "log_scalar_imag": 0.0,
+    "scope": "Untruncated state defined by supplied kernels; sufficient float64 convergence checks, no original experimental-state identification"
+  },
+  "stored_strides": [
+    [
+      128,
+      32,
+      16
+    ],
+    [
+      64,
+      16,
+      16
+    ]
+  ],
+  "fold_residual": 0.0
+}

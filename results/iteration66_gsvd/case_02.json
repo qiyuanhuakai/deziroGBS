@@ -1,0 +1,928 @@
+{
+  "job": {
+    "family_index": 0,
+    "family": "pair2",
+    "real": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "1/3"
+        }
+      ],
+      [
+        {
+          "rational": "1/3"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "imag": [
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "modes": 2,
+    "new_holdout": false,
+    "dimension": 6,
+    "rank": 2,
+    "action": "dimension"
+  },
+  "info": {
+    "decomposition": {
+      "seconds": 0.000929199974052608,
+      "final_scalar_abs": 0.9428090415820634,
+      "virtual_mode_policy": "All prefix modes retained; no small symplectic mode frozen"
+    },
+    "cuts": [
+      {
+        "cut": 1,
+        "parameters": [
+          0.11111111111111122
+        ],
+        "kernel_scale": 1.0,
+        "reconstruction_residual": 0.0,
+        "scale_residual": 0.0,
+        "normalization_log_residual": 2.0816681711721685e-17,
+        "covariance_residual": 2.220446049250313e-16,
+        "symplectic_residual": 0.0,
+        "minimum_raw_nu": 1.2500000000000002
+      }
+    ],
+    "local": [
+      {
+        "cache_entries": 6,
+        "elements": 12
+      },
+      {
+        "cache_entries": 6,
+        "elements": 12
+      }
+    ],
+    "cut_tail_estimates": [
+      0.012345679012345623
+    ],
+    "marginal_tail_estimates": [
+      1.8816764231589227e-06,
+      1.8816764231589227e-06
+    ],
+    "original_loss_sum": 0.012349442365191941,
+    "construction_trace_budget": 0.11112804490852857,
+    "projection_success": 0.9876543209876543,
+    "stored_complex_elements": 24,
+    "max_bond_actual": 2,
+    "total_seconds": 0.0015562000044155866,
+    "coefficient_backend": "recurrence",
+    "phase_seconds": {
+      "gaussian_decomposition": 0.0009343000128865242,
+      "basis_selection": 5.060000694356859e-05,
+      "local_tensors": 0.0002857999934349209,
+      "canonicalization": 9.40999889280647e-05,
+      "error_budget": 0.0001914000022225082
+    },
+    "scope": "Ideal original-projector bound evaluated in float64; success mass is not fidelity; no full finite-precision sampler TV certificate"
+  },
+  "bridge": {
+    "physical": {
+      "real": [
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "1/3"
+          }
+        ],
+        [
+          {
+            "rational": "1/3"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "imag": [
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ]
+      ],
+      "determinant": {
+        "rational": "64/81"
+      },
+      "pivots": [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "8/9"
+        },
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "8/9"
+        }
+      ],
+      "covariance": [
+        [
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "3/4"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "3/4"
+          },
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "5/4"
+          },
+          {
+            "rational": "-3/4"
+          }
+        ],
+        [
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "0"
+          },
+          {
+            "rational": "-3/4"
+          },
+          {
+            "rational": "5/4"
+          }
+        ]
+      ]
+    },
+    "dimensions": [
+      6,
+      6
+    ],
+    "occupations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "hermite": [
+      [
+        {
+          "rational": "1"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "1/3"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/9"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "2/9"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "8/27"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "0"
+        },
+        {
+          "rational": "0"
+        }
+      ],
+      [
+        {
+          "rational": "40/81"
+        },
+        {
+          "rational": "0"
+        }
+      ]
+    ],
+    "projection_unnormalized_norm": {
+      "rational": "66430/59049"
+    },
+    "integer_amplitudes": [
+      [
+        8544979495185814,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2848326498395271,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "integer_norm": 81129638414606674395340542006037,
+    "normalization_probability_interval": [
+      {
+        "rational": "697455748376297862648421047023074046233595049384892723655/784637716923335095479473677900958302012794430558004314112"
+      },
+      {
+        "rational": "5579645987010382901187368376184592369868760395079141789241/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "projection_mass_interval": [
+      {
+        "rational": "23165992682318733507867305076871404445648859565319211816200825/23166036273303007026483720603186843387776749165009798371999744"
+      },
+      {
+        "rational": "185327941458549868062938440614971235565190876522553694529639815/185328290186424056211869764825494747102213993320078386975997952"
+      }
+    ],
+    "tail_mass_interval": [
+      {
+        "rational": "348727874188148931324210523511537023116797524692446358137/185328290186424056211869764825494747102213993320078386975997952"
+      },
+      {
+        "rational": "43590984273518616415526315438942127889599690586555798919/23166036273303007026483720603186843387776749165009798371999744"
+      }
+    ],
+    "overlap_squared_interval": [
+      {
+        "rational": "90144042682896304883711713340041"
+      },
+      {
+        "rational": "90144042682896304883711713340041"
+      }
+    ],
+    "projected_fidelity_interval": [
+      {
+        "rational": "5322915576382343907078292961016081009/5389441879882321380082472205461037910"
+      },
+      {
+        "rational": "5322915576382343907078292961016081009/5389441879882321380082472205461037910"
+      }
+    ],
+    "full_fidelity_interval": [
+      {
+        "rational": "62871480751064379721167124078717049173558184556837080877996028926053910450283977659369855/63657374260452684467681713129701090751999354197307092336348910588261611444655000748294144"
+      },
+      {
+        "rational": "502971846008515037769336992629736393388465476454696647024058375451114179907155532988298881/509258994083621475741453705037608726015994833578456738690791284706092891557240005986353152"
+      }
+    ],
+    "tail_trace_interval": [
+      {
+        "rational": "1076320599346138676926575689850422910854313347816192469/784637716923335095479473677900958302012794430558004314112"
+      },
+      {
+        "rational": "8610564794769109415412605518803383286834506782529540163/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "compression_trace_interval": [
+      {
+        "rational": "87175406357532093699460748306641842056504649247383110025/784637716923335095479473677900958302012794430558004314112"
+      },
+      {
+        "rational": "697403250860256749595685986453134736452037193979064880201/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "full_trace_interval": [
+      {
+        "rational": "697455748376297862648421047023108433456908532173400921637/6277101735386680763835789423207666416102355444464034512896"
+      },
+      {
+        "rational": "697455748376297862648421047023108433456908532173400921643/6277101735386680763835789423207666416102355444464034512896"
+      }
+    ],
+    "bits": 192,
+    "scope": "Exact infinite pure Gaussian B versus exactly normalized stored binary64 MPS; arbitrary common quantum channel contracts trace distance"
+  },
+  "fold": {
+    "steps": [
+      {
+        "site": 0,
+        "shared_modes": 0,
+        "left_internal_norm": 0.0,
+        "right_internal_norm": 0.0,
+        "contraction_norm_bound": 0.0,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "symmetry_residual": 0.0,
+        "log_factor_real": 0.0,
+        "log_factor_imag": 0.0
+      },
+      {
+        "site": 1,
+        "shared_modes": 1,
+        "left_internal_norm": 0.0,
+        "right_internal_norm": 0.0,
+        "contraction_norm_bound": 0.0,
+        "condition": 1.0,
+        "solve_residual": 0.0,
+        "minimum_real_eigenvalue": 1.0,
+        "symmetry_residual": 0.0,
+        "log_factor_real": -0.0,
+        "log_factor_imag": 0.0
+      }
+    ],
+    "final_pairing_norm": 0.3333333333333333,
+    "normalized_log_vacuum_amplitude": -0.058891517828191756,
+    "raw_log_norm_squared": 2.7755575615628914e-17,
+    "log_scalar_real": -0.05889151782819174,
+    "log_scalar_imag": 0.0,
+    "scope": "Untruncated state defined by supplied kernels; sufficient float64 convergence checks, no original experimental-state identification"
+  },
+  "stored_strides": [
+    [
+      192,
+      32,
+      16
+    ],
+    [
+      96,
+      16,
+      16
+    ]
+  ],
+  "fold_residual": 0.0
+}

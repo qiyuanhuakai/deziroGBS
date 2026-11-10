@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "tests_run": 765,
+  "errors": 4,
+  "skipped_records": 36,
+  "error_names": [
+    "setUpClass (test_forest_conditional_mi.NativeConditionalMIForestTests)",
+    "test_refactor_preserves_archived_sampler (test_sampling_audit.SamplingAuditTests.test_refactor_preserves_archived_sampler)",
+    "setUpClass (test_wire_forest.WireForestNumericsTests)",
+    "setUpClass (test_wire_forest.WireForestTransportTests)"
+  ],
+  "summary_missing_reason": "Missing iteration25 inherited validation while writing final test report.",
+  "cause": "Sparse fast-forward removed previously materialized tracked files outside sparse patterns.",
+  "restored_inputs": [
+    "results/iteration64_frontier/verification.json",
+    "results/iteration25_tests/validation.json",
+    "results/iteration31_build/build.json",
+    "results/iteration31_build/libwire_forest.dll",
+    "results/iteration12_layerwise_quality/source_snapshot/src/gbslab/local_mps.py"
+  ],
+  "source_hashes_file": "source_hashes_at_start.json",
+  "original_log_sha256": "3d2ed8c6681122027986b992b8791b9b4c12c450061fc886b8e606430ce8f59f"
+}
