@@ -1,0 +1,464 @@
+[
+  {
+    "case": 0,
+    "family": "real_pair",
+    "action": "joint",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.0010140287466566058,
+      0.0010140287466566058
+    ],
+    "finite_TV": [
+      0.0010124281601704014,
+      0.0010124281601704014
+    ],
+    "reference_TV": [
+      1.6872482580084515e-06,
+      1.6872482580084515e-06
+    ],
+    "arithmetic": 1.1893210062670146e-16,
+    "total_upper": 0.09313795787993208,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_00.components.json.gz",
+      "raw_bytes": 200844669,
+      "compressed_bytes": 41555250,
+      "raw_sha256": "52e0296c46f1bb1d419b87214bdccab8eb7e75e8975e2ce297774bcda5f452db",
+      "nodes": 3888,
+      "trace_nodes": 31104
+    },
+    "timing": {
+      "preparation": 0.5121628000051714,
+      "components_and_comparisons": 36.83608259999892,
+      "storage": 9.384046599996509
+    },
+    "seconds": 46.73229499999434
+  },
+  {
+    "case": 1,
+    "family": "complex_rotated",
+    "action": "joint",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.0027812319682982943,
+      0.0027812319682982943
+    ],
+    "finite_TV": [
+      0.0011937018999136511,
+      0.0011937018999136511
+    ],
+    "reference_TV": [
+      0.001587530068384643,
+      0.001587530068384643
+    ],
+    "arithmetic": 1.572952802401377e-16,
+    "total_upper": 0.15484026496069908,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_01.components.json.gz",
+      "raw_bytes": 256042012,
+      "compressed_bytes": 62549217,
+      "raw_sha256": "1a5e5a4115c0fe881a677d487547fcc92be259bed8fa694b5b07230eaf92b3e2",
+      "nodes": 3888,
+      "trace_nodes": 31104
+    },
+    "timing": {
+      "preparation": 10.843392200011294,
+      "components_and_comparisons": 58.17190730001312,
+      "storage": 12.442218899988802
+    },
+    "seconds": 81.45752390002599
+  },
+  {
+    "case": 2,
+    "family": "mixed_holdout",
+    "action": "joint",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      16,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.002186336752898187,
+      0.002186336752898187
+    ],
+    "finite_TV": [
+      0.0010462645979350089,
+      0.0010462645979350089
+    ],
+    "reference_TV": [
+      0.001140072154963178,
+      0.001140072154963178
+    ],
+    "arithmetic": 1.4093052519936634e-16,
+    "total_upper": 0.12827677236472249,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_02.components.json.gz",
+      "raw_bytes": 251927204,
+      "compressed_bytes": 59545233,
+      "raw_sha256": "c0508de5872a005c77cd01a457af74b91d02949bb6a967130b2c77e931b91a2c",
+      "nodes": 3888,
+      "trace_nodes": 31104
+    },
+    "timing": {
+      "preparation": 23.22846510002273,
+      "components_and_comparisons": 59.843476899986854,
+      "storage": 12.287761000014143
+    },
+    "seconds": 95.35970790000283
+  },
+  {
+    "case": 3,
+    "family": "real_holdout65",
+    "action": "baseline",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.0022141908469576273,
+      0.0022141908469576273
+    ],
+    "finite_TV": [
+      0.0021416449990583576,
+      0.0021416449990583576
+    ],
+    "reference_TV": [
+      8.267004976312412e-05,
+      8.267004976312412e-05
+    ],
+    "arithmetic": 1.3852112937598657e-16,
+    "total_upper": 0.1282399750735389,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_03.components.json.gz",
+      "raw_bytes": 53489289,
+      "compressed_bytes": 11218318,
+      "raw_sha256": "00bd20b9883374fd5acf24737aadd18de909c6e36f2a8d5fdf6ffdedc17fa7f4",
+      "nodes": 1296,
+      "trace_nodes": 7776
+    },
+    "timing": {
+      "preparation": 0.21186199999647215,
+      "components_and_comparisons": 7.483395799994469,
+      "storage": 2.639262000011513
+    },
+    "seconds": 10.334525899990695
+  },
+  {
+    "case": 4,
+    "family": "real_holdout65",
+    "action": "grid",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      4,
+      16
+    ],
+    "status": "completed",
+    "TV": [
+      0.001116018069127206,
+      0.001116018069127206
+    ],
+    "finite_TV": [
+      0.001037528442029801,
+      0.001037528442029801
+    ],
+    "reference_TV": [
+      8.267004976312412e-05,
+      8.267004976312412e-05
+    ],
+    "arithmetic": 1.483790201559239e-16,
+    "total_upper": 0.10006821803168553,
+    "input_reference_cache_hit": true,
+    "storage": {
+      "path": "case_04.components.json.gz",
+      "raw_bytes": 161413189,
+      "compressed_bytes": 34229081,
+      "raw_sha256": "f20b605d0fa75b83dcd246bbbe1d02311d85a1af80754dcbf95d8b5e5d6b37d9",
+      "nodes": 3888,
+      "trace_nodes": 23328
+    },
+    "timing": {
+      "preparation": 0.30776979998336174,
+      "components_and_comparisons": 24.36059190001106,
+      "storage": 8.187933600012911
+    },
+    "seconds": 32.85629830000107
+  },
+  {
+    "case": 5,
+    "family": "real_holdout65",
+    "action": "input",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.002142141236652815,
+      0.002142141236652815
+    ],
+    "finite_TV": [
+      0.002141449420235792,
+      0.002141449420235792
+    ],
+    "reference_TV": [
+      7.883466616427868e-07,
+      7.883466616427868e-07
+    ],
+    "arithmetic": 1.1056815196705428e-16,
+    "total_upper": 0.11963455448409184,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_05.components.json.gz",
+      "raw_bytes": 65618141,
+      "compressed_bytes": 13401245,
+      "raw_sha256": "438328e4aaf0233b9b7344fa9d65d0fa3e1ead930e599b831a9bf6a7ad850a55",
+      "nodes": 1296,
+      "trace_nodes": 10368
+    },
+    "timing": {
+      "preparation": 0.3119187999982387,
+      "components_and_comparisons": 12.740427399985492,
+      "storage": 3.324404799990589
+    },
+    "seconds": 16.376754600001732
+  },
+  {
+    "case": 6,
+    "family": "real_holdout65",
+    "action": "joint",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      16
+    ],
+    "status": "completed",
+    "TV": [
+      0.0010381830329416236,
+      0.0010381830329416236
+    ],
+    "finite_TV": [
+      0.0010374345593505798,
+      0.0010374345593505798
+    ],
+    "reference_TV": [
+      7.883466616427868e-07,
+      7.883466616427868e-07
+    ],
+    "arithmetic": 1.1553793248026524e-16,
+    "total_upper": 0.09146279744223848,
+    "input_reference_cache_hit": true,
+    "storage": {
+      "path": "case_06.components.json.gz",
+      "raw_bytes": 198436033,
+      "compressed_bytes": 40897470,
+      "raw_sha256": "ca7b40f3282a92f680f651592446bd8fc43f2c83746f2c960083ac59a10ade97",
+      "nodes": 3888,
+      "trace_nodes": 31104
+    },
+    "timing": {
+      "preparation": 0.26427980000153184,
+      "components_and_comparisons": 38.69099500001175,
+      "storage": 10.249637499975506
+    },
+    "seconds": 49.20491659999243
+  },
+  {
+    "case": 7,
+    "family": "phase_mixed_holdout65",
+    "action": "baseline",
+    "dimension": 4,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.02026472030296258,
+      0.02026472030296258
+    ],
+    "finite_TV": [
+      0.0021623047175455806,
+      0.0021623047175455806
+    ],
+    "reference_TV": [
+      0.018102415585416996,
+      0.018102415585416996
+    ],
+    "arithmetic": 1.911838407188352e-16,
+    "total_upper": 0.2903327410532863,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_07.components.json.gz",
+      "raw_bytes": 65952509,
+      "compressed_bytes": 14920773,
+      "raw_sha256": "891fc9977da1273f0c1a9c2f66adbe7e8e27f60e4da7314820c130bbd7758c79",
+      "nodes": 1296,
+      "trace_nodes": 7776
+    },
+    "timing": {
+      "preparation": 1.0158205999759957,
+      "components_and_comparisons": 10.99388250001357,
+      "storage": 3.3154441000078805
+    },
+    "seconds": 15.325150899996515
+  },
+  {
+    "case": 8,
+    "family": "phase_mixed_holdout65",
+    "action": "grid",
+    "dimension": 4,
+    "cells": [
+      16,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.019311209644949232,
+      0.019311209644949232
+    ],
+    "finite_TV": [
+      0.001208794059532236,
+      0.001208794059532236
+    ],
+    "reference_TV": [
+      0.018102415585416996,
+      0.018102415585416996
+    ],
+    "arithmetic": 1.444565701900606e-16,
+    "total_upper": 0.2650153854634506,
+    "input_reference_cache_hit": true,
+    "storage": {
+      "path": "case_08.components.json.gz",
+      "raw_bytes": 199179446,
+      "compressed_bytes": 45098861,
+      "raw_sha256": "d9e785bbb87a6a6bad365b1d3ce89e4a07254ce846aebf276c7fd18e94eb02a2",
+      "nodes": 3888,
+      "trace_nodes": 23328
+    },
+    "timing": {
+      "preparation": 0.27292380001745187,
+      "components_and_comparisons": 36.570286499976646,
+      "storage": 9.43876660001115
+    },
+    "seconds": 46.28198100000736
+  },
+  {
+    "case": 9,
+    "family": "phase_mixed_holdout65",
+    "action": "input",
+    "dimension": 6,
+    "cells": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.004815476015722558,
+      0.004815476015722558
+    ],
+    "finite_TV": [
+      0.0021377904861514074,
+      0.0021377904861514074
+    ],
+    "reference_TV": [
+      0.0026776855295711503,
+      0.0026776855295711503
+    ],
+    "arithmetic": 1.631113377110448e-16,
+    "total_upper": 0.19333259371309314,
+    "input_reference_cache_hit": false,
+    "storage": {
+      "path": "case_09.components.json.gz",
+      "raw_bytes": 83371422,
+      "compressed_bytes": 19366914,
+      "raw_sha256": "c0084d97f84cf3be0fd6a95409c31de95057b230ebdeb7981c1a0d52a99dac1d",
+      "nodes": 1296,
+      "trace_nodes": 10368
+    },
+    "timing": {
+      "preparation": 24.028500900021754,
+      "components_and_comparisons": 16.995713399985107,
+      "storage": 4.071155000012368
+    },
+    "seconds": 45.095374299999094
+  },
+  {
+    "case": 10,
+    "family": "phase_mixed_holdout65",
+    "action": "joint",
+    "dimension": 6,
+    "cells": [
+      16,
+      4,
+      4,
+      4
+    ],
+    "status": "completed",
+    "TV": [
+      0.003848098040070061,
+      0.003848098040070061
+    ],
+    "finite_TV": [
+      0.0011704125104989105,
+      0.0011704125104989105
+    ],
+    "reference_TV": [
+      0.0026776855295711503,
+      0.0026776855295711503
+    ],
+    "arithmetic": 1.7597766680627124e-16,
+    "total_upper": 0.1680152381232575,
+    "input_reference_cache_hit": true,
+    "storage": {
+      "path": "case_10.components.json.gz",
+      "raw_bytes": 252821898,
+      "compressed_bytes": 58608488,
+      "raw_sha256": "72bc05d2d36524382ca053ef9c6974be9a0728843b46ac251a99e7b1e836b7fb",
+      "nodes": 3888,
+      "trace_nodes": 31104
+    },
+    "timing": {
+      "preparation": 0.2703145000268705,
+      "components_and_comparisons": 54.104339599987725,
+      "storage": 12.82551210001111
+    },
+    "seconds": 67.20016980002401
+  }
+]
