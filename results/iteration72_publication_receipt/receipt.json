@@ -1,0 +1,48 @@
+{
+  "science_commit": "df9e673e7fc6b82c1900e759acfa942a75ce8a44",
+  "science_tree": "5dd351fbd6aa348034570e96e21554984903112a",
+  "parent": "5e5176ed245dfc3277a0970b118778a9120694e8",
+  "remote_commit_api": {
+    "sha": "df9e673e7fc6b82c1900e759acfa942a75ce8a44",
+    "node_id": "C_kwDOViTfLtoAKGRmOWU2NzNlN2ZjNmI4MmMxOTAwZTc1OWFjZmE5NDJhNzVjZThhNDQ",
+    "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/df9e673e7fc6b82c1900e759acfa942a75ce8a44",
+    "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/df9e673e7fc6b82c1900e759acfa942a75ce8a44",
+    "author": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T10:35:43Z"
+    },
+    "committer": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T10:35:43Z"
+    },
+    "tree": {
+      "sha": "5dd351fbd6aa348034570e96e21554984903112a",
+      "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/trees/5dd351fbd6aa348034570e96e21554984903112a"
+    },
+    "message": "Accelerate both PNR and direct click sampling with audited native cores\n\nAdd safeguarded Newton survival inversion and FP64 CUDA signed-branch trajectories. Replay all 4M historical PNR records unchanged with 3.176/3.354x measured CPU speedups.\n\nBenchmark official Frugal CUDA FP32 and FP64 cores with a disclosed Windows host-layout compatibility patch, retaining four failed builds. Record 0.284143 s per 512 large-panel four-branch samples, and Frugal small-system advantages without an equal-quality large-system claim.\n\nValidation: 1871 independent checks; full suite 851 run, 822 passed, zero failures/errors; ten new native interface tests.",
+    "parents": [
+      {
+        "sha": "5e5176ed245dfc3277a0970b118778a9120694e8",
+        "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/5e5176ed245dfc3277a0970b118778a9120694e8",
+        "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/5e5176ed245dfc3277a0970b118778a9120694e8"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "atomic_push": [
+    "",
+    "To https://github.com/qiyuanhuakai/deziroGBS.git\n   5e5176ed..df9e673e  HEAD -> main\n * [new branch]        HEAD -> research/iteration72-dual-gpu-newton"
+  ],
+  "manifest_sha256": "2db8a7857e61941429cdd881327c1a00511c4f1213bb10794f686aadbb341e5a",
+  "verification_sha256": "b199c22ea9d55b8f1fbbaff93dec13bcd38b82d95a82ee5c064a1f2054428bb2",
+  "tests_sha256": "f8c6c95cff693a5bd65657997636780e4dfdafb6bbb0df1c102fbfb143444f80",
+  "recorded_utc": "2026-11-10T10:35:53.856923+00:00"
+}
