@@ -1,0 +1,49 @@
+{
+  "rows": [
+    {
+      "backend": "original",
+      "seconds": 44.9398332000128,
+      "normalization_residual": 3.552713678800501e-15
+    },
+    {
+      "backend": "flattened",
+      "seconds": 40.27850180002861,
+      "normalization_residual": 3.552713678800501e-15,
+      "labels_equal": true,
+      "selected_error": 2.220446049250313e-16
+    },
+    {
+      "backend": "cuda_v2",
+      "repetition": 0,
+      "seconds": 1.827769000083208,
+      "includes_first_cuda_sampling_call": true,
+      "labels_equal": true,
+      "selected_error": 2.919886554764162e-14,
+      "vacuum_error": 2.378652830259398e-14,
+      "normalization_residual": 5.10702591327572e-15
+    },
+    {
+      "backend": "cuda_v2",
+      "repetition": 1,
+      "seconds": 1.550077699997928,
+      "includes_first_cuda_sampling_call": false,
+      "labels_equal": true,
+      "selected_error": 2.919886554764162e-14,
+      "vacuum_error": 2.378652830259398e-14,
+      "normalization_residual": 5.10702591327572e-15
+    },
+    {
+      "backend": "cuda_v2",
+      "repetition": 2,
+      "seconds": 1.550024999974994,
+      "includes_first_cuda_sampling_call": false,
+      "labels_equal": true,
+      "selected_error": 2.919886554764162e-14,
+      "vacuum_error": 2.378652830259398e-14,
+      "normalization_residual": 5.10702591327572e-15
+    }
+  ],
+  "model_upload_seconds": 0.28072049998445436,
+  "all_labels_equal": true,
+  "scope": "Fixed-input full4096 exploratory benchmark; no independent holdout and no interleaved repeated CPU measurements."
+}

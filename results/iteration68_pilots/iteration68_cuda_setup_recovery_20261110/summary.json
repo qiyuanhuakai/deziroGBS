@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "baseline_seconds": 1.0694324000214692,
+  "model_upload_seconds": 1.9722562000097241,
+  "rows": [
+    {
+      "repetition": 0,
+      "returncode": 0,
+      "native_seconds": 0.3126176999940071,
+      "coherent_preparation_seconds": 0.01874649999081157,
+      "total_seconds": 0.3313641999848187,
+      "error": "",
+      "normalization_residual": 3.774758283725532e-15,
+      "labels_equal": true,
+      "selected_max_error": 4.440892098500626e-15,
+      "vacuum_max_error": 3.747002708109903e-15,
+      "status": "completed"
+    },
+    {
+      "repetition": 1,
+      "returncode": 0,
+      "native_seconds": 0.05848939999123104,
+      "coherent_preparation_seconds": 0.024946799996541813,
+      "total_seconds": 0.08343619998777285,
+      "error": "",
+      "normalization_residual": 3.774758283725532e-15,
+      "labels_equal": true,
+      "selected_max_error": 4.440892098500626e-15,
+      "vacuum_max_error": 3.747002708109903e-15,
+      "status": "completed"
+    },
+    {
+      "repetition": 2,
+      "returncode": 0,
+      "native_seconds": 0.05787769999005832,
+      "coherent_preparation_seconds": 0.019663600018247962,
+      "total_seconds": 0.07754130000830628,
+      "error": "",
+      "normalization_residual": 3.774758283725532e-15,
+      "labels_equal": true,
+      "selected_max_error": 4.440892098500626e-15,
+      "vacuum_max_error": 3.747002708109903e-15,
+      "status": "completed"
+    }
+  ],
+  "source_hashes": {
+    ".git/codex_iteration68_cuda_setup_recovery.py": "d66aeeca7e734b0dec5521e951d75cea12e2af4bfd25132f1c4aea3e19ae2b0e",
+    ".git/iteration68_cuda_pilot_v1.cu": "3d3a07308d9735bcdedfa32de0c475ff7617baa17723540c88e1bc33091a5756",
+    "src/gbslab/displaced_sampling.py": "72d979a5f7ebcdd0c7a547a97193b4a58970c369c04d4ab010219f27971c5f91"
+  },
+  "dll_sha256": "54b87e024161fe51660e341d97a6f95ababedef16e0af2191d3eb4ffef7789f2",
+  "scope": "Three consecutive pilot calls including first call; formal interleaved benchmark and adversarial controls remain."
+}

@@ -1,0 +1,17 @@
+{
+  "sources": {
+    ".git\\codex_iteration68_fullbatch_pilot.py": "94f8ad08095234a001b63d6222dc3946b47e1092987a0e51afed2306d5857d85",
+    "src\\gbslab\\displaced_sampling.py": "72d979a5f7ebcdd0c7a547a97193b4a58970c369c04d4ab010219f27971c5f91",
+    ".git\\iteration68_cuda_pilot_v2.cu": "2fad495500df6dea6da1d4857d5864623b72507212c016418f4f29013855255e"
+  },
+  "dependencies": {
+    ".git\\iteration68_cuda_v2_20261110\\native_cuda.dll": "c5fe4a26462aef76080bb545e377dab10d726ccd6e63a18c900b2c7da07503d5",
+    ".git\\iteration68_profile_20261110\\normalized_input.npz": "5dcd1b4cab86871917a523537121a2339db566be05884514e3b04109a23aed77",
+    "results\\iteration30_panel\\large_random.npz": "fc779f181e6d9556b0d444fffc11a80ba4800cf740efcd3d599d9001a9edf0d9"
+  },
+  "batch": 512,
+  "samples": 4096,
+  "threads": 1,
+  "gpu_repetitions": 3,
+  "scope": "Existing fixed inputs, one CPU call per variant, repeated GPU; exploratory throughput and trajectory agreement, not a formal interleaved benchmark or Gaussian distribution certificate."
+}

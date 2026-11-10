@@ -1,0 +1,43 @@
+         41934 function calls in 1.332 seconds
+
+   Ordered by: cumulative time
+   List reduced from 70 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.090    0.090    1.332    1.332 displaced_sampling.py:90(sample)
+      144    0.593    0.004    0.593    0.004 displaced_sampling.py:98(<listcomp>)
+      144    0.299    0.002    0.513    0.004 displaced_sampling.py:38(refined_amplitudes)
+      144    0.106    0.001    0.107    0.001 shape_base.py:378(stack)
+      144    0.086    0.001    0.086    0.001 {method 'copy' of 'numpy.ndarray' objects}
+      144    0.027    0.000    0.039    0.000 displaced_sampling.py:13(coherent_direction)
+      144    0.000    0.000    0.038    0.000 einsumfunc.py:1244(einsum)
+      144    0.037    0.000    0.037    0.000 {built-in method numpy._core._multiarray_umath.c_einsum}
+      576    0.031    0.000    0.031    0.000 {built-in method builtins.abs}
+      144    0.009    0.000    0.027    0.000 displaced_sampling.py:66(select_positive)
+     4467    0.017    0.000    0.017    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     3603    0.005    0.000    0.015    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+     2449    0.002    0.000    0.011    0.000 fromnumeric.py:2436(any)
+      720    0.001    0.000    0.011    0.000 fromnumeric.py:66(_wrapreduction)
+      288    0.001    0.000    0.009    0.000 fromnumeric.py:2304(sum)
+     1154    0.001    0.000    0.007    0.000 fromnumeric.py:2548(all)
+      144    0.002    0.000    0.006    0.000 _shape_base_impl.py:62(take_along_axis)
+      288    0.003    0.000    0.004    0.000 _shape_base_impl.py:625(column_stack)
+      144    0.002    0.000    0.004    0.000 _shape_base_impl.py:35(_make_along_axis_idx)
+      288    0.000    0.000    0.003    0.000 fromnumeric.py:48(_wrapfunc)
+      432    0.001    0.000    0.003    0.000 fromnumeric.py:3011(max)
+      144    0.001    0.000    0.003    0.000 _linalg.py:2599(norm)
+      144    0.000    0.000    0.002    0.000 fromnumeric.py:1100(argsort)
+      144    0.000    0.000    0.002    0.000 fromnumeric.py:2838(cumsum)
+     3603    0.002    0.000    0.002    0.000 fromnumeric.py:88(<dictcomp>)
+      144    0.002    0.000    0.002    0.000 {method 'argsort' of 'numpy.ndarray' objects}
+      144    0.001    0.000    0.002    0.000 _function_base_impl.py:1682(angle)
+      144    0.001    0.000    0.001    0.000 {method 'cumsum' of 'numpy.ndarray' objects}
+      144    0.001    0.000    0.001    0.000 numerictypes.py:475(issubdtype)
+      576    0.001    0.000    0.001    0.000 {built-in method numpy.arange}
+      432    0.001    0.000    0.001    0.000 shape_base.py:206(_arrays_for_stack_dispatcher)
+      288    0.000    0.000    0.001    0.000 numerictypes.py:293(issubclass_)
+      288    0.000    0.000    0.001    0.000 _shape_base_impl.py:621(_column_stack_dispatcher)
+      144    0.000    0.000    0.001    0.000 shape_base.py:368(_stack_dispatcher)
+      288    0.001    0.000    0.001    0.000 {method 'conj' of 'numpy.ndarray' objects}
+
+

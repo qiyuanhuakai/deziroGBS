@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-fopenmp",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration68_native_pilot_v2.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration68_native_v2_20261110\\native.dll"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u95b2\u5fd3\u74d9\\deziroGBS\\.git\\iteration68_native_pilot_v2.cpp: In function 'int nds_sample(void*, int, const double* const*, const double* const*, const double*, int, int, int*, double*, double*, double*, char*, int)':\nC:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u95b2\u5fd3\u74d9\\deziroGBS\\.git\\iteration68_native_pilot_v2.cpp:100:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]\n  100 |             if(failed)throw std::runtime_error(failure);*residual=std::max(*residual,site_residual);er.swap(nr);ei.swap(ni);\n      |             ^~\nC:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u95b2\u5fd3\u74d9\\deziroGBS\\.git\\iteration68_native_pilot_v2.cpp:100:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'\n  100 |             if(failed)throw std::runtime_error(failure);*residual=std::max(*residual,site_residual);er.swap(nr);ei.swap(ni);\n      |                                                         ^\n",
+  "seconds": 1.7311387999798171
+}

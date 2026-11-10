@@ -1,0 +1,29 @@
+{
+  "source_hashes": {
+    ".git/codex_iteration68_cuda_setup_recovery.py": "d66aeeca7e734b0dec5521e951d75cea12e2af4bfd25132f1c4aea3e19ae2b0e",
+    ".git/iteration68_cuda_pilot_v1.cu": "3d3a07308d9735bcdedfa32de0c475ff7617baa17723540c88e1bc33091a5756",
+    "src/gbslab/displaced_sampling.py": "72d979a5f7ebcdd0c7a547a97193b4a58970c369c04d4ab010219f27971c5f91"
+  },
+  "input_sha256": "5dcd1b4cab86871917a523537121a2339db566be05884514e3b04109a23aed77",
+  "compiler_sha256": "a5c45ec6c31454a622482fe6bb15d8bd48bb33f19ca1086dc83d59e20fca03b6",
+  "compiler_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Sun_Oct_12_19:25:36_Pacific_Standard_Time_2026\nCuda compilation tools, release 13.5, V13.5.37\nBuild cuda_13.5.r13.5/compiler.39125733_0\n",
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD",
+    "kernel.cu",
+    "-lcublas",
+    "-o",
+    "native_cuda.dll"
+  ],
+  "build_directory": "C:\\Users\\qiyuaner\\AppData\\Local\\Temp\\deziro_gbs_cuda68_20261110_setup_recovery",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU, 16303 MiB, 621.14, 12.0\n",
+  "samples": 128,
+  "repetitions": 3,
+  "scope": "FP64 exploratory C++ CUDA engine on identical finite tensors. Model upload and coherent preparation reported separately."
+}

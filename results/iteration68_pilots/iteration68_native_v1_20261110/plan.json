@@ -1,0 +1,36 @@
+{
+  "source_hashes": {
+    ".git/codex_iteration68_native_pilot_v1.py": "902171e52a21f114326e23a753b4b11cfdd3df7e33bfd1b11f1a6ec82cbf81d4",
+    ".git/iteration68_native_pilot_v1.cpp": "5f9ff884863480d95c14c69888b6361fb7a932b231b80d0ace08e620569a5046",
+    "src/gbslab/displaced_sampling.py": "72d979a5f7ebcdd0c7a547a97193b4a58970c369c04d4ab010219f27971c5f91"
+  },
+  "input_sha256": "5dcd1b4cab86871917a523537121a2339db566be05884514e3b04109a23aed77",
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-fopenmp",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-Wall",
+    "-Wextra",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration68_native_pilot_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration68_native_v1_20261110\\native.dll"
+  ],
+  "threads": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "tiles": [
+    8,
+    16
+  ],
+  "samples": 128,
+  "scope": "Exploratory same-stored-tensor native implementation,not new universal GBS algorithm."
+}

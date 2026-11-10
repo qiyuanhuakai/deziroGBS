@@ -1,0 +1,684 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "random_0",
+      "backend": "python",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 8.326672684688674e-17,
+      "path_error": 1.1102230246251565e-16,
+      "normalization_residual": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "case": "random_0",
+      "backend": "cpu_scalar",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 8.326672684688674e-17,
+      "path_error": 1.1102230246251565e-16,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_0",
+      "backend": "cpu_blas",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 8.326672684688674e-17,
+      "path_error": 1.1102230246251565e-16,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_0",
+      "backend": "cuda",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 0.0,
+      "path_error": 0.0,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_1",
+      "backend": "python",
+      "paths": 3,
+      "labels_equal": true,
+      "binary_tv": 2.7755575615628914e-17,
+      "path_error": 5.551115123125783e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_1",
+      "backend": "cpu_scalar",
+      "paths": 3,
+      "labels_equal": true,
+      "binary_tv": 4.163336342344337e-17,
+      "path_error": 8.326672684688674e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_1",
+      "backend": "cpu_blas",
+      "paths": 3,
+      "labels_equal": true,
+      "binary_tv": 4.163336342344337e-17,
+      "path_error": 8.326672684688674e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_1",
+      "backend": "cuda",
+      "paths": 3,
+      "labels_equal": true,
+      "binary_tv": 4.163336342344337e-17,
+      "path_error": 8.326672684688674e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_2",
+      "backend": "python",
+      "paths": 4,
+      "labels_equal": true,
+      "binary_tv": 5.551115123125783e-17,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "case": "random_2",
+      "backend": "cpu_scalar",
+      "paths": 4,
+      "labels_equal": true,
+      "binary_tv": 8.326672684688674e-17,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "case": "random_2",
+      "backend": "cpu_blas",
+      "paths": 4,
+      "labels_equal": true,
+      "binary_tv": 8.326672684688674e-17,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "case": "random_2",
+      "backend": "cuda",
+      "paths": 4,
+      "labels_equal": true,
+      "binary_tv": 5.551115123125783e-17,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_3",
+      "backend": "python",
+      "paths": 5,
+      "labels_equal": true,
+      "binary_tv": 6.938893903907228e-17,
+      "path_error": 1.6653345369377348e-16,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_3",
+      "backend": "cpu_scalar",
+      "paths": 5,
+      "labels_equal": true,
+      "binary_tv": 6.938893903907228e-17,
+      "path_error": 6.938893903907228e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_3",
+      "backend": "cpu_blas",
+      "paths": 5,
+      "labels_equal": true,
+      "binary_tv": 6.938893903907228e-17,
+      "path_error": 6.938893903907228e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_3",
+      "backend": "cuda",
+      "paths": 5,
+      "labels_equal": true,
+      "binary_tv": 6.245004513516506e-17,
+      "path_error": 5.551115123125783e-17,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "random_4",
+      "backend": "python",
+      "paths": 12,
+      "labels_equal": true,
+      "binary_tv": 2.5153490401663703e-16,
+      "path_error": 2.7755575615628914e-16,
+      "normalization_residual": 8.881784197001252e-16,
+      "passed": true
+    },
+    {
+      "case": "random_4",
+      "backend": "cpu_scalar",
+      "paths": 12,
+      "labels_equal": true,
+      "binary_tv": 2.411265631607762e-16,
+      "path_error": 2.7755575615628914e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_4",
+      "backend": "cpu_blas",
+      "paths": 12,
+      "labels_equal": true,
+      "binary_tv": 2.3592239273284576e-16,
+      "path_error": 2.7755575615628914e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_4",
+      "backend": "cuda",
+      "paths": 12,
+      "labels_equal": true,
+      "binary_tv": 1.8041124150158794e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "case": "random_5",
+      "backend": "python",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 2.5522119140308774e-16,
+      "path_error": 1.249000902703301e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_5",
+      "backend": "cpu_scalar",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 1.979753166958531e-16,
+      "path_error": 9.71445146547012e-17,
+      "normalization_residual": 5.551115123125783e-16,
+      "passed": true
+    },
+    {
+      "case": "random_5",
+      "backend": "cpu_blas",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 2.1141942363467336e-16,
+      "path_error": 1.249000902703301e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_5",
+      "backend": "cuda",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 2.2789929665645303e-16,
+      "path_error": 1.1102230246251565e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_6",
+      "backend": "python",
+      "paths": 27,
+      "labels_equal": true,
+      "binary_tv": 2.688821387764051e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "case": "random_6",
+      "backend": "cpu_scalar",
+      "paths": 27,
+      "labels_equal": true,
+      "binary_tv": 1.3877787807814457e-16,
+      "path_error": 1.6653345369377348e-16,
+      "normalization_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "case": "random_6",
+      "backend": "cpu_blas",
+      "paths": 27,
+      "labels_equal": true,
+      "binary_tv": 2.1510571102112408e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 5.551115123125783e-16,
+      "passed": true
+    },
+    {
+      "case": "random_6",
+      "backend": "cuda",
+      "paths": 27,
+      "labels_equal": true,
+      "binary_tv": 1.960237527853792e-16,
+      "path_error": 1.6653345369377348e-16,
+      "normalization_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "case": "random_7",
+      "backend": "python",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 3.196228004487267e-16,
+      "path_error": 1.249000902703301e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_7",
+      "backend": "cpu_scalar",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 3.647256108241237e-16,
+      "path_error": 1.249000902703301e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_7",
+      "backend": "cpu_blas",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 3.187554387107383e-16,
+      "path_error": 1.1102230246251565e-16,
+      "normalization_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "case": "random_7",
+      "backend": "cuda",
+      "paths": 60,
+      "labels_equal": true,
+      "binary_tv": 2.979387569990166e-16,
+      "path_error": 1.0408340855860843e-16,
+      "normalization_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "case": "random_8",
+      "backend": "python",
+      "paths": 33,
+      "labels_equal": true,
+      "binary_tv": 1.214306433183765e-16,
+      "path_error": 4.163336342344337e-17,
+      "normalization_residual": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "case": "random_8",
+      "backend": "cpu_scalar",
+      "paths": 33,
+      "labels_equal": true,
+      "binary_tv": 1.1796119636642288e-16,
+      "path_error": 2.7755575615628914e-17,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "random_8",
+      "backend": "cpu_blas",
+      "paths": 33,
+      "labels_equal": true,
+      "binary_tv": 1.1796119636642288e-16,
+      "path_error": 2.7755575615628914e-17,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "random_8",
+      "backend": "cuda",
+      "paths": 33,
+      "labels_equal": true,
+      "binary_tv": 1.249000902703301e-16,
+      "path_error": 2.7755575615628914e-17,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "zero_beta_product",
+      "backend": "python",
+      "paths": 1,
+      "labels_equal": true,
+      "binary_tv": 0.0,
+      "path_error": 0.0,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "zero_beta_product",
+      "backend": "cpu_scalar",
+      "paths": 1,
+      "labels_equal": true,
+      "binary_tv": 0.0,
+      "path_error": 0.0,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "zero_beta_product",
+      "backend": "cpu_blas",
+      "paths": 1,
+      "labels_equal": true,
+      "binary_tv": 0.0,
+      "path_error": 0.0,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "zero_beta_product",
+      "backend": "cuda",
+      "paths": 1,
+      "labels_equal": true,
+      "binary_tv": 0.0,
+      "path_error": 0.0,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "tiny_tail_d1",
+      "backend": "python",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 5.511151231257643e-18,
+      "path_error": 1.232595164407831e-32,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "tiny_tail_d1",
+      "backend": "cpu_scalar",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 5.511151231257643e-18,
+      "path_error": 1.232595164407831e-32,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "tiny_tail_d1",
+      "backend": "cpu_blas",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 5.511151231257643e-18,
+      "path_error": 1.232595164407831e-32,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "tiny_tail_d1",
+      "backend": "cuda",
+      "paths": 2,
+      "labels_equal": true,
+      "binary_tv": 5.511151231257643e-18,
+      "path_error": 1.232595164407831e-32,
+      "normalization_residual": 0.0,
+      "passed": true
+    },
+    {
+      "case": "mixed_zero",
+      "backend": "python",
+      "paths": 6,
+      "labels_equal": true,
+      "binary_tv": 2.0816681711721685e-16,
+      "path_error": 1.942890293094024e-16,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "mixed_zero",
+      "backend": "cpu_scalar",
+      "paths": 6,
+      "labels_equal": true,
+      "binary_tv": 1.8041124150158794e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "mixed_zero",
+      "backend": "cpu_blas",
+      "paths": 6,
+      "labels_equal": true,
+      "binary_tv": 1.8041124150158794e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "mixed_zero",
+      "backend": "cuda",
+      "paths": 6,
+      "labels_equal": true,
+      "binary_tv": 1.8041124150158794e-16,
+      "path_error": 2.220446049250313e-16,
+      "normalization_residual": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "case": "beta_nan",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "beta_nan",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "beta_nan",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "beta_nan",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "u_endpoint",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "u_endpoint",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "u_endpoint",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "u_endpoint",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Invalid displacement or uniform array"
+    },
+    {
+      "case": "intensity_underflow",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Unrepresentable coherent intensity"
+    },
+    {
+      "case": "intensity_underflow",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Unrepresentable coherent intensity"
+    },
+    {
+      "case": "intensity_underflow",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Unrepresentable coherent intensity"
+    },
+    {
+      "case": "intensity_underflow",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "GPU numerical rejection code 900001"
+    },
+    {
+      "case": "poisson_underflow",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Positive Poisson branch underflowed"
+    },
+    {
+      "case": "poisson_underflow",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Positive Poisson branch underflowed"
+    },
+    {
+      "case": "poisson_underflow",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Positive Poisson branch underflowed"
+    },
+    {
+      "case": "poisson_underflow",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "GPU numerical rejection code 900004"
+    },
+    {
+      "case": "norm_underflow",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Positive transformed norm underflowed"
+    },
+    {
+      "case": "norm_underflow",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: positive refined norm underflow"
+    },
+    {
+      "case": "norm_underflow",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: positive refined norm underflow"
+    },
+    {
+      "case": "norm_underflow",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "GPU numerical rejection code 3"
+    },
+    {
+      "case": "uncanonical_norm",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Conditional MPS norm drift"
+    },
+    {
+      "case": "uncanonical_norm",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: conditional norm drift"
+    },
+    {
+      "case": "uncanonical_norm",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: conditional norm drift"
+    },
+    {
+      "case": "uncanonical_norm",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "GPU numerical rejection code 8"
+    },
+    {
+      "case": "destructive_zero",
+      "backend": "python",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "Unresolved refined-amplitude cancellation"
+    },
+    {
+      "case": "destructive_zero",
+      "backend": "cpu_scalar",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: unresolved refined cancellation"
+    },
+    {
+      "case": "destructive_zero",
+      "backend": "cpu_blas",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "site 0, tile 0: unresolved refined cancellation"
+    },
+    {
+      "case": "destructive_zero",
+      "backend": "cuda",
+      "expected_rejection": true,
+      "passed": true,
+      "error": "GPU numerical rejection code 3"
+    }
+  ],
+  "positive_cases": 12,
+  "negative_cases": 7,
+  "largest_tv": 3.647256108241237e-16
+}

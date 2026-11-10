@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-11-10T03:16:21.369172+00:00",
+  "pilots": [
+    {
+      "directory": "iteration68_log_source_pilot_20261110",
+      "manifest_sha256": "97dd921ff714a20dcc85de77c72647fe661cb31fb0e710e95703108dcb24279e",
+      "files": 7,
+      "status": "completed"
+    },
+    {
+      "directory": "iteration68_log_metrics_pilot_20261110",
+      "manifest_sha256": "420ff4189f053a21d0d85d02436a4ad5846aed5f002629185d8e3a3dab108ed9",
+      "files": 2,
+      "status": "failed"
+    },
+    {
+      "directory": "iteration68_log_metrics_recovery_pilot_20261110",
+      "manifest_sha256": "d2c3b6f3c65d01b2e8b6e476c4a561a5fde444025c7a57b68d7799abacd949c3",
+      "files": 4,
+      "status": "completed"
+    }
+  ],
+  "next": "Freeze independent log parsing/coverage/statistic checks; author cross-hardware metrics only. Continue GSVD-to-continuous-noise integration in parallel research direction without subagents.",
+  "paper": "https://arxiv.org/html/2512.10643v2",
+  "author_dataset": "https://zenodo.org/records/18045305",
+  "scope": "All three pilots remain private metadata pending a subsequent scientific archival round."
+}

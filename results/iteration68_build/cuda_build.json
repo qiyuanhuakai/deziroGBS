@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD,/utf-8",
+    "kernel.cu",
+    "-lcublas",
+    "-o",
+    "native_cuda.dll"
+  ],
+  "compiler_sha256": "a5c45ec6c31454a622482fe6bb15d8bd48bb33f19ca1086dc83d59e20fca03b6",
+  "compiler_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Sun_Oct_12_19:25:36_Pacific_Standard_Time_2026\nCuda compilation tools, release 13.5, V13.5.37\nBuild cuda_13.5.r13.5/compiler.39125733_0\n",
+  "build_directory": "C:\\Users\\qiyuaner\\AppData\\Local\\Temp\\deziro_gbs_cuda68_f3ce143dd2bf42e89c2e0321081762d1",
+  "returncode": 0,
+  "stdout": "kernel.cu\n  \u59dd\uff45\u6e6a\u9352\u6d98\u7f13\u6434\ufffd native_cuda.lib \u935c\u5c7d\ufffd\u7845\u8584 native_cuda.exp\n",
+  "stderr": "",
+  "seconds": 5.1487986000138335
+}
