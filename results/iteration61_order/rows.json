@@ -1,0 +1,302 @@
+[
+  {
+    "label": "local_identity_k1",
+    "scope": "control10",
+    "kind": "identity",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.02477108601657426,
+    "TV_upper": 0.02477108601657426,
+    "timings": {
+      "input": 0.001522,
+      "layout": 3.2e-05,
+      "cumulants": 3e-06,
+      "target": 6.3e-05,
+      "official_sampling": 2.7e-05,
+      "audit_replay": 1.3e-05,
+      "prefix_tree": 0.003655
+    },
+    "replayed_steps": 170,
+    "seconds": 0.16038020001724362
+  },
+  {
+    "label": "local_identity_k4",
+    "scope": "control10",
+    "kind": "identity",
+    "cutoff": 4,
+    "status": "completed",
+    "TV_lower": 5.7335347991008174e-05,
+    "TV_upper": 5.7335347991008174e-05,
+    "timings": {
+      "input": 0.002551,
+      "layout": 0.000129,
+      "cumulants": 1.7e-05,
+      "target": 0.002165,
+      "official_sampling": 8.7e-05,
+      "audit_replay": 8e-05,
+      "prefix_tree": 0.01524
+    },
+    "replayed_steps": 170,
+    "seconds": 0.3154674000106752
+  },
+  {
+    "label": "local_reverse_k1",
+    "scope": "control10",
+    "kind": "reverse",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.024771086016574267,
+    "TV_upper": 0.024771086016574267,
+    "timings": {
+      "input": 0.001648,
+      "layout": 3.8e-05,
+      "cumulants": 4e-06,
+      "target": 6.8e-05,
+      "official_sampling": 1.9e-05,
+      "audit_replay": 1.5e-05,
+      "prefix_tree": 0.003747
+    },
+    "replayed_steps": 170,
+    "seconds": 0.17701149999629706
+  },
+  {
+    "label": "local_reverse_k4",
+    "scope": "control10",
+    "kind": "reverse",
+    "cutoff": 4,
+    "status": "completed",
+    "TV_lower": 5.730874209937124e-05,
+    "TV_upper": 5.730874209937124e-05,
+    "timings": {
+      "input": 0.001501,
+      "layout": 0.0001,
+      "cumulants": 1.4e-05,
+      "target": 0.0019,
+      "official_sampling": 9.3e-05,
+      "audit_replay": 8.1e-05,
+      "prefix_tree": 0.015418
+    },
+    "replayed_steps": 170,
+    "seconds": 0.2766456000099424
+  },
+  {
+    "label": "local_even_odd_k1",
+    "scope": "control10",
+    "kind": "even_odd",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.024771086016574264,
+    "TV_upper": 0.024771086016574264,
+    "timings": {
+      "input": 0.001469,
+      "layout": 4.3e-05,
+      "cumulants": 4e-06,
+      "target": 6.5e-05,
+      "official_sampling": 1.4e-05,
+      "audit_replay": 1.5e-05,
+      "prefix_tree": 0.003034
+    },
+    "replayed_steps": 170,
+    "seconds": 0.1707839999871794
+  },
+  {
+    "label": "local_even_odd_k4",
+    "scope": "control10",
+    "kind": "even_odd",
+    "cutoff": 4,
+    "status": "completed",
+    "TV_lower": 5.758990476371309e-05,
+    "TV_upper": 5.758990476371309e-05,
+    "timings": {
+      "input": 0.001434,
+      "layout": 9.8e-05,
+      "cumulants": 1.3e-05,
+      "target": 0.002253,
+      "official_sampling": 9.5e-05,
+      "audit_replay": 0.000103,
+      "prefix_tree": 0.017118
+    },
+    "replayed_steps": 170,
+    "seconds": 0.3035468000161927
+  },
+  {
+    "label": "global_identity_k1",
+    "scope": "control144",
+    "kind": "identity",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.048716927063039574,
+    "TV_upper": 0.048716927063039574,
+    "timings": {
+      "input": 0.252889,
+      "layout": 0.000315,
+      "cumulants": 4e-06,
+      "target": 0.000881,
+      "official_sampling": 0.004161,
+      "audit_replay": 0.00498,
+      "prefix_tree": 0.19707
+    },
+    "replayed_steps": 2448,
+    "seconds": 13.36040380000486
+  },
+  {
+    "label": "global_reverse_k1",
+    "scope": "main144",
+    "kind": "reverse",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.04871692706303957,
+    "TV_upper": 0.04871692706303957,
+    "timings": {
+      "input": 0.210731,
+      "layout": 0.000361,
+      "cumulants": 4e-06,
+      "target": 0.000933,
+      "official_sampling": 0.004503,
+      "audit_replay": 0.005369,
+      "prefix_tree": 0.220209
+    },
+    "replayed_steps": 2448,
+    "seconds": 13.769563900015783
+  },
+  {
+    "label": "global_reverse_k2",
+    "scope": "main144",
+    "kind": "reverse",
+    "cutoff": 2,
+    "status": "completed",
+    "TV_lower": 0.007236778522887879,
+    "TV_upper": 0.007236778522887879,
+    "timings": {
+      "input": 0.262219,
+      "layout": 0.012195,
+      "cumulants": 1e-05,
+      "target": 0.013741,
+      "official_sampling": 3.278694,
+      "audit_replay": 3.357322,
+      "prefix_tree": 4.616815
+    },
+    "replayed_steps": 2448,
+    "seconds": 33.05083699998795
+  },
+  {
+    "label": "global_reverse_k3",
+    "scope": "main144",
+    "kind": "reverse",
+    "cutoff": 3,
+    "status": "completed",
+    "TV_lower": 0.0017198582323007432,
+    "TV_upper": 0.0017198582323007432,
+    "timings": {
+      "input": 0.181573,
+      "layout": 0.423081,
+      "cumulants": 1.3e-05,
+      "target": 1.478912,
+      "official_sampling": 3.216651,
+      "audit_replay": 3.292671,
+      "prefix_tree": 4.884428
+    },
+    "replayed_steps": 2448,
+    "seconds": 35.691434700012906
+  },
+  {
+    "label": "global_reverse_k4",
+    "scope": "main144",
+    "kind": "reverse",
+    "cutoff": 4,
+    "status": "completed",
+    "TV_lower": 0.0003905068092249048,
+    "TV_upper": 0.0003905068092249048,
+    "timings": {
+      "input": 0.237238,
+      "layout": 12.042688,
+      "cumulants": 2.6e-05,
+      "target": 116.163697,
+      "official_sampling": 6.733116,
+      "audit_replay": 7.363634,
+      "prefix_tree": 8.360158
+    },
+    "replayed_steps": 2448,
+    "seconds": 174.20685490002506
+  },
+  {
+    "label": "global_even_odd_k1",
+    "scope": "main144",
+    "kind": "even_odd",
+    "cutoff": 1,
+    "status": "completed",
+    "TV_lower": 0.048716927063039574,
+    "TV_upper": 0.048716927063039574,
+    "timings": {
+      "input": 0.269273,
+      "layout": 0.000414,
+      "cumulants": 5e-06,
+      "target": 0.001129,
+      "official_sampling": 0.004989,
+      "audit_replay": 0.004679,
+      "prefix_tree": 0.215449
+    },
+    "replayed_steps": 2448,
+    "seconds": 14.153057700023055
+  },
+  {
+    "label": "global_even_odd_k2",
+    "scope": "main144",
+    "kind": "even_odd",
+    "cutoff": 2,
+    "status": "completed",
+    "TV_lower": 0.007236764230897228,
+    "TV_upper": 0.007236764230897228,
+    "timings": {
+      "input": 0.214043,
+      "layout": 0.010519,
+      "cumulants": 8e-06,
+      "target": 0.012404,
+      "official_sampling": 3.155412,
+      "audit_replay": 3.156432,
+      "prefix_tree": 4.950115
+    },
+    "replayed_steps": 2448,
+    "seconds": 32.80440140000428
+  },
+  {
+    "label": "global_even_odd_k3",
+    "scope": "main144",
+    "kind": "even_odd",
+    "cutoff": 3,
+    "status": "completed",
+    "TV_lower": 0.0017227795891424907,
+    "TV_upper": 0.0017227795891424907,
+    "timings": {
+      "input": 0.222754,
+      "layout": 0.440514,
+      "cumulants": 1.1e-05,
+      "target": 1.450283,
+      "official_sampling": 3.191659,
+      "audit_replay": 3.198158,
+      "prefix_tree": 4.799741
+    },
+    "replayed_steps": 2448,
+    "seconds": 34.77345760000753
+  },
+  {
+    "label": "global_even_odd_k4",
+    "scope": "main144",
+    "kind": "even_odd",
+    "cutoff": 4,
+    "status": "completed",
+    "TV_lower": 0.000392169476627137,
+    "TV_upper": 0.000392169476627137,
+    "timings": {
+      "input": 0.174428,
+      "layout": 13.744305,
+      "cumulants": 2.5e-05,
+      "target": 112.203411,
+      "official_sampling": 6.498823,
+      "audit_replay": 7.358777,
+      "prefix_tree": 7.810228
+    },
+    "replayed_steps": 2448,
+    "seconds": 169.5582323000126
+  }
+]
