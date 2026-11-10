@@ -1,4 +1,41 @@
-# Native displaced-threshold trajectories
+# Native sampling kernels
+
+## Gaussian reset PNR sampling
+
+`gaussian_reset_cpu.cpp` implements the approximate centered and displaced Gaussian reset models of Lim, arXiv:2610.06526v1, with full detector scans, diagonal rejection and coherent-reference rejection. It returns actual integer PNR counts. These are approximate Gaussian-target samples; thresholding counts does not certify the full PNR distribution. See [methods](../research/iteration69_methods.md) and [results](../RESEARCH_REPORT_ITERATION69.md).
+
+The current implementation targets Windows x86-64 GNU C++ and Eigen 3.4.0. It guards/restores x87 precision, uses no fast math, and has no photon/proposal cutoff. Sampling uses one native thread; optional NumPy ILP64 OpenBLAS is explicitly supplied. Rebuild `-march=native` binaries on the destination machine. Eigen is an explicit local dependency, available from the [Eigen project](https://eigen.tuxfamily.org/).
+
+```powershell
+python experiments/iteration69_build.py --output results/reset_new_build --eigen ../external_sources/eigen_3_4_0_iteration38/eigen-3.4.0
+python experiments/iteration69_benchmark.py --output results/reset_new_benchmark --build results/reset_new_build
+python experiments/iteration69_validate_public.py --output results/reset_new_validation --library results/reset_new_build/gaussian_reset_cpu.dll --reference results/iteration69_archive/iteration69_anchor_v9_20261110 --diagonal-reference results/iteration69_archive/iteration69_displaced_v6_20261110
+```
+
+Every output directory must be new. Build and validation record source/dependency hashes. Historical pilot sources and unsuccessful runs are kept in `results/iteration69_archive`; embedded `.git` path components are stored as `git_source_snapshot` with a byte-identity mapping. The public benchmark reruns the final single-thread comparison; full historical quality protocols remain in the archived drivers.
+
+```python
+import numpy as np
+from gbslab.native_gaussian_reset import (
+    NativeGaussianResetSampler, lossy_squeezed_components,
+)
+
+x, noise = lossy_squeezed_components(2, 0.7, 0.65)
+with NativeGaussianResetSampler(
+    np.eye(2, dtype=np.complex128), x,
+    "results/reset_new_build/gaussian_reset_cpu.dll",
+    noise_variance=noise,
+    # Supply your GNU C++ runtime directory if it is not on the loader path.
+    runtime_dirs=[],
+) as sampler:
+    result = sampler.sample(1000, seed=69, selector="diagonal")
+    pnr_counts = result["counts"]
+    threshold_clicks = pnr_counts > 0
+```
+
+Selectors are `scalar`, `eigen`, `leverage`, `diagonal`, `openblas`, and `anchor`. `openblas` requires a library exposing `scipy_cblas_zgemm64_` and its thread setter/getter. The wrapper restores the prior process-wide BLAS thread count, including on error; concurrent callers changing it are unsupported. `anchor` can reduce proposals but adds per-trajectory preparation, so it is not the default. Numerical envelope/physicality failures raise an exception rather than silently clipping a probability or returning partial output.
+
+## Finite MPS displaced-threshold trajectories
 
 The CPU and CUDA sources implement the same finite-input MPS measurement law as `gbslab.displaced_sampling`. They do not construct a Gaussian MPS or certify its approximation error. Hidden refined labels are internal measurement outcomes, not photon counts.
 

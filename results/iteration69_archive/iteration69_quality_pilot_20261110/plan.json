@@ -1,0 +1,40 @@
+{
+  "sources": {
+    ".git/codex_iteration69_quality_pilot.py": "a265816669b5569aab119def4e95b41c451432fc826031e7799090fea3626b93",
+    ".git/iteration69_reset_diagonal_v4.cpp": "51037f1fbf5ffcc61a35372a0470f0b6c6125abc9f449bcb91777e9e9df7fb70",
+    "src/gbslab/exact.py": "39c5133c2dae4407d22d55de3d4a50f2a82e715a958721972029e22c2b9f8427",
+    "src/gbslab/frugal.py": "81ce69bbc11a900822cec0b243a1d077d1157ab4f21d9a13165d4e21f07c066a"
+  },
+  "dependencies": {
+    ".git\\iteration69_reset_diagonal_v4_20261110\\native.dll": "eeb1902367af7a66468269d18f8495d31c79495752d6434207feda0220be697e",
+    "results\\iteration38_frugal_runtime\\frugal_adapter.exe": "cf77c9fbc9c66891cc007eedb637dde0a1039eb2775cc72b711841f1f95f4df5",
+    "results\\iteration38_frugal_runtime\\build.json": "487e39f5348a946a1c36c775559fcba47a34a2912504682c86572f436f1bab5f"
+  },
+  "seed": 690401,
+  "samples_per_method": 500000,
+  "cases": [
+    {
+      "r": 0.7,
+      "eta": 0.1
+    },
+    {
+      "r": 0.7,
+      "eta": 0.3
+    },
+    {
+      "r": 0.7,
+      "eta": 0.65
+    },
+    {
+      "r": 1.1,
+      "eta": 0.65
+    }
+  ],
+  "methods": [
+    1,
+    3
+  ],
+  "nominal_joint_failure_probability": 0.01,
+  "nominal_tv_radius": 0.004216036837674341,
+  "scope": "Threshold coarsening of the approximate PNR reset law against full 4-mode target and official Frugal K2/K3/K4. Statistical bands assume ideal IID samples; fixed seeded PRNG runs and 80-digit determinant values are not formal TV certificates. Existing Frugal build flags differ, so no matched-compiler speed claim."
+}

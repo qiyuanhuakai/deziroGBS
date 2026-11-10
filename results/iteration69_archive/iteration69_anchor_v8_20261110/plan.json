@@ -1,0 +1,38 @@
+{
+  "source_hashes": {
+    "codex_iteration69_anchor_v8.py": "5c9a489a915921af1bfa63ec73c5e1965a40311efef869fdf0d8c044c666fa01",
+    "iteration69_anchor_v8.cpp": "b0600c6592c7ac76d4dfc4e396092976aa713d6ce216d93955e75e65dc97d769",
+    "iteration69_displaced_v6.cpp": "99a593472c8ae4336bfff29f85f8d54a83aab4e972ca56f41326fdee42754b6a",
+    "iteration69_reset_blas_v5.cpp": "7645571f39cf375c26e21ccd0925d793e6395be54cbb559fabea631b909d2db1"
+  },
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration69_anchor_v8.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration69_anchor_v8_20261110\\native.dll"
+  ],
+  "seed": 690701,
+  "samples_per_method": 500000,
+  "methods": [
+    5
+  ],
+  "radius": 0.004133015779798948,
+  "dependencies": {
+    ".git/iteration69_quality_pilot_20261110/summary.json": "1df078a725232ce771e947d125cb39d70c8fb11ab213ac3bb74c27853370a121",
+    ".git/iteration69_quality_pilot_20261110/input_0.npz": "5e531b69940d5d03769eaac868a7b4da72956d30a53f4bc25f13b8ce6cca4324",
+    ".git/iteration69_quality_pilot_20261110/input_1.npz": "7e83258afe04482869fef718cd4b4d22486635b7eb6e27477703cb53f72a7567",
+    ".git/iteration69_quality_pilot_20261110/input_2.npz": "b6b00f966f87818496e03740722497cb30cf8632fb2eeccdb4a0c7b457bbbb38",
+    ".git/iteration69_quality_pilot_20261110/input_3.npz": "7444400ac597a2c476e0d09e04b69c71c7dce9e9b576ad4f9e072a8b7663240a"
+  },
+  "scope": "Coherent-reference rejection envelope on prior-art displaced Gaussian reset S62--S65 plus occupied-subspace diagonal rejection. Compare full threshold coarsening on the SAME four inputs as centered and official Frugal. Fixed seeded PRNG/normal-generator experiments; nominal joint 99% ideal-IID bands, not exact-law certification. No photon/proposal cap."
+}

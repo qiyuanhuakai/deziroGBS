@@ -1,0 +1,24 @@
+{
+  "source_hashes": {
+    "experiments/iteration69_build.py": "de23d66a9032417555a54281290fc83131e69380ab34826907db826195f3b4e5",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "src/gbslab/native_gaussian_reset.py": "7f292e112757b6ffdedb8af07d0e2ff36dd88614f3f9dbdc3f9927952b33c872"
+  },
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_reset_cpu.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration69_build\\gaussian_reset_cpu.dll"
+  ],
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "scope": "Approximate Gaussian-reset PNR law. Single native thread; explicit optional OpenBLAS. x87 64-bit precision guarded and restored. Build uses local Eigen headers, never downloads dependencies."
+}

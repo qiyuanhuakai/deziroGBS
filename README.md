@@ -1,6 +1,15 @@
 # deziroGBS / GBS Classical Lab
 
 
+## 第69轮 C++ Gaussian重置与质量对照
+
+完整PNR重置采样已由C++执行。最终公开二进制在8176输出、8/32/64输入面板的三轮交错计时中，最佳提议相对同库单线程OpenBLAS全扫描分别快9.608、8.480、6.088倍；144模50输入上全扫描仍最快。
+
+同一四模较难实例中，保留位移使观测阈值TV从8.20%降至0.70%，低于Frugal K2/K3的2.65%/2.50%；Frugal K4仍约为零误差，而本方案总光子数TV仍约3.63%，极端尾部偏重。当前合成144/1152模配置的原始每样本时间比九章3.0报告值慢约6.73万/7.65万倍，不是同质量量子优势。
+
+公开接口40万条计数重放一致；全库812运行、783通过、0失败、0错误，历史跳过保留。原始成功与失败1007个文件按字节归档。详见[第69轮报告](RESEARCH_REPORT_ITERATION69.md)、[C++与复现](native/README.md)、[方法](research/iteration69_methods.md)、[前沿对照](research/iteration69_frontier_comparison.md)、[第70轮方向](research/iteration70_plan.md)。
+
+
 ## 第68轮：C++/CUDA实际采样加速
 
 144模式、连接维数200、4096条独立新输入轨迹，三轮交错计时：原生C++在相同4/8线程预算下比合并矩阵运算后的NumPy快2.475/2.863倍；CUDA中位1.579秒、约2594样本/秒，相对最快NumPy对照快15.778倍。CPU与CUDA计算核心现位于[native目录](native/README.md)，Python负责调用和实验组织。
@@ -9,7 +18,7 @@
 
 详见[第68轮报告](RESEARCH_REPORT_ITERATION68.md)、[构建与复现](native/README.md)、[前沿对照](research/iteration68_frontier_comparison.md)、[持续方向](research/iteration69_plan.md)。
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第67轮匹配链同误差门槛的精确期望资源，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第69轮C++ Gaussian重置采样与质量对照，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
 
 ## 第67轮进展
 

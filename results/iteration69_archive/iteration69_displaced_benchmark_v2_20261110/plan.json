@@ -1,0 +1,76 @@
+{
+  "cases": [
+    [
+      144,
+      50,
+      1.4,
+      0.43,
+      32
+    ],
+    [
+      1152,
+      50,
+      1.4,
+      0.43,
+      32
+    ],
+    [
+      1024,
+      8,
+      0.7,
+      0.65,
+      128
+    ],
+    [
+      8176,
+      8,
+      0.7,
+      0.65,
+      128
+    ],
+    [
+      8176,
+      32,
+      0.7,
+      0.65,
+      64
+    ],
+    [
+      8176,
+      64,
+      0.7,
+      0.65,
+      32
+    ]
+  ],
+  "repetitions": 3,
+  "methods": {
+    "3": "total-occupation diagonal rejection",
+    "4": "OpenBLAS ILP64 full detector scan",
+    "5": "coherent-reference plus covariance diagonal rejection"
+  },
+  "input_seed": 691001,
+  "ordering_seed": 691002,
+  "sampling_seed_base": 692100,
+  "source_hashes": {
+    "codex_iteration69_displaced_benchmark_v2.py": "e590874a0bac2ed8bf3ebcfeb932e7db5ceb658616c44d32085d242624be6c2d",
+    "iteration69_reset_blas_v5.cpp": "7645571f39cf375c26e21ccd0925d793e6395be54cbb559fabea631b909d2db1",
+    "iteration69_displaced_v6.cpp": "99a593472c8ae4336bfff29f85f8d54a83aab4e972ca56f41326fdee42754b6a",
+    "iteration69_anchor_v9.cpp": "f8160a2b5d33276eeabad351dc3eeb9b1ba21dc6464d361db95f7ac0da81d765"
+  },
+  "dependencies": {
+    ".git\\iteration69_anchor_v9_20261110\\native.dll": "f816602f2446f5298499f0b1d724639d35022a8952e76f930e3e05a0c7b53e9b",
+    ".git\\iteration69_anchor_v9_20261110\\summary.json": "b050e8889898ba4e059565db9279371f74e95ccbae1b9cb6b0e47def30af9b49"
+  },
+  "blas": {
+    "path": "C:\\Users\\qiyuaner\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+    "sha256": "63c857e738469261263c764a36be9436ebdeaa272e340a828f42047a97131080",
+    "threads": 1
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.29704-SP0"
+  },
+  "scope": "Three interleaved repetitions with fresh input seed and common per-repetition sampling seed. Same displaced reset model; selectors generally have different paths. All use identical native binary/compiler flags and one BLAS thread. Timing includes per-trajectory noise, coherent-anchor setup, waiting inversions and output writing; QR/model preparation recorded separately. First two fixtures match Jiuzhang3 mode/input count and representative r/eta, NOT its measured matrix, source nonuniformity or imperfect detector model. 1152-mode fixture uses ideal balanced 1-to-8 fanout of the SAME 144-port isometry. No equal-quality quantum advantage claim."
+}

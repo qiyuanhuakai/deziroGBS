@@ -1,0 +1,75 @@
+{
+  "cases": [
+    [
+      144,
+      50,
+      1.4,
+      0.43,
+      32
+    ],
+    [
+      1152,
+      50,
+      1.4,
+      0.43,
+      32
+    ],
+    [
+      1024,
+      8,
+      0.7,
+      0.65,
+      128
+    ],
+    [
+      8176,
+      8,
+      0.7,
+      0.65,
+      128
+    ],
+    [
+      8176,
+      32,
+      0.7,
+      0.65,
+      64
+    ],
+    [
+      8176,
+      64,
+      0.7,
+      0.65,
+      32
+    ]
+  ],
+  "repetitions": 3,
+  "methods": {
+    "3": "total-occupation diagonal rejection",
+    "4": "OpenBLAS ILP64 full detector scan",
+    "5": "coherent-reference plus covariance diagonal rejection"
+  },
+  "input_seed": 691001,
+  "ordering_seed": 691002,
+  "sampling_seed_base": 692100,
+  "source_hashes": {
+    "iteration69_benchmark.py": "f73bbd2acb3ae57ffef4b6e9e654cd8c0508bfcea587da85352eeab756fc2b46",
+    "gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "native_gaussian_reset.py": "7f292e112757b6ffdedb8af07d0e2ff36dd88614f3f9dbdc3f9927952b33c872"
+  },
+  "dependencies": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration69_build\\gaussian_reset_cpu.dll": "7b49fa9589e6a9bd6ff71e66820826ee29475d1cd22bad60bba0489f9d0e70cd",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration69_build\\summary.json": "a4537cafa1ed950232d46cba0965a2d760f7e247afd01197382b220cfb5ddf56"
+  },
+  "blas": {
+    "path": "C:\\Users\\qiyuaner\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+    "sha256": "63c857e738469261263c764a36be9436ebdeaa272e340a828f42047a97131080",
+    "threads": 1
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.29704-SP0"
+  },
+  "scope": "Three interleaved repetitions with fresh input seed and common per-repetition sampling seed. Same displaced reset model; selectors generally have different paths. All use identical native binary/compiler flags and one BLAS thread. Timing includes per-trajectory noise, coherent-anchor setup, waiting inversions and output writing; QR/model preparation recorded separately. First two fixtures match Jiuzhang3 mode/input count and representative r/eta, NOT its measured matrix, source nonuniformity or imperfect detector model. 1152-mode fixture uses ideal balanced 1-to-8 fanout of the SAME 144-port isometry. No equal-quality quantum advantage claim."
+}

@@ -1,0 +1,16 @@
+{
+  "source": "https://arxiv.org/html/2610.06526v1",
+  "status": "Unexecuted follow-up hypothesis; not an iteration68 result",
+  "existing_prior_art": "Already cited in phase2, iteration23 and later literature notes; no existing reset sampler was found in current src search.",
+  "protocol": "PNR via continuous monitored absorption, not sequential binary threshold Gaussian moment closure. K flow F_t(K)=exp(-t)K[I+(1-exp(-t))K]^-1; jump K <- K + K Pi_i K/lambda_i, lambda_i=Tr(Pi_i K)/2.",
+  "candidate_acceleration": "With K=O X O^T, fixed occupied-subspace proposal q_i=ell_i/N, ell_i=Tr(Pi_i OO^T)/2. For any certified c >= ||X||_op, lambda_i <= c ell_i, so accept proposed i with lambda_i/(c ell_i). Expected trials N*c/E with E=Tr(X)/2; accepted law exactly lambda_i/E in exact arithmetic. This avoids the O(M N^2) complete detector-rate sweep per jump at the cost of rejection trials, each O(N^2). Precompute q once in O(M N).",
+  "requirements": [
+    "Check orthonormal realification and zero proposal support.",
+    "Use a real upper bound, not an unverified rounded largest eigenvalue; initially absolute-row-sum bound with outward arithmetic.",
+    "Prove rate nonnegativity for physical reset trajectories; no clipping of negative rates.",
+    "Compare exact detector probabilities and identical model law against full-rate baseline on fresh fixtures.",
+    "Report expected/observed trials, waiting-time inversion and eigensolve costs; no rejection cap or first-hit truncation.",
+    "State new optimization vs prior-art Gaussian reset; do not claim first invention of generic rejection sampling.",
+    "Input error still governed by reset approximation; finite universal theorem bound is trivial above eta=0.1 and cannot certify eta=.65."
+  ]
+}
