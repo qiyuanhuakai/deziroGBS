@@ -1,0 +1,28 @@
+{
+  "source_hashes": {
+    ".git/codex_iteration70_noise_screen_v2.py": "3095445513ad05604f643b5777322bd0bd334fa2503952c078735db4e130c589",
+    ".git/iteration70_flow_v1.cpp": "9fd7c8a131a29887b5bf995cdb5aadbfb0419174d1075e5683fdc74afca4afd2",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "dependencies": {
+    ".git/iteration70_pgf_quad_v1_20261110/summary.json": "c42660560e5885cf9dcfa5824147cb94b713542bb3a760ada96cc1d3b561ba40",
+    ".git/iteration70_flow_pilot_v1_20261110/native.dll": "fb84988a6f4fcca3845e0c365c7f698b920dd3bc4f895bef8e120a5b2215febc",
+    ".git/iteration70_flow_pilot_v1_20261110/summary.json": "32472ac7cb069ccc8d2f3bf15b34fd92989a11675eaa53facf7587dc5caf0fc5"
+  },
+  "theta_values": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "samples": 100000,
+  "seed_base": 702001,
+  "selector": 3,
+  "algorithm": 1,
+  "nominal_joint_failure_probability": 0.01,
+  "upper_radius": 0.00665344475743109,
+  "heldout_lower_radius": 0.009409391812459214,
+  "scope": "Screen exact Gaussian input decompositions with two-quadrature classical noise. theta=0 is minimum pure-core squeezing; theta=1 is maximum core squeezing. Same Gaussian target for each theta in exact arithmetic. Joint PNR finite simplex plus full remaining tail; no photon cutoff in the sampler. Dimension-free McDiarmid upper bound plus target tail; lower bound uses an event selected on the first half and tested on the second half. Nominal bounds assume ideal IID draws and exact numerical targets, not formal finite-PRNG/interval certificates. Parameter selection requires a separate holdout run."
+}

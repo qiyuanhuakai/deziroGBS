@@ -1,0 +1,51 @@
+{
+  "source_hashes": {
+    ".git/codex_iteration70_flow_pilot_v1.py": "2649b77335cbddd73f4bf46ca04864aabf660e1bd79db8fccd531b3477eb4b17",
+    ".git/iteration70_flow_v1.cpp": "9fd7c8a131a29887b5bf995cdb5aadbfb0419174d1075e5683fdc74afca4afd2",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_flow_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_flow_pilot_v1_20261110\\native.dll"
+  ],
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "cases": [
+    {
+      "old_case": 0,
+      "selector": 4,
+      "samples": 32
+    },
+    {
+      "old_case": 1,
+      "selector": 5,
+      "samples": 32
+    },
+    {
+      "old_case": 4,
+      "selector": 3,
+      "samples": 32
+    },
+    {
+      "old_case": 5,
+      "selector": 5,
+      "samples": 32
+    }
+  ],
+  "algorithms": {
+    "0": "80 bisections",
+    "1": "safeguarded Newton with residual stopping and bisection fallback"
+  },
+  "repetitions": 2,
+  "scope": "Profile the same frozen inputs/seeds as iteration69 to separate spectral solve, waiting inversion and reconstruction. Baseline counts must replay iteration69. Extra timing and residual evaluations are included in BOTH methods. Newton changes finite arithmetic; report state and count differences, not an exact program-law equivalence claim. This is a pilot, not the final fresh benchmark."
+}

@@ -1,0 +1,49 @@
+{
+  "source_hashes": {
+    "codex_iteration70_pgf_quad_v1.py": "180969e7e501fbbc62d93d6c01658521e2d8ab62c72cfd43dcb18acc24ed3bdc",
+    "iteration70_pgf_quad_v1.cpp": "cff01e2f6d26202a835ade1f1e36a388b85e13d9101205b7d0a57bbe6178dff2"
+  },
+  "compiler_sha256": "8ac7dd672dee1ddd546e4b170b03bbdcc35695485989f2e3a628fb096ba6a051",
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_pgf_quad_v1.cpp",
+    "-lquadmath",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_pgf_quad_v1_20261110\\oracle.dll"
+  ],
+  "cases": [
+    [
+      0.7,
+      0.1,
+      16
+    ],
+    [
+      0.7,
+      0.3,
+      24
+    ],
+    [
+      0.7,
+      0.65,
+      32
+    ],
+    [
+      1.1,
+      0.65,
+      48
+    ],
+    [
+      1.4,
+      0.43,
+      48
+    ]
+  ],
+  "new_input_seed": 701001,
+  "scope": "Complete joint four-mode PNR simplex plus one untruncated tail bin. Native IEEE binary128 determinant-coefficient recurrence, 100-digit determinant inputs and independent low-order Isserlis/higher-order coefficient checks. Oracle size grows combinatorially in modes, not a scalable arbitrary-mode sampler. Numerical comparisons are not interval-arithmetic certificates. Old four physical inputs are frozen iteration69 fixtures; the fifth uses a fresh isometry and Jiuzhang3 representative r/eta."
+}

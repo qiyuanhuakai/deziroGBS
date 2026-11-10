@@ -1,0 +1,78 @@
+{
+  "native_command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-shared",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_parallel_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_frugal_large_v1_20261110\\native.dll"
+  ],
+  "frugal_command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.exe",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-O3",
+    "-std=c++20",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration39_build\\generated",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\include",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\xsimd\\include",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\frugal_extended.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\correlator_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\cumulant_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\file_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\matrix_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\mmpy_format.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\result.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\string_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\thread_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\time_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\layout.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\cpu\\cpu_sampler.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_frugal_large_v1_20261110\\frugal.exe"
+  ],
+  "source_hashes": {
+    ".git/codex_iteration70_frugal_large_v1.py": "673566d56028e2af4857e9b14519f89296a08eecaedc7629063a9c2952ec7410",
+    ".git/iteration70_parallel_v1.cpp": "6974d15397ff4fe758f2d8aa149a5f5ea2a36788de5c5503d3c3b570d67edb37",
+    ".git/iteration70_flow_v2.cpp": "81f79fe2f4d789c402ea06a9ab861b7eadb4c840e1eac68fa51b0551ab2fe0da",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "experiments/frugal_extended.cpp": "e349710e994eca5010c3523c6b82dba2b99f2af4e8b3197551ca6779dcd9c2ae"
+  },
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8",
+  "common_flags": [
+    "-O3",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math"
+  ],
+  "modes": 144,
+  "inputs": 50,
+  "r": 1.4,
+  "eta": 0.43,
+  "matrix_seed": 705001,
+  "samples": 512,
+  "repetitions": 3,
+  "threads": [
+    1,
+    16
+  ],
+  "methods": [
+    "native_newton",
+    "frugal_K2",
+    "frugal_K3"
+  ],
+  "scope": "Fresh shared synthetic covariance. Same host and CPU worker budget, generic x86-64 compilation settings; native full detector scan calls separately identified single-thread OpenBLAS. Native PNR records thresholded before comparing clicked output. All output records retained. Preparation, sampling, output summaries and process I/O reported separately. Neither large-system law is assumed accurate or equivalent; throughput ratios do not establish equal-quality superiority."
+}

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "d6bf20db8165cee4482762973dc3bed63bd3ab272e46a45d7a8baad2d51068c5",
+  "library_sha256": "2c0da6f65ee80e571abc0a5b910c385a7fd25d1d72dfc6511db77bd33a046db6",
+  "target_sha256": "cc69de2ee835434e932382c13dac80ff3f8f29cb5276a2dfbffef606decfa23f",
+  "prior_histogram_sha256": "0a0203b2b3e86cdf22355dc597a615ed60156adcee70ac2596ec5c479aaadcbc",
+  "samples": 80000000,
+  "batches": 160,
+  "batch_size": 500000,
+  "seed_base": 32352030135681024,
+  "seed_stride": 1099511627776,
+  "threads": 16,
+  "nominal_joint_failure_probability": 0.01,
+  "radius": 0.00018197385400360466,
+  "scope": "Independent nonoverlapping seed ranges, same fixed four-mode fixture. Event selected on prior 1M cohort, evaluated only on new 80M records. Dimension-free McDiarmid upper bound for full PNR TV includes target tail; fixed-event Hoeffding lower bound. Assumes ideal independent streams and exact numerical target, not a finite-PRNG or global rounding certificate. No truncation or discarded trajectories."
+}

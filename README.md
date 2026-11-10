@@ -1,5 +1,14 @@
 # deziroGBS / GBS Classical Lab
 
+## 第70轮 C++ 光子计数与直接点击双路线
+
+新增独立的PNR多核采样和直接点击C++核心。144输出、50输入、16线程同机交错计时，直接点击每512样本中位1.246秒，相对PNR转点击快5.81倍，相对当前通用CPU Frugal K2/K3快13.25/15.12倍；不同近似律的速度优势不等于同质量胜出。
+
+固定四模PNR输入新增8,000万记录，完整TV名义区间0.688%～0.909%，但其他输入仍有超过4%的误差及过重尾部。四模Frugal K4仍更快、更准确。公开接口800,576条记录重放一致；全库828运行、799通过、0失败、0错误，历史跳过保留。
+
+详见[第70轮报告](RESEARCH_REPORT_ITERATION70.md)、[两个C++接口和复现](native/README.md)、[方法与误差](research/iteration70_methods.md)、[Frugal及九章对照](research/iteration70_frontier_comparison.md)、[双路线后续](research/iteration71_plan.md)。
+
+
 
 ## 第69轮 C++ Gaussian重置与质量对照
 
@@ -18,7 +27,7 @@
 
 详见[第68轮报告](RESEARCH_REPORT_ITERATION68.md)、[构建与复现](native/README.md)、[前沿对照](research/iteration68_frontier_comparison.md)、[持续方向](research/iteration69_plan.md)。
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第69轮C++ Gaussian重置采样与质量对照，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第70轮C++光子计数与直接点击双路线，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
 
 ## 第67轮进展
 

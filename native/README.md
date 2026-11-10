@@ -86,3 +86,50 @@ python experiments/iteration68_tests.py --output results/my_native_tests --build
 The older state is already distributed as chunks in the repository's historical large-artifact archive. The new pilot archive also stores its derived normalized cache in byte-preserving chunks. See the archive manifests for hashes and part order; concatenating listed parts restores the original file. The benchmark's generation seed, preparation costs, warmups, balanced run order, per-chunk elapsed time, output probabilities and source snapshots are retained in its output directory.
 
 The scientific report is [iteration 68](../RESEARCH_REPORT_ITERATION68.md). The current 15.778x result is versus the improved NumPy implementation on this hardware and input panel, not versus every classical GBS method.
+
+## Iteration 70 two independent sampling routes
+
+`gaussian_reset_parallel.cpp` generates integer PNR records, using safeguarded Newton waiting times and independent C++ workers. `gaussian_direct_click.cpp` produces binary clicks directly, using per-port Gaussian conditional moments; it never generates photon counts. Both are approximate, and their errors must be measured separately. `gaussian_pgf_quad.cpp` supplies a small-system IEEE binary128 PNR reference, with combinatorial scaling rather than an arbitrary-mode speed claim.
+
+Build the two sampler libraries explicitly on Windows with GNU C++ and local Eigen headers:
+
+```powershell
+python experiments/iteration70_build.py --output results/my_dual_build --eigen ../external_sources/eigen_3_4_0_iteration38/eigen-3.4.0
+```
+
+The Python interfaces only validate and organize native batches:
+
+```python
+from gbslab.native_gaussian_reset import lossy_squeezed_components
+from gbslab.native_gaussian_reset_parallel import NativeParallelGaussianResetSampler
+from gbslab.native_direct_click import NativeDirectClickSampler
+
+# V is a complex M-by-N isometry; gcc_runtime is the local GCC bin directory.
+x, noise = lossy_squeezed_components(V.shape[1], 0.7, 0.65)
+with NativeParallelGaussianResetSampler(
+    V, x, "results/my_dual_build/gaussian_reset_parallel.dll",
+    noise_variance=noise, workers=16, runtime_dirs=[gcc_runtime]
+) as sampler:
+    photon_counts = sampler.sample(1024, 1234)["counts"]
+
+with NativeDirectClickSampler(
+    V, x, "results/my_dual_build/gaussian_direct_click.dll",
+    noise_variance=noise, workers=16, runtime_dirs=[gcc_runtime]
+) as sampler:
+    clicks = sampler.sample(1024, 1234)["clicks"]
+```
+
+PNR selectors retain the iteration69 choices; `flow="newton"` and `backend="eigen"` are defaults. An explicit NumPy ILP64 OpenBLAS library enables `selector="openblas"` and optional `backend="lapack"`. BLAS uses one internal thread; `workers` controls independent trajectories. The library restores process-wide BLAS settings, so concurrent callers changing those settings are unsupported. Summed worker component times are not batch elapsed time; use `wall_seconds`.
+
+Replay the public assemblies and run the full suite with historical native backends:
+
+```powershell
+python experiments/iteration70_validate_public.py --output results/my_dual_replay --build results/my_dual_build --reference results/iteration70_archive
+python experiments/iteration70_tests.py --output results/my_dual_tests --build results/iteration68_build --reset-build results/iteration69_build --dual-build results/my_dual_build
+python experiments/iteration70_pgf_reference.py --output results/my_pnr_reference
+python experiments/iteration70_benchmark.py --output results/my_dual_benchmark
+```
+
+The benchmark deliberately uses the archived generic-CPU PNR and official Frugal binaries and rebuilds direct-click with the same main compiler settings. This reproduces the reported comparison, rather than silently replacing its baselines. Source snapshots, build commands and binary hashes are retained. The regular sampler build above uses `-march=native`; its replay is verified separately.
+
+The PNR reference requires GCC libquadmath. Large quality extensions are explicit commands in `iteration70_quality_extension.py` and `iteration70_quality_extension_v2.py`; they generate 20 million and 80 million records respectively and preserve every record in batches. See [the report](../RESEARCH_REPORT_ITERATION70.md), [method and numerical scope](../research/iteration70_methods.md), and [next experiments](../research/iteration71_plan.md).

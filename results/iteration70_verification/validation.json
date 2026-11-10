@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": 6902,
+  "archive_files": 773,
+  "archive_bytes": 96785170,
+  "verified_manifests": 16,
+  "tests_run": 828,
+  "tests_passed": 799,
+  "tested_code_unchanged": true,
+  "documentation_changed_after_tests": [
+    "native/README.md"
+  ],
+  "added_experiment_drivers_executed_after_tests": [
+    "experiments/iteration70_benchmark.py",
+    "experiments/iteration70_quality_extension_v2.py"
+  ],
+  "public_benchmark_outputs_equal_prototype": true,
+  "times": {
+    "direct": 1.2457264000258874,
+    "pnr": 7.234978100023,
+    "frugal_K2": 16.502047,
+    "frugal_K3": 18.83199
+  },
+  "extended_quality_recomputed": [
+    {
+      "experiment": "iteration70_quality_extension",
+      "samples": 20000000,
+      "tv": 0.009875669835035798,
+      "interval": [
+        0.006782334171535928,
+        0.010241974293389704
+      ],
+      "maximum": 312,
+      "ge128": 1
+    },
+    {
+      "experiment": "iteration70_quality_extension_v2",
+      "samples": 80000000,
+      "tv": 0.008905074693754005,
+      "interval": [
+        0.006878858025539601,
+        0.009089405298104305
+      ],
+      "maximum": 7511,
+      "ge128": 11
+    }
+  ]
+}

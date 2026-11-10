@@ -1,0 +1,25 @@
+{
+  "source_hashes": {
+    ".git/codex_iteration70_noise_holdout_v1.py": "4c75f2d059d0bd7eebb5748399d020e423601d983c259dbd19c9195575a3b9a3",
+    ".git/iteration70_parallel_v1.cpp": "6974d15397ff4fe758f2d8aa149a5f5ea2a36788de5c5503d3c3b570d67edb37",
+    ".git/iteration70_flow_v2.cpp": "81f79fe2f4d789c402ea06a9ab861b7eadb4c840e1eac68fa51b0551ab2fe0da",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "dependencies": {
+    ".git/iteration70_pgf_quad_v1_20261110/summary.json": "c42660560e5885cf9dcfa5824147cb94b713542bb3a760ada96cc1d3b561ba40",
+    ".git/iteration70_parallel_pilot_v1_20261110/native.dll": "24b94b5d19c76043e0408be6c16addf2ef6dba35f388398413a4c418437e6ab2",
+    ".git/iteration70_parallel_pilot_v1_20261110/summary.json": "1aecedec523526524a7aa1158251884e880d6510d76059cc1053d8c6924c0328"
+  },
+  "theta_values": [
+    0.0,
+    0.25
+  ],
+  "samples": 1000000,
+  "seed_base": 706001,
+  "selector": 3,
+  "algorithm": 1,
+  "nominal_joint_failure_probability": 0.01,
+  "upper_radius": 0.00200079578763679,
+  "heldout_lower_radius": 0.002829552538414907,
+  "scope": "Fresh independent seeds after the frozen 100k screen; validate centered, minimum-core theta=0, and theta=.25 input decompositions with two-quadrature classical noise. theta=0 is minimum pure-core squeezing; theta=1 is maximum core squeezing. Same Gaussian target for each theta in exact arithmetic. Joint PNR finite simplex plus full remaining tail; no photon cutoff in the sampler. Dimension-free McDiarmid upper bound plus target tail; lower bound uses an event selected on the first half and tested on the second half. Nominal bounds assume ideal IID draws and exact numerical targets, not formal finite-PRNG/interval certificates. Parameter selection requires a separate holdout run."
+}

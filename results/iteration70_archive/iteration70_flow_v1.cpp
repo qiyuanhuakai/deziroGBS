@@ -1,0 +1,35 @@
+// Profile and safeguarded-Newton variant of the frozen displaced reset flow.
+// No change to the Gaussian moment-reset model or detector selectors.
+#include "../native/gaussian_reset_cpu.cpp"
+struct Evaluation70 {long double value=0.,derivative=0.;};
+static DisplacedFlow flow70(const Real& x,const Vector& w,double u,int algorithm,double* stats){
+    need(std::isfinite(u)&&u>=0.&&u<1.&&algorithm>=0&&algorithm<=1,"Invalid profiled flow call");
+    auto start=Clock::now();Eigen::SelfAdjointEigenSolver<Real> solver(x);need(solver.info()==Eigen::Success,"Profiled eigensolver failure");const auto& values=solver.eigenvalues();need(values.minCoeff()>-1.,"Invalid profiled determinant domain");Vector rotated=solver.eigenvectors().transpose()*w;stats[8]+=std::chrono::duration<double>(Clock::now()-start).count();
+    auto evaluate=[&](long double s,bool derivative){Evaluation70 p;++stats[11];for(int j=0;j<values.size();++j){long double v=values[j],d=1+s*v,a=rotated[j];p.value-=.5L*(std::log1p(s*v)+s*a*a/d);if(derivative)p.derivative-=.5L*(v/d+a*a/(d*d));}return p;};
+    start=Clock::now();long double logp=evaluate(1.,false).value;stats[15]+=std::chrono::duration<double>(Clock::now()-start).count();need(logp<=0.&&std::isfinite(logp),"Invalid profiled vacuum probability");DisplacedFlow result;result.p0=double(std::exp(logp));++stats[17];if((long double)u<=std::exp(logp))return result;
+    start=Clock::now();long double target=std::log((long double)u),lo=0.,hi=1.,s=.5L;int iterations=0;bool converged=false;
+    if(algorithm==1){
+        long double energy=0.;for(int j=0;j<values.size();++j){long double a=rotated[j];energy+=.5L*(values[j]+a*a);}long double guess=-target/energy;if(std::isfinite(guess)&&guess>0.&&guess<1.)s=guess;
+        const long double tolerance=16.L*values.size()*std::numeric_limits<long double>::epsilon()*(1+std::abs(target));
+        for(;iterations<64;++iterations){auto p=evaluate(s,true);long double f=p.value-target;need(std::isfinite(f)&&std::isfinite(p.derivative),"Nonfinite Newton evaluation");if(std::abs(f)<=tolerance){converged=true;++iterations;break;}if(f>0.)lo=s;else hi=s;long double next=s-f/p.derivative;if(!(p.derivative<0.&&next>lo&&next<hi&&std::isfinite(next))||next==s)next=(lo+hi)/2;s=next;}
+        if(!converged)++stats[14];
+    }
+    if(!converged){for(int step=0;step<80;++step){long double middle=(lo+hi)/2;if(evaluate(middle,false).value>target)lo=middle;else hi=middle;++iterations;}s=(lo+hi)/2;}
+    stats[12]=std::max(stats[12],double(iterations));stats[16]=std::max(stats[16],double(hi-lo));result.s=double(s);need(result.s>=0.&&result.s<1.,"Profiled inversion rounded to terminal endpoint");stats[13]=std::max(stats[13],double(std::abs(evaluate(result.s,false).value-target)));stats[9]+=std::chrono::duration<double>(Clock::now()-start).count();
+    start=Clock::now();Vector damped=values;double attenuation=std::sqrt(1-result.s);for(int j=0;j<values.size();++j){double denominator=1+result.s*values[j];damped[j]=(1-result.s)*values[j]/denominator;rotated[j]*=attenuation/denominator;}result.x=solver.eigenvectors()*damped.asDiagonal()*solver.eigenvectors().transpose();result.x=(result.x+result.x.transpose()).eval()/2.;result.w=solver.eigenvectors()*rotated;result.stopped=false;stats[10]+=std::chrono::duration<double>(Clock::now()-start).count();return result;
+}
+// Stats 0..7 as iteration69; 8 spectral+mean projection seconds, 9 inversion,
+// 10 state reconstruction, 11 survival evaluations, 12 maximum iterations,
+// 13 maximum log-root residual, 14 Newton fallbacks, 15 vacuum-log seconds,
+// 16 maximum maintained bracket width (NOT an error bound), 17 flow calls.
+API int g70_sample(void* handle,int count,std::uint64_t seed,int selector,int algorithm,const double* mean,const double* variance,std::uint32_t* output,double* stats,char* message,int cap){try{PrecisionGuard rounding;
+    need(handle&&count>=0&&selector>=0&&selector<=5&&algorithm>=0&&algorithm<=1&&mean&&variance&&output&&stats,"Invalid profiled sampler call");auto& model=*static_cast<Model*>(handle);Vector center(2*model.n),deviation(2*model.n);for(int j=0;j<2*model.n;++j){need(std::isfinite(mean[j])&&std::isfinite(variance[j])&&variance[j]>=0.,"Invalid profiled displacement");center[j]=mean[j];deviation[j]=std::sqrt(variance[j]);}std::fill(stats,stats+18,0.);std::fill(output,output+std::size_t(count)*model.m,0);
+    for(int sample=0;sample<count;++sample){std::mt19937_64 waits(mix(seed+2*sample)),detectors(mix(seed+2*sample+1)),noise(mix(seed+0x81c6f2d54a970e31ULL+sample));std::normal_distribution<double> normal;Real x=model.initial;Vector w=center;for(int j=0;j<w.size();++j)if(deviation[j]>0.)w[j]+=deviation[j]*normal(noise);Anchor anchor;
+        if(selector==5){auto start=Clock::now();anchor=make_anchor(model,w);stats[7]+=std::chrono::duration<double>(Clock::now()-start).count();}std::uint64_t photons=0,trials=0;
+        for(;;){auto start=Clock::now();auto flow=flow70(x,w,uniform(waits),algorithm,stats);stats[2]+=std::chrono::duration<double>(Clock::now()-start).count();if(flow.stopped)break;x=std::move(flow.x);w=std::move(flow.w);start=Clock::now();long double lambda=0.;int mode;if(selector==5){auto h=occupation(x);mode=choose_anchor(model,h,w,anchor,detectors,trials,lambda);}else{auto h=total_occupation(x,w);mode=choose(model,h,selector,detectors,trials,lambda);}stats[3]+=std::chrono::duration<double>(Clock::now()-start).count();start=Clock::now();displaced_jump(model,x,w,mode,lambda);stats[4]+=std::chrono::duration<double>(Clock::now()-start).count();auto& value=output[std::size_t(sample)*model.m+mode];need(value<std::numeric_limits<std::uint32_t>::max(),"Profiled photon storage overflow");++value;++photons;}
+        stats[0]+=double(photons);stats[1]+=double(trials);stats[5]+=(photons==0);stats[6]=std::max(stats[6],double(photons));}
+    return 0;
+}catch(const std::exception& e){error(message,cap,e.what());return 1;}}
+API int g70_probe(void* handle,const double* input,const double* mean,double waiting,int algorithm,double* output,double* next_mean,double* info,double* stats,char* message,int cap){try{PrecisionGuard rounding;
+    need(handle&&input&&mean&&output&&next_mean&&info&&stats,"Invalid profiled probe buffers");auto& model=*static_cast<Model*>(handle);int d=2*model.n;Real x(d,d);Vector w(d);for(int i=0;i<d;++i){w[i]=mean[i];for(int j=0;j<d;++j)x(i,j)=input[std::size_t(i)*d+j];}need(x.allFinite()&&w.allFinite(),"Nonfinite profiled probe");std::fill(stats,stats+18,0.);auto flow=flow70(x,w,waiting,algorithm,stats);info[0]=flow.stopped;info[1]=flow.p0;info[2]=flow.s;if(flow.stopped)return 0;for(int i=0;i<d;++i){next_mean[i]=flow.w[i];for(int j=0;j<d;++j)output[std::size_t(i)*d+j]=flow.x(i,j);}return 0;
+}catch(const std::exception& e){error(message,cap,e.what());return 1;}}

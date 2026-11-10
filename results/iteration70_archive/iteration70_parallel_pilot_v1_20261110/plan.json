@@ -1,0 +1,32 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_parallel_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_parallel_pilot_v1_20261110\\native.dll"
+  ],
+  "sources": {
+    ".git/codex_iteration70_parallel_pilot_v1.py": "483a4875f47c7337594f339907bb4988b8e67fc32c3eec39c2f338cc91f40f93",
+    ".git/iteration70_parallel_v1.cpp": "6974d15397ff4fe758f2d8aa149a5f5ea2a36788de5c5503d3c3b570d67edb37",
+    ".git/iteration70_flow_v2.cpp": "81f79fe2f4d789c402ea06a9ab861b7eadb4c840e1eac68fa51b0551ab2fe0da",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "threads": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "samples": 64,
+  "repetitions": 3,
+  "scope": "Independent C++ trajectories with per-thread x87 guard and EVD workspace. No photon cutoff. Row seeds fixed regardless of scheduling. Component timings sum across workers; outer wall time is performance metric. Pilot same matrices as iteration69, fresh seeds. Baseline is same new binary one worker."
+}

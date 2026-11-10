@@ -1,0 +1,63 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.exe",
+    "-march=native",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-O3",
+    "-std=c++20",
+    "-fopenmp",
+    "-DFGBS_GPU_ENABLED=0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration38_frugal_build_attempt\\build\\generated",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\include",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\xsimd\\include",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\frugal_adapter.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\correlator_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\cumulant_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\file_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\matrix_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\mmpy_format.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\result.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\string_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\thread_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\time_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\layout.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\cpu\\cpu_sampler.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_frugal_speed_v1_20261110\\frugal.exe"
+  ],
+  "common_optimization_flags": [
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-ffp-contract=off",
+    "-fno-fast-math"
+  ],
+  "samples": 200000,
+  "repetitions": 3,
+  "seeds": [
+    703101,
+    703102,
+    703103
+  ],
+  "cases": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "methods": [
+    "native_newton",
+    "frugal_K2",
+    "frugal_K3",
+    "frugal_K4"
+  ],
+  "threads": 1,
+  "scope": "Same host, physical input covariance, sample count and single CPU thread. Native PNR is thresholded; Frugal directly emits threshold strings, so the native route performs more work. Both wall output costs and inner sampling costs reported. Numerical distribution quality compared, not assumed equal. Three cyclically rotated orderings; no GPU throughput extrapolation.",
+  "upstream_commit": "fa8b796f2afebd4845a2e335e457735952617ef8"
+}

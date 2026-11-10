@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-march=native",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_direct_click_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\.git\\iteration70_direct_click_pilot_v1_20261110\\native.dll"
+  ],
+  "source_hashes": {
+    ".git/codex_iteration70_direct_click_pilot_v1.py": "ff0d9a44b381a0119e75e70c3fe9ff3eb60010fe826b07192ee84b622d49ecee",
+    ".git/iteration70_direct_click_v1.cpp": "3e8ce8aa38651767dfcfffefb1a975259d583103e0c035ba127e0c3b6e0b15b3",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "samples": 1000000,
+  "quality_seed_base": 708001,
+  "threads": 16,
+  "scope": "New direct threshold route, no PNR counts or photon arrival times. Exact Gaussian no-click conditioning, approximate click moment closure. Independent dense physical-space first/second moment checks for every four-mode prefix. Centered full induced law from native branch tree; displaced law assessed empirically. Gaussian-difference identity is prior art: arXiv:1807.01639. No claim that Gaussian moment closure is exact or novel."
+}
