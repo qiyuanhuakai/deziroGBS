@@ -1,0 +1,99 @@
+{
+  "graphs": [
+    {
+      "name": "isolated_1",
+      "n": 1,
+      "edges": []
+    },
+    {
+      "name": "empty_2",
+      "n": 2,
+      "edges": []
+    },
+    {
+      "name": "edge_2",
+      "n": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "path_3",
+      "n": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "triangle_3",
+      "n": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "rational": "1/4"
+    },
+    {
+      "rational": "1"
+    },
+    {
+      "rational": "2"
+    }
+  ],
+  "alpha_rules": [
+    "one",
+    "4n2"
+  ],
+  "checkpoints": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "public_steps": 64,
+  "attempt_cap": 64,
+  "outputs_per_case_route": 7,
+  "seed_base": 640000,
+  "source_hashes": {
+    "experiments/iteration63_common.py": "fbaf42e4bbda3b0683601de92fec26492804ae981a69dc502f06854e1bad1709",
+    "experiments/iteration64_analysis.py": "0ed504ed284e4caead5ccea819681f0f83ec833bf8821ffe87955d870a42050c",
+    "experiments/iteration64_chain.py": "8bfb1e17b2c94b321c4d48f1b8fea497eec347385388209828c69abdb2100b96",
+    "experiments/iteration64_common.py": "68cefb85176c0c091fd8ddd0c55f2bd6fa2ea93b4fd94b5f5f6460e6bc47eef9",
+    "experiments/iteration64_independent.py": "15a10a6a733a183473fb1968b3f64638edc704d994c9ee657cff875313971473",
+    "experiments/iteration64_seal.py": "a7fd863a1c0fd038a70d27ac6b0df145747aa7db8fa2b83fa9f00eec8d62b5f0",
+    "experiments/iteration64_tests.py": "3f29c897cf8be7387a01b6160b7342304bc4e2f847a0a4cdfa971a9ea14847dc",
+    "experiments/verify_iteration64_chain.py": "0f484706812acb8c850af16b33d280a1b6b58ef3627e676fb9afd6dba88c24f1",
+    "research/iteration64_chain_plan.md": "db67e9ebfaf5503679bae582f9e0f6e6b7780cf5d2ee3d8882d01001f7d139cf",
+    "src/gbslab/matching_chain.py": "193fb821139212afae9e49693039ee323cff067fa73cb73c452abcded23922f9",
+    "tests/test_matching_chain.py": "37af8ba6886410116e55f2caef7a1cc7e47dbae58d542e2c2df201ee26e32223"
+  }
+}
