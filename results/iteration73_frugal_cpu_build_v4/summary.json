@@ -1,0 +1,34 @@
+{
+  "passed": false,
+  "rows": [
+    {
+      "precision": 32,
+      "build_returncode": 0,
+      "smoke": [
+        {
+          "modes": 4,
+          "returncode": 3221225477
+        }
+      ],
+      "binary_sha256": "8d768a9e790b5b7915a7b390869926019342f9b49df776b61b842adf4ea101a2"
+    },
+    {
+      "precision": 64,
+      "build_returncode": 0,
+      "smoke": [
+        {
+          "modes": 4,
+          "returncode": 0,
+          "simd_lanes": 4,
+          "tv_to_exact": 0.0038794078788596236
+        },
+        {
+          "modes": 144,
+          "returncode": 0,
+          "simd_lanes": 4
+        }
+      ],
+      "binary_sha256": "ef8efe08cb1052d2a67326ebcb8eb03f60544ea6354554757938542bbb2592b5"
+    }
+  ]
+}

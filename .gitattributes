@@ -493,3 +493,15 @@ tests/test_native_pnr_newton.py -text -whitespace
 third_party/FrugalGBS/include/fgbs/gpu/** -text -whitespace
 third_party/FrugalGBS/src/fgbs/gpu/** -text -whitespace
 third_party/FrugalGBS/tests/gpu/** -text -whitespace
+
+RESEARCH_REPORT_ITERATION73.md -text -whitespace
+research/iteration73_methods.md -text -whitespace
+research/iteration74_plan.md -text -whitespace
+experiments/iteration73*.py -text -whitespace
+experiments/verify_iteration73*.py -text -whitespace
+results/iteration73*/** -text -whitespace
+results/iteration73*.json -text -whitespace
+src/gbslab/native_philox_click.py -text -whitespace
+src/gbslab/native_polynomial_pnr.py -text -whitespace
+tests/test_native_philox_click.py -text -whitespace
+tests/test_native_polynomial_pnr.py -text -whitespace

@@ -256,3 +256,49 @@ python experiments/iteration71_tests.py --output results/my_branch_tests
 The holdout, comparison and tests deliberately reference the published frozen binaries and inputs. The first two drivers build fresh DLLs at their requested outputs and record compiler commands, sources and hashes. `iteration71_make_pnr_*.py` files document the one-time v1-to-v2 construction; they refuse to overwrite the existing source and are not required to rebuild it.
 
 See [iteration71 evidence](../RESEARCH_REPORT_ITERATION71.md), [mathematical scope](../research/iteration71_methods.md), and [next steps](../research/iteration72_plan.md). The native timing advantage over the tested generic Frugal build is not a large-system equal-error claim.
+
+## Iteration73 analytic PNR and device Philox clicks
+
+The computation runs in C++/CUDA. Python only validates inputs, calls the native libraries and organizes experiments. `gaussian_pnr_polynomial73_v1.cpp` represents photon subtraction by polynomial factors and removes the finite-tap approximation. `retained=0..3` compresses exact first/second moments after `retained+1` jumps. Compression still approximates the state. There is no photon-count cutoff or silent rejection of long trajectories.
+
+**Experimental numerical boundary:** for an undisplaced pure squeezed one-mode input with `X=diag(-0.25,0.5)`, retained depths 1/2/3 fail explicitly when a theoretically zero vacuum probability rounds negative. Retained depth 0 completes but loses parity. This interface does not yet correctly support that case. The API raises `ArithmeticError` and does not return a partial batch; the original evidence is preserved in iteration73 parity results.
+
+```python
+from gbslab.native_polynomial_pnr import NativePolynomialPNRSampler
+from gbslab.native_philox_click import NativePhiloxClickSampler
+
+# V, x, noise and gcc_runtime use the grouped quadrature convention above.
+# cuda_runtime is the CUDA bin directory. Archived binaries target Windows;
+# the CUDA binary targets sm_120 and needs compatible hardware/runtime.
+with NativePolynomialPNRSampler(
+    V, x, "results/iteration73_polynomial_pilot_v2/polynomial.dll",
+    noise_variance=noise, retained=3, workers=16,
+    runtime_dirs=[gcc_runtime],
+) as sampler:
+    counts = sampler.sample(1024, 1234)["counts"]
+    clicks_from_counts = counts > 0
+
+with NativePhiloxClickSampler(
+    V, x, "results/iteration72_cuda_pilot_v1/cpu.dll",
+    gpu_library="results/iteration73_philox_pilot_v1/philox.dll",
+    noise_variance=noise, branch_budget=4,
+    runtime_dirs=[gcc_runtime, cuda_runtime],
+) as sampler:
+    first = sampler.sample(512, 1234, row_offset=0)["clicks"]
+    following = sampler.sample(512, 1234, row_offset=512)["clicks"]
+```
+
+Philox stream subsequences are keyed by `row_offset+row`; splitting a batch preserves each record. A repeated seed with offset zero repeats the same stream. The old CPU random engine uses a different seed mapping. `export_random=True` returns realized means and uniform draws for CPU replay and includes that extra transfer cost; production benchmarks disable it. The bounded-branch physical approximation is unchanged from iteration72. Workspace checks and explicit failure remain in force.
+
+Build drivers require GCC15, Eigen3.4, and (for GPU) CUDA13.5 plus MSVC Build Tools at the locations recorded in the driver. Native sources include frozen earlier components; archived inputs and binaries used by subsequent validation must also be available. First-executed outputs are immutable: always choose fresh output directories.
+
+```powershell
+python experiments/iteration73_polynomial_pilot_v2.py --output results/my_polynomial_build
+python experiments/iteration73_philox_pilot_v1.py --output results/my_philox_build
+python experiments/iteration73_frugal_cpu_build_v5.py --output results/my_frugal_avx2_build
+python experiments/verify_iteration73.py --output results/my_iteration73_verification
+```
+
+Build outputs above do not silently replace archived binaries. The verifier deliberately checks and replays the published iteration73 evidence. The holdout, cost and test drivers likewise name frozen dependency paths; those references are part of the experiment specification. The standalone Frugal build requires the documented identical-body inline ABI patch, and its separate C ABI timing library is built by `iteration73_frugal_cpu_library_v1.py` against the archived v5 include copy.
+
+See [iteration73 results](../RESEARCH_REPORT_ITERATION73.md), [mathematics and compatibility changes](../research/iteration73_methods.md), and [iteration74 plan](../research/iteration74_plan.md). Small-system Frugal advantages, the pure-state failure and large-system quality limitations are part of the published results.

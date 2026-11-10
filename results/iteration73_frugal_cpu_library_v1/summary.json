@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "precision": 32,
+      "modes": 4,
+      "cutoff": 4,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.000887,
+        2.4e-05,
+        0.000354,
+        0.000154,
+        0.0,
+        32.0,
+        8.0
+      ]
+    },
+    {
+      "precision": 32,
+      "modes": 144,
+      "cutoff": 2,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.008531,
+        2e-05,
+        0.002945,
+        2.761514,
+        2e-06,
+        32.0,
+        8.0
+      ]
+    },
+    {
+      "precision": 32,
+      "modes": 144,
+      "cutoff": 3,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.295584,
+        1.9e-05,
+        0.116931,
+        2.585602,
+        2e-06,
+        32.0,
+        8.0
+      ]
+    },
+    {
+      "precision": 64,
+      "modes": 4,
+      "cutoff": 4,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.000337,
+        2.7e-05,
+        0.000279,
+        0.000217,
+        0.0,
+        64.0,
+        4.0
+      ]
+    },
+    {
+      "precision": 64,
+      "modes": 144,
+      "cutoff": 2,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.008628,
+        2.2e-05,
+        0.002436,
+        0.288244,
+        1e-06,
+        64.0,
+        4.0
+      ]
+    },
+    {
+      "precision": 64,
+      "modes": 144,
+      "cutoff": 3,
+      "returncode": 0,
+      "error": "",
+      "times": [
+        0.311291,
+        9e-06,
+        0.182508,
+        0.289166,
+        1e-06,
+        64.0,
+        4.0
+      ]
+    }
+  ],
+  "binaries": {
+    "frugal_cpu_fp32.dll": "a9ff3ceaba440f11b9b13881cdb3d799109199e1ae57c7cf657f60b38764b539",
+    "frugal_cpu_fp64.dll": "56c67097cf4203fd67543dcd3553fbdcb51e17b3f844d7e3273142441a3ec203"
+  }
+}

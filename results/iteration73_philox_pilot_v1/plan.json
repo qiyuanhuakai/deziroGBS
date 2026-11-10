@@ -1,0 +1,32 @@
+{
+  "source_hashes": {
+    "experiments/iteration73_philox_pilot_v1.py": "b8a1a880a9dba8c6011ac8b9c1fce0a2d0aea3f2c9cb1fc1ae2719e713de9291",
+    "native/gaussian_click_philox73_v1.cu": "7b8b24a6ef08941bcab8dc010792677ac1ba86941d4b76d8a570993ac0dd119a",
+    "native/gaussian_click_cuda72_v1.cu": "7f56bcf52e0d3b401f2433b271d76b40647ca4e05bc95fb325168b9db2a2b29f",
+    "src/gbslab/native_philox_click.py": "22a343b76836febf93f2e515e6a84b48b2183a4f93c399bbec466cdb378e8074",
+    "src/gbslab/native_cuda_click_branches.py": "0bf261294063fdf2a514a743c00d7ea65c944ac537209d1c668dcba8aa986208"
+  },
+  "cpu_library_sha256": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+  "scope": "Build CUDA Philox; analytic thermal tests and CPU trajectory replay.",
+  "rng": "Philox4x32_10; curand_normal2_double and 1-curand_uniform2_double; subsequence is row_offset+row; same approximation, different seed mapping from iteration72.",
+  "thermal_samples": 200000,
+  "thermal_variance": 0.4,
+  "thermal_tv_limit": 0.005,
+  "replay_rows": 4096,
+  "replay_cases": [
+    3,
+    4,
+    5
+  ],
+  "replay_budgets": [
+    1,
+    4,
+    8
+  ],
+  "seeds": [
+    733001,
+    733003,
+    733004,
+    733005
+  ]
+}

@@ -1,0 +1,20 @@
+--- official/cpu_sampler.hpp
++++ build/cpu_sampler.hpp
+@@ -41,7 +41,7 @@
+         return _sum;
+     }
+ 
+-    NaiveSum<T>& operator+=(T value);
++    __attribute__((always_inline)) inline NaiveSum<T>& operator+=(T value) { _sum += value; return *this; }
+ 
+ private:
+     T _sum{};
+@@ -86,7 +86,7 @@
+         return _sum;
+     }
+ 
+-    KahanSum<T>& operator+=(T value);
++    __attribute__((always_inline)) inline KahanSum<T>& operator+=(T value) { const auto y=value-_compensation; const auto t=_sum+y; _compensation=(t-_sum)-y; _sum=t; return *this; }
+ 
+ private:
+     T _sum{};

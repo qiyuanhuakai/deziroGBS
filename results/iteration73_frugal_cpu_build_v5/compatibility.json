@@ -1,0 +1,4 @@
+{
+  "header_sha256": "f19ac9d55fee1d778a18fd9c0b9c91efb675bd2814e6673f6db74e69a292bc9a",
+  "change": "Move identical naive/Kahan addition bodies into header and force inline. Avoid GCC Windows AVX stack temporary misalignment. Omit now-redundant explicit specialization .cpp. Arithmetic algorithm unchanged; patched build clearly distinguished."
+}

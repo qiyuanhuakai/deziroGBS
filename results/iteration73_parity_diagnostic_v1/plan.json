@@ -1,0 +1,36 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_polynomial73_diagnostic_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration73_parity_diagnostic_v1\\diagnostic.dll"
+  ],
+  "source_sha256": "76c2a409a2b61e1906efe318704b11683141a93ff7c0a850a479f6ab461c7d28",
+  "driver_sha256": "e14bcc4df13c5397c999a19c0e04669a86cd5f4889850808ec4048114a4fc055",
+  "seed": 736001,
+  "count": 100000,
+  "workers": 1,
+  "x": [
+    [
+      -0.25,
+      0
+    ],
+    [
+      0,
+      0.5
+    ]
+  ],
+  "mean": [
+    0,
+    0
+  ],
+  "scope": "Same arithmetic as v1; adds diagnostic exception text only. Every failed batch is retained as failure, no partial records accepted."
+}

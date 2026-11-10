@@ -1,0 +1,31 @@
+{
+  "source_sha256": "90f521ed8df9e46c02151aa7953624217f2ca8a6b67eb2dcd0b14bfd7e9c5b94",
+  "sources": {
+    "src\\gbslab\\native_polynomial_pnr.py": "bd5bceafcbe98714bbad3408820cec6d389f278089e6e5cf67522b6658182175",
+    "src\\gbslab\\native_pnr_newton.py": "0da21ec8d0238deceaee2e4f11e322d314603a978070fa17b2aaf76e174d915c",
+    "native\\gaussian_pnr_polynomial73_v1.cpp": "23f6064a3b710791d969266fea0ea7662e8a5dbe0986464c6f48d047f35beef7"
+  },
+  "binary_hashes": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration73_polynomial_pilot_v2\\polynomial.dll": "3e9bee45ebed5a0798f1e1da4323a1fbdc086abade74cf83d14e8f9ae1c71038",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_newton_pilot_v1\\newton.dll": "f959ce175af3bc2139ffdbc68cd671ab61f98f15617893c51e63685491e87cad"
+  },
+  "cases": [
+    3,
+    4
+  ],
+  "methods": [
+    "poly0",
+    "poly1",
+    "poly3",
+    "finite"
+  ],
+  "samples_per_method": 2000000,
+  "batch": 100000,
+  "radius": 0.0013581015157406195,
+  "total_failure_probability": 0.01,
+  "one_sided_bounds": 16,
+  "seed_base": 32932572275146752,
+  "seed_stride": 1099511627776,
+  "scope": "Independent 2M-record cohorts for four PNR models at two fixed inputs.\n\nPredeclared eight laws, sixteen one-sided bounds with total failure allocation\n0.01, ideal iid interpretation. Fixed-event lower bounds use earlier pilots;\nupper bounds use empirical full-simplex TV plus radius plus target tail.\nNeither arithmetic/finite-PRNG error nor arbitrary inputs are certified.\n",
+  "threads": 16
+}
