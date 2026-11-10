@@ -1,0 +1,85 @@
+{
+  "science_commit": "b3d3edbd10674cb0cdce3e19773050fe8d5a7b2c",
+  "science_tree": "3fb27168f657de11ba6903d4ce9c5399e9d2d3fe",
+  "parent": "77fef897263782605eb6766ec120f7d5163dd7a0",
+  "first_science_commit": "77fef897263782605eb6766ec120f7d5163dd7a0",
+  "previous_main": "47774d5af47159e1426e63979571bea0254e1233",
+  "branch": "research/iteration69-gaussian-reset",
+  "remote_commit_api": {
+    "sha": "b3d3edbd10674cb0cdce3e19773050fe8d5a7b2c",
+    "node_id": "C_kwDOViTfLtoAKGIzZDNlZGJkMTA2NzRjYjBjZGNlM2UxOTc3MzA1MGZlOGQ1YTdiMmM",
+    "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/b3d3edbd10674cb0cdce3e19773050fe8d5a7b2c",
+    "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/b3d3edbd10674cb0cdce3e19773050fe8d5a7b2c",
+    "author": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T06:13:59Z"
+    },
+    "committer": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T06:13:59Z"
+    },
+    "tree": {
+      "sha": "3fb27168f657de11ba6903d4ce9c5399e9d2d3fe",
+      "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/trees/3fb27168f657de11ba6903d4ce9c5399e9d2d3fe"
+    },
+    "message": "Recover replay summary paths and verify final iteration 69 package",
+    "parents": [
+      {
+        "sha": "77fef897263782605eb6766ec120f7d5163dd7a0",
+        "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/77fef897263782605eb6766ec120f7d5163dd7a0",
+        "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/77fef897263782605eb6766ec120f7d5163dd7a0"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "remote_first_commit_api": {
+    "sha": "77fef897263782605eb6766ec120f7d5163dd7a0",
+    "node_id": "C_kwDOViTfLtoAKDc3ZmVmODk3MjYzNzgyNjA1ZWI2NzY2ZWMxMjBmN2Q1MTYzZGQ3YTA",
+    "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/77fef897263782605eb6766ec120f7d5163dd7a0",
+    "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/77fef897263782605eb6766ec120f7d5163dd7a0",
+    "author": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T06:06:23Z"
+    },
+    "committer": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T06:06:23Z"
+    },
+    "tree": {
+      "sha": "3516fcf8f9662c23546b3db85ae7878c125b7fa1",
+      "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/trees/3516fcf8f9662c23546b3db85ae7878c125b7fa1"
+    },
+    "message": "Add native Gaussian reset sampling and detector proposals\n\nImplement centered and displaced PNR resets in C++, with diagonal and coherent-reference rejection. Record same-input Frugal quality comparisons, count-tail failures, and repeated OpenBLAS baselines up to 8176 outputs.\n\nPreserve all exploratory failures and verify the public build against 400000 archived samples. Full suite: 812 run, 783 passed, zero failures/errors; historical skips retained. No universal or quantum-advantage claim.",
+    "parents": [
+      {
+        "sha": "47774d5af47159e1426e63979571bea0254e1233",
+        "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/47774d5af47159e1426e63979571bea0254e1233",
+        "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/47774d5af47159e1426e63979571bea0254e1233"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "atomic_push": [
+    "",
+    "To https://github.com/qiyuanhuakai/deziroGBS.git\n   47774d5..b3d3edb  HEAD -> main\n * [new branch]      HEAD -> research/iteration69-gaussian-reset"
+  ],
+  "manifest_sha256": "345f15dd4d8751a77a22a8d1545af5a9fc2fe39cbaac4ff6256e762095ce0789",
+  "tests_sha256": "4613fd947d52ddb85ea7863763c899a2254554751796d637cdbb4318fab532b2",
+  "recorded_utc": "2026-11-10T06:14:33.440375+00:00"
+}
