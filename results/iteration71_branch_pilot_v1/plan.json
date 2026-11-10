@@ -1,0 +1,43 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_click_branches_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration71_branch_pilot_v1\\branches.dll"
+  ],
+  "source_hashes": {
+    "experiments/iteration71_branch_pilot_v1.py": "85b16e87db0b41ff0dd5bd4d2156529b19b2770876a5ba5185a78cf0e5752c53",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "small_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "large_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "large_samples": 128,
+  "repetitions": 3,
+  "seed": 711001,
+  "scope": "Bounded signed Gaussian branches, no probability clipping. Budget 1 recovers previous closure, sufficient budget equals known exact threshold identity in real arithmetic. Full induced laws checked against independent 80-digit physical-space inclusion-exclusion. Large-input timings compare different approximation errors. No universal quality or novel exact-identity claim."
+}

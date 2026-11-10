@@ -133,3 +133,47 @@ python experiments/iteration70_benchmark.py --output results/my_dual_benchmark
 The benchmark deliberately uses the archived generic-CPU PNR and official Frugal binaries and rebuilds direct-click with the same main compiler settings. This reproduces the reported comparison, rather than silently replacing its baselines. Source snapshots, build commands and binary hashes are retained. The regular sampler build above uses `-march=native`; its replay is verified separately.
 
 The PNR reference requires GCC libquadmath. Large quality extensions are explicit commands in `iteration70_quality_extension.py` and `iteration70_quality_extension_v2.py`; they generate 20 million and 80 million records respectively and preserve every record in batches. See [the report](../RESEARCH_REPORT_ITERATION70.md), [method and numerical scope](../research/iteration70_methods.md), and [next experiments](../research/iteration71_plan.md).
+
+## Iteration71 signed branches: distinct click and PNR APIs
+
+`gaussian_click_branches_v1.cpp` keeps bounded signed Gaussian threshold branches and compresses excess branches to their first two moments. Budget one replays iteration70. Sufficient uncompressed branches reproduce the known exact threshold identity in real arithmetic, at exponential worst-case cost. A transient update may allocate twice the branch budget.
+
+`gaussian_pnr_branches_v2.cpp` keeps signed states between PNR waiting times. Finite-tap threshold conditioning approximates photon subtraction; finite tap strength and moment compression both cause bias. `condition_trigger` is checked before constructing a jump expansion, not a global cancellation bound. Version1 is retained as failed research evidence and is not the recommended PNR interface. Neither version applies a photon-count cutoff; numerical or storage failure aborts the batch.
+
+```python
+from gbslab.native_click_branches import NativeBranchClickSampler
+from gbslab.native_pnr_branches import NativeBranchPNRSampler
+
+# V, x, noise and gcc_runtime follow the iteration70 example above.
+with NativeBranchClickSampler(
+    V, x, "results/iteration71_branch_pilot_v1/branches.dll",
+    noise_variance=noise, workers=16, branch_budget=4,
+    runtime_dirs=[gcc_runtime]
+) as sampler:
+    bits = sampler.sample(1024, 1234)["clicks"]
+
+with NativeBranchPNRSampler(
+    V, x, "results/iteration71_pnr_branch_pilot_v2/pnr_branches.dll",
+    noise_variance=noise, workers=16, branch_budget=2,
+    tap_strength=0.001, condition_trigger=1e6,
+    runtime_dirs=[gcc_runtime]
+) as sampler:
+    counts = sampler.sample(1024, 1234)["counts"]
+    clicks_from_counts = counts > 0
+```
+
+The click API also provides `prefix_probability(bits, mean=realized_mean)`. With input displacement noise this evaluates the explicit fixed-mean conditional model, not its noise-averaged law; omitting the realized mean is rejected. All inputs use the earlier grouped quadrature conventions.
+
+The frozen experiment drivers build with local GCC15 and Eigen3.4, generic CPU instructions, `-O3 -std=c++20 -shared -ffp-contract=off -fno-fast-math -DEIGEN_DONT_PARALLELIZE`. Dependencies include the preceding iteration's source components and archived inputs. No compilation happens on import. Fresh output directories are required:
+
+```powershell
+python experiments/iteration71_branch_pilot_v1.py --output results/my_click_branches
+python experiments/iteration71_pnr_branch_pilot_v2.py --output results/my_pnr_branches
+python experiments/iteration71_pnr_holdout.py --output results/my_pnr_confirmation
+python experiments/iteration71_frugal_comparison.py --output results/my_branch_comparison
+python experiments/iteration71_tests.py --output results/my_branch_tests
+```
+
+The holdout, comparison and tests deliberately reference the published frozen binaries and inputs. The first two drivers build fresh DLLs at their requested outputs and record compiler commands, sources and hashes. `iteration71_make_pnr_*.py` files document the one-time v1-to-v2 construction; they refuse to overwrite the existing source and are not required to rebuild it.
+
+See [iteration71 evidence](../RESEARCH_REPORT_ITERATION71.md), [mathematical scope](../research/iteration71_methods.md), and [next steps](../research/iteration72_plan.md). The native timing advantage over the tested generic Frugal build is not a large-system equal-error claim.

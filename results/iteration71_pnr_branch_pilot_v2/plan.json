@@ -1,0 +1,41 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_branches_v2.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration71_pnr_branch_pilot_v2\\pnr_branches.dll"
+  ],
+  "source_hashes": {
+    "experiments/iteration71_pnr_branch_pilot_v2.py": "fdf364df49091e866b1d388ddcc173b9cccfea6f30d7b2109df85c87e432649b",
+    "native/gaussian_pnr_branches_v2.cpp": "561ec58571fdb9e66da791c1e5e0e9cee528c60c91e4a672e1ffffe64133df59",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "samples": 100000,
+  "cases": [
+    3,
+    4
+  ],
+  "budgets": [
+    1,
+    2,
+    4
+  ],
+  "epsilon": [
+    0.01,
+    0.001
+  ],
+  "condition_limit": 1000000.0,
+  "workers": 16,
+  "seed": 713001,
+  "scope": "Condition-aware analytic moment compression at absolute signed weight limit 1e6. Finite-tap Gaussian difference approximates photon subtraction; signed survival flow and rates. Both finite epsilon bias and branch compression bias remain. No count truncation or retry after failed samples. Parameter pilot only, no finite-sample quality certificate. Independent dense optical beam-splitter conditional-moment checks."
+}

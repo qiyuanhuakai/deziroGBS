@@ -1,0 +1,21 @@
+{
+  "source_sha256": "3e56392d4198fc7de4f66fc9df410a401598f34618a2884813b5eb412b88af39",
+  "library_sha256": "56ea61d75851a7bf3447330fde3fc727a97cf1c605c5d933f5b5ec6519a22ea1",
+  "pilot_manifest_sha256": "1470d91d3be1c2ce014730682728547ceff4f014e307255f6c105639d945ed86",
+  "cases": [
+    3,
+    4
+  ],
+  "methods": [
+    "B2_eps0.001",
+    "iteration70_reset"
+  ],
+  "samples_per_method": 2000000,
+  "batch_size": 100000,
+  "seed_base": 32651097298436096,
+  "stride": 1099511627776,
+  "condition_trigger": 1000000.0,
+  "nominal_joint_failure_probability": 0.01,
+  "radius": 0.0012927308041185458,
+  "scope": "Four fixed distributions, 8 nominal one-sided bounds under ideal IID and exact numerical target. Lower event fixed from prior pilot; upper empirical TV plus McDiarmid radius plus target tail. No count truncation, failures abort. Numerical cancellation remains a risk; condition trigger is at jump construction, not a global bound after survival flow."
+}

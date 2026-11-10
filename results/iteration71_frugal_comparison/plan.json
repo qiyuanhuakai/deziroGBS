@@ -1,0 +1,20 @@
+{
+  "source_sha256": "ec0c86b8a77ca0b4fa85b4bcbc429cea5007b50b100e4bb83024ae1beaa346cd",
+  "wrapper_sha256": "64afe4353d98fc2cf7e62f0eb6281c13dd8a47a84639d7d26b1f8089e7ff0190",
+  "dll_sha256": "bb0a4375748eaf89bd53f61b3e79b2f446d4840a157a4446756feb70ea31bb63",
+  "small_frugal_sha256": "c3d1095df90feae61523d7beab6dc8c3f66bfeabfb6a6d21cec93698dd00ee39",
+  "large_frugal_sha256": "69ef2d6b8cc6517dcfe8cec66a195d01c1ffe24d11172b02a89ce414d8263634",
+  "small_cases": [
+    3,
+    4
+  ],
+  "small_samples": {
+    "3": 200000,
+    "4": 100000
+  },
+  "large_samples": 512,
+  "repetitions": 3,
+  "large_workers": 16,
+  "small_workers": 1,
+  "scope": "Generic x86-64 CPU builds, identical physical inputs per panel, preparation and sampling both included. Four-mode B8 and K4 both numerically reproduce exact target; eight-mode Frugal truncations and branch budgets differ in error. Large full TV is not established. Native instruction-set Frugal failure in iteration70 means these are not strongest CPU/GPU baselines."
+}
