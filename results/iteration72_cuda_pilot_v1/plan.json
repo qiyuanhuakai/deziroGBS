@@ -1,0 +1,28 @@
+{
+  "source_hashes": {
+    "experiments/iteration72_cuda_pilot_v1.py": "a925bfabfa7ea2341c95e4c728f942217c6e4a3d13f6362f0918e9b097701e7d",
+    "native/gaussian_click_replay72.cpp": "e861f9f95502a2602e56dd87370513982b1e659e36e5c035495ae8a98e388658",
+    "native/gaussian_click_cuda72_v1.cu": "7f56bcf52e0d3b401f2433b271d76b40647ca4e05bc95fb325168b9db2a2b29f",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "arithmetic": "FP64 GPU, FP64 CPU covariance with extended-precision probability accumulation; no clipping, no fast math, no FMA contraction",
+  "scope": "Identical explicit GCC random inputs, common bounded-branch real-arithmetic model, different floating-point execution. Full small induced-law checks and record/probability replay. Large input has no full-TV certificate.",
+  "small_cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "large_samples": 512,
+  "large_budgets": [
+    1,
+    4,
+    8
+  ],
+  "large_repetitions": 3,
+  "large_seed_base": 715901
+}

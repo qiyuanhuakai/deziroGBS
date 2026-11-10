@@ -1,0 +1,365 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "returncode": 0,
+      "wall_seconds": 0.030647599982330576,
+      "sampling_seconds": 0.028936400020029396,
+      "cuda_timings": {
+        "allocation_seconds": 0.0005666,
+        "host_to_device_seconds": 0.0011372,
+        "kernel_seconds": 0.003632,
+        "device_to_host_seconds": 0.000278,
+        "workspace_bytes": 56689024.0,
+        "failed_rows": 0.0
+      },
+      "case": 3,
+      "rep": 0,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723301,
+      "samples": 16384,
+      "reference_induced_tv": 4.851804721872632e-16
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.004438600008143112,
+      "timings": [
+        0.000134,
+        3.65e-05,
+        0.0022053,
+        0.0019997,
+        1.22e-05,
+        64.0
+      ],
+      "case": 3,
+      "rep": 0,
+      "method": "frugal",
+      "budget": 4,
+      "seed": 723301,
+      "samples": 16384,
+      "reference_induced_tv": 1.548565962961046e-15
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.0037859999865759164,
+      "timings": [
+        0.0001681,
+        3.88e-05,
+        0.0017646,
+        0.0017589,
+        1.19e-05,
+        64.0
+      ],
+      "case": 3,
+      "rep": 1,
+      "method": "frugal",
+      "budget": 4,
+      "seed": 723302,
+      "samples": 16384,
+      "reference_induced_tv": 1.548565962961046e-15
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.025153900001896545,
+      "sampling_seconds": 0.020543199992971495,
+      "cuda_timings": {
+        "allocation_seconds": 0.0003334,
+        "host_to_device_seconds": 0.0013177,
+        "kernel_seconds": 0.0036397,
+        "device_to_host_seconds": 0.0002377,
+        "workspace_bytes": 56689024.0,
+        "failed_rows": 0.0
+      },
+      "case": 3,
+      "rep": 1,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723302,
+      "samples": 16384,
+      "reference_induced_tv": 4.851804721872632e-16
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.022455500002251938,
+      "sampling_seconds": 0.020582900004228577,
+      "cuda_timings": {
+        "allocation_seconds": 0.0006455,
+        "host_to_device_seconds": 0.0010922,
+        "kernel_seconds": 0.0036054,
+        "device_to_host_seconds": 0.0002855,
+        "workspace_bytes": 56689024.0,
+        "failed_rows": 0.0
+      },
+      "case": 3,
+      "rep": 2,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723303,
+      "samples": 16384,
+      "reference_induced_tv": 4.851804721872632e-16
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.0052937000000383705,
+      "timings": [
+        0.0002444,
+        3.5e-05,
+        0.0025435,
+        0.0023943,
+        1.34e-05,
+        64.0
+      ],
+      "case": 3,
+      "rep": 2,
+      "method": "frugal",
+      "budget": 4,
+      "seed": 723303,
+      "samples": 16384,
+      "reference_induced_tv": 1.548565962961046e-15
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.033495599986054,
+      "sampling_seconds": 0.03131690001464449,
+      "cuda_timings": {
+        "allocation_seconds": 0.0004308,
+        "host_to_device_seconds": 0.0021731,
+        "kernel_seconds": 0.0121977,
+        "device_to_host_seconds": 0.0006187,
+        "workspace_bytes": 110494752.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 0,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723401,
+      "samples": 16384,
+      "reference_induced_tv": 0.005496896889252534
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.04529760000878014,
+      "sampling_seconds": 0.04303450000588782,
+      "cuda_timings": {
+        "allocation_seconds": 0.000977,
+        "host_to_device_seconds": 0.0059989,
+        "kernel_seconds": 0.0137554,
+        "device_to_host_seconds": 0.0005628,
+        "workspace_bytes": 431359008.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 0,
+      "method": "branch",
+      "budget": 32,
+      "seed": 723401,
+      "samples": 16384,
+      "reference_induced_tv": 0.00013347224410347638
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.08048350000171922,
+      "sampling_seconds": 0.07684880000306293,
+      "cuda_timings": {
+        "allocation_seconds": 0.0033179,
+        "host_to_device_seconds": 0.0213243,
+        "kernel_seconds": 0.0141531,
+        "device_to_host_seconds": 0.0006254,
+        "workspace_bytes": 1714816032.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 0,
+      "method": "branch",
+      "budget": 128,
+      "seed": 723401,
+      "samples": 16384,
+      "reference_induced_tv": 1.1431372002961536e-14
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.007249100017361343,
+      "timings": [
+        0.0003912,
+        7.46e-05,
+        0.003444,
+        0.0032403,
+        1.94e-05,
+        64.0
+      ],
+      "case": 4,
+      "rep": 0,
+      "method": "frugal",
+      "budget": 5,
+      "seed": 723401,
+      "samples": 16384,
+      "reference_induced_tv": 0.008535972704527498
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.04842000000644475,
+      "sampling_seconds": 0.04443150002043694,
+      "cuda_timings": {
+        "allocation_seconds": 0.0007802,
+        "host_to_device_seconds": 0.0062137,
+        "kernel_seconds": 0.0138541,
+        "device_to_host_seconds": 0.0007194,
+        "workspace_bytes": 431359008.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 1,
+      "method": "branch",
+      "budget": 32,
+      "seed": 723402,
+      "samples": 16384,
+      "reference_induced_tv": 0.00013347224410347638
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.07262329998775385,
+      "sampling_seconds": 0.06947980000404641,
+      "cuda_timings": {
+        "allocation_seconds": 0.0035744,
+        "host_to_device_seconds": 0.020892,
+        "kernel_seconds": 0.0141565,
+        "device_to_host_seconds": 0.0005127,
+        "workspace_bytes": 1714816032.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 1,
+      "method": "branch",
+      "budget": 128,
+      "seed": 723402,
+      "samples": 16384,
+      "reference_induced_tv": 1.1431372002961536e-14
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.006821799994213507,
+      "timings": [
+        0.0002974,
+        3.32e-05,
+        0.003172,
+        0.0032102,
+        3.37e-05,
+        64.0
+      ],
+      "case": 4,
+      "rep": 1,
+      "method": "frugal",
+      "budget": 5,
+      "seed": 723402,
+      "samples": 16384,
+      "reference_induced_tv": 0.008535972704527498
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.04335650001303293,
+      "sampling_seconds": 0.03902239998569712,
+      "cuda_timings": {
+        "allocation_seconds": 0.0004613,
+        "host_to_device_seconds": 0.0021532,
+        "kernel_seconds": 0.01219,
+        "device_to_host_seconds": 0.0004722,
+        "workspace_bytes": 110494752.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 1,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723402,
+      "samples": 16384,
+      "reference_induced_tv": 0.005496896889252534
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.07785520001198165,
+      "sampling_seconds": 0.07342289999360219,
+      "cuda_timings": {
+        "allocation_seconds": 0.004657,
+        "host_to_device_seconds": 0.0211953,
+        "kernel_seconds": 0.0142795,
+        "device_to_host_seconds": 0.0004959,
+        "workspace_bytes": 1714816032.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 2,
+      "method": "branch",
+      "budget": 128,
+      "seed": 723403,
+      "samples": 16384,
+      "reference_induced_tv": 1.1431372002961536e-14
+    },
+    {
+      "returncode": 0,
+      "error": "",
+      "wall_seconds": 0.006102200015448034,
+      "timings": [
+        0.0003169,
+        3.35e-05,
+        0.0021835,
+        0.003492,
+        1.88e-05,
+        64.0
+      ],
+      "case": 4,
+      "rep": 2,
+      "method": "frugal",
+      "budget": 5,
+      "seed": 723403,
+      "samples": 16384,
+      "reference_induced_tv": 0.008535972704527498
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.03868280001915991,
+      "sampling_seconds": 0.0356708999897819,
+      "cuda_timings": {
+        "allocation_seconds": 0.0004132,
+        "host_to_device_seconds": 0.0022214,
+        "kernel_seconds": 0.0122473,
+        "device_to_host_seconds": 0.0004944,
+        "workspace_bytes": 110494752.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 2,
+      "method": "branch",
+      "budget": 8,
+      "seed": 723403,
+      "samples": 16384,
+      "reference_induced_tv": 0.005496896889252534
+    },
+    {
+      "returncode": 0,
+      "wall_seconds": 0.04183999999077059,
+      "sampling_seconds": 0.039450600015698,
+      "cuda_timings": {
+        "allocation_seconds": 0.0006606,
+        "host_to_device_seconds": 0.0062493,
+        "kernel_seconds": 0.0138093,
+        "device_to_host_seconds": 0.0005583,
+        "workspace_bytes": 431359008.0,
+        "failed_rows": 0.0
+      },
+      "case": 4,
+      "rep": 2,
+      "method": "branch",
+      "budget": 32,
+      "seed": 723403,
+      "samples": 16384,
+      "reference_induced_tv": 0.00013347224410347638
+    }
+  ]
+}

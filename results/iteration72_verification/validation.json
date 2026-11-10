@@ -1,0 +1,473 @@
+{
+  "passed": true,
+  "checks": 1871,
+  "raw_pnr_records_recomputed": 4000000,
+  "public_records_replayed": 4384,
+  "full_suite": {
+    "passed": true,
+    "tests_run": 851,
+    "successes": 822,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true
+  },
+  "pnr": [
+    {
+      "case": 3,
+      "medians": {
+        "newton": 0.14555670000845566,
+        "bisection": 0.46230799998738803
+      },
+      "speedup": 3.176136859110791,
+      "photons": 4623259,
+      "flow_calls": 6623259,
+      "iterations": 21339484,
+      "iterations_per_photon": 4.615679978127983,
+      "fallbacks": 0,
+      "maximum_survival_residual": 5.905720357191058e-12
+    },
+    {
+      "case": 4,
+      "medians": {
+        "newton": 0.18573659998946823,
+        "bisection": 0.622872300009476
+      },
+      "speedup": 3.353524830565406,
+      "photons": 6217274,
+      "flow_calls": 8217274,
+      "iterations": 27423341,
+      "iterations_per_photon": 4.410830373568866,
+      "fallbacks": 0,
+      "maximum_survival_residual": 5.8264504332328215e-12
+    }
+  ],
+  "small_click": [
+    {
+      "case": 0,
+      "budget": 1,
+      "target_tv": 0.0007487371767175302,
+      "cpu_gpu_tv": 1.8183764498476418e-16,
+      "maximum_conditional_delta": 2.636779683484747e-16
+    },
+    {
+      "case": 0,
+      "budget": 2,
+      "target_tv": 1.9239184108236662e-05,
+      "cpu_gpu_tv": 4.3538255818523566e-16,
+      "maximum_conditional_delta": 7.688294445529209e-15
+    },
+    {
+      "case": 0,
+      "budget": 4,
+      "target_tv": 2.4259852083308797e-07,
+      "cpu_gpu_tv": 5.564726942588159e-16,
+      "maximum_conditional_delta": 9.041378756791119e-14
+    },
+    {
+      "case": 0,
+      "budget": 8,
+      "target_tv": 5.615269398550823e-16,
+      "cpu_gpu_tv": 6.010918488213307e-16,
+      "maximum_conditional_delta": 4.641148576567389e-13
+    },
+    {
+      "case": 1,
+      "budget": 1,
+      "target_tv": 0.006083624363495206,
+      "cpu_gpu_tv": 8.142358315366138e-17,
+      "maximum_conditional_delta": 1.249000902703301e-16
+    },
+    {
+      "case": 1,
+      "budget": 2,
+      "target_tv": 0.0005773244553960357,
+      "cpu_gpu_tv": 3.2569433261464553e-16,
+      "maximum_conditional_delta": 3.219646771412954e-15
+    },
+    {
+      "case": 1,
+      "budget": 4,
+      "target_tv": 2.972693751905625e-06,
+      "cpu_gpu_tv": 5.577407025808556e-16,
+      "maximum_conditional_delta": 1.7263968032921184e-14
+    },
+    {
+      "case": 1,
+      "budget": 8,
+      "target_tv": 7.86697096355482e-16,
+      "cpu_gpu_tv": 7.44928207660478e-16,
+      "maximum_conditional_delta": 9.742207041085749e-14
+    },
+    {
+      "case": 2,
+      "budget": 1,
+      "target_tv": 0.03522867751858606,
+      "cpu_gpu_tv": 2.469812548921979e-16,
+      "maximum_conditional_delta": 3.3306690738754696e-16
+    },
+    {
+      "case": 2,
+      "budget": 2,
+      "target_tv": 0.0027308445178138674,
+      "cpu_gpu_tv": 4.891920202254596e-16,
+      "maximum_conditional_delta": 7.93809462606987e-15
+    },
+    {
+      "case": 2,
+      "budget": 4,
+      "target_tv": 0.00015312127221525358,
+      "cpu_gpu_tv": 7.407269242420966e-16,
+      "maximum_conditional_delta": 7.93809462606987e-15
+    },
+    {
+      "case": 2,
+      "budget": 8,
+      "target_tv": 8.406903645452601e-16,
+      "cpu_gpu_tv": 7.561225950913908e-16,
+      "maximum_conditional_delta": 7.93809462606987e-15
+    },
+    {
+      "case": 3,
+      "budget": 1,
+      "target_tv": 0.059139511343761914,
+      "cpu_gpu_tv": 1.1709383462843448e-16,
+      "maximum_conditional_delta": 1.1102230246251565e-16
+    },
+    {
+      "case": 3,
+      "budget": 2,
+      "target_tv": 0.0110408149277772,
+      "cpu_gpu_tv": 2.7733891572179203e-16,
+      "maximum_conditional_delta": 1.2212453270876722e-15
+    },
+    {
+      "case": 3,
+      "budget": 4,
+      "target_tv": 0.00041712187540665234,
+      "cpu_gpu_tv": 5.069729358542219e-16,
+      "maximum_conditional_delta": 1.5765166949677223e-14
+    },
+    {
+      "case": 3,
+      "budget": 8,
+      "target_tv": 4.851804721872632e-16,
+      "cpu_gpu_tv": 6.119237061508187e-16,
+      "maximum_conditional_delta": 1.5765166949677223e-14
+    },
+    {
+      "case": 4,
+      "budget": 1,
+      "target_tv": 0.09445835350064265,
+      "cpu_gpu_tv": 1.1791376252137664e-16,
+      "maximum_conditional_delta": 3.3306690738754696e-16
+    },
+    {
+      "case": 4,
+      "budget": 2,
+      "target_tv": 0.037949906592421034,
+      "cpu_gpu_tv": 6.269416003056374e-16,
+      "maximum_conditional_delta": 5.4539706084710815e-15
+    },
+    {
+      "case": 4,
+      "budget": 4,
+      "target_tv": 0.01803680322724903,
+      "cpu_gpu_tv": 2.351114433891445e-15,
+      "maximum_conditional_delta": 5.1736392947532295e-14
+    },
+    {
+      "case": 4,
+      "budget": 8,
+      "target_tv": 0.005496896889252534,
+      "cpu_gpu_tv": 5.1502212054539e-15,
+      "maximum_conditional_delta": 1.2362055823444962e-12
+    },
+    {
+      "case": 4,
+      "budget": 16,
+      "target_tv": 0.0012070490266852386,
+      "cpu_gpu_tv": 8.715723387692047e-15,
+      "maximum_conditional_delta": 1.319694353796308e-12
+    },
+    {
+      "case": 4,
+      "budget": 32,
+      "target_tv": 0.00013347224410347638,
+      "cpu_gpu_tv": 1.071149902988084e-14,
+      "maximum_conditional_delta": 1.319694353796308e-12
+    },
+    {
+      "case": 4,
+      "budget": 64,
+      "target_tv": 1.6397891754038426e-06,
+      "cpu_gpu_tv": 1.153978205581472e-14,
+      "maximum_conditional_delta": 2.2104540420286867e-12
+    },
+    {
+      "case": 4,
+      "budget": 128,
+      "target_tv": 1.1431372002961536e-14,
+      "cpu_gpu_tv": 1.1539771891419352e-14,
+      "maximum_conditional_delta": 2.2104540420286867e-12
+    },
+    {
+      "case": 5,
+      "budget": 1,
+      "target_tv": 0.12673727671033325,
+      "cpu_gpu_tv": 1.3658575681065044e-16,
+      "maximum_conditional_delta": 2.220446049250313e-16
+    },
+    {
+      "case": 5,
+      "budget": 2,
+      "target_tv": 0.07926558676260967,
+      "cpu_gpu_tv": 4.480939816246809e-16,
+      "maximum_conditional_delta": 4.135580766728708e-15
+    },
+    {
+      "case": 5,
+      "budget": 4,
+      "target_tv": 0.05029642467769475,
+      "cpu_gpu_tv": 1.2278589603398338e-15,
+      "maximum_conditional_delta": 2.4119595209981526e-14
+    },
+    {
+      "case": 5,
+      "budget": 8,
+      "target_tv": 0.026651067753506293,
+      "cpu_gpu_tv": 2.6038165493093984e-15,
+      "maximum_conditional_delta": 3.3806291099836017e-14
+    },
+    {
+      "case": 5,
+      "budget": 16,
+      "target_tv": 0.010037036158014743,
+      "cpu_gpu_tv": 4.74756207111994e-15,
+      "maximum_conditional_delta": 1.0202949596305189e-13
+    },
+    {
+      "case": 5,
+      "budget": 32,
+      "target_tv": 0.0020152785099996433,
+      "cpu_gpu_tv": 6.288403093602027e-15,
+      "maximum_conditional_delta": 1.371680546924381e-13
+    },
+    {
+      "case": 5,
+      "budget": 64,
+      "target_tv": 3.9437101996760364e-05,
+      "cpu_gpu_tv": 7.229951365242751e-15,
+      "maximum_conditional_delta": 1.371680546924381e-13
+    },
+    {
+      "case": 5,
+      "budget": 128,
+      "target_tv": 7.65936657631458e-15,
+      "cpu_gpu_tv": 7.339672625098284e-15,
+      "maximum_conditional_delta": 1.371680546924381e-13
+    }
+  ],
+  "gpu_medians": {
+    "branch_1": 0.12495620001573116,
+    "branch_4": 0.284143299999414,
+    "branch_8": 0.45575449999887496,
+    "frugal32_2": 27.57329060000484,
+    "frugal32_3": 29.00373490000493,
+    "frugal64_2": 40.094678100023884,
+    "frugal64_3": 41.886912400019355
+  },
+  "gpu_sampling_medians": {
+    "branch_1": 0.12048899999354035,
+    "branch_4": 0.2801315000106115,
+    "branch_8": 0.4518241999903694,
+    "frugal32_2": 27.5645971,
+    "frugal32_3": 28.7169737,
+    "frugal64_2": 40.0863747,
+    "frugal64_3": 41.5321374
+  },
+  "small_gpu_medians": {
+    "3_branch_8": {
+      "wall_seconds": 0.025153900001896545,
+      "reference_induced_tv": 4.851804721872632e-16
+    },
+    "3_frugal_4": {
+      "wall_seconds": 0.004438600008143112,
+      "reference_induced_tv": 1.548565962961046e-15
+    },
+    "4_branch_8": {
+      "wall_seconds": 0.03868280001915991,
+      "reference_induced_tv": 0.005496896889252534
+    },
+    "4_branch_32": {
+      "wall_seconds": 0.04529760000878014,
+      "reference_induced_tv": 0.00013347224410347638
+    },
+    "4_branch_128": {
+      "wall_seconds": 0.07785520001198165,
+      "reference_induced_tv": 1.1431372002961536e-14
+    },
+    "4_frugal_5": {
+      "wall_seconds": 0.006821799994213507,
+      "reference_induced_tv": 0.008535972704527498
+    }
+  },
+  "previous_frugal_cpu_medians": {
+    "frugal_cpu_2": 17.25851,
+    "frugal_cpu_3": 18.771718
+  },
+  "source_sha256": "564a2e4be0b2e190dcae461af862975d1434c7ba6c490aed65966c27f591ffe2"
+}

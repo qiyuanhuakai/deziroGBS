@@ -1,5 +1,11 @@
 # deziroGBS / GBS Classical Lab
 
+## 第72轮 PNR 求根与直接点击 GPU 双路线
+
+PNR 新求解器在两个固定四模输入上快 **3.176/3.354倍**，400万条光子数量记录逐条回放一致。直接点击完成 CUDA 实现：144输出、50输入、512样本，4分支中位 **0.284143秒**，比本机 Frugal GPU 单精度 K2/K3 快 **97.04/102.07倍**；四模全阶配置下 Frugal 仍快 **5.67倍**。大系统误差尚未获得同范围完整 TV 检验，速度比较不等于同质量胜出。
+
+新增10项接口测试全部通过，全库851运行、822通过、零失败；1,871项独立检查通过。Frugal 四次构建失败和主机兼容改动完整保留。详见[第72轮报告](RESEARCH_REPORT_ITERATION72.md)、[方法](research/iteration72_methods.md)、[使用说明](native/README.md)、[第73轮计划](research/iteration73_plan.md)。
+
 ## 第71轮 两条路线的非Gaussian分支修正
 
 直接点击保留有限带符号Gaussian分支，四模较难输入完整TV由5.914%降至4分支的0.0417%，8分支数值恢复完整目标。PNR新增弱抽取分支及稳定矩合并；独立200万记录复验中，较难输入完整TV名义99%区间从旧路线4.007%～4.965%降为0.550%～1.456%，耗时约增至6.59倍。另一个固定四模输入的新方案上界为0.9803%。有限抽取偏差、相消风险及v1失败全部保留。
@@ -33,7 +39,7 @@
 
 详见[第68轮报告](RESEARCH_REPORT_ITERATION68.md)、[构建与复现](native/README.md)、[前沿对照](research/iteration68_frontier_comparison.md)、[持续方向](research/iteration69_plan.md)。
 
-量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第71轮PNR与直接点击的非Gaussian分支修正，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
+量子项目的可复现经典 Gaussian Boson Sampling 研究。当前进展：**第72轮PNR求根加速与直接点击CUDA、Frugal同GPU对照，2026-11-10**。历轮代码、理论、原始成功和失败结果均按各自证据范围保留。
 
 ## 第67轮进展
 

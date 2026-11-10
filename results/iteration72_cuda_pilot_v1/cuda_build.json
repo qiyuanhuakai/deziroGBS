@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD,/utf-8",
+    "kernel.cu",
+    "-o",
+    "gpu.dll"
+  ],
+  "returncode": 0,
+  "stdout": "kernel.cu\n  \u59dd\uff45\u6e6a\u9352\u6d98\u7f13\u6434\ufffd gpu.lib \u935c\u5c7d\ufffd\u7845\u8584 gpu.exp\n",
+  "stderr": "",
+  "seconds": 4.3181697000109125,
+  "build_directory": "C:\\Users\\qiyuaner\\AppData\\Local\\Temp\\deziro_gbs_cuda72_6ffc9ae99a0e46dab492a38a7674f803",
+  "nvcc_sha256": "a5c45ec6c31454a622482fe6bb15d8bd48bb33f19ca1086dc83d59e20fca03b6"
+}

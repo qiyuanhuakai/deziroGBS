@@ -1,0 +1,45 @@
+{
+  "hashes": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\iteration72_frugal_gpu_comparison_v1.py": "f3797129c1d357392476427ebd7a01863651fe4a83d2bc3dc5c496d0cf3a7486",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\src\\gbslab\\native_cuda_click_branches.py": "0bf261294063fdf2a514a743c00d7ea65c944ac537209d1c668dcba8aa986208",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\gpu.dll": "52281d8bd77a0d932c9415f2447d2198ab8bac89a391bc680f680c091e266579",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5\\frugal_fp32.dll": "7d512ee813c768947ea7f3428e815046daab243937006bdd42fd2acaf8cc96ff",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5\\frugal_fp64.dll": "547b084166c2027200ffb3d47e40a7af285d8b4d9eb273fbbf8e5d5a2f69703f",
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\14.44.35112\\debug_nonredist\\x64\\Microsoft.VC143.OpenMP.LLVM\\libomp140.x86_64.dll": "9ab1cb787e52b2a36133899c01c1db1f876067d1471cd224ead85f40a8152b99"
+  },
+  "frugal_build": "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5",
+  "frugal_build_summary": {
+    "passed": true,
+    "rows": [
+      {
+        "precision": 1,
+        "returncode": 0
+      },
+      {
+        "precision": 2,
+        "returncode": 0
+      }
+    ],
+    "binaries": {
+      "frugal_fp32.dll": "7d512ee813c768947ea7f3428e815046daab243937006bdd42fd2acaf8cc96ff",
+      "frugal_fp64.dll": "547b084166c2027200ffb3d47e40a7af285d8b4d9eb273fbbf8e5d5a2f69703f"
+    }
+  },
+  "samples": 512,
+  "repetitions": 3,
+  "seed_base": 715901,
+  "host_workers": 16,
+  "scope": "Pinned Frugal CUDA FP32/FP64 versus public CUDA branch sampler.\n\nBoth prepare a fresh target per call, same device, host budget 16 workers.\nLibrary loading and conversion of a common input fixture are excluded; random\ngeneration, allocation, transfers, sampling and output packing are included.\nFrugal's host-only layout compatibility patch is recorded by its build driver.\nDifferent approximation laws on the large panel: no equal-quality claim.\n",
+  "small_validation_count": 100000,
+  "small_validation_tv_limit": 0.025,
+  "large_methods": [
+    "branch_1",
+    "branch_4",
+    "branch_8",
+    "frugal32_2",
+    "frugal32_3",
+    "frugal64_2",
+    "frugal64_3"
+  ]
+}

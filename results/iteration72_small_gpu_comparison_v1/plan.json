@@ -1,0 +1,18 @@
+{
+  "source_hashes": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\iteration72_small_gpu_comparison_v1.py": "7ed806b9e476dd45c5a277ed320ccc2db78854f49d1fd87a559a6cb15aed3a1c",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\gpu.dll": "52281d8bd77a0d932c9415f2447d2198ab8bac89a391bc680f680c091e266579",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5\\frugal_fp64.dll": "547b084166c2027200ffb3d47e40a7af285d8b4d9eb273fbbf8e5d5a2f69703f",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\src\\gbslab\\native_cuda_click_branches.py": "0bf261294063fdf2a514a743c00d7ea65c944ac537209d1c668dcba8aa986208"
+  },
+  "cases": [
+    3,
+    4
+  ],
+  "samples": 16384,
+  "repetitions": 3,
+  "seed_base": 723001,
+  "scope": "Small full-law accuracy anchors and matched CUDA timing, fresh model per call.",
+  "note": "Frugal exact small-law references are its previous FP64 CPU enumeration, checked empirically against this CUDA baseline; CUDA RNG uses upstream float-uniform macro even in FP64."
+}

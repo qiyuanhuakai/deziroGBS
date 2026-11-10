@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_newton72_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_newton_pilot_v1\\newton.dll"
+  ],
+  "source_hashes": {
+    "experiments/iteration72_newton_pilot_v1.py": "340e258efd6c21f6849f3dc2788c2de2e0420e430248838efa3a7a0f1721c66a",
+    "native/gaussian_pnr_newton72_v1.cpp": "1164b034099aee2fc687864c68dc4ce1fd45e18dd92e8a524e9c55bccd5021ea",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "old_binary_sha256": "56ea61d75851a7bf3447330fde3fc727a97cf1c605c5d933f5b5ec6519a22ea1",
+  "replay_records_per_case": 2000000,
+  "cases": [
+    3,
+    4
+  ],
+  "threads": 16,
+  "budget": 2,
+  "epsilon": 0.001,
+  "condition_trigger": 1000000.0,
+  "timing_samples": 100000,
+  "timing_repetitions": 3,
+  "timing_seed_base": 721001,
+  "scope": "Same finite-tap approximation and branch compression; replace 64 bisections with safeguarded Newton and bisection fallback. Common random records and explicit residual diagnostics. Replay tests do not constitute a global equality proof or a new independent quality cohort."
+}

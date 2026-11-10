@@ -1,5 +1,84 @@
 # Native sampling kernels
 
+## Iteration72: photon counts and direct CUDA clicks
+
+`NativeNewtonPNRSampler` uses safeguarded Newton survival inversion for the
+iteration71 finite-tap signed-branch model. It returns integer photon counts;
+the finite-tap and moment-compression biases remain. `NativeCudaBranchClickSampler`
+performs bounded-branch threshold trajectories directly in FP64 CUDA. The two
+outputs serve different measurement tasks. See the [report](../RESEARCH_REPORT_ITERATION72.md)
+and [methods](../research/iteration72_methods.md) for measured accuracy and limits.
+
+Existing recorded binaries on the tested Windows/CUDA machine can be used with:
+
+```python
+from pathlib import Path
+import shutil
+import numpy as np
+from gbslab.native_pnr_newton import NativeNewtonPNRSampler
+from gbslab.native_cuda_click_branches import NativeCudaBranchClickSampler
+
+root = Path.cwd()  # repository root; install the package or add src to PYTHONPATH
+runtime = [Path(shutil.which('g++')).parent, Path(shutil.which('nvcc')).parent]
+data = np.load(root / 'results/iteration71_pnr_branch_pilot_v2/input_3.npz')
+with NativeNewtonPNRSampler(
+    data['v'], data['x'],
+    root / 'results/iteration72_newton_pilot_v1/newton.dll',
+    noise_variance=data['variance'], workers=16, runtime_dirs=runtime,
+) as pnr:
+    result = pnr.sample(1024, 123)
+    photon_counts = result['counts']
+    clicks_from_counts = (photon_counts > 0).astype(np.uint8)
+
+with NativeCudaBranchClickSampler(
+    data['v'], data['x'],
+    root / 'results/iteration72_cuda_pilot_v1/cpu.dll',
+    gpu_library=root / 'results/iteration72_cuda_pilot_v1/gpu.dll',
+    noise_variance=data['variance'], branch_budget=4, runtime_dirs=runtime,
+) as threshold:
+    result = threshold.sample(1024, 123)
+    direct_clicks = result['clicks']
+    # Conditional along each realized displacement/path, not a marginal prefix law.
+    conditional_probabilities = result['conditional_click_probabilities']
+```
+
+The libraries are loaded explicitly; import never builds code. CUDA limits are
+128 inputs, 65536 outputs, branch budget128, batch1048576, and estimated work
+memory below75% of free device memory. Only50 inputs/144 outputs were tested in
+this round. Empty batches allocate no CUDA workspace. Arithmetic failures raise
+an exception, including literal vacuum-probability underflow; no partial batch is
+silently returned. The model owns copies of its isometry/covariance. The inherited
+CPU worker setting does not change CUDA launch geometry or parallelize RNG.
+
+`wall_seconds` for CUDA sampling includes native CPU RNG, array checks and
+allocation, transfers, kernel and output copies. Constructor cost is reported
+separately by the comparison drivers. CUDA timing components and per-trajectory
+compression/weight diagnostics are returned. PNR statistics include root
+iterations, fallback count and maximum survival residual; this residual is not
+a TV error certificate.
+
+Fresh output paths are required; never overwrite recorded experiment results:
+
+```powershell
+python experiments/iteration72_cuda_pilot_v1.py --output results/cuda72_new_run
+python experiments/iteration72_newton_pilot_v1.py --output results/newton72_new_run
+python experiments/iteration72_frugal_gpu_build_v5.py --output results/frugal72_new_build
+python experiments/iteration72_frugal_gpu_comparison_v1.py --output results/frugal72_new_comparison --frugal-build results/frugal72_new_build
+python experiments/iteration72_small_gpu_comparison_v1.py --output results/small_gpu72_new_comparison
+python experiments/iteration72_tests_v1.py --output results/tests72_new_run
+python experiments/verify_iteration72.py --output results/verify72_new_run
+```
+
+The frozen drivers use their recorded reference locations, and the small timing,
+test and verification drivers load the published iteration72 binaries. They are
+evidence-replay tools, not an automatic compiler selection system. Builds target
+the tested `sm_120` GPU, CUDA13.5, MSVC2022 and GCC15.1; Eigen3.4.0 is expected in
+the sibling `external_sources` folder. A different architecture requires a new
+versioned build driver and separate outputs. Frugal v5 needs the MSVC LLVM OpenMP
+runtime; its driver locates the installed runtime. Upstream CUDA sources remain
+unchanged, while a documented temporary host layout compatibility patch is
+applied; see [exact diff](../results/iteration72_frugal_gpu_build_v5/host_layout_compatibility.diff).
+
 ## Gaussian reset PNR sampling
 
 `gaussian_reset_cpu.cpp` implements the approximate centered and displaced Gaussian reset models of Lim, arXiv:2610.06526v1, with full detector scans, diagonal rejection and coherent-reference rejection. It returns actual integer PNR counts. These are approximate Gaussian-target samples; thresholding counts does not certify the full PNR distribution. See [methods](../research/iteration69_methods.md) and [results](../RESEARCH_REPORT_ITERATION69.md).

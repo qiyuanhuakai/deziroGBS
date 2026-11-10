@@ -1,0 +1,11 @@
+--- official/layout.hpp
++++ build/layout.hpp
+@@ -22,7 +22,7 @@
+ usize get_parallel_fork_depth(int thread_count);
+ 
+ template<usize N, typename BITSTRING>
+-void generate_bitstring_info(BitstringLayout<N>& bitstring_layout, usize parallel_fork_depth, BITSTRING&& bitstring, usize order = 0, isize bitstring_index = N - 1, usize layout_index = 0) {
++void generate_bitstring_info(BitstringLayout<N>& bitstring_layout, usize parallel_fork_depth, BITSTRING bitstring, usize order = 0, isize bitstring_index = N - 1, usize layout_index = 0) {
+     if (bitstring_index < 0) {
+         bitstring_layout.layout_bitstring_vec[layout_index] = bitstring;
+         bitstring_layout.order_vec[layout_index] = get_weight<N>(bitstring);
