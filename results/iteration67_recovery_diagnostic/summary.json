@@ -1,0 +1,23 @@
+{
+  "case": 3,
+  "mismatched_entries": 37,
+  "first_mismatch": {
+    "i": 3,
+    "j": 0,
+    "independent": {
+      "rational": "222399981598543/144115188075855872"
+    },
+    "producer": {
+      "rational": "1/648"
+    }
+  },
+  "all_fraction_weights_restore_full_kernel": true,
+  "cause": "Independent inherited move used int/int true division for purely integer vertical edge weights, then Fraction(float). Producer MatchingChain normalizes all weights to Fraction at construction.",
+  "dependencies": {
+    "experiments/iteration64_independent.py": "15a10a6a733a183473fb1968b3f64638edc704d994c9ee657cff875313971473",
+    "experiments/verify_iteration67_costs.py": "a4d52bfde412af83f64ec8cc854538f16d5922a7e3a96c6643eb1afedba6863a",
+    "results/iteration67_costs/case_03.json.gz": "d4cd58b7fa59f90e1a4f50b6a3e1fb4e9df0a28b833abbdd1f6d7116e0769442",
+    "results/iteration67_costs_validation/checks.failed.json": "b65051684426c2e9a663825a822f2f3e53d401b10da1f420fe134efa6259562c"
+  },
+  "unchanged_originals": true
+}

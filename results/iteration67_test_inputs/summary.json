@@ -1,0 +1,34 @@
+{
+  "prepared_at_utc": "2026-11-10T02:51:55.973688+00:00",
+  "dependencies": {
+    "experiments/build_wire_forest.py": "fd28bfb893445771bc8cefc8540e8607137c666949897c070b40ba8e234e7a67",
+    "experiments/batched_forest_wire.cpp": "82b637d623f4e6bab07003946ff6c58dd8345b9778b709f375dc427652ace4c6",
+    "experiments/batched_forest_kernel.cpp": "1d70023a14134c92fd74e3019278c55e6c2fdba555b8e99855970d789166b6bc",
+    "experiments/batched_forest_kernel.h": "7d2f6b73378052f43bbeafb5e11c9f1fc77ce64d8ce22ef1216f8a803929309f",
+    "experiments/portable_scalar_codec.cpp": "4b988b01ec319e914bf3893417f97a7410682ef041d3a7e4e5d4a2adea59f336",
+    "configs/iteration5_quality.json": "cde1ad92025eeb03afd1c267510b64e1a96989a18d1e74546a0538ba2b8a99f8",
+    "results/iteration25_tests/validation.json": "35fd57793ec2f35d486df2a9087db9447f2130f9effae79a659b500527605775",
+    "results/iteration31_build/build.json": "d00544a0fad0f15c589a7ac7e91e5f0bf60e3fe98ce08ac1bba7305ff8b74019",
+    "results/iteration31_build/libwire_forest.dll": "0c237559a73fd1ad13702525f26ea93ae8a63e0ab142bd451b93cc54df80e402",
+    "results/iteration12_layerwise_quality/source_snapshot/src/gbslab/local_mps.py": "b62e90011132407abc367445a65ff9978cefd5dcb6a8283e17f241447608d781"
+  },
+  "source_hashes": {},
+  "external_runtime_bindings": [
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libquadmath-0.dll",
+      "sha256": "6e2836776176e358aa9653869a88c5169a93519ec6a8f7b5ddda179f0f90803a"
+    },
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libstdc++-6.dll",
+      "sha256": "1b0d0ec5911980f5772a4d1c112efabf40bfffcd92a1e46e99480c4ec610f2fa"
+    },
+    {
+      "path": "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\x86_64-w64-mingw32\\lib\\libgcc_s_seh-1.dll",
+      "sha256": "22e981422d3c02f569d77f963c7b9ba624214fd06e3de2468157b2317a37d71b"
+    }
+  ],
+  "inherited_json_eol_differences": [
+    "configs/iteration5_quality.json"
+  ],
+  "scope": "Exact source and runtime binding precheck. Full suite will run only after round66 publication and branch fast-forward."
+}
