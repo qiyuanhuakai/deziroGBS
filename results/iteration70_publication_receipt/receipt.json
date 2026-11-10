@@ -1,0 +1,49 @@
+{
+  "science_commit": "d84b5bb7be64deff464cfdc1e5b84877d85cb107",
+  "science_tree": "c928380b98597a75706a1682af0aae3e5326efa3",
+  "parent": "0031f7ba0bffd1d6c38d67b0d11c856bbd471314",
+  "branch": "research/iteration70-dual-sampling",
+  "remote_commit_api": {
+    "sha": "d84b5bb7be64deff464cfdc1e5b84877d85cb107",
+    "node_id": "C_kwDOViTfLtoAKGQ4NGI1YmI3YmU2NGRlZmY0NjRjZmRjMWU1Yjg0ODc3ZDg1Y2IxMDc",
+    "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/d84b5bb7be64deff464cfdc1e5b84877d85cb107",
+    "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/d84b5bb7be64deff464cfdc1e5b84877d85cb107",
+    "author": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T08:33:42Z"
+    },
+    "committer": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-10T08:33:42Z"
+    },
+    "tree": {
+      "sha": "c928380b98597a75706a1682af0aae3e5326efa3",
+      "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/trees/c928380b98597a75706a1682af0aae3e5326efa3"
+    },
+    "message": "Add independent native PNR and direct-click sampling routes\n\nImplement safeguarded Newton flow and deterministic CPU trajectory workers for PNR, plus a direct binary-click Gaussian moment-closure core. Retain generic-CPU same-input Frugal comparisons and all numerical failures.\n\nAdd a binary128 small-system PNR oracle and full-count 20M/80M quality experiments without truncating rare tails. Public interfaces replay 800576 records. Full suite: 828 run, 799 passed, no failures/errors; historical skips retained. No universal or equal-quality quantum-advantage claim.",
+    "parents": [
+      {
+        "sha": "0031f7ba0bffd1d6c38d67b0d11c856bbd471314",
+        "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/0031f7ba0bffd1d6c38d67b0d11c856bbd471314",
+        "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/0031f7ba0bffd1d6c38d67b0d11c856bbd471314"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "atomic_push": [
+    "",
+    "To https://github.com/qiyuanhuakai/deziroGBS.git\n   0031f7b..d84b5bb  HEAD -> main\n * [new branch]      HEAD -> research/iteration70-dual-sampling"
+  ],
+  "manifest_sha256": "ddcc131b18ad2d7b257408d61cbe829887a15b3a40861d2e57b2a1fc93822d10",
+  "verification_sha256": "e83b32d23a5f07c69c0b25628eb913c04e4b91d1c5cddc2aabb03a481c9eb700",
+  "tests_sha256": "af423d19c5386c3962e95f8e3750738aa29c1c61f33b281e4c2e85a165fefc56",
+  "recorded_utc": "2026-11-10T08:34:47.577586+00:00"
+}
