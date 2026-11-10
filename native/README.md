@@ -9,7 +9,7 @@ The current implementation targets Windows x86-64 GNU C++ and Eigen 3.4.0. It gu
 ```powershell
 python experiments/iteration69_build.py --output results/reset_new_build --eigen ../external_sources/eigen_3_4_0_iteration38/eigen-3.4.0
 python experiments/iteration69_benchmark.py --output results/reset_new_benchmark --build results/reset_new_build
-python experiments/iteration69_validate_public.py --output results/reset_new_validation --library results/reset_new_build/gaussian_reset_cpu.dll --reference results/iteration69_archive/iteration69_anchor_v9_20261110 --diagonal-reference results/iteration69_archive/iteration69_displaced_v6_20261110
+python experiments/iteration69_validate_public_v2.py --output results/reset_new_validation --library results/reset_new_build/gaussian_reset_cpu.dll --reference results/iteration69_archive/iteration69_anchor_v9_20261110 --diagonal-reference results/iteration69_archive/iteration69_displaced_v6_20261110
 ```
 
 Every output directory must be new. Build and validation record source/dependency hashes. Historical pilot sources and unsuccessful runs are kept in `results/iteration69_archive`; embedded `.git` path components are stored as `git_source_snapshot` with a byte-identity mapping. The public benchmark reruns the final single-thread comparison; full historical quality protocols remain in the archived drivers.

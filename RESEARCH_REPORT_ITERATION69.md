@@ -61,6 +61,8 @@ Frugal 比较使用作者实现和既有适配器，阈值目标相同。它生�
 
 全库 **812 项运行、783 通过、0 失败、0 错误**；29 个历史跳过测试及 7 个跳过测试类保留。10 项新增分解/原生测试与 18 项第68轮原生测试通过，包括真空、相干态、种子复现、非法输入、资源释放、BLAS 线程恢复和数值控制字恢复。
 
-原始私有源代码、预试验、失败和修正共 **1,007 个文件、82,851,610 字节**，按字节归档。内部 `.git` 路径分量改为 `git_source_snapshot`，文件内容不改写。[映射](results/iteration69_archive_mapping.json)、[公开重放](results/iteration69_public_validation/summary.json)、[测试结果](results/iteration69_tests/validation.json)分别提供证据。
+原始私有源代码、预试验、失败和修正共 **1,007 个文件、82,851,610 字节**，按字节归档。内部 `.git` 路径分量改为 `git_source_snapshot`，文件内容不改写。[映射](results/iteration69_archive_mapping.json)、[公开重放](results/iteration69_public_validation_v2/summary.json)、[测试结果](results/iteration69_tests_recovery/validation.json)分别提供证据。
+
+首次发布前的目录检查发现，公开重放脚本把8份逐案例摘要写在仓库根目录。上传在该检查处停止；原始摘要按字节移入[恢复记录](results/iteration69_validation_recovery/recovery.json)，首版源码和结果保留，另增v2脚本修正保存位置。v2从正式归档重放并重新运行全库测试，最终发布清单包含这次恢复。
 
 下一阶段优先减少每次探测的谱演化成本，并针对非 Gaussian 重置误差与重尾设计可控修正；[前沿及九章对照](research/iteration69_frontier_comparison.md)和[第70轮方向](research/iteration70_plan.md)给出具体起点。
