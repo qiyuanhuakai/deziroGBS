@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Numerical separating witness for every shared-intensity iid tail policy.\nSame NB total law, budget12. A random p followed by N iid ports has PSD pair\nmatrix E[p p^T]. The target tail pair matrix has a negative quadratic form.\nThis checks a mathematical model obstruction numerically, not interval-certifies\nall floating arithmetic or the binary64 input's exact physical isometry.\n",
+  "minimum_eigenvalue": -3.4069016743289498e-06,
+  "negative_eigenvalues": 48,
+  "eigen_residual": 1.4212827118775005e-19,
+  "rayleigh": -0.0001574528271665605,
+  "independent_input_space_rayleigh": "-0.0001574528271665606",
+  "normalized_witness_max": 1.0,
+  "ideal_model_numerical_full_tv_lower": 7.87264135832803e-05,
+  "target_remainder_upper": "6.678281813556803084209686415746263470222084820140632852429942253180382690227431825677091877599887626e-112",
+  "budget": 12,
+  "inputs": 128,
+  "outputs": 384,
+  "isometry_residual": 8.704036002625565e-15,
+  "witness": "1{N>12} * (1 + [(u dot counts)^2-sum_i u_i^2 counts_i]/[N(N-1)])/2",
+  "no_full_interval_certificate": true,
+  "source_sha256": "f12b7f2cb470613cf9e73962d2b8c8a5341ca3ef9e78b3696dda05c5019b94ab"
+}

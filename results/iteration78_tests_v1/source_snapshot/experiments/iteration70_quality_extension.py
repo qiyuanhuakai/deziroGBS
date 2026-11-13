@@ -1,0 +1,22 @@
+"""Independent 20M-record PNR quality check for the r=1.4, eta=.43 fixture."""
+from pathlib import Path
+import argparse,os,shutil,sys,json,math,time
+for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
+import numpy as np
+from gbslab.native_gaussian_reset_parallel import NativeParallelGaussianResetSampler
+from iteration70_build import digest,save
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,required=True);parser.add_argument('--build',type=Path,required=True);args=parser.parse_args();out=args.output.resolve();out.mkdir(parents=True,exist_ok=False)
+    archive=ROOT/'results/iteration70_archive';folder=archive/'iteration70_pgf_quad_v1_20261110';target_path=folder/'target_4.npz';data=np.load(target_path);description=json.loads((folder/'summary.json').read_text())['rows'][4];tail=float(description['analytic_target_tail']);codes=data['codes'];law=np.r_[data['probabilities'],tail];cutoff=int(data['cutoff']);base=cutoff+1;v=np.ascontiguousarray(data['v']);initial=np.load(archive/'iteration70_noise_holdout_v1_20261110/case_4_theta_000.npz');x=initial['x0'];variance=initial['variance'];old=np.load(archive/'iteration70_noise_holdout_v1_20261110/histogram_4_theta_000.npz');event=old['histogram']/old['histogram'].sum()>law
+    batch_size=500000;batches=40;count=batch_size*batches;seed_base=0x70f00000000000;seed_stride=1<<40;radius=math.sqrt(math.log(2/.01)/(2*count));lookup=np.full(base**4,-1,np.int32);lookup[codes]=np.arange(len(codes));powers=np.array([base**j for j in range(4)],np.uint64);hist=np.zeros(len(law),np.int64);rows=[]
+    save(out/'plan.json',dict(source_sha256=digest(Path(__file__)),library_sha256=digest(args.build/'gaussian_reset_parallel.dll'),target_sha256=digest(target_path),prior_histogram_sha256=digest(archive/'iteration70_noise_holdout_v1_20261110/histogram_4_theta_000.npz'),samples=count,batches=batches,batch_size=batch_size,seed_base=seed_base,seed_stride=seed_stride,threads=16,nominal_joint_failure_probability=.01,radius=radius,scope='Independent nonoverlapping seed ranges, same fixed four-mode fixture. Event selected on prior 1M cohort, evaluated only on new 20M records. Dimension-free McDiarmid upper bound for full PNR TV includes target tail; fixed-event Hoeffding lower bound. Assumes ideal independent streams and exact numerical target, not a finite-PRNG or global rounding certificate. No truncation or discarded trajectories.'))
+    shutil.copy2(__file__,out/Path(__file__).name)
+    with NativeParallelGaussianResetSampler(v,x,args.build/'gaussian_reset_parallel.dll',noise_variance=variance,workers=16,runtime_dirs=[Path(shutil.which('g++')).parent]) as sampler:
+        for batch in range(batches):
+            result=sampler.sample(batch_size,seed_base+batch*seed_stride);counts=result['counts'];totals=counts.sum(axis=1);inside=totals<=cutoff;labels=np.full(batch_size,len(codes),np.int32);labels[inside]=lookup[(counts[inside].astype(np.uint64)@powers).astype(np.int64)];assert min(labels)>=0;hist+=np.bincount(labels,minlength=len(law));row=dict(batch=batch,seed=seed_base+batch*seed_stride,samples=batch_size,seconds=result['wall_seconds'],maximum_photons=int(totals.max()),tail_events=int(sum(~inside)),events_ge128=int(sum(totals>=128)),photons=int(totals.sum()));rows.append(row);save(out/f'batch_{batch:02d}.json',row);np.savez_compressed(out/f'batch_{batch:02d}.npz',counts=counts)
+            if batch%5==0:print(row,flush=True)
+    empirical=hist/count;tv=float(.5*abs(empirical-law).sum());lower=max(0.,float(empirical[event].sum()-law[event].sum())-radius);upper=min(1.,tv+radius+tail);np.savez_compressed(out/'histogram.npz',histogram=hist,target=law,fixed_event=event)
+    result=dict(passed=True,samples=count,empirical_joint_binned_tv=tv,nominal_full_pnr_tv_interval=[lower,upper],nominal_joint_failure_probability=.01,below_one_percent=upper<=.01,above_one_percent=lower>.01,target_tail=tail,maximum_photons=max(r['maximum_photons'] for r in rows),events_ge128=sum(r['events_ge128'] for r in rows),tail_events=sum(r['tail_events'] for r in rows),mean_photons=sum(r['photons'] for r in rows)/count,rows=rows);save(out/'summary.json',result);print(json.dumps({k:v for k,v in result.items() if k!='rows'}),flush=True);save(out/'manifest.json',dict(artifacts={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file()}))
+if __name__=='__main__':main()

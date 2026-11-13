@@ -1,0 +1,82 @@
+{
+  "scope": "Rotated setup-inclusive sphere/iid PNR, direct CUDA and Frugal CPU timings.\nThree input panels. Only case1 compares larger-output Frugal on identical input.\n",
+  "cases": [
+    [
+      "results/iteration74_pure_quality_v1/input_1.npz",
+      65536,
+      [
+        [
+          "iid",
+          8
+        ],
+        [
+          "sphere",
+          8
+        ],
+        [
+          "fused",
+          8
+        ],
+        [
+          "cpu",
+          4
+        ]
+      ]
+    ],
+    [
+      "results/iteration77_budget_pilot_v1/input_3.npz",
+      512,
+      [
+        [
+          "iid",
+          12
+        ],
+        [
+          "sphere",
+          12
+        ],
+        [
+          "fused",
+          4
+        ],
+        [
+          "cpu",
+          2
+        ],
+        [
+          "cpu",
+          3
+        ]
+      ]
+    ],
+    [
+      "results/iteration77_budget_pilot_v1/input_4.npz",
+      512,
+      [
+        [
+          "iid",
+          12
+        ],
+        [
+          "sphere",
+          12
+        ],
+        [
+          "fused",
+          4
+        ]
+      ]
+    ]
+  ],
+  "workers": 16,
+  "repetitions": 3,
+  "seed_base": 41939771529887744,
+  "hashes": {
+    "experiments/iteration78_pnr_timing_v1.py": "6295fe544222f3162b138102d39bb24c04ca51d6f82f9ce7509eb9510d21be0a",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration77_budget_pilot_v1/budget.dll": "4018fd2213435794a90d834549827f0a434c6a27436ae65e5b50220279338bdd",
+    "results/iteration78_pilot_v2/sphere.dll": "9cf22455598112301670f781a5df903216382fc69d6fcfe6036f1b7f67ece5b7"
+  }
+}

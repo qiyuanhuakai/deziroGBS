@@ -1,0 +1,9 @@
+{
+  "completed": false,
+  "failure": "TypeError: Provided cookie was not returned from os.add_dll_directory",
+  "location": "CollectedResult.stopTest",
+  "cause": "Harness attempted to close a DLL-directory handle already closed by NativeTableClickSampler.close; actual os._AddedDllDirectory.close is not idempotent and sets path=None.",
+  "last_test": "test_native_alias_click.AliasClickTests.test_asymmetric_covariance_rejected",
+  "last_test_status": "ok",
+  "action": "Retain this partial run. New v2 harness checks path is not None before closing; numerical sources and assertions unchanged."
+}

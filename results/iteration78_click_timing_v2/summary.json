@@ -1,0 +1,621 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "wall_seconds": 0.0019074000010732561,
+      "setup_seconds": 0.00035879999632015824,
+      "native_sampling_seconds": 0.0015007999900262803,
+      "case": 0,
+      "rep": 0,
+      "kind": "table",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0017499999958090484,
+      "setup_seconds": 0.00037369999336078763,
+      "native_sampling_seconds": 0.0013337999989744276,
+      "case": 0,
+      "rep": 0,
+      "kind": "table",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0008211999956984073,
+      "setup_seconds": 0.00036120001459494233,
+      "native_sampling_seconds": 0.00042249998659826815,
+      "case": 0,
+      "rep": 0,
+      "kind": "alias",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0017865999834612012,
+      "setup_seconds": 0.000391699984902516,
+      "native_sampling_seconds": 0.0013445999938994646,
+      "case": 0,
+      "rep": 0,
+      "kind": "alias",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.030513400008203462,
+      "setup_seconds": 0.002282700006617233,
+      "cuda_timings": {
+        "allocation_seconds": 0.0008319,
+        "host_to_device_seconds": 0.0020807,
+        "random_seconds": 7.61e-05,
+        "kernel_seconds": 0.0219542,
+        "device_to_host_seconds": 0.0013581,
+        "workspace_bytes": 142868928.0,
+        "failed_rows": 0.0
+      },
+      "case": 0,
+      "rep": 0,
+      "kind": "fused",
+      "budget": 8,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0017839999927673489,
+      "component_timings": [
+        0.000218,
+        1.5e-05,
+        0.000394,
+        0.000998,
+        4.7e-05,
+        64.0,
+        4.0
+      ],
+      "case": 0,
+      "rep": 0,
+      "kind": "cpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.010654600017005578,
+      "component_timings": [
+        0.0001113,
+        1.65e-05,
+        0.0044958,
+        0.0058525,
+        4.87e-05,
+        64.0
+      ],
+      "case": 0,
+      "rep": 0,
+      "kind": "gpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0016923000221140683,
+      "setup_seconds": 0.0003318999952170998,
+      "native_sampling_seconds": 0.0013143999967724085,
+      "case": 0,
+      "rep": 1,
+      "kind": "table",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0008738999895285815,
+      "setup_seconds": 0.00037059999885968864,
+      "native_sampling_seconds": 0.00042949998169206083,
+      "case": 0,
+      "rep": 1,
+      "kind": "alias",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0019862999906763434,
+      "setup_seconds": 0.0003630999999586493,
+      "native_sampling_seconds": 0.0015717999776825309,
+      "case": 0,
+      "rep": 1,
+      "kind": "alias",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.030690800020238385,
+      "setup_seconds": 0.002211000013630837,
+      "cuda_timings": {
+        "allocation_seconds": 0.0007345,
+        "host_to_device_seconds": 0.002211,
+        "random_seconds": 9.47e-05,
+        "kernel_seconds": 0.0219944,
+        "device_to_host_seconds": 0.0013302,
+        "workspace_bytes": 142868928.0,
+        "failed_rows": 0.0
+      },
+      "case": 0,
+      "rep": 1,
+      "kind": "fused",
+      "budget": 8,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0017281000036746264,
+      "component_timings": [
+        0.000217,
+        1.6e-05,
+        0.000223,
+        0.001105,
+        4.7e-05,
+        64.0,
+        4.0
+      ],
+      "case": 0,
+      "rep": 1,
+      "kind": "cpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.01151070001651533,
+      "component_timings": [
+        0.0005146,
+        1.56e-05,
+        0.0047908,
+        0.0059585,
+        5.64e-05,
+        64.0
+      ],
+      "case": 0,
+      "rep": 1,
+      "kind": "gpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.002055800025118515,
+      "setup_seconds": 0.00043440001900307834,
+      "native_sampling_seconds": 0.0015712999738752842,
+      "case": 0,
+      "rep": 1,
+      "kind": "table",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0009432999941054732,
+      "setup_seconds": 0.00042970001231878996,
+      "native_sampling_seconds": 0.00046079998719505966,
+      "case": 0,
+      "rep": 2,
+      "kind": "alias",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.001809800014598295,
+      "setup_seconds": 0.0004428999964147806,
+      "native_sampling_seconds": 0.0013167000142857432,
+      "case": 0,
+      "rep": 2,
+      "kind": "alias",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.030867299996316433,
+      "setup_seconds": 0.002101199992466718,
+      "cuda_timings": {
+        "allocation_seconds": 0.0007193,
+        "host_to_device_seconds": 0.0021484,
+        "random_seconds": 0.0001066,
+        "kernel_seconds": 0.0220184,
+        "device_to_host_seconds": 0.0014498,
+        "workspace_bytes": 142868928.0,
+        "failed_rows": 0.0
+      },
+      "case": 0,
+      "rep": 2,
+      "kind": "fused",
+      "budget": 8,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0016260999836958945,
+      "component_timings": [
+        0.000249,
+        1.6e-05,
+        0.000354,
+        0.000833,
+        7.2e-05,
+        64.0,
+        4.0
+      ],
+      "case": 0,
+      "rep": 2,
+      "kind": "cpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.010853799991309643,
+      "component_timings": [
+        0.0001317,
+        1.74e-05,
+        0.0050176,
+        0.0055144,
+        5.25e-05,
+        64.0
+      ],
+      "case": 0,
+      "rep": 2,
+      "kind": "gpu",
+      "budget": 4,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.002107000007526949,
+      "setup_seconds": 0.00036380000528879464,
+      "native_sampling_seconds": 0.0016521000070497394,
+      "case": 0,
+      "rep": 2,
+      "kind": "table",
+      "budget": 1,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0019050999835599214,
+      "setup_seconds": 0.00039370000013150275,
+      "native_sampling_seconds": 0.0014546999882441014,
+      "case": 0,
+      "rep": 2,
+      "kind": "table",
+      "budget": 16,
+      "records": 65536,
+      "outputs": 4
+    },
+    {
+      "wall_seconds": 0.0010794000118039548,
+      "setup_seconds": 0.0005849000008311123,
+      "native_sampling_seconds": 0.00045289998524822295,
+      "case": 1,
+      "rep": 0,
+      "kind": "table",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0017652999958954751,
+      "setup_seconds": 0.0005673000123351812,
+      "native_sampling_seconds": 0.0011585999745875597,
+      "case": 1,
+      "rep": 0,
+      "kind": "table",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0006181000208016485,
+      "setup_seconds": 0.0005403000104706734,
+      "native_sampling_seconds": 5.0700007705017924e-05,
+      "case": 1,
+      "rep": 0,
+      "kind": "alias",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0017991999920923263,
+      "setup_seconds": 0.0006047999777365476,
+      "native_sampling_seconds": 0.001153699995484203,
+      "case": 1,
+      "rep": 0,
+      "kind": "alias",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.02642730000661686,
+      "setup_seconds": 0.0020797000033780932,
+      "cuda_timings": {
+        "allocation_seconds": 0.0014511,
+        "host_to_device_seconds": 0.0102585,
+        "random_seconds": 4.02e-05,
+        "kernel_seconds": 0.0075046,
+        "device_to_host_seconds": 0.0002632,
+        "workspace_bytes": 807208576.0,
+        "failed_rows": 0.0
+      },
+      "case": 1,
+      "rep": 0,
+      "kind": "fused",
+      "budget": 128,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0016573000175412744,
+      "component_timings": [
+        0.000221,
+        3.2e-05,
+        0.000641,
+        0.000688,
+        1.3e-05,
+        64.0,
+        4.0
+      ],
+      "case": 1,
+      "rep": 0,
+      "kind": "cpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.010123199986992404,
+      "component_timings": [
+        0.0003131,
+        2.75e-05,
+        0.0048488,
+        0.0048435,
+        8.5e-06,
+        64.0
+      ],
+      "case": 1,
+      "rep": 0,
+      "kind": "gpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0020195000106468797,
+      "setup_seconds": 0.0005585000035353005,
+      "native_sampling_seconds": 0.001420699991285801,
+      "case": 1,
+      "rep": 1,
+      "kind": "table",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0007390000100713223,
+      "setup_seconds": 0.0006529999955091625,
+      "native_sampling_seconds": 5.400000372901559e-05,
+      "case": 1,
+      "rep": 1,
+      "kind": "alias",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0019176999921910465,
+      "setup_seconds": 0.0005769999988842756,
+      "native_sampling_seconds": 0.0012983999913558364,
+      "case": 1,
+      "rep": 1,
+      "kind": "alias",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.02542570000514388,
+      "setup_seconds": 0.002372499991906807,
+      "cuda_timings": {
+        "allocation_seconds": 0.0013473,
+        "host_to_device_seconds": 0.0103202,
+        "random_seconds": 4.32e-05,
+        "kernel_seconds": 0.0070952,
+        "device_to_host_seconds": 0.0002664,
+        "workspace_bytes": 807208576.0,
+        "failed_rows": 0.0
+      },
+      "case": 1,
+      "rep": 1,
+      "kind": "fused",
+      "budget": 128,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0018137999868486077,
+      "component_timings": [
+        0.000252,
+        2.5e-05,
+        0.000851,
+        0.000619,
+        1.3e-05,
+        64.0,
+        4.0
+      ],
+      "case": 1,
+      "rep": 1,
+      "kind": "cpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.009222200023941696,
+      "component_timings": [
+        0.0001377,
+        2.72e-05,
+        0.0046236,
+        0.0043511,
+        8.9e-06,
+        64.0
+      ],
+      "case": 1,
+      "rep": 1,
+      "kind": "gpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0012886000040452927,
+      "setup_seconds": 0.000753400003304705,
+      "native_sampling_seconds": 0.00047660002019256353,
+      "case": 1,
+      "rep": 1,
+      "kind": "table",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0006312000041361898,
+      "setup_seconds": 0.0005492999916896224,
+      "native_sampling_seconds": 5.180001608096063e-05,
+      "case": 1,
+      "rep": 2,
+      "kind": "alias",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0019629999878816307,
+      "setup_seconds": 0.0005147999909240752,
+      "native_sampling_seconds": 0.0014093999925535172,
+      "case": 1,
+      "rep": 2,
+      "kind": "alias",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.025792899978114292,
+      "setup_seconds": 0.002051099989330396,
+      "cuda_timings": {
+        "allocation_seconds": 0.0015953,
+        "host_to_device_seconds": 0.0099552,
+        "random_seconds": 4.94e-05,
+        "kernel_seconds": 0.0075699,
+        "device_to_host_seconds": 0.0002701,
+        "workspace_bytes": 807208576.0,
+        "failed_rows": 0.0
+      },
+      "case": 1,
+      "rep": 2,
+      "kind": "fused",
+      "budget": 128,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0016318999987561256,
+      "component_timings": [
+        0.000173,
+        7.1e-05,
+        0.000683,
+        0.000628,
+        1.2e-05,
+        64.0,
+        4.0
+      ],
+      "case": 1,
+      "rep": 2,
+      "kind": "cpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.009817799989832565,
+      "component_timings": [
+        0.0001302,
+        2.6e-05,
+        0.0050453,
+        0.0045364,
+        1.07e-05,
+        64.0
+      ],
+      "case": 1,
+      "rep": 2,
+      "kind": "gpu",
+      "budget": 5,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0011855000047944486,
+      "setup_seconds": 0.0006757999944966286,
+      "native_sampling_seconds": 0.00046209999709390104,
+      "case": 1,
+      "rep": 2,
+      "kind": "table",
+      "budget": 1,
+      "records": 8192,
+      "outputs": 8
+    },
+    {
+      "wall_seconds": 0.0017521999834571034,
+      "setup_seconds": 0.0005895000067539513,
+      "native_sampling_seconds": 0.0011243000044487417,
+      "case": 1,
+      "rep": 2,
+      "kind": "table",
+      "budget": 16,
+      "records": 8192,
+      "outputs": 8
+    }
+  ],
+  "medians": {
+    "1_cpu_5": 0.0016573000175412744,
+    "0_table_1": 0.002055800025118515,
+    "0_gpu_4": 0.010853799991309643,
+    "0_fused_8": 0.030690800020238385,
+    "0_alias_16": 0.001809800014598295,
+    "1_alias_16": 0.0019176999921910465,
+    "1_fused_128": 0.025792899978114292,
+    "1_table_1": 0.0011855000047944486,
+    "0_cpu_4": 0.0017281000036746264,
+    "1_gpu_5": 0.009817799989832565,
+    "0_table_16": 0.0017499999958090484,
+    "1_table_16": 0.0017652999958954751,
+    "1_alias_1": 0.0006312000041361898,
+    "0_alias_1": 0.0008738999895285815
+  },
+  "full_fused_laws": [
+    {
+      "case": 0,
+      "branch_budget": 8,
+      "full_tv": 4.549312315749177e-16
+    },
+    {
+      "case": 1,
+      "branch_budget": 128,
+      "full_tv": 1.6230086393766163e-14
+    }
+  ]
+}

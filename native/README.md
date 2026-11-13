@@ -434,3 +434,34 @@ with NativeBudgetNumberPNRSampler(
 预算N≤B分支使用数学上精确的总数条件律，N>B分支独立分配全部光子，理想TV上界为P(N>B)，无全局浮点/PRNG认证。预算最大接口值498不意味着任意输入秩都支持498；200000多项式项和4000000 Gram元素保护按输入与预算进一步拒绝。例如32输入预算22会被拒绝。输入维数、能量和输出端口数分别影响资源。
 
 复现：先依次运行 `experiments/iteration77_number_pilot_v1.py`、`iteration77_number_pilot_v2.py`、`iteration77_budget_pilot_v1.py` 的新输出目录构建；同场比较、质量、端点和碰撞驱动均在experiments目录。每个输出目录必须不存在。强光尾相关性失败、原始零尾舍入及后续正尾修正全部保留，详见[第77轮报告](../RESEARCH_REPORT_ITERATION77.md)。
+
+
+## 第78轮：相关尾PNR与小输出整数alias
+
+```python
+from gbslab.native_sphere_number_pnr import NativeSphereNumberPNRSampler
+from gbslab.native_alias_click import NativeAliasClickSampler
+
+with NativeSphereNumberPNRSampler(
+    v, t, "results/iteration78_pilot_v2/sphere.dll",
+    exact_total_budget=12, workers=16, runtime_dirs=runtime_dirs,
+) as sampler:
+    result = sampler.sample(1024, 781001)
+    counts = result["counts"]
+    clicks = counts > 0
+
+# Zero mean, vacuum covariance=I, at most 16 output modes.
+# Small-output tables are fastest here with one worker.
+with NativeAliasClickSampler(
+    covariance, "results/iteration78_alias_pilot_v1/table.dll",
+    workers=1, runtime_dirs=runtime_dirs,
+) as sampler:
+    law = sampler.law()["probabilities"]
+    clicks = sampler.sample(65536, 781002)["clicks"]
+```
+
+sphere仍仅接收等正压缩无位移纯态；预算以内精确条件分支，预算外为固定总数热态近似。它保留总数及部分相关性，但高输入能量仍有可测误差。全部预算、固定总数及资源错误语义沿用第77轮。
+
+alias使用 `gaussian_table_click78_v3.cpp`。构建指数增长，限1～16输出，需调用者提供物理零均值Gaussian协方差。`law()`导出均匀uint64随机字下整数阈值律的float64表示；不证明counter mixer种子序列为iid。`row_offset`可续接同一流，1/16线程与分块结果一致。负Möbius概率和丢失类别区间报错，不裁剪。
+
+旧v2累计表使用 `NativeTableClickSampler` 和 `results/iteration78_pilot_v2/table.dll`。v1编译失败、v2累计表、v3整数alias及两轮全部直接计时都保留。实际全库运行器是 `experiments/iteration78_tests_v2.py`，主核验是 `experiments/verify_iteration78_v2.py`。参见[第78轮报告](../RESEARCH_REPORT_ITERATION78.md)。

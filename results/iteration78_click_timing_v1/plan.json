@@ -1,0 +1,24 @@
+{
+  "scope": "Complete setup-inclusive small-output click timings, three rotated repeats.\nTable and fused full-branch laws checked against independent 80-digit targets.\nFrugal K4 is complete at m4; Frugal K5 at m8 is a different approximation.\n",
+  "repetitions": 3,
+  "cases": [
+    {
+      "modes": 4,
+      "records": 65536
+    },
+    {
+      "modes": 8,
+      "records": 8192
+    }
+  ],
+  "workers": 16,
+  "seed_base": 41095346599755776,
+  "hashes": {
+    "experiments/iteration78_click_timing_v1.py": "997fc1629dd32018a48b553afae71a6ddebe9882c977a0cbb257e71c25bce058",
+    "results/iteration78_pilot_v2/table.dll": "3d23f553780cb73ffbfd7f43c0f40904aa8ded8cd30701e7a7ba0b3fbcde25bc",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration75_frugal_gpu_build_v3/frugal_fp64.dll": "acc35480437359abd74fb452dca362f4738a503888992ad3e582e2fe46c55249"
+  }
+}

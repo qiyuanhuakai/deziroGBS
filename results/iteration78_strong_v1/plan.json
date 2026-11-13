@@ -1,0 +1,23 @@
+{
+  "scope": "New strong-input cohorts with predeclared pair and vacuum observables.\nFive observables, two methods, two sides: delta=.01/20 per side.\nMaurer-Pontil theorem 4; iid and numerical-reference assumptions explicit.\n",
+  "samples_per_method": 100000,
+  "batch": 10000,
+  "budget": 12,
+  "seed_base": 40532396646334464,
+  "stride": 1099511627776,
+  "observables": [
+    "same_port_collision",
+    "pair_sphere_separator",
+    "pair_iid_separator",
+    "vacuum_first4",
+    "vacuum_first16"
+  ],
+  "one_sided_bounds": 20,
+  "delta_per_side": 0.0005,
+  "theorem": "https://arxiv.org/pdf/0907.3740",
+  "hashes": {
+    "experiments/iteration78_strong_v1.py": "f7be51bd83f1457d70556a942a39cd82766222464d7261853a4c520d077479ca",
+    "results/iteration77_budget_pilot_v1/budget.dll": "4018fd2213435794a90d834549827f0a434c6a27436ae65e5b50220279338bdd",
+    "results/iteration78_pilot_v2/sphere.dll": "9cf22455598112301670f781a5df903216382fc69d6fcfe6036f1b7f67ece5b7"
+  }
+}
