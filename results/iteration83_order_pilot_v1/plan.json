@@ -1,0 +1,16 @@
+{
+  "scope": "Test input-only optical grouping against complete-output bias, fixed G0 prefix.\nOrder uses only occupied transmission rows. 4096 independent row subsequences\nare generated for each budget, including all physical detectors and both sectors.\nNo failed-path deletion; this pilot is not a formal speed measurement.\n",
+  "hashes": {
+    "experiments/iteration83_order_pilot_v1.py": "1161c48a2a2a4b8c11d4f784c88c451f2e0bc985b0eb6a52ee047be0eb7a8c26",
+    "native/gaussian_optical_order83_v1.cpp": "cb8620bc48b51786ca9ac4373b8ce8807d334805e28500844a1441dad33d9ac3",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  },
+  "count": 4096,
+  "budgets": [
+    4,
+    8
+  ],
+  "pinned_prefix": 8,
+  "seed": 831000
+}

@@ -1,0 +1,192 @@
+{
+  "rows": [
+    {
+      "method": "order4",
+      "success": true,
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 4096,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "empirical_mean": 89.36083984375,
+          "empirical_variance": 464.3654893067002,
+          "dkw_radius": 0.03046054068000633,
+          "nominal_joint99_full_tv_lower": 0.15304512985449462,
+          "direction": "increasing",
+          "clip_lower": 70,
+          "clip_upper": 111,
+          "reference_expectation_lower": 0.6410430657326717,
+          "empirical_expectation": 0.4575373951981707
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 4096,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "empirical_mean": 8.93994140625,
+          "empirical_variance": 18.490653378739317,
+          "dkw_radius": 0.03046054068000633,
+          "nominal_joint99_full_tv_lower": 0.012861851010744142,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 15,
+          "reference_expectation_lower": 0.5186641885657505,
+          "empirical_expectation": 0.475341796875
+        }
+      ],
+      "experimental_comparison": {
+        "threshold": 93,
+        "empirical_ks": 0.32526570565344454,
+        "nominal_joint99_full_bit_tv_lower": 0.29320950719721317,
+        "experimental_records": 1492642,
+        "experimental_dkw_radius": 0.0015956577762250765
+      }
+    },
+    {
+      "method": "order8",
+      "success": true,
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 4096,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "empirical_mean": 91.978759765625,
+          "empirical_variance": 513.7223814651061,
+          "dkw_radius": 0.03046054068000633,
+          "nominal_joint99_full_tv_lower": 0.11563793470844921,
+          "direction": "increasing",
+          "clip_lower": 69,
+          "clip_upper": 112,
+          "reference_expectation_lower": 0.6421808700105486,
+          "empirical_expectation": 0.496082394622093
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 4096,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "empirical_mean": 9.214599609375,
+          "empirical_variance": 19.928294735863094,
+          "dkw_radius": 0.03046054068000633,
+          "nominal_joint99_full_tv_lower": 0.0,
+          "direction": null
+        }
+      ],
+      "experimental_comparison": {
+        "threshold": 91,
+        "empirical_ks": 0.2815042618877509,
+        "nominal_joint99_full_bit_tv_lower": 0.2494480634315195,
+        "experimental_records": 1492642,
+        "experimental_dkw_radius": 0.0015956577762250765
+      }
+    },
+    {
+      "method": "weights32",
+      "success": true,
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 256,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "empirical_mean": 93.828125,
+          "empirical_variance": 584.8252450980392,
+          "dkw_radius": 0.12184216272002532,
+          "nominal_joint99_full_tv_lower": 0.0,
+          "direction": null
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 256,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "empirical_mean": 7.79296875,
+          "empirical_variance": 19.09030330882353,
+          "dkw_radius": 0.12184216272002532,
+          "nominal_joint99_full_tv_lower": 0.023124363797567854,
+          "direction": "increasing",
+          "clip_lower": 4,
+          "clip_upper": 13,
+          "reference_expectation_lower": 0.5421019431842599,
+          "empirical_expectation": 0.3971354166666667
+        }
+      ],
+      "experimental_comparison": {
+        "threshold": 94,
+        "empirical_ks": 0.2675390505141219,
+        "nominal_joint99_full_bit_tv_lower": 0.1441012300178715,
+        "experimental_records": 1492642,
+        "experimental_dkw_radius": 0.0015956577762250765
+      }
+    },
+    {
+      "method": "pnr3",
+      "success": true,
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 1024,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "empirical_mean": 79.0234375,
+          "empirical_variance": 359.5439271749756,
+          "dkw_radius": 0.06092108136001266,
+          "nominal_joint99_full_tv_lower": 0.2950406587837476,
+          "direction": "increasing",
+          "clip_lower": 70,
+          "clip_upper": 106,
+          "reference_expectation_lower": 0.6752976776437603,
+          "empirical_expectation": 0.3193359375
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 1024,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "empirical_mean": 7.8056640625,
+          "empirical_variance": 13.697289490163735,
+          "dkw_radius": 0.06092108136001266,
+          "nominal_joint99_full_tv_lower": 0.06559926460202499,
+          "direction": "increasing",
+          "clip_lower": 4,
+          "clip_upper": 13,
+          "reference_expectation_lower": 0.5421019431842599,
+          "empirical_expectation": 0.4155815972222222
+        }
+      ],
+      "experimental_comparison": {
+        "threshold": 87,
+        "empirical_ks": 0.5094315186490632,
+        "nominal_joint99_full_bit_tv_lower": 0.4469147795128255,
+        "experimental_records": 1492642,
+        "experimental_dkw_radius": 0.0015956577762250765
+      },
+      "photons": {
+        "records": 1024,
+        "reference_mean": 116.28612516734034,
+        "reference_variance": 684.2505088270725,
+        "empirical_mean": 85.2607421875,
+        "empirical_variance": 501.7413312179252,
+        "dkw_radius": 0.06092108136001266,
+        "nominal_joint99_full_tv_lower": 0.3072123538158624,
+        "direction": "increasing",
+        "clip_lower": 75,
+        "clip_upper": 119,
+        "reference_expectation_lower": 0.6703129451190569,
+        "empirical_expectation": 0.3021795099431818
+      }
+    }
+  ],
+  "scope": "Predeclared accuracy witnesses for new ordering, B32 weights and photon-first.\nNew-family joint99 coverage: four methods times two click regions, one photon\ncount observable, and the shared experimental count CDF, each delta=.001.\nThese bounds are separate from the earlier 17-region baseline confidence family.\nFailed batches retain their status and receive no assigned complete sampling law.\n",
+  "confidence": "conditional on iid generated/experimental datasets and fixed numerical Gaussian moments; not an interval arithmetic certificate"
+}

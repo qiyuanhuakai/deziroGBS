@@ -1,0 +1,30 @@
+{
+  "scope": "All first-eight paths of complete 1152-output lossy low-rank sampling.\nIncludes actual GPU replay through the full trajectory and preserves failures.\nFull Frugal covariance is exported by native code, used unchanged in comparisons.\n",
+  "hashes": {
+    "experiments/iteration83_full_quality_v1.py": "fb53c73dbe290dcdb9d2db2445213e5ebc6f270401c333be420b020af74f7322",
+    "native/gaussian_loss_map83_v2.cpp": "2e5c1ce7c0b8f53b9a12eb77bb30de1b9eb1975e6289a931ddd24cc162130a54",
+    "native/gaussian_loss_map83_v1.cpp": "15fc39a4c15952dea387e3cf1f507f1865ab583dc43eb67a8d15563b1aa97734",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  },
+  "budgets": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "frugal_cutoffs": [
+    2,
+    3,
+    5
+  ],
+  "ports": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56
+  ]
+}

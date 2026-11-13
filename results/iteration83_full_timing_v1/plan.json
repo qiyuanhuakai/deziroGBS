@@ -1,0 +1,41 @@
+{
+  "scope": "Three serial rotations for our complete 1152-bit samplers and one full Frugal panel.\nThe full Frugal comparison is explicitly a single observation, not a median.\nAll methods start from the same transmission/input covariance and include native\nloss reduction. Frugal also pays full-covariance export. DLL/file I/O and initial\nCUDA context are excluded. No concurrent heavy work; no phase timing splicing.\n",
+  "hashes": {
+    "experiments/iteration83_full_timing_v1.py": "cfb7c490e983db02acd3777d2c230e07d38a2b7e0c9e444129ec796e19272470",
+    "results/iteration83_full_quality_v1/loss.dll": "7cd433ac65c29894635405d2ebd4077fafa17909017620793cf0a65b321b74a9",
+    "results/iteration83_frugal_build_v2/frugal.dll": "4d753a60815cb29293da0fc185fea075eaf8796a08d99435ea25c43c304c5017",
+    "results/iteration82_stable_pilot_v1/stable.dll": "b902e6e84c3a9c9162aefd781e49cdbb57685f8c0b16267b5b7ee842937ead07",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  },
+  "records": 4,
+  "methods": [
+    [
+      "frugal",
+      2
+    ],
+    [
+      "gpu",
+      4
+    ],
+    [
+      "gpu",
+      8
+    ],
+    [
+      "stable",
+      8
+    ],
+    [
+      "stable",
+      32
+    ]
+  ],
+  "rotations": 3,
+  "workers": 16,
+  "frugal_workers": 1,
+  "frugal_repetitions": 1,
+  "frugal_workspace_bytes_per_worker": 16307441664,
+  "extra_gpu_records": 256
+}

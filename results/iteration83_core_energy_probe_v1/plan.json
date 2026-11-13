@@ -1,0 +1,9 @@
+{
+  "scope": "Small active-space independent reference for lower-energy pure/noise splits.\nGiven V=S diag(nu,nu) S^T, rotate each Williamson pair to diagonalize its column\nGram matrix and minimize a exp(-2u)+b exp(2u) for |u|<=log(nu)/2. This is optimal\nonly within this fixed Williamson pair-product family, not globally optimal.\nA tiny interior margin gives strictly positive noise without eigenvalue clipping.\nReference linear algebra is 100-dimensional only; production kernel is pending.\n",
+  "hashes": {
+    "experiments/iteration83_core_energy_probe_v1.py": "b373bb46dd032b4eeed3a2438adeb734608c299da8fe7334fe0846f42cbd8fd1",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  },
+  "interior_fraction": 1e-08,
+  "decimal_digits": 80
+}

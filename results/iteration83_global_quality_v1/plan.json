@@ -1,0 +1,16 @@
+{
+  "scope": "Full-output quality: exact Gaussian-OR click moments and 4096 GPU records.\nKeep all failed rows and forbid distributional TV claims for a failed batch.\nUse simultaneous DKW-Cantelli witnesses from complete click counts, separately\nfrom first-eight marginal TV. Finite precision is checked, not interval-certified.\n",
+  "records": 4096,
+  "budgets": [
+    4,
+    8
+  ],
+  "seed": 830300,
+  "delta_per_method": 0.005,
+  "hashes": {
+    "experiments/iteration83_global_quality_v1.py": "31da28df64e1cdb4690f3371ad2399fd9481a8466a688d380eebb45801f00630",
+    "native/gaussian_click_moments83_v1.cpp": "3b56452edd25cbdefd7c5330f9ffb611b9885f1fa10e8d5242a99a04bba81998",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  }
+}

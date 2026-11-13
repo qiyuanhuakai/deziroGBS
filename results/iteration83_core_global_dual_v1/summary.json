@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "sector": 0,
+      "fixed_basis_feasible_core_mean": 4.227070096300114,
+      "all_basis_dual_core_lower": 0.25217412257646643,
+      "all_basis_core_gap": 3.9748959737236476,
+      "scale": 0.06126801144951616,
+      "scale_search_success": true,
+      "minimum_scaled_dual_eigenvalue": 5.87073396964093e-11,
+      "oracle_minimum_noise_eigenvalue": -0.46074641385079,
+      "seconds": 0.029727400000410853,
+      "evaluations": 22
+    },
+    {
+      "sector": 1,
+      "fixed_basis_feasible_core_mean": 0.8528918374027938,
+      "all_basis_dual_core_lower": 0.0504750180092266,
+      "all_basis_core_gap": 0.8024168193935672,
+      "scale": 0.060418036237346553,
+      "scale_search_success": true,
+      "minimum_scaled_dual_eigenvalue": 3.0059530216731785e-09,
+      "oracle_minimum_noise_eigenvalue": -0.2598106008600074,
+      "seconds": 0.043928900000537396,
+      "evaluations": 32
+    }
+  ],
+  "scope": "Lightweight all-basis SDP dual check for the fixed-basis pure-core candidate.\nReuse the archived weighted-pure oracle (Oh et al.; Kalra-Kocharovsky 2606.29739).\nScale the fixed-basis PSD multiplier, evaluate a valid full physical-cone dual.\nThis is a numerical optimality bracket, not a sampling-cost or TV certificate.\n"
+}

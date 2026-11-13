@@ -1,0 +1,32 @@
+{
+  "reference_photon_mean": 116.28612516734034,
+  "reference_photon_variance": 684.2505088270725,
+  "rows": [
+    {
+      "method": "order4",
+      "records": 4096,
+      "nominal_joint99_full_click_tv_lower": 0.15304512985449295,
+      "nominal_joint99_experimental_bit_tv_lower": 0.29320950719721317
+    },
+    {
+      "method": "order8",
+      "records": 4096,
+      "nominal_joint99_full_click_tv_lower": 0.1156379347084476,
+      "nominal_joint99_experimental_bit_tv_lower": 0.2494480634315195
+    },
+    {
+      "method": "weights32",
+      "records": 256,
+      "nominal_joint99_full_click_tv_lower": 0.02312436379757124,
+      "nominal_joint99_experimental_bit_tv_lower": 0.1441012300178715
+    },
+    {
+      "method": "pnr3",
+      "records": 1024,
+      "nominal_joint99_full_click_tv_lower": 0.2950406587837456,
+      "nominal_joint99_experimental_bit_tv_lower": 0.4469147795128255,
+      "nominal_joint99_full_pnr_tv_lower": 0.3072123538158624
+    }
+  ],
+  "scope": "Separate ten-event joint99 family; iid datasets and numerical Gaussian references."
+}

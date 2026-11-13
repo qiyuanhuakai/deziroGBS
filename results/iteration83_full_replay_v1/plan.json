@@ -1,0 +1,15 @@
+{
+  "scope": "CPU/GPU full 1152-output replay with identical native Philox uniforms.\nDiagnose numerical drift separately from approximation bias and keep failures.\n",
+  "count": 16,
+  "budgets": [
+    4,
+    8
+  ],
+  "seed": 830300,
+  "hashes": {
+    "experiments/iteration83_full_replay_v1.py": "20add53fb32b0252c9f40459a5f45a00e6f2a9fa52d4829dc979bc6d0b168b1c",
+    "native/gaussian_click_replay83_v1.cpp": "02f9b6ebf49d8f973b552e8e7304a36b7edfe8621fb3b00a439667f2413b3c74",
+    "native/gaussian_click_stable82_v1.cpp": "cd9e4717af1c9879f74d38c1f5abfeab13dda47ec41eb8becb0512cbf80a07a0",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  }
+}

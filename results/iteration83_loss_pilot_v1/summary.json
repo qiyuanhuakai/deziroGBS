@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "method": "gpu",
+      "budget": 4,
+      "count": 16,
+      "success": true,
+      "mean_clicks": 84.375,
+      "shape": [
+        16,
+        1152
+      ],
+      "seconds": 3.111964800000351
+    },
+    {
+      "method": "stable",
+      "budget": 4,
+      "count": 16,
+      "success": true,
+      "mean_clicks": 88.4375,
+      "shape": [
+        16,
+        1152
+      ],
+      "seconds": 1.004801299999599
+    },
+    {
+      "method": "gpu",
+      "budget": 8,
+      "count": 16,
+      "success": true,
+      "mean_clicks": 81.875,
+      "shape": [
+        16,
+        1152
+      ],
+      "seconds": 0.8873104999993302
+    },
+    {
+      "method": "stable",
+      "budget": 8,
+      "count": 16,
+      "success": true,
+      "mean_clicks": 90.4375,
+      "shape": [
+        16,
+        1152
+      ],
+      "seconds": 1.4365609999995286
+    }
+  ],
+  "prepare_seconds": 0.016971600000033504,
+  "reconstruction": [
+    8.881784197001252e-16,
+    1.9949319973733282e-17
+  ]
+}

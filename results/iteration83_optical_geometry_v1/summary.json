@@ -1,0 +1,55 @@
+{
+  "shifts": [
+    {
+      "shift": 1,
+      "mean": 0.8791800280470926,
+      "minimum": 2.753260428439324e-06,
+      "maximum": 0.9999679231368782,
+      "above_point999": 1008,
+      "pairs": 1151
+    },
+    {
+      "shift": 8,
+      "mean": 0.028531004333338467,
+      "minimum": 1.7231553811070108e-07,
+      "maximum": 0.34451387253387183,
+      "above_point999": 0,
+      "pairs": 1144
+    },
+    {
+      "shift": 144,
+      "mean": 0.029256753234069025,
+      "minimum": 1.4246891445344275e-05,
+      "maximum": 0.29207460340931896,
+      "above_point999": 0,
+      "pairs": 1008
+    },
+    {
+      "shift": 288,
+      "mean": 0.014254182225001192,
+      "minimum": 2.577051965734934e-06,
+      "maximum": 0.140832161928708,
+      "above_point999": 0,
+      "pairs": 864
+    },
+    {
+      "shift": 576,
+      "mean": 0.015742357099131202,
+      "minimum": 2.1865738985001157e-07,
+      "maximum": 0.2162544881153046,
+      "above_point999": 0,
+      "pairs": 576
+    }
+  ],
+  "adjacency": {
+    "original": {
+      "mean": 0.8724389580064928,
+      "above_point999": 1000
+    },
+    "temporal_grouped": {
+      "mean": 0.031127571671316717,
+      "above_point999": 0
+    }
+  },
+  "scope": "Lightweight input-only geometry audit of physical detector ordering.\nOnly linear-size row comparisons, no sampling or optimization on data records.\nTests the eight temporal-bin/144-spatial-port grouping hypothesis explicitly.\n"
+}

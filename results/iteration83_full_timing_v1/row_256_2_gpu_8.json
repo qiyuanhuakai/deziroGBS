@@ -1,0 +1,32 @@
+{
+  "rep": 2,
+  "method": "gpu",
+  "budget": 8,
+  "records": 256,
+  "success": true,
+  "prepare_seconds": 0.011596000000281492,
+  "mean_clicks": 90.1953125,
+  "seconds": 3.149229100001321,
+  "sectors": [
+    {
+      "statistics": {
+        "completed_samples": 256,
+        "clicks": 22425,
+        "compressions": 5513,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 174090014.54413956
+      },
+      "wall_seconds": 1.6782437000001664
+    },
+    {
+      "statistics": {
+        "completed_samples": 256,
+        "clicks": 741,
+        "compressions": 96,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 3990405400896.079
+      },
+      "wall_seconds": 1.434631399999489
+    }
+  ]
+}

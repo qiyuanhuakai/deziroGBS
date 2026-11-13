@@ -1,5 +1,38 @@
 # Native sampling kernels
 
+## Iteration83: full lossy input, weight arithmetic and core resources
+
+`gbslab.native_loss_map.prepare_lossy_gaussian_map` exposes native QR loss reduction from a
+contractive complex T to an isometry V and active excess covariance X. See the
+wrapper for the actual public interface. Covariance units are X=(Gamma-I)/2,
+with grouped q/p order. The v2 native loss library also exports full covariance
+for Frugal; all lossy tests are explicit and no loss term is added twice.
+
+`gaussian_click_weights83_v1.cpp` retains long-double covariance arithmetic and
+uses two binary128 components for signed weights. It includes the stable82
+model API and adds `tc83w_sample`, `tc83w_prefix`, and `weight83_probe`.
+Link quadmath. This experimental ABI fixes the tested B32 normalization failures,
+without relaxing the check, but does not guarantee accurate full distributions.
+Fresh B32 quality records still give a 2.3124% full-click TV lower bound.
+
+`gaussian_core_energy83_v1.cpp` minimizes pure-core energy within a fixed passive
+basis, returning a correlated noise covariance in X units and a numerical dual
+bound. It does not sample photons. Physical q/p displacement means have covariance
+Gamma-P; real/imaginary alpha have covariance (Gamma-P)/4. Do not add separately
+sampled core PNR and displacement PNR: that would discard interference.
+The known all-basis SDP reference gives a smaller core but is not a new sampler.
+
+The GPU native dimension guard allows 65536 output modes and the Python wrapper
+allows 128 inputs. Earlier reports incorrectly described 384 as an interface
+limit; it was the previous largest tested output count. Iteration83 completes
+1152-output runs. Interface bounds alone are not tested-scale claims.
+
+Build commands, source/library hashes and complete failures are archived in
+the iteration83 result plans. See the [report](../RESEARCH_REPORT_ITERATION83.md)
+and [methods](../research/iteration83_methods.md) for same-input quantitative
+accuracy and timing. Four-record Frugal uses one CPU worker; the stable CPU
+limit is sixteen with at most four active, and CUDA runs on a separate device.
+
 ## Iteration82: factorized PNR and stable zero-mean clicks
 
 `NativeFactorPNRSampler` in `gbslab.native_factor_pnr` consumes the calibrated

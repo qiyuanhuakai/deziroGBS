@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "sector": 0,
+      "seconds": 0.04896299999927578,
+      "iterations": 21,
+      "evaluations": 25,
+      "optimizer_success": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "diagnostics": {
+        "primal_trace": 114.17872236362209,
+        "dual_trace": 114.17872255012495,
+        "primal_minus_dual": -1.8650285937837907e-07,
+        "pure_mean_photons": 3.5446805909055215,
+        "dual_photon_lower_estimate": 3.5446806375312363,
+        "minimum_remainder_eigenvalue": -5.525981553174866e-08,
+        "minimum_dual_eigenvalue": -1.9081812579328428e-15,
+        "minimum_pure_eigenvalue": 0.5242939752742893,
+        "purity_residual": 6.661338147750939e-15,
+        "riccati_residual": 1.509903313490213e-14,
+        "oracle_residual": 0.0,
+        "complementary_trace": -1.8650285852836457e-07,
+        "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+      },
+      "candidate_numerically_feasible": false
+    },
+    {
+      "sector": 1,
+      "seconds": 0.03425760000027367,
+      "iterations": 14,
+      "evaluations": 18,
+      "optimizer_success": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "diagnostics": {
+        "primal_trace": 103.281775946409,
+        "dual_trace": 103.2817759426134,
+        "primal_minus_dual": 3.7956056075927336e-09,
+        "pure_mean_photons": 0.8204439866022497,
+        "dual_photon_lower_estimate": 0.8204439856533483,
+        "minimum_remainder_eigenvalue": -6.441017718393589e-09,
+        "minimum_dual_eigenvalue": -6.76305338607344e-16,
+        "minimum_pure_eigenvalue": 0.7382887034411663,
+        "purity_residual": 6.994405055138486e-15,
+        "riccati_residual": 1.2212453270876722e-14,
+        "oracle_residual": 0.0,
+        "complementary_trace": 3.795653126805148e-09,
+        "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+      },
+      "candidate_numerically_feasible": false
+    }
+  ],
+  "scope": "Bounded lightweight reference: 100 iterations of archived all-basis dual search.\nThis is an existing Oh/Kalra-Kocharovsky SDP method, not a new algorithm. The small\n100-dimensional reference supplies dual lower estimates; candidate primal states\nare not accepted merely because an optimizer terminates. No covariance clipping.\n"
+}

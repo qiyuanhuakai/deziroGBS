@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "method": "stable",
+      "budget": 4,
+      "success": true,
+      "numerical_tv": 6.333955336168742e-06,
+      "normalization_residual": 0.0
+    },
+    {
+      "method": "gpu",
+      "budget": 4,
+      "success": true,
+      "numerical_tv": 6.33395533322641e-06
+    },
+    {
+      "method": "stable",
+      "budget": 8,
+      "success": true,
+      "numerical_tv": 2.8244024848502677e-07,
+      "normalization_residual": 2.220446049250313e-16
+    },
+    {
+      "method": "gpu",
+      "budget": 8,
+      "success": true,
+      "numerical_tv": 2.824402456453199e-07
+    },
+    {
+      "method": "stable",
+      "budget": 16,
+      "success": true,
+      "numerical_tv": 4.880643220123578e-09,
+      "normalization_residual": 2.220446049250313e-16
+    },
+    {
+      "method": "stable",
+      "budget": 32,
+      "success": true,
+      "numerical_tv": 1.3364177940915692e-11,
+      "normalization_residual": 2.220446049250313e-16
+    },
+    {
+      "method": "frugal",
+      "budget": 2,
+      "success": true,
+      "numerical_tv": 0.00046953066633175216
+    },
+    {
+      "method": "frugal",
+      "budget": 3,
+      "success": true,
+      "numerical_tv": 2.8893158485245048e-05
+    },
+    {
+      "method": "frugal",
+      "budget": 5,
+      "success": true,
+      "numerical_tv": 9.091557339841178e-08
+    }
+  ],
+  "scope": "G0 first eight physical detectors in the specified complete-output order; not full TV"
+}

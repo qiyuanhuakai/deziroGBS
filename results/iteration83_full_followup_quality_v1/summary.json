@@ -1,0 +1,76 @@
+{
+  "rows": [
+    {
+      "method": "weights32",
+      "records": 256,
+      "success": true,
+      "seconds": 451.79026499999964,
+      "sectors": [
+        {
+          "sector": 0,
+          "returncode": 0,
+          "error": "",
+          "success": true,
+          "failed_rows": 0,
+          "completed_rows": 256
+        },
+        {
+          "sector": 1,
+          "returncode": 0,
+          "error": "",
+          "success": true,
+          "failed_rows": 0,
+          "completed_rows": 256
+        }
+      ],
+      "mean_clicks": 93.828125
+    },
+    {
+      "method": "pnr3",
+      "records": 1024,
+      "success": true,
+      "seconds": 149.0152750999987,
+      "sectors": [
+        {
+          "sector": 0,
+          "returncode": 0,
+          "error": "",
+          "success": true,
+          "completed_rows": 1024,
+          "statistics": [
+            84086.0,
+            1024.0,
+            166.0,
+            20655.0,
+            4.0,
+            85110.0,
+            393075.0,
+            0.0,
+            4.28801959218017e-17
+          ]
+        },
+        {
+          "sector": 1,
+          "returncode": 0,
+          "error": "",
+          "success": true,
+          "completed_rows": 1024,
+          "statistics": [
+            3221.0,
+            1024.0,
+            16.0,
+            442.0,
+            4.0,
+            4245.0,
+            14832.0,
+            0.0,
+            3.688997891881929e-17
+          ]
+        }
+      ],
+      "mean_total_photons": 85.2607421875,
+      "mean_clicks": 79.0234375
+    }
+  ],
+  "scope": "New independent complete records for the two routes on one lossy input.\n256 B32 two-binary128 click records; 1024 retained-three photon-first records.\nOne heavy method at a time, no refills or failed-row deletion. Raw native outputs\nand completion/error counters are archived even when a batch fails. Exploratory\nwall times are not a replicated performance comparison.\n"
+}

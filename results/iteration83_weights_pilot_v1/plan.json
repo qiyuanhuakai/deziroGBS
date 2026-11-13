@@ -1,0 +1,41 @@
+{
+  "scope": "Targeted two-binary128 signed-weight pilot on the same full lossy input.\nPreserve old failed seeds and all new failures. Scalar arithmetic is checked\nagainst 100-decimal mpmath. Gaussian covariance arithmetic remains long double;\nthis is neither an exact sampler nor a complete numerical error certificate.\n",
+  "hashes": {
+    "experiments/iteration83_weights_pilot_v1.py": "4d82982258dd146fff3748327ca90ccc0773ba209654b1902404cb54e36e37ac",
+    "native/gaussian_click_weights83_v1.cpp": "c080eb8ed7fbe67f017b43d752baef31a23139afdaa5b74354a2db773a6a5e41",
+    "native/gaussian_click_stable82_v1.cpp": "cd9e4717af1c9879f74d38c1f5abfeab13dda47ec41eb8becb0512cbf80a07a0",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration81_jiuzhang_accuracy_v3/input_0.npz": "b6af8cb4127ce6ff46a5099ddbe5d99cffda6c9d15c25a9c720d653e3c46bdf0"
+  },
+  "count": 4,
+  "panels": [
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      32
+    ],
+    [
+      1,
+      32
+    ],
+    [
+      2,
+      32
+    ],
+    [
+      0,
+      64
+    ]
+  ],
+  "workers": 16,
+  "prefix_budgets": [
+    8,
+    32,
+    64
+  ],
+  "sampling_seed": "830200+2*rep+sector; matches frozen timing83, not independent quality replicas"
+}

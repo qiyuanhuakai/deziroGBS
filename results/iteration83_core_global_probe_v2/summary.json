@@ -1,0 +1,111 @@
+{
+  "rows": [
+    {
+      "sector": 0,
+      "seconds": 0.6299414000004617,
+      "diagnostics": {
+        "primal_trace": 114.1788159981514,
+        "dual_trace": 114.17872254987951,
+        "primal_minus_dual": 9.344827189750049e-05,
+        "pure_mean_photons": 3.5447039995378518,
+        "dual_photon_lower_estimate": 3.5446806374698774,
+        "minimum_remainder_eigenvalue": 9.447411202579542e-07,
+        "minimum_dual_eigenvalue": -1.958243421916795e-15,
+        "minimum_pure_eigenvalue": 0.5242929729044481,
+        "purity_residual": 2.55351295663786e-15,
+        "riccati_residual": 9.769962616701378e-15,
+        "oracle_residual": 4.884981308350689e-15,
+        "complementary_trace": 9.34482719200224e-05,
+        "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+      },
+      "pairing_roundtrip_error": 4.884981308350689e-15,
+      "minimum_noise_eigenvalue": 4.723705603589646e-07,
+      "covariance_reconstruction_error": 4.440892098500626e-15,
+      "budgets": [
+        {
+          "budget": 8,
+          "conditional_ideal_tv_upper": "0.2002694359666238082720989113589479815820447730756727285044904579779021607244893"
+        },
+        {
+          "budget": 12,
+          "conditional_ideal_tv_upper": "0.060300057643396798624389436201621483807631563417125194349945067045816609960328977"
+        },
+        {
+          "budget": 16,
+          "conditional_ideal_tv_upper": "0.015076792361556957416519824466180121545509839142477850371481675540346641794677713"
+        },
+        {
+          "budget": 24,
+          "conditional_ideal_tv_upper": "0.00063733187559246132637618239904934118475724375233266997691803456972468065521768698"
+        },
+        {
+          "budget": 32,
+          "conditional_ideal_tv_upper": "0.000018763802559279020422805373174854874841873459862156659780122366112778064656743521"
+        },
+        {
+          "budget": 48,
+          "conditional_ideal_tv_upper": "0.0000000082360010317238908408025210536798939695132131008270617865529743446261175452753738"
+        },
+        {
+          "budget": 64,
+          "conditional_ideal_tv_upper": "0.0000000000020501531624557962689750889959458328421146403460693647696628057063731299801340446"
+        }
+      ],
+      "middle_rank4096_pure_state_distance_lower": 0.156841342825252
+    },
+    {
+      "sector": 1,
+      "seconds": 0.17596660000162956,
+      "diagnostics": {
+        "primal_trace": 103.28180934267917,
+        "dual_trace": 103.2817759425022,
+        "primal_minus_dual": 3.3400176974396345e-05,
+        "pure_mean_photons": 0.8204523356697919,
+        "dual_photon_lower_estimate": 0.8204439856255483,
+        "minimum_remainder_eigenvalue": 9.723852581352528e-07,
+        "minimum_dual_eigenvalue": -6.098144752807817e-16,
+        "minimum_pure_eigenvalue": 0.7382876995225026,
+        "purity_residual": 2.6645352591003757e-15,
+        "riccati_residual": 6.661338147750939e-15,
+        "oracle_residual": 3.9968028886505635e-15,
+        "complementary_trace": 3.340017693407926e-05,
+        "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+      },
+      "pairing_roundtrip_error": 3.9968028886505635e-15,
+      "minimum_noise_eigenvalue": 4.861926290947303e-07,
+      "covariance_reconstruction_error": 5.551115123125783e-17,
+      "budgets": [
+        {
+          "budget": 8,
+          "conditional_ideal_tv_upper": "0.009764990295982995467504214616177727288462991529567714798906325365824177173031914"
+        },
+        {
+          "budget": 12,
+          "conditional_ideal_tv_upper": "0.000740876824068773857612139113587016509907241574641890857764718621038399977471972"
+        },
+        {
+          "budget": 16,
+          "conditional_ideal_tv_upper": "0.000046031321749788234496958550966969606141928410195519261759217242903343083624911443"
+        },
+        {
+          "budget": 24,
+          "conditional_ideal_tv_upper": "0.00000011791623862482868777289231842474261987362131383015166808286459548009411893257465"
+        },
+        {
+          "budget": 32,
+          "conditional_ideal_tv_upper": "0.00000000020777955335235541733307736621955937710798876550739209632372696986455543342661375"
+        },
+        {
+          "budget": 48,
+          "conditional_ideal_tv_upper": "0.00000000000000032059331107077495216170159526878033786734733257286963279610751826304786768686582"
+        },
+        {
+          "budget": 64,
+          "conditional_ideal_tv_upper": "0.00000000000000000000027598841866881104481017984235255913139982422216060643859400342271773898325787738"
+        }
+      ],
+      "middle_rank4096_pure_state_distance_lower": 0.019650232096858167
+    }
+  ],
+  "scope": "Guarded all-basis reference decomposition on the same 1152-output input.\nUse the existing SDP oracle with the predeclared 1e-6 active covariance margin;\ncheck the final canonical pairing state against the original input. Preserve v1\ninfeasible candidates. Theory tails and Schmidt resources are not sampler TV.\n"
+}

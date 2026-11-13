@@ -1,0 +1,11 @@
+{
+  "scope": "Quantify pure-core truncation budgets on the actual lossy 50-input sectors.\nReuse the frozen C++ Williamson/noise decomposition. The trace-distance bound\nsqrt(discarded core mass) applies only if that coherently projected core is\nsampled exactly after the displacement channel. It does not certify current\nGaussian-reset or factor samplers, nor independent addition of core/noise PNRs.\n",
+  "hashes": {
+    "experiments/iteration83_core_budget_v1.py": "867b3825a3c5fb9b0c6d002d362eab5bae3385288c7131ae888f85501b59f090",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration75_resplit_pilot_v1/resplit.dll": "6c3f15a0a6c039d952919813a37c0378903fc466ea3adbfdadec03a995962435",
+    "native/gaussian_resplit75_v1.hpp": "a9b80b5f7d5c13fce22bf3ef00424df27f2f577ec7701e5faa6c0c711de8cc86"
+  },
+  "decimal_digits": 80,
+  "maximum_core_photons": 128
+}

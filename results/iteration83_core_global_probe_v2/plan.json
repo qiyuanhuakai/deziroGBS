@@ -1,0 +1,14 @@
+{
+  "scope": "Guarded all-basis reference decomposition on the same 1152-output input.\nUse the existing SDP oracle with the predeclared 1e-6 active covariance margin;\ncheck the final canonical pairing state against the original input. Preserve v1\ninfeasible candidates. Theory tails and Schmidt resources are not sampler TV.\n",
+  "hashes": {
+    "experiments/iteration83_core_global_probe_v2.py": "5a7d087e7a8f2edfcf017fb60ce552713308d160ec122f230dc2044623febc62",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "src/gbslab/gaussian_resource.py": "724ef5f9134692b37425d59be830d82e09e8c1237a98cc8575a5bc2a76d221a4",
+    "src/gbslab/exact.py": "39c5133c2dae4407d22d55de3d4a50f2a82e715a958721972029e22c2b9f8427",
+    "src/gbslab/mps_probe.py": "d1b94ea7aba6ac493e76a6632fe3a5568c9bf8218ff859fc65052af4ad21d8a1",
+    "src/gbslab/banded_gaussian_mps.py": "66534d0852d6b78d67cf45f72cbfbe1b0fcbea33748d3086084e65bea5284aa8"
+  },
+  "maximum_iterations": 100,
+  "margin": 1e-06,
+  "source": "https://arxiv.org/html/2606.29739v1"
+}

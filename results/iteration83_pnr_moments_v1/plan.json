@@ -1,0 +1,30 @@
+{
+  "scope": "Locate higher-order PNR approximation error without Monte Carlo histograms.\nFactorial moments of the ideal normalized latent-pair model versus Wick moments;\nbound the B8 low-total replacement contribution separately for every energy.\n",
+  "hashes": {
+    "experiments/iteration83_pnr_moments_v1.py": "1c6075a7a75efa25e24d81c2d59b7dab4bb550e02570b14c2a341e51be10755d",
+    "native/gaussian_pair_moments83_v1.cpp": "a76739e537325e90842f7a7de98789417e21a1a4f313588c78f5e224c69fbea4",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "labels": [
+    "strong4",
+    "wide2",
+    "large128"
+  ],
+  "squeezing": [
+    0.3,
+    0.7,
+    1.1
+  ],
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "threads": 16,
+  "ports": "first min(8,m)"
+}

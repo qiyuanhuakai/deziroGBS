@@ -1,0 +1,20 @@
+{
+  "scope": "Convex reference solve in a fixed passive pure-core basis, not a sampler.\nMinimize tr diag(exp(-2s),exp(2s)) subject to that diagonal <= R^T V R.\nLog-det barrier Newton steps preserve positive noise without eigenvalue clipping.\nFor PSD dual Y, 2 sum sqrt((1+Yqq)(1+Ypp))-tr(Y W) is a dual lower bound.\nOnly 100-dimensional independent reference algebra; native implementation pending.\n",
+  "hashes": {
+    "experiments/iteration83_core_energy_probe_v2.py": "7670da70c329086381ff49b708ff559639041b0a6940e4f44e28cf55598b64a7",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration83_core_budget_v2/split_0.npz": "10efb0e5f0ca82694e28d9abf8d27e0bec34660ab78935a306fbd8c2ac5ab272",
+    "results/iteration83_core_budget_v2/split_1.npz": "b0a92408a7b69bed4e611c9e22d4b291d760e4f71f6ed5869eab1c742e5df974"
+  },
+  "barriers": [
+    1,
+    0.1,
+    0.01,
+    0.001,
+    0.0001,
+    1e-05,
+    1e-06,
+    1e-07,
+    1e-08
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "New independent complete records for the two routes on one lossy input.\n256 B32 two-binary128 click records; 1024 retained-three photon-first records.\nOne heavy method at a time, no refills or failed-row deletion. Raw native outputs\nand completion/error counters are archived even when a batch fails. Exploratory\nwall times are not a replicated performance comparison.\n",
+  "hashes": {
+    "experiments/iteration83_full_followup_quality_v1.py": "bb323220a8de77a170b6d2c436df99e62637d291a221062ba0724dd11dc60b14",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration83_weights_pilot_v1/weights.dll": "bc4a4198f53557d1b55298ab91572e4e572ba852d083645eec07f43c525e0da1",
+    "results/iteration73_polynomial_pilot_v2/polynomial.dll": "3e9bee45ebed5a0798f1e1da4323a1fbdc086abade74cf83d14e8f9ae1c71038",
+    "native/gaussian_click_weights83_v1.cpp": "c080eb8ed7fbe67f017b43d752baef31a23139afdaa5b74354a2db773a6a5e41",
+    "native/gaussian_pnr_polynomial73_v1.cpp": "23f6064a3b710791d969266fea0ea7662e8a5dbe0986464c6f48d047f35beef7",
+    "src/gbslab/native_stable_click.py": "b6639d89cb3ba26d75eb740fbaff7ff0be69009965e8b0fe57aca043ea393851",
+    "src/gbslab/native_polynomial_pnr.py": "bd5bceafcbe98714bbad3408820cec6d389f278089e6e5cf67522b6658182175"
+  },
+  "panels": [
+    {
+      "method": "weights32",
+      "records": 256,
+      "seed": 832200
+    },
+    {
+      "method": "pnr3",
+      "records": 1024,
+      "seed": 832100
+    }
+  ],
+  "workers": 16
+}

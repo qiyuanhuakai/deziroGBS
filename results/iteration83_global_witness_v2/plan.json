@@ -1,0 +1,9 @@
+{
+  "scope": "Simultaneous clipped-count expectation witnesses from Gaussian first moments.\nFor any variable C with mean mu and variance v,\nE[(C-U)+] <= (sqrt(v+(U-mu)^2)-(U-mu))/2 by Cauchy-Schwarz.\nThus E[clip(C-L,0,U-L)] >= mu-L-that_bound.\nDKW bounds every normalized monotone clipped function simultaneously. Optimizing\nL,U after observing the data does not consume another confidence union budget.\n",
+  "hashes": {
+    "experiments/iteration83_global_witness_v2.py": "49e0216f3c20766e7b180906cf4fac2f6c86f27ccd97c3ffa79979f5c27ccb16",
+    "results/iteration83_global_quality_v1/summary.json": "d5a847659893c78526ca6aecae9a3542bf9078b4365213fb9c8c4140a9dd05fa",
+    "results/iteration83_global_quality_v1/reference_moments.json": "786b69faa73afa788cd7a6233e42ea40bc9313927068002a7df138723e905fc3"
+  },
+  "delta_per_method": 0.005
+}

@@ -1,0 +1,83 @@
+{
+  "scope": "Lightweight localization of complete-output bias using existing samples.\nFixed prefix/block regions, exact Gaussian single/pair moment identities, one\nnative CPU worker. No new samples or timing claims. DKW is simultaneous over\nboth methods and all declared regions; clipped thresholds/directions are uniform.\n",
+  "hashes": {
+    "experiments/iteration83_bias_profile_v1.py": "feb5b84129b2f1a9a5138640454b6cd126fa3521d35ad00d91becfa8eecba914",
+    "results/iteration83_global_quality_v1/moments.dll": "a96e0c38921d784b046571190615b8b283e9b6dd72c75a362f4c4569eeaf52a3",
+    "results/iteration83_full_quality_v1/covariance_0.npz": "0d5b0d9620b0be605b93831a52dee1c4a6a22318974be4f2f4ac245efb2464cc",
+    "results/iteration83_full_quality_v1/covariance_1.npz": "1ca375aa064fa221ed5ca4afa5f39d323492b7c856a4084022c60a5ed64ebef8",
+    "results/iteration83_global_quality_v1/combined_4.npz": "6db39ca4a83c492ecfa2c26373b2fd90fbd2cd78905b3a0e62dd725346375ca1",
+    "results/iteration83_global_quality_v1/combined_8.npz": "cbdfb5739c5f2357bab2442bed42a12b2dbae7af097eae810eb32992874d4ad3"
+  },
+  "regions": [
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      32
+    ],
+    [
+      0,
+      64
+    ],
+    [
+      0,
+      128
+    ],
+    [
+      0,
+      256
+    ],
+    [
+      0,
+      512
+    ],
+    [
+      0,
+      768
+    ],
+    [
+      0,
+      1024
+    ],
+    [
+      0,
+      1152
+    ],
+    [
+      128,
+      256
+    ],
+    [
+      256,
+      384
+    ],
+    [
+      384,
+      512
+    ],
+    [
+      512,
+      640
+    ],
+    [
+      640,
+      768
+    ],
+    [
+      768,
+      896
+    ],
+    [
+      896,
+      1024
+    ],
+    [
+      1024,
+      1152
+    ]
+  ],
+  "delta_per_method_region": 0.00029411764705882356,
+  "native_threads": 1
+}

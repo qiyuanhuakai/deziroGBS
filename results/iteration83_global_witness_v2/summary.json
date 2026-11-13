@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "budget": 4,
+      "success": true,
+      "records": 4096,
+      "nominal_joint99_full_tv_lower_bound": 0.17553297680388444,
+      "clip_lower": 69,
+      "clip_upper": 110,
+      "reference_normalized_expectation_lower": 0.6568691253125329,
+      "empirical_normalized_expectation": 0.4542921112804878,
+      "dkw_radius": 0.02704403722816071,
+      "reference_stoploss_upper": 7.964149677954687
+    },
+    {
+      "budget": 8,
+      "success": true,
+      "records": 4096,
+      "nominal_joint99_full_tv_lower_bound": 0.14677797489839664,
+      "clip_lower": 69,
+      "clip_upper": 110,
+      "reference_normalized_expectation_lower": 0.6568691253125329,
+      "empirical_normalized_expectation": 0.4830471131859756,
+      "dkw_radius": 0.02704403722816071,
+      "reference_stoploss_upper": 7.964149677954687
+    }
+  ],
+  "scope": "Full 1152-bit sampler versus fixed two-sector reference; iid and numerical-moment assumptions explicit. Not an experimental-data accuracy bound."
+}

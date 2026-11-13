@@ -1,0 +1,22 @@
+{
+  "scope": "Lightweight all-basis SDP dual check for the fixed-basis pure-core candidate.\nReuse the archived weighted-pure oracle (Oh et al.; Kalra-Kocharovsky 2606.29739).\nScale the fixed-basis PSD multiplier, evaluate a valid full physical-cone dual.\nThis is a numerical optimality bracket, not a sampling-cost or TV certificate.\n",
+  "hashes": {
+    "experiments/iteration83_core_global_dual_v1.py": "6ea1468b36e0f0657a43b92529a9842251e12b76ff1543a4dd9f7067e43f5a3a",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "src/gbslab/gaussian_resource.py": "724ef5f9134692b37425d59be830d82e09e8c1237a98cc8575a5bc2a76d221a4",
+    "results/iteration83_core_energy_probe_v2/split_0.npz": "247c66b9144a56c48228c287f48b55d37553c0660b3622e97440748873b0f7da",
+    "results/iteration83_core_energy_probe_v2/split_1.npz": "071ce60b66f5432eedcdfb1130ecd2cee529002e0e9ef9742ed423fa3a1c3b58"
+  },
+  "source": "https://arxiv.org/html/2606.29739v1",
+  "scale_grid": [
+    0,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1,
+    3,
+    10,
+    100
+  ]
+}

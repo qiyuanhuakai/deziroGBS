@@ -1,0 +1,72 @@
+[
+  {
+    "method": "frugal",
+    "budget": 2,
+    "records": 4,
+    "observations": 1,
+    "failed_panels": 0,
+    "seconds": 5394.1328257000005,
+    "prefix_tv": 0.00046953066633175216,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "gpu",
+    "budget": 4,
+    "records": 4,
+    "observations": 3,
+    "failed_panels": 0,
+    "seconds": 0.531734599999254,
+    "prefix_tv": 6.33395533322641e-06,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "gpu",
+    "budget": 4,
+    "records": 256,
+    "observations": 3,
+    "failed_panels": 0,
+    "seconds": 1.9074373000003106,
+    "prefix_tv": 6.33395533322641e-06,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "gpu",
+    "budget": 8,
+    "records": 4,
+    "observations": 3,
+    "failed_panels": 0,
+    "seconds": 0.73021719999997,
+    "prefix_tv": 2.824402456453199e-07,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "gpu",
+    "budget": 8,
+    "records": 256,
+    "observations": 3,
+    "failed_panels": 0,
+    "seconds": 3.149229100001321,
+    "prefix_tv": 2.824402456453199e-07,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "stable",
+    "budget": 8,
+    "records": 4,
+    "observations": 3,
+    "failed_panels": 0,
+    "seconds": 1.2530722999999853,
+    "prefix_tv": 2.8244024848502677e-07,
+    "scope": "same full output/input; Frugal one CPU worker, stable limit sixteen with at most four active for four records; GPU separate device"
+  },
+  {
+    "method": "stable",
+    "budget": 32,
+    "records": 4,
+    "observations": 3,
+    "failed_panels": 2,
+    "seconds": null,
+    "prefix_tv": 1.3364177940915692e-11,
+    "scope": "prefix law only; no valid complete-batch speed assigned"
+  }
+]

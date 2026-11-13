@@ -1,0 +1,53 @@
+{
+  "sector": 1,
+  "seconds": 0.17596660000162956,
+  "diagnostics": {
+    "primal_trace": 103.28180934267917,
+    "dual_trace": 103.2817759425022,
+    "primal_minus_dual": 3.3400176974396345e-05,
+    "pure_mean_photons": 0.8204523356697919,
+    "dual_photon_lower_estimate": 0.8204439856255483,
+    "minimum_remainder_eigenvalue": 9.723852581352528e-07,
+    "minimum_dual_eigenvalue": -6.098144752807817e-16,
+    "minimum_pure_eigenvalue": 0.7382876995225026,
+    "purity_residual": 2.6645352591003757e-15,
+    "riccati_residual": 6.661338147750939e-15,
+    "oracle_residual": 3.9968028886505635e-15,
+    "complementary_trace": 3.340017693407926e-05,
+    "scope": "Float64 primal/dual diagnostic; neither interval certificate nor sampling-complexity lower bound"
+  },
+  "pairing_roundtrip_error": 3.9968028886505635e-15,
+  "minimum_noise_eigenvalue": 4.861926290947303e-07,
+  "covariance_reconstruction_error": 5.551115123125783e-17,
+  "budgets": [
+    {
+      "budget": 8,
+      "conditional_ideal_tv_upper": "0.009764990295982995467504214616177727288462991529567714798906325365824177173031914"
+    },
+    {
+      "budget": 12,
+      "conditional_ideal_tv_upper": "0.000740876824068773857612139113587016509907241574641890857764718621038399977471972"
+    },
+    {
+      "budget": 16,
+      "conditional_ideal_tv_upper": "0.000046031321749788234496958550966969606141928410195519261759217242903343083624911443"
+    },
+    {
+      "budget": 24,
+      "conditional_ideal_tv_upper": "0.00000011791623862482868777289231842474261987362131383015166808286459548009411893257465"
+    },
+    {
+      "budget": 32,
+      "conditional_ideal_tv_upper": "0.00000000020777955335235541733307736621955937710798876550739209632372696986455543342661375"
+    },
+    {
+      "budget": 48,
+      "conditional_ideal_tv_upper": "0.00000000000000032059331107077495216170159526878033786734733257286963279610751826304786768686582"
+    },
+    {
+      "budget": 64,
+      "conditional_ideal_tv_upper": "0.00000000000000000000027598841866881104481017984235255913139982422216060643859400342271773898325787738"
+    }
+  ],
+  "middle_rank4096_pure_state_distance_lower": 0.019650232096858167
+}
