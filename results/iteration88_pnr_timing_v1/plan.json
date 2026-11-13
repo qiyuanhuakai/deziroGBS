@@ -1,0 +1,32 @@
+{
+  "scope": "Three serial paired64-record full1152 PNR timings at retained3/4/5.\nIncludes model/tree creation, output allocation, native RNG/sampling, spectral\nsum and destruction; excludes input loading, initial DLL load and artifact I/O.\nFixed common addresses are deliberate timing replays, not new quality records.\n",
+  "hashes": {
+    "experiments/iteration88_pnr_timing_v1.py": "2cfe2d2414408fe81270015272438d095394b56111ea45a875d574731a6f7102",
+    "experiments/iteration88_pnr_common_v1.py": "eff796df6160f5e39fc3d8ed10d098fd1ee251bbc7fbe57219c8959a2b77dad1",
+    "results/iteration87_blocktree_pilot_v1/blocktree.dll": "ababb2d5f079ab6a0ad3bc0e373cb6f9075dfdd721398cdc9fa10d92c0c5bec5",
+    "results/iteration84_correlated_pnr_pilot_v1/input_0.npz": "b6e856c93582b0dff2894500ca8870481a8ae2ba405a7b096222b29686d732e9",
+    "results/iteration84_correlated_pnr_pilot_v1/input_1.npz": "feeb910061f3c9282d6b5d99e04be2cf2a6d9e06254405e89ed625290e232c96"
+  },
+  "records": 64,
+  "retained": [
+    3,
+    4,
+    5
+  ],
+  "experiment": 2264932354,
+  "sectors": [
+    0,
+    1
+  ],
+  "purposes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "offset": 0,
+  "threads": 16,
+  "block": 16,
+  "repetitions": 3,
+  "intentional_replay": true
+}

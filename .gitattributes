@@ -688,3 +688,14 @@ results/iteration87*.json -text -whitespace
 native/*87* -text -whitespace
 tests/test_native_blocktree87.py -text -whitespace
 tests/test_native_guarded87.py -text -whitespace
+
+# Iteration88 frozen moment-projection, full PNR quality and failure diagnostics.
+RESEARCH_REPORT_ITERATION88.md -text -whitespace
+research/iteration88*.json -text -whitespace
+research/iteration89*.md -text -whitespace
+experiments/iteration88*.py -text -whitespace
+experiments/verify_iteration88*.py -text -whitespace
+results/iteration88*/** -text -whitespace
+results/iteration88*.json -text -whitespace
+native/*88* -text -whitespace
+tests/test_native_projected88.py -text -whitespace

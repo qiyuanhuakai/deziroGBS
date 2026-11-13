@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "budget": 16,
+      "sector": 0,
+      "oracle": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 0.7161924999963958
+      },
+      "guarded": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 0.6736802000013995
+      },
+      "comparison": {
+        "equal_decisions_errors_state_counters": true,
+        "oracle_probabilities_enclosed": true,
+        "counter_identities": true,
+        "completed": 16,
+        "maximum_midpoint_difference": 0.0,
+        "maximum_interval_width": 2.220446049250313e-16,
+        "old_wide_calls": 0,
+        "new_wide_calls": 0,
+        "ball_attempts": 0,
+        "certified_decisions": 0,
+        "ball_failures": 0,
+        "ambiguous": 0
+      },
+      "identical_projection_stats": true
+    },
+    {
+      "budget": 16,
+      "sector": 1,
+      "oracle": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 0.49258589999953983
+      },
+      "guarded": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 0.4820532000012463
+      },
+      "comparison": {
+        "equal_decisions_errors_state_counters": true,
+        "oracle_probabilities_enclosed": true,
+        "counter_identities": true,
+        "completed": 16,
+        "maximum_midpoint_difference": 0.0,
+        "maximum_interval_width": 6.938893903907228e-18,
+        "old_wide_calls": 0,
+        "new_wide_calls": 0,
+        "ball_attempts": 0,
+        "certified_decisions": 0,
+        "ball_failures": 0,
+        "ambiguous": 0
+      },
+      "identical_projection_stats": true
+    },
+    {
+      "budget": 64,
+      "sector": 0,
+      "oracle": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 1.1845329999996466
+      },
+      "guarded": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 1.1720865000024787
+      },
+      "comparison": {
+        "equal_decisions_errors_state_counters": true,
+        "oracle_probabilities_enclosed": true,
+        "counter_identities": true,
+        "completed": 16,
+        "maximum_midpoint_difference": 0.0,
+        "maximum_interval_width": 2.220446049250313e-16,
+        "old_wide_calls": 0,
+        "new_wide_calls": 0,
+        "ball_attempts": 0,
+        "certified_decisions": 0,
+        "ball_failures": 0,
+        "ambiguous": 0
+      },
+      "identical_projection_stats": true
+    },
+    {
+      "budget": 64,
+      "sector": 1,
+      "oracle": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 78.77633149999747
+      },
+      "guarded": {
+        "returncode": 0,
+        "error": "",
+        "seconds": 10.772589000000153
+      },
+      "comparison": {
+        "equal_decisions_errors_state_counters": true,
+        "oracle_probabilities_enclosed": true,
+        "counter_identities": true,
+        "completed": 16,
+        "maximum_midpoint_difference": 9.540979117872439e-18,
+        "maximum_interval_width": 6.638786742563241e-15,
+        "old_wide_calls": 2036,
+        "new_wide_calls": 1,
+        "ball_attempts": 2036,
+        "certified_decisions": 2036,
+        "ball_failures": 0,
+        "ambiguous": 0
+      },
+      "identical_projection_stats": true
+    }
+  ],
+  "prefix": [
+    {
+      "method": "block",
+      "budget": 16,
+      "numerical_tv": 4.880610583918665e-09,
+      "mass": 1.0000000000000002
+    },
+    {
+      "method": "projected",
+      "budget": 16,
+      "numerical_tv": 3.867930159287891e-09,
+      "mass": 1.0000000000000002
+    },
+    {
+      "method": "block",
+      "budget": 64,
+      "numerical_tv": 1.3857106038350744e-13,
+      "mass": 1.0000000000000002
+    },
+    {
+      "method": "projected",
+      "budget": 64,
+      "numerical_tv": 9.226370991464616e-14,
+      "mass": 1.0000000000000002
+    }
+  ],
+  "scope": "Matched full16-record projected numeric/guarded paths and thread/chunk gates.\nAlso enumerate the actual full model's first8 outputs for both spectra and form\ntheir independent OR law. Numerical finite-budget probabilities are not formal\nwhole-state certificates; the guard's midpoints are never multiplied as a law.\n"
+}

@@ -1,0 +1,214 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "repetition": 0,
+      "retained": 3,
+      "records": 64,
+      "seconds": 2.8374578000002657,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 2.292544599993562
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.3543915999980527
+        }
+      ]
+    },
+    {
+      "repetition": 0,
+      "retained": 4,
+      "records": 64,
+      "seconds": 3.886256300000241,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 3.0721105999982683
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.6174771000005421
+        }
+      ]
+    },
+    {
+      "repetition": 0,
+      "retained": 5,
+      "records": 64,
+      "seconds": 8.636340500001097,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 6.917295200000808
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 1.5139494000031846
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "retained": 4,
+      "records": 64,
+      "seconds": 4.009272699993744,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 3.192254099994898
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.5999493999988772
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "retained": 5,
+      "records": 64,
+      "seconds": 8.289777400001185,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 6.703106499997375
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 1.3875067999979365
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "retained": 3,
+      "records": 64,
+      "seconds": 2.7464695000016945,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 2.2248345999978483
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.3089985000042361
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "retained": 5,
+      "records": 64,
+      "seconds": 8.210634299997764,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 6.5754587999981595
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 1.450190700001258
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "retained": 3,
+      "records": 64,
+      "seconds": 2.8528904000049806,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 2.3209199999982957
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.2934488000028068
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "retained": 4,
+      "records": 64,
+      "seconds": 4.424219799999264,
+      "success": true,
+      "sectors": [
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 3.5119699999995646
+        },
+        {
+          "returncode": 0,
+          "error": "",
+          "failed": 0,
+          "seconds": 0.6440021000016714
+        }
+      ]
+    }
+  ],
+  "medians": {
+    "3": 2.8374578000002657,
+    "4": 4.009272699993744,
+    "5": 8.289777400001185
+  },
+  "checks": [
+    {
+      "retained": 3,
+      "identical_repetitions": true
+    },
+    {
+      "retained": 4,
+      "identical_repetitions": true
+    },
+    {
+      "retained": 5,
+      "identical_repetitions": true
+    }
+  ],
+  "scope": "Three serial paired64-record full1152 PNR timings at retained3/4/5.\nIncludes model/tree creation, output allocation, native RNG/sampling, spectral\nsum and destruction; excludes input loading, initial DLL load and artifact I/O.\nFixed common addresses are deliberate timing replays, not new quality records.\n"
+}

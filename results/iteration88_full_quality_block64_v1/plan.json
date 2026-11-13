@@ -1,0 +1,136 @@
+{
+  "scope": "Execute one fixed full1152-output method from the preregistered47-event family.\nAll failures stay in the denominator; projection rejection is an explicit,\npredefined closure choice, separately counted from any sample failure.\n",
+  "hashes": {
+    "experiments/iteration88_full_quality_v1.py": "3c17099b41899d86a1f398ee4103e65338b089b05e83f451b126e6eeb5cacf81",
+    "experiments/iteration88_project_common_v1.py": "6f16f5ddeb3383dd80fef1784bbb85c36f38e246958332cf12aa9477a8bb6acd",
+    "experiments/iteration87_guarded_common_v1.py": "e9c46f6a7c944014cabf60b7dbccf1892ccd908859c88f775096ddeaeae95b1e",
+    "results/iteration87_guarded_gates_v2/guarded.dll": "225cfc230423c91c4ca3a36ffc27a53f969c275e821b70ea0c9a02a91b9917c6",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "research/iteration88_full_quality_plan.json": "ad4f0dbfe2878eec4d3c860489a86d1cc6fbbd3ae7c3833939f2c3861ab2343e",
+    "results/iteration88_project_gates_v1/summary.json": "22b91886cb531d18ce9c8604fab54000ce6f01bdf9fec893d16368f6089a02a7",
+    "results/iteration84_rng_gates_v1/rng.dll": "299227482bc25c8c79aed9677c0361df5737334e9d4fee10b55803651a7b5e0c"
+  },
+  "job": {
+    "name": "block64",
+    "budget": 64,
+    "method": "block",
+    "records": 1024,
+    "pilot_records": 256,
+    "experiment": "0x88004003"
+  },
+  "batch_size": 64,
+  "threads": 16,
+  "sectors": [
+    0,
+    1
+  ],
+  "purpose": 5,
+  "quality_family": {
+    "scope": "Fixed before any new full-quality draws. Compare the unchanged block closure with full-second-moment-preserving one-click projection. Pilot0x88002001 records are excluded. Reused PNR records are not new observations.",
+    "joint_failure_budget": 0.01,
+    "events": 47,
+    "direct": [
+      {
+        "name": "block16",
+        "budget": 16,
+        "method": "block",
+        "records": 4096,
+        "pilot_records": 512,
+        "experiment": "0x88004001"
+      },
+      {
+        "name": "project16",
+        "budget": 16,
+        "method": "projected",
+        "records": 4096,
+        "pilot_records": 512,
+        "experiment": "0x88004002"
+      },
+      {
+        "name": "block64",
+        "budget": 64,
+        "method": "block",
+        "records": 1024,
+        "pilot_records": 256,
+        "experiment": "0x88004003"
+      },
+      {
+        "name": "project64",
+        "budget": 64,
+        "method": "projected",
+        "records": 1024,
+        "pilot_records": 256,
+        "experiment": "0x88004004"
+      }
+    ],
+    "events_per_direct_method": 8,
+    "pnr": {
+      "source": "results/iteration86_pnr_quality_v1",
+      "records": 32768,
+      "pilot_records": 2048,
+      "events": 14,
+      "intentional_reuse": true
+    },
+    "shared_experimental_cdf_events": 1,
+    "click_groups": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151
+      ],
+      [
+        0,
+        144,
+        288,
+        432,
+        576,
+        720,
+        864,
+        1008
+      ]
+    ],
+    "count_regions": [
+      [
+        0,
+        1152
+      ],
+      [
+        1024,
+        1152
+      ]
+    ],
+    "optical_pnr_pairs": [
+      [
+        0,
+        143
+      ],
+      [
+        142,
+        143
+      ]
+    ],
+    "purpose": 5,
+    "sectors": [
+      0,
+      1
+    ],
+    "failure_policy": "Any incomplete spectrum makes the complete record an explicit target-zero failure outcome. Keep all rows; no deletion or refill. Projection infeasibility selects the predefined all-Gaussian closure before further sampling and is separately counted; it is not deletion of a failed sample.",
+    "gates": "Small complete-law and independent inverse-moment probes passed. Before full quality, matched full-model numeric/guarded trajectories and thread/chunk invariance must pass for B16/B64.",
+    "limits": "This47-event99 family is separate from the24-event small-PNR99 family; their automatic combined guarantee is at least98 percent. No precision ratios across those families will be called joint99. Local bounds do not cover the full1152-bit law. Numerical references and conditional moment residuals are not whole-state interval proofs."
+  }
+}

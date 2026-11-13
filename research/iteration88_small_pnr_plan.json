@@ -1,0 +1,21 @@
+{
+  "scope": "Independent complete two-mode PNR quality with fixed truncation and analytic tails, before observing pilot or quality outcomes. Fixed cases include weak and strong paired squeezed light, lossy paired light and an independent thermal control.",
+  "records_per_method_case": 65536,
+  "pilot_records_for_lower_event": 4096,
+  "retained_factors": [3,4,5],
+  "maximum_photons_per_port_in_explicit_grid": 64,
+  "cases": [
+    {"name":"paired_weak","squeezing":0.6,"eta":1.0},
+    {"name":"paired_strong","squeezing":0.85,"eta":1.0},
+    {"name":"paired_lossy","squeezing":0.85,"eta":0.8},
+    {"name":"thermal_control","mean_photons":[1.0,2.0]}
+  ],
+  "quality_experiment_rule": "0x88001000 + 16*case_index + retained_factors",
+  "pilot_experiment_rule": "0x88002100 + case_index; reused across retained depths only for paired diagnostics, never counted as independent quality observations",
+  "sector": 0,
+  "purposes": [1,2,3,4],
+  "confidence": {"joint_failure_budget":0.01,"events":24,"events_per_method_case":2},
+  "metrics": "One whole two-port PNR TV upper event plus one independently validated pilot-selected event lower per method/case. Photon values outside the explicit grid are one tail outcome; the full-law upper adds the analytic target tail bound. Failures are a separate target-zero outcome. Click TV is computed descriptively, with the inherited PNR full-TV upper via deterministic coarse-graining, not a new tighter confidence claim.",
+  "failure_policy": "Keep every error row and map to the explicit failure symbol. No deletion or refill.",
+  "limits": "Nominal concentration assumes iid. Disjoint PRNG addresses are not a theorem of random independence. Numerical reference arithmetic is separately audited and is not a certified whole-state interval. This small-system family does not establish a full1152-output upper bound."
+}
