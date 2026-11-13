@@ -407,3 +407,30 @@ python experiments/verify_iteration74.py --output results/my_iteration74_verific
 These drivers use the same compiler/toolchain locations and archived dependencies described above. New output directories are mandatory. The verifier targets published frozen artifacts, not the newly named build directories. Full tests use `iteration74_tests_v3.py`, which closes the actual DLL-directory registrations created inside each test after that test ends, avoiding Windows' aggregate directory-registration limit without changing numerical implementations or assertions. Earlier failed test runs are retained.
 
 See [iteration74 mathematics and failures](../research/iteration74_methods.md), [frontier scope](../research/iteration74_frontier_comparison.md), and [iteration75 plan](../research/iteration75_plan.md).
+
+
+## 第77轮：固定总数条件PNR
+
+`gaussian_pnr_number77_v2.cpp` 与 `gaussian_number77_v2.hpp` 实现严格条件核心；`gaussian_pnr_number77_v3.cpp` 增加明确的总数预算与iid尾分支。限定等正压缩、零位移、无额外噪声纯态。首次执行文件和二进制哈希见各pilot的plan.json及manifest.json。
+
+```python
+from gbslab.native_number_pnr import NativeNumberPNRSampler
+from gbslab.native_budget_number_pnr import NativeBudgetNumberPNRSampler
+
+# v, t: passive isometry and equal squeezing t=tanh(r)
+with NativeBudgetNumberPNRSampler(
+    v, t, "results/iteration77_budget_pilot_v1/budget.dll",
+    exact_total_budget=20, workers=16, runtime_dirs=runtime_dirs,
+) as sampler:
+    result = sampler.sample(1024, seed=771001)
+    counts = result["counts"]            # uint32, all emitted photons retained
+    totals = result["total_photons"]     # uint64, equals row sums
+    clicks = counts > 0
+    tail_records = result["statistics"]["tail_records"]
+```
+
+严格版本使用 `results/iteration77_number_pilot_v2/number.dll`，不传预算。两个接口都允许 `fixed_total=偶数`。固定总数请求不适用无条件负二项尾概率界；预算版在固定总数超过预算时仍按尾策略分配。严格版的资源错误不是成功采样，禁止丢弃并重抽后宣称原始无条件分布。
+
+预算N≤B分支使用数学上精确的总数条件律，N>B分支独立分配全部光子，理想TV上界为P(N>B)，无全局浮点/PRNG认证。预算最大接口值498不意味着任意输入秩都支持498；200000多项式项和4000000 Gram元素保护按输入与预算进一步拒绝。例如32输入预算22会被拒绝。输入维数、能量和输出端口数分别影响资源。
+
+复现：先依次运行 `experiments/iteration77_number_pilot_v1.py`、`iteration77_number_pilot_v2.py`、`iteration77_budget_pilot_v1.py` 的新输出目录构建；同场比较、质量、端点和碰撞驱动均在experiments目录。每个输出目录必须不存在。强光尾相关性失败、原始零尾舍入及后续正尾修正全部保留，详见[第77轮报告](../RESEARCH_REPORT_ITERATION77.md)。

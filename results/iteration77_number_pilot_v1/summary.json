@@ -1,0 +1,64 @@
+{
+  "checks_passed": true,
+  "all_samples_succeeded": true,
+  "rows": [
+    {
+      "success": true,
+      "case": 0,
+      "records": 10000,
+      "seed": 38280596832649216,
+      "wall_seconds": 0.0039527000044472516,
+      "statistics": {
+        "photons": 1292.0,
+        "completed_samples": 10000.0,
+        "maximum_photons": 8.0,
+        "total_draws": 10000.0,
+        "detector_steps": 1292.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 4.0,
+        "maximum_rank": 1.0
+      },
+      "mean_photons": 0.1292
+    },
+    {
+      "success": true,
+      "case": 1,
+      "records": 10000,
+      "seed": 38281696344276992,
+      "wall_seconds": 0.09925850000581704,
+      "statistics": {
+        "photons": 35634.0,
+        "completed_samples": 10000.0,
+        "maximum_photons": 48.0,
+        "total_draws": 10000.0,
+        "detector_steps": 35634.0,
+        "maximum_factors": 48.0,
+        "maximum_terms": 600.0,
+        "maximum_rank": 2.0
+      },
+      "mean_photons": 3.5634
+    },
+    {
+      "success": true,
+      "case": 2,
+      "records": 1024,
+      "seed": 38282795855904768,
+      "wall_seconds": 0.024156900006346405,
+      "statistics": {
+        "photons": 3682.0,
+        "completed_samples": 1024.0,
+        "maximum_photons": 34.0,
+        "total_draws": 1024.0,
+        "detector_steps": 3682.0,
+        "maximum_factors": 34.0,
+        "maximum_terms": 306.0,
+        "maximum_rank": 2.0
+      },
+      "mean_photons": 3.595703125
+    }
+  ],
+  "capacity_fixed10": {
+    "success": false,
+    "error": "Projected prefix polynomial resource estimate exceeds limit"
+  }
+}

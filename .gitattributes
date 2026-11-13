@@ -546,3 +546,15 @@ results/iteration76*.json -text -whitespace
 native/*76* -text -whitespace
 src/gbslab/native_projected_pnr.py -text -whitespace
 tests/test_native_projected_pnr.py -text -whitespace
+
+# Iteration77 frozen numerical sources and records.
+RESEARCH_REPORT_ITERATION77.md -text -whitespace
+research/iteration78*.md -text -whitespace
+experiments/iteration77*.py -text -whitespace
+experiments/verify_iteration77*.py -text -whitespace
+results/iteration77*/** -text -whitespace
+results/iteration77*.json -text -whitespace
+native/*77* -text -whitespace
+src/gbslab/native_number_pnr.py -text -whitespace
+src/gbslab/native_budget_number_pnr.py -text -whitespace
+tests/test_native_number_pnr.py -text -whitespace

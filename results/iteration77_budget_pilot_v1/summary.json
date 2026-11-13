@@ -1,0 +1,276 @@
+{
+  "passed": true,
+  "strict_replays": [
+    {
+      "case": 0,
+      "records": 10000,
+      "seed": 38280596832649216,
+      "identical_to_strict_v2": true,
+      "statistics": {
+        "photons": 1292.0,
+        "completed_samples": 10000.0,
+        "maximum_photons": 8.0,
+        "total_draws": 10000.0,
+        "detector_steps": 1292.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 3.0,
+        "maximum_rank": 1.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "3.3519823972611384650665059033082268183031017174919619808791039981484920727434971e-33"
+    },
+    {
+      "case": 1,
+      "records": 10000,
+      "seed": 38281696344276992,
+      "identical_to_strict_v2": true,
+      "statistics": {
+        "photons": 35634.0,
+        "completed_samples": 10000.0,
+        "maximum_photons": 48.0,
+        "total_draws": 10000.0,
+        "detector_steps": 35634.0,
+        "maximum_factors": 48.0,
+        "maximum_terms": 169.0,
+        "maximum_rank": 2.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.00000041861343750668999579361144731720039917144773388672037656488083737717468398686145"
+    },
+    {
+      "case": 2,
+      "records": 1024,
+      "seed": 38282795855904768,
+      "identical_to_strict_v2": true,
+      "statistics": {
+        "photons": 3682.0,
+        "completed_samples": 1024.0,
+        "maximum_photons": 34.0,
+        "total_draws": 1024.0,
+        "detector_steps": 3682.0,
+        "maximum_factors": 34.0,
+        "maximum_terms": 90.0,
+        "maximum_rank": 2.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.00000041861343750668999579361144731720039917144773388672037656488083737717468398686145"
+    }
+  ],
+  "couplings": [
+    {
+      "budget": 0,
+      "records": 20000,
+      "statistics": {
+        "photons": 71150.0,
+        "completed_samples": 20000.0,
+        "maximum_photons": 52.0,
+        "total_draws": 20000.0,
+        "detector_steps": 71150.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 12701.0,
+        "tail_photons": 71150.0
+      },
+      "seconds": 0.003895600006217137,
+      "ideal_tv_upper": "0.64079868383972510702379075642119089898370511339131800146953510952455013160999897"
+    },
+    {
+      "budget": 8,
+      "records": 20000,
+      "statistics": {
+        "photons": 71150.0,
+        "completed_samples": 20000.0,
+        "maximum_photons": 52.0,
+        "total_draws": 20000.0,
+        "detector_steps": 71150.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 9.0,
+        "maximum_rank": 2.0,
+        "tail_records": 2162.0,
+        "tail_photons": 29310.0
+      },
+      "seconds": 0.02013950000400655,
+      "ideal_tv_upper": "0.10804584125862438667170171036472585626920986189915128434870223248584272541119788"
+    },
+    {
+      "budget": 16,
+      "records": 20000,
+      "statistics": {
+        "photons": 71150.0,
+        "completed_samples": 20000.0,
+        "maximum_photons": 52.0,
+        "total_draws": 20000.0,
+        "detector_steps": 71150.0,
+        "maximum_factors": 16.0,
+        "maximum_terms": 25.0,
+        "maximum_rank": 2.0,
+        "tail_records": 363.0,
+        "tail_photons": 7770.0
+      },
+      "seconds": 0.04636970002320595,
+      "ideal_tv_upper": "0.018217739998048601044643568123645054350755473703917703996935432378898208468854075"
+    },
+    {
+      "budget": 32,
+      "records": 20000,
+      "statistics": {
+        "photons": 71150.0,
+        "completed_samples": 20000.0,
+        "maximum_photons": 52.0,
+        "total_draws": 20000.0,
+        "detector_steps": 71150.0,
+        "maximum_factors": 32.0,
+        "maximum_terms": 81.0,
+        "maximum_rank": 2.0,
+        "tail_records": 9.0,
+        "tail_photons": 350.0
+      },
+      "seconds": 0.06722689999151044,
+      "ideal_tv_upper": "0.000517925612218501863311966208811241156524171169328527346982884494849205650499999"
+    },
+    {
+      "budget": 64,
+      "records": 20000,
+      "statistics": {
+        "photons": 71150.0,
+        "completed_samples": 20000.0,
+        "maximum_photons": 52.0,
+        "total_draws": 20000.0,
+        "detector_steps": 71150.0,
+        "maximum_factors": 52.0,
+        "maximum_terms": 196.0,
+        "maximum_rank": 2.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "seconds": 0.07418349999352358,
+      "ideal_tv_upper": "0.00000041861343750668999579361144731720039917144773388672037656488083737717468398686145"
+    }
+  ],
+  "expanded": [
+    {
+      "success": true,
+      "case": 0,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 20,
+      "records": 2048,
+      "seed": 38563171320987648,
+      "seconds": 0.044731800007866696,
+      "statistics": {
+        "photons": 2148.0,
+        "completed_samples": 2048.0,
+        "maximum_photons": 8.0,
+        "total_draws": 2048.0,
+        "detector_steps": 2148.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.00000000010024392244971498384263602207241426728368671475147937591826931454925390955392208",
+      "mean_photons": 1.048828125
+    },
+    {
+      "success": true,
+      "case": 1,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 20,
+      "records": 2048,
+      "seed": 38564270832615424,
+      "seconds": 0.36069910001242533,
+      "statistics": {
+        "photons": 2028.0,
+        "completed_samples": 2048.0,
+        "maximum_photons": 8.0,
+        "total_draws": 2048.0,
+        "detector_steps": 2028.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.000000000016213024667370801839020546719008530326920017940120014053983932379192140491684071",
+      "mean_photons": 0.990234375
+    },
+    {
+      "success": true,
+      "case": 2,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 16,
+      "records": 256,
+      "seed": 38565370344243200,
+      "seconds": 0.2768805999949109,
+      "statistics": {
+        "photons": 2270.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 26.0,
+        "total_draws": 256.0,
+        "detector_steps": 2270.0,
+        "maximum_factors": 16.0,
+        "maximum_terms": 4596.0,
+        "maximum_rank": 15.0,
+        "tail_records": 18.0,
+        "tail_photons": 352.0
+      },
+      "ideal_tv_upper": "0.052703559366255482140822906528700477554924340739170392018041407216114389866356596",
+      "mean_photons": 8.8671875
+    },
+    {
+      "success": true,
+      "case": 3,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 20,
+      "records": 128,
+      "seed": 38566469855870976,
+      "seconds": 3.778508499992313,
+      "statistics": {
+        "photons": 1152.0,
+        "completed_samples": 128.0,
+        "maximum_photons": 24.0,
+        "total_draws": 128.0,
+        "detector_steps": 1152.0,
+        "maximum_factors": 20.0,
+        "maximum_terms": 59784.0,
+        "maximum_rank": 19.0,
+        "tail_records": 2.0,
+        "tail_photons": 46.0
+      },
+      "ideal_tv_upper": "0.013031009616491042854064172717028403726229726535818691122792052781133200750140909",
+      "mean_photons": 9.0
+    },
+    {
+      "success": true,
+      "case": 4,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 12,
+      "records": 512,
+      "seed": 38567569367498752,
+      "seconds": 0.1091080000041984,
+      "statistics": {
+        "photons": 17892.0,
+        "completed_samples": 512.0,
+        "maximum_photons": 64.0,
+        "total_draws": 512.0,
+        "detector_steps": 17892.0,
+        "maximum_factors": 12.0,
+        "maximum_terms": 379.0,
+        "maximum_rank": 11.0,
+        "tail_records": 510.0,
+        "tail_photons": 17870.0
+      },
+      "ideal_tv_upper": "0.99618295630872015960870618494791946810853135792268950468830745498639837344498571",
+      "mean_photons": 34.9453125
+    }
+  ]
+}

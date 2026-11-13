@@ -1,0 +1,29 @@
+{
+  "scope": "Two independent 1M-record laws; simultaneous PNR and threshold quality bounds.\n8 one-sided nominal bounds share failure probability .01. Pilot-fixed events\nprovide TV lower bounds; convexity and bounded differences give upper bounds.\nIdeal iid and numerical target assumptions are explicit, not PRNG certification.\n",
+  "driver_sha256": "f1478b014a049ba6a8f572980090435f981d10c68a94d5a105726570c0191321",
+  "binary_hashes": {
+    "number": "4018fd2213435794a90d834549827f0a434c6a27436ae65e5b50220279338bdd",
+    "projected": "c4dd59984cc87a4ffcf9f7fe6896c4eac75733a58ec01c6d6a68161615de4207"
+  },
+  "panels": [
+    [
+      1,
+      "projected",
+      31
+    ],
+    [
+      1,
+      "number",
+      64
+    ]
+  ],
+  "samples_per_law": 1000000,
+  "batch_size": 50000,
+  "pilot_count": 20000,
+  "seed_base": 39125021762781184,
+  "pilot_base": 39406496739491840,
+  "stride": 1099511627776,
+  "one_sided_bounds": 8,
+  "joint_failure": 0.01,
+  "radius": 0.0018281974356819243
+}

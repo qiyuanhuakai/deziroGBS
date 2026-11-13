@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "checks": 4478,
+  "full_suite": {
+    "passed": true,
+    "tests_run": 900,
+    "successes": 871,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "polynomial_pnr_passed": 5,
+    "philox_click_passed": 5,
+    "structured_pnr_passed": 5,
+    "classical_tail_passed": 3,
+    "fused_click_passed": 3,
+    "deep_pnr_passed": 5,
+    "resplit_pnr_passed": 4,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true,
+    "prefix_pnr_passed": 5,
+    "projected_pnr_passed": 6,
+    "number_pnr_passed": 8
+  },
+  "timing_medians": {
+    "0_cpu_4": 0.0015896000259090215,
+    "0_fused_8": 0.030769000004511327,
+    "0_gpu_4": 0.010967600013827905,
+    "0_number_64": 0.2229090000037104,
+    "0_projected_31": 2.7927595999790356,
+    "0_strict_0": 0.22648769998340867,
+    "1_cpu_2": 8.456985800003167,
+    "1_cpu_3": 9.27989289999823,
+    "1_fused_4": 0.021786900004372,
+    "1_number_64": 0.01851689998875372,
+    "1_projected_31": 0.10257149999961257,
+    "1_strict_0": 0.017163799988338724
+  },
+  "ratios": {
+    "large_projected_over_number": 5.539345142108538,
+    "large_fused_over_number": 1.1765954353916865,
+    "large_frugal_cpu2_over_number": 456.71715055649355,
+    "large_frugal_cpu3_over_number": 501.15801811504053,
+    "small_number_over_frugal_cpu4": 140.22961523056006,
+    "small_fused_over_frugal_cpu4": 19.356441559514888,
+    "large_number_microseconds": 18.082910145267306,
+    "large_number_over_jiuzhang3_different_task": 14.238511925407328
+  },
+  "quality_rows": [
+    {
+      "parameter_name": "retained",
+      "tail_records": 0,
+      "panel": 0,
+      "case": 1,
+      "kind": "projected",
+      "retained": 31,
+      "records": 1000000,
+      "pnr": {
+        "empirical_tv": 0.01219363647588814,
+        "lower": 0.0,
+        "upper": 0.014022252525007571
+      },
+      "click": {
+        "empirical_tv": 0.0012930911984355901,
+        "lower": 0.0,
+        "upper": 0.0031212886341175144
+      },
+      "odd_records": 157,
+      "maximum_photons": 84,
+      "mean_photons": 3.556097,
+      "seconds": 41.900292300008005,
+      "target_tail": 4.1861343750669e-07,
+      "target_mean": 3.5679083288982283,
+      "resplit_attempts": 0,
+      "resplit_successes": 0
+    },
+    {
+      "parameter_name": "exact_total_budget",
+      "tail_records": 0.0,
+      "panel": 1,
+      "case": 1,
+      "kind": "number",
+      "retained": 64,
+      "records": 1000000,
+      "pnr": {
+        "empirical_tv": 0.012260083745238496,
+        "lower": 0.0,
+        "upper": 0.014088699794357926
+      },
+      "click": {
+        "empirical_tv": 0.0010033084024623456,
+        "lower": 0.0,
+        "upper": 0.00283150583814427
+      },
+      "odd_records": 0,
+      "maximum_photons": 64,
+      "mean_photons": 3.571452,
+      "seconds": 3.4406992000585888,
+      "target_tail": 4.1861343750669e-07,
+      "target_mean": 3.5679083288982283,
+      "resplit_attempts": 0,
+      "resplit_successes": 0
+    }
+  ],
+  "fresh_quality_records": 2000000,
+  "collision": {
+    "passed": true,
+    "scope": "Repair the target-tail bound without repeating or changing frozen observations.\nThe original 80-digit subtraction returned zero through cancellation. A positive\ngeometric majorant of the negative-binomial remainder replaces that value.\n",
+    "records": 100000,
+    "target_partial_expectation": "0.005193408168042382244917964463207236760133608759650864847473214569654156003821418438024820627670084557",
+    "target_remainder_upper": "6.678281813556803084209686415746263470222084820140632852429942253180382690227431825677091877599887626e-112",
+    "empirical_mean": 0.0026462283146304003,
+    "sample_variance": 6.301552692264324e-06,
+    "nominal_two_sided99_radius": 0.00016728151311763112,
+    "nominal_full_tv_lower": 0.0023798983402943505,
+    "original_result_preserved": true,
+    "numerical_arithmetic_not_globally_certified": true
+  },
+  "budget_expanded": [
+    {
+      "success": true,
+      "case": 0,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 20,
+      "records": 2048,
+      "seed": 38563171320987648,
+      "seconds": 0.044731800007866696,
+      "statistics": {
+        "photons": 2148.0,
+        "completed_samples": 2048.0,
+        "maximum_photons": 8.0,
+        "total_draws": 2048.0,
+        "detector_steps": 2148.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.00000000010024392244971498384263602207241426728368671475147937591826931454925390955392208",
+      "mean_photons": 1.048828125
+    },
+    {
+      "success": true,
+      "case": 1,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 20,
+      "records": 2048,
+      "seed": 38564270832615424,
+      "seconds": 0.36069910001242533,
+      "statistics": {
+        "photons": 2028.0,
+        "completed_samples": 2048.0,
+        "maximum_photons": 8.0,
+        "total_draws": 2048.0,
+        "detector_steps": 2028.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 0.0,
+        "tail_photons": 0.0
+      },
+      "ideal_tv_upper": "0.000000000016213024667370801839020546719008530326920017940120014053983932379192140491684071",
+      "mean_photons": 0.990234375
+    },
+    {
+      "success": true,
+      "case": 2,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 16,
+      "records": 256,
+      "seed": 38565370344243200,
+      "seconds": 0.2768805999949109,
+      "statistics": {
+        "photons": 2270.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 26.0,
+        "total_draws": 256.0,
+        "detector_steps": 2270.0,
+        "maximum_factors": 16.0,
+        "maximum_terms": 4596.0,
+        "maximum_rank": 15.0,
+        "tail_records": 18.0,
+        "tail_photons": 352.0
+      },
+      "ideal_tv_upper": "0.052703559366255482140822906528700477554924340739170392018041407216114389866356596",
+      "mean_photons": 8.8671875
+    },
+    {
+      "success": true,
+      "case": 3,
+      "inputs": 32,
+      "outputs": 144,
+      "budget": 20,
+      "records": 128,
+      "seed": 38566469855870976,
+      "seconds": 3.778508499992313,
+      "statistics": {
+        "photons": 1152.0,
+        "completed_samples": 128.0,
+        "maximum_photons": 24.0,
+        "total_draws": 128.0,
+        "detector_steps": 1152.0,
+        "maximum_factors": 20.0,
+        "maximum_terms": 59784.0,
+        "maximum_rank": 19.0,
+        "tail_records": 2.0,
+        "tail_photons": 46.0
+      },
+      "ideal_tv_upper": "0.013031009616491042854064172717028403726229726535818691122792052781133200750140909",
+      "mean_photons": 9.0
+    },
+    {
+      "success": true,
+      "case": 4,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 12,
+      "records": 512,
+      "seed": 38567569367498752,
+      "seconds": 0.1091080000041984,
+      "statistics": {
+        "photons": 17892.0,
+        "completed_samples": 512.0,
+        "maximum_photons": 64.0,
+        "total_draws": 512.0,
+        "detector_steps": 17892.0,
+        "maximum_factors": 12.0,
+        "maximum_terms": 379.0,
+        "maximum_rank": 11.0,
+        "tail_records": 510.0,
+        "tail_photons": 17870.0
+      },
+      "ideal_tv_upper": "0.99618295630872015960870618494791946810853135792268950468830745498639837344498571",
+      "mean_photons": 34.9453125
+    }
+  ],
+  "arbitrary_input_energy_superiority": false,
+  "source_sha256": "d7ecea201f92a6b9926bc3402ba8b27c5eeedca9d04719d2c92a0d48fb6aa6bd"
+}

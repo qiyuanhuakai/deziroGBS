@@ -1,0 +1,80 @@
+{
+  "scope": "Fresh same-input PNR-to-click / direct-click benchmark, three rotated repeats.\nSetup and output conversion included; binary loading and common input excluded.\nTiming ratios alone do not certify equal distributional quality.\n",
+  "cases": [
+    [
+      "results/iteration75_task_comparison_v1/input.npz",
+      65536,
+      [
+        [
+          "projected",
+          31
+        ],
+        [
+          "strict",
+          0
+        ],
+        [
+          "number",
+          64
+        ],
+        [
+          "fused",
+          8
+        ],
+        [
+          "cpu",
+          4
+        ],
+        [
+          "gpu",
+          4
+        ]
+      ]
+    ],
+    [
+      "results/iteration75_lowrank_v2/input.npz",
+      1024,
+      [
+        [
+          "projected",
+          31
+        ],
+        [
+          "strict",
+          0
+        ],
+        [
+          "number",
+          64
+        ],
+        [
+          "fused",
+          4
+        ],
+        [
+          "cpu",
+          2
+        ],
+        [
+          "cpu",
+          3
+        ]
+      ]
+    ]
+  ],
+  "repetitions": 3,
+  "workers": 16,
+  "seed_base": 38843546786070528,
+  "seed_stride": 1099511627776,
+  "frugal_seed": 778001,
+  "hashes": {
+    "experiments/iteration77_task_comparison_v1.py": "657a6b233a23bbd78ede1ad92414641bc7972da4cfae3ae1853bff5a93131528",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration75_frugal_gpu_build_v3/frugal_fp64.dll": "acc35480437359abd74fb452dca362f4738a503888992ad3e582e2fe46c55249",
+    "results/iteration76_projected_pilot_v3/projected.dll": "c4dd59984cc87a4ffcf9f7fe6896c4eac75733a58ec01c6d6a68161615de4207",
+    "results/iteration77_number_pilot_v2/number.dll": "455f0ef3dabc96d12349fd8f52c8a7bc681334a8e8c22703c16d9a8d56083087",
+    "results/iteration77_budget_pilot_v1/budget.dll": "4018fd2213435794a90d834549827f0a434c6a27436ae65e5b50220279338bdd"
+  }
+}
