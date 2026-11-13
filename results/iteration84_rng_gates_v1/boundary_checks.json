@@ -1,0 +1,38 @@
+[
+  {
+    "sector": 65535,
+    "purpose": 65535,
+    "row": 4294967295,
+    "draw": "18446744073709551614",
+    "valid": true
+  },
+  {
+    "sector": 0,
+    "purpose": 1,
+    "row": 0,
+    "draw": "8589934593",
+    "valid": true
+  },
+  {
+    "sector": 65536,
+    "purpose": 1,
+    "row": 0,
+    "error": "Random domain field overflow"
+  },
+  {
+    "sector": 0,
+    "purpose": 65536,
+    "row": 0,
+    "error": "Random domain field overflow"
+  },
+  {
+    "sector": 0,
+    "purpose": 1,
+    "row": 4294967296,
+    "error": "Random domain field overflow"
+  },
+  {
+    "draw": "uint64 max",
+    "error": "Random draw counter exhausted; no wrap"
+  }
+]

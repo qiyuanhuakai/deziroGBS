@@ -36,3 +36,19 @@
 
 本更正优先发布，替代历史报告中上述置信表述。修正后的样本与界完成后追加
 独立结果链接，不覆盖旧失败证据。
+
+## 2026-11-13追加：域分离后重采完成
+
+已完成三个独立实验域下的混态1024条、相关核心2048条、再分解256条完整重采。
+26624个用途域无重复，55个上游标准向量、原生地址/边界及线程/批次重放检查通过。
+修复消除了已确认的确定性重用，仍不将伪随机地址不重叠表述为真正iid的证明。
+
+旧算法重采后总光子数CDF误差名义联合99%区间为46.8243%–59.0085%，相关核心
+为0–5.5753%；区间依赖声明的iid模型和数值参考。前者下界也是完整PNR TV下界，
+后者上界不是完整PNR TV上界。旧保证继续撤回，新结果来自新样本与重新分配的
+十事件置信族，不是给旧样本追认独立性。
+
+详见[第84轮报告](RESEARCH_REPORT_ITERATION84.md)、[域规范](research/iteration84_rng_method.md)、
+[重采记录](results/iteration84_pnr_regenerated_v1/summary.json)、
+[独立随机流核验](results/iteration84_rng_verification_v1/validation.json)及
+[独立最终核验](results/iteration84_verification_v1/validation.json)。

@@ -643,3 +643,14 @@ RESEARCH_ERRATUM_ITERATION83_RNG.md -text -whitespace
 experiments/iteration84_rng_overlap_audit_v2.py -text -whitespace
 results/iteration84_rng_overlap_audit_v2/** -text -whitespace
 results/iteration83_rng_erratum_receipt/** -text -whitespace
+
+# Iteration84 frozen RNG repair, regenerated quality and exact-dot evidence.
+RESEARCH_REPORT_ITERATION84.md -text -whitespace
+research/iteration85*.md -text -whitespace
+experiments/iteration84*.py -text -whitespace
+experiments/verify_iteration84*.py -text -whitespace
+results/iteration84*/** -text -whitespace
+results/iteration84*.json -text -whitespace
+native/*84* -text -whitespace
+tests/test_native_rng84.py -text -whitespace
+tests/test_native_exactsum84.py -text -whitespace

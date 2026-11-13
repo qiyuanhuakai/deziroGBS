@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": 80230,
+  "unique_domains": 26624,
+  "verified": [
+    {
+      "method": "mixed",
+      "records": 1024,
+      "mean_photons": 83.994140625,
+      "mean_clicks": 78.060546875,
+      "nominal_joint99_pnr_tv_lower": 0.33474847338797237,
+      "nominal_joint99_click_tv_lower": 0.31955251207356933,
+      "nominal_joint99_experimental_bit_tv_lower": 0.480507732111724
+    },
+    {
+      "method": "core0",
+      "records": 2048,
+      "mean_photons": 116.13818359375,
+      "mean_clicks": 103.70849609375,
+      "nominal_joint99_pnr_tv_lower": 0.0,
+      "nominal_joint99_click_tv_lower": 0.0,
+      "nominal_joint99_experimental_bit_tv_lower": 0.0
+    },
+    {
+      "method": "core1",
+      "records": 256,
+      "mean_photons": 120.4375,
+      "mean_clicks": 107.26953125,
+      "nominal_joint99_pnr_tv_lower": 0.0,
+      "nominal_joint99_click_tv_lower": 0.0,
+      "nominal_joint99_experimental_bit_tv_lower": 0.0
+    }
+  ],
+  "scope": "Independent verification of RNG repair and regenerated PNR error bounds.\nNo native library loaded. Check every input/ledger, reproduce reference Philox\nwords, reconstruct Gaussian moment inputs and recalculate bounded witnesses.\n",
+  "limitations": [
+    "Domain separation does not prove mathematical iid.",
+    "Nominal confidence depends on stated iid and numerical-reference assumptions.",
+    "Lower bounds cannot establish a full-law accuracy ordering."
+  ]
+}

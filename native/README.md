@@ -1,5 +1,33 @@
 # Native sampling kernels
 
+## Iteration84: explicit random domains and integer dot accumulation
+
+`gaussian_rng_domain84_v1.hpp` implements Philox4x32-10 with experiment64 as key;
+the counter encodes block64, global record32, sector16 and purpose16. Waiting,
+detector, initial displacement, resplitting and click draws have distinct purposes.
+Overflow is rejected. This prevents address reuse, not a mathematical proof of iid.
+The legacy adjacent-sector PNR seed scheme is unsuitable for independent combined
+samples; its iteration83 confidence guarantees remain withdrawn.
+
+`gaussian_pnr_domain84_v1.cpp` exports `pnr84_domain_sample` over the unchanged73
+numerical kernel. `gaussian_pnr_correlated84_v2.cpp` exports
+`pnr84d_correlated_sample` with correlated displacement before coherent conditioning.
+Both require experiment/sector/global offset and retain row errors plus four draw
+counts in their 16-column statistics. The earlier correlated v1 is quarantined.
+Approximate Gaussian closure remains; ideal pure-core truncation bounds do not apply.
+
+`gaussian_click_exactsum84_v1.cpp` exports `tc84e_sample`, `tc84e_prefix` and
+`sum84_probe`. It accumulates stored binary128-weight/long-double products with
+512-bit integer limbs, falling back to83 for unsupported exponent spans. Link
+quadmath; the current ABI requires 16-byte x87 long double with 64 mantissa bits.
+Sampling statistics have eight columns (six legacy, exact-dot and fallback counts).
+Use external domain-separated draws for new quality experiments. Formal timing
+shows 9.6255/10.9078x median improvement at B32/B64 with tested exact replay.
+
+Build commands and hashes are retained in result plans. See the
+[report](../RESEARCH_REPORT_ITERATION84.md), [RNG method](../research/iteration84_rng_method.md)
+and [numerical method](../research/iteration84_methods.md) for quantitative scope.
+
 ## Iteration83: full lossy input, weight arithmetic and core resources
 
 `gbslab.native_loss_map.prepare_lossy_gaussian_map` exposes native QR loss reduction from a

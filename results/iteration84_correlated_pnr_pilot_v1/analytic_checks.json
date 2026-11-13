@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "coherent",
+      "mean": 0.65,
+      "empirical_mean": 0.645263671875,
+      "count_cdf_distance": 0.011183062094323515,
+      "dkw99_radius": 0.025431619229980145
+    },
+    {
+      "case": "correlated_thermal",
+      "mean": 1.4,
+      "empirical_mean": 1.405029296875,
+      "count_cdf_distance": 0.008951822916666685,
+      "dkw99_radius": 0.025431619229980145,
+      "empirical_cross_covariance": 0.4497144240308303,
+      "reference_cross_covariance": 0.49
+    }
+  ],
+  "scope": "analytic count CDF tests; not a deterministic floating-point certificate"
+}

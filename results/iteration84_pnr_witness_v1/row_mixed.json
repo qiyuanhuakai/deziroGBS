@@ -1,0 +1,59 @@
+{
+  "method": "mixed",
+  "success": true,
+  "click_regions": [
+    {
+      "first": 0,
+      "end": 1152,
+      "records": 1024,
+      "reference_mean": 103.89578381576854,
+      "reference_variance": 448.17028580271403,
+      "empirical_mean": 78.060546875,
+      "empirical_variance": 331.3022933467742,
+      "dkw_radius": 0.06092108136001266,
+      "nominal_joint99_full_tv_lower": 0.31955251207356933,
+      "direction": "increasing",
+      "clip_lower": 71,
+      "clip_upper": 106,
+      "reference_expectation_lower": 0.666020468433582,
+      "empirical_expectation": 0.285546875
+    },
+    {
+      "first": 1024,
+      "end": 1152,
+      "records": 1024,
+      "reference_mean": 10.08320669687702,
+      "reference_variance": 19.851900778350018,
+      "empirical_mean": 7.7470703125,
+      "empirical_variance": 13.321105778042522,
+      "dkw_radius": 0.06092108136001266,
+      "nominal_joint99_full_tv_lower": 0.0675185304524465,
+      "direction": "increasing",
+      "clip_lower": 4,
+      "clip_upper": 14,
+      "reference_expectation_lower": 0.5075411743124592,
+      "empirical_expectation": 0.3791015625
+    }
+  ],
+  "experimental_comparison": {
+    "threshold": 88,
+    "empirical_ks": 0.5430244712479617,
+    "nominal_joint99_full_bit_tv_lower": 0.480507732111724,
+    "experimental_records": 1492642,
+    "experimental_dkw_radius": 0.0015956577762250765
+  },
+  "photons": {
+    "records": 1024,
+    "reference_mean": 116.28612516734034,
+    "reference_variance": 684.2505088270725,
+    "empirical_mean": 83.994140625,
+    "empirical_variance": 463.8904837182307,
+    "dkw_radius": 0.06092108136001266,
+    "nominal_joint99_full_tv_lower": 0.3347484733879724,
+    "direction": "increasing",
+    "clip_lower": 77,
+    "clip_upper": 118,
+    "reference_expectation_lower": 0.659412885540668,
+    "empirical_expectation": 0.2637433307926829
+  }
+}

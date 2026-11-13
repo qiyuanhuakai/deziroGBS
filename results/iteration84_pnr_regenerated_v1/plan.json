@@ -1,0 +1,74 @@
+{
+  "scope": "Fresh PNR baseline and correlated-core records after RNG domain correction.\nkey=experiment; counter=(draw block, global record, sector, purpose). Every\nexperiment/sector/record/purpose domain is explicit. No failed-row deletion.\nNumerical model inputs from the quarantined pilot are deterministic covariance\ndecompositions, not reused samples. Timings here are exploratory.\n",
+  "hashes": {
+    "experiments/iteration84_pnr_regenerated_v1.py": "afcb77d3f6a17ea4238c34649117deb835576a7e9812d11e05777f477d8bc846",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration84_rng_gates_v1/mixed.dll": "d53542f2f6fb63c6db00d9003db2464de8d96bb23b60d7652c5f2d02c7353264",
+    "results/iteration84_rng_gates_v1/correlated.dll": "e2a7adcf0ee3c16c6cfa795d522189cc3512498db01381e41773b2676388ba31",
+    "results/iteration84_rng_gates_v1/validation.json": "ae36e04a8a2f3ca55d9103c5f5deb0a19f23572cbe7b845b1f868944c0b4aa29",
+    "results/iteration84_rng_gates_v1/domain_checks.json": "d1d5f4a9ef2757b7fbbc11ef9af4553f67a5f2b0dc6d5c32da7f4db72321a2c9",
+    "results/iteration84_correlated_pnr_pilot_v1/input_0.npz": "b6e856c93582b0dff2894500ca8870481a8ae2ba405a7b096222b29686d732e9",
+    "results/iteration84_correlated_pnr_pilot_v1/input_1.npz": "feeb910061f3c9282d6b5d99e04be2cf2a6d9e06254405e89ed625290e232c96",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "native/gaussian_pnr_domain84_v1.cpp": "47c9463fc2866b9444047d095e4b663167d27c9e6830220b1a8fa703d0f934a0",
+    "native/gaussian_pnr_correlated84_v2.cpp": "853d8076f5422110b3eb607b171d34e7838bcd479fb1a6d0926d552166cd5b50",
+    "src/gbslab/native_direct_click.py": "89eac50c1967961ead3f81b36e7307a0ae62ef8d4801bad8189d4cad1ca4c5ed"
+  },
+  "panels": [
+    {
+      "method": "mixed",
+      "records": 1024,
+      "experiment": 2214596609,
+      "sector_ids": [
+        0,
+        1
+      ],
+      "global_record_offset": 0,
+      "purposes": {
+        "waiting": 1,
+        "detector": 2,
+        "displacement": 3,
+        "resplitting": 4
+      }
+    },
+    {
+      "method": "core0",
+      "records": 2048,
+      "experiment": 2214596610,
+      "sector_ids": [
+        0,
+        1
+      ],
+      "global_record_offset": 0,
+      "purposes": {
+        "waiting": 1,
+        "detector": 2,
+        "displacement": 3,
+        "resplitting": 4
+      }
+    },
+    {
+      "method": "core1",
+      "records": 256,
+      "experiment": 2214596611,
+      "sector_ids": [
+        0,
+        1
+      ],
+      "global_record_offset": 0,
+      "purposes": {
+        "waiting": 1,
+        "detector": 2,
+        "displacement": 3,
+        "resplitting": 4
+      }
+    }
+  ],
+  "threads": 16,
+  "retained": 3,
+  "confidence_plan": {
+    "events": 10,
+    "delta_per_event": 0.001,
+    "observables": "Three methods times full click count, last-128 click count and total photon count, plus shared experimental click CDF."
+  }
+}

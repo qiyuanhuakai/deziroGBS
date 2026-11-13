@@ -1,0 +1,15 @@
+{
+  "scope": "Numerical Gaussian reference for total PNR count and scoped CDF accuracy.\nFor zero-mean X=(Gamma-I)/2, G(z)=det(I+(1-z)X)^(-1/2).\nReuse the three photon-CDF events (delta=.001 each) already allocated in the\nregenerated ten-event family; no additional stochastic event is introduced.\nA total-count CDF upper bound is NOT a full-PNR TV upper bound.\n",
+  "hashes": {
+    "experiments/iteration84_photon_cdf_v1.py": "05518acf87de333ae550043b0fa7884bd8fe8b6894f10691c51254097e8bdfb6",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration84_pnr_regenerated_v1/plan.json": "17df3ed74c159b3e319078f7a8bf3429326d23a064fbf7a541d27469ab5ebe68",
+    "results/iteration84_pnr_regenerated_v1/summary.json": "49e349e29d9cfea74a66444d3f42135dde85a53552691d9532e0ee2825d1e5f2",
+    "results/iteration84_pnr_regenerated_v1/mixed_combined.npz": "5d41ecf3630d2abe6b2abd93aecfb40abdc8ec70753b660212181fb3bbb103b3",
+    "results/iteration84_pnr_regenerated_v1/core0_combined.npz": "725e4081df2a3b2965874cb46b66fd1a2313e67f4eecb98961b9dd7abb1eb493",
+    "results/iteration84_pnr_regenerated_v1/core1_combined.npz": "c386988a84bfcebebd710c9a5c65e6023d25cc8eed46fbeebbd75fae50303561"
+  },
+  "cutoff": 1024,
+  "decimal_digits": 90,
+  "delta_per_dataset": 0.001
+}

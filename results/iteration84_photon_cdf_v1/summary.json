@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "method": "mixed",
+      "success": true,
+      "records": 1024,
+      "threshold": 96,
+      "empirical_count_cdf_distance": 0.5291643403497894,
+      "dkw_radius": 0.06092108136001266,
+      "nominal_joint99_population_count_cdf_lower": 0.46824325898977676,
+      "nominal_joint99_population_count_cdf_upper": 0.590085421709802,
+      "scope": "Count CDF/Kolmogorov distance only. Lower also bounds full PNR TV; upper does not."
+    },
+    {
+      "method": "core0",
+      "success": true,
+      "records": 2048,
+      "threshold": 92,
+      "empirical_count_cdf_distance": 0.01267545725564903,
+      "dkw_radius": 0.04307770974688233,
+      "nominal_joint99_population_count_cdf_lower": 0.0,
+      "nominal_joint99_population_count_cdf_upper": 0.05575316700253136,
+      "scope": "Count CDF/Kolmogorov distance only. Lower also bounds full PNR TV; upper does not."
+    },
+    {
+      "method": "core1",
+      "success": true,
+      "records": 256,
+      "threshold": 97,
+      "empirical_count_cdf_distance": 0.08170502964854565,
+      "dkw_radius": 0.12184216272002532,
+      "nominal_joint99_population_count_cdf_lower": 0.0,
+      "nominal_joint99_population_count_cdf_upper": 0.20354719236857097,
+      "scope": "Count CDF/Kolmogorov distance only. Lower also bounds full PNR TV; upper does not."
+    }
+  ],
+  "reference_tail_upper": "1.03831783986914077035738137457915178000157153521954533273940286996309648582171005961983011e-51",
+  "scope": "Numerical Gaussian reference for total PNR count and scoped CDF accuracy.\nFor zero-mean X=(Gamma-I)/2, G(z)=det(I+(1-z)X)^(-1/2).\nReuse the three photon-CDF events (delta=.001 each) already allocated in the\nregenerated ten-event family; no additional stochastic event is introduced.\nA total-count CDF upper bound is NOT a full-PNR TV upper bound.\n",
+  "confidence": "Same photon-CDF events as existing regenerated joint99 family; conditional iid and fixed numerical reference assumptions."
+}
