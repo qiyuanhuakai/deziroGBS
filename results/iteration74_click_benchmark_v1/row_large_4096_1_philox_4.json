@@ -1,0 +1,28 @@
+{
+  "returncode": 0,
+  "wall_seconds": 1.6267452999891248,
+  "setup_seconds": 0.005600900010904297,
+  "sampling_seconds": 1.6211088999989443,
+  "cuda_timings": {
+    "allocation_seconds": 0.002659,
+    "host_to_device_seconds": 0.0192084,
+    "random_seconds": 0.000325,
+    "kernel_seconds": 1.5913519,
+    "device_to_host_seconds": 0.0014749,
+    "workspace_bytes": 1376895680.0,
+    "failed_rows": 0.0
+  },
+  "statistics": {
+    "completed_samples": 4096,
+    "clicks": 205507,
+    "compressions": 66635,
+    "peak_transient_components": 8,
+    "maximum_absolute_weight_sum": 31997.96540151655
+  },
+  "panel": "large_4096",
+  "rep": 1,
+  "method": "philox",
+  "budget": 4,
+  "samples": 4096,
+  "seed": 745502
+}

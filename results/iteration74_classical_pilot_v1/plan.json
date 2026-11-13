@@ -1,0 +1,31 @@
+{
+  "source_hashes": {
+    "experiments/iteration74_classical_pilot_v1.py": "8a070b91650019908d4613f68eba363987c74c8a718045d50c094e3964ed46df",
+    "src/gbslab/native_classical_tail_pnr.py": "56c9849f872baa76259690ac14687605c80454549c8d2e837eccbfeb97b642f5",
+    "native/gaussian_pnr_classical74_v1.cpp": "99020f2be80aea510c9e9125def65530600495f1c4079b5952d3a991ca442e41",
+    "native/gaussian_pnr_structured74_v1.cpp": "aab416f27e20fa73dc575483724f4db3ee01d31e19ebb6e488b60f268f9a02c3",
+    "native/gaussian_positive_norm74_v1.hpp": "f664217b43489d02ee55d4672bdd31c2222e829070be4ef50ace9d3db0543ecf",
+    "native/gaussian_pnr_polynomial73_v1.cpp": "23f6064a3b710791d969266fea0ea7662e8a5dbe0986464c6f48d047f35beef7",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_classical74_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration74_classical_pilot_v1\\classical.dll"
+  ],
+  "scope": "Build structured PNR; independent complex Wick and exact parity endpoints.",
+  "seed": 742001,
+  "pure_samples": 100000,
+  "noisy_samples": 20000,
+  "workers": 16
+}

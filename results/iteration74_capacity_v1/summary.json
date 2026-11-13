@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "rep": 0,
+      "kind": "old",
+      "success": false,
+      "wall_seconds": 0.09913770001730882,
+      "error": "Philox CUDA workspace exceeds 75 percent of free device memory"
+    },
+    {
+      "rep": 0,
+      "kind": "fused",
+      "success": true,
+      "wall_seconds": 23.431108999997377,
+      "cuda_timings": {
+        "allocation_seconds": 0.0126601,
+        "host_to_device_seconds": 0.1396359,
+        "random_seconds": 0.0021825,
+        "kernel_seconds": 23.2285374,
+        "device_to_host_seconds": 0.0059607,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "rep": 0,
+      "kind": "reduced",
+      "success": true,
+      "wall_seconds": 10.162757300015073,
+      "cuda_timings": {
+        "allocation_seconds": 0.0140819,
+        "host_to_device_seconds": 0.1637891,
+        "random_seconds": 0.0011766,
+        "kernel_seconds": 9.9328559,
+        "device_to_host_seconds": 0.0055227,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "rep": 1,
+      "kind": "reduced",
+      "success": true,
+      "wall_seconds": 10.11951869999757,
+      "cuda_timings": {
+        "allocation_seconds": 0.0127005,
+        "host_to_device_seconds": 0.1618913,
+        "random_seconds": 0.0005675,
+        "kernel_seconds": 9.8951578,
+        "device_to_host_seconds": 0.0056142,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "rep": 1,
+      "kind": "fused",
+      "success": true,
+      "wall_seconds": 12.6457231999957,
+      "cuda_timings": {
+        "allocation_seconds": 0.0130265,
+        "host_to_device_seconds": 0.1597872,
+        "random_seconds": 0.0005709,
+        "kernel_seconds": 12.4244553,
+        "device_to_host_seconds": 0.0056571,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "rep": 1,
+      "kind": "old",
+      "success": false,
+      "wall_seconds": 0.004627599992090836,
+      "error": "Philox CUDA workspace exceeds 75 percent of free device memory"
+    },
+    {
+      "rep": 2,
+      "kind": "old",
+      "success": false,
+      "wall_seconds": 0.004510600003413856,
+      "error": "Philox CUDA workspace exceeds 75 percent of free device memory"
+    },
+    {
+      "rep": 2,
+      "kind": "fused",
+      "success": true,
+      "wall_seconds": 12.705521500000032,
+      "cuda_timings": {
+        "allocation_seconds": 0.0132296,
+        "host_to_device_seconds": 0.1637686,
+        "random_seconds": 0.0006032,
+        "kernel_seconds": 12.4786519,
+        "device_to_host_seconds": 0.0060322,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "rep": 2,
+      "kind": "reduced",
+      "success": true,
+      "wall_seconds": 10.174239499989199,
+      "cuda_timings": {
+        "allocation_seconds": 0.0139262,
+        "host_to_device_seconds": 0.1636414,
+        "random_seconds": 0.0005759,
+        "kernel_seconds": 9.9461655,
+        "device_to_host_seconds": 0.005065,
+        "workspace_bytes": 10959241920.0,
+        "failed_rows": 0.0
+      }
+    }
+  ],
+  "replays": [
+    {
+      "rep": 0,
+      "kind": "fused",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "rep": 0,
+      "kind": "reduced",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 3.4851344032915677e-11
+    },
+    {
+      "rep": 1,
+      "kind": "fused",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "rep": 1,
+      "kind": "reduced",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 4.10272926743005e-11
+    },
+    {
+      "rep": 2,
+      "kind": "fused",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "rep": 2,
+      "kind": "reduced",
+      "mismatched_bits": 0,
+      "maximum_probability_difference": 1.3057221970314004e-11
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD,/utf-8",
+    "gaussian_click_philox74_v1.cu",
+    "-o",
+    "philox.dll"
+  ],
+  "returncode": 0,
+  "stdout": "gaussian_click_philox74_v1.cu\n  \u59dd\uff45\u6e6a\u9352\u6d98\u7f13\u6434\ufffd philox.lib \u935c\u5c7d\ufffd\u7845\u8584 philox.exp\n",
+  "stderr": "",
+  "seconds": 3.9151008000189904,
+  "build_directory": "C:\\Users\\qiyuaner\\AppData\\Local\\Temp\\deziro_philox74_e25f5cce834c450f8d64273ae8ed92d0"
+}

@@ -302,3 +302,37 @@ python experiments/verify_iteration73.py --output results/my_iteration73_verific
 Build outputs above do not silently replace archived binaries. The verifier deliberately checks and replays the published iteration73 evidence. The holdout, cost and test drivers likewise name frozen dependency paths; those references are part of the experiment specification. The standalone Frugal build requires the documented identical-body inline ABI patch, and its separate C ABI timing library is built by `iteration73_frugal_cpu_library_v1.py` against the archived v5 include copy.
 
 See [iteration73 results](../RESEARCH_REPORT_ITERATION73.md), [mathematics and compatibility changes](../research/iteration73_methods.md), and [iteration74 plan](../research/iteration74_plan.md). Small-system Frugal advantages, the pure-state failure and large-system quality limitations are part of the published results.
+
+## Iteration74 structured pure cores and fused GPU branches
+
+`NativeStructuredPNRSampler` takes an explicit vector `tanh_squeezing` in (-1,1), defining the product-pure covariance before the passive isometry. It preserves that parameterization until the first Gaussian moment compression. Photon-factor normalizations use a positive Bargmann polynomial norm. The previously failing undisplaced pure endpoint now evaluates to exact zero for odd factors. After compression, the algorithm still approximates the state and can produce odd total counts from an initially even pure state; the strong four-mode example still has a substantial full-distribution error.
+
+```python
+from gbslab.native_structured_pnr import NativeStructuredPNRSampler
+
+with NativeStructuredPNRSampler(
+    V, tanh_squeezing,
+    "results/iteration74_structured_pilot_v1/structured.dll",
+    mean=mean, noise_variance=noise, retained=3, workers=16,
+    runtime_dirs=[gcc_runtime],
+) as sampler:
+    counts = sampler.sample(1024, 1234)["counts"]
+    clicks_from_counts = counts > 0
+```
+
+The input is explicit physical squeezing, not automatic rounding or projection of a supplied covariance to a pure state. Noise variances and grouped quadratures retain the earlier conventions. The tested product-pure form plus passive complex V does not support arbitrary mixed conditional covariance in the positive-norm branch; the frozen general covariance routine handles states after compression.
+
+`NativeClassicalTailPNRSampler` in `gbslab.native_classical_tail_pnr` is a separate experimental alternative using `results/iteration74_classical_pilot_v1/classical.dll`. After compression, if the entire Gaussian excess covariance is positive semidefinite, it samples an actual Gaussian displacement mixture and finishes with independent Poisson output counts. It never clips negative eigenvalues. Many pilot inputs never enter that branch, so this is not the default or a universal speedup. Its three additional statistics are `classical_completions`, `classical_photons`, and `classicality_checks`.
+
+For direct clicks, keep the `NativePhiloxClickSampler` API and set `gpu_library` to either `results/iteration74_fused_pilot_v1/philox.dll` or `results/iteration74_fused_pilot_v2/philox.dll`. Both halve matrix/mean slot storage by merging overflowing branches without writing all children. Version1 preserves tested arithmetic bitwise; version2 adds parallel reduction, changes rounding and is faster on the measured large panel. It preserves tested click records, with small conditional-probability differences. The approximation budget and Philox stream offsets are unchanged.
+
+```powershell
+python experiments/iteration74_structured_pilot_v1.py --output results/my_structured_build
+python experiments/iteration74_classical_pilot_v1.py --output results/my_classical_tail_build
+python experiments/iteration74_fused_pilot_v2.py --output results/my_fused_gpu_build
+python experiments/verify_iteration74.py --output results/my_iteration74_verification
+```
+
+These drivers use the same compiler/toolchain locations and archived dependencies described above. New output directories are mandatory. The verifier targets published frozen artifacts, not the newly named build directories. Full tests use `iteration74_tests_v3.py`, which closes the actual DLL-directory registrations created inside each test after that test ends, avoiding Windows' aggregate directory-registration limit without changing numerical implementations or assertions. Earlier failed test runs are retained.
+
+See [iteration74 mathematics and failures](../research/iteration74_methods.md), [frontier scope](../research/iteration74_frontier_comparison.md), and [iteration75 plan](../research/iteration75_plan.md).

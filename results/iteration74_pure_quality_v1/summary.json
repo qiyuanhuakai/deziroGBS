@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": 0,
+      "retained": 0,
+      "records": 2000000,
+      "empirical_tv": 0.03819563676188345,
+      "nominal_full_tv_interval": [
+        0.0364633232401048,
+        0.039526996671503695
+      ],
+      "odd_records": 74138,
+      "maximum_photons": 40,
+      "mean_photons": 0.115675,
+      "seconds": 0.412724200024968,
+      "target_tail": 6.974868879562516e-64,
+      "target_mean": 0.125
+    },
+    {
+      "case": 0,
+      "retained": 1,
+      "records": 2000000,
+      "empirical_tv": 0.0013655100747901657,
+      "nominal_full_tv_interval": [
+        0.0,
+        0.0026968699844104093
+      ],
+      "odd_records": 1735,
+      "maximum_photons": 34,
+      "mean_photons": 0.1245135,
+      "seconds": 0.5514017000386957,
+      "target_tail": 6.974868879562516e-64,
+      "target_mean": 0.125
+    },
+    {
+      "case": 0,
+      "retained": 3,
+      "records": 2000000,
+      "empirical_tv": 0.000397699730885705,
+      "nominal_full_tv_interval": [
+        0.0,
+        0.0017290596405059484
+      ],
+      "odd_records": 257,
+      "maximum_photons": 44,
+      "mean_photons": 0.1255395,
+      "seconds": 0.8145476000208873,
+      "target_tail": 6.974868879562516e-64,
+      "target_mean": 0.125
+    },
+    {
+      "case": 1,
+      "retained": 0,
+      "records": 2000000,
+      "empirical_tv": 0.3850574994280789,
+      "nominal_full_tv_interval": [
+        0.36797221138696556,
+        0.38638927795113664
+      ],
+      "odd_records": 749119,
+      "maximum_photons": 85,
+      "mean_photons": 2.1364705,
+      "seconds": 12.602199699962512,
+      "target_tail": 4.1861343750669e-07,
+      "target_mean": 3.5679083288982283
+    },
+    {
+      "case": 1,
+      "retained": 1,
+      "records": 2000000,
+      "empirical_tv": 0.19696072017212765,
+      "nominal_full_tv_interval": [
+        0.17599872749262427,
+        0.1982924986951854
+      ],
+      "odd_records": 212696,
+      "maximum_photons": 100,
+      "mean_photons": 2.654172,
+      "seconds": 22.498559000028763,
+      "target_tail": 4.1861343750669e-07,
+      "target_mean": 3.5679083288982283
+    },
+    {
+      "case": 1,
+      "retained": 3,
+      "records": 2000000,
+      "empirical_tv": 0.1477195890213683,
+      "nominal_full_tv_interval": [
+        0.12058473154606525,
+        0.14905136754442605
+      ],
+      "odd_records": 167629,
+      "maximum_photons": 139,
+      "mean_photons": 3.1416975,
+      "seconds": 60.589612299983855,
+      "target_tail": 4.1861343750669e-07,
+      "target_mean": 3.5679083288982283
+    }
+  ],
+  "old_failure_replays": [
+    {
+      "retained": 0,
+      "success": true,
+      "odd": 3800
+    },
+    {
+      "retained": 1,
+      "success": false,
+      "error": "Polynomial survival outside [0,1]; no clipping"
+    },
+    {
+      "retained": 3,
+      "success": false,
+      "error": "Polynomial survival outside [0,1]; no clipping"
+    }
+  ],
+  "radius": 0.0013313599096202436
+}

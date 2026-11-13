@@ -1,0 +1,52 @@
+{
+  "source_hashes": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\iteration74_click_benchmark_v1.py": "5fc8e3d061545e52568e7fb2c392ff79afaffe09654676e1d9d77fd7df6c68c7",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\src\\gbslab\\native_philox_click.py": "22a343b76836febf93f2e515e6a84b48b2183a4f93c399bbec466cdb378e8074",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\src\\gbslab\\native_cuda_click_branches.py": "0bf261294063fdf2a514a743c00d7ea65c944ac537209d1c668dcba8aa986208",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\gpu.dll": "52281d8bd77a0d932c9415f2447d2198ab8bac89a391bc680f680c091e266579",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration74_fused_pilot_v2\\philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration73_frugal_cpu_library_v1\\frugal_cpu_fp32.dll": "a9ff3ceaba440f11b9b13881cdb3d799109199e1ae57c7cf657f60b38764b539",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration73_frugal_cpu_library_v1\\frugal_cpu_fp64.dll": "56c67097cf4203fd67543dcd3553fbdcb51e17b3f844d7e3273142441a3ec203",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5\\frugal_fp32.dll": "7d512ee813c768947ea7f3428e815046daab243937006bdd42fd2acaf8cc96ff",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_frugal_gpu_build_v5\\frugal_fp64.dll": "547b084166c2027200ffb3d47e40a7af285d8b4d9eb273fbbf8e5d5a2f69703f"
+  },
+  "scope": "Matched small and large click sampling: Philox, CPU RNG, AVX2 Frugal, CUDA Frugal.\n\nFresh model preparation, RNG, allocation, transfer and host output packing are\nincluded. Library loading for Frugal and common fixture reading are excluded.\nThree rotating repetitions; no concurrent benchmark jobs. Large full TV is\nnot certified. Large comparisons remeasure the best tested AVX2 FP64 CPU; prior GPU timings remain explicitly historical.\n",
+  "large_sizes": [
+    4096
+  ],
+  "large_methods": [
+    [
+      "philox",
+      1
+    ],
+    [
+      "philox",
+      4
+    ],
+    [
+      "philox",
+      8
+    ],
+    [
+      "cpu64",
+      2
+    ],
+    [
+      "cpu64",
+      3
+    ]
+  ],
+  "small_cases": [
+    3,
+    4
+  ],
+  "small_count": 16384,
+  "repetitions": 3,
+  "threads": 16,
+  "seeds": {
+    "small_base": 745001,
+    "large_base": 745501
+  },
+  "cpu32_diagnostic_count": 0
+}

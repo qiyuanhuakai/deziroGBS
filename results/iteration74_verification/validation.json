@@ -1,0 +1,611 @@
+{
+  "passed": true,
+  "checks": 4699,
+  "full_suite": {
+    "passed": true,
+    "tests_run": 872,
+    "successes": 843,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "polynomial_pnr_passed": 5,
+    "philox_click_passed": 5,
+    "structured_pnr_passed": 5,
+    "classical_tail_passed": 3,
+    "fused_click_passed": 3,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true
+  },
+  "new_pure_records_recomputed": 12000000,
+  "historical_noisy_records_recomputed": 4000000,
+  "gpu_records_compared": 236544,
+  "public_records_replayed": 4160,
+  "pure_bounds": [
+    {
+      "case": 0,
+      "retained": 0,
+      "tv": 0.03819563676188345,
+      "lower": 0.0364633232401048,
+      "upper": 0.039526996671503695,
+      "odd_records": 74138,
+      "mean_photons": 0.115675,
+      "seconds": 0.412724200024968
+    },
+    {
+      "case": 0,
+      "retained": 1,
+      "tv": 0.0013655100747901657,
+      "lower": 0,
+      "upper": 0.0026968699844104093,
+      "odd_records": 1735,
+      "mean_photons": 0.1245135,
+      "seconds": 0.5514017000386957
+    },
+    {
+      "case": 0,
+      "retained": 3,
+      "tv": 0.000397699730885705,
+      "lower": 0,
+      "upper": 0.0017290596405059484,
+      "odd_records": 257,
+      "mean_photons": 0.1255395,
+      "seconds": 0.8145476000208873
+    },
+    {
+      "case": 1,
+      "retained": 0,
+      "tv": 0.3850574994280789,
+      "lower": 0.36797221138696556,
+      "upper": 0.38638927795113664,
+      "odd_records": 749119,
+      "mean_photons": 2.1364705,
+      "seconds": 12.602199699962512
+    },
+    {
+      "case": 1,
+      "retained": 1,
+      "tv": 0.19696072017212765,
+      "lower": 0.17599872749262427,
+      "upper": 0.1982924986951854,
+      "odd_records": 212696,
+      "mean_photons": 2.654172,
+      "seconds": 22.498559000028763
+    },
+    {
+      "case": 1,
+      "retained": 3,
+      "tv": 0.1477195890213683,
+      "lower": 0.12058473154606525,
+      "upper": 0.14905136754442605,
+      "odd_records": 167629,
+      "mean_photons": 3.1416975,
+      "seconds": 60.589612299983855
+    }
+  ],
+  "click_medians": {
+    "large_4096": {
+      "cpu64_2": 53.05278930001077,
+      "cpu64_3": 66.59414540001308,
+      "philox_1": 0.8112533999956213,
+      "philox_4": 1.7193518999847583,
+      "philox_8": 3.0952000000106636
+    },
+    "small_3": {
+      "cpu32_4": 0.0013075000024400651,
+      "cpu64_4": 0.0013563000247813761,
+      "cpu_rng_8": 0.03256309998687357,
+      "gpu32_4": 0.011094000015873462,
+      "gpu64_4": 0.011472399986814708,
+      "philox_8": 0.011052199988625944
+    },
+    "small_4": {
+      "cpu32_5": 0.0029661999724339694,
+      "cpu64_5": 0.0036520000139717013,
+      "cpu_rng_8": 0.04273640000610612,
+      "gpu32_5": 0.013999999995576218,
+      "gpu64_5": 0.013033299997914582,
+      "philox_8": 0.020777099998667836,
+      "philox_32": 0.027491599990753457,
+      "philox_128": 0.041435499995714054
+    }
+  },
+  "gpu_comparison_medians": {
+    "1": [
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 1,
+        "old": 0.0031106999958865345,
+        "fused": 0.0031282999843824655
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 3,
+        "old": 0.002881200023693964,
+        "fused": 0.0027747999993152916
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0028799999854527414,
+        "fused": 0.0026279000157956034
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 8,
+        "old": 0.002875500009395182,
+        "fused": 0.0026803000073414296
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 32,
+        "old": 0.0032213999947998673,
+        "fused": 0.002977900003315881
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 128,
+        "old": 0.0036068000190425664,
+        "fused": 0.0031206999847199768
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 1,
+        "old": 0.0026538000092841685,
+        "fused": 0.0024412999919150025
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 3,
+        "old": 0.0027874000079464167,
+        "fused": 0.0027280999929644167
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0031202000100165606,
+        "fused": 0.002902899985201657
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 8,
+        "old": 0.0036936000105924904,
+        "fused": 0.0030559000151697546
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 32,
+        "old": 0.003949599980842322,
+        "fused": 0.0038472999876830727
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 128,
+        "old": 0.007007600012002513,
+        "fused": 0.004506099998252466
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 1,
+        "old": 0.002865099988412112,
+        "fused": 0.002894500008551404
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 3,
+        "old": 0.0028107000107411295,
+        "fused": 0.0027144000050611794
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0028992000152356923,
+        "fused": 0.0029679999861400574
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 8,
+        "old": 0.003294100024504587,
+        "fused": 0.003236000018659979
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 32,
+        "old": 0.004210299986880273,
+        "fused": 0.004055500001413748
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 128,
+        "old": 0.007736100000329316,
+        "fused": 0.005216999998083338
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 1,
+        "old": 0.12309300000197254,
+        "fused": 0.12197690000175498
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 4,
+        "old": 0.5284744999953546,
+        "fused": 0.5327026000013575
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 8,
+        "old": 0.45052949999808334,
+        "fused": 0.5428192999970634
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 1,
+        "old": 0.8969163000001572,
+        "fused": 0.8922875999996904
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 4,
+        "old": 2.0494901000056416,
+        "fused": 2.026466099981917
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 8,
+        "old": 3.282181499991566,
+        "fused": 3.240966599987587
+      }
+    ],
+    "2": [
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 1,
+        "old": 0.0024704000097699463,
+        "fused": 0.0028528999828267843
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 3,
+        "old": 0.0025360000145155936,
+        "fused": 0.002455599984386936
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0027677000034600496,
+        "fused": 0.0026304000057280064
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 8,
+        "old": 0.0024781999818515033,
+        "fused": 0.002568800002336502
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 32,
+        "old": 0.0029682000167667866,
+        "fused": 0.002827599993906915
+      },
+      {
+        "case": 3,
+        "count": 512,
+        "budget": 128,
+        "old": 0.0032601999992039055,
+        "fused": 0.003359099995577708
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 1,
+        "old": 0.00267730001360178,
+        "fused": 0.002668500004801899
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 3,
+        "old": 0.002757399983238429,
+        "fused": 0.0027590999961830676
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0028224999841768295,
+        "fused": 0.002750599989667535
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 8,
+        "old": 0.003210199996829033,
+        "fused": 0.0029612999933306128
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 32,
+        "old": 0.003910300001734868,
+        "fused": 0.0036862000124529004
+      },
+      {
+        "case": 4,
+        "count": 512,
+        "budget": 128,
+        "old": 0.004501400020672008,
+        "fused": 0.004319800005760044
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 1,
+        "old": 0.002608799986774102,
+        "fused": 0.002619800012325868
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 3,
+        "old": 0.0028600999794434756,
+        "fused": 0.0026132999919354916
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 4,
+        "old": 0.0034949999826494604,
+        "fused": 0.002959700010251254
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 8,
+        "old": 0.003414899983908981,
+        "fused": 0.0030910999921616167
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 32,
+        "old": 0.004208400001516566,
+        "fused": 0.004306200018618256
+      },
+      {
+        "case": 5,
+        "count": 512,
+        "budget": 128,
+        "old": 0.005829100002301857,
+        "fused": 0.005712700018193573
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 1,
+        "old": 0.12258539997856133,
+        "fused": 0.09904239999013953
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 4,
+        "old": 0.5337404000165407,
+        "fused": 0.4263877000194043
+      },
+      {
+        "case": "large",
+        "count": 512,
+        "budget": 8,
+        "old": 0.8495671999990009,
+        "fused": 0.6768462000181898
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 1,
+        "old": 0.8966752999986056,
+        "fused": 0.7182182999968063
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 4,
+        "old": 2.0454883000056725,
+        "fused": 1.6148434999922756
+      },
+      {
+        "case": "large",
+        "count": 4096,
+        "budget": 8,
+        "old": 3.2670836000179406,
+        "fused": 2.5859548000153154
+      }
+    ]
+  },
+  "capacity_medians": {
+    "fused": 12.705521500000032,
+    "reduced": 10.162757300015073
+  },
+  "source_sha256": "c0e1300593f87bfa6e6fc4c55162b1116c80da2a09333c53b89a25ef464740be"
+}
