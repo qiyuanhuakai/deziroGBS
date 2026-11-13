@@ -1,0 +1,39 @@
+{
+  "source_hashes": {
+    "experiments/iteration75_resplit_pilot_v1.py": "6fa0e536563ab426995327955e73138fa7c7f5adc7e871cdc290f7b855fc7027",
+    "src/gbslab/native_resplit_pnr.py": "67de3395c656979331265c37042c0eaa4198344cd5a1b094246d366d98830874",
+    "native/gaussian_pnr_resplit75_v1.cpp": "544742b2e66ff40aceda817a1e824900667898699877cae71b6fa42e8898c7c2",
+    "native/gaussian_resplit75_v1.hpp": "a9b80b5f7d5c13fce22bf3ef00424df27f2f577ec7701e5faa6c0c711de8cc86",
+    "native/gaussian_pnr_deep75_v1.cpp": "ea6b45895f68fe36e041a0db0d180320c3ce29844b16f19192a97e94dccee38b",
+    "native/gaussian_complex_moments75_v1.hpp": "010eb01f67348cd441465c32ff49e932951ee5087d3742789ee9d6e7377a2a1f",
+    "native/gaussian_positive_norm74_v1.hpp": "f664217b43489d02ee55d4672bdd31c2222e829070be4ef50ace9d3db0543ecf",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_resplit75_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration75_resplit_pilot_v1\\resplit.dll"
+  ],
+  "scope": "Independent Williamson/Schur decomposition checks and repeated-resplit PNR pilot.",
+  "probe_seed": 753001,
+  "sample_seed_base": 33776997205278720,
+  "seed_stride": 1099511627776,
+  "depths": [
+    0,
+    3,
+    5,
+    7
+  ],
+  "pilot_samples": 20000,
+  "workers": 16
+}

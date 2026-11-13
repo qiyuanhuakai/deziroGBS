@@ -1,5 +1,39 @@
 # Native sampling kernels
 
+## Iteration75: integer photon prefixes and direct clicks
+
+`NativePrefixPNRSampler` in `src/gbslab/native_prefix_pnr.py` accepts an output-by-input complex isometry and real pure squeezing parameters `t=tanh(r)`. The C++ Hermite core retains up to 31 photon factors, then uses a Gaussian approximation; returned photon counts are not truncated. The ideal coupling error is bounded by the probability of reaching the first compression. Polynomial term/resource checks explicitly reject expensive high-input/high-depth requests. The bound is not a complete floating-point or PRNG certificate.
+
+```python
+from gbslab.native_prefix_pnr import NativePrefixPNRSampler
+with NativePrefixPNRSampler(v, t, prefix_library, retained=31,
+                            workers=16, runtime_dirs=runtime) as model:
+    counts = model.sample(4096, 759101)['counts']
+    clicks = (counts > 0).astype('uint8')
+```
+
+The recorded Windows binary is `results/iteration75_prefix_pilot_v1/prefix.dll`.
+Direct click users continue to use `NativePhiloxClickSampler` with the iteration74
+fused FP64 CUDA library. Deep-Wick and repeated-pure-decomposition PNR variants
+are exposed separately; resplitting did not improve full PNR TV in the strong case.
+
+Reproduce into **new output directories**, preserving the first runs:
+
+```powershell
+python -X utf8 experiments/iteration75_prefix_pilot_v1.py --output results/reproduce75_prefix
+python -X utf8 experiments/iteration75_pnr_quality_v2.py --output results/reproduce75_quality
+python -X utf8 experiments/iteration75_task_comparison_v1.py --output results/reproduce75_tasks
+python -X utf8 experiments/iteration75_lowrank_v2.py --output results/reproduce75_lowrank
+python -X utf8 experiments/iteration75_tests_v1.py --output results/reproduce75_tests
+python -X utf8 experiments/verify_iteration75.py --output results/reproduce75_verification
+```
+
+Quality/timing drivers use explicitly hashed recorded binaries; a new pilot output
+does not silently replace those paths. Run only one timing process at a time.
+The verifier checks the published original cohorts, not newly named reproductions.
+See the [iteration75 report](../RESEARCH_REPORT_ITERATION75.md) for failed builds,
+budget-interrupted GPU panels, exact scopes and task-specific Frugal comparisons.
+
 ## Iteration72: photon counts and direct CUDA clicks
 
 `NativeNewtonPNRSampler` uses safeguarded Newton survival inversion for the

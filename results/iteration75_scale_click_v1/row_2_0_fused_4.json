@@ -1,0 +1,29 @@
+{
+  "case": 2,
+  "inputs": 128,
+  "outputs": 384,
+  "rep": 0,
+  "method": "fused",
+  "budget": 4,
+  "samples": 512,
+  "seed": 772001,
+  "returncode": 0,
+  "wall_seconds": 3.0103719999897294,
+  "cuda_timings": {
+    "allocation_seconds": 0.00151,
+    "host_to_device_seconds": 0.0157884,
+    "random_seconds": 0.0007808,
+    "kernel_seconds": 2.9473471,
+    "device_to_host_seconds": 0.001352,
+    "workspace_bytes": 1097027584.0,
+    "failed_rows": 0.0
+  },
+  "statistics": {
+    "completed_samples": 512,
+    "clicks": 67128,
+    "compressions": 22167,
+    "peak_transient_components": 8,
+    "maximum_absolute_weight_sum": 25690.271371994568
+  },
+  "observed_mean_clicks": 131.109375
+}

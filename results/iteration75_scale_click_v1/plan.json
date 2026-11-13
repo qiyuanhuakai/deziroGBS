@@ -1,0 +1,60 @@
+{
+  "scope": "Beyond 50 occupied inputs: matched fused CUDA, Frugal CPU and Frugal GPU.\nThree rotated repetitions, 512 returned bit arrays each, setup included.\nThese are finite-scale throughput panels, not an equal-full-TV certificate.\n",
+  "source_hashes": {
+    "experiments/iteration75_scale_click_v1.py": "ebb07b0171d0d1d79fbb80d4cda0e96d4a7d3db2443134658fe86bf494d4b4c0",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration73_philox_pilot_v1/philox.dll": "fd703e39d1f90ddd1a8aa662266439caabfe9e59871c691c64f91085c2ead38b",
+    "results/iteration73_frugal_cpu_library_v1/frugal_cpu_fp64.dll": "56c67097cf4203fd67543dcd3553fbdcb51e17b3f844d7e3273142441a3ec203",
+    "results/iteration72_frugal_gpu_build_v5/frugal_fp64.dll": "547b084166c2027200ffb3d47e40a7af285d8b4d9eb273fbbf8e5d5a2f69703f",
+    "src/gbslab/native_philox_click.py": "22a343b76836febf93f2e515e6a84b48b2183a4f93c399bbec466cdb378e8074",
+    "src/gbslab/native_gaussian_reset.py": "7f292e112757b6ffdedb8af07d0e2ff36dd88614f3f9dbdc3f9927952b33c872"
+  },
+  "sizes": [
+    [
+      192,
+      64
+    ],
+    [
+      288,
+      100
+    ],
+    [
+      384,
+      128
+    ]
+  ],
+  "samples": 512,
+  "repetitions": 3,
+  "methods": [
+    [
+      "fused",
+      1
+    ],
+    [
+      "fused",
+      4
+    ],
+    [
+      "fused",
+      8
+    ],
+    [
+      "cpu64",
+      2
+    ],
+    [
+      "cpu64",
+      3
+    ],
+    [
+      "gpu64",
+      2
+    ]
+  ],
+  "squeezing": 1.4,
+  "transmission": 0.43,
+  "fixture_seed": 752000,
+  "sample_seed": 752001,
+  "workers": 16
+}

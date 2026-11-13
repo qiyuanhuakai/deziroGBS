@@ -1,0 +1,25 @@
+--- official/layout.hpp
++++ build/layout.hpp
+@@ -22,7 +22,7 @@
+ usize get_parallel_fork_depth(int thread_count);
+ 
+ template<usize N, typename BITSTRING>
+-void generate_bitstring_info(BitstringLayout<N>& bitstring_layout, usize parallel_fork_depth, BITSTRING&& bitstring, usize order = 0, isize bitstring_index = N - 1, usize layout_index = 0) {
++void generate_bitstring_info(BitstringLayout<N>& bitstring_layout, usize parallel_fork_depth, BITSTRING bitstring, usize order = 0, isize bitstring_index = N - 1, usize layout_index = 0) {
+     if (bitstring_index < 0) {
+         bitstring_layout.layout_bitstring_vec[layout_index] = bitstring;
+         bitstring_layout.order_vec[layout_index] = get_weight<N>(bitstring);
+@@ -33,11 +33,11 @@
+ 
+     const auto fork = N - bitstring_index - 1 < parallel_fork_depth;
+ 
+-    #pragma omp task if (fork) shared(bitstring_layout)
++    // Host compatibility: recurse serially; OpenMP correlator loop is retained.
+     generate_bitstring_info<N>(bitstring_layout, parallel_fork_depth, bitstring, order, bitstring_index - 1, layout_index);
+ 
+     if (order < bitstring_layout.cutoff_order) {
+-        #pragma omp task if (fork) shared(bitstring_layout)
++        // Host compatibility: recurse serially; OpenMP correlator loop is retained.
+         {
+             flip_bit<N>(bitstring, bitstring_index);
+             generate_bitstring_info<N>(bitstring_layout, parallel_fork_depth, std::move(bitstring), order + 1, bitstring_index - 1, layout_index + gbs_index_arrays<N>[bitstring_layout.cutoff_order - order][bitstring_index]);

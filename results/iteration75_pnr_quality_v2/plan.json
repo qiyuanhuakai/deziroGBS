@@ -1,0 +1,80 @@
+{
+  "scope": "Twelve independent 1M-record laws; simultaneous PNR and threshold quality bounds.\n48 one-sided nominal bounds share failure probability .01. Pilot-fixed events\nprovide TV lower bounds; convexity and bounded differences give upper bounds.\nIdeal iid and numerical target assumptions are explicit, not PRNG certification.\n",
+  "driver_sha256": "57c1bf5ee2040c1504414cc78f77f86c19ac728bfa16d2f42492fcba5c04a85d",
+  "binary_hashes": {
+    "deep": "0cf6723d121a3f455de647e8df34db7389d4646ebd1bb0def86d8657c8578d79",
+    "resplit": "6c3f15a0a6c039d952919813a37c0378903fc466ea3adbfdadec03a995962435",
+    "prefix": "ddd94498edc1e479105c0e1920f4d660dd1400267572ee09cc85690914923983"
+  },
+  "panels": [
+    [
+      0,
+      "deep",
+      7
+    ],
+    [
+      0,
+      "resplit",
+      7
+    ],
+    [
+      1,
+      "deep",
+      3
+    ],
+    [
+      1,
+      "deep",
+      5
+    ],
+    [
+      1,
+      "deep",
+      7
+    ],
+    [
+      1,
+      "resplit",
+      3
+    ],
+    [
+      1,
+      "resplit",
+      5
+    ],
+    [
+      1,
+      "resplit",
+      7
+    ],
+    [
+      0,
+      "prefix",
+      31
+    ],
+    [
+      1,
+      "prefix",
+      15
+    ],
+    [
+      1,
+      "prefix",
+      23
+    ],
+    [
+      1,
+      "prefix",
+      31
+    ]
+  ],
+  "samples_per_law": 1000000,
+  "batch_size": 50000,
+  "pilot_count": 20000,
+  "seed_base": 34902897112121344,
+  "pilot_base": 35184372088832000,
+  "stride": 1099511627776,
+  "one_sided_bounds": 48,
+  "joint_failure": 0.01,
+  "radius": 0.002058685405409965
+}

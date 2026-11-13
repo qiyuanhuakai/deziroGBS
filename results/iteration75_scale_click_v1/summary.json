@@ -1,0 +1,1500 @@
+{
+  "passed": false,
+  "rows": [
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 0,
+      "wall_seconds": 0.18556270000408404,
+      "cuda_timings": {
+        "allocation_seconds": 0.0007377,
+        "host_to_device_seconds": 0.0013777,
+        "random_seconds": 0.000413,
+        "kernel_seconds": 0.1700413,
+        "device_to_host_seconds": 0.0003726,
+        "workspace_bytes": 71944192.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33577,
+        "compressions": 33422,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 65.580078125
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 0,
+      "wall_seconds": 0.4128167000017129,
+      "cuda_timings": {
+        "allocation_seconds": 0.0012625,
+        "host_to_device_seconds": 0.0039677,
+        "random_seconds": 0.0004169,
+        "kernel_seconds": 0.3906438,
+        "device_to_host_seconds": 0.0003285,
+        "workspace_bytes": 279562240.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33575,
+        "compressions": 10969,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 51801.20848932715
+      },
+      "observed_mean_clicks": 65.576171875
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 0,
+      "wall_seconds": 0.6562941999873146,
+      "cuda_timings": {
+        "allocation_seconds": 0.0024824,
+        "host_to_device_seconds": 0.0073807,
+        "random_seconds": 0.0004032,
+        "kernel_seconds": 0.6298494,
+        "device_to_host_seconds": 0.0003502,
+        "workspace_bytes": 556386304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33570,
+        "compressions": 8152,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 210674.8444311371
+      },
+      "observed_mean_clicks": 65.56640625
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 1,
+      "wall_seconds": 0.00018780000391416252,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 1,
+      "wall_seconds": 0.00010149998706765473,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 0,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752001,
+      "returncode": 1,
+      "wall_seconds": 0.01076830000965856,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 0,
+      "wall_seconds": 0.657768400007626,
+      "cuda_timings": {
+        "allocation_seconds": 0.0041509,
+        "host_to_device_seconds": 0.005774,
+        "random_seconds": 0.0004106,
+        "kernel_seconds": 0.6261179,
+        "device_to_host_seconds": 0.0003383,
+        "workspace_bytes": 556386304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33298,
+        "compressions": 8089,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 262552.6828707212
+      },
+      "observed_mean_clicks": 65.03515625
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 1,
+      "wall_seconds": 0.00012489999062381685,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 1,
+      "wall_seconds": 9.419998968951404e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 1,
+      "wall_seconds": 5.909998435527086e-05,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 0,
+      "wall_seconds": 0.18558760001906194,
+      "cuda_timings": {
+        "allocation_seconds": 0.0009788,
+        "host_to_device_seconds": 0.0011704,
+        "random_seconds": 0.0004096,
+        "kernel_seconds": 0.1699491,
+        "device_to_host_seconds": 0.0003457,
+        "workspace_bytes": 71944192.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33297,
+        "compressions": 33130,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 65.033203125
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 1,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 752101,
+      "returncode": 0,
+      "wall_seconds": 0.41273899999214336,
+      "cuda_timings": {
+        "allocation_seconds": 0.0013205,
+        "host_to_device_seconds": 0.0036537,
+        "random_seconds": 0.0004034,
+        "kernel_seconds": 0.392228,
+        "device_to_host_seconds": 0.0003868,
+        "workspace_bytes": 279562240.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33289,
+        "compressions": 10862,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 25561.564492195266
+      },
+      "observed_mean_clicks": 65.017578125
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 1,
+      "wall_seconds": 0.00010199999087490141,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 1,
+      "wall_seconds": 0.0001275999820791185,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 0,
+      "wall_seconds": 0.189735699997982,
+      "cuda_timings": {
+        "allocation_seconds": 0.001362,
+        "host_to_device_seconds": 0.0009899,
+        "random_seconds": 0.0004031,
+        "kernel_seconds": 0.1699682,
+        "device_to_host_seconds": 0.0004251,
+        "workspace_bytes": 71944192.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33063,
+        "compressions": 32882,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 64.576171875
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 0,
+      "wall_seconds": 0.4166150000237394,
+      "cuda_timings": {
+        "allocation_seconds": 0.0014808,
+        "host_to_device_seconds": 0.0038623,
+        "random_seconds": 0.0004078,
+        "kernel_seconds": 0.3925982,
+        "device_to_host_seconds": 0.0003758,
+        "workspace_bytes": 279562240.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33059,
+        "compressions": 10791,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 69321.59305715103
+      },
+      "observed_mean_clicks": 64.568359375
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 0,
+      "wall_seconds": 0.6580423999985214,
+      "cuda_timings": {
+        "allocation_seconds": 0.0029088,
+        "host_to_device_seconds": 0.0070729,
+        "random_seconds": 0.0004147,
+        "kernel_seconds": 0.6306686,
+        "device_to_host_seconds": 0.0005057,
+        "workspace_bytes": 556386304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 33058,
+        "compressions": 8025,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 377476.949757557
+      },
+      "observed_mean_clicks": 64.56640625
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 752201,
+      "returncode": 1,
+      "wall_seconds": 0.00010789997759275138,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 0,
+      "wall_seconds": 0.6847572000115179,
+      "cuda_timings": {
+        "allocation_seconds": 0.0018279,
+        "host_to_device_seconds": 0.003084,
+        "random_seconds": 0.0006138,
+        "kernel_seconds": 0.6408332,
+        "device_to_host_seconds": 0.0009808,
+        "workspace_bytes": 171703936.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51475,
+        "compressions": 51286,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 100.537109375
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 0,
+      "wall_seconds": 1.5395271999877878,
+      "cuda_timings": {
+        "allocation_seconds": 0.002654,
+        "host_to_device_seconds": 0.0092047,
+        "random_seconds": 0.0006152,
+        "kernel_seconds": 1.4901104,
+        "device_to_host_seconds": 0.000692,
+        "workspace_bytes": 673054336.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51471,
+        "compressions": 16937,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 33532.95585452099
+      },
+      "observed_mean_clicks": 100.529296875
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 0,
+      "wall_seconds": 2.4424702000105754,
+      "cuda_timings": {
+        "allocation_seconds": 0.0047426,
+        "host_to_device_seconds": 0.0182014,
+        "random_seconds": 0.0006207,
+        "kernel_seconds": 2.3906212,
+        "device_to_host_seconds": 0.0010038,
+        "workspace_bytes": 1341521536.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51472,
+        "compressions": 12616,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 1039569.0610686073
+      },
+      "observed_mean_clicks": 100.53125
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 1,
+      "wall_seconds": 8.139997953549027e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 1,
+      "wall_seconds": 8.579998393543065e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 0,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762001,
+      "returncode": 1,
+      "wall_seconds": 0.00012269997387193143,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 0,
+      "wall_seconds": 2.4924142000090797,
+      "cuda_timings": {
+        "allocation_seconds": 0.0246093,
+        "host_to_device_seconds": 0.0183016,
+        "random_seconds": 0.0006481,
+        "kernel_seconds": 2.3966495,
+        "device_to_host_seconds": 0.0009946,
+        "workspace_bytes": 1341521536.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51070,
+        "compressions": 12521,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 403295.300500975
+      },
+      "observed_mean_clicks": 99.74609375
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 1,
+      "wall_seconds": 0.0001619999820832163,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 1,
+      "wall_seconds": 7.750000804662704e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 1,
+      "wall_seconds": 0.00010490001295693219,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 0,
+      "wall_seconds": 0.6838598999893293,
+      "cuda_timings": {
+        "allocation_seconds": 0.0022397,
+        "host_to_device_seconds": 0.0019418,
+        "random_seconds": 0.0006209,
+        "kernel_seconds": 0.6413311,
+        "device_to_host_seconds": 0.0011663,
+        "workspace_bytes": 171703936.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51078,
+        "compressions": 50909,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 99.76171875
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 1,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 762101,
+      "returncode": 0,
+      "wall_seconds": 1.5279571999853943,
+      "cuda_timings": {
+        "allocation_seconds": 0.0021621,
+        "host_to_device_seconds": 0.0096696,
+        "random_seconds": 0.000626,
+        "kernel_seconds": 1.4845183,
+        "device_to_host_seconds": 0.0008703,
+        "workspace_bytes": 673054336.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51073,
+        "compressions": 16789,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 56950.313725292974
+      },
+      "observed_mean_clicks": 99.751953125
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 1,
+      "wall_seconds": 0.00011559997801668942,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 1,
+      "wall_seconds": 7.259999983943999e-05,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 0,
+      "wall_seconds": 0.6727048000029754,
+      "cuda_timings": {
+        "allocation_seconds": 0.0009724,
+        "host_to_device_seconds": 0.002926,
+        "random_seconds": 0.000609,
+        "kernel_seconds": 0.6415819,
+        "device_to_host_seconds": 0.0010748,
+        "workspace_bytes": 171703936.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51583,
+        "compressions": 51402,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 100.748046875
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 0,
+      "wall_seconds": 1.5414770999923348,
+      "cuda_timings": {
+        "allocation_seconds": 0.0023781,
+        "host_to_device_seconds": 0.00941,
+        "random_seconds": 0.000606,
+        "kernel_seconds": 1.4969276,
+        "device_to_host_seconds": 0.0008082,
+        "workspace_bytes": 673054336.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51592,
+        "compressions": 16962,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 61285.67757366217
+      },
+      "observed_mean_clicks": 100.765625
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 0,
+      "wall_seconds": 2.4880944999749772,
+      "cuda_timings": {
+        "allocation_seconds": 0.0035892,
+        "host_to_device_seconds": 0.0185904,
+        "random_seconds": 0.0006216,
+        "kernel_seconds": 2.4201798,
+        "device_to_host_seconds": 0.0007109,
+        "workspace_bytes": 1341521536.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 51593,
+        "compressions": 12668,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 279725.04148432513
+      },
+      "observed_mean_clicks": 100.767578125
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 762201,
+      "returncode": 1,
+      "wall_seconds": 9.549999958835542e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 0,
+      "wall_seconds": 1.3061383999884129,
+      "cuda_timings": {
+        "allocation_seconds": 0.0006085,
+        "host_to_device_seconds": 0.0048049,
+        "random_seconds": 0.0007766,
+        "kernel_seconds": 1.2582721,
+        "device_to_host_seconds": 0.0011988,
+        "workspace_bytes": 279138304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67137,
+        "compressions": 66964,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 131.126953125
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 0,
+      "wall_seconds": 3.0103719999897294,
+      "cuda_timings": {
+        "allocation_seconds": 0.00151,
+        "host_to_device_seconds": 0.0157884,
+        "random_seconds": 0.0007808,
+        "kernel_seconds": 2.9473471,
+        "device_to_host_seconds": 0.001352,
+        "workspace_bytes": 1097027584.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67128,
+        "compressions": 22167,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 25690.271371994568
+      },
+      "observed_mean_clicks": 131.109375
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 0,
+      "wall_seconds": 4.878218999976525,
+      "cuda_timings": {
+        "allocation_seconds": 0.00652,
+        "host_to_device_seconds": 0.0299256,
+        "random_seconds": 0.0007784,
+        "kernel_seconds": 4.7718771,
+        "device_to_host_seconds": 0.0011067,
+        "workspace_bytes": 2187546624.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67135,
+        "compressions": 16553,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 165343.70854853996
+      },
+      "observed_mean_clicks": 131.123046875
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 1,
+      "wall_seconds": 0.00012469998910091817,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 1,
+      "wall_seconds": 9.360001422464848e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 0,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772001,
+      "returncode": 1,
+      "wall_seconds": 0.00014519999967887998,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 0,
+      "wall_seconds": 4.879396700009238,
+      "cuda_timings": {
+        "allocation_seconds": 0.0071414,
+        "host_to_device_seconds": 0.0297064,
+        "random_seconds": 0.0007783,
+        "kernel_seconds": 4.7704148,
+        "device_to_host_seconds": 0.0007671,
+        "workspace_bytes": 2187546624.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67100,
+        "compressions": 16545,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 143663.7062656196
+      },
+      "observed_mean_clicks": 131.0546875
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 1,
+      "wall_seconds": 8.069997420534492e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 1,
+      "wall_seconds": 7.189999450929463e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 1,
+      "wall_seconds": 0.00010420000762678683,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 0,
+      "wall_seconds": 1.3431889000057708,
+      "cuda_timings": {
+        "allocation_seconds": 0.000656,
+        "host_to_device_seconds": 0.0050078,
+        "random_seconds": 0.0007805,
+        "kernel_seconds": 1.2889573,
+        "device_to_host_seconds": 0.0009201,
+        "workspace_bytes": 279138304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67094,
+        "compressions": 66921,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 131.04296875
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 1,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 772101,
+      "returncode": 0,
+      "wall_seconds": 3.117189700016752,
+      "cuda_timings": {
+        "allocation_seconds": 0.0023697,
+        "host_to_device_seconds": 0.0153759,
+        "random_seconds": 0.0007642,
+        "kernel_seconds": 3.0315963,
+        "device_to_host_seconds": 0.0009172,
+        "workspace_bytes": 1097027584.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 67106,
+        "compressions": 22142,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 21484.537733536272
+      },
+      "observed_mean_clicks": 131.06640625
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 3,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 1,
+      "wall_seconds": 8.38999985717237e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "gpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 1,
+      "wall_seconds": 0.00012199999764561653,
+      "error": "Frugal GPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "fused",
+      "budget": 1,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 0,
+      "wall_seconds": 1.3259805999987293,
+      "cuda_timings": {
+        "allocation_seconds": 0.0019029,
+        "host_to_device_seconds": 0.003854,
+        "random_seconds": 0.0007703,
+        "kernel_seconds": 1.2691414,
+        "device_to_host_seconds": 0.0012875,
+        "workspace_bytes": 279138304.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 66717,
+        "compressions": 66557,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "observed_mean_clicks": 130.306640625
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "fused",
+      "budget": 4,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 0,
+      "wall_seconds": 3.054597600013949,
+      "cuda_timings": {
+        "allocation_seconds": 0.0048978,
+        "host_to_device_seconds": 0.0145317,
+        "random_seconds": 0.0007807,
+        "kernel_seconds": 2.9680715,
+        "device_to_host_seconds": 0.0009486,
+        "workspace_bytes": 1097027584.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 66718,
+        "compressions": 22009,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 30710.454239367173
+      },
+      "observed_mean_clicks": 130.30859375
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "fused",
+      "budget": 8,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 0,
+      "wall_seconds": 4.938917499996023,
+      "cuda_timings": {
+        "allocation_seconds": 0.0064281,
+        "host_to_device_seconds": 0.0299922,
+        "random_seconds": 0.0009326,
+        "kernel_seconds": 4.8365578,
+        "device_to_host_seconds": 0.0013848,
+        "workspace_bytes": 2187546624.0,
+        "failed_rows": 0.0
+      },
+      "statistics": {
+        "completed_samples": 512,
+        "clicks": 66708,
+        "compressions": 16450,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 213407.1525900315
+      },
+      "observed_mean_clicks": 130.2890625
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "rep": 2,
+      "method": "cpu64",
+      "budget": 2,
+      "samples": 512,
+      "seed": 772201,
+      "returncode": 1,
+      "wall_seconds": 8.58000130392611e-05,
+      "error": "Frugal CPU adapter supports 4,8,144 modes",
+      "component_timings": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_mean_clicks": 0.0
+    }
+  ],
+  "replays": [
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "budget": 1,
+      "different_bits": 0,
+      "maximum_probability_difference": 4.440892098500626e-16
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "budget": 4,
+      "different_bits": 0,
+      "maximum_probability_difference": 1.5823453658470044e-13
+    },
+    {
+      "case": 0,
+      "inputs": 64,
+      "outputs": 192,
+      "budget": 8,
+      "different_bits": 0,
+      "maximum_probability_difference": 1.1519118991998312e-12
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "budget": 1,
+      "different_bits": 0,
+      "maximum_probability_difference": 4.440892098500626e-16
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "budget": 4,
+      "different_bits": 0,
+      "maximum_probability_difference": 9.331424521974441e-14
+    },
+    {
+      "case": 1,
+      "inputs": 100,
+      "outputs": 288,
+      "budget": 8,
+      "different_bits": 0,
+      "maximum_probability_difference": 5.804245972740318e-13
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 1,
+      "different_bits": 0,
+      "maximum_probability_difference": 5.551115123125783e-16
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 4,
+      "different_bits": 0,
+      "maximum_probability_difference": 5.312417172831374e-13
+    },
+    {
+      "case": 2,
+      "inputs": 128,
+      "outputs": 384,
+      "budget": 8,
+      "different_bits": 0,
+      "maximum_probability_difference": 5.573874695130598e-13
+    }
+  ],
+  "medians": {
+    "0": {
+      "fused_1": 0.18558760001906194,
+      "fused_4": 0.4128167000017129,
+      "fused_8": 0.657768400007626,
+      "cpu64_2": 0.00012489999062381685,
+      "cpu64_3": 0.00010149998706765473,
+      "gpu64_2": 0.0001275999820791185
+    },
+    "1": {
+      "fused_1": 0.6838598999893293,
+      "fused_4": 1.5395271999877878,
+      "fused_8": 2.4880944999749772,
+      "cpu64_2": 9.549999958835542e-05,
+      "cpu64_3": 8.579998393543065e-05,
+      "gpu64_2": 0.00010490001295693219
+    },
+    "2": {
+      "fused_1": 1.3259805999987293,
+      "fused_4": 3.054597600013949,
+      "fused_8": 4.879396700009238,
+      "cpu64_2": 8.58000130392611e-05,
+      "cpu64_3": 8.38999985717237e-05,
+      "gpu64_2": 0.00012199999764561653
+    }
+  }
+}

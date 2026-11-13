@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "modes": 192,
+      "entries": 37249,
+      "all_bytes_equal": true,
+      "sha256": "53fd8da23dabf2d3f836be0b8541b674fafb19071e0d1daecbe8132c5690705d"
+    },
+    {
+      "modes": 288,
+      "entries": 83521,
+      "all_bytes_equal": true,
+      "sha256": "ca071755c9a73d74b3d6cf2a3b4a13385b1f3079c110a2504311ccdb76fd2048"
+    },
+    {
+      "modes": 384,
+      "entries": 148225,
+      "all_bytes_equal": true,
+      "sha256": "c8b84d1c9f6ed1b7f371161ef2b254430d851aac8532ae469d7371a28961bdb9"
+    }
+  ],
+  "policy": "Identical uint64 multiply-wrap/divide/add-wrap recurrence; all entries byte-equal to official GCC compile-time arrays; only constant initialization differs."
+}

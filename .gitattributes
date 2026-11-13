@@ -518,3 +518,19 @@ src/gbslab/native_classical_tail_pnr.py -text -whitespace
 tests/test_native_structured_pnr.py -text -whitespace
 tests/test_native_classical_tail_pnr.py -text -whitespace
 tests/test_native_fused_click.py -text -whitespace
+
+# Iteration75 frozen numeric evidence and first-executed sources.
+RESEARCH_REPORT_ITERATION75.md -text -whitespace
+research/iteration75*.md -text -whitespace
+research/iteration76_plan.md -text -whitespace
+experiments/iteration75*.py -text -whitespace
+experiments/verify_iteration75*.py -text -whitespace
+results/iteration75*/** -text -whitespace
+results/iteration75*.json -text -whitespace
+native/*75* -text -whitespace
+src/gbslab/native_deep_pnr.py -text -whitespace
+src/gbslab/native_resplit_pnr.py -text -whitespace
+src/gbslab/native_prefix_pnr.py -text -whitespace
+tests/test_native_deep_pnr.py -text -whitespace
+tests/test_native_resplit_pnr.py -text -whitespace
+tests/test_native_prefix_pnr.py -text -whitespace

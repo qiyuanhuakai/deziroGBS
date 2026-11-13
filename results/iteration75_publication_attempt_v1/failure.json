@@ -1,0 +1,7 @@
+{
+  "status": "staged_byte_check_failed_before_commit",
+  "path": "results/iteration75_tests_v1/source_snapshot/tests/test_exact.py",
+  "reason": "Git core.autocrlf normalized a new snapshot path; iteration75 byte-preserving attributes were missing.",
+  "source_sha256": "54b23c3c82e43597d3a9fd87227d573b3386fa359bf549557447e6ffd1b66b13",
+  "resolution": "Add iteration75 -text attributes, retain the original manifest, restage original bytes and create a v2 publication manifest. No scientific source or raw evidence changes."
+}
