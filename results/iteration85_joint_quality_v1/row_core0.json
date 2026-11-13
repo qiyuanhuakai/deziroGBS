@@ -1,0 +1,94 @@
+{
+  "method": "core0",
+  "records": 2048,
+  "native_success": true,
+  "success": true,
+  "failed_records": 0,
+  "empirical_failure_fraction": 0.0,
+  "quality_scope": "All records; failures are an explicit output symbol with target mass zero.",
+  "local_click": [
+    {
+      "group": 0,
+      "empirical_tv": 0.04777667594036773,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.09198843435310067,
+      "upper_radius": 0.04421175841273293,
+      "lower_radius": 0.04566170774374941,
+      "pilot_records": 128,
+      "validation_event_gap": 0.009566126795549579
+    },
+    {
+      "group": 1,
+      "empirical_tv": 0.06150232852959023,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.10571408694232315,
+      "upper_radius": 0.04421175841273293,
+      "lower_radius": 0.04566170774374941,
+      "pilot_records": 128,
+      "validation_event_gap": -0.0017526476022745596
+    },
+    {
+      "group": 2,
+      "empirical_tv": 0.051140340344936246,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.09535209875766917,
+      "upper_radius": 0.04421175841273293,
+      "lower_radius": 0.04566170774374941,
+      "pilot_records": 128,
+      "validation_event_gap": 0.0044966809752449155
+    }
+  ],
+  "click_regions": [
+    {
+      "first": 0,
+      "end": 1152,
+      "failure_label": 1153,
+      "successful_record_mean": 103.45068359375,
+      "records": 2048,
+      "mean": 103.45068359375,
+      "reference_mean": 103.89578381576854,
+      "reference_variance": 448.17028580271403,
+      "dkw_radius": 0.04608584346439537,
+      "lower": 0.0
+    },
+    {
+      "first": 1024,
+      "end": 1152,
+      "failure_label": 129,
+      "successful_record_mean": 9.96923828125,
+      "records": 2048,
+      "mean": 9.96923828125,
+      "reference_mean": 10.08320669687702,
+      "reference_variance": 19.851900778350018,
+      "dkw_radius": 0.04608584346439537,
+      "lower": 0.0
+    }
+  ],
+  "photon_regions": [
+    {
+      "first": 0,
+      "end": 1152,
+      "empirical_count_cdf_distance": 0.02027096918136434,
+      "nominal_joint99_count_cdf_lower": 0.0,
+      "nominal_joint99_count_cdf_upper": 0.06635681264575971,
+      "dkw_radius": 0.04608584346439537,
+      "reference_tail_upper": 1.0383178398691407e-51
+    },
+    {
+      "first": 1024,
+      "end": 1152,
+      "empirical_count_cdf_distance": 0.011868282879164083,
+      "nominal_joint99_count_cdf_lower": 0.0,
+      "nominal_joint99_count_cdf_upper": 0.05795412634355945,
+      "dkw_radius": 0.04608584346439537,
+      "reference_tail_upper": 3.7194225283199995e-30
+    }
+  ],
+  "experimental_click_count": {
+    "empirical_cdf_distance": 0.054258991120065936,
+    "nominal_joint99_cdf_lower": 0.006466064458120209,
+    "nominal_joint99_cdf_upper": 0.10205191778201167,
+    "experimental_records": 1492642,
+    "scope": "Total-click count CDF versus experimental population, including failure; not full bit-pattern TV upper bound."
+  }
+}

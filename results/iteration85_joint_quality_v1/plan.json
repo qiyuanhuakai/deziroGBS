@@ -1,0 +1,22 @@
+{
+  "scope": "Analyze the predeclared iteration85 complete-output quality family.\nExact numerical 8-bit marginals, independent pilot-event lower bounds and\nconvexity/McDiarmid upper bounds. Count-CDF witnesses have separate scope.\nFrugal local marginal laws are standalone 8-mode tasks, not late-prefix laws\nof a Frugal full-output sampler. No inference of full TV from local upper bounds.\nFailed native rows map to an explicit failure symbol with target probability zero;\nnever delete or refill. This analysis rule is recorded after observing B64 failures,\nbefore computing quality bounds; fixed sample sizes and allocated event budgets stay unchanged.\n",
+  "hashes": {
+    "experiments/iteration85_joint_quality_v1.py": "849606128c5f38514b82dcbd39ce7f89eff0dd04be15ddf978266c14e860af8c",
+    "results/iteration85_full_quality_v1/plan.json": "5e0024ed85461dd9c4125584b81e31ecac9a981e2552f9df512fb527f275ceee",
+    "results/iteration85_full_quality_v1/summary.json": "5842604ba2b02a8bbd801d642b30746089ae560aa59a2c62dffe8cecab3fd439",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration83_bias_profile_v1/summary.json": "7afd899f06b2d63cfd7ad5309907676c7a271ac3e2ba3d3a6b57b2a6d40f0369",
+    "results/iteration84_photon_cdf_v1/reference.json": "689c7791fc32e7edb90cefff0285555ea21e197aea0d2d00e4b730650d2f31ce",
+    "results/iteration81_prefix_build_v1/prefix.dll": "af8c85c0f0d93e499ef5853d36bb0a42db310f1229aace0c17414e555005c8d6",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration85_full_quality_v1/core0_combined.npz": "d319903f043e45015cdd9fbeced937e3f31aa0427148307924e293718593a456",
+    "results/iteration85_full_quality_v1/exact32_combined.npz": "76a7e88a72cd6ee30444041961bad4747b0bfc4579428298bd06d3b9fe74f6cc"
+  },
+  "confidence": {
+    "total_events": 30,
+    "delta_per_event": 0.0003333333333333333,
+    "pilot_records": 128,
+    "pilot_rule": "First128 records used only to choose each local excess-probability event; lower bounds use remaining records. Upper TV bounds use full empirical TV with one-sided bounded differences and convexity. No pilot-selected threshold is reused on its own data."
+  },
+  "supplement": "One unused event allocated to shared experimental total-click CDF before quality analysis; generated full-click CDF events reused; total27 of30 events."
+}

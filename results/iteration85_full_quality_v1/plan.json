@@ -1,0 +1,97 @@
+{
+  "scope": "Fresh complete-output quality panels with explicit disjoint random domains.\nB32/B64 direct click and correlated-core PNR, sequential heavy work only.\nFreeze a 30-event nominal joint99 family before any sampling. Three methods\ntimes: full/last128 click CDF, three local click-TV upper bounds, three fixed\npilot-event lower bounds, and two regional photon-count CDF events (PNR only;\nunused direct-click allocations remain unused). Domain separation is not iid proof.\n",
+  "hashes": {
+    "experiments/iteration85_full_quality_v1.py": "9fc459f61eebab153df15d497947f1cbfcf5fa2850e2035742564550d24026bd",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration84_exactsum_pilot_v1/exactsum.dll": "7ffbc33a5c6b299ed29faa1439a31c6c851c56547c9591adb7c1c2802e7a4361",
+    "results/iteration84_rng_gates_v1/correlated.dll": "e2a7adcf0ee3c16c6cfa795d522189cc3512498db01381e41773b2676388ba31",
+    "results/iteration84_rng_gates_v1/rng.dll": "299227482bc25c8c79aed9677c0361df5737334e9d4fee10b55803651a7b5e0c",
+    "results/iteration84_correlated_pnr_pilot_v1/input_0.npz": "b6e856c93582b0dff2894500ca8870481a8ae2ba405a7b096222b29686d732e9",
+    "results/iteration84_correlated_pnr_pilot_v1/input_1.npz": "feeb910061f3c9282d6b5d99e04be2cf2a6d9e06254405e89ed625290e232c96",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "native/gaussian_click_exactsum84_v1.cpp": "cdbe90e2a8c39d33c4d57b76750132d5e290a824e6b7898325e28ce4e9cd6341",
+    "native/gaussian_pnr_correlated84_v2.cpp": "853d8076f5422110b3eb607b171d34e7838bcd479fb1a6d0926d552166cd5b50"
+  },
+  "panels": [
+    {
+      "method": "exact32",
+      "records": 512,
+      "experiment": 2231373825,
+      "sectors": [
+        0,
+        1
+      ],
+      "global_offset": 0
+    },
+    {
+      "method": "exact64",
+      "records": 512,
+      "experiment": 2231373826,
+      "sectors": [
+        0,
+        1
+      ],
+      "global_offset": 0
+    },
+    {
+      "method": "core0",
+      "records": 2048,
+      "experiment": 2231373827,
+      "sectors": [
+        0,
+        1
+      ],
+      "global_offset": 0
+    }
+  ],
+  "workers": 16,
+  "batch_size": 64,
+  "groups": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      1144,
+      1145,
+      1146,
+      1147,
+      1148,
+      1149,
+      1150,
+      1151
+    ],
+    [
+      0,
+      144,
+      288,
+      432,
+      576,
+      720,
+      864,
+      1008
+    ]
+  ],
+  "regions": [
+    [
+      0,
+      1152
+    ],
+    [
+      1024,
+      1152
+    ]
+  ],
+  "confidence": {
+    "total_events": 30,
+    "delta_per_event": 0.0003333333333333333,
+    "pilot_records": 128,
+    "pilot_rule": "First128 records used only to choose each local excess-probability event; lower bounds use remaining records. Upper TV bounds use full empirical TV with one-sided bounded differences and convexity. No pilot-selected threshold is reused on its own data."
+  }
+}

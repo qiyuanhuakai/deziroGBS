@@ -1,0 +1,485 @@
+{
+  "passed": true,
+  "checks": 57403,
+  "full_suite": {
+    "loss83_passed": 8,
+    "sampling82_passed": 16,
+    "factor81_passed": 12,
+    "passed": true,
+    "tests_run": 1001,
+    "successes": 972,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "polynomial_pnr_passed": 5,
+    "philox_click_passed": 5,
+    "structured_pnr_passed": 5,
+    "classical_tail_passed": 3,
+    "fused_click_passed": 3,
+    "deep_pnr_passed": 5,
+    "resplit_pnr_passed": 4,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true,
+    "tree85_passed": 6,
+    "prefix_pnr_passed": 5,
+    "projected_pnr_passed": 6,
+    "number_pnr_passed": 8,
+    "sphere_pnr_passed": 6,
+    "alias_click_passed": 6,
+    "joint_pnr_passed": 6,
+    "block_click_passed": 5,
+    "block_philox_passed": 4,
+    "transport80_passed": 13,
+    "core83_passed": 6,
+    "rng84_passed": 7,
+    "exactsum84_passed": 6
+  },
+  "unique_domains": 18432,
+  "quality": [
+    {
+      "method": "exact32",
+      "records": 512,
+      "native_success": true,
+      "success": true,
+      "failed_records": 0,
+      "empirical_failure_fraction": 0.0,
+      "quality_scope": "All records; failures are an explicit output symbol with target mass zero.",
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_tv": 0.07879672821369646,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.16722024503916233,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": -0.03015673211431047
+        },
+        {
+          "group": 1,
+          "empirical_tv": 0.1443082584431081,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.23273177526857397,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": 0.009847836196930415
+        },
+        {
+          "group": 2,
+          "empirical_tv": 0.10457618120472197,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.19299969803018782,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": 0.01859056153635441
+        }
+      ],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "failure_label": 1153,
+          "successful_record_mean": 93.328125,
+          "records": 512,
+          "mean": 93.328125,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.09217168692879074,
+          "lower": 0.034271630525733454,
+          "direction": "increasing",
+          "clip_lower": 67,
+          "clip_upper": 112,
+          "reference_expectation_lower": 0.6580839424545242,
+          "empirical_expectation": 0.531640625
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "failure_label": 129,
+          "successful_record_mean": 7.701171875,
+          "records": 512,
+          "mean": 7.701171875,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.09217168692879074,
+          "lower": 0.06910971364754548,
+          "direction": "increasing",
+          "clip_lower": 4,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.5770528849513362,
+          "empirical_expectation": 0.415771484375
+        }
+      ],
+      "photon_regions": [],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.27082234627844454,
+        "nominal_joint99_cdf_lower": 0.17694357615210343,
+        "nominal_joint99_cdf_upper": 0.36470111640478564,
+        "experimental_records": 1492642,
+        "scope": "Total-click count CDF versus experimental population, including failure; not full bit-pattern TV upper bound."
+      }
+    },
+    {
+      "method": "exact64",
+      "records": 512,
+      "native_success": false,
+      "success": true,
+      "failed_records": 15,
+      "empirical_failure_fraction": 0.029296875,
+      "quality_scope": "All records; failures are an explicit output symbol with target mass zero.",
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_tv": 0.07477193125599155,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.16319544808145742,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": 0.002070400174511322
+        },
+        {
+          "group": 1,
+          "empirical_tv": 0.1784324093441071,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.26685592616957293,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": 0.08914143283868525
+        },
+        {
+          "group": 2,
+          "empirical_tv": 0.09093738968153664,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.17936090650700248,
+          "upper_radius": 0.08842351682546586,
+          "lower_radius": 0.10210268248375223,
+          "pilot_records": 128,
+          "validation_event_gap": -0.005246716377473065
+        }
+      ],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "failure_label": 1153,
+          "successful_record_mean": 92.71428571428571,
+          "records": 512,
+          "mean": 123.77734375,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.09217168692879074,
+          "lower": 0.05019175708814638,
+          "direction": "increasing",
+          "clip_lower": 68,
+          "clip_upper": 109,
+          "reference_expectation_lower": 0.6721843281632786,
+          "empirical_expectation": 0.5298208841463414
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "failure_label": 129,
+          "successful_record_mean": 7.503018108651911,
+          "records": 512,
+          "mean": 11.0625,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.09217168692879074,
+          "lower": 0.07462705802795261,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.6240470088456322,
+          "empirical_expectation": 0.4572482638888889
+        }
+      ],
+      "photon_regions": [],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.27638731618583023,
+        "nominal_joint99_cdf_lower": 0.18250854605948913,
+        "nominal_joint99_cdf_upper": 0.37026608631217134,
+        "experimental_records": 1492642,
+        "scope": "Total-click count CDF versus experimental population, including failure; not full bit-pattern TV upper bound."
+      }
+    },
+    {
+      "method": "core0",
+      "records": 2048,
+      "native_success": true,
+      "success": true,
+      "failed_records": 0,
+      "empirical_failure_fraction": 0.0,
+      "quality_scope": "All records; failures are an explicit output symbol with target mass zero.",
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_tv": 0.04777667594036773,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.09198843435310067,
+          "upper_radius": 0.04421175841273293,
+          "lower_radius": 0.04566170774374941,
+          "pilot_records": 128,
+          "validation_event_gap": 0.009566126795549579
+        },
+        {
+          "group": 1,
+          "empirical_tv": 0.06150232852959023,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.10571408694232315,
+          "upper_radius": 0.04421175841273293,
+          "lower_radius": 0.04566170774374941,
+          "pilot_records": 128,
+          "validation_event_gap": -0.0017526476022745596
+        },
+        {
+          "group": 2,
+          "empirical_tv": 0.051140340344936246,
+          "nominal_joint99_marginal_tv_lower": 0.0,
+          "nominal_joint99_marginal_tv_upper": 0.09535209875766917,
+          "upper_radius": 0.04421175841273293,
+          "lower_radius": 0.04566170774374941,
+          "pilot_records": 128,
+          "validation_event_gap": 0.0044966809752449155
+        }
+      ],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "failure_label": 1153,
+          "successful_record_mean": 103.45068359375,
+          "records": 2048,
+          "mean": 103.45068359375,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.04608584346439537,
+          "lower": 0.0
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "failure_label": 129,
+          "successful_record_mean": 9.96923828125,
+          "records": 2048,
+          "mean": 9.96923828125,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.04608584346439537,
+          "lower": 0.0
+        }
+      ],
+      "photon_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "empirical_count_cdf_distance": 0.02027096918136434,
+          "nominal_joint99_count_cdf_lower": 0.0,
+          "nominal_joint99_count_cdf_upper": 0.06635681264575971,
+          "dkw_radius": 0.04608584346439537,
+          "reference_tail_upper": 1.0383178398691407e-51
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "empirical_count_cdf_distance": 0.011868282879164083,
+          "nominal_joint99_count_cdf_lower": 0.0,
+          "nominal_joint99_count_cdf_upper": 0.05795412634355945,
+          "dkw_radius": 0.04608584346439537,
+          "reference_tail_upper": 3.7194225283199995e-30
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.054258991120065936,
+        "nominal_joint99_cdf_lower": 0.006466064458120209,
+        "nominal_joint99_cdf_upper": 0.10205191778201167,
+        "experimental_records": 1492642,
+        "scope": "Total-click count CDF versus experimental population, including failure; not full bit-pattern TV upper bound."
+      }
+    }
+  ],
+  "timing": [
+    {
+      "method": "old",
+      "records": 4,
+      "median_seconds": 4.219112499999028
+    },
+    {
+      "method": "tree",
+      "records": 4,
+      "median_seconds": 0.46177190000162227
+    },
+    {
+      "method": "old",
+      "records": 64,
+      "median_seconds": 29.404234199999337
+    },
+    {
+      "method": "tree",
+      "records": 64,
+      "median_seconds": 1.6622012999978324
+    }
+  ],
+  "scope": "Independent artifact, random-domain, inclusive-quality and detector-tree audit.\nNo native DLL is loaded. Reconstruct complete rows, probability references and\nconfidence formulas; verify all replayed integer outputs and native source hashes.\n",
+  "limitations": [
+    "Domain separation does not prove iid.",
+    "Numerical references are not interval-certified.",
+    "Marginal upper bounds do not bound full PNR/click TV.",
+    "Explicit native failures remain part of the output law."
+  ]
+}

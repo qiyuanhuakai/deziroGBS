@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "rep": 0,
+      "method": "old",
+      "records": 16,
+      "success": true,
+      "seconds": 3.5349923000030685,
+      "sectors": [
+        {
+          "sector": 0,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.0,
+          "tree_nodes": 0.0,
+          "tree_bytes": 0.0,
+          "tree_calls": 0,
+          "tree_fallbacks": 0
+        },
+        {
+          "sector": 1,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.0,
+          "tree_nodes": 0.0,
+          "tree_bytes": 0.0,
+          "tree_calls": 0,
+          "tree_fallbacks": 0
+        }
+      ]
+    },
+    {
+      "rep": 0,
+      "method": "tree",
+      "records": 16,
+      "success": true,
+      "seconds": 0.6464835000006133,
+      "sectors": [
+        {
+          "sector": 0,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.05157429999962915,
+          "tree_nodes": 2303.0,
+          "tree_bytes": 93081600.0,
+          "tree_calls": 1693.0,
+          "tree_fallbacks": 0.0
+        },
+        {
+          "sector": 1,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.05277810000188765,
+          "tree_nodes": 2303.0,
+          "tree_bytes": 93081600.0,
+          "tree_calls": 4.0,
+          "tree_fallbacks": 0.0
+        }
+      ]
+    },
+    {
+      "rep": 1,
+      "method": "old",
+      "records": 64,
+      "success": true,
+      "seconds": 33.564178799999354,
+      "sectors": [
+        {
+          "sector": 0,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.0,
+          "tree_nodes": 0.0,
+          "tree_bytes": 0.0,
+          "tree_calls": 0,
+          "tree_fallbacks": 0
+        },
+        {
+          "sector": 1,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.0,
+          "tree_nodes": 0.0,
+          "tree_bytes": 0.0,
+          "tree_calls": 0,
+          "tree_fallbacks": 0
+        }
+      ]
+    },
+    {
+      "rep": 1,
+      "method": "tree",
+      "records": 64,
+      "success": true,
+      "seconds": 1.753668999997899,
+      "sectors": [
+        {
+          "sector": 0,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.04283529999884195,
+          "tree_nodes": 2303.0,
+          "tree_bytes": 93081600.0,
+          "tree_calls": 7128.0,
+          "tree_fallbacks": 0.0
+        },
+        {
+          "sector": 1,
+          "success": true,
+          "returncode": 0,
+          "error": "",
+          "tree_build_seconds": 0.04145050000079209,
+          "tree_nodes": 2303.0,
+          "tree_bytes": 93081600.0,
+          "tree_calls": 42.0,
+          "tree_fallbacks": 0.0
+        }
+      ]
+    }
+  ],
+  "probe_cases": 48,
+  "scope": "Build and gate quadratic-moment optical-tree PNR detector routing.\nCompare every detector probability against the frozen polynomial evaluation,\nthen identical domain streams through complete old/new trajectories. Exploratory\ntimes include native setup and tree construction; formal repetitions are separate.\n"
+}

@@ -1,5 +1,28 @@
 # Native sampling kernels
 
+## Iteration85: conditional optical Gram tree
+
+`gaussian_pnr_tree85_v1.cpp` retains the frozen84 correlated-core trajectory and
+replaces general polynomial detector enumeration with its exact quadratic moment
+identity. `pnr85_tree_create/destroy/info` manage an optical Gram-sum tree shared
+across workers. `pnr85_correlated_sample` adds the tree handle after the model
+handle; statistics have18 columns, the first16 unchanged and the last two giving
+tree calls/fallbacks. `pnr85_detector_probe` exposes old/new normalized rates.
+
+Only resplit=0 is accepted: rotating the optical basis would invalidate a tree.
+The one-particle moment must pass a numerical positive-definiteness guard;
+uncertain interval selection falls back to the old detector, without clipping.
+This is neither a new approximation nor an interval-certified floating algorithm.
+At50 active inputs/1152 outputs the Gram data use93,081,600 bytes per spectrum.
+
+Compared to the published84 DLL, complete64-record batches are17.6899x faster
+in three serial median timings including tree preparation. All2048 quality
+records replay identically with the same explicit domains; do not count them
+twice. The direct-click B64 quality panel has15/512 explicit failed records.
+See the [report](../RESEARCH_REPORT_ITERATION85.md),
+[tree identity](../research/iteration85_tree_method.md) and
+[failure policy](../research/iteration85_failure_policy.md).
+
 ## Iteration84: explicit random domains and integer dot accumulation
 
 `gaussian_rng_domain84_v1.hpp` implements Philox4x32-10 with experiment64 as key;

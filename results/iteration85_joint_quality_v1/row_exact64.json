@@ -1,0 +1,85 @@
+{
+  "method": "exact64",
+  "records": 512,
+  "native_success": false,
+  "success": true,
+  "failed_records": 15,
+  "empirical_failure_fraction": 0.029296875,
+  "quality_scope": "All records; failures are an explicit output symbol with target mass zero.",
+  "local_click": [
+    {
+      "group": 0,
+      "empirical_tv": 0.07477193125599155,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.16319544808145742,
+      "upper_radius": 0.08842351682546586,
+      "lower_radius": 0.10210268248375223,
+      "pilot_records": 128,
+      "validation_event_gap": 0.002070400174511322
+    },
+    {
+      "group": 1,
+      "empirical_tv": 0.1784324093441071,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.26685592616957293,
+      "upper_radius": 0.08842351682546586,
+      "lower_radius": 0.10210268248375223,
+      "pilot_records": 128,
+      "validation_event_gap": 0.08914143283868525
+    },
+    {
+      "group": 2,
+      "empirical_tv": 0.09093738968153664,
+      "nominal_joint99_marginal_tv_lower": 0.0,
+      "nominal_joint99_marginal_tv_upper": 0.17936090650700248,
+      "upper_radius": 0.08842351682546586,
+      "lower_radius": 0.10210268248375223,
+      "pilot_records": 128,
+      "validation_event_gap": -0.005246716377473065
+    }
+  ],
+  "click_regions": [
+    {
+      "first": 0,
+      "end": 1152,
+      "failure_label": 1153,
+      "successful_record_mean": 92.71428571428571,
+      "records": 512,
+      "mean": 123.77734375,
+      "reference_mean": 103.89578381576854,
+      "reference_variance": 448.17028580271403,
+      "dkw_radius": 0.09217168692879074,
+      "lower": 0.05019175708814638,
+      "direction": "increasing",
+      "clip_lower": 68,
+      "clip_upper": 109,
+      "reference_expectation_lower": 0.6721843281632786,
+      "empirical_expectation": 0.5298208841463414
+    },
+    {
+      "first": 1024,
+      "end": 1152,
+      "failure_label": 129,
+      "successful_record_mean": 7.503018108651911,
+      "records": 512,
+      "mean": 11.0625,
+      "reference_mean": 10.08320669687702,
+      "reference_variance": 19.851900778350018,
+      "dkw_radius": 0.09217168692879074,
+      "lower": 0.07462705802795261,
+      "direction": "increasing",
+      "clip_lower": 3,
+      "clip_upper": 12,
+      "reference_expectation_lower": 0.6240470088456322,
+      "empirical_expectation": 0.4572482638888889
+    }
+  ],
+  "photon_regions": [],
+  "experimental_click_count": {
+    "empirical_cdf_distance": 0.27638731618583023,
+    "nominal_joint99_cdf_lower": 0.18250854605948913,
+    "nominal_joint99_cdf_upper": 0.37026608631217134,
+    "experimental_records": 1492642,
+    "scope": "Total-click count CDF versus experimental population, including failure; not full bit-pattern TV upper bound."
+  }
+}
