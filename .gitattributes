@@ -637,3 +637,9 @@ native/*83* -text -whitespace
 src/gbslab/native_loss_map.py -text -whitespace
 tests/test_native_loss83.py -text -whitespace
 tests/test_native_core83.py -text -whitespace
+
+# Published RNG erratum and deterministic legacy-stream audit.
+RESEARCH_ERRATUM_ITERATION83_RNG.md -text -whitespace
+experiments/iteration84_rng_overlap_audit_v2.py -text -whitespace
+results/iteration84_rng_overlap_audit_v2/** -text -whitespace
+results/iteration83_rng_erratum_receipt/** -text -whitespace

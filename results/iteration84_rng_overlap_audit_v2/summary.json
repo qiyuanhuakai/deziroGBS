@@ -1,0 +1,120 @@
+{
+  "confirmed": true,
+  "records_per_sector": 1024,
+  "total_engine_initializations": 6144,
+  "unique_engine_inputs": 3074,
+  "duplicate_groups": 3070,
+  "consumed_wait_detector_duplicate_groups": 2047,
+  "noise_duplicate_groups": 1023,
+  "example_consumed": [
+    {
+      "mix_input": "832101",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 0,
+          "purpose": "detector",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 0,
+          "purpose": "waiting",
+          "consumed": true
+        }
+      ]
+    },
+    {
+      "mix_input": "832102",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 1,
+          "purpose": "waiting",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 0,
+          "purpose": "detector",
+          "consumed": true
+        }
+      ]
+    },
+    {
+      "mix_input": "832103",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 1,
+          "purpose": "detector",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 1,
+          "purpose": "waiting",
+          "consumed": true
+        }
+      ]
+    },
+    {
+      "mix_input": "832104",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 2,
+          "purpose": "waiting",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 1,
+          "purpose": "detector",
+          "consumed": true
+        }
+      ]
+    },
+    {
+      "mix_input": "832105",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 2,
+          "purpose": "detector",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 2,
+          "purpose": "waiting",
+          "consumed": true
+        }
+      ]
+    },
+    {
+      "mix_input": "832106",
+      "uses": [
+        {
+          "sector": 0,
+          "row": 3,
+          "purpose": "waiting",
+          "consumed": true
+        },
+        {
+          "sector": 1,
+          "row": 2,
+          "purpose": "detector",
+          "consumed": true
+        }
+      ]
+    }
+  ],
+  "consequence": "Adjacent combined records share consumed engines; spectra also share waiting/detector engines. Original iid DKW coverage and independently combined spectral law are unsupported.",
+  "withdrawn_iteration83_claims": [
+    "PNR complete click TV lower 0.2950406587837476 at nominal joint99",
+    "PNR complete photon TV lower 0.3072123538158624 at nominal joint99",
+    "PNR experimental full-bit TV lower 0.4469147795128255 at nominal joint99"
+  ],
+  "unaffected_scope": "Deterministic Gaussian moments/core decompositions and scalar arithmetic checks do not depend on this RNG. GPU uses Philox(seed,row), not the legacy PNR affine engine assignment. Separate direct-click claims remain subject to their own stated assumptions."
+}
