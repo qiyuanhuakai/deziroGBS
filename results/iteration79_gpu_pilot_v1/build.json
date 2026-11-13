@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD,/utf-8",
+    "gaussian_click_block_philox79_v1.cu",
+    "-o",
+    "block.dll"
+  ],
+  "returncode": 0,
+  "stdout": "gaussian_click_block_philox79_v1.cu\n  \u6b63\u5728\u521b\u5efa\u5e93 block.lib \u548c\u5bf9\u8c61 block.exp\n",
+  "stderr": "",
+  "seconds": 7.09520110001904,
+  "build_directory": "C:\\Users\\qiyuaner\\AppData\\Local\\Temp\\deziro_block79_9a7fef68f05144838b866da925104d31"
+}

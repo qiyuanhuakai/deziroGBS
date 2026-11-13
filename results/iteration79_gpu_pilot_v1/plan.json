@@ -1,0 +1,15 @@
+{
+  "scope": "Delayed GPU compression: independent full block-law and width-one replay.\nAll builds and checks are fresh; frozen prior laws are independent CPU oracles.\n",
+  "source_hashes": {
+    "experiments/iteration79_gpu_pilot_v1.py": "fc0a88218a9068337dbd8c00aef159a1177f42616988d77351454ed12dacf79a",
+    "native/gaussian_click_block_philox79_v1.cu": "3174d7560c4641965dd2c713f20189ae1d62d7c5eb44dd50e966fb9cf881e72a",
+    "native/gaussian_click_block79_v1.cu": "35bf2af0dd2e4b9931f456087483fe1d518d8877c02bdd694fcc66a65e015041",
+    "src/gbslab/native_block_philox_click.py": "786e66a9f0caee0ff71a098ec6995f5a1d269f3ad2dd187bb1180599a4799819",
+    "src/gbslab/native_cuda_click_branches.py": "0bf261294063fdf2a514a743c00d7ea65c944ac537209d1c668dcba8aa986208"
+  },
+  "cpu_sha256": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+  "seed_base": 43347146413441024,
+  "full_law_absolute_tolerance": 1e-09,
+  "width1_probability_tolerance": 0,
+  "large_rows": 32
+}

@@ -1,0 +1,183 @@
+{
+  "scope": "Three rotated, setup-inclusive timing repetitions on identical inputs.\nBlock width/B and actual GPU capacity are separate: capacity=B*2**(width-1).\nFrugal K limits the conditional approximation; no equal-quality inference.\n",
+  "cases": [
+    [
+      "results/iteration79_pilot_v1/click_input_1.npz",
+      8192,
+      [
+        [
+          "old",
+          1,
+          4
+        ],
+        [
+          "old",
+          1,
+          8
+        ],
+        [
+          "old",
+          1,
+          32
+        ],
+        [
+          "gpu",
+          2,
+          4
+        ],
+        [
+          "gpu",
+          4,
+          4
+        ],
+        [
+          "old",
+          1,
+          128
+        ],
+        [
+          "block",
+          2,
+          4
+        ],
+        [
+          "block",
+          4,
+          4
+        ],
+        [
+          "alias",
+          1,
+          0
+        ],
+        [
+          "frugal",
+          1,
+          5
+        ]
+      ]
+    ],
+    [
+      "results/iteration79_pilot_v1/large_input_3.npz",
+      128,
+      [
+        [
+          "old",
+          1,
+          4
+        ],
+        [
+          "old",
+          1,
+          8
+        ],
+        [
+          "old",
+          1,
+          32
+        ],
+        [
+          "gpu",
+          2,
+          4
+        ],
+        [
+          "gpu",
+          4,
+          4
+        ],
+        [
+          "block",
+          2,
+          4
+        ],
+        [
+          "block",
+          4,
+          4
+        ],
+        [
+          "joint",
+          2,
+          12
+        ],
+        [
+          "sphere",
+          1,
+          12
+        ],
+        [
+          "frugal",
+          1,
+          2
+        ],
+        [
+          "frugal",
+          1,
+          3
+        ]
+      ]
+    ],
+    [
+      "results/iteration79_pilot_v1/large_input_4.npz",
+      128,
+      [
+        [
+          "old",
+          1,
+          4
+        ],
+        [
+          "old",
+          1,
+          8
+        ],
+        [
+          "old",
+          1,
+          32
+        ],
+        [
+          "gpu",
+          2,
+          4
+        ],
+        [
+          "gpu",
+          4,
+          4
+        ],
+        [
+          "joint",
+          2,
+          12
+        ],
+        [
+          "sphere",
+          1,
+          12
+        ],
+        [
+          "frugal",
+          1,
+          2
+        ]
+      ]
+    ]
+  ],
+  "workers": 16,
+  "alias_workers": 1,
+  "repetitions": 3,
+  "seed_base": 44473046320283648,
+  "hashes": {
+    "experiments/iteration79_timing_v1.py": "a76197bd331950acadc04cf31fc63604bd77a95cade99a59be0d24167beaf61f",
+    "results/iteration79_pilot_v1/joint.dll": "f23b6db1fd0fe49f279897a8674e11f3afed18171af91b4c23684920338fc0d0",
+    "results/iteration78_pilot_v2/sphere.dll": "9cf22455598112301670f781a5df903216382fc69d6fcfe6036f1b7f67ece5b7",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration79_gpu_pilot_v1/block.dll": "9591b9de8024b5b806c40d52b6ed1cab0ead5f86995e82277bd897e9dec4122d",
+    "results/iteration79_pilot_v1/block.dll": "f2077770852a6df14719c15b98542fa034ce99bde1acc1c165e535cf3e302de1",
+    "results/iteration78_alias_pilot_v1/table.dll": "6a77910fe04ee37ce3e32ec29f0e3aaa4f9d5275d86a9a487d603fd158fa5dea",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3"
+  }
+}

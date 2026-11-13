@@ -1,0 +1,823 @@
+{
+  "completed": true,
+  "laws": [
+    {
+      "success": true,
+      "case": 0,
+      "width": 1,
+      "budget": 1,
+      "numerical_tv": 0.12678124443268024,
+      "cpu_maximum_law_error": 2.0816681711721685e-17,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 4945,
+        "compressions": 3708,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "cuda_timings": {
+        "allocation_seconds": 9.04e-05,
+        "host_to_device_seconds": 0.0001753,
+        "random_seconds": 5.62e-05,
+        "kernel_seconds": 0.0008692,
+        "device_to_host_seconds": 0.0001902,
+        "workspace_bytes": 1589696.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 1,
+      "budget": 4,
+      "numerical_tv": 0.0013323306350136494,
+      "cpu_maximum_law_error": 1.97758476261356e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5623,
+        "compressions": 431,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002782,
+        "host_to_device_seconds": 0.0002906,
+        "random_seconds": 3.03e-05,
+        "kernel_seconds": 0.0012867,
+        "device_to_host_seconds": 0.0002133,
+        "workspace_bytes": 4735424.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 1,
+      "budget": 128,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 1.97758476261356e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5619,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0003389,
+        "host_to_device_seconds": 0.002029,
+        "random_seconds": 2.59e-05,
+        "kernel_seconds": 0.001426,
+        "device_to_host_seconds": 0.0001872,
+        "workspace_bytes": 134758848.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 2,
+      "budget": 1,
+      "numerical_tv": 0.08664594305348787,
+      "cpu_maximum_law_error": 6.591949208711867e-17,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5601,
+        "compressions": 1739,
+        "peak_transient_components": 4,
+        "maximum_absolute_weight_sum": 20.431312381877305
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001438,
+        "host_to_device_seconds": 0.000198,
+        "random_seconds": 2.47e-05,
+        "kernel_seconds": 0.0010187,
+        "device_to_host_seconds": 0.0001896,
+        "workspace_bytes": 2638272.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 2,
+      "budget": 4,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 1.942890293094024e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5870,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001937,
+        "host_to_device_seconds": 0.0003109,
+        "random_seconds": 2.36e-05,
+        "kernel_seconds": 0.0014569,
+        "device_to_host_seconds": 0.0001922,
+        "workspace_bytes": 8929728.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 2,
+      "budget": 64,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 1.942890293094024e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5870,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002362,
+        "host_to_device_seconds": 0.0021399,
+        "random_seconds": 2.97e-05,
+        "kernel_seconds": 0.001489,
+        "device_to_host_seconds": 0.0002221,
+        "workspace_bytes": 134758848.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 4,
+      "budget": 1,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 2.220446049250313e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5779,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002163,
+        "host_to_device_seconds": 0.0002322,
+        "random_seconds": 3.41e-05,
+        "kernel_seconds": 0.0014901,
+        "device_to_host_seconds": 0.0002033,
+        "workspace_bytes": 8929728.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 4,
+      "budget": 4,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 2.220446049250313e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5779,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001687,
+        "host_to_device_seconds": 0.0006892,
+        "random_seconds": 4.82e-05,
+        "kernel_seconds": 0.0014843,
+        "device_to_host_seconds": 0.000212,
+        "workspace_bytes": 34095552.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 0,
+      "width": 4,
+      "budget": 16,
+      "numerical_tv": 4.549312315749177e-16,
+      "cpu_maximum_law_error": 2.220446049250313e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 5779,
+        "compressions": 0,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 87.03905615477275
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002244,
+        "host_to_device_seconds": 0.002117,
+        "random_seconds": 2.38e-05,
+        "kernel_seconds": 0.0014692,
+        "device_to_host_seconds": 0.0001908,
+        "workspace_bytes": 134758848.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 1,
+      "budget": 1,
+      "numerical_tv": 0.1387877160825461,
+      "cpu_maximum_law_error": 3.469446951953614e-17,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3629,
+        "compressions": 3116,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002157,
+        "host_to_device_seconds": 0.0005166,
+        "random_seconds": 5.3e-05,
+        "kernel_seconds": 0.0020444,
+        "device_to_host_seconds": 0.0002761,
+        "workspace_bytes": 4097664.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 1,
+      "budget": 4,
+      "numerical_tv": 0.014127622666126148,
+      "cpu_maximum_law_error": 1.6046192152785466e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3994,
+        "compressions": 350,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 21523.978249215474
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002015,
+        "host_to_device_seconds": 0.0002559,
+        "random_seconds": 3.5e-05,
+        "kernel_seconds": 0.0028765,
+        "device_to_host_seconds": 0.0002638,
+        "workspace_bytes": 13534848.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 1,
+      "budget": 128,
+      "numerical_tv": 1.6230086393766163e-14,
+      "cpu_maximum_law_error": 1.0152198092611142e-15,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": true,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 4037,
+        "compressions": 0,
+        "peak_transient_components": 32,
+        "maximum_absolute_weight_sum": 379223.6031429134
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.000758,
+        "host_to_device_seconds": 0.0052401,
+        "random_seconds": 4.04e-05,
+        "kernel_seconds": 0.0038691,
+        "device_to_host_seconds": 0.0002572,
+        "workspace_bytes": 403605120.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 2,
+      "budget": 1,
+      "numerical_tv": 0.12419859693201327,
+      "cpu_maximum_law_error": 5.898059818321144e-17,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3762,
+        "compressions": 2425,
+        "peak_transient_components": 4,
+        "maximum_absolute_weight_sum": 336.1696527463206
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001682,
+        "host_to_device_seconds": 0.0003039,
+        "random_seconds": 3.59e-05,
+        "kernel_seconds": 0.0021,
+        "device_to_host_seconds": 0.0002647,
+        "workspace_bytes": 7243392.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 2,
+      "budget": 4,
+      "numerical_tv": 0.009489216783330777,
+      "cpu_maximum_law_error": 2.4036762164003633e-16,
+      "law_sum": 1.0000000000000002,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 4048,
+        "compressions": 231,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 50477.905715987836
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.000228,
+        "host_to_device_seconds": 0.0005172,
+        "random_seconds": 3.57e-05,
+        "kernel_seconds": 0.003043,
+        "device_to_host_seconds": 0.0002972,
+        "workspace_bytes": 26117760.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 2,
+      "budget": 64,
+      "numerical_tv": 1.6230086393766163e-14,
+      "cpu_maximum_law_error": 9.947148356739821e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 4066,
+        "compressions": 0,
+        "peak_transient_components": 64,
+        "maximum_absolute_weight_sum": 775524.7775484273
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0005236,
+        "host_to_device_seconds": 0.0054937,
+        "random_seconds": 4.94e-05,
+        "kernel_seconds": 0.0037929,
+        "device_to_host_seconds": 0.0002946,
+        "workspace_bytes": 403605120.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 4,
+      "budget": 1,
+      "numerical_tv": 0.08253052594163668,
+      "cpu_maximum_law_error": 2.226951262285226e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3756,
+        "compressions": 1425,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 3774.31117171247
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0004741,
+        "host_to_device_seconds": 0.00053,
+        "random_seconds": 6.39e-05,
+        "kernel_seconds": 0.0024909,
+        "device_to_host_seconds": 0.0002785,
+        "workspace_bytes": 26117760.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 4,
+      "budget": 4,
+      "numerical_tv": 0.0049640188618493754,
+      "cpu_maximum_law_error": 4.939082996757715e-16,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3972,
+        "compressions": 114,
+        "peak_transient_components": 32,
+        "maximum_absolute_weight_sum": 98331.34294837207
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0003286,
+        "host_to_device_seconds": 0.0016622,
+        "random_seconds": 5.65e-05,
+        "kernel_seconds": 0.0032668,
+        "device_to_host_seconds": 0.000258,
+        "workspace_bytes": 101615232.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 1,
+      "width": 4,
+      "budget": 16,
+      "numerical_tv": 1.6230086393766163e-14,
+      "cpu_maximum_law_error": 1.0089246603971203e-15,
+      "law_sum": 1.0,
+      "width1_bitwise_replay": null,
+      "statistics": {
+        "completed_samples": 4096,
+        "clicks": 3992,
+        "compressions": 0,
+        "peak_transient_components": 64,
+        "maximum_absolute_weight_sum": 512346.002543863
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0007737,
+        "host_to_device_seconds": 0.005257,
+        "random_seconds": 5.3e-05,
+        "kernel_seconds": 0.0041721,
+        "device_to_host_seconds": 0.0003086,
+        "workspace_bytes": 403605120.0,
+        "failed_rows": 0.0
+      }
+    }
+  ],
+  "displaced": [
+    {
+      "success": true,
+      "width": 2,
+      "budget": 1,
+      "maximum_trajectory_mass_error": 5.551115123125783e-17
+    },
+    {
+      "success": true,
+      "width": 2,
+      "budget": 4,
+      "maximum_trajectory_mass_error": 8.326672684688674e-17
+    },
+    {
+      "success": true,
+      "width": 4,
+      "budget": 1,
+      "maximum_trajectory_mass_error": 6.765421556309548e-17
+    },
+    {
+      "success": true,
+      "width": 4,
+      "budget": 4,
+      "maximum_trajectory_mass_error": 1.3010426069826053e-16
+    }
+  ],
+  "large": [
+    {
+      "success": true,
+      "case": 3,
+      "width": 1,
+      "budget": 1,
+      "seconds": 0.006365700013702735,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 206,
+        "compressions": 206,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001769,
+        "host_to_device_seconds": 0.0003374,
+        "random_seconds": 8.69e-05,
+        "kernel_seconds": 0.0053796,
+        "device_to_host_seconds": 6.77e-05,
+        "workspace_bytes": 1391104.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 1,
+      "budget": 4,
+      "seconds": 0.015100999997230247,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 216,
+        "compressions": 62,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 594428.1181047875
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001907,
+        "host_to_device_seconds": 0.0003972,
+        "random_seconds": 8.2e-05,
+        "kernel_seconds": 0.013758,
+        "device_to_host_seconds": 0.0002151,
+        "workspace_bytes": 4733440.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 1,
+      "budget": 8,
+      "seconds": 0.03173160000005737,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 221,
+        "compressions": 45,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 55911838.462787725
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002017,
+        "host_to_device_seconds": 0.0004381,
+        "random_seconds": 8.37e-05,
+        "kernel_seconds": 0.0301642,
+        "device_to_host_seconds": 0.0002489,
+        "workspace_bytes": 9189888.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 2,
+      "budget": 1,
+      "seconds": 0.0067845000012312084,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 209,
+        "compressions": 202,
+        "peak_transient_components": 4,
+        "maximum_absolute_weight_sum": 1283.3929185664203
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002017,
+        "host_to_device_seconds": 0.0003695,
+        "random_seconds": 8.35e-05,
+        "kernel_seconds": 0.0056655,
+        "device_to_host_seconds": 7.5e-05,
+        "workspace_bytes": 2505216.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 2,
+      "budget": 4,
+      "seconds": 0.01569900001049973,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 216,
+        "compressions": 63,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 803118.6798233984
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001806,
+        "host_to_device_seconds": 0.0005708,
+        "random_seconds": 7.97e-05,
+        "kernel_seconds": 0.0142501,
+        "device_to_host_seconds": 0.0001613,
+        "workspace_bytes": 9189888.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 4,
+      "budget": 1,
+      "seconds": 0.007441399997333065,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 210,
+        "compressions": 186,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 8650.82997899489
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0001823,
+        "host_to_device_seconds": 0.0004583,
+        "random_seconds": 8.17e-05,
+        "kernel_seconds": 0.0061709,
+        "device_to_host_seconds": 8.67e-05,
+        "workspace_bytes": 9189888.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 3,
+      "width": 4,
+      "budget": 4,
+      "seconds": 0.019956200005253777,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 217,
+        "compressions": 59,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 5703058.686365281
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002122,
+        "host_to_device_seconds": 0.0008884,
+        "random_seconds": 8.41e-05,
+        "kernel_seconds": 0.0177385,
+        "device_to_host_seconds": 0.0002847,
+        "workspace_bytes": 35928576.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 1,
+      "budget": 1,
+      "seconds": 0.1646515000029467,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 908,
+        "compressions": 906,
+        "peak_transient_components": 1,
+        "maximum_absolute_weight_sum": 1.0
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002381,
+        "host_to_device_seconds": 0.0009772,
+        "random_seconds": 0.0002751,
+        "kernel_seconds": 0.1623091,
+        "device_to_host_seconds": 0.0001736,
+        "workspace_bytes": 19416064.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 1,
+      "budget": 4,
+      "seconds": 0.413319599989336,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 925,
+        "compressions": 297,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 253367.57903740028
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002902,
+        "host_to_device_seconds": 0.0017154,
+        "random_seconds": 0.0002767,
+        "kernel_seconds": 0.4099256,
+        "device_to_host_seconds": 0.0001839,
+        "workspace_bytes": 70534144.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 1,
+      "budget": 8,
+      "seconds": 0.7212320999824442,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 935,
+        "compressions": 220,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 11205426.162887322
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.000689,
+        "host_to_device_seconds": 0.0026467,
+        "random_seconds": 0.0002755,
+        "kernel_seconds": 0.7160704,
+        "device_to_host_seconds": 0.0001611,
+        "workspace_bytes": 138691584.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 2,
+      "budget": 1,
+      "seconds": 0.17155610001645982,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 906,
+        "compressions": 858,
+        "peak_transient_components": 4,
+        "maximum_absolute_weight_sum": 1818.5132450513888
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0002382,
+        "host_to_device_seconds": 0.0012973,
+        "random_seconds": 0.0002824,
+        "kernel_seconds": 0.1684939,
+        "device_to_host_seconds": 0.0001698,
+        "workspace_bytes": 36455424.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 2,
+      "budget": 4,
+      "seconds": 0.4263500999950338,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 927,
+        "compressions": 294,
+        "peak_transient_components": 16,
+        "maximum_absolute_weight_sum": 3109067.8335307124
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0004199,
+        "host_to_device_seconds": 0.0026522,
+        "random_seconds": 0.0002774,
+        "kernel_seconds": 0.4214911,
+        "device_to_host_seconds": 0.0002055,
+        "workspace_bytes": 138691584.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 4,
+      "budget": 1,
+      "seconds": 0.19553869997616857,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 905,
+        "compressions": 787,
+        "peak_transient_components": 8,
+        "maximum_absolute_weight_sum": 14467.955330438383
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0004181,
+        "host_to_device_seconds": 0.0025742,
+        "random_seconds": 0.0002782,
+        "kernel_seconds": 0.1908203,
+        "device_to_host_seconds": 0.0001633,
+        "workspace_bytes": 138691584.0,
+        "failed_rows": 0.0
+      }
+    },
+    {
+      "success": true,
+      "case": 4,
+      "width": 4,
+      "budget": 4,
+      "seconds": 0.47011290001682937,
+      "statistics": {
+        "completed_samples": 32,
+        "clicks": 925,
+        "compressions": 281,
+        "peak_transient_components": 32,
+        "maximum_absolute_weight_sum": 13350523.630875064
+      },
+      "cuda_timings": {
+        "allocation_seconds": 0.0008585,
+        "host_to_device_seconds": 0.0078706,
+        "random_seconds": 0.0002853,
+        "kernel_seconds": 0.4577351,
+        "device_to_host_seconds": 0.0001599,
+        "workspace_bytes": 547636224.0,
+        "failed_rows": 0.0
+      }
+    }
+  ]
+}

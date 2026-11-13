@@ -1,5 +1,54 @@
 # Native sampling kernels
 
+## Iteration79: joint photon blocks and delayed GPU click compression
+
+`NativeJointNumberPNRSampler` returns integer PNRs, optionally converted to clicks.
+For equal positive squeezing, zero displacement and no loss, it keeps the exact
+total-number distribution and the iteration77 low-total branch. Above the budget,
+it partitions the total into independent exact pure photon blocks of even size
+2..12. Missing interblock coherence is an approximation, with explicit negative
+quality results in the report. Its C++ core is `gaussian_pnr_joint79_v1.cpp`.
+
+`NativeBlockClickSampler` evaluates small vacuum-subset tables in C++.
+`NativeBlockPhiloxClickSampler` realizes the same block law sequentially on GPU,
+delaying moment compression until each block ends. Width is 1..4; actual GPU
+capacity is `branch_budget * 2**(block_size-1) <= 128`. Width one replays the old
+GPU. The CPU and GPU consume random draws differently, so equal laws do not mean
+identical records. These methods generate clicks directly.
+
+```python
+from gbslab.native_joint_number_pnr import NativeJointNumberPNRSampler
+from gbslab.native_block_philox_click import NativeBlockPhiloxClickSampler
+with NativeJointNumberPNRSampler(v, t, joint_library,
+        exact_total_budget=12, joint_block_size=2,
+        workers=16, runtime_dirs=runtime) as model:
+    counts = model.sample(128, 790001)['counts']
+    clicks_from_pnr = (counts > 0).astype('uint8')
+with NativeBlockPhiloxClickSampler(v, x, cpu_replay_library,
+        gpu_library=block_gpu_library, branch_budget=4, block_size=4,
+        runtime_dirs=runtime) as model:
+    direct_clicks = model.sample(128, 790002)['clicks']
+```
+
+The following drivers build and verify explicitly. Use fresh output directories;
+benchmark drivers bind archived libraries by path and hash, so an independently
+named build does not silently replace the published benchmark binaries. Run heavy
+jobs serially. GPU compilation requires CUDA 13.5 and MSVC; CPU uses GCC15.1/Eigen3.4.
+
+```powershell
+python -X utf8 experiments/iteration79_pilot_v1.py --output results/reproduce79_cpu
+python -X utf8 experiments/iteration79_gpu_pilot_v1.py --output results/reproduce79_gpu
+python -X utf8 experiments/iteration79_strong_v1.py --output results/reproduce79_strong
+python -X utf8 experiments/iteration79_timing_v1.py --output results/reproduce79_timing
+python -X utf8 experiments/iteration79_capacity_law_v1.py --output results/reproduce79_capacity
+python -X utf8 experiments/iteration79_tests_v1.py --output results/reproduce79_tests
+python -X utf8 experiments/verify_iteration79_v1.py --output results/reproduce79_verification
+```
+
+The verifier reconstructs the original archived cohorts. The report discloses
+equal-capacity quality losses, setup costs, high-input bias and the lack of a
+general equal-quality Frugal/Jiuzhang comparison.
+
 ## Iteration76: projected photon prefixes
 
 `NativeProjectedPNRSampler` accepts the same pure squeezing/isometry inputs as

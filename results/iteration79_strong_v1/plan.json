@@ -1,0 +1,23 @@
+{
+  "scope": "Joint-photon-pair and sphere strong-input cohorts with predeclared pair and vacuum observables.\nFive observables, two methods, two sides: delta=.01/20 per side.\nMaurer-Pontil theorem 4; independent-record and numerical-reference assumptions explicit.\n",
+  "samples_per_method": 100000,
+  "batch": 10000,
+  "budget": 12,
+  "seed_base": 44191571343572992,
+  "stride": 1099511627776,
+  "observables": [
+    "same_port_collision",
+    "pair_sphere_separator",
+    "pair_joint_separator",
+    "vacuum_first4",
+    "vacuum_first16"
+  ],
+  "one_sided_bounds": 20,
+  "delta_per_side": 0.0005,
+  "theorem": "https://arxiv.org/pdf/0907.3740",
+  "hashes": {
+    "experiments/iteration79_strong_v1.py": "ade0cf7d5d629449fc3f4f6d78abd11e036ff42818f176456b478d9606a252ff",
+    "results/iteration79_pilot_v1/joint.dll": "f23b6db1fd0fe49f279897a8674e11f3afed18171af91b4c23684920338fc0d0",
+    "results/iteration78_pilot_v2/sphere.dll": "9cf22455598112301670f781a5df903216382fc69d6fcfe6036f1b7f67ece5b7"
+  }
+}
