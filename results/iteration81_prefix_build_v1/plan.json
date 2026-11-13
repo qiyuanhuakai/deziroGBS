@@ -1,0 +1,43 @@
+{
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration39_build\\generated",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-fopenmp",
+    "-march=x86-64-v3",
+    "-mstackrealign",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DFGBS_GPU_ENABLED=0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration75_frugal_cpu_build_v1\\generated",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration75_frugal_cpu_build_v1\\include",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\xsimd\\include",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\frugal_prefix81_adapter_v1.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\layout.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\correlator_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\cumulant_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\matrix_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\result.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\string_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\thread_utils.cpp",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\third_party\\FrugalGBS\\src\\fgbs\\core\\time_utils.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration81_prefix_build_v1\\prefix.dll"
+  ],
+  "source_hashes": {
+    "experiments/iteration81_prefix_build_v1.py": "3909c8ce319daf7536a070e878106eff9276fad8f21ee1b79b914a3be91589e0",
+    "native/frugal_prefix81_adapter_v1.cpp": "c0255abffd8c72be4789f50c01c24ca68be5e64707e453acfb64d67d5a2c5fcf",
+    "native/frugal_cpu75_adapter_v1.cpp": "e705e92414c1808b17fc83951ef548e5bcf3cfbfe5287f34b7dc72db2a583a12",
+    "results/iteration39_build/generated/frugal_extended_hooks.hpp": "100571f89d0ea9b3d789f68c411b9f9691ae3f99057490de805121327e714120"
+  },
+  "parent_manifest": "53ffe37641f79eeb4fcab5240447cef2a5f0b0bd7510904b9d57fa59e45da363",
+  "scope": "Build and cross-check the prefix-tree recorder for complete small and large-prefix laws."
+}

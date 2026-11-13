@@ -542,3 +542,12 @@ sphere仍仅接收等正压缩无位移纯态；预算以内精确条件分支�
 alias使用 `gaussian_table_click78_v3.cpp`。构建指数增长，限1～16输出，需调用者提供物理零均值Gaussian协方差。`law()`导出均匀uint64随机字下整数阈值律的float64表示；不证明counter mixer种子序列为iid。`row_offset`可续接同一流，1/16线程与分块结果一致。负Möbius概率和丢失类别区间报错，不裁剪。
 
 旧v2累计表使用 `NativeTableClickSampler` 和 `results/iteration78_pilot_v2/table.dll`。v1编译失败、v2累计表、v3整数alias及两轮全部直接计时都保留。实际全库运行器是 `experiments/iteration78_tests_v2.py`，主核验是 `experiments/verify_iteration78_v2.py`。参见[第78轮报告](../RESEARCH_REPORT_ITERATION78.md)。
+
+
+## 第81轮因式校准与质量审计
+
+`gaussian_pair_factor81_v1.cpp` 导出 `factor81_ipf` 和 `factor81_design`。前者保存公共K与逐隐变量A/B，存储O(m²+Lm)，每轮算术量O(Lm²)，显式拒绝不收敛/不兼容支持；上限m=1024、L=131072、Lm=64000000及预设运算量。有限场设计接口支持n=16/32/128。完整构建与调用见 `experiments/iteration81_factor_pilot_v2.py`，采样API尚未接入因式表示。
+
+`frugal_prefix81_adapter_v1.cpp` 保留官方SIMD计算及随机比较语义，枚举前缀阈值，并与未修改的官方采样逐位重放核对。`jiuzhang_histogram81_v1.cpp` 以公开规定的MSB顺序统计1152位记录；原生输出与全部1492642条记录的独立解析一致。
+
+速度必须与同输入TV一起引用。完整小分布、固定8位边缘、实验经验TV及iid条件置信区间的区别见[第81轮报告](../RESEARCH_REPORT_ITERATION81.md)。禁止把校准矩残差当成完整GBS分布误差。

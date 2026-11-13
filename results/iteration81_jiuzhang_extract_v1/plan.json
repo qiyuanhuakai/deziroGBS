@@ -1,0 +1,98 @@
+{
+  "scope": "Extract selected independent official RAR5 entries by verified byte ranges.\nPreserve original compressed headers/payloads; wrap only with standalone RAR5\nmain/end headers. Verify extracted lengths and original per-file CRC32 values.\n",
+  "source_sha256": "a04a1335ba9c500afc597afb9d126063cb242cd278b57a342966e5ba6befe504",
+  "sources": [
+    {
+      "path": "results/iteration81_jiuzhang_inventory_v1/volume10.json",
+      "sha256": "8c82f679d4ebcde80cfcd122a27bc080ce09cc07531d68f96328adc1ca316d49"
+    },
+    {
+      "path": "results/iteration81_jiuzhang_inventory_v1/volume01.json",
+      "sha256": "808e16750dfaf5f176cb9966fab2e38ced7507718f99aab8a1b4e6733dda70d0"
+    }
+  ],
+  "entries": [
+    {
+      "volume": 10,
+      "url": "https://quantum.ustc.edu.cn/sites/default/files/2023-05/jiuzhang3.part10.rar",
+      "entry": {
+        "header_crc": 3783639671,
+        "header_size": 70,
+        "block_type": 2,
+        "block_flags": 3,
+        "block_extra_size": 11,
+        "add_size": 1114666,
+        "compress_size": 1114666,
+        "flags": 32768,
+        "file_flags": 4,
+        "file_size": 3052908,
+        "mode": 32,
+        "CRC": 4224355569,
+        "_md_expect": 4224355569,
+        "file_compress_flags": 8576,
+        "file_host_os": 0,
+        "filename": "jiuzhang3/matrix/high power.mtx",
+        "host_os": 2,
+        "compress_type": 51,
+        "header_offset": 398288853,
+        "data_offset": 398288923,
+        "volume": 0
+      }
+    },
+    {
+      "volume": 10,
+      "url": "https://quantum.ustc.edu.cn/sites/default/files/2023-05/jiuzhang3.part10.rar",
+      "entry": {
+        "header_crc": 1534386683,
+        "header_size": 52,
+        "block_type": 2,
+        "block_flags": 3,
+        "block_extra_size": 11,
+        "add_size": 698,
+        "compress_size": 698,
+        "flags": 32768,
+        "file_flags": 4,
+        "file_size": 1212,
+        "mode": 32,
+        "CRC": 2404233247,
+        "_md_expect": 2404233247,
+        "file_compress_flags": 8576,
+        "file_host_os": 0,
+        "filename": "jiuzhang3/README.md",
+        "host_os": 2,
+        "compress_type": 51,
+        "header_offset": 401632670,
+        "data_offset": 401632722,
+        "volume": 0
+      }
+    },
+    {
+      "volume": 10,
+      "url": "https://quantum.ustc.edu.cn/sites/default/files/2023-05/jiuzhang3.part10.rar",
+      "entry": {
+        "header_crc": 193441315,
+        "header_size": 74,
+        "block_type": 2,
+        "block_flags": 3,
+        "block_extra_size": 11,
+        "add_size": 6886,
+        "compress_size": 6886,
+        "flags": 32768,
+        "file_flags": 4,
+        "file_size": 9466,
+        "mode": 32,
+        "CRC": 1716366885,
+        "_md_expect": 1716366885,
+        "file_compress_flags": 8576,
+        "file_host_os": 0,
+        "filename": "jiuzhang3/sqz parameter/high power.xlsx",
+        "host_os": 2,
+        "compress_type": 51,
+        "header_offset": 401633420,
+        "data_offset": 401633494,
+        "volume": 0
+      }
+    }
+  ],
+  "sample": false
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "Accuracy supplement on exactly the iteration80 timing inputs.\nEnumerate full small click laws and the same first-eight-port marginal at 144\noutputs. Marginal TV is a full-TV lower bound, not a global accuracy upper bound.\nFrugal thresholds use the preserved upstream SIMD arithmetic and stated RNG law.\n",
+  "cases": [
+    0,
+    1,
+    2
+  ],
+  "prefixes": [
+    4,
+    8,
+    8
+  ],
+  "frugal_cutoffs": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "branch_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    128
+  ],
+  "workers": 16,
+  "hashes": {
+    "experiments/iteration81_accuracy_comparison_v1.py": "af0f1f031c77dee12a64d522b41c40dc399421b0cff9c04b89f1b0c808107d45",
+    "results/iteration81_prefix_build_v1/prefix.dll": "af8c85c0f0d93e499ef5853d36bb0a42db310f1229aace0c17414e555005c8d6",
+    "results/iteration71_branch_pilot_v1/branches.dll": "bb0a4375748eaf89bd53f61b3e79b2f446d4840a157a4446756feb70ea31bb63",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "src/gbslab/frugal_law.py": "4ab71015708251d53543a2af1976f2de76510c3d40d116a05caf25135e372fd9"
+  }
+}

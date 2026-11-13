@@ -1,0 +1,74 @@
+{
+  "scope": "Predeclared eight-bin marginals from the first high-power Jiuzhang3 file.\nTwo common independent spectral sectors are the explicit reference model inferred\nfrom the data README. Also quantify main-only and source-distinct-minor sensitivity;\ndo not silently identify a model with an exact description of experimental noise.\nFrugal and direct samplers each sample both Gaussian sectors then OR their bits.\n",
+  "ports": [
+    [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56
+    ],
+    [
+      0,
+      144,
+      288,
+      432,
+      576,
+      720,
+      864,
+      1008
+    ],
+    [
+      7,
+      151,
+      295,
+      439,
+      583,
+      727,
+      871,
+      1015
+    ]
+  ],
+  "pilot": 100000,
+  "reference_models": [
+    "two_common_sectors",
+    "main_only",
+    "main_and_25_distinct_minor"
+  ],
+  "frugal_cutoffs": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "direct_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    128
+  ],
+  "timing_count": 8192,
+  "timing_repetitions": 3,
+  "threads": 16,
+  "hashes": {
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\experiments\\iteration81_jiuzhang_accuracy_v3.py": "26d63632c2605b0ac391263a65f792ffb271d1d14162a8bffd842e99b4b7279f",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\jiuzhang_histogram81_v1.cpp": "d40db4ff1a2ec848c173a58dbdb3bc26dcec35745e74490e58d7ddc1f3b7e058",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration81_jiuzhang_extract_v1\\extracted_0\\jiuzhang3\\matrix\\high power.mtx": "cdb3d735b675849d6e190863f8f5ab0eed214f1d60b08eb1c28c79b9b8a38b41",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration81_jiuzhang_extract_v1\\extracted_2\\jiuzhang3\\sqz parameter\\high power.xlsx": "939fdf3cd4eec43679288025034d666ade71998e4f8d43d96a7fb3a29b62e8bd",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\jiuzhang3_iteration81_sample_v1\\extracted_3\\jiuzhang3\\data\\high power\\high power (1).bin": "c786e6e64f76a599479eda75c7fdedf6906a3b41040eec49e5ea89caeb714e74",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration81_prefix_build_v1\\prefix.dll": "af8c85c0f0d93e499ef5853d36bb0a42db310f1229aace0c17414e555005c8d6",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration75_frugal_cpu_build_v1\\frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration71_branch_pilot_v1\\branches.dll": "bb0a4375748eaf89bd53f61b3e79b2f446d4840a157a4446756feb70ea31bb63",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration72_cuda_pilot_v1\\cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration74_fused_pilot_v2\\philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a"
+  },
+  "iid_confidence": 0.99,
+  "confidence_bounds": 18
+}
