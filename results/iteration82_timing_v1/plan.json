@@ -1,0 +1,94 @@
+{
+  "scope": "Serial three-rotation speed comparisons, paired with iteration82 accuracy.\nInput loading, DLL loading and initial CUDA context excluded. Factor timings\ninclude native finite design, calibration, plan build, sampling, thresholding\nand destruction. Reuse throughput is separately labelled. No heavy concurrent job.\n",
+  "cases": [
+    [
+      "wide2",
+      256,
+      [
+        [
+          "factor",
+          8
+        ],
+        [
+          "cached",
+          8
+        ],
+        [
+          "gpu",
+          4
+        ],
+        [
+          "gpu",
+          8
+        ],
+        [
+          "frugal",
+          2
+        ],
+        [
+          "frugal",
+          3
+        ]
+      ]
+    ],
+    [
+      "large128",
+      256,
+      [
+        [
+          "factor",
+          8
+        ],
+        [
+          "gpu",
+          4
+        ],
+        [
+          "gpu",
+          8
+        ],
+        [
+          "frugal",
+          2
+        ]
+      ]
+    ]
+  ],
+  "jiuzhang_methods": [
+    [
+      "frugal",
+      5
+    ],
+    [
+      "stable",
+      8
+    ],
+    [
+      "stable",
+      16
+    ],
+    [
+      "stable",
+      32
+    ],
+    [
+      "gpu",
+      4
+    ]
+  ],
+  "jiuzhang_records": 8192,
+  "repetitions": 3,
+  "workers": 16,
+  "reuse_records": 100000,
+  "hashes": {
+    "experiments/iteration82_timing_v1.py": "3ee3cace671c3d31d75c5b0e8f2f8dda2e585c2efddf40c058a18c6c7267a176",
+    "results/iteration82_factor_accuracy_v1/factor.dll": "d18baf7ee5010972a89a939111f7125b55a2c465e65e849cfbb800099e275cfe",
+    "results/iteration81_factor_pilot_v2/factor.dll": "286188dd2a59ce2dbaddfca646fa38cc07ae0c85c97904675e64ca256080869b",
+    "results/iteration80_cached_pilot_v1/cached.dll": "8ebe6f92c2b7766bd5672778328bd52592378b083cd2690ee56573dda1d25bdb",
+    "results/iteration80_wide_pilot_v1/ipf.dll": "811aa8e20549360d66e683ad5f1269ff67d5c41b8355c9b8f7e608ea9bc74f5a",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration82_stable_pilot_v1/stable.dll": "b902e6e84c3a9c9162aefd781e49cdbb57685f8c0b16267b5b7ee842937ead07",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a"
+  }
+}

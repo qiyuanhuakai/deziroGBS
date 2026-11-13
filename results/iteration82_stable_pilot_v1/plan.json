@@ -1,0 +1,32 @@
+{
+  "scope": "Diagnose all weak-sector failures and test extended Gaussian/binary128\nweights against the same three fixed Jiuzhang eight-bin marginal references.\nNo probability clipping, threshold relaxation or deletion of failed paths.\n",
+  "hashes": {
+    "experiments/iteration82_stable_pilot_v1.py": "8bd2cace3343c25e847a3608109e2e2b629c2d67c836c8c59f2d0c9dd4872ea4",
+    "native/gaussian_click_stable82_v1.cpp": "cd9e4717af1c9879f74d38c1f5abfeab13dda47ec41eb8becb0512cbf80a07a0",
+    "native/gaussian_click_branches_v1.cpp": "3dbbab87b4f7ed658335dea61345979286707e4c405eb3c2850a33c18ae64482",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa",
+    "results/iteration71_branch_pilot_v1/branches.dll": "bb0a4375748eaf89bd53f61b3e79b2f446d4840a157a4446756feb70ea31bb63"
+  },
+  "groups": [
+    0,
+    1,
+    2
+  ],
+  "budgets": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    128
+  ],
+  "reference_digits": 80,
+  "timing": "exploratory",
+  "fixed_input_hashes": {
+    "0": "b6af8cb4127ce6ff46a5099ddbe5d99cffda6c9d15c25a9c720d653e3c46bdf0",
+    "1": "e4b4f27c5a3eee07c7437c433cf3fa55003112263bbe6d5f9be0b4f4a5e1fc55",
+    "2": "a8221f69abd1185935b90f7cabf0b3d106df9221faeb1d309c5135e39a3a6401"
+  }
+}

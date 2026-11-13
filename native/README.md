@@ -1,5 +1,30 @@
 # Native sampling kernels
 
+## Iteration82: factorized PNR and stable zero-mean clicks
+
+`NativeFactorPNRSampler` in `gbslab.native_factor_pnr` consumes the calibrated
+factor representation from iteration81 and returns integer photon counts.
+Its C++ implementation uses integer alias tables and rejection sampling without
+materializing every latent pair table. The v2 library includes v1 unchanged and
+adds actual-plan first-eight vacuum probabilities for auditing. Equal squeezing,
+zero displacement, pure lossless input and explicit resource limits apply.
+The low-total branch is preserved; the shared-latent high-total law remains an
+approximation to GBS. An exact integer discretization audit is not a quantum
+approximation bound. Constructor payload bytes do not measure peak memory.
+
+`NativeStableClickSampler` in `gbslab.native_stable_click` uses extended matrix
+precision and binary128 signed weights for zero-mean Gaussian direct clicks.
+Link its library with quadmath. It supports supplied mixed Gaussian covariances,
+but rejects displacement and the wrapper's added-noise mixture option. Three
+fixed Jiuzhang eight-detector groups now pass complete B8/16/32 enumeration;
+B128 still has explicit rare normalization failures. No clipping or relaxed
+normalization threshold is used. New samplers are opt-in research interfaces.
+
+Build commands, runtime dependencies, same-input speed/accuracy comparisons and
+failure artifacts are recorded in [iteration82 methods](../research/iteration82_methods.md)
+and the [report](../RESEARCH_REPORT_ITERATION82.md). Full distribution quality
+and the complete 1152-detector task remain unresolved.
+
 ## Iteration80: calibrated shared photon pairs and immutable alias plans
 
 `NativeCachedTransportPNRSampler` consumes an isometry, equal squeezing, positive

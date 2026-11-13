@@ -1,0 +1,146 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "label": "strong4",
+      "method": "factor_pnr_b8",
+      "numerical_tv": 0.0033330740240494205,
+      "analysis_seconds": 0.0009884999999485444,
+      "plan_statistics": {
+        "payload_bytes": 6080.0,
+        "minimum_acceptance": 0.4250222619584085,
+        "pair_constraint_error": 1.6975310046518644e-13,
+        "cross_pair_constraint_error": 2.4197310821705287e-13,
+        "latent_alias_numeric_tv": 0.0,
+        "proposal_alias_numeric_tv": 7.792703114739563e-20,
+        "root_alias_numeric_tv": 1.1858461261560205e-19,
+        "maximum_attempts": 1000000.0
+      },
+      "normalization_error": 0.0
+    },
+    {
+      "label": "strong4",
+      "method": "frugal_cpu",
+      "budget": 2,
+      "numerical_tv": 0.12180106939157682,
+      "analysis_seconds": 0.0006610999998883926,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "strong4",
+      "method": "frugal_cpu",
+      "budget": 3,
+      "numerical_tv": 0.019073039717718163,
+      "analysis_seconds": 0.00047369999992952216,
+      "normalization_error": 1.1102230246251565e-16
+    },
+    {
+      "label": "strong4",
+      "method": "direct_cpu_law",
+      "budget": 4,
+      "numerical_tv": 0.0013323306350135713,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "strong4",
+      "method": "direct_cpu_law",
+      "budget": 8,
+      "numerical_tv": 3.213575239247035e-16,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "wide2",
+      "method": "factor_pnr_b8",
+      "numerical_tv": 0.0039022021676585195,
+      "analysis_seconds": 0.011368700000275567,
+      "plan_statistics": {
+        "payload_bytes": 4859904.0,
+        "minimum_acceptance": 0.12407482097787878,
+        "pair_constraint_error": 3.7947076036992655e-19,
+        "cross_pair_constraint_error": 1.6263032587282567e-19,
+        "latent_alias_numeric_tv": 5.581735364169026e-18,
+        "proposal_alias_numeric_tv": 3.517681507832806e-18,
+        "root_alias_numeric_tv": 3.946553148745625e-18,
+        "maximum_attempts": 1000000.0
+      },
+      "normalization_error": 0.0
+    },
+    {
+      "label": "wide2",
+      "method": "frugal_cpu",
+      "budget": 2,
+      "numerical_tv": 0.004149912082383139,
+      "analysis_seconds": 0.4990773999998055,
+      "normalization_error": 2.220446049250313e-16
+    },
+    {
+      "label": "wide2",
+      "method": "frugal_cpu",
+      "budget": 3,
+      "numerical_tv": 0.0007571682361201338,
+      "analysis_seconds": 1.1684815999997227,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "wide2",
+      "method": "direct_cpu_law",
+      "budget": 4,
+      "numerical_tv": 0.0004652574724621465,
+      "normalization_error": 1.1102230246251565e-16
+    },
+    {
+      "label": "wide2",
+      "method": "direct_cpu_law",
+      "budget": 8,
+      "numerical_tv": 0.00010297807692234575,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "large128",
+      "method": "factor_pnr_b8",
+      "numerical_tv": 0.0031434593301846725,
+      "analysis_seconds": 0.7824219000003723,
+      "plan_statistics": {
+        "payload_bytes": 609091584.0,
+        "minimum_acceptance": 0.053056325407269095,
+        "pair_constraint_error": 1.4230153513872246e-19,
+        "cross_pair_constraint_error": 2.710505431213761e-20,
+        "latent_alias_numeric_tv": 5.455718037441267e-17,
+        "proposal_alias_numeric_tv": 1.1298237888867335e-17,
+        "root_alias_numeric_tv": 1.1529719058315106e-17,
+        "maximum_attempts": 1000000.0
+      },
+      "normalization_error": 0.0
+    },
+    {
+      "label": "large128",
+      "method": "frugal_cpu",
+      "budget": 2,
+      "numerical_tv": 0.0007807875880246216,
+      "analysis_seconds": 34.264690599999994,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "large128",
+      "method": "frugal_cpu",
+      "budget": 3,
+      "numerical_tv": 7.813198839723e-05,
+      "analysis_seconds": 67.45041579999997,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "large128",
+      "method": "direct_cpu_law",
+      "budget": 4,
+      "numerical_tv": 9.713930985599204e-05,
+      "normalization_error": 0.0
+    },
+    {
+      "label": "large128",
+      "method": "direct_cpu_law",
+      "budget": 8,
+      "numerical_tv": 3.208079392198117e-05,
+      "normalization_error": 0.0
+    }
+  ]
+}

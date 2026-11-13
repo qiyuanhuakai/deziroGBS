@@ -1,0 +1,51 @@
+{
+  "label": "large128",
+  "inputs": 128,
+  "outputs": 384,
+  "latent": 65664,
+  "constructor_seconds": 6.043841599999723,
+  "statistics": {
+    "payload_bytes": 609091584.0,
+    "minimum_acceptance": 0.053056325407269095,
+    "pair_constraint_error": 1.4230153513872246e-19,
+    "cross_pair_constraint_error": 2.710505431213761e-20,
+    "latent_alias_numeric_tv": 5.455718037441267e-17,
+    "proposal_alias_numeric_tv": 1.1298237888867335e-17,
+    "root_alias_numeric_tv": 1.1529719058315106e-17,
+    "maximum_attempts": 1000000.0
+  },
+  "passed": true,
+  "fixed_records": 100000,
+  "fixed_seconds": 0.10261009999976523,
+  "fixed_statistics": {
+    "photons": 3400000.0,
+    "completed_samples": 100000.0,
+    "maximum_photons": 34.0,
+    "total_draws": 100000.0,
+    "detector_steps": 3400000.0,
+    "maximum_factors": 0.0,
+    "maximum_terms": 0.0,
+    "maximum_rank": 0.0,
+    "tail_records": 100000.0,
+    "tail_photons": 3400000.0,
+    "pair_proposals": 10742161.0,
+    "pair_rejections": 9042161.0
+  },
+  "worker_replay": true,
+  "unconditional_seconds": 0.25415509999993446,
+  "unconditional_statistics": {
+    "photons": 22826378.0,
+    "completed_samples": 100000.0,
+    "maximum_photons": 406.0,
+    "total_draws": 100000.0,
+    "detector_steps": 22826378.0,
+    "maximum_factors": 0.0,
+    "maximum_terms": 0.0,
+    "maximum_rank": 0.0,
+    "tail_records": 100000.0,
+    "tail_photons": 22826378.0,
+    "pair_proposals": 72154641.0,
+    "pair_rejections": 60741452.0
+  },
+  "mean_photons": 228.26378
+}

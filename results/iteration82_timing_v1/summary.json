@@ -1,0 +1,954 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "success": true,
+      "seconds": 0.0880938000000242,
+      "design_seconds": 0.003497099999549391,
+      "calibration_and_design_seconds": 0.05206909999924392,
+      "plan_statistics": {
+        "payload_bytes": 4859904.0,
+        "minimum_acceptance": 0.12407482097787882,
+        "pair_constraint_error": 2.710505431213761e-19,
+        "cross_pair_constraint_error": 1.8973538018496328e-19,
+        "latent_alias_numeric_tv": 5.581735364169026e-18,
+        "proposal_alias_numeric_tv": 3.6270811069266196e-18,
+        "root_alias_numeric_tv": 3.8104637400071756e-18,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        1.2212453270876722e-15,
+        1.6653345369377348e-15,
+        1.7763568394002505e-15
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 0.08489240000017162,
+      "sampling_seconds": 0.0023486999998567626,
+      "statistics": {
+        "photons": 7750.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7750.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7720.0,
+        "pair_proposals": 16426.0,
+        "pair_rejections": 12566.0
+      },
+      "label": "wide2",
+      "rep": 0,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 3.73144449999927,
+      "design_seconds": 0.0013787999996566214,
+      "calibration_and_design_seconds": 2.463495099999818,
+      "alias_payload_bytes": 477242944,
+      "setup_seconds": 3.6909884999995484,
+      "sampling_seconds": 0.004710000000159198,
+      "statistics": {
+        "photons": 7750.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7750.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7720.0
+      },
+      "label": "wide2",
+      "rep": 0,
+      "method": "cached",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.029441900000165333,
+      "cuda_timings": {
+        "allocation_seconds": 0.0006176,
+        "host_to_device_seconds": 0.0002122,
+        "random_seconds": 0.000134,
+        "kernel_seconds": 0.0176813,
+        "device_to_host_seconds": 0.000178,
+        "workspace_bytes": 10220032.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 0,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.031458200000088254,
+      "cuda_timings": {
+        "allocation_seconds": 0.0002813,
+        "host_to_device_seconds": 0.0004682,
+        "random_seconds": 0.000139,
+        "kernel_seconds": 0.0272128,
+        "device_to_host_seconds": 0.0002321,
+        "workspace_bytes": 19657216.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 0,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.1645425999995496,
+      "component_timings": [
+        0.008107,
+        1.5e-05,
+        0.00372,
+        2.151577,
+        4.7e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 0,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.6848919999993086,
+      "component_timings": [
+        0.458,
+        1e-05,
+        0.167822,
+        2.057887,
+        4.7e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 0,
+      "method": "frugal",
+      "budget": 3,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 3.8086858999995457,
+      "design_seconds": 0.002568500000052154,
+      "calibration_and_design_seconds": 2.57465990000037,
+      "alias_payload_bytes": 477242944,
+      "setup_seconds": 3.7618161000000327,
+      "sampling_seconds": 0.004149100000176986,
+      "statistics": {
+        "photons": 7336.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7336.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7300.0
+      },
+      "label": "wide2",
+      "rep": 1,
+      "method": "cached",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.026255200000377954,
+      "cuda_timings": {
+        "allocation_seconds": 0.0003369,
+        "host_to_device_seconds": 0.0014864,
+        "random_seconds": 0.0001355,
+        "kernel_seconds": 0.0166939,
+        "device_to_host_seconds": 0.0004776,
+        "workspace_bytes": 10220032.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 1,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.03564310000001569,
+      "cuda_timings": {
+        "allocation_seconds": 0.0003263,
+        "host_to_device_seconds": 0.001019,
+        "random_seconds": 0.0001363,
+        "kernel_seconds": 0.0290672,
+        "device_to_host_seconds": 0.0005205,
+        "workspace_bytes": 19657216.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 1,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.1302302000003692,
+      "component_timings": [
+        0.008674,
+        1.1e-05,
+        0.002594,
+        2.118362,
+        1.7e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 1,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.8034566000005725,
+      "component_timings": [
+        0.499011,
+        9e-06,
+        0.189396,
+        2.113443,
+        1.6e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 1,
+      "method": "frugal",
+      "budget": 3,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.12333979999948497,
+      "design_seconds": 0.002157400000214693,
+      "calibration_and_design_seconds": 0.06470950000039011,
+      "plan_statistics": {
+        "payload_bytes": 4859904.0,
+        "minimum_acceptance": 0.12407482097787882,
+        "pair_constraint_error": 2.710505431213761e-19,
+        "cross_pair_constraint_error": 1.8973538018496328e-19,
+        "latent_alias_numeric_tv": 5.581735364169026e-18,
+        "proposal_alias_numeric_tv": 3.6270811069266196e-18,
+        "root_alias_numeric_tv": 3.8104637400071756e-18,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        1.2212453270876722e-15,
+        1.6653345369377348e-15,
+        1.7763568394002505e-15
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 0.11740190000000439,
+      "sampling_seconds": 0.0034046000000671484,
+      "statistics": {
+        "photons": 7336.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7336.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7300.0,
+        "pair_proposals": 15868.0,
+        "pair_rejections": 12218.0
+      },
+      "label": "wide2",
+      "rep": 1,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.023599999999532884,
+      "cuda_timings": {
+        "allocation_seconds": 0.0003069,
+        "host_to_device_seconds": 0.0014891,
+        "random_seconds": 0.0001444,
+        "kernel_seconds": 0.0174789,
+        "device_to_host_seconds": 0.0003927,
+        "workspace_bytes": 10220032.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 2,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.03525470000022324,
+      "cuda_timings": {
+        "allocation_seconds": 0.0002584,
+        "host_to_device_seconds": 0.0014813,
+        "random_seconds": 0.0001328,
+        "kernel_seconds": 0.026321,
+        "device_to_host_seconds": 0.0003685,
+        "workspace_bytes": 19657216.0,
+        "failed_rows": 0.0
+      },
+      "label": "wide2",
+      "rep": 2,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.064575899999909,
+      "component_timings": [
+        0.016948,
+        1.4e-05,
+        0.009914,
+        2.036365,
+        1.6e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 2,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.8390863000004174,
+      "component_timings": [
+        0.355307,
+        1.5e-05,
+        0.392673,
+        2.090154,
+        3e-05,
+        64.0,
+        4.0
+      ],
+      "label": "wide2",
+      "rep": 2,
+      "method": "frugal",
+      "budget": 3,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 0.10154619999957504,
+      "design_seconds": 0.0034631000007721013,
+      "calibration_and_design_seconds": 0.05623230000037438,
+      "plan_statistics": {
+        "payload_bytes": 4859904.0,
+        "minimum_acceptance": 0.12407482097787882,
+        "pair_constraint_error": 2.710505431213761e-19,
+        "cross_pair_constraint_error": 1.8973538018496328e-19,
+        "latent_alias_numeric_tv": 5.581735364169026e-18,
+        "proposal_alias_numeric_tv": 3.6270811069266196e-18,
+        "root_alias_numeric_tv": 3.8104637400071756e-18,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        1.2212453270876722e-15,
+        1.6653345369377348e-15,
+        1.7763568394002505e-15
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 0.09827509999922768,
+      "sampling_seconds": 0.0022327999995468417,
+      "statistics": {
+        "photons": 7740.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7740.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7710.0,
+        "pair_proposals": 16377.0,
+        "pair_rejections": 12522.0
+      },
+      "label": "wide2",
+      "rep": 2,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 3.7960909000003085,
+      "design_seconds": 0.0021796000000904314,
+      "calibration_and_design_seconds": 2.69273290000001,
+      "alias_payload_bytes": 477242944,
+      "setup_seconds": 3.755042400000093,
+      "sampling_seconds": 0.007119199999578996,
+      "statistics": {
+        "photons": 7740.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 72.0,
+        "total_draws": 256.0,
+        "detector_steps": 7740.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 251.0,
+        "tail_photons": 7710.0
+      },
+      "label": "wide2",
+      "rep": 2,
+      "method": "cached",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 18.910493999999744,
+      "design_seconds": 0.14122670000051585,
+      "calibration_and_design_seconds": 15.038920200000575,
+      "plan_statistics": {
+        "payload_bytes": 609091584.0,
+        "minimum_acceptance": 0.053056325407269095,
+        "pair_constraint_error": 1.4230153513872246e-19,
+        "cross_pair_constraint_error": 2.710505431213761e-20,
+        "latent_alias_numeric_tv": 5.455718037441267e-17,
+        "proposal_alias_numeric_tv": 1.1298237888867335e-17,
+        "root_alias_numeric_tv": 1.1529719058315106e-17,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 18.845499000000018,
+      "sampling_seconds": 0.003768399999898975,
+      "statistics": {
+        "photons": 58938.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 362.0,
+        "total_draws": 256.0,
+        "detector_steps": 58938.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 256.0,
+        "tail_photons": 58938.0,
+        "pair_proposals": 185565.0,
+        "pair_rejections": 156096.0
+      },
+      "label": "large128",
+      "rep": 0,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 1.875837099999444,
+      "cuda_timings": {
+        "allocation_seconds": 0.0025265,
+        "host_to_device_seconds": 0.0415287,
+        "random_seconds": 0.0007742,
+        "kernel_seconds": 1.7856742,
+        "device_to_host_seconds": 0.0002995,
+        "workspace_bytes": 549564416.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 0,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.5167679999995016,
+      "cuda_timings": {
+        "allocation_seconds": 0.0019316,
+        "host_to_device_seconds": 0.0154047,
+        "random_seconds": 0.0007707,
+        "kernel_seconds": 2.4683263,
+        "device_to_host_seconds": 0.0004302,
+        "workspace_bytes": 1094823936.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 0,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 145.13989739999943,
+      "component_timings": [
+        0.323462,
+        2.4e-05,
+        0.025452,
+        144.787586,
+        4e-05,
+        64.0,
+        4.0
+      ],
+      "label": "large128",
+      "rep": 0,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 3.0138020999993387,
+      "cuda_timings": {
+        "allocation_seconds": 0.0013613,
+        "host_to_device_seconds": 0.0408879,
+        "random_seconds": 0.0007711,
+        "kernel_seconds": 2.9441393,
+        "device_to_host_seconds": 0.0004413,
+        "workspace_bytes": 549564416.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 1,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 5.762267199999769,
+      "cuda_timings": {
+        "allocation_seconds": 0.0022221,
+        "host_to_device_seconds": 0.0187237,
+        "random_seconds": 0.0016751,
+        "kernel_seconds": 5.6983737,
+        "device_to_host_seconds": 0.0003961,
+        "workspace_bytes": 1094823936.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 1,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 145.30536889999985,
+      "component_timings": [
+        0.235644,
+        8e-06,
+        0.020657,
+        145.045058,
+        0.000135,
+        64.0,
+        4.0
+      ],
+      "label": "large128",
+      "rep": 1,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 20.11609750000025,
+      "design_seconds": 0.16246720000071946,
+      "calibration_and_design_seconds": 15.330808600000637,
+      "plan_statistics": {
+        "payload_bytes": 609091584.0,
+        "minimum_acceptance": 0.053056325407269095,
+        "pair_constraint_error": 1.4230153513872246e-19,
+        "cross_pair_constraint_error": 2.710505431213761e-20,
+        "latent_alias_numeric_tv": 5.455718037441267e-17,
+        "proposal_alias_numeric_tv": 1.1298237888867335e-17,
+        "root_alias_numeric_tv": 1.1529719058315106e-17,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 20.041715000000295,
+      "sampling_seconds": 0.0036939000001439126,
+      "statistics": {
+        "photons": 58576.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 422.0,
+        "total_draws": 256.0,
+        "detector_steps": 58576.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 256.0,
+        "tail_photons": 58576.0,
+        "pair_proposals": 185043.0,
+        "pair_rejections": 155755.0
+      },
+      "label": "large128",
+      "rep": 1,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 2.782834699999512,
+      "cuda_timings": {
+        "allocation_seconds": 0.002242,
+        "host_to_device_seconds": 0.0839347,
+        "random_seconds": 0.00078,
+        "kernel_seconds": 2.6612697,
+        "device_to_host_seconds": 0.0005552,
+        "workspace_bytes": 1094823936.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 2,
+      "method": "gpu",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 143.91052450000007,
+      "component_timings": [
+        0.296051,
+        5e-06,
+        0.03025,
+        143.579864,
+        4.4e-05,
+        64.0,
+        4.0
+      ],
+      "label": "large128",
+      "rep": 2,
+      "method": "frugal",
+      "budget": 2,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 19.519223999999667,
+      "design_seconds": 0.21965970000019297,
+      "calibration_and_design_seconds": 15.42450050000025,
+      "plan_statistics": {
+        "payload_bytes": 609091584.0,
+        "minimum_acceptance": 0.053056325407269095,
+        "pair_constraint_error": 1.4230153513872246e-19,
+        "cross_pair_constraint_error": 2.710505431213761e-20,
+        "latent_alias_numeric_tv": 5.455718037441267e-17,
+        "proposal_alias_numeric_tv": 1.1298237888867335e-17,
+        "root_alias_numeric_tv": 1.1529719058315106e-17,
+        "maximum_attempts": 1000000.0
+      },
+      "factor_max_relative_differences": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_weight_difference": 0.0,
+      "setup_seconds": 19.464116699999977,
+      "sampling_seconds": 0.002816000000166241,
+      "statistics": {
+        "photons": 58942.0,
+        "completed_samples": 256.0,
+        "maximum_photons": 362.0,
+        "total_draws": 256.0,
+        "detector_steps": 58942.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 256.0,
+        "tail_photons": 58942.0,
+        "pair_proposals": 183975.0,
+        "pair_rejections": 154504.0
+      },
+      "label": "large128",
+      "rep": 2,
+      "method": "factor",
+      "budget": 8,
+      "records": 256
+    },
+    {
+      "success": true,
+      "seconds": 1.7343289999998888,
+      "cuda_timings": {
+        "allocation_seconds": 0.0020789,
+        "host_to_device_seconds": 0.0411733,
+        "random_seconds": 0.0007844,
+        "kernel_seconds": 1.6527195,
+        "device_to_host_seconds": 0.0005616,
+        "workspace_bytes": 549564416.0,
+        "failed_rows": 0.0
+      },
+      "label": "large128",
+      "rep": 2,
+      "method": "gpu",
+      "budget": 4,
+      "records": 256
+    }
+  ],
+  "reuse": [
+    {
+      "label": "wide2",
+      "rep": 0,
+      "records": 100000,
+      "setup_seconds": 0.10956919999989623,
+      "seconds": 0.19669969999995374,
+      "statistics": {
+        "photons": 2852128.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 116.0,
+        "total_draws": 100000.0,
+        "detector_steps": 2852128.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 97003.0,
+        "tail_photons": 2832722.0,
+        "pair_proposals": 6051409.0,
+        "pair_rejections": 4635048.0
+      }
+    },
+    {
+      "label": "wide2",
+      "rep": 1,
+      "records": 100000,
+      "setup_seconds": 0.10956919999989623,
+      "seconds": 0.20396320000054402,
+      "statistics": {
+        "photons": 2855756.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 110.0,
+        "total_draws": 100000.0,
+        "detector_steps": 2855756.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 97031.0,
+        "tail_photons": 2836332.0,
+        "pair_proposals": 6052804.0,
+        "pair_rejections": 4634638.0
+      }
+    },
+    {
+      "label": "wide2",
+      "rep": 2,
+      "records": 100000,
+      "setup_seconds": 0.10956919999989623,
+      "seconds": 0.20269139999982144,
+      "statistics": {
+        "photons": 2852130.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 116.0,
+        "total_draws": 100000.0,
+        "detector_steps": 2852130.0,
+        "maximum_factors": 8.0,
+        "maximum_terms": 33.0,
+        "maximum_rank": 7.0,
+        "tail_records": 97003.0,
+        "tail_photons": 2832722.0,
+        "pair_proposals": 6049480.0,
+        "pair_rejections": 4633119.0
+      }
+    },
+    {
+      "label": "large128",
+      "rep": 0,
+      "records": 100000,
+      "setup_seconds": 19.734669999999824,
+      "seconds": 0.13647949999995035,
+      "statistics": {
+        "photons": 22826006.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 406.0,
+        "total_draws": 100000.0,
+        "detector_steps": 22826006.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 100000.0,
+        "tail_photons": 22826006.0,
+        "pair_proposals": 72146491.0,
+        "pair_rejections": 60733488.0
+      }
+    },
+    {
+      "label": "large128",
+      "rep": 1,
+      "records": 100000,
+      "setup_seconds": 19.734669999999824,
+      "seconds": 0.1339321999994354,
+      "statistics": {
+        "photons": 22833808.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 422.0,
+        "total_draws": 100000.0,
+        "detector_steps": 22833808.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 100000.0,
+        "tail_photons": 22833808.0,
+        "pair_proposals": 72201149.0,
+        "pair_rejections": 60784245.0
+      }
+    },
+    {
+      "label": "large128",
+      "rep": 2,
+      "records": 100000,
+      "setup_seconds": 19.734669999999824,
+      "seconds": 0.13417500000014115,
+      "statistics": {
+        "photons": 22826028.0,
+        "completed_samples": 100000.0,
+        "maximum_photons": 406.0,
+        "total_draws": 100000.0,
+        "detector_steps": 22826028.0,
+        "maximum_factors": 0.0,
+        "maximum_terms": 0.0,
+        "maximum_rank": 0.0,
+        "tail_records": 100000.0,
+        "tail_photons": 22826028.0,
+        "pair_proposals": 72166590.0,
+        "pair_rejections": 60753576.0
+      }
+    }
+  ],
+  "jiuzhang": [
+    {
+      "rep": 0,
+      "method": "frugal",
+      "budget": 5,
+      "records": 8192,
+      "seconds": 0.007060999999339401
+    },
+    {
+      "rep": 0,
+      "method": "stable",
+      "budget": 8,
+      "records": 8192,
+      "seconds": 0.049662599999464874
+    },
+    {
+      "rep": 0,
+      "method": "stable",
+      "budget": 16,
+      "records": 8192,
+      "seconds": 0.04520599999978003
+    },
+    {
+      "rep": 0,
+      "method": "stable",
+      "budget": 32,
+      "records": 8192,
+      "seconds": 0.045896499999798834
+    },
+    {
+      "rep": 0,
+      "method": "gpu",
+      "budget": 4,
+      "records": 8192,
+      "seconds": 0.03938250000010157
+    },
+    {
+      "rep": 1,
+      "method": "stable",
+      "budget": 8,
+      "records": 8192,
+      "seconds": 0.04982099999961065
+    },
+    {
+      "rep": 1,
+      "method": "stable",
+      "budget": 16,
+      "records": 8192,
+      "seconds": 0.041093699999692035
+    },
+    {
+      "rep": 1,
+      "method": "stable",
+      "budget": 32,
+      "records": 8192,
+      "seconds": 0.04439800000000105
+    },
+    {
+      "rep": 1,
+      "method": "gpu",
+      "budget": 4,
+      "records": 8192,
+      "seconds": 0.037958299999445444
+    },
+    {
+      "rep": 1,
+      "method": "frugal",
+      "budget": 5,
+      "records": 8192,
+      "seconds": 0.005848600000717852
+    },
+    {
+      "rep": 2,
+      "method": "stable",
+      "budget": 16,
+      "records": 8192,
+      "seconds": 0.050676300000304764
+    },
+    {
+      "rep": 2,
+      "method": "stable",
+      "budget": 32,
+      "records": 8192,
+      "seconds": 0.04439579999962007
+    },
+    {
+      "rep": 2,
+      "method": "gpu",
+      "budget": 4,
+      "records": 8192,
+      "seconds": 0.03786119999949733
+    },
+    {
+      "rep": 2,
+      "method": "frugal",
+      "budget": 5,
+      "records": 8192,
+      "seconds": 0.005274799999824609
+    },
+    {
+      "rep": 2,
+      "method": "stable",
+      "budget": 8,
+      "records": 8192,
+      "seconds": 0.04836180000074819
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "label": "large128",
+    "method": "factor",
+    "budget": 8,
+    "records": 256,
+    "seconds": 19.519223999999667,
+    "numerical_tv": 0.0031434593301846725,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "large128",
+    "method": "frugal",
+    "budget": 2,
+    "records": 256,
+    "seconds": 145.13989739999943,
+    "numerical_tv": 0.0007807875880246216,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "large128",
+    "method": "gpu",
+    "budget": 4,
+    "records": 256,
+    "seconds": 1.875837099999444,
+    "numerical_tv": 9.713930985610618e-05,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "large128",
+    "method": "gpu",
+    "budget": 8,
+    "records": 256,
+    "seconds": 2.782834699999512,
+    "numerical_tv": 3.20807939220421e-05,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "cached",
+    "budget": 8,
+    "records": 256,
+    "seconds": 3.7960909000003085,
+    "numerical_tv": 0.003902202167635316,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "factor",
+    "budget": 8,
+    "records": 256,
+    "seconds": 0.10154619999957504,
+    "numerical_tv": 0.0039022021676585195,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "frugal",
+    "budget": 2,
+    "records": 256,
+    "seconds": 2.1302302000003692,
+    "numerical_tv": 0.004149912082383139,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "frugal",
+    "budget": 3,
+    "records": 256,
+    "seconds": 2.8034566000005725,
+    "numerical_tv": 0.0007571682361201338,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "gpu",
+    "budget": 4,
+    "records": 256,
+    "seconds": 0.026255200000377954,
+    "numerical_tv": 0.0004652574724629513,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "wide2",
+    "method": "gpu",
+    "budget": 8,
+    "records": 256,
+    "seconds": 0.03525470000022324,
+    "numerical_tv": 0.0001029780769241468,
+    "scope": "same first eight physical ports"
+  },
+  {
+    "label": "jiuzhang_group0",
+    "method": "frugal",
+    "budget": 5,
+    "records": 8192,
+    "seconds": 0.005848600000717852,
+    "numerical_tv": 9.091553165863075e-08,
+    "scope": "two-sector OR, fixed eight detectors only"
+  },
+  {
+    "label": "jiuzhang_group0",
+    "method": "gpu",
+    "budget": 4,
+    "records": 8192,
+    "seconds": 0.037958299999445444,
+    "numerical_tv": 6.33395533666814e-06,
+    "scope": "two-sector OR, fixed eight detectors only"
+  },
+  {
+    "label": "jiuzhang_group0",
+    "method": "stable",
+    "budget": 8,
+    "records": 8192,
+    "seconds": 0.049662599999464874,
+    "numerical_tv": 2.824402486618864e-07,
+    "scope": "two-sector OR, fixed eight detectors only"
+  },
+  {
+    "label": "jiuzhang_group0",
+    "method": "stable",
+    "budget": 16,
+    "records": 8192,
+    "seconds": 0.04520599999978003,
+    "numerical_tv": 4.880643400702827e-09,
+    "scope": "two-sector OR, fixed eight detectors only"
+  },
+  {
+    "label": "jiuzhang_group0",
+    "method": "stable",
+    "budget": 32,
+    "records": 8192,
+    "seconds": 0.04439800000000105,
+    "numerical_tv": 1.3364357989001743e-11,
+    "scope": "two-sector OR, fixed eight detectors only"
+  }
+]
