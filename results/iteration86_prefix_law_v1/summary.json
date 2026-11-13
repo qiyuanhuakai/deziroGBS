@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "method": "old",
+      "numerical_tv": 1.3846514612894977e-13,
+      "mass": 1.0,
+      "seconds": 5.118781599998329
+    },
+    {
+      "method": "shared",
+      "numerical_tv": 1.3857106038350744e-13,
+      "mass": 1.0000000000000002,
+      "seconds": 6.017916500000865
+    }
+  ],
+  "numerical_tv_old_new": 1.5156967121308612e-16,
+  "frugal": [
+    {
+      "group": 0,
+      "cutoff": 2,
+      "numerical_tv": 0.00046953066633352965
+    },
+    {
+      "group": 0,
+      "cutoff": 3,
+      "numerical_tv": 2.8893158483102885e-05
+    },
+    {
+      "group": 0,
+      "cutoff": 5,
+      "numerical_tv": 9.091554155169702e-08
+    }
+  ],
+  "scope": "Enumerate the actual full1152-mode sampler's first eight-bit B64 marginal,\nboth spectra and their OR. Compare the same two-spectrum numerical target used\nby Frugal. This first-prefix law does not describe later/full-output accuracy.\n"
+}

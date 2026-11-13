@@ -1,5 +1,29 @@
 # Native sampling kernels
 
+## Iteration86: shared Gaussian click constraints
+
+`gaussian_click_shared86_v2.cpp` keeps one extended-precision Gaussian base and
+a retained set of click constraints. Vacuum subset inverses use2x2 Schur updates;
+binary128 or paired-binary128 arithmetic handles their signed probabilities.
+The finite-budget Gaussian moment closure remains approximate. No illegal
+probability is clipped, and uniforms must be supplied explicitly.
+
+`tc86_shared_sample` accepts handle/count/threads/budget/draws followed by bits,
+conditional probabilities, two error columns, six statistics and an error buffer.
+Statistics are subset evaluations, closures, peak retained clicks, cancellation
+condition diagnostic, wide calls and completed modes. `tc86_shared_prefix` gives
+small prefix probabilities; `tc86_shared_conditionals` replays a fixed full-system
+prefix and its next conditional without a potentially underflowing joint product.
+
+The current MinGW libquadmath `fmaq` was observed to leave SSE rounding at
+toward-zero. v2 preserves MXCSR controls around included Weight83 FMA calls and
+sets nearest rounding inside its APIs/workers, restoring caller controls on exit.
+The frozen v1, environment probes and failed exact replay remain in the archive.
+v2 passes all15 old failed prefixes,31 complete trajectories, and exact thread/
+chunk comparisons. Fresh512 full double-spectrum records complete without errors;
+the full-click TV still has a nominal99 lower bound of4.6303%, so numerical repair
+does not remove closure bias. See the [methods](../research/iteration86_methods.md).
+
 ## Iteration85: conditional optical Gram tree
 
 `gaussian_pnr_tree85_v1.cpp` retains the frozen84 correlated-core trajectory and

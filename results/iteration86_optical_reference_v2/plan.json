@@ -1,0 +1,22 @@
+{
+  "scope": "Full sixteen-bin Gaussian PGF for two eight-bin optical-output counts.\nNo rank truncation. Native LAPACK batched eigenvalues and FFT evaluate the PGF\non 128/256 grids, with marginal Chernoff alias/tail bounds. Independent 80-digit\nvacuum determinants, marginal recurrences and photon cross moments are checked.\nThese are numerical references on float64 covariance, not interval certificates.\n",
+  "input_sha256": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+  "source_sha256": "7bf364603dac4cb7f85c8f8dd47a21bfed8caa7140bfa2ea49969a96b294c98f",
+  "pairs": [
+    [
+      0,
+      143
+    ],
+    [
+      142,
+      143
+    ]
+  ],
+  "maximum_photons_per_group": 64,
+  "fourier_sizes": [
+    128,
+    256
+  ],
+  "decimal_digits": 80,
+  "replaces": "v1 rejected the rank-one assumption before producing any probabilities."
+}

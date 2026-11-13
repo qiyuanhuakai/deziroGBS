@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "pair": [
+        0,
+        143
+      ],
+      "processed_indices": [
+        [
+          0,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        [
+          1144,
+          1145,
+          1146,
+          1147,
+          1148,
+          1149,
+          1150,
+          1151
+        ]
+      ],
+      "rank_relative_residual": [
+        0.0073196092917604955,
+        0.005918732153285155
+      ],
+      "tail_mass": "2.3314683517128287e-15",
+      "chernoff_tail_upper": "0.00000000000080405594712086320476500721657461464401731042972561334998818934679496734859665767",
+      "fourier_alias_upper": "0.00000000000000000000000018832312748800521989488675801497969455795989843115448605933817298253792804656676",
+      "fourier_maximum_difference": 5.2835811054318475e-17,
+      "fourier_maximum_imaginary": 3.597419204588547e-17,
+      "negative_roundoff_mass": 6.6178272879848866e-15,
+      "normalization_divisor": 1.0,
+      "marginal_maximum_difference": 4.218847493575595e-15,
+      "vacuum_80digit": "0.29623140765306303023180842668460161020121998146483133520504719820014064685021159",
+      "vacuum_difference": 5.551115123125783e-17,
+      "means": [
+        0.8797814170352467,
+        0.9434439897320267
+      ],
+      "truncated_means": [
+        0.8797814170354892,
+        0.9434439897317031
+      ],
+      "reference_count_covariance": 0.0025611451165311575,
+      "computed_count_covariance": 0.002561145125455133,
+      "seconds": 31.57653349999964
+    },
+    {
+      "pair": [
+        142,
+        143
+      ],
+      "processed_indices": [
+        [
+          1136,
+          1137,
+          1138,
+          1139,
+          1140,
+          1141,
+          1142,
+          1143
+        ],
+        [
+          1144,
+          1145,
+          1146,
+          1147,
+          1148,
+          1149,
+          1150,
+          1151
+        ]
+      ],
+      "rank_relative_residual": [
+        0.0077055559916950804,
+        0.005918732153285155
+      ],
+      "tail_mass": "2.1094237467877974e-15",
+      "chernoff_tail_upper": "0.00000000000080400097221780265390043024856128033084484466114468094517736684646777855087675812",
+      "fourier_alias_upper": "0.0000000000000000000000001883231266632776848603073690271397184778838462040125067934574822542560009167025",
+      "fourier_maximum_difference": 6.50267561875504e-17,
+      "fourier_maximum_imaginary": 4.011431261772246e-17,
+      "negative_roundoff_mass": 4.9604609299226924e-15,
+      "normalization_divisor": 1.0,
+      "marginal_maximum_difference": 7.181213089457739e-16,
+      "vacuum_80digit": "0.37943101293060981360218565001115800453609124657557666095737838071807368966094492",
+      "vacuum_difference": 1.6653345369377348e-16,
+      "means": [
+        0.6233340176287122,
+        0.9434439897320267
+      ],
+      "truncated_means": [
+        0.6233340176288987,
+        0.9434439897317096
+      ],
+      "reference_count_covariance": 0.4050410272272919,
+      "computed_count_covariance": 0.4050410272310123,
+      "seconds": 29.65795839999919
+    }
+  ],
+  "scope": "Full sixteen-bin Gaussian PGF for two eight-bin optical-output counts.\nNo rank truncation. Native LAPACK batched eigenvalues and FFT evaluate the PGF\non 128/256 grids, with marginal Chernoff alias/tail bounds. Independent 80-digit\nvacuum determinants, marginal recurrences and photon cross moments are checked.\nThese are numerical references on float64 covariance, not interval certificates.\n"
+}

@@ -1,0 +1,75 @@
+{
+  "scope": "Fresh fixed512 full1152-output B64 shared-base direct-click records.\nNew disjoint experiment/sector/record/purpose domains; retain every failure as\nan extra outcome. Separate nine-event nominal joint99 quality family; combining\nwith the PNR99 family gives at least98%, unless bounds are reallocated explicitly.\n",
+  "hashes": {
+    "experiments/iteration86_shared_quality_v1.py": "34871cae5a69f142152c82c90e3ab3f045b7cecd05cc60654d7b84923dbfe966",
+    "experiments/iteration86_joint_quality_v1.py": "e39fb6e950302d4f8fda2bff05629c1154892beeaae84164c2ea7b77cd027a1c",
+    "results/iteration86_shared_gates_v4/shared.dll": "19c58fc5bceeb7df3c2368d664ef760dc20d9c9cb8895b14d409f948eca3b093",
+    "results/iteration84_rng_gates_v1/rng.dll": "299227482bc25c8c79aed9677c0361df5737334e9d4fee10b55803651a7b5e0c",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration86_shared_gates_v4/summary.json": "a36f4118c97bb44d504a781153858459fc2057b448f42c9accd3bb3f7c749777",
+    "results/iteration86_shared_replay_v2/summary.json": "39cc16562940665a3fa3163bf92ab4f8cbf05f0c9317624e1eabae229e829ab5",
+    "results/iteration83_bias_profile_v1/summary.json": "7afd899f06b2d63cfd7ad5309907676c7a271ac3e2ba3d3a6b57b2a6d40f0369",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration85_joint_quality_v1/reference_0.npz": "056b90118d87d8b23db446bc89b441ea99e76aa087b3f54f9f8e86496f467efd",
+    "results/iteration85_joint_quality_v1/reference_1.npz": "4edd8f222126e967ede9bea0de0dc02cbd114dd6032053434576d8de7563e5bd",
+    "results/iteration85_joint_quality_v1/reference_2.npz": "f06927f73d44b749df488fdf6bc78e381222243a889de39adb8274809002d36f"
+  },
+  "experiment": 2248163329,
+  "records": 512,
+  "global_offset": 0,
+  "sectors": [
+    0,
+    1
+  ],
+  "purpose": 5,
+  "budget": 64,
+  "batch_size": 32,
+  "threads": 16,
+  "groups": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      1144,
+      1145,
+      1146,
+      1147,
+      1148,
+      1149,
+      1150,
+      1151
+    ],
+    [
+      0,
+      144,
+      288,
+      432,
+      576,
+      720,
+      864,
+      1008
+    ]
+  ],
+  "regions": [
+    [
+      0,
+      1152
+    ],
+    [
+      1024,
+      1152
+    ]
+  ],
+  "confidence": {
+    "events": 9,
+    "delta_per_event": 0.0011111111111111111,
+    "pilot_records": 128
+  }
+}
