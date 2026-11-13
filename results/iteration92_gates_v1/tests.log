@@ -1,0 +1,58 @@
+test_coherent_dark_port (test_native_coherent92.Coherent92Tests.test_coherent_dark_port) ... FAIL
+test_coherent_flow_and_endpoints (test_native_coherent92.Coherent92Tests.test_coherent_flow_and_endpoints) ... ok
+test_domain_overflow_and_nonisometry_rejected (test_native_coherent92.Coherent92Tests.test_domain_overflow_and_nonisometry_rejected) ... ok
+test_failure_is_retained (test_native_coherent92.Coherent92Tests.test_failure_is_retained) ... FAIL
+test_hong_ou_mandel_even_outputs (test_native_coherent92.Coherent92Tests.test_hong_ou_mandel_even_outputs) ... FAIL
+test_identity_charge_support (test_native_coherent92.Coherent92Tests.test_identity_charge_support) ... FAIL
+test_negative_binomial_survival (test_native_coherent92.Coherent92Tests.test_negative_binomial_survival) ... ok
+test_thread_and_batch_replay (test_native_coherent92.Coherent92Tests.test_thread_and_batch_replay) ... FAIL
+
+======================================================================
+FAIL: test_coherent_dark_port (test_native_coherent92.Coherent92Tests.test_coherent_dark_port)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\tests\test_native_coherent92.py", line 32, in test_coherent_dark_port
+    raw,meta=sample(self.lib,u,c,0,128,0x92000110);self.assertEqual(meta['returncode'],0,meta);np.testing.assert_array_equal(raw['counts'],np.tile([1,0],(128,1)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : {'returncode': 1, 'error': 'row=1 Waiting root did not converge', 'seconds': 0.0020241000020178035, 'failures': 69}
+
+======================================================================
+FAIL: test_failure_is_retained (test_native_coherent92.Coherent92Tests.test_failure_is_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\tests\test_native_coherent92.py", line 40, in test_failure_is_retained
+    raw,meta=sample(self.lib,np.eye(2),fock_core(0),.85,128,0x92000113,cap=0);self.assertEqual(meta['returncode'],1);self.assertTrue((raw['errors']==1).any());self.assertFalse((raw['errors']==2).any());self.assertFalse(raw['counts'].any());np.testing.assert_array_equal(raw['statistics'][:,5],1)
+                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.True_ is not false
+
+======================================================================
+FAIL: test_hong_ou_mandel_even_outputs (test_native_coherent92.Coherent92Tests.test_hong_ou_mandel_even_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\tests\test_native_coherent92.py", line 34, in test_hong_ou_mandel_even_outputs
+    u=np.array([[1,1],[1,-1]],complex)/np.sqrt(2);raw,meta=sample(self.lib,u,fock_core(0),.7,256,0x92000111);self.assertEqual(meta['returncode'],0,meta);self.assertFalse((raw['counts']%2).any())
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : {'returncode': 1, 'error': 'row=0 Waiting root did not converge', 'seconds': 0.0015822999994270504, 'failures': 109}
+
+======================================================================
+FAIL: test_identity_charge_support (test_native_coherent92.Coherent92Tests.test_identity_charge_support)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\tests\test_native_coherent92.py", line 29, in test_identity_charge_support
+    self.assertEqual(meta['returncode'],0,meta);np.testing.assert_array_equal(raw['counts'][:,0].astype(int)-raw['counts'][:,1],k)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : {'returncode': 1, 'error': 'row=8 Waiting root did not converge', 'seconds': 0.0012725999986287206, 'failures': 52}
+
+======================================================================
+FAIL: test_thread_and_batch_replay (test_native_coherent92.Coherent92Tests.test_thread_and_batch_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\qiyuaner\Documents\ChatGPT\量子\deziroGBS\tests\test_native_coherent92.py", line 36, in test_thread_and_batch_replay
+    u=np.array([[1,1j],[1j,1]],complex)/np.sqrt(2);whole,meta=sample(self.lib,u,fock_core(2),.6,96,0x92000112,sector=3,offset=9,threads=1);self.assertEqual(meta['returncode'],0,meta)
+                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : {'returncode': 1, 'error': 'row=0 Waiting root did not converge', 'seconds': 0.003603800003475044, 'failures': 91}
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.039s
+
+FAILED (failures=5)

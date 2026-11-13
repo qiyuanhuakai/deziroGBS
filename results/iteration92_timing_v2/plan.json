@@ -1,0 +1,23 @@
+{
+  "scope": "Three strictly serial rotations with analytic removal of two known vacuum ports.\nThe physical output has four ports. All samplers that accept two active ports\nuse that reduction and pad zeros back; Frugal retains its four-port-only ABI.\nThis avoids the expensive upstream v2 traversal of empty high-photon prefixes.\nOne-thread resource comparisons and separate16-thread throughput. All include\nmodel/core preparation, sampling, count-to-click conversion and destruction.\nImports and DLL loading are excluded for every method. Repetitions deliberately\nreplay fixed control records, never contribute additional quality N.\n",
+  "records": 4096,
+  "repetitions": 3,
+  "methods": [
+    "core1",
+    "pe1",
+    "frugal1",
+    "r3_1",
+    "r5_1",
+    "core16",
+    "r3_16",
+    "r5_16"
+  ],
+  "r_values": [
+    0.6,
+    0.85
+  ],
+  "quality_data_not_reused": true,
+  "source_sha256": "58387805e1b646a0093add7f90ecb4d8cfbd8a4c9e72199fbf4734fae9329f17",
+  "core_sha256": "10797cde929966c787749447ffa24527833cd50f7604c3e76ba68172e90b935a",
+  "old_sha256": "fa3fdfae3dc71b241f2da4a8afcc22e6581dd06274a054109cc36a493d07180c"
+}

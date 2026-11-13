@@ -1,0 +1,23 @@
+{
+  "scope": "Three strictly serial rotations on identical four-port padded TMSV inputs.\nOne-thread resource comparisons and separate16-thread throughput. All include\nmodel/core preparation, sampling, count-to-click conversion and destruction.\nImports and DLL loading are excluded for every method. Repetitions deliberately\nreplay fixed control records, never contribute additional quality N.\n",
+  "records": 4096,
+  "repetitions": 3,
+  "methods": [
+    "core1",
+    "pe1",
+    "frugal1",
+    "r3_1",
+    "r5_1",
+    "core16",
+    "r3_16",
+    "r5_16"
+  ],
+  "r_values": [
+    0.6,
+    0.85
+  ],
+  "quality_data_not_reused": true,
+  "source_sha256": "5f17d9daf9eed6b6595f57dd7e3809953ac6acacd680ca1b6c6460b5c3363a3f",
+  "core_sha256": "10797cde929966c787749447ffa24527833cd50f7604c3e76ba68172e90b935a",
+  "old_sha256": "fa3fdfae3dc71b241f2da4a8afcc22e6581dd06274a054109cc36a493d07180c"
+}

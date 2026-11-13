@@ -1,0 +1,21 @@
+{
+  "scope": "Coherent rank-two S2 core, arbitrary complex output isometry and loss dilation. No arbitrary-rank or displaced input claim. Frozen before quality draws.",
+  "records": 65536,
+  "pilot_records": 4096,
+  "batch_size": 1024,
+  "threads": 16,
+  "photon_cap": 128,
+  "experiment_base": 2449481728,
+  "experiment_rule": "0x92002000 + case_index; sector=0; record=global row; purposes 1 waiting and 2 detector",
+  "cases": [
+    {"name":"paired_weak","r":0.6,"k":0,"reference88":0,"detected_modes":2,"eta":1},
+    {"name":"paired_strong","r":0.85,"k":0,"reference88":1,"detected_modes":2,"eta":1},
+    {"name":"paired_lossy","r":0.85,"k":0,"reference88":2,"detected_modes":2,"eta":0.8},
+    {"name":"complex3_k4","r":0.6,"k":4,"reference91":0,"detected_modes":3,"cutoff":64},
+    {"name":"complex3_k6","r":0.6,"k":6,"reference91":0,"detected_modes":3,"cutoff":64},
+    {"name":"complex4_k4","r":0.3,"k":4,"reference91":1,"detected_modes":4,"cutoff":32}
+  ],
+  "confidence": {"failure_budget":0.01,"events":48,"new_events":24,"historical88_events_recomputed":24},
+  "metrics": "Per new case: complete PNR TV upper via empirical TV concentration plus analytic target tail; independently validated pilot-selected event lower; separate click TV upper and lower. Recompute all 12 historical88 PNR upper/lower pairs in the same48-event family. No tail conditioning, sample deletion or refill.",
+  "assumptions": "Nominal concentration assumes iid within each dataset. Injective Philox addresses remove deterministic stream reuse but are not a proof of iid. Floating numerical reference errors are not fully interval-certified. Each failed trajectory is a separate target-zero outcome."
+}

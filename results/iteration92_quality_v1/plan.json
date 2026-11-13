@@ -1,0 +1,78 @@
+{
+  "quality": {
+    "scope": "Coherent rank-two S2 core, arbitrary complex output isometry and loss dilation. No arbitrary-rank or displaced input claim. Frozen before quality draws.",
+    "records": 65536,
+    "pilot_records": 4096,
+    "batch_size": 1024,
+    "threads": 16,
+    "photon_cap": 128,
+    "experiment_base": 2449481728,
+    "experiment_rule": "0x92002000 + case_index; sector=0; record=global row; purposes 1 waiting and 2 detector",
+    "cases": [
+      {
+        "name": "paired_weak",
+        "r": 0.6,
+        "k": 0,
+        "reference88": 0,
+        "detected_modes": 2,
+        "eta": 1
+      },
+      {
+        "name": "paired_strong",
+        "r": 0.85,
+        "k": 0,
+        "reference88": 1,
+        "detected_modes": 2,
+        "eta": 1
+      },
+      {
+        "name": "paired_lossy",
+        "r": 0.85,
+        "k": 0,
+        "reference88": 2,
+        "detected_modes": 2,
+        "eta": 0.8
+      },
+      {
+        "name": "complex3_k4",
+        "r": 0.6,
+        "k": 4,
+        "reference91": 0,
+        "detected_modes": 3,
+        "cutoff": 64
+      },
+      {
+        "name": "complex3_k6",
+        "r": 0.6,
+        "k": 6,
+        "reference91": 0,
+        "detected_modes": 3,
+        "cutoff": 64
+      },
+      {
+        "name": "complex4_k4",
+        "r": 0.3,
+        "k": 4,
+        "reference91": 1,
+        "detected_modes": 4,
+        "cutoff": 32
+      }
+    ],
+    "confidence": {
+      "failure_budget": 0.01,
+      "events": 48,
+      "new_events": 24,
+      "historical88_events_recomputed": 24
+    },
+    "metrics": "Per new case: complete PNR TV upper via empirical TV concentration plus analytic target tail; independently validated pilot-selected event lower; separate click TV upper and lower. Recompute all 12 historical88 PNR upper/lower pairs in the same48-event family. No tail conditioning, sample deletion or refill.",
+    "assumptions": "Nominal concentration assumes iid within each dataset. Injective Philox addresses remove deterministic stream reuse but are not a proof of iid. Floating numerical reference errors are not fully interval-certified. Each failed trajectory is a separate target-zero outcome."
+  },
+  "hashes": {
+    "experiments/iteration92_quality_v1.py": "3a1924eb69f0868ab4e10ebfa42227625ddf4ca2f204f6b3912683c405b39d53",
+    "research/iteration92_quality_plan_v1.json": "6820d2fc474c555bfb4a4959bb0d020c61a46337ddb0b200eedc7934d367c9fc",
+    "experiments/iteration92_common_v2.py": "69b27f66ae4d4508b709502a47eff87030b0823ff3a0f9135dfc6f55abc202cd",
+    "native/gaussian_coherent_core92_v2.cpp": "01325c0e4be427dc9d1524f159d8ffe7fd2b5459cc1c237767f26945f2c0a93b",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "results/iteration92_build_v2/core.dll": "10797cde929966c787749447ffa24527833cd50f7604c3e76ba68172e90b935a"
+  }
+}

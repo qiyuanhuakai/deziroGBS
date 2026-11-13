@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "method": "photonic-engines CPU v2",
+      "r": 0.6,
+      "reference88": 0,
+      "pnr": {
+        "empirical_tv": 0.003085371860339043,
+        "lower": 0.0,
+        "upper": 0.011232274967932969
+      },
+      "click": {
+        "empirical_tv": 0.0029595947265624867,
+        "lower": 0.0,
+        "upper": 0.011106497834156412
+      },
+      "seconds": 8.537681200003135,
+      "censored": 0,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 7.283063041541257e-14
+    },
+    {
+      "method": "Frugal CPU fp64 K4 (two vacuum pads)",
+      "r": 0.6,
+      "reference88": 0,
+      "click": {
+        "empirical_tv": 2.9907226562486677e-05,
+        "lower": 0.0,
+        "upper": 0.008176810334156412
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.003710299999511335,
+      "components": [
+        4.4e-05,
+        2.8e-05,
+        7.4e-05,
+        0.003412,
+        5.6e-05,
+        64.0,
+        4.0
+      ]
+    },
+    {
+      "method": "photonic-engines CPU v2",
+      "r": 0.85,
+      "reference88": 1,
+      "pnr": {
+        "empirical_tv": 0.005121064609309733,
+        "lower": 0.0,
+        "upper": 0.013267968384417603
+      },
+      "click": {
+        "empirical_tv": 0.00011047363281255218,
+        "lower": 0.0,
+        "upper": 0.008257377407920423
+      },
+      "seconds": 26.6781364999988,
+      "censored": 0,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 6.322898927930836e-07
+    },
+    {
+      "method": "Frugal CPU fp64 K4 (two vacuum pads)",
+      "r": 0.85,
+      "reference88": 1,
+      "click": {
+        "empirical_tv": 0.002712402343749948,
+        "lower": 0.0,
+        "upper": 0.010859306118857819
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.003243099999963306,
+      "components": [
+        1.9e-05,
+        1.4e-05,
+        5.2e-05,
+        0.002976,
+        0.000124,
+        64.0,
+        4.0
+      ]
+    }
+  ],
+  "events": 60,
+  "joint_failure_budget": 0.01
+}

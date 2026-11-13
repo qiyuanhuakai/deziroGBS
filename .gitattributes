@@ -736,3 +736,15 @@ native/*91* -text -whitespace
 tests/test_native_optical91.py -text -whitespace
 tests/test_native_fock91.py -text -whitespace
 tests/test_native_sparse91.py -text -whitespace
+
+# Iteration92 coherent trajectories and independent baselines.
+RESEARCH_REPORT_ITERATION92.md -text -whitespace
+research/iteration92*.json -text -whitespace
+research/iteration93*.md -text -whitespace
+experiments/iteration92*.py -text -whitespace
+experiments/verify_iteration92*.py -text -whitespace
+results/iteration92*/** -text -whitespace
+results/iteration92*.json -text -whitespace
+native/*92* -text -whitespace
+tests/test_native_coherent92.py -text -whitespace
+tests/test_native_precision92.py -text -whitespace
