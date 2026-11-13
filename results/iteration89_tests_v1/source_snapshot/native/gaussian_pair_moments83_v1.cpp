@@ -1,0 +1,12 @@
+// Single-port factorial moments of the ideal normalized factor-pair model.
+// This evaluates the uncorrected high-total law; low-total correction is bounded
+// separately. It does not claim the exact integer-plan law or exact quantum law.
+#include "gaussian_reset_cpu.cpp"
+#include <omp.h>
+static long double factorial83(int k){long double y=1;for(int j=2;j<=k;++j)y*=j;return y;}
+API int pair83_moments(int m,int n,int labels,int depth,int order,double z,const double* weights,const double* kernel,const double* left,const double* right,int threads,double* output,double* stats,char* message,int cap){try{
+ PrecisionGuard guard;need(m>=1&&n>=1&&labels>=1&&depth>=1&&depth<=m&&depth<=16&&order>=1&&order<=8&&z>0&&z<1&&weights&&kernel&&left&&right&&output&&stats&&threads>=1&&threads<=64,"Invalid pair moment arguments");need(std::uint64_t(m)*m*labels<=20000000000ULL,"Moment contraction work limit");Eigen::setNbThreads(threads);
+ using RM=Eigen::Matrix<double,Eigen::Dynamic,Eigen::Dynamic,Eigen::RowMajor>;Eigen::Map<const RM> k(kernel,m,m),a(left,labels,m),b(right,labels,m);need(k.allFinite()&&a.allFinite()&&b.allFinite()&&k.minCoeff()>=0&&a.minCoeff()>=0&&b.minCoeff()>=0,"Invalid nonnegative factors");Real forward=(a.array()*(b*k.transpose()).array()).matrix(),backward=(b.array()*(a*k).array()).matrix();Vector norms=forward.rowwise().sum();long double mass=0;for(int l=0;l<labels;++l){need(std::isfinite(weights[l])&&weights[l]>=0&&norms[l]>0,"Invalid latent or pair normalization");mass+=weights[l];}need(mass>0,"Empty latent mass");std::fill(output,output+depth*order,0);stats[0]=mass;stats[1]=(norms.array()-1).abs().maxCoeff();long double h=static_cast<long double>(n)/2,c=static_cast<long double>(z)/(1-z);
+ #pragma omp parallel for num_threads(threads)
+ for(int i=0;i<depth;++i)for(int q=1;q<=order;++q){PrecisionGuard precision;long double total=0;for(int l=0;l<labels;++l){long double first=(static_cast<long double>(forward(l,i))+backward(l,i))/norms[l],second=static_cast<long double>(a(l,i))*k(i,i)*b(l,i)/norms[l],coefficient=0,rising=1;for(int j=1;j<=q;++j){rising*=h+j-1;if(2*j<q)continue;int twos=q-j,ones=2*j-q;long double choose=factorial83(j)/(factorial83(twos)*factorial83(ones));coefficient+=rising/factorial83(j)*std::pow(c,j)*choose*std::pow(first,ones)*std::pow(second,twos);}total+=static_cast<long double>(weights[l])/mass*factorial83(q)*coefficient;}output[i*order+q-1]=double(total);}return 0;
+ }catch(const std::exception& e){error(message,cap,e.what());return 1;}}

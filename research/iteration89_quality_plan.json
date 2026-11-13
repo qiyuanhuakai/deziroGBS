@@ -1,0 +1,16 @@
+{
+ "scope":"Frozen before fresh quality samples. One nominal53-event99 family includes frozen PNR3 and unchecked click16; new PNR5 and block/physical16 records are independent of all pilots. No optional stopping or refill.",
+ "events":53,"joint_failure_budget":0.01,
+ "jobs":[
+  {"name":"pnr3","kind":"pnr","retained":3,"records":32768,"pilot_records":2048,"source":"results/iteration86_pnr_quality_v1","reused":true,"events":14},
+  {"name":"pnr5","kind":"pnr","retained":5,"records":16384,"pilot_records":1024,"experiment":"0x89004001","reused":false,"events":14},
+  {"name":"block16","kind":"click","method":"block","budget":16,"records":8192,"pilot_records":1024,"experiment":"0x89004002","reused":false,"events":8},
+  {"name":"physical16","kind":"click","method":"physical","budget":16,"records":8192,"pilot_records":1024,"experiment":"0x89004003","reused":false,"events":8},
+  {"name":"unchecked16","kind":"click","method":"unchecked","budget":16,"records":4096,"pilot_records":512,"source":"results/iteration88_full_quality_project16_v1","reused":true,"events":8}
+ ],
+ "experimental_cdf_events":1,
+ "click_groups":[[0,1,2,3,4,5,6,7],[1144,1145,1146,1147,1148,1149,1150,1151],[0,144,288,432,576,720,864,1008]],
+ "optical_pnr_pairs":[[0,143],[142,143]],"count_regions":[[0,1152],[1024,1152]],
+ "failure_policy":"Keep all records. Any failed spectrum maps the combined record to a target-zero outcome. No deletion, clipping or refill. Failed fit selects the predeclared Gaussian closure and is separately counted.",
+ "limits":"No full1152-pattern TV upper bound. Numerical references are not state interval certificates. Philox disjoint domains do not prove iid. No precision claim from two upper bounds or smaller full-TV lower witnesses."
+}

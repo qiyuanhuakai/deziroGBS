@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "retained_ports": [
+    566,
+    594
+  ],
+  "next_mode": 632,
+  "selected_outputs": 522,
+  "minimum_singular_value": 0.0657339271446329,
+  "maximum_singular_value": 0.981121165331777,
+  "map_reconstruction_error": 1.2162917740203023e-14,
+  "remaining_uncertainty_minimum": -0.03322222846327766,
+  "independent80_digit_rayleigh_real": "-0.03322222846327764314091348569966298923723006524617395311030039552076994",
+  "independent80_digit_rayleigh_imag": "-7.81891145042435419996961e-19",
+  "latent_canonical_minimum": -0.27752597704758897,
+  "scope": "Re-evaluate the frozen88 failure in its actual remaining optical subspace.\nThe selected rows are the retained clicks and every unmeasured output. SVD\ncompresses this contractive map to its non-vacuum subspace; no eigenvalue of the\nraw latent matrix is substituted for the remaining-output uncertainty matrix.\n",
+  "limits": "SVD/eigenvectors and state are floating-point; the80-digit Rayleigh check is on the exported effective matrix. It is a numerical negative witness, not an interval around the exact target state."
+}

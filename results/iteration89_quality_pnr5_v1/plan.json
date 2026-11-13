@@ -1,0 +1,140 @@
+{
+  "scope": "One frozen new quality job: PNR5 or block/physical B16. All failures retained.",
+  "hashes": {
+    "experiments/iteration89_quality_v1.py": "8becc160c3a39bdef9bc4f1e89244e91c251f3d0cb310f9c83add11e5eabe306",
+    "experiments/iteration89_common_v1.py": "efc79f87805c8336215eb674e0a542fbf882400f15d3ead319f94b5960b824ec",
+    "results/iteration89_pilot_v1/puretree.dll": "69884c6f4f2e5389fcd52dbde7e1811b88943755c71e7b54d3353d7f9ae6422a",
+    "research/iteration89_quality_plan.json": "ca75af309200bc1f237aa615e88264ef51673b67ce178fc6f9cb2722b6cc7bd9",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration89_gates_v1/summary.json": "3606407d51e36dec1d8835ffbec180d37446bbb4e6bff935300edc825f5e9313",
+    "results/iteration84_correlated_pnr_pilot_v1/input_0.npz": "b6e856c93582b0dff2894500ca8870481a8ae2ba405a7b096222b29686d732e9",
+    "results/iteration84_correlated_pnr_pilot_v1/input_1.npz": "feeb910061f3c9282d6b5d99e04be2cf2a6d9e06254405e89ed625290e232c96"
+  },
+  "job": {
+    "name": "pnr5",
+    "kind": "pnr",
+    "retained": 5,
+    "records": 16384,
+    "pilot_records": 1024,
+    "experiment": "0x89004001",
+    "reused": false,
+    "events": 14
+  },
+  "batch_size": 256,
+  "threads": 16,
+  "quality_family": {
+    "scope": "Frozen before fresh quality samples. One nominal53-event99 family includes frozen PNR3 and unchecked click16; new PNR5 and block/physical16 records are independent of all pilots. No optional stopping or refill.",
+    "events": 53,
+    "joint_failure_budget": 0.01,
+    "jobs": [
+      {
+        "name": "pnr3",
+        "kind": "pnr",
+        "retained": 3,
+        "records": 32768,
+        "pilot_records": 2048,
+        "source": "results/iteration86_pnr_quality_v1",
+        "reused": true,
+        "events": 14
+      },
+      {
+        "name": "pnr5",
+        "kind": "pnr",
+        "retained": 5,
+        "records": 16384,
+        "pilot_records": 1024,
+        "experiment": "0x89004001",
+        "reused": false,
+        "events": 14
+      },
+      {
+        "name": "block16",
+        "kind": "click",
+        "method": "block",
+        "budget": 16,
+        "records": 8192,
+        "pilot_records": 1024,
+        "experiment": "0x89004002",
+        "reused": false,
+        "events": 8
+      },
+      {
+        "name": "physical16",
+        "kind": "click",
+        "method": "physical",
+        "budget": 16,
+        "records": 8192,
+        "pilot_records": 1024,
+        "experiment": "0x89004003",
+        "reused": false,
+        "events": 8
+      },
+      {
+        "name": "unchecked16",
+        "kind": "click",
+        "method": "unchecked",
+        "budget": 16,
+        "records": 4096,
+        "pilot_records": 512,
+        "source": "results/iteration88_full_quality_project16_v1",
+        "reused": true,
+        "events": 8
+      }
+    ],
+    "experimental_cdf_events": 1,
+    "click_groups": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151
+      ],
+      [
+        0,
+        144,
+        288,
+        432,
+        576,
+        720,
+        864,
+        1008
+      ]
+    ],
+    "optical_pnr_pairs": [
+      [
+        0,
+        143
+      ],
+      [
+        142,
+        143
+      ]
+    ],
+    "count_regions": [
+      [
+        0,
+        1152
+      ],
+      [
+        1024,
+        1152
+      ]
+    ],
+    "failure_policy": "Keep all records. Any failed spectrum maps the combined record to a target-zero outcome. No deletion, clipping or refill. Failed fit selects the predeclared Gaussian closure and is separately counted.",
+    "limits": "No full1152-pattern TV upper bound. Numerical references are not state interval certificates. Philox disjoint domains do not prove iid. No precision claim from two upper bounds or smaller full-TV lower witnesses."
+  }
+}
