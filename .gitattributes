@@ -676,3 +676,15 @@ results/iteration86*.json -text -whitespace
 native/*86* -text -whitespace
 tests/test_native_shared86.py -text -whitespace
 tests/test_optical_pnr_reference86.py -text -whitespace
+
+# Iteration87 frozen block-leaf PNR, decision intervals and joint quality evidence.
+RESEARCH_REPORT_ITERATION87.md -text -whitespace
+research/iteration87*.json -text -whitespace
+research/iteration88*.md -text -whitespace
+experiments/iteration87*.py -text -whitespace
+experiments/verify_iteration87*.py -text -whitespace
+results/iteration87*/** -text -whitespace
+results/iteration87*.json -text -whitespace
+native/*87* -text -whitespace
+tests/test_native_blocktree87.py -text -whitespace
+tests/test_native_guarded87.py -text -whitespace

@@ -1,0 +1,31 @@
+{
+  "scope": "Three serial paired4/64-record B64/B128 timings on frozen85 record addresses.\nIncludes model creation, uniform generation, sampling, OR and destruction;\nexcludes upstream input preparation, initial DLL loads and artifact I/O.\nRepeated timing rows are not independent quality samples.\n",
+  "hashes": {
+    "experiments/iteration87_guarded_timing_v1.py": "ff6488de132a122665ec9bf8bf4666706d726d86d29fee48a2222d7bc4f3cbb0",
+    "experiments/iteration87_guarded_common_v1.py": "e9c46f6a7c944014cabf60b7dbccf1892ccd908859c88f775096ddeaeae95b1e",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration86_shared_gates_v4/shared.dll": "19c58fc5bceeb7df3c2368d664ef760dc20d9c9cb8895b14d409f948eca3b093",
+    "results/iteration87_guarded_gates_v2/guarded.dll": "225cfc230423c91c4ca3a36ffc27a53f969c275e821b70ea0c9a02a91b9917c6",
+    "results/iteration87_guarded_gates_v2/summary.json": "ff1ab85cbce59a424b4a24e6b747f005327ac27a6abba4c249fa99d70fa3d2d7",
+    "results/iteration87_guarded_replay_v1/summary.json": "87936a2133fa97ae347b11ff922b56f6d1ef263dae9e5c512d034f326d3a858c"
+  },
+  "records": [
+    4,
+    64
+  ],
+  "experiment": 2231373826,
+  "global_offset": 0,
+  "purpose": 5,
+  "sectors": [
+    0,
+    1
+  ],
+  "budgets": {
+    "shared": 64,
+    "guarded": 64,
+    "guarded128": 128
+  },
+  "threads": 16,
+  "repetitions": 3,
+  "intentional_replay": true
+}

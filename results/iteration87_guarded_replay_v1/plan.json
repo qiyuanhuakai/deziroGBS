@@ -1,0 +1,36 @@
+{
+  "scope": "Replay all512 frozen86 B64 records, then a fresh-domain B128 oracle pilot.\nThese are numerical equivalence gates, not new quality samples. Save every row.\n",
+  "hashes": {
+    "experiments/iteration87_guarded_replay_v1.py": "acb3e8521e8a34033d75b5c946c8d0917e5adbb2d2f2e1b103fc9ae79baaa207",
+    "experiments/iteration87_guarded_common_v1.py": "e9c46f6a7c944014cabf60b7dbccf1892ccd908859c88f775096ddeaeae95b1e",
+    "results/iteration87_guarded_gates_v2/summary.json": "ff1ab85cbce59a424b4a24e6b747f005327ac27a6abba4c249fa99d70fa3d2d7",
+    "results/iteration87_guarded_gates_v2/guarded.dll": "225cfc230423c91c4ca3a36ffc27a53f969c275e821b70ea0c9a02a91b9917c6",
+    "results/iteration86_shared_gates_v4/shared.dll": "19c58fc5bceeb7df3c2368d664ef760dc20d9c9cb8895b14d409f948eca3b093",
+    "results/iteration86_shared_quality_v1/manifest.json": "ad02e200b7680c4e8946960a024cdba8bddc521f692a88182f80f0e70644e8c7",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "research/iteration87_validation_plan.json": "38c6507a4e40f0ba5add4745b9c914940e20a6dc30c34e9bf4eea9654dc823ee"
+  },
+  "jobs": [
+    {
+      "budget": 64,
+      "records": 512,
+      "experiment": 2248163329,
+      "source": "frozen86",
+      "intentional_replay": true
+    },
+    {
+      "budget": 128,
+      "records": 16,
+      "experiment": 2264936449,
+      "source": "matched frozen86 numerical oracle",
+      "intentional_replay": false
+    }
+  ],
+  "threads": 16,
+  "batch": 32,
+  "sectors": [
+    0,
+    1
+  ],
+  "purpose": 5
+}

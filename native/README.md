@@ -1,5 +1,31 @@
 # Native sampling kernels
 
+## Iteration87: block-leaf PNR and guarded click decisions
+
+`gaussian_pnr_blocktree87_v1.cpp` stores only the upper optical tree. Block leaves
+reconstruct required sums in the frozen binary order; `pnr87_tree_create` takes
+the block threshold after the model handle. Sampling uses20 statistic columns,
+the first18 unchanged, followed by on-demand subtrees and primitive Gram builds.
+Block32 replays every frozen32768 PNR record exactly; it reduces stored Gram
+bytes18-fold, with a measured runtime cost. This is not a process-memory ratio.
+
+`gaussian_click_guarded87_v1.cpp` adds `tc87_guarded_sample`: explicit draws,
+bits, midpoint diagnostics, bounds, kinds, errors and12 statistic columns.
+The12 columns are subset evaluations, closures, peak clicks, evaluated-path
+condition estimate, actual wide calls, completed modes, ball attempts, certified
+decisions, ambiguous draws, closure-wide calls, ball failures and max ball width.
+Kind1 uses a decision interval; kind0/2 wrap a stored narrow/wide numeric threshold.
+Midpoints are not promised to be exact conditional probabilities. Ambiguity and
+closure updates use the frozen wide path. Approximate Gaussian closure remains.
+
+The tested DLL is built from `gaussian_click_guarded_probe87_v1.cpp`, which adds
+only a same-Gram diagnostic entry point and includes the frozen production source.
+See `iteration87_guarded_gates_v2.py` for the build and independent enclosures,
+and `iteration87_guarded_common_v1.py` for array bindings. The failed v1 validation
+is retained. The new sampler does not repair the withdrawn historical iid claims.
+See the [report](../RESEARCH_REPORT_ITERATION87.md) and
+[method limits](../research/iteration87_methods.md).
+
 ## Iteration86: shared Gaussian click constraints
 
 `gaussian_click_shared86_v2.cpp` keeps one extended-precision Gaussian base and

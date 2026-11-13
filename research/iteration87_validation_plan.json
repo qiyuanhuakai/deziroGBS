@@ -1,0 +1,25 @@
+{
+  "scope": "Fixed quality family before fresh guarded-click samples. PNR is a complete deterministic replay of the frozen32768-record86 dataset, not additional observations. Groups and the PNR pilot split remain unchanged; its per-event alpha is conservatively reduced for the new combined family.",
+  "joint_failure_budget": 0.01,
+  "events": 31,
+  "pnr": {
+    "records": 32768,
+    "experiment": "0x86001001",
+    "intentional_replay": true,
+    "block_size": 32,
+    "retained_factors": 3,
+    "pilot_records": 2048,
+    "events": 14
+  },
+  "fresh_direct": [
+    {"budget": 64, "records": 512, "pilot_records": 128, "experiment": "0x87001001", "events": 8},
+    {"budget": 128, "records": 512, "pilot_records": 128, "experiment": "0x87001002", "events": 8}
+  ],
+  "shared_experimental_click_cdf_events": 1,
+  "click_groups": [[0,1,2,3,4,5,6,7],[1144,1145,1146,1147,1148,1149,1150,1151],[0,144,288,432,576,720,864,1008]],
+  "optical_pnr_pairs": [[0,143],[142,143]],
+  "count_regions": [[0,1152],[1024,1152]],
+  "failure_policy": "Any incomplete spectrum makes the full record a separate target-zero failure symbol. Keep every row; no deletion or refill.",
+  "gate": "Fresh direct sampling starts only after scalar enclosure checks, independent small probabilities and complete frozen86 B64 replay. B128 additionally requires a frozen86 B128 oracle pilot with matched uniforms. Failure of a gate is retained and corrected in a new version, never hidden.",
+  "limits": "Nominal concentration assumes iid. Numerical references and projected covariance arithmetic are not interval-certified Gaussian states. Local TV upper bounds do not cover the full1152-bit law. Enclosure midpoints are not exact conditional probabilities."
+}

@@ -1,0 +1,16 @@
+"""Build and cross-check the all-zero path recorder against prior full-tree exports."""
+from pathlib import Path
+import os,json,hashlib,shutil,argparse,subprocess,time,ctypes as C
+for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
+import numpy as np
+ROOT=Path(__file__).resolve().parents[1];p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);args=p.parse_args();OUT=args.output.resolve();OUT.mkdir(parents=True,exist_ok=False)
+def H(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def save(name,obj):
+    with (OUT/name).open('xb') as f:f.write((json.dumps(obj,indent=2)+'\n').encode())
+base=ROOT/'results/iteration75_frugal_cpu_build_v1';command=json.loads((base/'build_64.json').read_text())['command'];command=[str(ROOT/'native/frugal_zero75_adapter_v1.cpp') if s==str(ROOT/'native/frugal_cpu75_adapter_v1.cpp') else s for s in command];command[-1]=str(OUT/'zero.dll');command[1:1]=['-I',str(ROOT/'results/iteration39_build/generated')];paths=[Path(__file__),ROOT/'native/frugal_zero75_adapter_v1.cpp',ROOT/'native/frugal_zero75_trace_v1.hpp',ROOT/'native/frugal_cpu75_adapter_v1.cpp',ROOT/'results/iteration39_build/generated/frugal_extended_hooks.hpp'];save('plan.json',dict(command=command,source_hashes={p.relative_to(ROOT).as_posix():H(p) for p in paths},parent_manifest=H(base/'manifest.json'),scope=__doc__))
+for p in paths:shutil.copy2(p,OUT/p.name)
+start=time.perf_counter();r=subprocess.run(command,capture_output=True,text=True,errors='replace');save('build.json',dict(command=command,returncode=r.returncode,stdout=r.stdout,stderr=r.stderr,seconds=time.perf_counter()-start));assert r.returncode==0,r.stderr
+handle=os.add_dll_directory(str(Path(shutil.which('g++')).parent));lib=C.CDLL(str(OUT/'zero.dll'));DP=C.POINTER(C.c_double);lib.fc75_zero.argtypes=[C.c_int,C.c_int,C.c_int,DP,DP,DP,DP,C.c_char_p,C.c_int];cov=np.ascontiguousarray(np.load(ROOT/'results/iteration75_task_comparison_v1/input.npz')['cov']);rows=[]
+for cutoff in (1,2,3,4):
+    threshold=np.zeros(4);previous=np.zeros(4);proposed=np.zeros(4);error=C.create_string_buffer(4096);rc=lib.fc75_zero(4,cutoff,16,cov.ctypes.data_as(DP),threshold.ctypes.data_as(DP),previous.ctypes.data_as(DP),proposed.ctypes.data_as(DP),error,len(error));assert rc==0,error.value;export=json.loads((ROOT/f'results/iteration75_task_comparison_v1/frugal_export_{cutoff}.json').read_text());tree={r['prefix']:r for r in export['prefix_tree']};target=np.array([[float.fromhex(tree['0'*i][key]) for i in range(4)] for key in ('threshold_hex','previous_hex','proposed_hex')]);actual=np.array([threshold,previous,proposed]);row=dict(cutoff=cutoff,all_values_bitwise_equal=bool(np.array_equal(actual,target)),maximum_difference=float(abs(actual-target).max()));rows.append(row);np.savez_compressed(OUT/f'replay_{cutoff}.npz',actual=actual,reference=target);save(f'row_{cutoff}.json',row);assert row['all_values_bitwise_equal'],row
+save('summary.json',dict(passed=True,rows=rows,binary_sha256=H(OUT/'zero.dll')));save('manifest.json',dict(artifacts={p.relative_to(OUT).as_posix():H(p) for p in OUT.rglob('*') if p.is_file()}));print('Zero-path recorder matches all prior 4-mode thresholds bitwise',flush=True)
