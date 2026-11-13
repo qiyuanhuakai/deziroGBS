@@ -1,0 +1,211 @@
+{
+  "verifier_sha256": "f260510faeefb6946f5b24da6c4185242b24a3fc71a6735fd0900484cc627aea",
+  "passed": true,
+  "checks": 3507,
+  "full_suite": {
+    "passed": true,
+    "tests_run": 940,
+    "successes": 911,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "polynomial_pnr_passed": 5,
+    "philox_click_passed": 5,
+    "structured_pnr_passed": 5,
+    "classical_tail_passed": 3,
+    "fused_click_passed": 3,
+    "deep_pnr_passed": 5,
+    "resplit_pnr_passed": 4,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true,
+    "prefix_pnr_passed": 5,
+    "projected_pnr_passed": 6,
+    "number_pnr_passed": 8,
+    "sphere_pnr_passed": 6,
+    "alias_click_passed": 6,
+    "joint_pnr_passed": 6,
+    "block_click_passed": 5,
+    "block_philox_passed": 4,
+    "transport80_passed": 13
+  },
+  "partial_failure_artifacts": {
+    "iteration80_transport_pilot_v2": {
+      "binary.json": "a5eac633b04a7f2cd8bb878419260f706652c8cf350a99ba1d7682d4c4a7c482",
+      "controls_14.npz": "78cc7d55bd41b44a54ee2721018b7f0ce3dd1a8bb5fef7164262d31057aa20ca",
+      "controls_2.npz": "8c4282548156ad357a8e5b16a205ffd3943ddf279d87f825c60636d7485d1715",
+      "controls_4.npz": "8379167b06439b479a092e0fd5497d5b70cf81074f5902f1650e71b8cc8ba3b4",
+      "controls_8.npz": "b2524bc7a3f79c56ace1f77dc9172c6c8032d0cef11bb3ab6afe05175785595e",
+      "iteration80_transport_pilot_v2.py": "430ef4fee801ff99b4a6ed1b94cc5d064bdd9c94251df2325cec0566de8c0f09",
+      "law_14.json": "e1b985bed8fed35484f7d9dbf4759b5365e2547f6525d83877871177f8d822ef",
+      "law_14.npz": "d57aecd825ee89fa64fa25d9479c105ec9a0f9328c50fba5799ab4fa646aabb1",
+      "law_2.json": "de76668b7ed58da4e17df69ac6782a0e4fb278eaac728c7f2f1a116ea57694bb",
+      "law_2.npz": "7aa4e7846c19ee2ba661c9371ab62277b873df56d36531158966b34664f4835d",
+      "law_4.json": "fbaabe2a812872873b6054944a175d03c282a7a1b09537e0056cfcca1c836157",
+      "law_4.npz": "15200e688566c1c7b67f3625be0f63d57baffbb4aaeee98c32bd6d3cf8da2694",
+      "law_8.json": "29dac306d7941c815061f562a35a15fae9f4248e1e246ff4eed4a289b90bc212",
+      "law_8.npz": "4ea5313f1887dcefc6d7e26024fc65eec3cc50462595b5984dff94b7c6ae7efb",
+      "plan.json": "7d663946eae2857e79087c425d47057c39a0a35a1ff58566bf5d99ad69a07bd7",
+      "strict_replay.npz": "7ee795342809513ffee9e88f1c69a6c00a80bd6b1a1a5804d96ce91d9b36eea5",
+      "transport.dll": "5b7491b84e41e0e75e1a8193fb212a658104363ce2daebe63cc32db589051abc"
+    },
+    "iteration80_alias_audit_v1": {
+      "build.json": "c340f16087b0164bf4e7aae12d7b66cbb6d307733cf24ac954053e48637cf61c",
+      "export.dll": "98d19a99aa3348b307656c14897ad82c486205fdde31863a1ab5eb3cd1f746b4",
+      "plan.json": "d49e7b882efed5d3e6fe5a94d3e4967733581e1b62e9c725ba0af120d01f5668",
+      "strong4.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Independent frozen-evidence checks; no sampler DLL is loaded.\nNumerical Fock/linear-algebra references and ideal-iid confidence assumptions\nremain explicit. Exact rational checks apply only to integer alias table laws.\n"
+}

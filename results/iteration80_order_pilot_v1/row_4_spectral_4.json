@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "case": 4,
+  "method": "spectral",
+  "budget": 4,
+  "seconds": 0.908659999986412,
+  "statistics": {
+    "completed_samples": 64,
+    "clicks": 1873,
+    "compressions": 601,
+    "peak_transient_components": 8,
+    "maximum_absolute_weight_sum": 267123.84698000556
+  },
+  "cuda_timings": {
+    "allocation_seconds": 0.0013102,
+    "host_to_device_seconds": 0.0025308,
+    "random_seconds": 0.0005167,
+    "kernel_seconds": 0.8966577,
+    "device_to_host_seconds": 0.0002679,
+    "workspace_bytes": 138967040.0,
+    "failed_rows": 0.0
+  }
+}

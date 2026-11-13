@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "case": 1,
+  "method": "degree_ascending",
+  "budget": 8,
+  "seconds": 0.009170300007099286,
+  "statistics": {
+    "completed_samples": 8192,
+    "clicks": 8272,
+    "compressions": 247,
+    "peak_transient_components": 16,
+    "maximum_absolute_weight_sum": 88930.20486279884
+  },
+  "cuda_timings": {
+    "allocation_seconds": 0.000439,
+    "host_to_device_seconds": 0.0011497,
+    "random_seconds": 5.75e-05,
+    "kernel_seconds": 0.0058861,
+    "device_to_host_seconds": 0.0003344,
+    "workspace_bytes": 52233856.0,
+    "failed_rows": 0.0
+  },
+  "numerical_full_tv": 0.0019920785995128825,
+  "maximum_cpu_law_error": 6.1898457279913055e-16
+}

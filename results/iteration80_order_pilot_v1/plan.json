@@ -1,0 +1,23 @@
+{
+  "scope": "Six predeclared input-only detector orders with unchanged old CPU/GPU kernels.\nMap all output bits back to physical ports; compare complete small laws.\nConstruction and exploratory sampling times are separate, not final benchmarks.\n",
+  "hashes": {
+    "experiments/iteration80_order_pilot_v1.py": "12374d2036074624982e25bd7b19eada5d1f51b54758f3cbf2874464756b4897",
+    "native/gaussian_click_order80_v1.cpp": "219ea80331a30d5b762476214321e10e035184ff6198dfc1d520f1d137fb5baf",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration71_branch_pilot_v1/branches.dll": "bb0a4375748eaf89bd53f61b3e79b2f446d4840a157a4446756feb70ea31bb63"
+  },
+  "methods": [
+    "original",
+    "click_ascending",
+    "click_descending",
+    "spectral",
+    "neighbor",
+    "degree_ascending"
+  ],
+  "budgets": [
+    4,
+    8
+  ],
+  "seed_base": 47287796087390208
+}

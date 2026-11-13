@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "case": 1,
+  "method": "neighbor",
+  "budget": 8,
+  "seconds": 0.009692799998447299,
+  "statistics": {
+    "completed_samples": 8192,
+    "clicks": 8266,
+    "compressions": 290,
+    "peak_transient_components": 16,
+    "maximum_absolute_weight_sum": 194886.09083741228
+  },
+  "cuda_timings": {
+    "allocation_seconds": 0.0009204,
+    "host_to_device_seconds": 0.0008987,
+    "random_seconds": 6.53e-05,
+    "kernel_seconds": 0.006095,
+    "device_to_host_seconds": 0.0003964,
+    "workspace_bytes": 52233856.0,
+    "failed_rows": 0.0
+  },
+  "numerical_full_tv": 0.0015585386516009665,
+  "maximum_cpu_law_error": 4.80409982628327e-16
+}

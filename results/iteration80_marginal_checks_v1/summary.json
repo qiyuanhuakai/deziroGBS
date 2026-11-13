@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": 0,
+      "inputs": 8,
+      "outputs": 16,
+      "fixed_total": 34,
+      "marginal_ports": 8,
+      "transport_numerical_tv": 0.09898386017578784,
+      "complex_sphere_numerical_tv": 0.10047894280379406,
+      "real_sphere_numerical_tv": 0.024966515866681516,
+      "empirical_tv_to_transport": 0.014617508612568723,
+      "maximum_normalization_error": 0.0
+    },
+    {
+      "case": 1,
+      "inputs": 16,
+      "outputs": 32,
+      "fixed_total": 34,
+      "marginal_ports": 8,
+      "transport_numerical_tv": 0.030089567157338824,
+      "complex_sphere_numerical_tv": 0.05229818604636578,
+      "real_sphere_numerical_tv": 0.018394062450888173,
+      "empirical_tv_to_transport": 0.018512527215174858,
+      "maximum_normalization_error": 1.1102230246251565e-16
+    },
+    {
+      "case": 2,
+      "inputs": 16,
+      "outputs": 144,
+      "fixed_total": 34,
+      "marginal_ports": 8,
+      "transport_numerical_tv": 0.005013734165246947,
+      "complex_sphere_numerical_tv": 0.02414021657201948,
+      "real_sphere_numerical_tv": 0.008179682268552951,
+      "empirical_tv_to_transport": 0.013388071922731011,
+      "maximum_normalization_error": 2.220446049250313e-16
+    },
+    {
+      "case": 3,
+      "inputs": 32,
+      "outputs": 64,
+      "fixed_total": 34,
+      "marginal_ports": 8,
+      "transport_numerical_tv": 0.011635193463291053,
+      "complex_sphere_numerical_tv": 0.030565154693833845,
+      "real_sphere_numerical_tv": 0.015174870901302498,
+      "empirical_tv_to_transport": 0.017226442010432184,
+      "maximum_normalization_error": 0.0
+    }
+  ],
+  "fock_checks": 64
+}

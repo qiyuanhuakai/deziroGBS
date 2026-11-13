@@ -1,5 +1,33 @@
 # Native sampling kernels
 
+## Iteration80: calibrated shared photon pairs and immutable alias plans
+
+`NativeCachedTransportPNRSampler` consumes an isometry, equal squeezing, positive
+latent weights and symmetric nonnegative calibrated pair tables. It returns
+integer photon counts. The total-number law and exact low-total branch are kept;
+above `exact_total_budget`, all pairs in a record share a latent label. Matching
+the two pair constraints restores the fixed-total ordered-pair moment, not the
+complete quantum distribution. Unequal squeezing, displacement and noise are
+not supported by this interface. Calibration feasibility is input/design
+dependent, and the dense implementation has explicit resource limits.
+
+The final core is `gaussian_pnr_transport80_v4.cpp`, including the wide integer
+alias implementation from v3. Plans are built once, are read-only while sampling,
+and are explicitly destroyed. `gaussian_pair_ipf80_v2.cpp` performs calibration
+in C++; `gaussian_transport_alias_export80_v1.cpp` exports integer thresholds for
+exact rational audits. Earlier CDF and uncached versions remain frozen evidence.
+Do not confuse the alias discretization bound with approximation error to GBS.
+
+Direct clicks remain a separate path. `gaussian_click_order80_v1.cpp` constructs
+six input-only orders; callers restore physical output labels before evaluation.
+The rolling and guarded rolling C++ kernels are experimental negative results:
+some valid inputs produce explicit invalid conditional probabilities, and some
+successful cases are less accurate. They are not default replacements.
+
+See [iteration80 methods](../research/iteration80_methods.md) and the
+[report](../RESEARCH_REPORT_ITERATION80.md) for full-law bounds, counterexamples,
+setup-inclusive Frugal CPU/GPU comparisons, and reproduction evidence.
+
 ## Iteration79: joint photon blocks and delayed GPU click compression
 
 `NativeJointNumberPNRSampler` returns integer PNRs, optionally converted to clicks.

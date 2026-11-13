@@ -1,0 +1,128 @@
+{
+  "scope": "Fresh three-rotation timings, with calibration and constructor charged.\nIdentical input, count and thread policy; quality is NOT matched across methods.\nFile I/O is outside timing. Cached batches separately disclose initial setup.\n",
+  "cases": [
+    [
+      "strong4",
+      65536,
+      [
+        [
+          "cached",
+          8
+        ],
+        [
+          "uncached",
+          8
+        ],
+        [
+          "sphere",
+          8
+        ],
+        [
+          "gpu",
+          8
+        ],
+        [
+          "alias",
+          0
+        ],
+        [
+          "frugal",
+          4
+        ],
+        [
+          "fgpu",
+          4
+        ]
+      ]
+    ],
+    [
+      "eight",
+      8192,
+      [
+        [
+          "gpu",
+          4
+        ],
+        [
+          "gpu",
+          8
+        ],
+        [
+          "neighbor",
+          8
+        ],
+        [
+          "alias",
+          0
+        ],
+        [
+          "frugal",
+          5
+        ],
+        [
+          "fgpu",
+          5
+        ]
+      ]
+    ],
+    [
+      "wide144",
+      256,
+      [
+        [
+          "cached",
+          8
+        ],
+        [
+          "uncached",
+          8
+        ],
+        [
+          "sphere",
+          8
+        ],
+        [
+          "gpu",
+          4
+        ],
+        [
+          "neighbor",
+          8
+        ],
+        [
+          "frugal",
+          2
+        ],
+        [
+          "frugal",
+          3
+        ],
+        [
+          "fgpu",
+          2
+        ],
+        [
+          "fgpu",
+          3
+        ]
+      ]
+    ]
+  ],
+  "repetitions": 3,
+  "workers": 16,
+  "alias_workers": 1,
+  "seed_base": 50384020831207424,
+  "hashes": {
+    "experiments/iteration80_timing_v2.py": "0b9f19c322f98be6e4b360359c12df78eaf5a7b5fc76d4a5a45301cacd4ba724",
+    "results/iteration80_cached_pilot_v1/cached.dll": "8ebe6f92c2b7766bd5672778328bd52592378b083cd2690ee56573dda1d25bdb",
+    "results/iteration80_wide_pilot_v1/transport.dll": "87853ac21352fd7ee13c331d2aee4d3ff6f2dbdf65952b4efd1ff46db29aadcc",
+    "results/iteration78_pilot_v2/sphere.dll": "9cf22455598112301670f781a5df903216382fc69d6fcfe6036f1b7f67ece5b7",
+    "results/iteration80_wide_pilot_v1/ipf.dll": "811aa8e20549360d66e683ad5f1269ff67d5c41b8355c9b8f7e608ea9bc74f5a",
+    "results/iteration80_order_pilot_v1/order.dll": "3f678aff533da7e1abae572630e585c5ca0fca9da89ca1b0ad02eb3b00edc9c1",
+    "results/iteration72_cuda_pilot_v1/cpu.dll": "ede6c1c7a905951a2b192685e33a6355c31be6a9782b684866121b764c750313",
+    "results/iteration74_fused_pilot_v2/philox.dll": "3deef00eb9ad40d7ea7821834d5313accf4bae367b9ca2b8408c76b53c713b9a",
+    "results/iteration78_alias_pilot_v1/table.dll": "6a77910fe04ee37ce3e32ec29f0e3aaa4f9d5275d86a9a487d603fd158fa5dea",
+    "results/iteration75_frugal_gpu_build_v3/frugal_fp64.dll": "acc35480437359abd74fb452dca362f4738a503888992ad3e582e2fe46c55249",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3"
+  }
+}

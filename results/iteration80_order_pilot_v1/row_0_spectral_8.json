@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "case": 0,
+  "method": "spectral",
+  "budget": 8,
+  "seconds": 0.00585079999291338,
+  "statistics": {
+    "completed_samples": 8192,
+    "clicks": 11695,
+    "compressions": 0,
+    "peak_transient_components": 8,
+    "maximum_absolute_weight_sum": 44.31136994961923
+  },
+  "cuda_timings": {
+    "allocation_seconds": 0.0008412,
+    "host_to_device_seconds": 0.0003758,
+    "random_seconds": 3.28e-05,
+    "kernel_seconds": 0.0031115,
+    "device_to_host_seconds": 0.0002718,
+    "workspace_bytes": 17859008.0,
+    "failed_rows": 0.0
+  },
+  "numerical_full_tv": 3.625572064791527e-16,
+  "maximum_cpu_law_error": 1.1102230246251565e-16
+}
