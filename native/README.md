@@ -1,5 +1,42 @@
 # Native sampling kernels
 
+## Iteration76: projected photon prefixes
+
+`NativeProjectedPNRSampler` accepts the same pure squeezing/isometry inputs as
+the iteration75 prefix sampler. The final `projected.dll` in
+`results/iteration76_projected_pilot_v3` uses the complete active tangent span and
+a shared positive QR norm for all detector choices and Gaussian compression.
+Set `retained` explicitly: for example, K7 is tested with 128 equal-squeezing
+inputs; K31 is tested with two inputs and explicitly rejected for 128 inputs.
+The retained depth is not an output photon cutoff. Strong-input compression
+errors remain large; read the report before using the speed results as quality claims.
+
+```python
+from gbslab.native_projected_pnr import NativeProjectedPNRSampler
+with NativeProjectedPNRSampler(v, t, projected_library, retained=7,
+                               workers=16, runtime_dirs=runtime) as model:
+    counts = model.sample(512, 760902)['counts']
+    clicks = (counts > 0).astype('uint8')
+```
+
+Reproduce with new output directories. The data/benchmark drivers intentionally
+use hashed recorded libraries; a separately named build does not change those paths.
+Run timing and other heavy numerical jobs serially.
+
+```powershell
+python -X utf8 experiments/iteration76_projected_pilot_v3.py --output results/reproduce76_projected
+python -X utf8 experiments/iteration76_pnr_scale_v1.py --output results/reproduce76_pnr_scale
+python -X utf8 experiments/iteration76_scale_click_v1.py --output results/reproduce76_click_scale
+python -X utf8 experiments/iteration76_strong_pnr_v1.py --output results/reproduce76_strong
+python -X utf8 experiments/iteration76_pnr_quality_v1.py --output results/reproduce76_quality
+python -X utf8 experiments/iteration76_tests_v1.py --output results/reproduce76_tests
+python -X utf8 experiments/verify_iteration76.py --output results/reproduce76_verification
+```
+
+The verifier checks the published original cohorts. See the
+[iteration76 report](../RESEARCH_REPORT_ITERATION76.md) for exact task scopes,
+resource limits, finite precision qualifications and Frugal/Jiuzhang comparisons.
+
 ## Iteration75: integer photon prefixes and direct clicks
 
 `NativePrefixPNRSampler` in `src/gbslab/native_prefix_pnr.py` accepts an output-by-input complex isometry and real pure squeezing parameters `t=tanh(r)`. The C++ Hermite core retains up to 31 photon factors, then uses a Gaussian approximation; returned photon counts are not truncated. The ideal coupling error is bounded by the probability of reaching the first compression. Polynomial term/resource checks explicitly reject expensive high-input/high-depth requests. The bound is not a complete floating-point or PRNG certificate.

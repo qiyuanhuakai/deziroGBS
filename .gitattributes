@@ -534,3 +534,15 @@ src/gbslab/native_prefix_pnr.py -text -whitespace
 tests/test_native_deep_pnr.py -text -whitespace
 tests/test_native_resplit_pnr.py -text -whitespace
 tests/test_native_prefix_pnr.py -text -whitespace
+
+# Iteration76 frozen sources, raw evidence and independent verification.
+RESEARCH_REPORT_ITERATION76.md -text -whitespace
+research/iteration76*.md -text -whitespace
+research/iteration77*.md -text -whitespace
+experiments/iteration76*.py -text -whitespace
+experiments/verify_iteration76*.py -text -whitespace
+results/iteration76*/** -text -whitespace
+results/iteration76*.json -text -whitespace
+native/*76* -text -whitespace
+src/gbslab/native_projected_pnr.py -text -whitespace
+tests/test_native_projected_pnr.py -text -whitespace

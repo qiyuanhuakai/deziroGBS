@@ -1,0 +1,32 @@
+{
+  "scope": "Full thin span without numerical-rank truncation; positive QR norm shared by detectors.\nFollowed by paired old/new records and expanded-input finite pilot runs.\n",
+  "command": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-O3",
+    "-std=c++20",
+    "-shared",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-DEIGEN_DONT_PARALLELIZE",
+    "-I",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\external_sources\\eigen_3_4_0_iteration38\\eigen-3.4.0",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\native\\gaussian_pnr_projected76_v3.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS\\results\\iteration76_projected_pilot_v3\\projected.dll"
+  ],
+  "source_hashes": {
+    "experiments/iteration76_projected_pilot_v3.py": "d3086a754a2265838abaa716678624725fc20dd2bf3fd31e4dba4571e47387bf",
+    "src/gbslab/native_projected_pnr.py": "fb41f508d197f40b5c8de116996d3ae29b064fdf3c49806b761f03e7689452c8",
+    "native/gaussian_pnr_projected76_v3.cpp": "80db284e5d3555dfaeafdde95469eafc52e11e9cf1c1c6f6dd39ca4e9bc3662b",
+    "native/gaussian_projected76_v3.hpp": "6525f109938349c63121be0a21f8027d20f300e1241b08caa1cb65ecf3b125e8",
+    "native/gaussian_hermite75_v1.hpp": "2c4e41ebd2cb9a2e7ee4bf2e485c9d4e3c4220b2c992358fdeb1e641cc2783f4",
+    "native/gaussian_pnr_deep75_v1.cpp": "ea6b45895f68fe36e041a0db0d180320c3ce29844b16f19192a97e94dccee38b",
+    "native/gaussian_complex_moments75_v1.hpp": "010eb01f67348cd441465c32ff49e932951ee5087d3742789ee9d6e7377a2a1f",
+    "native/gaussian_positive_norm74_v1.hpp": "f664217b43489d02ee55d4672bdd31c2222e829070be4ef50ace9d3db0543ecf",
+    "native/gaussian_direct_click.cpp": "52e60253eff6ccf2d3190f6f2cd3d320101fa6ba25227973b6a6073e81502aaf",
+    "native/gaussian_reset_cpu.cpp": "12e27e53b7fbb8bc72b990c1c6ce30d76cc93028a66ebd21ba98bc8324900baa"
+  },
+  "input_seed": 760001,
+  "record_seed_base": 36591746972385280,
+  "seed_stride": 1099511627776
+}
