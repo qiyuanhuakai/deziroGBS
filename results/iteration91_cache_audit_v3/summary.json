@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "audits": [
+    {
+      "case": "full",
+      "all_suffixes": 1152,
+      "maximum_independent_gram_error": 4.564283540887647e-16,
+      "setup": {
+        "seconds": 0.08726309999474324,
+        "bytes": 46335200,
+        "gram_residual": 1.3100712112216261e-18,
+        "suffixes": 1152
+      }
+    },
+    {
+      "case": "haar_rectangular",
+      "all_suffixes": 7,
+      "maximum_independent_gram_error": 1.351720751937339e-16,
+      "setup": {
+        "seconds": 2.970000059576705e-05,
+        "bytes": 1920,
+        "gram_residual": 9.837142614607811e-20,
+        "suffixes": 7
+      }
+    },
+    {
+      "case": "rank_deficient_suffix",
+      "all_suffixes": 7,
+      "maximum_independent_gram_error": 0.0,
+      "setup": {
+        "seconds": 1.4800003555137664e-05,
+        "bytes": 1920,
+        "gram_residual": 0.0,
+        "suffixes": 7
+      }
+    },
+    {
+      "case": "zero_suffix",
+      "all_suffixes": 5,
+      "maximum_independent_gram_error": 0.0,
+      "setup": {
+        "seconds": 1.0000003385357559e-05,
+        "bytes": 832,
+        "gram_residual": 0.0,
+        "suffixes": 5
+      }
+    }
+  ],
+  "replays": [
+    {
+      "sector": 0,
+      "equal_clicks": true,
+      "equal_errors": true,
+      "equal_probabilities": true,
+      "equal_fit_counters": true,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "sector": 1,
+      "equal_clicks": true,
+      "equal_errors": true,
+      "equal_probabilities": true,
+      "equal_fit_counters": true,
+      "maximum_probability_difference": 0.0
+    }
+  ],
+  "scope": "Independently reconstruct every packed suffix Gram; compare full replay paths.\nNo replay record is counted as new quality data. The superseded v1 rotation is\npreserved and explicitly tested to demonstrate its adjoint-sign defect.\n"
+}

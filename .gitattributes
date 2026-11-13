@@ -723,3 +723,16 @@ results/iteration90*.json -text -whitespace
 native/*90* -text -whitespace
 tests/test_native_optical90.py -text -whitespace
 tests/test_native_parity90.py -text -whitespace
+
+# Iteration91 compact suffix and finite-core evidence.
+RESEARCH_REPORT_ITERATION91.md -text -whitespace
+research/iteration91*.json -text -whitespace
+research/iteration92*.md -text -whitespace
+experiments/iteration91*.py -text -whitespace
+experiments/verify_iteration91*.py -text -whitespace
+results/iteration91*/** -text -whitespace
+results/iteration91*.json -text -whitespace
+native/*91* -text -whitespace
+tests/test_native_optical91.py -text -whitespace
+tests/test_native_fock91.py -text -whitespace
+tests/test_native_sparse91.py -text -whitespace

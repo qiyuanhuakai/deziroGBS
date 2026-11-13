@@ -1,0 +1,24 @@
+{
+  "job": {
+    "name": "compact16",
+    "kind": "click",
+    "budget": 16,
+    "records": 8192,
+    "pilot_records": 1024,
+    "experiment": "0x91004001",
+    "reused": false,
+    "events": 8
+  },
+  "scope": "Fixed8192 full dual-spectrum optical-space quality records, purpose5.\nOne immutable suffix cache is shared across the two identical optical maps.\n",
+  "hashes": {
+    "experiments/iteration91_quality_v1.py": "aec1b585356bda577c7e9180948aa173d91ce4575bf3d2314e5b8787b1d5b53a",
+    "experiments/iteration91_common_v1.py": "cb6bb8dc4afc9ed77e6cbb61fd52f8dc0bbd65b03becb2a2e3cf5d835a77a007",
+    "native/gaussian_click_compact91_v2.cpp": "481c8eafdcf8352c884ff5232cfa0c3540571f2243cd6594ac7ff1b07bb9fc3c",
+    "results/iteration91_build_v2/optical.dll": "1660e395ff7343b5da9d16b8a67c061e0e6b49216df1e6f190fa27b93bf7e68e",
+    "research/iteration91_quality_plan.json": "72a9c3e07a01a8dfe99364fa1ef66fda7114f552b069cd40bac10b7ba2913deb",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration91_optical_gates_v1/summary.json": "b8deabb02153bb29bb9fe8d27870f5584361fad3a53ff4adac664203b7e0a83d"
+  },
+  "threads": 16,
+  "batch": 64
+}

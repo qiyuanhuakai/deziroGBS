@@ -1,0 +1,745 @@
+{
+  "passed": true,
+  "projection_comparisons": {
+    "optical_to_compact_cdf_error_ratio_lower": 0.8108628525950545,
+    "block_to_compact_cdf_error_ratio_lower": 1.0562624109081555,
+    "block_to_optical_cdf_error_ratio_lower": 1.0917350520318359,
+    "canonical_to_optical_cdf_error_ratio_lower": 0.8745770895573466,
+    "scope": "A lower ratio above1 proves improvement only in experimental total-click CDF distance within this61-event family."
+  },
+  "rows": {
+    "pnr3": {
+      "records": 32768,
+      "pilot_records": 2048,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.00967631718637091,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.02120871839430983,
+          "upper_radius": 0.011532401207938917,
+          "lower_radius": 0.011910612752034594,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 4.94695940695955e-05
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.01425963532193757,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.025792036529876487,
+          "upper_radius": 0.011532401207938917,
+          "lower_radius": 0.011910612752034594,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": -0.0019854073769567937
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.012309412288145097,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.023841813496084014,
+          "upper_radius": 0.011532401207938917,
+          "lower_radius": 0.011910612752034594,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": -0.0005823112467118197
+        }
+      ],
+      "optical_pnr": [
+        {
+          "pair": [
+            0,
+            143
+          ],
+          "maximum_photons_per_mode": 64,
+          "empirical_coarsened_tv": 0.010951643602159215,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.022484044810902187,
+          "upper_radius": 0.011532401207938917,
+          "lower_radius": 0.011910612752034594,
+          "target_tail_upper": 8.040559471208632e-13,
+          "validation_event_gap": 0.001358064779361845
+        },
+        {
+          "pair": [
+            142,
+            143
+          ],
+          "maximum_photons_per_mode": 64,
+          "empirical_coarsened_tv": 0.010371586241995915,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.021903987450738835,
+          "upper_radius": 0.011532401207938917,
+          "lower_radius": 0.011910612752034594,
+          "target_tail_upper": 8.040009722178026e-13,
+          "validation_event_gap": 0.00303476208756423
+        }
+      ],
+      "photon_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "empirical_cdf_distance": 0.006696190697522142,
+          "nominal_joint99_cdf_lower": 0.0,
+          "nominal_joint99_cdf_upper": 0.018678380156811367,
+          "dkw_radius": 0.011982189459289225,
+          "reference_tail_upper": 1.0383178398691407e-51
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "empirical_cdf_distance": 0.0032338388315686917,
+          "nominal_joint99_cdf_lower": 0.0,
+          "nominal_joint99_cdf_upper": 0.015216028290857917,
+          "dkw_radius": 0.011982189459289225,
+          "reference_tail_upper": 3.7194225283199995e-30
+        }
+      ],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 32768,
+          "mean": 103.99899291992188,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.011982189459289225,
+          "lower": 0.0
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 32768,
+          "mean": 10.0914306640625,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.011982189459289225,
+          "lower": 0.0
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.04047482481526987,
+        "nominal_joint99_cdf_lower": 0.02671728806855428,
+        "nominal_joint99_cdf_upper": 0.054232361561985465,
+        "sample_dkw_radius": 0.011982189459289225,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    },
+    "pnr5": {
+      "records": 16384,
+      "pilot_records": 1024,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.013197130101588527,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.02950640829658361,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.0032982640096309024
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.026308874405974184,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.04261815260096927,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.0031287911561319603
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.01865795315374015,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.034967231348735237,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.0025239836153242434
+        }
+      ],
+      "optical_pnr": [
+        {
+          "pair": [
+            0,
+            143
+          ],
+          "maximum_photons_per_mode": 64,
+          "empirical_coarsened_tv": 0.01613051926058246,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.0324397974563816,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 8.040559471208632e-13,
+          "validation_event_gap": 0.004744140551330878
+        },
+        {
+          "pair": [
+            142,
+            143
+          ],
+          "maximum_photons_per_mode": 64,
+          "empirical_coarsened_tv": 0.0159217247033581,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.03223100289915718,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 8.040009722178026e-13,
+          "validation_event_gap": -0.004653698285198349
+        }
+      ],
+      "photon_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "empirical_cdf_distance": 0.004658558469611052,
+          "nominal_joint99_cdf_lower": 0.0,
+          "nominal_joint99_cdf_upper": 0.021603933309861816,
+          "dkw_radius": 0.016945374840250764,
+          "reference_tail_upper": 1.0383178398691407e-51
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "empirical_cdf_distance": 0.006869681498704594,
+          "nominal_joint99_cdf_lower": 0.0,
+          "nominal_joint99_cdf_upper": 0.023815056338955358,
+          "dkw_radius": 0.016945374840250764,
+          "reference_tail_upper": 3.7194225283199995e-30
+        }
+      ],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 16384,
+          "mean": 103.97125244140625,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.016945374840250764,
+          "lower": 0.0
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 16384,
+          "mean": 10.09539794921875,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.016945374840250764,
+          "lower": 0.0
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.04257463190491784,
+        "nominal_joint99_cdf_lower": 0.023853909777240705,
+        "nominal_joint99_cdf_upper": 0.06129535403259497,
+        "sample_dkw_radius": 0.016945374840250764,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    },
+    "block16": {
+      "records": 8192,
+      "pilot_records": 1024,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.019339642836741736,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.04240444525261957,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.003627107485825398
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.08221917609832038,
+          "nominal_joint99_tv_lower": 0.02424039870608139,
+          "nominal_joint99_tv_upper": 0.10528397851419821,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.04889770965861018
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.053226787857632865,
+          "nominal_joint99_tv_lower": 0.009459428399345084,
+          "nominal_joint99_tv_upper": 0.0762915902735107,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.03411673935187387
+        }
+      ],
+      "optical_pnr": [],
+      "photon_regions": [],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 8192,
+          "mean": 92.1846923828125,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.12360821389486293,
+          "direction": "increasing",
+          "clip_lower": 69,
+          "clip_upper": 111,
+          "reference_expectation_lower": 0.6495896594057032,
+          "empirical_expectation": 0.5020170665922619
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 8192,
+          "mean": 7.526123046875,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.14855810735760938,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.6240470088456322,
+          "empirical_expectation": 0.4515245225694444
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.2782083634502509,
+        "nominal_joint99_cdf_lower": 0.2524686372442461,
+        "nominal_joint99_cdf_upper": 0.3039480896562557,
+        "sample_dkw_radius": 0.02396437891857845,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    },
+    "physical16": {
+      "records": 8192,
+      "pilot_records": 1024,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.02137387468294612,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.04443867709882396,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.002877312522213016
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.05224553511242358,
+          "nominal_joint99_tv_lower": 0.0026615569110624918,
+          "nominal_joint99_tv_upper": 0.07531033752830141,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.02731886786359128
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.036416848713017855,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.05948165112889569,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": -0.016799042301999134
+        }
+      ],
+      "optical_pnr": [],
+      "photon_regions": [],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 8192,
+          "mean": 96.1990966796875,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.07339339966186559,
+          "direction": "increasing",
+          "clip_lower": 67,
+          "clip_upper": 111,
+          "reference_expectation_lower": 0.6655174021599894,
+          "empirical_expectation": 0.5681596235795454
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 8192,
+          "mean": 8.2933349609375,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.1043822176006649,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.6240470088456322,
+          "empirical_expectation": 0.4957004123263889
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.22798960867945267,
+        "nominal_joint99_cdf_lower": 0.20224988247344786,
+        "nominal_joint99_cdf_upper": 0.25372933488545746,
+        "sample_dkw_radius": 0.02396437891857845,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    },
+    "optical16": {
+      "records": 16384,
+      "pilot_records": 1024,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.016865783842378232,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.03317506203737332,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": -0.002553284901825381
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.05350587756120404,
+          "nominal_joint99_tv_lower": 0.018327716272792678,
+          "nominal_joint99_tv_upper": 0.06981515575619912,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.03517186636289393
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.03263735057573593,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.04894662877073101,
+          "upper_radius": 0.016309278194995083,
+          "lower_radius": 0.016844150090101255,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.010205242513248947
+        }
+      ],
+      "optical_pnr": [],
+      "photon_regions": [],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 16384,
+          "mean": 96.496337890625,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.016945374840250764,
+          "lower": 0.07193923301268051,
+          "direction": "increasing",
+          "clip_lower": 66,
+          "clip_upper": 112,
+          "reference_expectation_lower": 0.665516900227252,
+          "empirical_expectation": 0.5766322923743207
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 16384,
+          "mean": 8.21624755859375,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.016945374840250764,
+          "lower": 0.11441907107135368,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.6240470088456322,
+          "empirical_expectation": 0.4926825629340278
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.21253377205969454,
+        "nominal_joint99_cdf_lower": 0.1938130499320174,
+        "nominal_joint99_cdf_upper": 0.23125449418737168,
+        "sample_dkw_radius": 0.016945374840250764,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    },
+    "compact16": {
+      "records": 8192,
+      "pilot_records": 1024,
+      "failed_records": 0,
+      "local_click": [
+        {
+          "group": 0,
+          "empirical_coarsened_tv": 0.023120768332386455,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.04618557074826429,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.002770249791349627
+        },
+        {
+          "group": 1,
+          "empirical_coarsened_tv": 0.06484814650903015,
+          "nominal_joint99_tv_lower": 0.006866316264296547,
+          "nominal_joint99_tv_upper": 0.08791294892490797,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.031523627216825334
+        },
+        {
+          "group": 2,
+          "empirical_coarsened_tv": 0.04244037339949492,
+          "nominal_joint99_tv_lower": 0.0,
+          "nominal_joint99_tv_upper": 0.06550517581537275,
+          "upper_radius": 0.023064802415877834,
+          "lower_radius": 0.024657310952528787,
+          "target_tail_upper": 0.0,
+          "validation_event_gap": 0.009369383088834837
+        }
+      ],
+      "optical_pnr": [],
+      "photon_regions": [],
+      "click_regions": [
+        {
+          "first": 0,
+          "end": 1152,
+          "records": 8192,
+          "mean": 96.267333984375,
+          "reference_mean": 103.89578381576854,
+          "reference_variance": 448.17028580271403,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.06487644284399957,
+          "direction": "increasing",
+          "clip_lower": 66,
+          "clip_upper": 112,
+          "reference_expectation_lower": 0.665516900227252,
+          "empirical_expectation": 0.576676078464674
+        },
+        {
+          "first": 1024,
+          "end": 1152,
+          "records": 8192,
+          "mean": 8.2081298828125,
+          "reference_mean": 10.08320669687702,
+          "reference_variance": 19.851900778350018,
+          "dkw_radius": 0.02396437891857845,
+          "lower": 0.10662017332983159,
+          "direction": "increasing",
+          "clip_lower": 3,
+          "clip_upper": 12,
+          "reference_expectation_lower": 0.6240470088456322,
+          "empirical_expectation": 0.4934624565972222
+        }
+      ],
+      "experimental_click_count": {
+        "empirical_cdf_distance": 0.21328102719482678,
+        "nominal_joint99_cdf_lower": 0.18754130098882196,
+        "nominal_joint99_cdf_upper": 0.2390207534008316,
+        "sample_dkw_radius": 0.02396437891857845,
+        "experimental_dkw_radius": 0.0017753472874263685,
+        "experimental_records": 1492642
+      }
+    }
+  },
+  "frugal_comparisons": [
+    {
+      "method": "pnr3",
+      "group": 0,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.00046953066633352965,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02120871839430983,
+      "error_ratio_lower": 0.02213856856430806,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 0,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.00046953066633352965,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02950640829658361,
+      "error_ratio_lower": 0.015912837022183216,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 0,
+      "cutoff": 3,
+      "frugal_standalone_tv": 2.8893158483102885e-05,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02120871839430983,
+      "error_ratio_lower": 0.0013623245849147935,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 0,
+      "cutoff": 3,
+      "frugal_standalone_tv": 2.8893158483102885e-05,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02950640829658361,
+      "error_ratio_lower": 0.0009792163855621922,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 0,
+      "cutoff": 5,
+      "frugal_standalone_tv": 9.091554155169702e-08,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02120871839430983,
+      "error_ratio_lower": 4.286706054623702e-06,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 0,
+      "cutoff": 5,
+      "frugal_standalone_tv": 9.091554155169702e-08,
+      "pnr_full_trajectory_marginal_tv_upper": 0.02950640829658361,
+      "error_ratio_lower": 3.0812134312607493e-06,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 1,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.18663578612416165,
+      "pnr_full_trajectory_marginal_tv_upper": 0.025792036529876487,
+      "error_ratio_lower": 7.236178729351987,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 1,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.18663578612416165,
+      "pnr_full_trajectory_marginal_tv_upper": 0.04261815260096927,
+      "error_ratio_lower": 4.379255662994575,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 1,
+      "cutoff": 3,
+      "frugal_standalone_tv": 0.11268119749524683,
+      "pnr_full_trajectory_marginal_tv_upper": 0.025792036529876487,
+      "error_ratio_lower": 4.368836767299136,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 1,
+      "cutoff": 3,
+      "frugal_standalone_tv": 0.11268119749524683,
+      "pnr_full_trajectory_marginal_tv_upper": 0.04261815260096927,
+      "error_ratio_lower": 2.6439718903414904,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 1,
+      "cutoff": 5,
+      "frugal_standalone_tv": 0.03895521359155603,
+      "pnr_full_trajectory_marginal_tv_upper": 0.025792036529876487,
+      "error_ratio_lower": 1.510358189297376,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 1,
+      "cutoff": 5,
+      "frugal_standalone_tv": 0.03895521359155603,
+      "pnr_full_trajectory_marginal_tv_upper": 0.04261815260096927,
+      "error_ratio_lower": 0.9140521400890115,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 2,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.0001277980705442687,
+      "pnr_full_trajectory_marginal_tv_upper": 0.023841813496084014,
+      "error_ratio_lower": 0.005360249570162076,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 2,
+      "cutoff": 2,
+      "frugal_standalone_tv": 0.0001277980705442687,
+      "pnr_full_trajectory_marginal_tv_upper": 0.034967231348735237,
+      "error_ratio_lower": 0.003654795235851327,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 2,
+      "cutoff": 3,
+      "frugal_standalone_tv": 1.2633772886174642e-05,
+      "pnr_full_trajectory_marginal_tv_upper": 0.023841813496084014,
+      "error_ratio_lower": 0.0005298998286455736,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 2,
+      "cutoff": 3,
+      "frugal_standalone_tv": 1.2633772886174642e-05,
+      "pnr_full_trajectory_marginal_tv_upper": 0.034967231348735237,
+      "error_ratio_lower": 0.0003613032087149103,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr3",
+      "group": 2,
+      "cutoff": 5,
+      "frugal_standalone_tv": 1.4266732897219494e-08,
+      "pnr_full_trajectory_marginal_tv_upper": 0.023841813496084014,
+      "error_ratio_lower": 5.98391263297265e-07,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    },
+    {
+      "method": "pnr5",
+      "group": 2,
+      "cutoff": 5,
+      "frugal_standalone_tv": 1.4266732897219494e-08,
+      "pnr_full_trajectory_marginal_tv_upper": 0.034967231348735237,
+      "error_ratio_lower": 4.080029315142081e-07,
+      "scope": "Standalone eight-mode Frugal task; not a marginal accuracy assertion about full Frugal1152 trajectories."
+    }
+  ],
+  "direct_to_pnr_experimental_error_ratio_lower": {
+    "block16": 4.65531335853196,
+    "physical16": 3.7293209561284577,
+    "optical16": 3.5737527253076866,
+    "compact16": 3.45810684962464
+  },
+  "confidence": {
+    "events": 61,
+    "delta_per_event": 0.0001639344262295082,
+    "joint_failure_budget": 0.01
+  },
+  "scope": "One nominal61-event99 family: two reused PNR and four direct-click jobs.\nAll new sample sizes fixed before fresh sampling. Reused records stay reused. Replaying\nPNR changes neither sample size nor input state. Numerical references remain\nuncertified floats; none of the local upper bounds bounds the full1152-bit law.\n",
+  "limitations": [
+    "Nominal concentration assumes iid; disjoint PRNG domains alone do not prove iid.",
+    "Numerical references are not certified state intervals.",
+    "No whole1152-output pattern TV upper bound.",
+    "PNR3, PNR5, block16, physical16 and optical16 are frozen reused records.",
+    "Small-PNR88 confidence is not in this family; crossing them gives at least98 percent."
+  ]
+}

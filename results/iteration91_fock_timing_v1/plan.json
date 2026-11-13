@@ -1,0 +1,16 @@
+{
+  "scope": "Serial finite-core cold/warm timings; table construction and sampling separated.\nThese 3/4-mode conditional tasks do not represent full1152-mode GBS throughput.\nPrepared explicit uniforms are excluded; cold builds one whole cutoff table per\ncall, warm uses the same fixed table. Python allocation and C++ work included.\n",
+  "hashes": {
+    "experiments/iteration91_fock_timing_v1.py": "ffd57913527326e1eddfee353d2dc9abbf265a07e54f45654cee927341ff7757",
+    "results/iteration91_fock_build_v1/fock.dll": "2529b00647d3d229bcc1093a9033b4bcc1b80b37068df03279ba16f999d6ad04",
+    "results/iteration91_fock_quality_v1/summary.json": "ff45571a5708f2acc58f36e7058b787f182079565acf5142e91c5ad949eadc7b",
+    "results/iteration91_fock_quality_v1/input_0.npz": "f883600ad934f0253e1f9b3a5cc858be85fb10244c41876cdb81087e0c82b036",
+    "results/iteration91_fock_quality_v1/input_1.npz": "461be117ce91895da0d296ed39c213cd868b7fe9be85c02eb697f905ab3ce69b"
+  },
+  "records": [
+    1,
+    64,
+    65536
+  ],
+  "repetitions": 3
+}

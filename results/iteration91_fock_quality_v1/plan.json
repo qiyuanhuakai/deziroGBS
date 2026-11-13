@@ -1,0 +1,38 @@
+{
+  "scope": "Complete finite-occupation PNR laws after complex passive mixing.\nPositive lattice mixtures preserve the input mean exactly. All mass beyond\nthe frozen total-photon cutoff is retained in analytic error brackets; no\nrenormalization. These are conditional U S2(r)|k,0> families, not general GBS.\n",
+  "hashes": {
+    "experiments/iteration91_fock_quality_v1.py": "6a7f84eb7b8fbee598bd3bd85d440f7692bb851a03fe9d6c2055867831707ce6",
+    "experiments/iteration91_fock_common_v1.py": "b3c1768bfc7f5bd8a85135f293b4d332aa9876bb9f59b0d4590550957beea2b5",
+    "results/iteration91_fock_build_v1/fock.dll": "2529b00647d3d229bcc1093a9033b4bcc1b80b37068df03279ba16f999d6ad04"
+  },
+  "cases": [
+    {
+      "modes": 3,
+      "r": 0.6,
+      "cutoff": 64
+    },
+    {
+      "modes": 4,
+      "r": 0.3,
+      "cutoff": 32
+    }
+  ],
+  "targets": [
+    4,
+    6
+  ],
+  "lattices": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "reference_digits": 100,
+  "sample_records": 65536,
+  "experiments": [
+    "0x91005001",
+    "0x91005002"
+  ],
+  "purpose": 5
+}
