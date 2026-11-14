@@ -1,0 +1,131 @@
+{
+  "scope": "Fixed feasibility grid before quality choices, including the actual50-input task.\nNo pilot sample will be included in subsequent confidence estimates.\n",
+  "cases": [
+    {
+      "case": 0,
+      "name": "pure4",
+      "count": 64,
+      "cap": 64,
+      "configs": [
+        [
+          4,
+          4,
+          0.05
+        ],
+        [
+          6,
+          16,
+          0.01
+        ]
+      ],
+      "inputs": 4,
+      "outputs": 4,
+      "mean_photons": 0.3825275642545821,
+      "experiment": 2466263040
+    },
+    {
+      "case": 1,
+      "name": "displaced4",
+      "count": 64,
+      "cap": 64,
+      "configs": [
+        [
+          4,
+          4,
+          0.05
+        ],
+        [
+          6,
+          16,
+          0.01
+        ]
+      ],
+      "inputs": 4,
+      "outputs": 4,
+      "mean_photons": 0.47279846609923804,
+      "experiment": 2466263041
+    },
+    {
+      "case": 2,
+      "name": "rank8",
+      "count": 16,
+      "cap": 64,
+      "configs": [
+        [
+          4,
+          8,
+          0.02
+        ]
+      ],
+      "inputs": 8,
+      "outputs": 16,
+      "mean_photons": 0.7394236599867174,
+      "experiment": 2466263042
+    },
+    {
+      "case": 3,
+      "name": "rank16",
+      "count": 8,
+      "cap": 64,
+      "configs": [
+        [
+          4,
+          8,
+          0.02
+        ]
+      ],
+      "inputs": 16,
+      "outputs": 64,
+      "mean_photons": 1.4583952191673246,
+      "experiment": 2466263043
+    },
+    {
+      "case": 4,
+      "name": "actual1152_sector0",
+      "count": 2,
+      "cap": 256,
+      "configs": [
+        [
+          4,
+          8,
+          0.02
+        ],
+        [
+          6,
+          16,
+          0.02
+        ]
+      ],
+      "inputs": 50,
+      "outputs": 1152,
+      "mean_photons": 113.1326235957207,
+      "experiment": 2466263044
+    },
+    {
+      "case": 5,
+      "name": "actual1152_sector1",
+      "count": 2,
+      "cap": 256,
+      "configs": [
+        [
+          4,
+          8,
+          0.02
+        ],
+        [
+          6,
+          16,
+          0.02
+        ]
+      ],
+      "inputs": 50,
+      "outputs": 1152,
+      "mean_photons": 3.153501571619639,
+      "experiment": 2466263045
+    }
+  ],
+  "source_sha256": "02ae80d939e8fcc91ed65c070dc67181f7ac27d9e0a42de873b828d5d8728913",
+  "native_sha256": "2d39759ee7f584b65506db6a0d7e2cf9e72ee4d84245581ca17502e58bf49b88",
+  "library_sha256": "1e7df230cdb2e0c2ad2e06129d531edca2962907b95ad348a20a7bafa8140f74",
+  "common_random_numbers_across_configs": true
+}

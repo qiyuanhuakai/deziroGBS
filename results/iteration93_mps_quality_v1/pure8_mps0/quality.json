@@ -1,0 +1,33 @@
+{
+  "job": {
+    "name": "pure8_mps0",
+    "case": 2,
+    "family": "mps",
+    "d": 4,
+    "bond": 8,
+    "budget": 0.05,
+    "id": 15,
+    "records": 65536,
+    "experiment": 2466316303,
+    "threads": 16,
+    "batch_size": 512
+  },
+  "failures": 262,
+  "click": {
+    "empirical_tv": 0.011086449731641797,
+    "lower": 0.0,
+    "upper": 0.01951648675380855
+  },
+  "total_cdf": {
+    "empirical_distance": 0.003997802734374889,
+    "lower": 0.0,
+    "upper": 0.012735869883568555,
+    "radius": 0.008738067149193667
+  },
+  "failure_probability_upper": 0.005004231708187237,
+  "ideal_arithmetic_compression_tv_upper": 0.05500423170818724,
+  "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+  "maximum_charged": 0.04997624690239492,
+  "maximum_bond": 8,
+  "seconds": 2.3805772999985493
+}

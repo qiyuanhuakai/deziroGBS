@@ -1,0 +1,92 @@
+{
+  "scope": "Resource/parameter pilot, never used as independent formal quality data.\nCommon control records across configurations are deliberate paired probes.\nAll failures retained. One native worker and one BLAS thread.\n",
+  "cases": [
+    {
+      "name": "pure4",
+      "N": 32,
+      "configs": [
+        [
+          6,
+          16,
+          0.02
+        ],
+        [
+          8,
+          32,
+          0.02
+        ],
+        [
+          10,
+          64,
+          0.01
+        ]
+      ]
+    },
+    {
+      "name": "displaced4",
+      "N": 32,
+      "configs": [
+        [
+          6,
+          16,
+          0.02
+        ],
+        [
+          8,
+          32,
+          0.02
+        ],
+        [
+          10,
+          64,
+          0.01
+        ]
+      ]
+    },
+    {
+      "name": "pure8",
+      "N": 16,
+      "configs": [
+        [
+          4,
+          8,
+          0.05
+        ],
+        [
+          6,
+          16,
+          0.05
+        ],
+        [
+          8,
+          32,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "actual_main50",
+      "N": 1,
+      "configs": [
+        [
+          6,
+          32,
+          0.1
+        ],
+        [
+          6,
+          16,
+          0.2
+        ]
+      ]
+    }
+  ],
+  "experiment_base": 2466275328,
+  "threads": 1,
+  "cap": 256,
+  "hashes": {
+    "experiments/iteration93_general_pilot_v1.py": "475c4351357de3d7de7d9366a36c0a707d083ebadace0f96d26b6e5f878c30fc",
+    "native/gaussian_mps_core93_v4.cpp": "4a692cc0964b7fd946eb664cdaa5fed11fc9093a66963ce8bc20d4b13ef0020a",
+    "results/iteration93_build_v4/mps.dll": "643f305061075118f0718fdb4022f053369f0bbe02767bf77de24c696457ceaf"
+  }
+}

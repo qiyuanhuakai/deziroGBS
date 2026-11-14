@@ -1,0 +1,594 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_r3",
+        "case": 0,
+        "family": "old",
+        "depth": 3,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2466316290,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.020150299998931587
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.003587400002288632,
+      "wall_seconds_including_rng": 0.0036758999995072372,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_r5",
+        "case": 0,
+        "family": "old",
+        "depth": 5,
+        "id": 3,
+        "records": 65536,
+        "experiment": 2466316291,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.021952800001599826
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.012885899996035732,
+      "wall_seconds_including_rng": 0.012975199999345932,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_pe",
+        "case": 0,
+        "family": "pe",
+        "id": 4,
+        "records": 65536,
+        "experiment": 2466316292,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "input_bargmann_error": 0.0,
+        "loss": null,
+        "implementation": "v2",
+        "window": 4,
+        "device": "cpu",
+        "threads": 1,
+        "setup_seconds": 3.1160283999997773
+      },
+      "seed": 2466287620,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 6.699301426372945e-15,
+      "wall_seconds_including_rng": 0.009013500006403774,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_frugal2",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 5,
+        "records": 65536,
+        "experiment": 2466316293,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0036407000006875023
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287621,
+      "wall_seconds_including_rng": 0.0002890999967348762,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_frugal3",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 6,
+        "records": 65536,
+        "experiment": 2466316294,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0007996000058483332
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287622,
+      "wall_seconds_including_rng": 0.0001438000035705045,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_frugal4",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 7,
+        "records": 65536,
+        "experiment": 2466316295,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0006133999995654449
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287623,
+      "wall_seconds_including_rng": 0.00012350000179139897,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_direct4",
+        "case": 0,
+        "family": "direct",
+        "budget": 4,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2466316296,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 1.8200000340584666e-05,
+          "bytes": 960,
+          "gram_residual": 7.499630544100598e-20,
+          "suffixes": 4
+        },
+        "setup_seconds": 0.016960600005404558
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.0021084999971208163,
+      "wall_seconds_including_rng": 0.016622600000118837,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2466316297,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 1.4099998224992305e-05,
+          "bytes": 960,
+          "gram_residual": 7.499630544100598e-20,
+          "suffixes": 4
+        },
+        "setup_seconds": 0.018546999999671243
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.001562499994179234,
+      "wall_seconds_including_rng": 0.017154300003312528,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "displaced4_r3",
+        "case": 1,
+        "family": "old",
+        "depth": 3,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2466316300,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.01816569999937201
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.008495100002619438,
+      "wall_seconds_including_rng": 0.008594799997808877,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "displaced4_r5",
+        "case": 1,
+        "family": "old",
+        "depth": 5,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2466316301,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.016528599997400306
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.0049633000016910955,
+      "wall_seconds_including_rng": 0.005032000000937842,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "displaced4_pe",
+        "case": 1,
+        "family": "pe",
+        "id": 14,
+        "records": 65536,
+        "experiment": 2466316302,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "input_bargmann_error": 0.0,
+        "loss": null,
+        "implementation": "v2",
+        "window": 4,
+        "device": "cpu",
+        "threads": 1,
+        "setup_seconds": 0.0008163000020431355
+      },
+      "seed": 2466287630,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 1.0028239442614726e-11,
+      "wall_seconds_including_rng": 0.04769829999713693,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_r3",
+        "case": 2,
+        "family": "old",
+        "depth": 3,
+        "id": 17,
+        "records": 65536,
+        "experiment": 2466316305,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.018372200000158045
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.0019838000007439405,
+      "wall_seconds_including_rng": 0.0020296000002417713,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_r5",
+        "case": 2,
+        "family": "old",
+        "depth": 5,
+        "id": 18,
+        "records": 65536,
+        "experiment": 2466316306,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.01706900000135647
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.001803500003006775,
+      "wall_seconds_including_rng": 0.001876299997093156,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_pe",
+        "case": 2,
+        "family": "pe",
+        "id": 19,
+        "records": 65536,
+        "experiment": 2466316307,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "input_bargmann_error": 3.273069708340169e-17,
+        "loss": null,
+        "implementation": "v2",
+        "window": 4,
+        "device": "cpu",
+        "threads": 1,
+        "setup_seconds": 0.0006556999942404218
+      },
+      "seed": 2466287635,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 9.98626019248469e-16,
+      "wall_seconds_including_rng": 0.010243899996567052,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_frugal2",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 20,
+        "records": 65536,
+        "experiment": 2466316308,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0012867000041296706
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287636,
+      "wall_seconds_including_rng": 0.0002027000009547919,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_frugal3",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 21,
+        "records": 65536,
+        "experiment": 2466316309,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0009844000014709309
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287637,
+      "wall_seconds_including_rng": 0.0003339000031701289,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_frugal5",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 5,
+        "id": 22,
+        "records": 65536,
+        "experiment": 2466316310,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0007224000000860542
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287638,
+      "wall_seconds_including_rng": 0.0021265999966999516,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_direct4",
+        "case": 2,
+        "family": "direct",
+        "budget": 4,
+        "id": 23,
+        "records": 65536,
+        "experiment": 2466316311,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 7.220000406960025e-05,
+          "bytes": 6528,
+          "gram_residual": 1.5970255764097703e-19,
+          "suffixes": 8
+        },
+        "setup_seconds": 0.017258799998671748
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.0033492000002297573,
+      "wall_seconds_including_rng": 0.0181972999998834,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 24,
+        "records": 65536,
+        "experiment": 2466316312,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 6.84000042383559e-05,
+          "bytes": 6528,
+          "gram_residual": 1.5970255764097703e-19,
+          "suffixes": 8
+        },
+        "setup_seconds": 0.016309599996020552
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.003944699994463008,
+      "wall_seconds_including_rng": 0.019388600005186163,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r3",
+        "case": 3,
+        "family": "old",
+        "depth": 3,
+        "id": 27,
+        "records": 65536,
+        "experiment": 2466316315,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.01936289999866858
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.004273099999409169,
+      "wall_seconds_including_rng": 0.004338799997640308,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r5",
+        "case": 3,
+        "family": "old",
+        "depth": 5,
+        "id": 28,
+        "records": 65536,
+        "experiment": 2466316316,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.021844499999133404
+      },
+      "returncode": 0,
+      "error": "",
+      "failed": 0,
+      "seconds": 0.012841999996453524,
+      "wall_seconds_including_rng": 0.012904100003652275,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_pe",
+        "case": 3,
+        "family": "pe",
+        "id": 29,
+        "records": 65536,
+        "experiment": 2466316317,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "input_bargmann_error": 2.4441028507322888e-17,
+        "loss": 0.8,
+        "implementation": "v2",
+        "window": 4,
+        "device": "cpu",
+        "threads": 1,
+        "setup_seconds": 0.0015314999982365407
+      },
+      "seed": 2466287645,
+      "max_norm_relative_error": 0.0,
+      "max_round_off": 1.023845294315633e-14,
+      "wall_seconds_including_rng": 0.008005799994862173,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_frugal4",
+        "case": 3,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 30,
+        "records": 65536,
+        "experiment": 2466316318,
+        "threads": 1,
+        "batch_size": 2048
+      },
+      "setup": {
+        "setup_seconds": 0.0006752999979653396
+      },
+      "returncode": 0,
+      "error": "",
+      "seed": 2466287646,
+      "wall_seconds_including_rng": 0.00013159999798517674,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct4",
+        "case": 3,
+        "family": "direct",
+        "budget": 4,
+        "id": 31,
+        "records": 65536,
+        "experiment": 2466316319,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 1.1199997970834374e-05,
+          "bytes": 160,
+          "gram_residual": 7.100756044520728e-20,
+          "suffixes": 2
+        },
+        "setup_seconds": 0.016059100002166815
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.001123199996072799,
+      "wall_seconds_including_rng": 0.015778300003148615,
+      "failures": 0
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 32,
+        "records": 65536,
+        "experiment": 2466316320,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "setup": {
+        "cache": {
+          "seconds": 2.2100000933278352e-05,
+          "bytes": 160,
+          "gram_residual": 7.100756044520728e-20,
+          "suffixes": 2
+        },
+        "setup_seconds": 0.016649499993945938
+      },
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.0009437000044272281,
+      "wall_seconds_including_rng": 0.015047699998831376,
+      "failures": 0
+    }
+  ]
+}

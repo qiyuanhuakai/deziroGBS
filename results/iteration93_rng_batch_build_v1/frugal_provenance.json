@@ -1,0 +1,9 @@
+{
+  "hashes": {
+    "results/iteration75_frugal_cpu_build_v1/include/fgbs/cpu/cpu_sampler.hpp": "f19ac9d55fee1d778a18fd9c0b9c91efb675bd2814e6673f6db74e69a292bc9a",
+    "results/iteration75_frugal_cpu_build_v1/include/fgbs/core/random_utils.hpp": "e8c208798153160c7eac61c0a51f2144821d39902b9f63894cd8236d0d65ff2e",
+    "results/iteration75_frugal_cpu_build_v1/include/fgbs/core/random_simd.hpp": "2211f79888175e2921b04c96319d60b601f6550c6e8105b55c36d9ef69db9861",
+    "results/iteration75_frugal_cpu_build_v1/include/fgbs/core/type_utils.hpp": "2df6e4c96dd1590067f2d2c17d1bc170c496d068e9da53cbd6d802b9be0c5dec"
+  },
+  "mapping": "UniformRandomInt<size_t>(seed,0,ULLONG_MAX), mt19937_64, first word narrowed to unsigned int; one worker. SIMD lanes consume successive values from that same advancing engine."
+}

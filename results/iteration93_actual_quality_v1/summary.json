@@ -1,0 +1,33 @@
+{
+  "completed": true,
+  "job": {
+    "name": "actual_1152_dual",
+    "family": "actual",
+    "records": 64,
+    "experiment": 2466381824,
+    "threads": 16,
+    "batch_size": 16,
+    "d": 6,
+    "bond": 32,
+    "budgets": [
+      0.1,
+      0.01
+    ],
+    "cap": 256
+  },
+  "failures": 15,
+  "failure_upper": 0.4696320634569316,
+  "ideal_arithmetic_compression_tv_upper": 0.5796320634569316,
+  "cdf": {
+    "empirical_distance": 0.245619850655156,
+    "lower": 0.0,
+    "upper": 0.5252379994293533,
+    "radius": 0.27961814877419733
+  },
+  "seconds": 1398.4321409999975,
+  "maximum_charged": [
+    0.09990584686498945,
+    0.0016065616033973929
+  ],
+  "scope": "Fixed64 full 1152-port dual-spectrum records; no failed-record deletion.\nCount CDF is scoped separately from full-PNR TV. An ideal-arithmetic bound\ncombines the two configured truncation budgets and the failure probability.\nThis does not certify floating-point and root-solving errors.\n"
+}

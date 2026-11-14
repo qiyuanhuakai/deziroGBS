@@ -1,0 +1,32 @@
+{
+  "job": {
+    "name": "displaced4_mps0",
+    "case": 1,
+    "family": "mps",
+    "d": 8,
+    "bond": 32,
+    "budget": 0.02,
+    "id": 10,
+    "records": 65536,
+    "experiment": 2466316298,
+    "threads": 16,
+    "batch_size": 512
+  },
+  "failures": 329,
+  "click": {
+    "empirical_tv": 0.00824972921492875,
+    "lower": 0.0,
+    "upper": 0.0166797662370955
+  },
+  "pnr": {
+    "empirical_tv": 0.0368477700885541,
+    "lower": 0.0,
+    "upper": 0.04527781076229593
+  },
+  "failure_probability_upper": 0.006136952670666668,
+  "ideal_arithmetic_compression_tv_upper": 0.02613695267066667,
+  "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+  "maximum_charged": 0.01999666992843087,
+  "maximum_bond": 32,
+  "seconds": 15.777478899988637
+}

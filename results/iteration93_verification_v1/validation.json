@@ -1,0 +1,2223 @@
+{
+  "passed": true,
+  "checks": 38148,
+  "confidence_events": 111,
+  "quality_records": 2162752,
+  "native_used_domains": 3097149,
+  "third_party_batch_seeds": 352,
+  "pe_distinct_pcg_states": 128,
+  "frugal_distinct_worker_seeds": 224,
+  "rows": [
+    {
+      "name": "pure4_mps0",
+      "family": "mps",
+      "case": 0,
+      "records": 65536,
+      "failures": 307,
+      "click": {
+        "empirical_tv": 0.009684060977829353,
+        "lower": 0.0,
+        "upper": 0.01811409799999611
+      },
+      "pnr": {
+        "empirical_tv": 0.027845800131971753,
+        "lower": 0.0,
+        "upper": 0.03627584011234269
+      },
+      "failure_upper": 0.005766385901595699,
+      "ideal_arithmetic_tv_upper": 0.0257663859015957
+    },
+    {
+      "name": "pure4_mps1",
+      "family": "mps",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005106709320842725,
+        "lower": 0.0,
+        "upper": 0.013536746343009479
+      },
+      "pnr": {
+        "empirical_tv": 0.02496576524830303,
+        "lower": 0.0,
+        "upper": 0.03339580522867396
+      },
+      "failure_upper": 0.00014212094825126625,
+      "ideal_arithmetic_tv_upper": 0.010142120948251267
+    },
+    {
+      "name": "pure4_r3",
+      "family": "old",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.009192122384026561,
+        "lower": 0.0,
+        "upper": 0.017622159406193313
+      },
+      "pnr": {
+        "empirical_tv": 0.10354114027551692,
+        "lower": 0.04464508326540496,
+        "upper": 0.11197118025588786
+      }
+    },
+    {
+      "name": "pure4_r5",
+      "family": "old",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.008190663060222342,
+        "lower": 0.0,
+        "upper": 0.016620700082389098
+      },
+      "pnr": {
+        "empirical_tv": 0.06065070833954306,
+        "lower": 0.004172611459249858,
+        "upper": 0.069080748319914
+      }
+    },
+    {
+      "name": "pure4_pe",
+      "family": "pe",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0039682256392857,
+        "lower": 0.0,
+        "upper": 0.012398262661452454
+      },
+      "pnr": {
+        "empirical_tv": 0.023801763377862096,
+        "lower": 0.0,
+        "upper": 0.03223180335823303
+      }
+    },
+    {
+      "name": "pure4_frugal2",
+      "family": "frugal",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.043464812653827414,
+        "lower": 0.032877218428714446,
+        "upper": 0.05189484967599417
+      }
+    },
+    {
+      "name": "pure4_frugal3",
+      "family": "frugal",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.014225625055469596,
+        "lower": 0.0,
+        "upper": 0.02265566207763635
+      }
+    },
+    {
+      "name": "pure4_frugal4",
+      "family": "frugal",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005356243060553736,
+        "lower": 0.0,
+        "upper": 0.01378628008272049
+      }
+    },
+    {
+      "name": "pure4_direct4",
+      "family": "direct",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.007955463329563955,
+        "lower": 0.0,
+        "upper": 0.01638550035173071
+      }
+    },
+    {
+      "name": "pure4_direct16",
+      "family": "direct",
+      "case": 0,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.004697519598320085,
+        "lower": 0.0,
+        "upper": 0.01312755662048684
+      }
+    },
+    {
+      "name": "displaced4_mps0",
+      "family": "mps",
+      "case": 1,
+      "records": 65536,
+      "failures": 329,
+      "click": {
+        "empirical_tv": 0.00824972921492875,
+        "lower": 0.0,
+        "upper": 0.0166797662370955
+      },
+      "pnr": {
+        "empirical_tv": 0.0368477700885541,
+        "lower": 0.0,
+        "upper": 0.04527781076229593
+      },
+      "failure_upper": 0.006136952670666668,
+      "ideal_arithmetic_tv_upper": 0.02613695267066667
+    },
+    {
+      "name": "displaced4_mps1",
+      "family": "mps",
+      "case": 1,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005806355315756247,
+        "lower": 0.0,
+        "upper": 0.014236392337923
+      },
+      "pnr": {
+        "empirical_tv": 0.03564677742699666,
+        "lower": 0.0,
+        "upper": 0.044076818100738484
+      },
+      "failure_upper": 0.00014212094825126625,
+      "ideal_arithmetic_tv_upper": 0.010142120948251267
+    },
+    {
+      "name": "displaced4_r3",
+      "family": "old",
+      "case": 1,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.012648426161140949,
+        "lower": 0.0007341570062970922,
+        "upper": 0.0210784631833077
+      },
+      "pnr": {
+        "empirical_tv": 0.09284790404408896,
+        "lower": 0.040624398653059786,
+        "upper": 0.10127794471783079
+      }
+    },
+    {
+      "name": "displaced4_r5",
+      "family": "old",
+      "case": 1,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0062951804905730865,
+        "lower": 0.0,
+        "upper": 0.01472521751273984
+      },
+      "pnr": {
+        "empirical_tv": 0.05983438447752188,
+        "lower": 0.002963082832072644,
+        "upper": 0.0682644251512637
+      }
+    },
+    {
+      "name": "displaced4_pe",
+      "family": "pe",
+      "case": 1,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0059200017848852,
+        "lower": 0.0,
+        "upper": 0.014350038807051954
+      },
+      "pnr": {
+        "empirical_tv": 0.035688834249047834,
+        "lower": 0.0,
+        "upper": 0.04411887492278966
+      }
+    },
+    {
+      "name": "pure8_mps0",
+      "family": "mps",
+      "case": 2,
+      "records": 65536,
+      "failures": 262,
+      "click": {
+        "empirical_tv": 0.011086449731641797,
+        "lower": 0.0,
+        "upper": 0.01951648675380855
+      },
+      "total_cdf": {
+        "empirical_distance": 0.003997802734374889,
+        "lower": 0.0,
+        "upper": 0.012735869883568555,
+        "radius": 0.008738067149193667
+      },
+      "failure_upper": 0.005004231708187237,
+      "ideal_arithmetic_tv_upper": 0.05500423170818724
+    },
+    {
+      "name": "pure8_mps1",
+      "family": "mps",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.006758991191561662,
+        "lower": 0.0,
+        "upper": 0.015189028213728417
+      },
+      "total_cdf": {
+        "empirical_distance": 0.0007123547325523782,
+        "lower": 0.0,
+        "upper": 0.009450421881746045,
+        "radius": 0.008738067149193667
+      },
+      "failure_upper": 0.00014212094825126625,
+      "ideal_arithmetic_tv_upper": 0.020142120948251265
+    },
+    {
+      "name": "pure8_r3",
+      "family": "old",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.009126527069083698,
+        "lower": 0.0,
+        "upper": 0.017556564091250452
+      },
+      "total_cdf": {
+        "empirical_distance": 0.003372837823329311,
+        "lower": 0.0,
+        "upper": 0.012110904972522978,
+        "radius": 0.008738067149193667
+      }
+    },
+    {
+      "name": "pure8_r5",
+      "family": "old",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0077056612515246144,
+        "lower": 0.0,
+        "upper": 0.01613569827369137
+      },
+      "total_cdf": {
+        "empirical_distance": 0.0007478097781319359,
+        "lower": 0.0,
+        "upper": 0.009485876927325602,
+        "radius": 0.008738067149193667
+      }
+    },
+    {
+      "name": "pure8_pe",
+      "family": "pe",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.009101118933340228,
+        "lower": 0.0,
+        "upper": 0.017531155955506982
+      },
+      "total_cdf": {
+        "empirical_distance": 0.0013981770949196282,
+        "lower": 0.0,
+        "upper": 0.010136244244113295,
+        "radius": 0.008738067149193667
+      }
+    },
+    {
+      "name": "pure8_frugal2",
+      "family": "frugal",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.027023461894292417,
+        "lower": 0.007642467645149564,
+        "upper": 0.03545349891645917
+      }
+    },
+    {
+      "name": "pure8_frugal3",
+      "family": "frugal",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.01648135829712624,
+        "lower": 0.0,
+        "upper": 0.02491139531929299
+      }
+    },
+    {
+      "name": "pure8_frugal5",
+      "family": "frugal",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.01043007080526483,
+        "lower": 0.0,
+        "upper": 0.018860107827431583
+      }
+    },
+    {
+      "name": "pure8_direct4",
+      "family": "direct",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.01454745691607996,
+        "lower": 0.0,
+        "upper": 0.022977493938246715
+      }
+    },
+    {
+      "name": "pure8_direct16",
+      "family": "direct",
+      "case": 2,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.007691043443977667,
+        "lower": 0.0,
+        "upper": 0.01612108046614442
+      }
+    },
+    {
+      "name": "lossy_tmsv_mps0",
+      "family": "mps",
+      "case": 3,
+      "records": 65536,
+      "failures": 691,
+      "click": {
+        "empirical_tv": 0.012740714308952156,
+        "lower": 0.0018826749994080277,
+        "upper": 0.02117075133111891
+      },
+      "pnr": {
+        "empirical_tv": 0.018921618324292393,
+        "lower": 0.0,
+        "upper": 0.02735165536352149
+      },
+      "failure_upper": 0.012119461724126803,
+      "ideal_arithmetic_tv_upper": 0.0321194617241268
+    },
+    {
+      "name": "lossy_tmsv_mps1",
+      "family": "mps",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0025850617501930323,
+        "lower": 0.0,
+        "upper": 0.011015098772359786
+      },
+      "pnr": {
+        "empirical_tv": 0.009408609375548728,
+        "lower": 0.0,
+        "upper": 0.017838646414777823
+      },
+      "failure_upper": 0.00014212094825126625,
+      "ideal_arithmetic_tv_upper": 0.010142120948251267
+    },
+    {
+      "name": "lossy_tmsv_r3",
+      "family": "old",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0011592934105146557,
+        "lower": 0.0,
+        "upper": 0.00958933043268141
+      },
+      "pnr": {
+        "empirical_tv": 0.02362338592440803,
+        "lower": 0.003988141736213096,
+        "upper": 0.03205342296363712
+      }
+    },
+    {
+      "name": "lossy_tmsv_r5",
+      "family": "old",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.00035132670667284427,
+        "lower": 0.0,
+        "upper": 0.008781363728839598
+      },
+      "pnr": {
+        "empirical_tv": 0.017405624337587022,
+        "lower": 0.0,
+        "upper": 0.02583566137681612
+      }
+    },
+    {
+      "name": "lossy_tmsv_pe",
+      "family": "pe",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0028139435861305323,
+        "lower": 0.0,
+        "upper": 0.011243980608297286
+      },
+      "pnr": {
+        "empirical_tv": 0.01282136884864594,
+        "lower": 0.0,
+        "upper": 0.021251405887875035
+      }
+    },
+    {
+      "name": "lossy_tmsv_frugal4",
+      "family": "frugal",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0032657554176103443,
+        "lower": 0.0,
+        "upper": 0.011695792439777098
+      }
+    },
+    {
+      "name": "lossy_tmsv_direct4",
+      "family": "direct",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0021366050269853443,
+        "lower": 0.0,
+        "upper": 0.010566642049152098
+      }
+    },
+    {
+      "name": "lossy_tmsv_direct16",
+      "family": "direct",
+      "case": 3,
+      "records": 65536,
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0015169465158180323,
+        "lower": 0.0,
+        "upper": 0.009946983537984786
+      }
+    }
+  ],
+  "actual": {
+    "completed": true,
+    "job": {
+      "name": "actual_1152_dual",
+      "family": "actual",
+      "records": 64,
+      "experiment": 2466381824,
+      "threads": 16,
+      "batch_size": 16,
+      "d": 6,
+      "bond": 32,
+      "budgets": [
+        0.1,
+        0.01
+      ],
+      "cap": 256
+    },
+    "failures": 15,
+    "failure_upper": 0.4696320634569316,
+    "ideal_arithmetic_compression_tv_upper": 0.5796320634569316,
+    "cdf": {
+      "empirical_distance": 0.245619850655156,
+      "lower": 0.0,
+      "upper": 0.5252379994293533,
+      "radius": 0.27961814877419733
+    },
+    "seconds": 1398.4321409999975,
+    "maximum_charged": [
+      0.09990584686498945,
+      0.0016065616033973929
+    ],
+    "scope": "Fixed64 full 1152-port dual-spectrum records; no failed-record deletion.\nCount CDF is scoped separately from full-PNR TV. An ideal-arithmetic bound\ncombines the two configured truncation budgets and the failure probability.\nThis does not certify floating-point and root-solving errors.\n"
+  },
+  "timings": [
+    {
+      "job": {
+        "name": "pure4_mps0",
+        "case": 0,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2466316288,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure4_mps0_t1"
+      },
+      "records": 2048,
+      "median_seconds": 2.3565724000000046,
+      "seconds": [
+        2.3565724000000046,
+        2.328996100004588,
+        2.452192799995828
+      ],
+      "failures": [
+        9,
+        14,
+        14
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_mps0",
+        "case": 0,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2466316288,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure4_mps0_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.3859870999949635,
+      "seconds": [
+        0.3859870999949635,
+        0.34490160000132164,
+        0.38774349999584956
+      ],
+      "failures": [
+        9,
+        14,
+        14
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_mps1",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2466316289,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure4_mps1_t1"
+      },
+      "records": 2048,
+      "median_seconds": 5.413768999998865,
+      "seconds": [
+        8.044777299997804,
+        5.413768999998865,
+        5.221875499999442
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_mps1",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2466316289,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure4_mps1_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.8478335000036168,
+      "seconds": [
+        3.081464299997606,
+        0.8427185999971698,
+        0.8478335000036168
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_r3",
+        "case": 0,
+        "family": "old",
+        "depth": 3,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2466316290,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_r3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.16833369999949355,
+      "seconds": [
+        0.16833369999949355,
+        0.17186899999796879,
+        0.16163569999480387
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_r3",
+        "case": 0,
+        "family": "old",
+        "depth": 3,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2466316290,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_r3_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.029891000005591195,
+      "seconds": [
+        0.030597899996791966,
+        0.029891000005591195,
+        0.027507899998454377
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_r5",
+        "case": 0,
+        "family": "old",
+        "depth": 5,
+        "id": 3,
+        "records": 65536,
+        "experiment": 2466316291,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_r5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.48569339999812655,
+      "seconds": [
+        0.48569339999812655,
+        0.43469879999611294,
+        0.4883632999990368
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_r5",
+        "case": 0,
+        "family": "old",
+        "depth": 5,
+        "id": 3,
+        "records": 65536,
+        "experiment": 2466316291,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_r5_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.07205640000029234,
+      "seconds": [
+        0.0712716999987606,
+        0.07205640000029234,
+        0.07712469999387395
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_pe",
+        "case": 0,
+        "family": "pe",
+        "id": 4,
+        "records": 65536,
+        "experiment": 2466316292,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.69091030000709,
+      "seconds": [
+        0.69091030000709,
+        0.6715898000038578,
+        0.8013800999979139
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal2",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 5,
+        "records": 65536,
+        "experiment": 2466316293,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal2_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00027599999884841964,
+      "seconds": [
+        0.00022929999977350235,
+        0.0003830999994534068,
+        0.00027599999884841964
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal3",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 6,
+        "records": 65536,
+        "experiment": 2466316294,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0003065999990212731,
+      "seconds": [
+        0.00031290000333683565,
+        0.0002989999993587844,
+        0.0003065999990212731
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal4",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 7,
+        "records": 65536,
+        "experiment": 2466316295,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0003212999945390038,
+      "seconds": [
+        0.0003367000026628375,
+        0.00028140000358689576,
+        0.0003212999945390038
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct4",
+        "case": 0,
+        "family": "direct",
+        "budget": 4,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2466316296,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.09644919999846024,
+      "seconds": [
+        0.0939448999997694,
+        0.09644919999846024,
+        0.09777000000030966
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct4",
+        "case": 0,
+        "family": "direct",
+        "budget": 4,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2466316296,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.0180947000044398,
+      "seconds": [
+        0.0180947000044398,
+        0.020407199997862335,
+        0.016491800000949297
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2466316297,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.05199010000069393,
+      "seconds": [
+        0.05199010000069393,
+        0.048806600003445055,
+        0.054219500001636334
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2466316297,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.011547699999937322,
+      "seconds": [
+        0.012558400005218573,
+        0.011547699999937322,
+        0.010083300003316253
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps0",
+        "case": 1,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2466316298,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps0_t1"
+      },
+      "records": 2048,
+      "median_seconds": 2.6149043000041274,
+      "seconds": [
+        2.858226000003924,
+        2.5991884999966715,
+        2.6149043000041274
+      ],
+      "failures": [
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps0",
+        "case": 1,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2466316298,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps0_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.42485280000255443,
+      "seconds": [
+        0.44356059999699937,
+        0.3881357999998727,
+        0.42485280000255443
+      ],
+      "failures": [
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps1",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 11,
+        "records": 65536,
+        "experiment": 2466316299,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps1_t1"
+      },
+      "records": 2048,
+      "median_seconds": 8.563239900002372,
+      "seconds": [
+        10.006987100001425,
+        8.563239900002372,
+        8.233165500001633
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps1",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 11,
+        "records": 65536,
+        "experiment": 2466316299,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps1_t16"
+      },
+      "records": 2048,
+      "median_seconds": 1.666556500000297,
+      "seconds": [
+        2.433399699999427,
+        1.4544132000009995,
+        1.666556500000297
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_r3",
+        "case": 1,
+        "family": "old",
+        "depth": 3,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2466316300,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_r3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.1703334999983781,
+      "seconds": [
+        0.1962705999976606,
+        0.16499569999723462,
+        0.1703334999983781
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_r3",
+        "case": 1,
+        "family": "old",
+        "depth": 3,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2466316300,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "displaced4_r3_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.036528099997667596,
+      "seconds": [
+        0.03836169999703998,
+        0.036528099997667596,
+        0.029407900001388043
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_r5",
+        "case": 1,
+        "family": "old",
+        "depth": 5,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2466316301,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_r5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.46933359999820823,
+      "seconds": [
+        0.46933359999820823,
+        0.4797483999936958,
+        0.4625411000015447
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_r5",
+        "case": 1,
+        "family": "old",
+        "depth": 5,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2466316301,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "displaced4_r5_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.06922099999792408,
+      "seconds": [
+        0.07075669999903766,
+        0.06922099999792408,
+        0.06801919999998063
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_pe",
+        "case": 1,
+        "family": "pe",
+        "id": 14,
+        "records": 65536,
+        "experiment": 2466316302,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 1.0515826999981073,
+      "seconds": [
+        0.8491553999992902,
+        1.0515826999981073,
+        1.1132327000013902
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps0",
+        "case": 2,
+        "family": "mps",
+        "d": 4,
+        "bond": 8,
+        "budget": 0.05,
+        "id": 15,
+        "records": 65536,
+        "experiment": 2466316303,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure8_mps0_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.41339270000025863,
+      "seconds": [
+        0.3896807999990415,
+        0.45830019999993965,
+        0.41339270000025863
+      ],
+      "failures": [
+        10,
+        4,
+        7
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps0",
+        "case": 2,
+        "family": "mps",
+        "d": 4,
+        "bond": 8,
+        "budget": 0.05,
+        "id": 15,
+        "records": 65536,
+        "experiment": 2466316303,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure8_mps0_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.06849579999834532,
+      "seconds": [
+        0.06806640000286279,
+        0.06914929999766173,
+        0.06849579999834532
+      ],
+      "failures": [
+        10,
+        4,
+        7
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps1",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 16,
+        "records": 65536,
+        "experiment": 2466316304,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure8_mps1_t1"
+      },
+      "records": 2048,
+      "median_seconds": 1.162193699994532,
+      "seconds": [
+        1.162193699994532,
+        1.1138276000056067,
+        1.210221299996192
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps1",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 16,
+        "records": 65536,
+        "experiment": 2466316304,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure8_mps1_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.2482010999956401,
+      "seconds": [
+        0.2211444999993546,
+        0.2482010999956401,
+        0.31695570000010775
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_r3",
+        "case": 2,
+        "family": "old",
+        "depth": 3,
+        "id": 17,
+        "records": 65536,
+        "experiment": 2466316305,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_r3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.09173870000086026,
+      "seconds": [
+        0.09173870000086026,
+        0.10264620000089053,
+        0.07666330000211019
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_r3",
+        "case": 2,
+        "family": "old",
+        "depth": 3,
+        "id": 17,
+        "records": 65536,
+        "experiment": 2466316305,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_r3_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.01565699999628123,
+      "seconds": [
+        0.017435600006137975,
+        0.01565699999628123,
+        0.014002700001583435
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_r5",
+        "case": 2,
+        "family": "old",
+        "depth": 5,
+        "id": 18,
+        "records": 65536,
+        "experiment": 2466316306,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_r5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.11204929999803426,
+      "seconds": [
+        0.08811419999983627,
+        0.11806950000027427,
+        0.11204929999803426
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_r5",
+        "case": 2,
+        "family": "old",
+        "depth": 5,
+        "id": 18,
+        "records": 65536,
+        "experiment": 2466316306,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_r5_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.019330000002810266,
+      "seconds": [
+        0.019330000002810266,
+        0.017012299998896196,
+        0.021043799999461044
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_pe",
+        "case": 2,
+        "family": "pe",
+        "id": 19,
+        "records": 65536,
+        "experiment": 2466316307,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.7128112999998848,
+      "seconds": [
+        0.7128112999998848,
+        0.8393716999999015,
+        0.7093308000039542
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal2",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 20,
+        "records": 65536,
+        "experiment": 2466316308,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal2_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0012920999943162315,
+      "seconds": [
+        0.0012920999943162315,
+        0.00080339999840362,
+        0.0012937999999849126
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal3",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 21,
+        "records": 65536,
+        "experiment": 2466316309,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0008845999982440844,
+      "seconds": [
+        0.0008486000006087124,
+        0.0008845999982440844,
+        0.001290399995923508
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal5",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 5,
+        "id": 22,
+        "records": 65536,
+        "experiment": 2466316310,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.002978200005600229,
+      "seconds": [
+        0.00250650000089081,
+        0.002978200005600229,
+        0.0030895000018063
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct4",
+        "case": 2,
+        "family": "direct",
+        "budget": 4,
+        "id": 23,
+        "records": 65536,
+        "experiment": 2466316311,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.1550889999998617,
+      "seconds": [
+        0.14575869999680435,
+        0.16384999999718275,
+        0.1550889999998617
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct4",
+        "case": 2,
+        "family": "direct",
+        "budget": 4,
+        "id": 23,
+        "records": 65536,
+        "experiment": 2466316311,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.025812699997914024,
+      "seconds": [
+        0.028466499999922235,
+        0.024454600003082305,
+        0.025812699997914024
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 24,
+        "records": 65536,
+        "experiment": 2466316312,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.15776599999662722,
+      "seconds": [
+        0.14344050000363495,
+        0.162600100004056,
+        0.15776599999662722
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 24,
+        "records": 65536,
+        "experiment": 2466316312,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.021851000004971866,
+      "seconds": [
+        0.022745299997041002,
+        0.019692699999723118,
+        0.021851000004971866
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps0",
+        "case": 3,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2466316313,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps0_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.6571134999976493,
+      "seconds": [
+        0.6378196000005119,
+        0.7503662000017357,
+        0.6571134999976493
+      ],
+      "failures": [
+        32,
+        21,
+        21
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps0",
+        "case": 3,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2466316313,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps0_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.10447510000085458,
+      "seconds": [
+        0.10748769999918295,
+        0.10447510000085458,
+        0.10173760000179755
+      ],
+      "failures": [
+        32,
+        21,
+        21
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps1",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 26,
+        "records": 65536,
+        "experiment": 2466316314,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps1_t1"
+      },
+      "records": 2048,
+      "median_seconds": 1.3058507000023383,
+      "seconds": [
+        1.1694103000045288,
+        1.3893603000033181,
+        1.3058507000023383
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps1",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 26,
+        "records": 65536,
+        "experiment": 2466316314,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps1_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.20317310000245925,
+      "seconds": [
+        0.16723809999530204,
+        0.20535519999975804,
+        0.20317310000245925
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r3",
+        "case": 3,
+        "family": "old",
+        "depth": 3,
+        "id": 27,
+        "records": 65536,
+        "experiment": 2466316315,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_r3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.2055432999986806,
+      "seconds": [
+        0.2055432999986806,
+        0.20445850000396604,
+        0.20993710000038845
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r3",
+        "case": 3,
+        "family": "old",
+        "depth": 3,
+        "id": 27,
+        "records": 65536,
+        "experiment": 2466316315,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_r3_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.035475999997288454,
+      "seconds": [
+        0.0373226000010618,
+        0.03274200000305427,
+        0.035475999997288454
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r5",
+        "case": 3,
+        "family": "old",
+        "depth": 5,
+        "id": 28,
+        "records": 65536,
+        "experiment": 2466316316,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_r5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.5878511000046274,
+      "seconds": [
+        0.5240241000064998,
+        0.7025976000004448,
+        0.5878511000046274
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_r5",
+        "case": 3,
+        "family": "old",
+        "depth": 5,
+        "id": 28,
+        "records": 65536,
+        "experiment": 2466316316,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_r5_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.08188359999621753,
+      "seconds": [
+        0.07493870000325842,
+        0.08767339999758406,
+        0.08188359999621753
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_pe",
+        "case": 3,
+        "family": "pe",
+        "id": 29,
+        "records": 65536,
+        "experiment": 2466316317,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.5439717999979621,
+      "seconds": [
+        0.5439717999979621,
+        0.5990930999978445,
+        0.5066492999976617
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_frugal4",
+        "case": 3,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 30,
+        "records": 65536,
+        "experiment": 2466316318,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_frugal4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00029999999969732016,
+      "seconds": [
+        0.0003116000007139519,
+        0.00028160000510979444,
+        0.00029999999969732016
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct4",
+        "case": 3,
+        "family": "direct",
+        "budget": 4,
+        "id": 31,
+        "records": 65536,
+        "experiment": 2466316319,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.01607009999861475,
+      "seconds": [
+        0.015043500003230292,
+        0.01607009999861475,
+        0.020910499995807186
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct4",
+        "case": 3,
+        "family": "direct",
+        "budget": 4,
+        "id": 31,
+        "records": 65536,
+        "experiment": 2466316319,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.006299699998635333,
+      "seconds": [
+        0.006299699998635333,
+        0.006060300001990981,
+        0.009204299996781629
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 32,
+        "records": 65536,
+        "experiment": 2466316320,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.01692890000413172,
+      "seconds": [
+        0.01692890000413172,
+        0.014408700000785757,
+        0.021478700000443496
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 32,
+        "records": 65536,
+        "experiment": 2466316320,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.006865800001833122,
+      "seconds": [
+        0.006088800000725314,
+        0.006865800001833122,
+        0.007691200000408571
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "tests": {
+    "loss83_passed": 8,
+    "sampling82_passed": 16,
+    "factor81_passed": 12,
+    "passed": true,
+    "tests_run": 1070,
+    "successes": 1041,
+    "failures": 0,
+    "errors": 0,
+    "branch_click_passed": 7,
+    "branch_pnr_passed": 6,
+    "cuda_click_passed": 6,
+    "newton_pnr_passed": 4,
+    "polynomial_pnr_passed": 5,
+    "philox_click_passed": 5,
+    "structured_pnr_passed": 5,
+    "classical_tail_passed": 3,
+    "fused_click_passed": 3,
+    "deep_pnr_passed": 5,
+    "resplit_pnr_passed": 4,
+    "skipped_cases": 29,
+    "skipped_classes": 7,
+    "failure_details": [],
+    "error_details": [],
+    "skip_details": [
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_batch_all_masses_match_independent_complete_event_sums",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_common_zero_scale_is_removed_before_probability_underflow",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_constructor_validation_and_explicit_missing_library",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_each_retained_subset_shares_factorization_columns_and_sparse_blocks",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_exact_isolated_vacuum_certificates_are_per_required_click_event",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_independent_table_adapter_is_only_installed_before_evaluation",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_kernel_arrays_are_readonly_independent_and_handle_lifetime_is_explicit",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_native_argument_errors_do_not_invoke_refinement",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_q_is_formed_after_exact_widening_of_binary64_input",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_schur_numeric_identity_is_not_an_analytic_zero_certificate",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_vacuum_law_and_sample_are_deterministic_without_epsilon",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "test_batched_forest.BatchedForestTests.test_zero_one_two_omissions_reduce_to_exact_conditional",
+        "reason": "build the explicit batched forest native library first"
+      },
+      {
+        "test": "setUpClass (test_batched_forest_numerics.BatchedForestNumericsTests)",
+        "reason": "build the native batched-forest library explicitly first"
+      },
+      {
+        "test": "setUpClass (test_coherent_core.CoherentCoreNativeTests)",
+        "reason": "Build the coherent-core native executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_coherent_core_independent.CoherentCoreIndependentNativeTests)",
+        "reason": "Build the coherent-core executable explicitly; tests never compile"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_cpp_seed_reproducibility_and_large_mode_sampling",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_full_q_and_identical_uniforms_match_python_both_selectors",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_fully_conditioned_law_matches_physical_target",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_independent_thermal_analytic_law_and_physical_bit_order",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_sparse_local2_and_weak_local4_regressions",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "test_cpp_click.CppClickBinaryTests.test_vacuum_zero_samples_and_deterministic_endpoint_uniforms",
+        "reason": "C++ executable absent; build explicitly with python experiments/build_click_sampler.py"
+      },
+      {
+        "test": "setUpClass (test_cpp_forest.CppForestIntegrationTests)",
+        "reason": "Build the full native forest executable explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalCheckpointTests)",
+        "reason": "Checkpoint and frozen v1 binaries must be built explicitly"
+      },
+      {
+        "test": "setUpClass (test_frugal_evidence.FrugalEvidenceIntegrationTests)",
+        "reason": "Evidence binary is absent; unit tests do not compile"
+      },
+      {
+        "test": "setUpClass (test_gbs_identity.NativeIdentityFeatureTests)",
+        "reason": "iteration4 executable not built; tests do not compile"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_all_small_prefixes_both_selectors_and_k_zero",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_cache_preserves_mt19937_uniform_consumption",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_capacity_saturation_retains_the_exact_law",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_default_off_matches_archived_iteration4_binary",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_enumeration_neither_populates_nor_reads_prefix_cache",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_log_and_product_kernels_and_sparse_optics",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_native_entry_ceiling_rejects_before_input_or_allocation",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_physical_bits_and_cache_ids_at_64_100_256_modes",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_single_mode_and_maximum_retained_vector",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_tmsv_support_and_nontrivial_orders",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      },
+      {
+        "test": "test_prefix_cache.PrefixCacheBinaryTests.test_warmed_cache_does_not_hide_numerical_failure",
+        "reason": "build .cache/click-prefix-native explicitly first"
+      }
+    ],
+    "unchanged_sources": true,
+    "coherent92_passed": 8,
+    "precision92_passed": 1,
+    "optical91_passed": 4,
+    "sparse91_passed": 4,
+    "fock91_passed": 5,
+    "optical90_passed": 4,
+    "parity90_passed": 3,
+    "physical89_passed": 4,
+    "puretree89_passed": 3,
+    "projected88_passed": 5,
+    "blocktree87_passed": 4,
+    "guarded87_passed": 4,
+    "shared86_passed": 6,
+    "optical86_passed": 4,
+    "tree85_passed": 6,
+    "prefix_pnr_passed": 5,
+    "projected_pnr_passed": 6,
+    "number_pnr_passed": 8,
+    "sphere_pnr_passed": 6,
+    "alias_click_passed": 6,
+    "joint_pnr_passed": 6,
+    "block_click_passed": 5,
+    "block_philox_passed": 4,
+    "transport80_passed": 13,
+    "core83_passed": 6,
+    "rng84_passed": 7,
+    "exactsum84_passed": 6,
+    "mps93_passed": 10
+  },
+  "scope": "Independent saved-data verification of all111 frozen confidence events.\nNo sampler, experiment analysis helper or native DLL is imported. Rebuild\nhistograms, failure bounds, domain intervals, timing medians and file hashes.\nAddress non-reuse and scoped numerical checks are not a proof of true iid or\nan interval-certified bound on all floating-point implementation errors.\n"
+}

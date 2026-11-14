@@ -1,0 +1,23 @@
+// Integrated device RNG and unchanged iteration72 branch kernel.
+// Philox subsequence = global row; explicit continuation offset, no reseeding
+// on batch boundaries. uniform2_double uses full double-precision random input.
+#include "gaussian_click_fused74_v1.cu"
+#include <curand_kernel.h>
+#include <limits>
+__global__ void random73(int m,int d,int count,unsigned long long seed,unsigned long long offset,const double* center,const double* variance,double* means,double* draws){
+    int row=blockIdx.x*blockDim.x+threadIdx.x;if(row>=count)return;curandStatePhilox4_32_10_t state;curand_init(seed,offset+row,0,&state);
+    for(int j=0;j<d;j+=2){double2 z=curand_normal2_double(&state);means[std::size_t(row)*d+j]=center[j]+sqrt(variance[j])*z.x;if(j+1<d)means[std::size_t(row)*d+j+1]=center[j+1]+sqrt(variance[j+1])*z.y;}
+    for(int j=0;j<m;j+=2){double2 u=curand_uniform2_double(&state);draws[std::size_t(row)*m+j]=1-u.x;if(j+1<m)draws[std::size_t(row)*m+j+1]=1-u.y;}
+}
+API int gc73_sample(int m,int d,int count,int budget,unsigned long long seed,unsigned long long offset,const double* initial,const double* a,const double* b,const double* center,const double* variance,unsigned char* output,double* probabilities,int* errors,double* diagnostics,double* timings,double* saved_means,double* saved_draws,char* message,int cap){try{
+    using Clock=std::chrono::steady_clock;auto start=Clock::now();require72(m>=1&&m<=65536&&d>=2&&d<=MAX_D72&&d%2==0&&count>=0&&count<=1048576&&budget>=1&&budget<=MAX_B72&&initial&&a&&b&&center&&variance&&output&&probabilities&&errors&&diagnostics&&timings,"Invalid Philox CUDA arguments");require72(count==0||offset<=std::numeric_limits<unsigned long long>::max()-std::uint64_t(count-1),"Philox row offset overflow");
+    for(int j=0;j<d;++j)require72(std::isfinite(center[j])&&std::isfinite(variance[j])&&variance[j]>=0,"Invalid Philox Gaussian displacement");std::fill(timings,timings+7,0);if(count==0)return 0;
+    std::size_t dd=std::size_t(d)*d,md=std::size_t(m)*d,nd=std::size_t(count)*d,nm=std::size_t(count)*m,slots=std::size_t(count)*budget;
+    std::size_t bytes=(slots*dd+slots*d+std::size_t(count)*budget*3*d+dd+2*md+nd+2*nm+3*count+2*d)*sizeof(double)+nm+2*count*sizeof(int);std::size_t free,total;cuda72(cudaMemGetInfo(&free,&total));require72(bytes<free*3/4,"Philox CUDA workspace exceeds 75 percent of free device memory");timings[5]=double(bytes);
+    Buffer72<double> X(slots*dd),W(slots*d),V(std::size_t(count)*budget*3*d),in(dd),aa(md),bb(md),mm(nd),uu(nm),pp(nm),diag(3*count),cc(d),vv(d);Buffer72<unsigned char> out(nm);Buffer72<int> err(2*count);timings[0]=std::chrono::duration<double>(Clock::now()-start).count();
+    start=Clock::now();cuda72(cudaMemcpy(in.p,initial,dd*sizeof(double),cudaMemcpyHostToDevice));cuda72(cudaMemcpy(aa.p,a,md*sizeof(double),cudaMemcpyHostToDevice));cuda72(cudaMemcpy(bb.p,b,md*sizeof(double),cudaMemcpyHostToDevice));cuda72(cudaMemcpy(cc.p,center,d*sizeof(double),cudaMemcpyHostToDevice));cuda72(cudaMemcpy(vv.p,variance,d*sizeof(double),cudaMemcpyHostToDevice));cuda72(cudaMemset(out.p,0,nm));cuda72(cudaMemset(pp.p,0,nm*sizeof(double)));timings[1]=std::chrono::duration<double>(Clock::now()-start).count();
+    start=Clock::now();random73<<<(count+255)/256,256>>>(m,d,count,seed,offset,cc.p,vv.p,mm.p,uu.p);cuda72(cudaGetLastError());cuda72(cudaDeviceSynchronize());timings[2]=std::chrono::duration<double>(Clock::now()-start).count();
+    start=Clock::now();click72<<<count,128>>>(m,d,count,budget,in.p,aa.p,bb.p,mm.p,uu.p,X.p,W.p,V.p,out.p,pp.p,err.p,diag.p);cuda72(cudaGetLastError());cuda72(cudaDeviceSynchronize());timings[3]=std::chrono::duration<double>(Clock::now()-start).count();
+    start=Clock::now();cuda72(cudaMemcpy(output,out.p,nm,cudaMemcpyDeviceToHost));cuda72(cudaMemcpy(probabilities,pp.p,nm*sizeof(double),cudaMemcpyDeviceToHost));cuda72(cudaMemcpy(errors,err.p,2*count*sizeof(int),cudaMemcpyDeviceToHost));cuda72(cudaMemcpy(diagnostics,diag.p,3*count*sizeof(double),cudaMemcpyDeviceToHost));if(saved_means)cuda72(cudaMemcpy(saved_means,mm.p,nd*sizeof(double),cudaMemcpyDeviceToHost));if(saved_draws)cuda72(cudaMemcpy(saved_draws,uu.p,nm*sizeof(double),cudaMemcpyDeviceToHost));timings[4]=std::chrono::duration<double>(Clock::now()-start).count();int first=-1;for(int row=0;row<count;++row)if(errors[2*row]){++timings[6];if(first<0)first=row;}
+    if(first>=0)throw std::runtime_error("Philox click failure: row="+std::to_string(first)+" mode="+std::to_string(errors[2*first+1])+" code="+std::to_string(errors[2*first]));return 0;
+}catch(const std::exception& e){if(message&&cap>0){auto n=std::min(std::strlen(e.what()),std::size_t(cap-1));std::memcpy(message,e.what(),n);message[n]=0;}return 1;}}

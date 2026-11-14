@@ -1,0 +1,32 @@
+{
+  "job": {
+    "name": "pure4_mps1",
+    "case": 0,
+    "family": "mps",
+    "d": 16,
+    "bond": 128,
+    "budget": 0.01,
+    "id": 1,
+    "records": 65536,
+    "experiment": 2466316289,
+    "threads": 16,
+    "batch_size": 512
+  },
+  "failures": 0,
+  "click": {
+    "empirical_tv": 0.005106709320842725,
+    "lower": 0.0,
+    "upper": 0.013536746343009479
+  },
+  "pnr": {
+    "empirical_tv": 0.02496576524830303,
+    "lower": 0.0,
+    "upper": 0.03339580522867396
+  },
+  "failure_probability_upper": 0.00014212094825126625,
+  "ideal_arithmetic_compression_tv_upper": 0.010142120948251267,
+  "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+  "maximum_charged": 0.0012005471924545314,
+  "maximum_bond": 113,
+  "seconds": 62.32904690003488
+}

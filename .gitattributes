@@ -748,3 +748,15 @@ results/iteration92*.json -text -whitespace
 native/*92* -text -whitespace
 tests/test_native_coherent92.py -text -whitespace
 tests/test_native_precision92.py -text -whitespace
+
+# Iteration93 general Gaussian MPS and independent quality evidence.
+RESEARCH_REPORT_ITERATION93.md -text -whitespace
+research/iteration93*.json -text -whitespace
+research/iteration94*.md -text -whitespace
+experiments/iteration93*.py -text -whitespace
+experiments/verify_iteration93*.py -text -whitespace
+results/iteration93*/** -text -whitespace
+results/iteration93*.json -text -whitespace
+native/*93* -text -whitespace
+tests/test_native_mps93.py -text -whitespace
+tests/test_native_mps_adaptive93.py -text -whitespace

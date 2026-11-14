@@ -1,0 +1,32 @@
+{
+  "job": {
+    "name": "lossy_tmsv_mps0",
+    "case": 3,
+    "family": "mps",
+    "d": 8,
+    "bond": 32,
+    "budget": 0.02,
+    "id": 25,
+    "records": 65536,
+    "experiment": 2466316313,
+    "threads": 16,
+    "batch_size": 512
+  },
+  "failures": 691,
+  "click": {
+    "empirical_tv": 0.012740714308952156,
+    "lower": 0.0018826749994080277,
+    "upper": 0.02117075133111891
+  },
+  "pnr": {
+    "empirical_tv": 0.018921618324292393,
+    "lower": 0.0,
+    "upper": 0.02735165536352149
+  },
+  "failure_probability_upper": 0.012119461724126803,
+  "ideal_arithmetic_compression_tv_upper": 0.0321194617241268,
+  "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+  "maximum_charged": 0.019997853167395666,
+  "maximum_bond": 8,
+  "seconds": 3.2772412999765947
+}

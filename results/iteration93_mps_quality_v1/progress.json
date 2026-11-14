@@ -1,0 +1,263 @@
+{
+  "completed_jobs": 8,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_mps0",
+        "case": 0,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2466316288,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 307,
+      "click": {
+        "empirical_tv": 0.009684060977829353,
+        "lower": 0.0,
+        "upper": 0.01811409799999611
+      },
+      "pnr": {
+        "empirical_tv": 0.027845800131971753,
+        "lower": 0.0,
+        "upper": 0.03627584011234269
+      },
+      "failure_probability_upper": 0.005766385901595699,
+      "ideal_arithmetic_compression_tv_upper": 0.0257663859015957,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.019992344171808285,
+      "maximum_bond": 32,
+      "seconds": 13.480494299968996
+    },
+    {
+      "job": {
+        "name": "pure4_mps1",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2466316289,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005106709320842725,
+        "lower": 0.0,
+        "upper": 0.013536746343009479
+      },
+      "pnr": {
+        "empirical_tv": 0.02496576524830303,
+        "lower": 0.0,
+        "upper": 0.03339580522867396
+      },
+      "failure_probability_upper": 0.00014212094825126625,
+      "ideal_arithmetic_compression_tv_upper": 0.010142120948251267,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.0012005471924545314,
+      "maximum_bond": 113,
+      "seconds": 62.32904690003488
+    },
+    {
+      "job": {
+        "name": "displaced4_mps0",
+        "case": 1,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2466316298,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 329,
+      "click": {
+        "empirical_tv": 0.00824972921492875,
+        "lower": 0.0,
+        "upper": 0.0166797662370955
+      },
+      "pnr": {
+        "empirical_tv": 0.0368477700885541,
+        "lower": 0.0,
+        "upper": 0.04527781076229593
+      },
+      "failure_probability_upper": 0.006136952670666668,
+      "ideal_arithmetic_compression_tv_upper": 0.02613695267066667,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.01999666992843087,
+      "maximum_bond": 32,
+      "seconds": 15.777478899988637
+    },
+    {
+      "job": {
+        "name": "displaced4_mps1",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 11,
+        "records": 65536,
+        "experiment": 2466316299,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005806355315756247,
+        "lower": 0.0,
+        "upper": 0.014236392337923
+      },
+      "pnr": {
+        "empirical_tv": 0.03564677742699666,
+        "lower": 0.0,
+        "upper": 0.044076818100738484
+      },
+      "failure_probability_upper": 0.00014212094825126625,
+      "ideal_arithmetic_compression_tv_upper": 0.010142120948251267,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.00012361446332609375,
+      "maximum_bond": 94,
+      "seconds": 64.53646770001069
+    },
+    {
+      "job": {
+        "name": "pure8_mps0",
+        "case": 2,
+        "family": "mps",
+        "d": 4,
+        "bond": 8,
+        "budget": 0.05,
+        "id": 15,
+        "records": 65536,
+        "experiment": 2466316303,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 262,
+      "click": {
+        "empirical_tv": 0.011086449731641797,
+        "lower": 0.0,
+        "upper": 0.01951648675380855
+      },
+      "total_cdf": {
+        "empirical_distance": 0.003997802734374889,
+        "lower": 0.0,
+        "upper": 0.012735869883568555,
+        "radius": 0.008738067149193667
+      },
+      "failure_probability_upper": 0.005004231708187237,
+      "ideal_arithmetic_compression_tv_upper": 0.05500423170818724,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.04997624690239492,
+      "maximum_bond": 8,
+      "seconds": 2.3805772999985493
+    },
+    {
+      "job": {
+        "name": "pure8_mps1",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 16,
+        "records": 65536,
+        "experiment": 2466316304,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.006758991191561662,
+        "lower": 0.0,
+        "upper": 0.015189028213728417
+      },
+      "total_cdf": {
+        "empirical_distance": 0.0007123547325523782,
+        "lower": 0.0,
+        "upper": 0.009450421881746045,
+        "radius": 0.008738067149193667
+      },
+      "failure_probability_upper": 0.00014212094825126625,
+      "ideal_arithmetic_compression_tv_upper": 0.020142120948251265,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.008270830654054146,
+      "maximum_bond": 32,
+      "seconds": 12.897052299937059
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps0",
+        "case": 3,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2466316313,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 691,
+      "click": {
+        "empirical_tv": 0.012740714308952156,
+        "lower": 0.0018826749994080277,
+        "upper": 0.02117075133111891
+      },
+      "pnr": {
+        "empirical_tv": 0.018921618324292393,
+        "lower": 0.0,
+        "upper": 0.02735165536352149
+      },
+      "failure_probability_upper": 0.012119461724126803,
+      "ideal_arithmetic_compression_tv_upper": 0.0321194617241268,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.019997853167395666,
+      "maximum_bond": 8,
+      "seconds": 3.2772412999765947
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps1",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 26,
+        "records": 65536,
+        "experiment": 2466316314,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0025850617501930323,
+        "lower": 0.0,
+        "upper": 0.011015098772359786
+      },
+      "pnr": {
+        "empirical_tv": 0.009408609375548728,
+        "lower": 0.0,
+        "upper": 0.017838646414777823
+      },
+      "failure_probability_upper": 0.00014212094825126625,
+      "ideal_arithmetic_compression_tv_upper": 0.010142120948251267,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.00079714014019662,
+      "maximum_bond": 16,
+      "seconds": 6.902273899897409
+    }
+  ]
+}
