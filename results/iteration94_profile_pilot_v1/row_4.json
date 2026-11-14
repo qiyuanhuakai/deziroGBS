@@ -1,0 +1,51 @@
+{
+  "name": "actual_sector0",
+  "case": 4,
+  "records": 1,
+  "returncode": 0,
+  "error": "",
+  "seconds": 26.396788699999888,
+  "failures": 0,
+  "failure_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inclusive_seconds": {
+    "wait": 8.145525,
+    "rates": 4.594506999999998,
+    "attenuate": 3.50176,
+    "full_jump": 0.0,
+    "centered_rates": 1.0218979999999998,
+    "compress": 6.3549060000000015,
+    "canonical": 13.460781000000017,
+    "qr": 7.237892999999653,
+    "svd": 3.5797430000000077
+  },
+  "calls": {
+    "wait": 93,
+    "rates": 355,
+    "attenuate": 448,
+    "full_jump": 0,
+    "centered_rates": 92,
+    "compress": 92,
+    "canonical": 580,
+    "qr": 50770,
+    "svd": 4508
+  },
+  "projection": {
+    "sum_local_weight": 1.9541120007348088e-08,
+    "sum_schmidt_weight": 4.841930473261259e-05,
+    "max_local_weight": 3.2216631741547178e-09,
+    "max_schmidt_weight": 6.272025735414087e-06,
+    "sum_local_sqrt": 0.0009009267939530358,
+    "sum_schmidt_sqrt": 0.047119285024119634
+  },
+  "replay": {
+    "counts": true,
+    "errors": true,
+    "first18_statistics": true
+  },
+  "max_statistics_difference": 0.0
+}

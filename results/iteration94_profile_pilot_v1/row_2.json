@@ -1,0 +1,51 @@
+{
+  "name": "pure8",
+  "case": 2,
+  "records": 64,
+  "returncode": 0,
+  "error": "",
+  "seconds": 0.12352740000096674,
+  "failures": 0,
+  "failure_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inclusive_seconds": {
+    "wait": 0.031149000000000003,
+    "rates": 0.039576999999999994,
+    "attenuate": 0.014450000000000003,
+    "full_jump": 0.08693799999999999,
+    "centered_rates": 0.004807,
+    "compress": 0.034336,
+    "canonical": 0.04541500000000001,
+    "qr": 0.026672999999999995,
+    "svd": 0.017449
+  },
+  "calls": {
+    "wait": 122,
+    "rates": 301,
+    "attenuate": 365,
+    "full_jump": 58,
+    "centered_rates": 58,
+    "compress": 58,
+    "canonical": 359,
+    "qr": 5385,
+    "svd": 406
+  },
+  "projection": {
+    "sum_local_weight": 1.2150308206045058e-11,
+    "sum_schmidt_weight": 1.695372262923687e-11,
+    "max_local_weight": 1.2150308206045058e-11,
+    "max_schmidt_weight": 1.3102494690976396e-11,
+    "sum_local_sqrt": 3.4857292215679355e-06,
+    "sum_schmidt_sqrt": 6.198017045007901e-06
+  },
+  "replay": {
+    "counts": true,
+    "errors": true,
+    "first18_statistics": true
+  },
+  "max_statistics_difference": 0.0
+}

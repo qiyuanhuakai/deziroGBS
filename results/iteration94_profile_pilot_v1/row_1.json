@@ -1,0 +1,51 @@
+{
+  "name": "displaced4",
+  "case": 1,
+  "records": 64,
+  "returncode": 0,
+  "error": "",
+  "seconds": 0.13242660000105388,
+  "failures": 0,
+  "failure_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inclusive_seconds": {
+    "wait": 0.05139,
+    "rates": 0.041909,
+    "attenuate": 0.024883000000000002,
+    "full_jump": 0.071603,
+    "centered_rates": 0.0074659999999999995,
+    "compress": 0.028905,
+    "canonical": 0.046123,
+    "qr": 0.027906999999999987,
+    "svd": 0.015097
+  },
+  "calls": {
+    "wait": 224,
+    "rates": 917,
+    "attenuate": 983,
+    "full_jump": 158,
+    "centered_rates": 160,
+    "compress": 160,
+    "canonical": 1079,
+    "qr": 7545,
+    "svd": 480
+  },
+  "projection": {
+    "sum_local_weight": 3.567603579229945e-36,
+    "sum_schmidt_weight": 1.4005362604581043e-26,
+    "max_local_weight": 2.3211259533643363e-36,
+    "max_schmidt_weight": 6.590432585405427e-27,
+    "sum_local_sqrt": 3.3904847104714337e-18,
+    "sum_schmidt_sqrt": 2.39773688471614e-13
+  },
+  "replay": {
+    "counts": true,
+    "errors": true,
+    "first18_statistics": true
+  },
+  "max_statistics_difference": 0.0
+}

@@ -1,0 +1,51 @@
+{
+  "name": "pure4",
+  "case": 0,
+  "records": 64,
+  "returncode": 0,
+  "error": "",
+  "seconds": 0.20931180000116,
+  "failures": 0,
+  "failure_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inclusive_seconds": {
+    "wait": 0.078211,
+    "rates": 0.066604,
+    "attenuate": 0.03716200000000001,
+    "full_jump": 0.11676799999999998,
+    "centered_rates": 0.013604999999999999,
+    "compress": 0.046504000000000004,
+    "canonical": 0.079453,
+    "qr": 0.04616399999999998,
+    "svd": 0.022855000000000004
+  },
+  "calls": {
+    "wait": 188,
+    "rates": 695,
+    "attenuate": 759,
+    "full_jump": 124,
+    "centered_rates": 124,
+    "compress": 124,
+    "canonical": 819,
+    "qr": 5733,
+    "svd": 372
+  },
+  "projection": {
+    "sum_local_weight": 8.614466324796931e-22,
+    "sum_schmidt_weight": 2.870345978712672e-26,
+    "max_local_weight": 8.614466324795261e-22,
+    "max_schmidt_weight": 1.0844708483090568e-26,
+    "sum_local_sqrt": 2.9350430511774626e-11,
+    "sum_schmidt_sqrt": 3.6814461428697227e-13
+  },
+  "replay": {
+    "counts": true,
+    "errors": true,
+    "first18_statistics": true
+  },
+  "max_statistics_difference": 0.0
+}

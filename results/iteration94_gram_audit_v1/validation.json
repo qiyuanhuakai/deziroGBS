@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "gram_entries_checked": 2592,
+  "maximum_80digit_error": 1.1102230246251565e-16,
+  "scope": "80-digit vacuum oracle for Gaussian purification Gram matrices.\nIncludes actual 1152-output inputs with sparse projection sets; no complete\n1152-output sample is generated and no sampler-throughput claim is made.\n",
+  "rows": [
+    {
+      "case": 0,
+      "modes": 4,
+      "branches": 16,
+      "next_mode": 3,
+      "native_seconds": 0.00011500000073283445,
+      "vacuum_evaluations": 16,
+      "largest_projection_set": 4,
+      "gram_entries_checked": 512,
+      "maximum_80digit_error": 0.0,
+      "minimum_eigenvalues": [
+        0.0004259854381049727,
+        -2.6212711045567526e-16,
+        0.0
+      ],
+      "prior_reference_error": 1.1102230246251565e-16,
+      "dense_q_sha256": "603e75e0598ebf5c8ee7ec78e08ac67bed73384ecf2bb78a4d8837988b79482c"
+    },
+    {
+      "case": 1,
+      "modes": 4,
+      "branches": 16,
+      "next_mode": 3,
+      "native_seconds": 8.940000043367036e-05,
+      "vacuum_evaluations": 16,
+      "largest_projection_set": 4,
+      "gram_entries_checked": 512,
+      "maximum_80digit_error": 5.551115123125783e-17,
+      "minimum_eigenvalues": [
+        0.0007003457726996667,
+        -1.2405500983572568e-16,
+        0.0
+      ],
+      "prior_reference_error": 1.1102230246251565e-16,
+      "dense_q_sha256": "1f059666344ab75371e39e356c815a9c7f082ee4242c98c343bb8ee0e76172d3"
+    },
+    {
+      "case": 2,
+      "modes": 8,
+      "branches": 16,
+      "next_mode": 7,
+      "native_seconds": 0.00017830000069807284,
+      "vacuum_evaluations": 56,
+      "largest_projection_set": 8,
+      "gram_entries_checked": 512,
+      "maximum_80digit_error": 1.1102230246251565e-16,
+      "minimum_eigenvalues": [
+        0.002904852613073404,
+        0.001155196040066154,
+        -2.8597688452851034e-18
+      ],
+      "prior_reference_error": 2.220446049250313e-16,
+      "dense_q_sha256": "dd4b1a853a0373fb1ec320873816f069346c3633c774003bf5cd5927ea883557"
+    },
+    {
+      "case": 3,
+      "modes": 2,
+      "branches": 4,
+      "next_mode": 1,
+      "native_seconds": 4.219999937049579e-05,
+      "vacuum_evaluations": 4,
+      "largest_projection_set": 2,
+      "gram_entries_checked": 32,
+      "maximum_80digit_error": 0.0,
+      "minimum_eigenvalues": [
+        0.011863480230907565,
+        1.557853788711937e-17,
+        0.0
+      ],
+      "prior_reference_error": 0.0,
+      "dense_q_sha256": "4ee6ded33b32fc59d18005406f41dcf179699bb2224020b5750705bb324d7766"
+    },
+    {
+      "case": 4,
+      "modes": 1152,
+      "branches": 16,
+      "next_mode": 1151,
+      "native_seconds": 0.0153639000000112,
+      "vacuum_evaluations": 39,
+      "largest_projection_set": 6,
+      "gram_entries_checked": 512,
+      "maximum_80digit_error": 0.0,
+      "minimum_eigenvalues": [
+        0.0008382285250253692,
+        1.804471438113849e-17,
+        -2.1405421757012127e-18
+      ],
+      "prior_reference_error": null,
+      "dense_q_sha256": "0951f25105d75ac5ce99b39e322d7d21a1431c34ed7178a537898c47753cd833"
+    },
+    {
+      "case": 5,
+      "modes": 1152,
+      "branches": 16,
+      "next_mode": 1151,
+      "native_seconds": 0.015657500000088476,
+      "vacuum_evaluations": 27,
+      "largest_projection_set": 6,
+      "gram_entries_checked": 512,
+      "maximum_80digit_error": 0.0,
+      "minimum_eigenvalues": [
+        7.220955855974586e-20,
+        4.333507962063132e-20,
+        -1.2254544490996031e-18
+      ],
+      "prior_reference_error": null,
+      "dense_q_sha256": "e6a8002f28818dd337ca714464767204264970a2863a05399804036f0f69a8f1"
+    }
+  ]
+}

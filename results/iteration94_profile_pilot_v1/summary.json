@@ -1,0 +1,312 @@
+{
+  "completed": true,
+  "scope": "Inclusive timing diagnostics on frozen paired controls, not formal throughput.\nTimers overlap (QR is inside canonicalization, rates, waits and compression).\nProjection diagnostics include attempted final jumps that may fail the budget.\n",
+  "rows": [
+    {
+      "name": "pure4",
+      "case": 0,
+      "records": 64,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.20931180000116,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 0.078211,
+        "rates": 0.066604,
+        "attenuate": 0.03716200000000001,
+        "full_jump": 0.11676799999999998,
+        "centered_rates": 0.013604999999999999,
+        "compress": 0.046504000000000004,
+        "canonical": 0.079453,
+        "qr": 0.04616399999999998,
+        "svd": 0.022855000000000004
+      },
+      "calls": {
+        "wait": 188,
+        "rates": 695,
+        "attenuate": 759,
+        "full_jump": 124,
+        "centered_rates": 124,
+        "compress": 124,
+        "canonical": 819,
+        "qr": 5733,
+        "svd": 372
+      },
+      "projection": {
+        "sum_local_weight": 8.614466324796931e-22,
+        "sum_schmidt_weight": 2.870345978712672e-26,
+        "max_local_weight": 8.614466324795261e-22,
+        "max_schmidt_weight": 1.0844708483090568e-26,
+        "sum_local_sqrt": 2.9350430511774626e-11,
+        "sum_schmidt_sqrt": 3.6814461428697227e-13
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    },
+    {
+      "name": "displaced4",
+      "case": 1,
+      "records": 64,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.13242660000105388,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 0.05139,
+        "rates": 0.041909,
+        "attenuate": 0.024883000000000002,
+        "full_jump": 0.071603,
+        "centered_rates": 0.0074659999999999995,
+        "compress": 0.028905,
+        "canonical": 0.046123,
+        "qr": 0.027906999999999987,
+        "svd": 0.015097
+      },
+      "calls": {
+        "wait": 224,
+        "rates": 917,
+        "attenuate": 983,
+        "full_jump": 158,
+        "centered_rates": 160,
+        "compress": 160,
+        "canonical": 1079,
+        "qr": 7545,
+        "svd": 480
+      },
+      "projection": {
+        "sum_local_weight": 3.567603579229945e-36,
+        "sum_schmidt_weight": 1.4005362604581043e-26,
+        "max_local_weight": 2.3211259533643363e-36,
+        "max_schmidt_weight": 6.590432585405427e-27,
+        "sum_local_sqrt": 3.3904847104714337e-18,
+        "sum_schmidt_sqrt": 2.39773688471614e-13
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    },
+    {
+      "name": "pure8",
+      "case": 2,
+      "records": 64,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.12352740000096674,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 0.031149000000000003,
+        "rates": 0.039576999999999994,
+        "attenuate": 0.014450000000000003,
+        "full_jump": 0.08693799999999999,
+        "centered_rates": 0.004807,
+        "compress": 0.034336,
+        "canonical": 0.04541500000000001,
+        "qr": 0.026672999999999995,
+        "svd": 0.017449
+      },
+      "calls": {
+        "wait": 122,
+        "rates": 301,
+        "attenuate": 365,
+        "full_jump": 58,
+        "centered_rates": 58,
+        "compress": 58,
+        "canonical": 359,
+        "qr": 5385,
+        "svd": 406
+      },
+      "projection": {
+        "sum_local_weight": 1.2150308206045058e-11,
+        "sum_schmidt_weight": 1.695372262923687e-11,
+        "max_local_weight": 1.2150308206045058e-11,
+        "max_schmidt_weight": 1.3102494690976396e-11,
+        "sum_local_sqrt": 3.4857292215679355e-06,
+        "sum_schmidt_sqrt": 6.198017045007901e-06
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    },
+    {
+      "name": "lossy_tmsv",
+      "case": 3,
+      "records": 64,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.024790800000118907,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 0.015044,
+        "rates": 0.007569000000000001,
+        "attenuate": 0.007335000000000001,
+        "full_jump": 0.0011589999999999999,
+        "centered_rates": 0.002289,
+        "compress": 0.0037900000000000004,
+        "canonical": 0.005068999999999999,
+        "qr": 0.004165,
+        "svd": 0.0022240000000000003
+      },
+      "calls": {
+        "wait": 308,
+        "rates": 1185,
+        "attenuate": 1441,
+        "full_jump": 52,
+        "centered_rates": 244,
+        "compress": 244,
+        "canonical": 1645,
+        "qr": 4503,
+        "svd": 244
+      },
+      "projection": {
+        "sum_local_weight": 3.4273780903932826e-13,
+        "sum_schmidt_weight": 3.278914903496889e-26,
+        "max_local_weight": 2.324947652360948e-13,
+        "max_schmidt_weight": 9.103325284165752e-27,
+        "sum_local_sqrt": 1.044904959933716e-06,
+        "sum_schmidt_sqrt": 6.247489889128713e-13
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    },
+    {
+      "name": "actual_sector0",
+      "case": 4,
+      "records": 1,
+      "returncode": 0,
+      "error": "",
+      "seconds": 26.396788699999888,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 8.145525,
+        "rates": 4.594506999999998,
+        "attenuate": 3.50176,
+        "full_jump": 0.0,
+        "centered_rates": 1.0218979999999998,
+        "compress": 6.3549060000000015,
+        "canonical": 13.460781000000017,
+        "qr": 7.237892999999653,
+        "svd": 3.5797430000000077
+      },
+      "calls": {
+        "wait": 93,
+        "rates": 355,
+        "attenuate": 448,
+        "full_jump": 0,
+        "centered_rates": 92,
+        "compress": 92,
+        "canonical": 580,
+        "qr": 50770,
+        "svd": 4508
+      },
+      "projection": {
+        "sum_local_weight": 1.9541120007348088e-08,
+        "sum_schmidt_weight": 4.841930473261259e-05,
+        "max_local_weight": 3.2216631741547178e-09,
+        "max_schmidt_weight": 6.272025735414087e-06,
+        "sum_local_sqrt": 0.0009009267939530358,
+        "sum_schmidt_sqrt": 0.047119285024119634
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    },
+    {
+      "name": "actual_sector1",
+      "case": 5,
+      "records": 1,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.022811599999840837,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "inclusive_seconds": {
+        "wait": 0.001111,
+        "rates": 0.0010609999999999999,
+        "attenuate": 0.0005380000000000001,
+        "full_jump": 0.018396,
+        "centered_rates": 0.00015900000000000002,
+        "compress": 0.000572,
+        "canonical": 0.000641,
+        "qr": 0.0005120000000000054,
+        "svd": 0.00031899999999999957
+      },
+      "calls": {
+        "wait": 3,
+        "rates": 10,
+        "attenuate": 12,
+        "full_jump": 1,
+        "centered_rates": 2,
+        "compress": 2,
+        "canonical": 13,
+        "qr": 1237,
+        "svd": 98
+      },
+      "projection": {
+        "sum_local_weight": 0.0,
+        "sum_schmidt_weight": 0.0,
+        "max_local_weight": 0.0,
+        "max_schmidt_weight": 0.0,
+        "sum_local_sqrt": 0.0,
+        "sum_schmidt_sqrt": 0.0
+      },
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "first18_statistics": true
+      },
+      "max_statistics_difference": 0.0
+    }
+  ]
+}

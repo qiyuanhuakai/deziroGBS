@@ -1,0 +1,51 @@
+{
+  "name": "lossy_tmsv",
+  "case": 3,
+  "records": 64,
+  "returncode": 0,
+  "error": "",
+  "seconds": 0.024790800000118907,
+  "failures": 0,
+  "failure_codes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inclusive_seconds": {
+    "wait": 0.015044,
+    "rates": 0.007569000000000001,
+    "attenuate": 0.007335000000000001,
+    "full_jump": 0.0011589999999999999,
+    "centered_rates": 0.002289,
+    "compress": 0.0037900000000000004,
+    "canonical": 0.005068999999999999,
+    "qr": 0.004165,
+    "svd": 0.0022240000000000003
+  },
+  "calls": {
+    "wait": 308,
+    "rates": 1185,
+    "attenuate": 1441,
+    "full_jump": 52,
+    "centered_rates": 244,
+    "compress": 244,
+    "canonical": 1645,
+    "qr": 4503,
+    "svd": 244
+  },
+  "projection": {
+    "sum_local_weight": 3.4273780903932826e-13,
+    "sum_schmidt_weight": 3.278914903496889e-26,
+    "max_local_weight": 2.324947652360948e-13,
+    "max_schmidt_weight": 9.103325284165752e-27,
+    "sum_local_sqrt": 1.044904959933716e-06,
+    "sum_schmidt_sqrt": 6.247489889128713e-13
+  },
+  "replay": {
+    "counts": true,
+    "errors": true,
+    "first18_statistics": true
+  },
+  "max_statistics_difference": 0.0
+}
