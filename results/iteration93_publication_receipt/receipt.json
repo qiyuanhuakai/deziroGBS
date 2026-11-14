@@ -1,0 +1,48 @@
+{
+  "science_commit": "d32db868d277eec6ca7b871c48bceb8dd01bacb8",
+  "science_tree": "af67bbc3ea09c339bc95092168864464dd7e36d1",
+  "parent": "bfa67e34303db5731a9b99ffd4d037c47d1016c1",
+  "remote_commit_api": {
+    "sha": "d32db868d277eec6ca7b871c48bceb8dd01bacb8",
+    "node_id": "C_kwDOViTfLtoAKGQzMmRiODY4ZDI3N2VlYzZjYTdiODcxYzQ4YmNlYjhkZDAxYmFjYjg",
+    "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/d32db868d277eec6ca7b871c48bceb8dd01bacb8",
+    "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/d32db868d277eec6ca7b871c48bceb8dd01bacb8",
+    "author": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-14T03:08:00Z"
+    },
+    "committer": {
+      "name": "qiyuanhuakai",
+      "email": "qiyuanhuakai@gmail.com",
+      "date": "2026-11-14T03:08:00Z"
+    },
+    "tree": {
+      "sha": "af67bbc3ea09c339bc95092168864464dd7e36d1",
+      "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/trees/af67bbc3ea09c339bc95092168864464dd7e36d1"
+    },
+    "message": "Implement and audit general Gaussian MPS sampling trajectories\n\nSupport complex interferometers, displacement and correlated Gaussian mixtures while charging local-basis and Schmidt projections. Preserve failures as outcomes and all executed source versions. Audit 2162752 quality attempts, 111 confidence events, 3097149 consumed native RNG domains and 55 strictly serial timing configurations.\n\nValidation: 38148 independent checks; 1070 tests run, 1041 successful, zero failures/errors; ten new MPS tests. Four-mode PNR improvement over R3 is scoped; PE and Frugal remain faster, and the actual 1152-output run retains 15 failures in 64 attempts. No general-input or Jiuzhang-scale superiority.",
+    "parents": [
+      {
+        "sha": "bfa67e34303db5731a9b99ffd4d037c47d1016c1",
+        "url": "https://api.github.com/repos/qiyuanhuakai/deziroGBS/git/commits/bfa67e34303db5731a9b99ffd4d037c47d1016c1",
+        "html_url": "https://github.com/qiyuanhuakai/deziroGBS/commit/bfa67e34303db5731a9b99ffd4d037c47d1016c1"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "atomic_push": [
+    "",
+    "To https://github.com/qiyuanhuakai/deziroGBS.git\n   bfa67e34..d32db868  HEAD -> main\n * [new branch]        HEAD -> research/iteration93-gaussian-mps-core"
+  ],
+  "manifest_sha256": "6ca2371abb0ba2ec479c39e7a3d344ac5b9c4540eaa7235a1726adcd28417d03",
+  "verification_sha256": "79ca45586099cc5e1c2c1c1928f5ca4f0adc3d27fd4f1edcb9982ca72cbb631e",
+  "tests_sha256": "3653c5988bb540c939307492cb59ff0e44139c8db4588dba649a5891d63fef25",
+  "recorded_utc": "2026-11-14T03:08:23.369819+00:00"
+}
