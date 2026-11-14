@@ -1,0 +1,70 @@
+{
+  "scope": "Paired controls for the waiting-root initial guess; not independent quality data.\nAll implementations and repeats intentionally use identical domain addresses.\nStrictly serial calls; one native worker and one BLAS thread. Failures retained.\n",
+  "cases": [
+    {
+      "name": "pure4",
+      "records": 64,
+      "d": 16,
+      "bond": 128,
+      "budget": 0.01,
+      "source": "results\\iteration93_reference_v2\\input_0.npz",
+      "sha256": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080"
+    },
+    {
+      "name": "displaced4",
+      "records": 64,
+      "d": 16,
+      "bond": 128,
+      "budget": 0.01,
+      "source": "results\\iteration93_reference_v2\\input_1.npz",
+      "sha256": "a44389223d644b3ef162832464f98954e8137750906c0dbea6ac5438a039210d"
+    },
+    {
+      "name": "pure8",
+      "records": 64,
+      "d": 8,
+      "bond": 32,
+      "budget": 0.02,
+      "source": "results\\iteration93_reference_v2\\input_2.npz",
+      "sha256": "1013a5a87f7762306241f2a32d9c56a41c2743a39ea1684c1bbb75fb058f568b"
+    },
+    {
+      "name": "lossy_tmsv",
+      "records": 64,
+      "d": 16,
+      "bond": 64,
+      "budget": 0.01,
+      "source": "results\\iteration93_reference_v2\\input_3.npz",
+      "sha256": "0382bcde01a34e95f5b59a8af72916bba5b6d08c1e035a425645f881cb992e61"
+    },
+    {
+      "name": "actual_sector0",
+      "records": 1,
+      "d": 6,
+      "bond": 32,
+      "budget": 0.1,
+      "source": "results\\iteration93_actual_quality_v1\\input_0.npz",
+      "sha256": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc"
+    },
+    {
+      "name": "actual_sector1",
+      "records": 1,
+      "d": 6,
+      "bond": 32,
+      "budget": 0.01,
+      "source": "results\\iteration93_actual_quality_v1\\input_1.npz",
+      "sha256": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9"
+    }
+  ],
+  "replicates": 3,
+  "experiment_base": 2483032064,
+  "threads": 1,
+  "cap": 256,
+  "hashes": {
+    "experiments/iteration94_wait_pilot_v1.py": "5c2078c238c5c3e200e6cd50aab2df2283f221ef4533a5949b0f53c1f58098c5",
+    "native/gaussian_mps_core94_v1.cpp": "12df8ed5fe828254abce5e662333ad33b984186c31f9a1fe392ac9fa8df5fbc1",
+    "native/gaussian_mps_core93_v5.cpp": "f6e3f5834fcdd86d230037e6f8863ab8e06abe3f5d4870ce9bad25f05c16c9b6",
+    "results/iteration94_build_v1/mps.dll": "4a4f4f9cc8c8e14e75344c27e0d7e1ac13a39b8483a9392b9aadbb53098a3009",
+    "results/iteration93_build_v5/mps.dll": "4504bd4a1618206a9bd6a15f803077b1efb5c95da50a1af92f3ea4e6569d4baf"
+  }
+}

@@ -760,3 +760,10 @@ results/iteration93*.json -text -whitespace
 native/*93* -text -whitespace
 tests/test_native_mps93.py -text -whitespace
 tests/test_native_mps_adaptive93.py -text -whitespace
+
+# Iteration94 research checkpoint; preserve executed source and raw controls.
+experiments/iteration94*.py -text -whitespace
+experiments/verify_iteration94*.py -text -whitespace
+native/*94* -text -whitespace
+results/iteration94*/** -text -whitespace
+results/iteration94*.json -text -whitespace

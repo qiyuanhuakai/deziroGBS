@@ -1,0 +1,908 @@
+{
+  "completed": true,
+  "scope": "Paired controls for the waiting-root initial guess; not independent quality data.\nAll implementations and repeats intentionally use identical domain addresses.\nStrictly serial calls; one native worker and one BLAS thread. Failures retained.\n",
+  "comparisons": [
+    {
+      "name": "pure4",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 0.2739719999990484,
+        "new": 0.2423495000002731
+      },
+      "old_over_new": 1.1304830420477026,
+      "root_iterations": {
+        "old": 769,
+        "new": 571
+      },
+      "max_charge_difference": 8.137717087667165e-17
+    },
+    {
+      "name": "displaced4",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 0.17273019999993267,
+        "new": 0.15668919999916398
+      },
+      "old_over_new": 1.102374637185296,
+      "root_iterations": {
+        "old": 985,
+        "new": 759
+      },
+      "max_charge_difference": 2.0562547102379297e-17
+    },
+    {
+      "name": "pure8",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 0.13395259999924747,
+        "new": 0.13413109999964945
+      },
+      "old_over_new": 0.9986692124316997,
+      "root_iterations": {
+        "old": 316,
+        "new": 243
+      },
+      "max_charge_difference": 5.822327957693048e-17
+    },
+    {
+      "name": "lossy_tmsv",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 0.030932400000892812,
+        "new": 0.02640600000086124
+      },
+      "old_over_new": 1.1714155873621124,
+      "root_iterations": {
+        "old": 1606,
+        "new": 1133
+      },
+      "max_charge_difference": 6.367340236034084e-17
+    },
+    {
+      "name": "actual_sector0",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 40.30868940000073,
+        "new": 36.92091559999972
+      },
+      "old_over_new": 1.0917575781896656,
+      "root_iterations": {
+        "old": 910,
+        "new": 355
+      },
+      "max_charge_difference": 1.2800177584537664e-13
+    },
+    {
+      "name": "actual_sector1",
+      "replay": {
+        "counts": true,
+        "errors": true,
+        "rng_words": true
+      },
+      "median_seconds": {
+        "old": 0.029260600000270642,
+        "new": 0.030215099999622907
+      },
+      "old_over_new": 0.9684098348387337,
+      "root_iterations": {
+        "old": 13,
+        "new": 9
+      },
+      "max_charge_difference": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "rep": 0,
+      "case": 0,
+      "name": "pure4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 769,
+      "survival_calls": 957,
+      "photons": 124,
+      "max_charge": 2.951352386677738e-11,
+      "max_residual": 1.6827914387472498e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.299804000000222,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 0,
+      "name": "pure4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 571,
+      "survival_calls": 759,
+      "photons": 124,
+      "max_charge": 2.951360524394826e-11,
+      "max_residual": 1.6480147867030392e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.2423495000002731,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 985,
+      "survival_calls": 1209,
+      "photons": 160,
+      "max_charge": 1.2884478813510888e-13,
+      "max_residual": 1.5571656919628751e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.17273019999993267,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 759,
+      "survival_calls": 983,
+      "photons": 160,
+      "max_charge": 1.2885203646932426e-13,
+      "max_residual": 1.8106297169050156e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.15668919999916398,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 2,
+      "name": "pure8",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 316,
+      "survival_calls": 438,
+      "photons": 58,
+      "max_charge": 8.317962561470333e-06,
+      "max_residual": 9.462393976006345e-13,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.14563899999848218,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 2,
+      "name": "pure8",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 243,
+      "survival_calls": 365,
+      "photons": 58,
+      "max_charge": 8.317962561448596e-06,
+      "max_residual": 1.6158536639797327e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.1353091000000859,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 1606,
+      "survival_calls": 1914,
+      "photons": 244,
+      "max_charge": 9.835350707353975e-07,
+      "max_residual": 1.861392929982525e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.03641140000036103,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 1133,
+      "survival_calls": 1441,
+      "photons": 244,
+      "max_charge": 9.835350707885525e-07,
+      "max_residual": 1.967563156672625e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.029340200000660843,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 910,
+      "survival_calls": 1003,
+      "photons": 92,
+      "max_charge": 0.04714341039471463,
+      "max_residual": 1.806302937085169e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 46.018988300000274,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 355,
+      "survival_calls": 448,
+      "photons": 92,
+      "max_charge": 0.047143410394842634,
+      "max_residual": 1.8668062972196364e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 36.92091559999972,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 13,
+      "survival_calls": 16,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 2.740863092043355e-16,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.041444200000114506,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 0,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 9,
+      "survival_calls": 12,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 1.007115398021785e-15,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.03934719999961089,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 0,
+      "name": "pure4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 571,
+      "survival_calls": 759,
+      "photons": 124,
+      "max_charge": 2.951360524394826e-11,
+      "max_residual": 1.6480147867030392e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.25435379999908037,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 0,
+      "name": "pure4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 769,
+      "survival_calls": 957,
+      "photons": 124,
+      "max_charge": 2.951352386677738e-11,
+      "max_residual": 1.6827914387472498e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.2739719999990484,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 759,
+      "survival_calls": 983,
+      "photons": 160,
+      "max_charge": 1.2885203646932426e-13,
+      "max_residual": 1.8106297169050156e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.16310189999967406,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 985,
+      "survival_calls": 1209,
+      "photons": 160,
+      "max_charge": 1.2884478813510888e-13,
+      "max_residual": 1.5571656919628751e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.17693639999924926,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 2,
+      "name": "pure8",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 243,
+      "survival_calls": 365,
+      "photons": 58,
+      "max_charge": 8.317962561448596e-06,
+      "max_residual": 1.6158536639797327e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.13413109999964945,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 2,
+      "name": "pure8",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 316,
+      "survival_calls": 438,
+      "photons": 58,
+      "max_charge": 8.317962561470333e-06,
+      "max_residual": 9.462393976006345e-13,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.13395259999924747,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 1133,
+      "survival_calls": 1441,
+      "photons": 244,
+      "max_charge": 9.835350707885525e-07,
+      "max_residual": 1.967563156672625e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.02640600000086124,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 1606,
+      "survival_calls": 1914,
+      "photons": 244,
+      "max_charge": 9.835350707353975e-07,
+      "max_residual": 1.861392929982525e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.030932400000892812,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 355,
+      "survival_calls": 448,
+      "photons": 92,
+      "max_charge": 0.047143410394842634,
+      "max_residual": 1.8668062972196364e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 25.33075529999951,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 910,
+      "survival_calls": 1003,
+      "photons": 92,
+      "max_charge": 0.04714341039471463,
+      "max_residual": 1.806302937085169e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 37.4632275999993,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 9,
+      "survival_calls": 12,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 1.007115398021785e-15,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.02608929999951215,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 1,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 13,
+      "survival_calls": 16,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 2.740863092043355e-16,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.025580099998478545,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 0,
+      "name": "pure4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 769,
+      "survival_calls": 957,
+      "photons": 124,
+      "max_charge": 2.951352386677738e-11,
+      "max_residual": 1.6827914387472498e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.19652570000107517,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 0,
+      "name": "pure4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 571,
+      "survival_calls": 759,
+      "photons": 124,
+      "max_charge": 2.951360524394826e-11,
+      "max_residual": 1.6480147867030392e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.173098299999765,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 985,
+      "survival_calls": 1209,
+      "photons": 160,
+      "max_charge": 1.2884478813510888e-13,
+      "max_residual": 1.5571656919628751e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.13326639999831968,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 1,
+      "name": "displaced4",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 759,
+      "survival_calls": 983,
+      "photons": 160,
+      "max_charge": 1.2885203646932426e-13,
+      "max_residual": 1.8106297169050156e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.12259879999874101,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 2,
+      "name": "pure8",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 316,
+      "survival_calls": 438,
+      "photons": 58,
+      "max_charge": 8.317962561470333e-06,
+      "max_residual": 9.462393976006345e-13,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.11548930000026303,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 2,
+      "name": "pure8",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 243,
+      "survival_calls": 365,
+      "photons": 58,
+      "max_charge": 8.317962561448596e-06,
+      "max_residual": 1.6158536639797327e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.1082750000005035,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "old",
+      "records": 64,
+      "root_iterations": 1606,
+      "survival_calls": 1914,
+      "photons": 244,
+      "max_charge": 9.835350707353975e-07,
+      "max_residual": 1.861392929982525e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.028945000000021537,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 3,
+      "name": "lossy_tmsv",
+      "impl": "new",
+      "records": 64,
+      "root_iterations": 1133,
+      "survival_calls": 1441,
+      "photons": 244,
+      "max_charge": 9.835350707885525e-07,
+      "max_residual": 1.967563156672625e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.024338100000022678,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 910,
+      "survival_calls": 1003,
+      "photons": 92,
+      "max_charge": 0.04714341039471463,
+      "max_residual": 1.806302937085169e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 40.30868940000073,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 4,
+      "name": "actual_sector0",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 355,
+      "survival_calls": 448,
+      "photons": 92,
+      "max_charge": 0.047143410394842634,
+      "max_residual": 1.8668062972196364e-12,
+      "returncode": 0,
+      "error": "",
+      "seconds": 37.896694999999454,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "old",
+      "records": 1,
+      "root_iterations": 13,
+      "survival_calls": 16,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 2.740863092043355e-16,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.029260600000270642,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "rep": 2,
+      "case": 5,
+      "name": "actual_sector1",
+      "impl": "new",
+      "records": 1,
+      "root_iterations": 9,
+      "survival_calls": 12,
+      "photons": 2,
+      "max_charge": 0.0,
+      "max_residual": 1.007115398021785e-15,
+      "returncode": 0,
+      "error": "",
+      "seconds": 0.030215099999622907,
+      "failures": 0,
+      "failure_codes": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    }
+  ]
+}
