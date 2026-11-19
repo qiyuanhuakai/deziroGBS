@@ -17,9 +17,11 @@ TV 为总变差距离。表中区间属于预定的名义联合 99% 置信族，
 ## 阅读与运行
 
 - **找算法**　[PNR 的 C++ 核心](native/gaussian_mps_core94_v2.cpp) · [直接点击的 C++ 核心](native/gaussian_click_branch94_v1.cpp) · [Python 包](src/gbslab/)
-- **运行入门实验**　使用 Python 3.10 或更新版本，在仓库根目录执行以下命令。
+- **运行入门实验**　使用 Python 3.10 或更新版本。以下命令只下载当前主分支快照。[四端口点击采样示例](docs/quickstart.md)
 
 ```sh
+git clone --depth 1 --branch main https://github.com/qiyuanhuakai/deziroGBS.git
+cd deziroGBS
 python -m pip install -e .
 python -m gbslab.experiment --help
 ```
