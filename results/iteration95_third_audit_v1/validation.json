@@ -1,0 +1,69 @@
+{
+  "checked_triples": 1422800,
+  "exhaustive_first_port_slices": [
+    {
+      "first_port": 0,
+      "third_contribution": 4.739177010528424,
+      "absolute_error": 1.2576606422953773e-12
+    },
+    {
+      "first_port": 127,
+      "third_contribution": 2.5733942542802724,
+      "absolute_error": 1.865441134896173e-11
+    },
+    {
+      "first_port": 511,
+      "third_contribution": 1.2302346434446534,
+      "absolute_error": 4.413802656699772e-12
+    },
+    {
+      "first_port": 895,
+      "third_contribution": 0.32497204803480173,
+      "absolute_error": 5.085099008539373e-12
+    },
+    {
+      "first_port": 1138,
+      "third_contribution": 0.29290918407004485,
+      "absolute_error": 6.2727600891321345e-15
+    },
+    {
+      "first_port": 1149,
+      "third_contribution": 0.020207809885775863,
+      "absolute_error": 1.609823385706477e-15
+    }
+  ],
+  "mean_error": 7.105427357601002e-14,
+  "variance_error": 4.149569576838985e-12,
+  "duals": [
+    {
+      "degree": 1,
+      "lower": 0.013357062844184251,
+      "upper": 0.013357062844186474,
+      "gap": 2.22218077272629e-15
+    },
+    {
+      "degree": 2,
+      "lower": 0.020215998049516987,
+      "upper": 0.020215998049517597,
+      "gap": 6.106226635438361e-16
+    },
+    {
+      "degree": 3,
+      "lower": 0.02060890441270782,
+      "upper": 0.02060890441467292,
+      "gap": 1.965098223033479e-12
+    }
+  ],
+  "models": [
+    {
+      "degree": 2,
+      "hardware_ks": 0.05661780174534348,
+      "reconstructed_count_max_error": 2.949029909160572e-17
+    },
+    {
+      "degree": 3,
+      "hardware_ks": 0.04208617134305326,
+      "reconstructed_count_max_error": 2.0816681711721685e-17
+    }
+  ]
+}

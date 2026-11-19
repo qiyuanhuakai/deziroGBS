@@ -1,0 +1,35 @@
+{
+  "old_paired_records": 8,
+  "new_paired_records": 4,
+  "arms": {
+    "fixed32": [
+      32,
+      32,
+      6
+    ],
+    "adaptive32": [
+      32,
+      48,
+      8
+    ],
+    "adaptive4": [
+      4,
+      48,
+      8
+    ]
+  },
+  "scope": "Identical accepted-state charge accounting, local target 0.0006; budget 0.1 and 0.01. Only rank floor differs between adaptive arms.",
+  "seeds": [
+    "0x95a00000 recovered comparison, new floor",
+    "0x95a02000 all arms paired, all records retained"
+  ],
+  "small": "Four-mode dense reference, 16384 new records for rank-floor 1 versus 4, same cap 16 and site limit 8. 0x95a03000.",
+  "hashes": {
+    "experiments/iteration95_rank_floor_v2.py": "8c766fccd07589de1c84d17f2efe59124517d3c499bb0e0b4bbae23e0216c0ac",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration95_adaptive_pnr_v1/adaptive.dll": "6b09011f45404602ec0d21d65f372336c90f4da5ed34038547aae06bb7fc1816",
+    "results/iteration95_adaptive_pnr_v1/manifest.json": "fda59cd11f7478c1bd175bb1477ea50ea983f0a863b0d13ecc1c9cf17bd3e902"
+  }
+}

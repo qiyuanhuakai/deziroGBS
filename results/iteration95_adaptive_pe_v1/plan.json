@@ -1,0 +1,17 @@
+{
+  "upstream": "6c1ed6f8f11ffc9f3c268757f0fe0bd48a768d82",
+  "threads": 1,
+  "batch": 2048,
+  "repeats": 5,
+  "warmup": 64,
+  "methods": "PE CPU v2 window4 vs adaptive d4-D4 to d8-D16 budget .02. Both cap64; include call boundary, RNG, return buffers and native diagnostic trace.",
+  "quality": "PE 16384 fresh records in 16 batches of 1024, seed 0x95c00000+batch. Compare with previously collected adaptive small records. Four simultaneous CV bounds (PNR and click lower/upper) for PE.",
+  "timing_domains": "0x95c10000+2*(rep+1)+method; controls at previous addresses excluded",
+  "hashes": {
+    "experiments/iteration95_adaptive_pe_v1.py": "bd68359835c960214eddad1b50d244b97adeeabb305bd83fe61be9917524eedf",
+    "results/iteration95_adaptive_pnr_v1/adaptive.dll": "6b09011f45404602ec0d21d65f372336c90f4da5ed34038547aae06bb7fc1816",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration93_reference_v2/law_0.npz": "83437c268230b663978c000f26319b2cefaf03a41c466a3ae408062d2287c9d9",
+    "results/iteration95_adaptive_pnr_v1/small_1.npz": "4cb64916f29648036b1f3a2e238129aae4455f9395c55bd919950385cd586e9a"
+  }
+}

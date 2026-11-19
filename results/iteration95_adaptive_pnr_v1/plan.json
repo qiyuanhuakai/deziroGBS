@@ -1,0 +1,48 @@
+{
+  "hashes": {
+    "native/gaussian_mps_adaptive95_v1.cpp": "30c2ae19694f56c13338d6e018a8497d222da0f5c9d4f19376a500fb036e6844",
+    "native/gaussian_mps_adaptive95_steps.hpp": "91d7a8ec21cd7035a54e75d65631d0f80ba27ce7264d4fa04554701dd5ccadd6",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "experiments/iteration95_adaptive_pnr_v1.py": "74bf3e09eb37a16b6ca3948171850cd5d5b1c853f5028dfe8cc192a326beb7c3",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration95_order_extension_v2/manifest.json": "af0e09cf48290b8e23143845b3ade9b5a775b7ed549b763de3f3144c761995f1",
+    "results/iteration94_build_v2/mps.dll": "43dadf2a77abdb3f77b70301ea9b6cc032fa65525489729dffc6b3be21f0fdd5"
+  },
+  "target_per_projection": 0.0006,
+  "actual_initial": [
+    6,
+    32
+  ],
+  "actual_caps": [
+    8,
+    48
+  ],
+  "budgets": [
+    0.1,
+    0.01
+  ],
+  "photon_cap": 256,
+  "paired_replay": "12 prior records both spectra, original order, fixed and adaptive, common experiment 0x95060000",
+  "fresh": "8 new paired records per method and spectrum, experiment 0x95a00000, 4 workers, same domains only across methods",
+  "ablation": "first prior failure row 3, main spectrum, bond growth alone and Fock growth alone",
+  "small": "four modes, 16384 paired fresh records, 4 workers, cap64, d4 D4 vs caps8/16, budget .02, experiment 0x95a01000",
+  "small_confidence": "two count CDFs share .01 family error by Bonferroni, DKW vs numerical reference on totals through 64 plus failure sentinel",
+  "trace": [
+    "selected_port",
+    "charge_before",
+    "sqrt_initial_fock_tail",
+    "sqrt_final_fock_tail",
+    "sqrt_sweep_loss",
+    "max_cut_discard_fraction",
+    "worst_cut",
+    "cuts_grown",
+    "peak_rank",
+    "sites_grown",
+    "charged_distance",
+    "largest_leak_site",
+    "peak_local_dimension",
+    "expanded_hazard_relative_difference"
+  ]
+}
