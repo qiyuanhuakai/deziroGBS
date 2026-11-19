@@ -2,9 +2,11 @@
 
 研究高斯玻色采样（GBS）的两条经典计算路线：逐端口生成光子数（PNR），以及直接生成点击。采样、矩阵分解和压缩由 C++ 执行，Python 负责实验编排与独立核验。
 
-**[第 95 轮阶段结果](https://github.com/qiyuanhuakai/deziroGBS/blob/6b6b7ee1de651bafdc5fb229303c2116ba388209/research/iteration95_checkpoint_v2.md)**　·　[历轮报告](docs/reports/README.md)　·　[精选结果](results/README.md)　·　[原始数据与复现](docs/archive.md)
+**[第 95 轮阶段结果](https://github.com/qiyuanhuakai/deziroGBS/blob/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/research/iteration95_checkpoint_v3.md)**　·　[历轮报告](docs/reports/README.md)　·　[精选结果](results/README.md)　·　[原始数据与复现](docs/archive.md)
 
 ## 目前做到哪里
+
+第 95 轮的 1152 端口九分量模型准备约 0.594 秒。16 线程批量均摊 0.636 微秒/条，单条调用 10.9 微秒；与九章实测总点击数的累计分布最大差为 5.66 个百分点。
 
 | 任务 | 第 94 轮同输入基线 |
 |---|---|

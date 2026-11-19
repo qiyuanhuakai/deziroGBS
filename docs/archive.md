@@ -25,4 +25,4 @@ git -C ../deziroGBS-round94 rev-parse HEAD
 
 **后续轮次**　原始数据随轮次发布到固定归档。主分支只收录代表性汇总、关键图表及对应归档链接；新增报告放入阶段目录，首页更新最新一轮入口。
 
-**第 95 轮阶段快照**　[双谱点击原始记录与文件清单](https://github.com/qiyuanhuakai/deziroGBS/tree/6b6b7ee1de651bafdc5fb229303c2116ba388209/results/iteration95_trajectory_panel_v1) · [PNR 重排的配对记录](https://github.com/qiyuanhuakai/deziroGBS/tree/6b6b7ee1de651bafdc5fb229303c2116ba388209/results/iteration95_order_pilot_v1)。两个链接都固定到提交 `6b6b7ee1de651bafdc5fb229303c2116ba388209`。
+**第 95 轮阶段快照**　[按物理端口编号的点击记录](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_v2) · [七次重复计时](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_timing_v1) · [PNR 重排的配对记录](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_order_extension_v2)。链接固定到提交 `2cc6d6d48679969d44d4b1bcfb15343e4d183f6b`。
