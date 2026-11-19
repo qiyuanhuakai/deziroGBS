@@ -1,1 +1,0 @@
-#define GBSLAB_FRUGAL_MODES(M) M(2) M(4) M(8) M(10) M(12)
