@@ -2,11 +2,11 @@
 
 研究高斯玻色采样（GBS）的两条经典计算路线：逐端口生成光子数（PNR），以及直接生成点击。采样、矩阵分解和压缩由 C++ 执行，Python 负责实验编排与独立核验。
 
-**[最新报告 · 第 94 轮](docs/reports/76-94/94.md)**　·　[全部 94 轮](docs/reports/README.md)　·　[精选结果](results/README.md)　·　[原始数据与复现](docs/archive.md)
+**[第 95 轮阶段结果](https://github.com/qiyuanhuakai/deziroGBS/blob/6b6b7ee1de651bafdc5fb229303c2116ba388209/research/iteration95_checkpoint_v2.md)**　·　[历轮报告](docs/reports/README.md)　·　[精选结果](results/README.md)　·　[原始数据与复现](docs/archive.md)
 
 ## 目前做到哪里
 
-| 任务 | 同输入的观测结果 |
+| 任务 | 第 94 轮同输入基线 |
 |---|---|
 | 四模式，生成光子数 | PNR 与 photonic-engines 的完整分布 TV 区间分别为 0–3.4055% 和 0–3.3247%。同一 CPU 单线程下，PNR 用时是其 6.81 倍。 |
 | 四模式，直接生成点击 | 新方法 K64 的完整点击 TV 上界为 1.3737%，Frugal K2 下界为 3.6693%，Frugal K2 快 114.93 倍。Frugal K4 的区间与新方法重叠，快 111.49 倍。 |

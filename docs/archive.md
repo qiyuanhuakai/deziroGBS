@@ -24,3 +24,5 @@ git -C ../deziroGBS-round94 rev-parse HEAD
 **早期分卷**　旧版大数组分卷、发布时的核验清单及历史构建材料集中在同一快照的 [research_archive 目录](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive)。使用历史发布工具时，请在完整归档工作目录运行。
 
 **后续轮次**　原始数据随轮次发布到固定归档。主分支只收录代表性汇总、关键图表及对应归档链接；新增报告放入阶段目录，首页更新最新一轮入口。
+
+**第 95 轮阶段快照**　[双谱点击原始记录与文件清单](https://github.com/qiyuanhuakai/deziroGBS/tree/6b6b7ee1de651bafdc5fb229303c2116ba388209/results/iteration95_trajectory_panel_v1) · [PNR 重排的配对记录](https://github.com/qiyuanhuakai/deziroGBS/tree/6b6b7ee1de651bafdc5fb229303c2116ba388209/results/iteration95_order_pilot_v1)。两个链接都固定到提交 `6b6b7ee1de651bafdc5fb229303c2116ba388209`。
