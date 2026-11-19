@@ -1,6 +1,6 @@
 # 第43轮：与当前先进路线及九章的关系
 
-核查日期2026-11-10。重查原始论文版本、摘要及Frugal官方主分支。官方main仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)；本轮使用已冻结且未修改的第42轮适配二进制。[来源核查记录](../results/iteration43_frontier/verification.json)
+核查日期2026-11-10。重查原始论文版本、摘要及Frugal官方主分支。官方main仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)；本轮使用已冻结且未修改的第42轮适配二进制。[来源核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration43_frontier/verification.json)
 
 | 路线 | 当前原始来源 | 本轮可比较的进展与限制 |
 |---|---|---|

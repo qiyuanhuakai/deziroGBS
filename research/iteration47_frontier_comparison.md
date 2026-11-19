@@ -1,6 +1,6 @@
 # 第47轮：先进工具与九章对照
 
-核查日期2026-11-10。本轮重新检查相关原始摘要/版本页及官方Frugal主分支；并非穷尽所有最新工具，也未重新完整审读全部论文。[核查记录](../results/iteration47_frontier/verification.json)
+核查日期2026-11-10。本轮重新检查相关原始摘要/版本页及官方Frugal主分支；并非穷尽所有最新工具，也未重新完整审读全部论文。[核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration47_frontier/verification.json)
 
 | 路线 | 原始资料及边界 | 本轮新增证据 |
 |---|---|---|

@@ -40,7 +40,7 @@ P 前缀加权的条件 Bernoulli TV 之和确实是完整 TV 的混合链上界
 
 ## 4. 成对压力测试的数值差异已单独归档
 
-正式 [results/phase2_paired/results.json](../results/phase2_paired/results.json) 有 21 条解析规模曲线和 36 条小规模交叉检查，其中 18 条使用解析 oracle、18 条使用实际协方差；**36 条全部通过**，最大公式误差约 3.61e-16。
+正式 [results/phase2_paired/results.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_paired/results.json) 有 21 条解析规模曲线和 36 条小规模交叉检查，其中 18 条使用解析 oracle、18 条使用实际协方差；**36 条全部通过**，最大公式误差约 3.61e-16。
 
 此前探索发生过相消保护错误，原因是数学相同的协方差采用不同浮点表达式构造。对 n=3、p=.5：
 
@@ -56,7 +56,7 @@ P 前缀加权的条件 Bernoulli TV 之和确实是完整 TV 的混合链上界
 | 正式有理表达式 | 通过 | 通过 | 通过 | 通过 |
 | 双曲函数往返表达式 | 相消保护错误，指标 40 | 相消保护错误，指标 96 | 通过 | 相消保护错误，指标 96 |
 
-完整实际矩阵、构造式、矩阵哈希、相关源码哈希、环境和八条方法结果保存在 [expression_sensitivity.json](../results/phase2_paired/expression_sensitivity.json)。没有改变概率或删除失败。应把它报告为**严格支持下的表达式敏感性**，不能说正式冻结夹具的 36 次检查失败了。
+完整实际矩阵、构造式、矩阵哈希、相关源码哈希、环境和八条方法结果保存在 [expression_sensitivity.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_paired/expression_sensitivity.json)。没有改变概率或删除失败。应把它报告为**严格支持下的表达式敏感性**，不能说正式冻结夹具的 36 次检查失败了。
 
 ## 5. FrugalGBS 适配器与追踪
 

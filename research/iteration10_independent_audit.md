@@ -335,7 +335,7 @@ tests. Its unchanged digest is
 `f6a9f7c8447a73d07485314c9c1ebd8ea0b1a09383e5dcbfde6d2eb4c794aac2`.
 
 The archive is
-[results/iteration10_independent_validation/validation.json](../results/iteration10_independent_validation/validation.json),
+[results/iteration10_independent_validation/validation.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration10_independent_validation/validation.json),
 with the complete test log and source snapshot beside it. The validation file
 SHA-256 is `5198bb04a0f332d7128900f806272b1b19cc93ae6896a88fae018eb0fe56060a`;
 the test log is `4e3d9c919f990c923dc11d15766da47ed183ca979ce8b4133e41d5d55d99e993`.
@@ -410,8 +410,8 @@ The formal P/Q and timing artifacts had not yet been read at this point.
 
 The frozen analyzer was run **once**, after the quality and timing processes
 finished. It exited successfully and wrote
-[summary.json](../results/iteration10_analysis/summary.json),
-[summary_tables.md](../results/iteration10_analysis/summary_tables.md), and
+[summary.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration10_analysis/summary.json),
+[summary_tables.md](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration10_analysis/summary_tables.md), and
 the scientific PNG/SVG figure. No target law, analytic displacement integral,
 sampling trajectory, or formal experiment was rerun by this audit.
 
@@ -519,7 +519,7 @@ The first images remain in `initial_render/`. The final figure was visually
 inspected: its labels are readable, all missing quality cells remain visible,
 and the m=32 failure/no-full-Q restrictions are explicit.
 
-[layout_adjustment.json](../results/iteration10_analysis/layout_adjustment.json)
+[layout_adjustment.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration10_analysis/layout_adjustment.json)
 records both image versions and verifies that the summary SHA-256 was
 unchanged. This was a layout adjustment only, with no new experiment or
 statistical postprocessing rule.

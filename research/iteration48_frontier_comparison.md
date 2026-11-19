@@ -1,6 +1,6 @@
 # 第48轮：先进工具与九章对照
 
-2026-11-10重新核对原始摘要/版本页及Frugal官方主分支；[核查记录](../results/iteration48_frontier/verification.json)。不是穷尽性的最新工具排行，也没有重新完整审读全部论文。
+2026-11-10重新核对原始摘要/版本页及Frugal官方主分支；[核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration48_frontier/verification.json)。不是穷尽性的最新工具排行，也没有重新完整审读全部论文。
 
 | 路线 | 已核对的原始资料 | 本轮证据与边界 |
 |---|---|---|

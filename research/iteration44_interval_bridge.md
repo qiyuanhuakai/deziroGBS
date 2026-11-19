@@ -34,6 +34,6 @@ TV(R,P*_μ)≤δ+sqrt(G/2)。
 
 每个案例另保存单位向量w，使w^T(V−I)w<0，直接证实低于真空的quadrature方差；不是凭浮点特征值或“用了压缩”推断非经典性。所有输出协方差的模式相关图连通，但这不证明采样困难度或量子计算优势。
 
-完整真空子集行列式由整数Bareiss生产，独立分数消元核对3,240次、2,748个不同矩阵。平方根区间逐项满足精确平方不等式；全目标以独立区间Mobius重建。主核验113,573项通过。[原始验证](../results/iteration44_recovery_v2/validation.json)
+完整真空子集行列式由整数Bareiss生产，独立分数消元核对3,240次、2,748个不同矩阵。平方根区间逐项满足精确平方不等式；全目标以独立区间Mobius重建。主核验113,573项通过。[原始验证](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_recovery_v2/validation.json)
 
 最大熵与指数族、均值参数内点关系属于已有理论；这里的工作是本项目的区间桥接、实例证书与反例，不主张发明一般最大熵方法。[Wainwright–Jordan作者版本，3.1、3.5、3.6节](https://people.eecs.berkeley.edu/~jordan/sail/readings/wainwright-jordan-fnt.pdf)

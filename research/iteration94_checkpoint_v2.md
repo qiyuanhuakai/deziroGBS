@@ -4,7 +4,7 @@
 
 ## 分项测量改变了优化方向
 
-独立命名的诊断构建增加含子调用的计时，不用于正式速度排名。6组控制的光子数、错误码和前18列原始统计量与未插桩v1逐位一致。[原始数据](../results/iteration94_profile_pilot_v1/summary.json)。
+独立命名的诊断构建增加含子调用的计时，不用于正式速度排名。6组控制的光子数、错误码和前18列原始统计量与未插桩v1逐位一致。[原始数据](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_profile_pilot_v1/summary.json)。
 
 实际主谱92光子控制轨迹耗时26.3968秒，其中等待8.1455秒（30.86%）、压缩6.3549秒（24.07%）；QR共7.2379秒、SVD共3.5797秒。计时嵌套，不能把这些数字相加。记录的局部投影质量和为1.9541e−8，Schmidt投影质量和为4.8419e−5；分开开方的累计量为0.00090093与0.04711929。这些诊断量不替代原始每次联合投影的总收费0.04714341，也不能把历史样本的最大收费当统一误差界。
 
@@ -14,9 +14,9 @@
 
 每个中间试探点不再计算条件平均光子率；只在接受根时构造完整规范态，并复核两种范数计算。中心化拒绝采样中只用于计算率的临时态也使用正范数QR。改变的是计算方式；没有缩小局部维数、键维或误差预算，也没有增删随机数。
 
-[8项物理门控](../results/iteration94_gates_v2/validation.json)及[101项独立根检查](../results/iteration94_wait_audit_v4/validation.json)通过。后者最大状态差5.8692e−9、参数差2.8435e−10，属于数值一致性验证，并非整个采样实现的区间算术认证。
+[8项物理门控](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_gates_v2/validation.json)及[101项独立根检查](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_wait_audit_v4/validation.json)通过。后者最大状态差5.8692e−9、参数差2.8435e−10，属于数值一致性验证，并非整个采样实现的区间算术认证。
 
-[三轮严格串行配对控制](../results/iteration94_wait_pilot_v2/summary.json)，old为94 v1、new为94 v2，均1采样线程/1BLAS线程：
+[三轮严格串行配对控制](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_wait_pilot_v2/summary.json)，old为94 v1、new为94 v2，均1采样线程/1BLAS线程：
 
 | 输入 | v1秒数中位 | v2秒数中位 | v1/v2 |
 |---|---:|---:|---:|
@@ -39,7 +39,7 @@ G_ST=<g_S|g_T>=Tr(ρ P_(S∪T))。
 
 `native/gaussian_click_gram94_v1.cpp`直接从Q=(Γ+I)/2及相空间均值计算联合真空概率：对子集的Q作长双精度Cholesky，求exp(−μᵀQ⁻¹μ/2)/sqrt(det Q)。不查光子数表、不加入噪声、不裁剪负特征值。重复并集在单次调用中缓存。当前接口最多2048输出和128个分支；输入须为合法Gaussian模型，本接口不独立认证完整协方差的量子物理性。
 
-[80位独立行列式/线性求解核对](../results/iteration94_gram_audit_v1/validation.json)覆盖4/8模式、位移、损耗双模以及实际1152输出双谱，共2592个G/G0元素，最大差1.1103e−16。与第93轮已有小系统参考最大差2.2205e−16。G、G0和G−G0的最小数值特征值在−2.63e−16以上；没有裁剪这些舍入残差，不能将此检查当作严格半正定认证。
+[80位独立行列式/线性求解核对](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_gram_audit_v1/validation.json)覆盖4/8模式、位移、损耗双模以及实际1152输出双谱，共2592个G/G0元素，最大差1.1103e−16。与第93轮已有小系统参考最大差2.2205e−16。G、G0和G−G0的最小数值特征值在−2.63e−16以上；没有裁剪这些舍入残差，不能将此检查当作严格半正定认证。
 
 实际1152输出检查每谱16个分支、并集最多6个端口，含63/64、127/128及1151边界索引。它验证了大端口地址及Gaussian输入接口，没有生成完整1152位样本。每次约0.015秒仅是该接口的单次诊断调用，不是完整采样时间。
 
@@ -47,6 +47,6 @@ G_ST=<g_S|g_T>=Tr(ρ P_(S∪T))。
 
 ## 未改变的完整任务差距
 
-最新正式完整比较仍是[第93轮](../RESEARCH_REPORT_ITERATION93.md)：新MPS四模式PNR TV上界3.3396%，R3下界4.4645%；同线程比PE慢7.8357倍。仅点击时Frugal K4快16849.58倍且点击精度区间重叠。1152输出双谱64条15条失败，每次尝试21.850502秒，相比九章3.0论文原始1.27微秒慢约17205120倍，非同质量比较。
+最新正式完整比较仍是[第93轮](../docs/reports/76-94/93.md)：新MPS四模式PNR TV上界3.3396%，R3下界4.4645%；同线程比PE慢7.8357倍。仅点击时Frugal K4快16849.58倍且点击精度区间重叠。1152输出双谱64条15条失败，每次尝试21.850502秒，相比九章3.0论文原始1.27微秒慢约17205120倍，非同质量比较。
 
 本检查点的控制重放和矩阵元素核对不替代完整TV、失败概率及严格串行同质量速度面板。本轮继续推进，未缩小总体目标，也未完成任意维度优势要求。

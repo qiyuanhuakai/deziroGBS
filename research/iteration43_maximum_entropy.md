@@ -49,4 +49,4 @@ max(0,TV(R,P)−ε)≤TV(P*,P)≤min(1,TV(R,P)+ε)。
 
 该实现仍枚举2^n原子。它提供可信的小系统控制和近似设计依据，尚未成为144模部署算法。下一步需要非经典物理确认面板以及可认证的分块/条件完成，而不是从25/25改善外推普遍优势。
 
-原始结果：[完成面板](../results/iteration43_completion/summary.json)、[8,576项独立核验](../results/iteration43_completion_recovery/validation.json)、[精确比较](../results/iteration43_analysis_revision/certified_comparisons.json)、[顺序配对](../results/iteration43_analysis_revision/order_pairs.json)。
+原始结果：[完成面板](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration43_completion/summary.json)、[8,576项独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration43_completion_recovery/validation.json)、[精确比较](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration43_analysis_revision/certified_comparisons.json)、[顺序配对](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration43_analysis_revision/order_pairs.json)。

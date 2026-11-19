@@ -1,6 +1,6 @@
 # 第49轮：先进工具与九章对照
 
-2026-11-10重新核对原始摘要/版本页与Frugal官方HEAD；[核查记录](../results/iteration49_frontier/verification.json)。不是穷尽所有最新工具，也不是全部论文的新完整审读。
+2026-11-10重新核对原始摘要/版本页与Frugal官方HEAD；[核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration49_frontier/verification.json)。不是穷尽所有最新工具，也不是全部论文的新完整审读。
 
 | 路线 | 原始资料 | 本轮新增证据及限制 |
 |---|---|---|

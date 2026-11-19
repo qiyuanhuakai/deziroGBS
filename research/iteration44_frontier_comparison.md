@@ -1,6 +1,6 @@
 # 第44轮：前沿比较与负面结果的含义
 
-核查日期2026-11-10，Frugal官方main仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)。本轮官方比较使用第39轮冻结的适配二进制；未改公共采样器、目标或生成参数来获得排名。[核查记录](../results/iteration44_frontier/verification.json)
+核查日期2026-11-10，Frugal官方main仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)。本轮官方比较使用第39轮冻结的适配二进制；未改公共采样器、目标或生成参数来获得排名。[核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_frontier/verification.json)
 
 | 路线 | 当前原始资料及范围 | 本轮结果与限制 |
 |---|---|---|

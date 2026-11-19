@@ -8,7 +8,7 @@
 
 第五轮固定 k4 候选在 256 模式 bright 输入上，目标/观测平均点击为 103.900688/91.537109。模式 248–255 的固定留出事件，其 TV 下界由主分析的 0.096167 精化为 CP 的 **0.10667185235315124**，足以在该次声明的假设和误差预算下拒绝 TV≤0.1。CP 是同一数据的事后次级分析；它没有提供新的独立确认，也没有给出完整 TV 的数值。
 
-依据：[第五轮报告](../RESEARCH_REPORT_ITERATION5.md)、[CP 原始汇总](../results/iteration5_binomial_refinement/summary.json)。原算法对历史零全部投影，却只保留至多四个历史正事件。这与后段点击偏低相容，**尚不是对偏差原因的证明**。第四轮提出的[条件 logit 补偿](iteration4_next_hypothesis.md)因此值得检验；均值改善仍不足以证明分布改善。
+依据：[第五轮报告](../docs/reports/01-25/05.md)、[CP 原始汇总](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration5_binomial_refinement/summary.json)。原算法对历史零全部投影，却只保留至多四个历史正事件。这与后段点击偏低相容，**尚不是对偏差原因的证明**。第四轮提出的[条件 logit 补偿](iteration4_next_hypothesis.md)因此值得检验；均值改善仍不足以证明分布改善。
 
 ## 2. 四个主来源及其边界
 

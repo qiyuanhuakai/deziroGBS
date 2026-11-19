@@ -23,7 +23,7 @@ only a same-Gram diagnostic entry point and includes the frozen production sourc
 See `iteration87_guarded_gates_v2.py` for the build and independent enclosures,
 and `iteration87_guarded_common_v1.py` for array bindings. The failed v1 validation
 is retained. The new sampler does not repair the withdrawn historical iid claims.
-See the [report](../RESEARCH_REPORT_ITERATION87.md) and
+See the [report](../docs/reports/76-94/87.md) and
 [method limits](../research/iteration87_methods.md).
 
 ## Iteration86: shared Gaussian click constraints
@@ -69,7 +69,7 @@ Compared to the published84 DLL, complete64-record batches are17.6899x faster
 in three serial median timings including tree preparation. All2048 quality
 records replay identically with the same explicit domains; do not count them
 twice. The direct-click B64 quality panel has15/512 explicit failed records.
-See the [report](../RESEARCH_REPORT_ITERATION85.md),
+See the [report](../docs/reports/76-94/85.md),
 [tree identity](../research/iteration85_tree_method.md) and
 [failure policy](../research/iteration85_failure_policy.md).
 
@@ -98,7 +98,7 @@ Use external domain-separated draws for new quality experiments. Formal timing
 shows 9.6255/10.9078x median improvement at B32/B64 with tested exact replay.
 
 Build commands and hashes are retained in result plans. See the
-[report](../RESEARCH_REPORT_ITERATION84.md), [RNG method](../research/iteration84_rng_method.md)
+[report](../docs/reports/76-94/84.md), [RNG method](../research/iteration84_rng_method.md)
 and [numerical method](../research/iteration84_methods.md) for quantitative scope.
 
 ## Iteration83: full lossy input, weight arithmetic and core resources
@@ -129,7 +129,7 @@ limit; it was the previous largest tested output count. Iteration83 completes
 1152-output runs. Interface bounds alone are not tested-scale claims.
 
 Build commands, source/library hashes and complete failures are archived in
-the iteration83 result plans. See the [report](../RESEARCH_REPORT_ITERATION83.md)
+the iteration83 result plans. See the [report](../docs/reports/76-94/83.md)
 and [methods](../research/iteration83_methods.md) for same-input quantitative
 accuracy and timing. Four-record Frugal uses one CPU worker; the stable CPU
 limit is sixteen with at most four active, and CUDA runs on a separate device.
@@ -156,7 +156,7 @@ normalization threshold is used. New samplers are opt-in research interfaces.
 
 Build commands, runtime dependencies, same-input speed/accuracy comparisons and
 failure artifacts are recorded in [iteration82 methods](../research/iteration82_methods.md)
-and the [report](../RESEARCH_REPORT_ITERATION82.md). Full distribution quality
+and the [report](../docs/reports/76-94/82.md). Full distribution quality
 and the complete 1152-detector task remain unresolved.
 
 ## Iteration80: calibrated shared photon pairs and immutable alias plans
@@ -184,7 +184,7 @@ some valid inputs produce explicit invalid conditional probabilities, and some
 successful cases are less accurate. They are not default replacements.
 
 See [iteration80 methods](../research/iteration80_methods.md) and the
-[report](../RESEARCH_REPORT_ITERATION80.md) for full-law bounds, counterexamples,
+[report](../docs/reports/76-94/80.md) for full-law bounds, counterexamples,
 setup-inclusive Frugal CPU/GPU comparisons, and reproduction evidence.
 
 ## Iteration79: joint photon blocks and delayed GPU click compression
@@ -270,7 +270,7 @@ python -X utf8 experiments/verify_iteration76.py --output results/reproduce76_ve
 ```
 
 The verifier checks the published original cohorts. See the
-[iteration76 report](../RESEARCH_REPORT_ITERATION76.md) for exact task scopes,
+[iteration76 report](../docs/reports/76-94/76.md) for exact task scopes,
 resource limits, finite precision qualifications and Frugal/Jiuzhang comparisons.
 
 ## Iteration75: integer photon prefixes and direct clicks
@@ -304,7 +304,7 @@ python -X utf8 experiments/verify_iteration75.py --output results/reproduce75_ve
 Quality/timing drivers use explicitly hashed recorded binaries; a new pilot output
 does not silently replace those paths. Run only one timing process at a time.
 The verifier checks the published original cohorts, not newly named reproductions.
-See the [iteration75 report](../RESEARCH_REPORT_ITERATION75.md) for failed builds,
+See the [iteration75 report](../docs/reports/51-75/75.md) for failed builds,
 budget-interrupted GPU panels, exact scopes and task-specific Frugal comparisons.
 
 ## Iteration72: photon counts and direct CUDA clicks
@@ -313,7 +313,7 @@ budget-interrupted GPU panels, exact scopes and task-specific Frugal comparisons
 iteration71 finite-tap signed-branch model. It returns integer photon counts;
 the finite-tap and moment-compression biases remain. `NativeCudaBranchClickSampler`
 performs bounded-branch threshold trajectories directly in FP64 CUDA. The two
-outputs serve different measurement tasks. See the [report](../RESEARCH_REPORT_ITERATION72.md)
+outputs serve different measurement tasks. See the [report](../docs/reports/51-75/72.md)
 and [methods](../research/iteration72_methods.md) for measured accuracy and limits.
 
 Existing recorded binaries on the tested Windows/CUDA machine can be used with:
@@ -384,11 +384,11 @@ the sibling `external_sources` folder. A different architecture requires a new
 versioned build driver and separate outputs. Frugal v5 needs the MSVC LLVM OpenMP
 runtime; its driver locates the installed runtime. Upstream CUDA sources remain
 unchanged, while a documented temporary host layout compatibility patch is
-applied; see [exact diff](../results/iteration72_frugal_gpu_build_v5/host_layout_compatibility.diff).
+applied; see [exact diff](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration72_frugal_gpu_build_v5/host_layout_compatibility.diff).
 
 ## Gaussian reset PNR sampling
 
-`gaussian_reset_cpu.cpp` implements the approximate centered and displaced Gaussian reset models of Lim, arXiv:2610.06526v1, with full detector scans, diagonal rejection and coherent-reference rejection. It returns actual integer PNR counts. These are approximate Gaussian-target samples; thresholding counts does not certify the full PNR distribution. See [methods](../research/iteration69_methods.md) and [results](../RESEARCH_REPORT_ITERATION69.md).
+`gaussian_reset_cpu.cpp` implements the approximate centered and displaced Gaussian reset models of Lim, arXiv:2610.06526v1, with full detector scans, diagonal rejection and coherent-reference rejection. It returns actual integer PNR counts. These are approximate Gaussian-target samples; thresholding counts does not certify the full PNR distribution. See [methods](../research/iteration69_methods.md) and [results](../docs/reports/51-75/69.md).
 
 The current implementation targets Windows x86-64 GNU C++ and Eigen 3.4.0. It guards/restores x87 precision, uses no fast math, and has no photon/proposal cutoff. Sampling uses one native thread; optional NumPy ILP64 OpenBLAS is explicitly supplied. Rebuild `-march=native` binaries on the destination machine. Eigen is an explicit local dependency, available from the [Eigen project](https://eigen.tuxfamily.org/).
 
@@ -471,7 +471,7 @@ python experiments/iteration68_tests.py --output results/my_native_tests --build
 
 The older state is already distributed as chunks in the repository's historical large-artifact archive. The new pilot archive also stores its derived normalized cache in byte-preserving chunks. See the archive manifests for hashes and part order; concatenating listed parts restores the original file. The benchmark's generation seed, preparation costs, warmups, balanced run order, per-chunk elapsed time, output probabilities and source snapshots are retained in its output directory.
 
-The scientific report is [iteration 68](../RESEARCH_REPORT_ITERATION68.md). The current 15.778x result is versus the improved NumPy implementation on this hardware and input panel, not versus every classical GBS method.
+The scientific report is [iteration 68](../docs/reports/51-75/68.md). The current 15.778x result is versus the improved NumPy implementation on this hardware and input panel, not versus every classical GBS method.
 
 ## Iteration 70 two independent sampling routes
 
@@ -518,7 +518,7 @@ python experiments/iteration70_benchmark.py --output results/my_dual_benchmark
 
 The benchmark deliberately uses the archived generic-CPU PNR and official Frugal binaries and rebuilds direct-click with the same main compiler settings. This reproduces the reported comparison, rather than silently replacing its baselines. Source snapshots, build commands and binary hashes are retained. The regular sampler build above uses `-march=native`; its replay is verified separately.
 
-The PNR reference requires GCC libquadmath. Large quality extensions are explicit commands in `iteration70_quality_extension.py` and `iteration70_quality_extension_v2.py`; they generate 20 million and 80 million records respectively and preserve every record in batches. See [the report](../RESEARCH_REPORT_ITERATION70.md), [method and numerical scope](../research/iteration70_methods.md), and [next experiments](../research/iteration71_plan.md).
+The PNR reference requires GCC libquadmath. Large quality extensions are explicit commands in `iteration70_quality_extension.py` and `iteration70_quality_extension_v2.py`; they generate 20 million and 80 million records respectively and preserve every record in batches. See [the report](../docs/reports/51-75/70.md), [method and numerical scope](../research/iteration70_methods.md), and [next experiments](../research/iteration71_plan.md).
 
 ## Iteration71 signed branches: distinct click and PNR APIs
 
@@ -562,7 +562,7 @@ python experiments/iteration71_tests.py --output results/my_branch_tests
 
 The holdout, comparison and tests deliberately reference the published frozen binaries and inputs. The first two drivers build fresh DLLs at their requested outputs and record compiler commands, sources and hashes. `iteration71_make_pnr_*.py` files document the one-time v1-to-v2 construction; they refuse to overwrite the existing source and are not required to rebuild it.
 
-See [iteration71 evidence](../RESEARCH_REPORT_ITERATION71.md), [mathematical scope](../research/iteration71_methods.md), and [next steps](../research/iteration72_plan.md). The native timing advantage over the tested generic Frugal build is not a large-system equal-error claim.
+See [iteration71 evidence](../docs/reports/51-75/71.md), [mathematical scope](../research/iteration71_methods.md), and [next steps](../research/iteration72_plan.md). The native timing advantage over the tested generic Frugal build is not a large-system equal-error claim.
 
 ## Iteration73 analytic PNR and device Philox clicks
 
@@ -608,7 +608,7 @@ python experiments/verify_iteration73.py --output results/my_iteration73_verific
 
 Build outputs above do not silently replace archived binaries. The verifier deliberately checks and replays the published iteration73 evidence. The holdout, cost and test drivers likewise name frozen dependency paths; those references are part of the experiment specification. The standalone Frugal build requires the documented identical-body inline ABI patch, and its separate C ABI timing library is built by `iteration73_frugal_cpu_library_v1.py` against the archived v5 include copy.
 
-See [iteration73 results](../RESEARCH_REPORT_ITERATION73.md), [mathematics and compatibility changes](../research/iteration73_methods.md), and [iteration74 plan](../research/iteration74_plan.md). Small-system Frugal advantages, the pure-state failure and large-system quality limitations are part of the published results.
+See [iteration73 results](../docs/reports/51-75/73.md), [mathematics and compatibility changes](../research/iteration73_methods.md), and [iteration74 plan](../research/iteration74_plan.md). Small-system Frugal advantages, the pure-state failure and large-system quality limitations are part of the published results.
 
 ## Iteration74 structured pure cores and fused GPU branches
 
@@ -669,7 +669,7 @@ with NativeBudgetNumberPNRSampler(
 
 预算N≤B分支使用数学上精确的总数条件律，N>B分支独立分配全部光子，理想TV上界为P(N>B)，无全局浮点/PRNG认证。预算最大接口值498不意味着任意输入秩都支持498；200000多项式项和4000000 Gram元素保护按输入与预算进一步拒绝。例如32输入预算22会被拒绝。输入维数、能量和输出端口数分别影响资源。
 
-复现：先依次运行 `experiments/iteration77_number_pilot_v1.py`、`iteration77_number_pilot_v2.py`、`iteration77_budget_pilot_v1.py` 的新输出目录构建；同场比较、质量、端点和碰撞驱动均在experiments目录。每个输出目录必须不存在。强光尾相关性失败、原始零尾舍入及后续正尾修正全部保留，详见[第77轮报告](../RESEARCH_REPORT_ITERATION77.md)。
+复现：先依次运行 `experiments/iteration77_number_pilot_v1.py`、`iteration77_number_pilot_v2.py`、`iteration77_budget_pilot_v1.py` 的新输出目录构建；同场比较、质量、端点和碰撞驱动均在experiments目录。每个输出目录必须不存在。强光尾相关性失败、原始零尾舍入及后续正尾修正全部保留，详见[第77轮报告](../docs/reports/76-94/77.md)。
 
 
 ## 第78轮：相关尾PNR与小输出整数alias
@@ -700,7 +700,7 @@ sphere仍仅接收等正压缩无位移纯态；预算以内精确条件分支�
 
 alias使用 `gaussian_table_click78_v3.cpp`。构建指数增长，限1～16输出，需调用者提供物理零均值Gaussian协方差。`law()`导出均匀uint64随机字下整数阈值律的float64表示；不证明counter mixer种子序列为iid。`row_offset`可续接同一流，1/16线程与分块结果一致。负Möbius概率和丢失类别区间报错，不裁剪。
 
-旧v2累计表使用 `NativeTableClickSampler` 和 `results/iteration78_pilot_v2/table.dll`。v1编译失败、v2累计表、v3整数alias及两轮全部直接计时都保留。实际全库运行器是 `experiments/iteration78_tests_v2.py`，主核验是 `experiments/verify_iteration78_v2.py`。参见[第78轮报告](../RESEARCH_REPORT_ITERATION78.md)。
+旧v2累计表使用 `NativeTableClickSampler` 和 `results/iteration78_pilot_v2/table.dll`。v1编译失败、v2累计表、v3整数alias及两轮全部直接计时都保留。实际全库运行器是 `experiments/iteration78_tests_v2.py`，主核验是 `experiments/verify_iteration78_v2.py`。参见[第78轮报告](../docs/reports/76-94/78.md)。
 
 
 ## 第81轮因式校准与质量审计
@@ -709,4 +709,4 @@ alias使用 `gaussian_table_click78_v3.cpp`。构建指数增长，限1～16输�
 
 `frugal_prefix81_adapter_v1.cpp` 保留官方SIMD计算及随机比较语义，枚举前缀阈值，并与未修改的官方采样逐位重放核对。`jiuzhang_histogram81_v1.cpp` 以公开规定的MSB顺序统计1152位记录；原生输出与全部1492642条记录的独立解析一致。
 
-速度必须与同输入TV一起引用。完整小分布、固定8位边缘、实验经验TV及iid条件置信区间的区别见[第81轮报告](../RESEARCH_REPORT_ITERATION81.md)。禁止把校准矩残差当成完整GBS分布误差。
+速度必须与同输入TV一起引用。完整小分布、固定8位边缘、实验经验TV及iid条件置信区间的区别见[第81轮报告](../docs/reports/76-94/81.md)。禁止把校准矩残差当成完整GBS分布误差。

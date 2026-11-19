@@ -9,7 +9,7 @@
 | 官方 Frugal K2 CPU | 16.502047 | 31.03 | 13.247 倍 |
 | 官方 Frugal K3 CPU | 18.831990 | 27.19 | 15.117 倍 |
 
-数据来自[公开基准](../results/iteration70_benchmark/summary.json)。Frugal 使用作者固定提交的未修改采样入口；其通用 CPU 构建可正常运行，本机指令集构建的访问异常已保留。没有拿这份 CPU 结果代表全部 Frugal 实现的最高吞吐率。[Frugal论文](https://arxiv.org/abs/2511.14923)的统计基准与完整 TV 也不是同一准确性定义。
+数据来自[公开基准](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration70_benchmark/summary.json)。Frugal 使用作者固定提交的未修改采样入口；其通用 CPU 构建可正常运行，本机指令集构建的访问异常已保留。没有拿这份 CPU 结果代表全部 Frugal 实现的最高吞吐率。[Frugal论文](https://arxiv.org/abs/2511.14923)的统计基准与完整 TV 也不是同一准确性定义。
 
 四模同机面板中，Frugal K4 同时更快、数值诱导律更准确。大系统中直接点击速度领先这份 CPU 构建，但未取得完整144模 TV 的上界，所以不能给出同误差综合胜出结论。直接点击的四模误差和 PNR 的四模误差分别有完整分布检验；二者不能混为一个质量成绩。
 

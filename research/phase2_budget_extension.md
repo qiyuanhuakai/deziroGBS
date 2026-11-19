@@ -136,11 +136,11 @@ also do not support population-level significance claims.
 
 Raw metrics, all induced laws, unchanged optical inputs, per-branch
 diagnostics, configs, and source snapshots are archived in
-[holdout k4 extension](../results/phase2_holdout_k4_extension/) and
-[bright k4 extension](../results/phase2_bright_k4_extension/). Comparators
-come from [original holdout](../results/phase2_holdout/),
-[original bright](../results/phase2_bright/), and
-[official Frugal benchmark](../results/phase2_frugal/).
+[holdout k4 extension](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_holdout_k4_extension) and
+[bright k4 extension](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_bright_k4_extension). Comparators
+come from [original holdout](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_holdout),
+[original bright](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_bright), and
+[official Frugal benchmark](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/phase2_frugal).
 
 Reproduction uses the unchanged runner:
 

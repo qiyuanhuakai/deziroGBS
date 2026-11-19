@@ -38,7 +38,7 @@ $$
 
 log2同样用z=1/3包络；k为负时反转端点。生成器使用48项，独立验证器用不同递推、64项及不在每步舍入的区间算术，核对144个对数端点、16个物理原子、48个树原子、全部后验、两种目标排序及正差距。304项检查全部通过。
 
-原始证据：[搜索记录](../results/iteration38_gaussian_tree/search.json)、[有理数证明](../results/iteration38_gaussian_tree/proof.json)、[独立核验](../results/iteration38_gaussian_tree/verification.json)。源码及其哈希同时保存。重新生成须使用空的独立结果目录，程序拒绝覆盖已有证据。
+原始证据：[搜索记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration38_gaussian_tree/search.json)、[有理数证明](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration38_gaussian_tree/proof.json)、[独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration38_gaussian_tree/verification.json)。源码及其哈希同时保存。重新生成须使用空的独立结果目录，程序拒绝覆盖已有证据。
 
 ## 对后续算法的含义
 

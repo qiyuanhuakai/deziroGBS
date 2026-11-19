@@ -1,6 +1,6 @@
 # 第46轮：相关先进工具与九章对照
 
-核查日期2026-11-10；重新核对四篇原始摘要/版本页及Frugal官方主分支。没有声称穷尽全部最新工具，也没有声称本轮重新完整审读每篇论文。[核查记录](../results/iteration46_frontier/verification.json)
+核查日期2026-11-10；重新核对四篇原始摘要/版本页及Frugal官方主分支。没有声称穷尽全部最新工具，也没有声称本轮重新完整审读每篇论文。[核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration46_frontier/verification.json)
 
 | 路线 | 当前原始资料 | 本轮可支持的比较 |
 |---|---|---|

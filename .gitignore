@@ -33,3 +33,8 @@ results/cpp_pairwise_diagnosis/score_probe
 
 # Byte-exact 16 MiB archive in iteration81_large_input_archive_v1.
 /results/iteration81_factor_pilot_v1/input_large128.npz
+
+# Main contains selected evidence. Raw runs belong to the full research archive.
+/results/*
+!/results/README.md
+!/results/selected/

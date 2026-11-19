@@ -398,7 +398,7 @@ The companion calculation is
 with predeclared configuration
 [`configs/iteration9_core_budget.json`](../configs/iteration9_core_budget.json).
 Its complete archived output is
-[`results/iteration9_core_budget/`](../results/iteration9_core_budget/README.md).
+[`results/iteration9_core_budget/`](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration9_core_budget/README.md).
 It uses no target law, sampled law, or fitted parameter.
 
 The panel contains \(m=8,12,32,64,128,256,1024\), budgets \(0.1,0.01\), and
@@ -541,7 +541,7 @@ They must remain distinct in future configurations and error statements.
 
 ## Final primary-report review
 
-The completed [RESEARCH_REPORT_ITERATION9.md](../RESEARCH_REPORT_ITERATION9.md)
+The completed [RESEARCH_REPORT_ITERATION9.md](../docs/reports/01-25/09.md)
 was independently reviewed after the derivation and resource archive were
 available. The reviewed report SHA-256 is:
 
@@ -558,7 +558,7 @@ channel contraction and the triangle inequality. The values \(1/(2e)\),
 Section 5 above.
 
 All 42 appendix rows match the frozen
-[budget_rows.json](../results/iteration9_core_budget/budget_rows.json) exactly
+[budget_rows.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration9_core_budget/budget_rows.json) exactly
 at the report's displayed rounding, including both cutoffs, both logarithmic
 dimensions, and the core tail. The narrative keeps the floating-budget,
 dense-representation, prior-art, unimplemented-sampler, and no-transfer-to-

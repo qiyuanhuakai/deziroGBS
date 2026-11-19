@@ -53,6 +53,6 @@ Q*的点击数均值为Σ(1-p*_j)，方差为Σp*_j(1-p*_j)。结果为
 
 ## 核验与范围
 
-[生成程序](../results/iteration39_k1_control/prove.py)、[独立核验程序](../results/iteration39_k1_control/verify.py)、[有理数证书](../results/iteration39_k1_control/proof.json)及[732项核验结果](../results/iteration39_k1_control/verification.json)均保留。生成器用相邻浮点数取得舍入单元；验证器直接增减IEEE位表示独立取得邻点，并逐步核查归纳。
+[生成程序](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration39_k1_control/prove.py)、[独立核验程序](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration39_k1_control/verify.py)、[有理数证书](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration39_k1_control/proof.json)及[732项核验结果](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration39_k1_control/verification.json)均保留。生成器用相邻浮点数取得舍入单元；验证器直接增减IEEE位表示独立取得邻点，并逐步核查归纳。
 
 该界证实本输入上一阶配置的整体偏差。它不适用于二至四阶，不由此推出其它经典工具或九章实验的误差。与先进工具及九章的范围对照见[第39轮前沿表](iteration39_frontier_comparison.md)。

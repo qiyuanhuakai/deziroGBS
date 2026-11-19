@@ -32,7 +32,7 @@
 
 已核对主运行复制的配置及门禁与metadata中的散列一致，所有科学源码快照与metadata一致、当前科学源码仍匹配，当前原生二进制也与冻结SHA-256一致。未将“运行期间稳定”仅从一个布尔字段转述为当前文件已经核验。
 
-依据：[主元数据](../results/iteration7_forest/metadata.json)、[交叉检查](../results/iteration7_forest/crosschecks.json)、[本地冻结方案](../results/iteration7_plan/manifest.json)。
+依据：[主元数据](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_forest/metadata.json)、[交叉检查](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_forest/crosschecks.json)、[本地冻结方案](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_plan/manifest.json)。
 
 ## 3. 主报告数值的独立复算
 
@@ -55,7 +55,7 @@
 
 六个失败案例恰好是m10/m12 lossy上的pair-k4、chain-k4和tree-k4。两个m12森林的TV与失败质量在报告显示精度下相等；原始值分别为0.0017327604718612784与0.0017327604718612721，未由报告反向声称严格浮点相等。全部质量保留于失败符号，没有成功条件化或补抽。
 
-依据：[全部方法指标](../results/iteration7_forest/metrics.json)、[分析汇总](../results/iteration7_analysis/summary.json)。
+依据：[全部方法指标](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_forest/metrics.json)、[分析汇总](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_analysis/summary.json)。
 
 ## 4. 事后数值诊断的绑定与解释
 
@@ -77,7 +77,7 @@
 
 完整表来自指数规模参考，Gaussian模型、选择器和树仍保持原定义。三个距离不是加法误差分解；保存的P也不是向外舍入区间证书。主报告对这些限制的表述正确。
 
-依据：[诊断元数据与196文件清单](../results/iteration7_numerical_diagnostic/metadata.json)、[诊断汇总](../results/iteration7_numerical_diagnostic/summary.json)。
+依据：[诊断元数据与196文件清单](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_numerical_diagnostic/metadata.json)、[诊断汇总](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_numerical_diagnostic/summary.json)。
 
 ## 5. 实际验证记录
 
@@ -89,7 +89,7 @@
 
 原生集成使用已验证的候选二进制，SHA-256为a8d5a830e7167aab20f829bee74bc404736f2551ff42e6e48491caf301d0fc3f。零跳过结论属于该实际环境，不能保证任意机器缺失二进制时也如此。
 
-依据：[专项门禁](../results/iteration7_forest_validation/validation.json)、[完整验证](../results/iteration7_verification/validation.json)及各自日志。
+依据：[专项门禁](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_forest_validation/validation.json)、[完整验证](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_verification/validation.json)及各自日志。
 
 ## 6. 数学、相位反例和未实现内核
 

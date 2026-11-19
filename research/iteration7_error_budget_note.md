@@ -14,9 +14,9 @@
 本笔记是对 [条件森林理论审查](iteration7_theory_audit.md) 和 [Gaussian 支持证明](iteration6_theory_audit.md) 的定量补充。固定 Gaussian 例子的可复现文件是：
 
 - [解析脚本](../experiments/iteration7_gaussian_phase_witness.py)
-- [有理数与数值交叉验证记录](../results/iteration7_gaussian_phase_witness/record.json)
-- [三环完整数组](../results/iteration7_gaussian_phase_witness/cycle3.npz)
-- [四环完整数组及实际链近似律](../results/iteration7_gaussian_phase_witness/cycle4.npz)
+- [有理数与数值交叉验证记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_gaussian_phase_witness/record.json)
+- [三环完整数组](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_gaussian_phase_witness/cycle3.npz)
+- [四环完整数组及实际链近似律](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_gaussian_phase_witness/cycle4.npz)
 
 ## 2. 应该界定的是哪个误差
 

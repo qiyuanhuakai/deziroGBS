@@ -165,7 +165,7 @@ m=6、b=8 的 longdouble 热态枚举有非零失败质量。门禁逐项检查�
 
 ## 8. 最终 native 总门禁绑定
 
-主流程随后完成了 [最终门禁](../results/iteration8_validation/validation.json)：**268 项测试全部通过，0 failure、0 error、0 skip、0 expected failure、0 unexpected success**，用时 36.4624 秒。记录创建时间为 2026-11-05T01:40:48.870333+00:00；源码和三种二进制在执行期间稳定。测试使用显式 native 路径，测试本身不编译程序。
+主流程随后完成了 [最终门禁](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_validation/validation.json)：**268 项测试全部通过，0 failure、0 error、0 skip、0 expected failure、0 unexpected success**，用时 36.4624 秒。记录创建时间为 2026-11-05T01:40:48.870333+00:00；源码和三种二进制在执行期间稳定。测试使用显式 native 路径，测试本身不编译程序。
 
 最终 validation.json 的 SHA256 为：
 

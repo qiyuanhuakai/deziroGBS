@@ -15,7 +15,7 @@
 
 以上判断仅针对保存的有限精度完整分布及本共享主机的实际实现成本。没有大模式 TV 结论、严格舍入区间证书、九章性能对标或经典模拟极限突破结论。
 
-来源：[固定配置](../configs/iteration8_batched_forest.json)、[质量数据](../results/iteration8_quality/metrics.json)、[计时原始指标](../results/iteration8_timing/metrics.json)、[分析汇总](../results/iteration8_analysis/summary.json)。
+来源：[固定配置](../configs/iteration8_batched_forest.json)、[质量数据](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_quality/metrics.json)、[计时原始指标](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_timing/metrics.json)、[分析汇总](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_analysis/summary.json)。
 
 ## 2. 冻结对象、归档绑定及完整性
 
@@ -84,7 +84,7 @@ d_{\mathrm{TV}}(Q,P)=\frac12\left[\sum_x|Q(x)-P(x)|+Q(\bot)\right],
 
 质量面板的 48 份森林完整枚举合计记录 **104400 次条件概率调用**、104400 次 long-double query、**0 次 quad query / auto refinement**、0 次数值失败。实际正式面板没有触发 quad 不能证明备用路径无用或永不失败；真实精度升级及超预算失败由冻结门禁中的独立解析 thermal fixture 验证。不能把本轮实测成本归因于实际发生了 quad fallback。
 
-来源：[全部交叉检查](../results/iteration8_quality/crosschecks.json)、各 case 的 *_native.json / *_python.npz / *_table.npz，以及[门禁](../results/iteration8_quality/validation_gate.json)。
+来源：[全部交叉检查](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_quality/crosschecks.json)、各 case 的 *_native.json / *_python.npz / *_table.npz，以及[门禁](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_quality/validation_gate.json)。
 
 ## 5. 历史回归单独核验
 
@@ -101,7 +101,7 @@ d_{\mathrm{TV}}(Q,P)=\frac12\left[\sum_x|Q(x)-P(x)|+Q(\bot)\right],
 
 历史面板的森林枚举合计 **30708 次条件概率调用、0 次 auto refinement**。这里观察到的是新有限精度求值路径的可靠性改善；算法仍有非零近似误差，不可把“失败质量归零”写成精确采样。历史数据不并入新的 12 输入改善比例或计时比较，也不对三个 TV 写成相加分解。
 
-来源：[历史回归 metadata](../results/iteration8_regression/metadata.json)、[全部历史回归指标](../results/iteration8_regression/metrics.json)、原[第七轮输入与分布](../results/iteration7_forest)。
+来源：[历史回归 metadata](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_regression/metadata.json)、[全部历史回归指标](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_regression/metrics.json)、原[第七轮输入与分布](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration7_forest)。
 
 ## 6. 正式计时和 Pareto 判定复算
 
@@ -139,7 +139,7 @@ t_{\mathrm{cold}}=t_{\mathrm{setup}}+t_{\mathrm{sampling}}
 
 计时中 72 次森林进程合计 **470016 次条件概率调用、0 次 quad query、0 次 auto refinement**。资源工作计数只是所跟踪内核的实际操作量；不是全程序机器 FLOP，也不是 RSS/分配器峰值。共享主机、每单元仅三次且只有一个 U，故中位数和记录的 min/max 是描述性结果，未提供独立硬件重复或总体性能置信区间。全部逐运行值仍保留。
 
-来源：[108 次原始指标](../results/iteration8_timing/metrics.json)、[固定任务顺序](../results/iteration8_timing/job_order.json)、[分析表](../results/iteration8_analysis/summary_tables.md)。
+来源：[108 次原始指标](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_timing/metrics.json)、[固定任务顺序](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_timing/job_order.json)、[分析表](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_analysis/summary_tables.md)。
 
 ## 7. 分析输出及复核边界
 
@@ -177,7 +177,7 @@ t_{\mathrm{cold}}=t_{\mathrm{setup}}+t_{\mathrm{sampling}}
 
 ## 9. 主报告定稿及事后描述性工作归因
 
-已逐段核对 [第八轮主报告](../RESEARCH_REPORT_ITERATION8.md)，未发现与已审数据冲突的主张。其附录与已审 summary_tables.md 的文本完全一致。主报告绑定 SHA-256：
+已逐段核对 [第八轮主报告](../docs/reports/01-25/08.md)，未发现与已审数据冲突的主张。其附录与已审 summary_tables.md 的文本完全一致。主报告绑定 SHA-256：
 
 `8021ef977372a70f57bce536679be999873c3624509c390ec19bc9c3a2b6e99c`
 
@@ -188,7 +188,7 @@ t_{\mathrm{cold}}=t_{\mathrm{setup}}+t_{\mathrm{sampling}}
 - 正常规范 rank-two 状态追加的单路径 \(O(m^3)\) 保留其适用条件；低精度状态反复失败、失效和重建的保守 \(O(m^4)\) 路径及额外 \(C_{\mathrm{rebuild}}\) 明确列出。
 - 24 个预定配对计时单元全部更慢，0/24 Pareto 改善及共享主机限制均呈现；没有使用枚举时间、Python 基线或未实现优化来制造原生加速结论。
 
-另对主报告引用的 [work_audit.json](../results/iteration8_analysis/work_audit.json) 做只读复算。该文件声明 posthoc_descriptive_only=true；63 个输入绑定和生成脚本的 SHA-256 均匹配。72 次森林计时进程的原始计数给出：
+另对主报告引用的 [work_audit.json](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration8_analysis/work_audit.json) 做只读复算。该文件声明 posthoc_descriptive_only=true；63 个输入绑定和生成脚本的 SHA-256 均匹配。72 次森林计时进程的原始计数给出：
 
 | 描述量 | 从保存记录重算 |
 |---|---:|

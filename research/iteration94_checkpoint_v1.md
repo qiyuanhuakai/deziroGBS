@@ -6,9 +6,9 @@
 
 实现位于 `native/gaussian_mps_core94_v1.cpp`。生存概率 p(η)=E[η^N]；由 Jensen 不等式，p(η)≥η^E[N]。以 exp(log(u)/E[N]) 初始化有括区间 Newton，保留原来的残差阈值、80步上限、物理映射、截断预算和随机流地址。此不等式只用于初值；括区间仍根据实际求得的生存概率更新，不把浮点估计当严格区间界。
 
-[物理门控](../results/iteration94_gates_v1/validation.json)8项通过；[独立根检查](../results/iteration94_wait_audit_v3/validation.json)101项通过，覆盖纠缠核心、相干态解析根、固定5光子态和真空停止分支。最大状态差3.3993e−9，Gaussian参数差1.7068e−9；这是数值一致性门控，不是全分布精度认证。
+[物理门控](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_gates_v1/validation.json)8项通过；[独立根检查](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_wait_audit_v3/validation.json)101项通过，覆盖纠缠核心、相干态解析根、固定5光子态和真空停止分支。最大状态差3.3993e−9，Gaussian参数差1.7068e−9；这是数值一致性门控，不是全分布精度认证。
 
-[配对控制实验](../results/iteration94_wait_pilot_v1/summary.json)使用258个控制地址，两个实现和三次重复故意重放这些地址，不计作1548个独立质量样本。每次调用严格串行、1个采样线程、1个BLAS线程。全部新旧光子数、错误码、随机字消耗相同；同实现三次输出逐字相同。
+[配对控制实验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_wait_pilot_v1/summary.json)使用258个控制地址，两个实现和三次重复故意重放这些地址，不计作1548个独立质量样本。每次调用严格串行、1个采样线程、1个BLAS线程。全部新旧光子数、错误码、随机字消耗相同；同实现三次输出逐字相同。
 
 | 控制输入 | 旧/新求根迭代数 | 旧秒数中位 | 新秒数中位 | 旧/新耗时 |
 |---|---:|---:|---:|---:|
@@ -27,13 +27,13 @@
 
 沿整棵条件树，用近似过程到达各分支的概率加权累积w，可通过逐步替换与量子测量的迹距离收缩性界住最终点击TV；上界可截到1。局部有限Fock空间之外的初始截断误差需要另外计入。
 
-[独立密度矩阵检查](../results/iteration94_click_audit_v2/validation.json)通过120个分支和9棵完整点击树。NumPy特征值法独立重建密度及迹距离，最大收费恒等式偏差1.9805e−15。不截断时点击TV最大3.3158e−16。三个随机诊断态rank1的点击TV分别15.9475%、17.2047%、9.8899%；rank2分别7.9205%、7.1810%、9.0141%。这些是有限空间完整枚举距离，不使用抽样置信区间，也不是Gaussian实验输入上的新精度结果。
+[独立密度矩阵检查](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_click_audit_v2/validation.json)通过120个分支和9棵完整点击树。NumPy特征值法独立重建密度及迹距离，最大收费恒等式偏差1.9805e−15。不截断时点击TV最大3.3158e−16。三个随机诊断态rank1的点击TV分别15.9475%、17.2047%、9.8899%；rank2分别7.9205%、7.1810%、9.0141%。这些是有限空间完整枚举距离，不使用抽样置信区间，也不是Gaussian实验输入上的新精度结果。
 
 本模块仍显式存储d^m行，不能作为任意维度算法。其进展是可独立验证的正条件更新和可计量谱截断；下一步必须连接解析Gaussian背景/压缩核心，避免显式全Fock空间。不得把本检查器当成完整GBS采样器或声称比Frugal快。
 
 ## 仍然有效的差距与后续工作
 
-最新完整比较仍为[第93轮](../RESEARCH_REPORT_ITERATION93.md)：四模式新MPS完整PNR TV上界3.3396%，旧R3下界4.4645%；同线程新MPS比PE慢7.8357倍。仅点击时Frugal K4比新MPS快16849.58倍，点击精度区间重叠。实际双谱64条15条失败，每次尝试21.850502秒，比九章3.0论文原始吞吐慢约17205120倍。当前控制实验不改写这些完整任务数字。
+最新完整比较仍为[第93轮](../docs/reports/76-94/93.md)：四模式新MPS完整PNR TV上界3.3396%，旧R3下界4.4645%；同线程新MPS比PE慢7.8357倍。仅点击时Frugal K4比新MPS快16849.58倍，点击精度区间重叠。实际双谱64条15条失败，每次尝试21.850502秒，比九章3.0论文原始吞吐慢约17205120倍。当前控制实验不改写这些完整任务数字。
 
 下一阶段先增加等待QR、率计算和跳跃SVD的分项测量，并分别记录局部Fock与Schmidt丢弃。直接点击推进Gaussian背景到正核心的接口与可控压缩；预先固定独立质量域和置信事件后，再执行新的完整精度与串行速度对照。
 

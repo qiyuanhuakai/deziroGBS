@@ -1,6 +1,6 @@
 # 第45轮：与相关前沿工具、九章的对照
 
-核查日期2026-11-10。以下仅比较相关路线和证据范围，不声称穷尽全部最新工具。四篇原始摘要及版本页本轮重新核查；未重新完整审读各篇全文。官方Frugal主分支仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)。[版本与源码核查记录](../results/iteration45_frontier/verification.json)
+核查日期2026-11-10。以下仅比较相关路线和证据范围，不声称穷尽全部最新工具。四篇原始摘要及版本页本轮重新核查；未重新完整审读各篇全文。官方Frugal主分支仍为[fa8b796](https://github.com/tomdodd4598/FrugalGBS/commit/fa8b796f2afebd4845a2e335e457735952617ef8)。[版本与源码核查记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration45_frontier/verification.json)
 
 | 路线 | 原始资料及适用范围 | 第45轮位置 |
 |---|---|---|

@@ -16,7 +16,7 @@
 | 8模strong，η=1 | 0.180705394 | 0.165301091 | 0.041065318 |
 | 8模strong，η=1/4 | 0.021962325 | 0.004813430 | 0.000469826 |
 
-四活跃模K4已包含所需高阶信息，极小误差主要在浮点及真空补位层；不要将该特例外推到大型K4。所有表中小数仅供阅读，权威数据为有理区间。[完整比较](../results/iteration44_recovery_v2/comparisons.json)
+四活跃模K4已包含所需高阶信息，极小误差主要在浮点及真空补位层；不要将该特例外推到大型K4。所有表中小数仅供阅读，权威数据为有理区间。[完整比较](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_recovery_v2/comparisons.json)
 
 ## 相同低阶约束下的严格反例
 
@@ -26,7 +26,7 @@
 
 最简单的case0中：T物理TV约0.0203759691，而真实最大熵解物理TV下界约0.0783603643，差至少0.0579843952。这里两个候选都满足非负与同低阶矩；差异来自它们选择了不同的高阶分布结构。最大化熵不是最小化相对物理目标的TV，这一常识在本轮成为带物理输入的严格数值证书。
 
-另保存事件A={1,2,4,7,8,11,14,15}（位掩码编码），其真实最大熵事件概率与目标的差下界本身已超过T_μ的整体TV上界。事件由完整确定性目标构造，属于事后概率律证书，不是未经校正的统计显著性检验。[事件见证](../results/iteration44_analysis/event_witness.json)、[机制独立核验](../results/iteration44_mechanism_validation/validation.json)
+另保存事件A={1,2,4,7,8,11,14,15}（位掩码编码），其真实最大熵事件概率与目标的差下界本身已超过T_μ的整体TV上界。事件由完整确定性目标构造，属于事后概率律证书，不是未经校正的统计显著性检验。[事件见证](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_analysis/event_witness.json)、[机制独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_mechanism_validation/validation.json)
 
 ## 顺序与树选择
 
@@ -34,7 +34,7 @@
 
 树控制选定结构后有严格正、归一化的根及条件因子，保存全部单模和所选树边二阶矩，因子量随模式数线性增长。它并不保留非树边二阶矩。完整枚举只用于小表核验，未运行144模新树采样性能测试，也未认证浮点互信息选择是真实最优树。
 
-12组正逆序选择的树，其互信息总分可通过完全相同的有理系数log(p)表达式认证相等；其中6组对齐分布仍不同，最大TV约0.0253558。得分相同不代表分布唯一。这给可扩展结构近似提出额外的顺序/平局处理要求，而不是否定树模型。[独立顺序与得分核验](../results/iteration44_diagnostics/order_details.json)
+12组正逆序选择的树，其互信息总分可通过完全相同的有理系数log(p)表达式认证相等；其中6组对齐分布仍不同，最大TV约0.0253558。得分相同不代表分布唯一。这给可扩展结构近似提出额外的顺序/平局处理要求，而不是否定树模型。[独立顺序与得分核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration44_diagnostics/order_details.json)
 
 ## 特殊浮点历史
 

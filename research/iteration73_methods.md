@@ -41,7 +41,7 @@ X_{new}=X+XHX/Q-\delta\delta^T.
 
 五个固定四模输入、每个六种重复光子因子，使用六点 Gauss–Hermite 的四维张量积分直接计算条件质量、均值和协方差。对不正定 X 使用复平方根和解析多项式积分，阶数足以在实算术下精确积分所有最高十阶多项式；这不是数值误差严格包围。30组检查的最大差约1.98×10⁻¹⁴。另测相干态 Poisson 分布、热态连续光子减法的阶乘矩及 K=0 对旧 Gaussian 重置的逐条回放。
 
-新核心目前有一个明确边界：单模无位移纯压缩输入 `X=diag(-0.25,0.5)`，一次光子减法后的真空概率在数学上为零，FP64 Gaussian 核更新后会得到约 **−4.491×10⁻¹⁶**。K=1/2/3 因而显式终止批次，不裁剪成零、不返回部分记录。K=0会合并掉奇偶信息，在100000样本诊断中出现3800条奇数计数。这项失败没有被混入成功实验；见[原始诊断](../results/iteration73_parity_probe_v1/summary.json)和[带数值明细的复现](../results/iteration73_parity_diagnostic_v1/summary.json)。后续需用保持物理结构的 Gaussian 核或正范数表达解决，而不是静默放宽概率范围。
+新核心目前有一个明确边界：单模无位移纯压缩输入 `X=diag(-0.25,0.5)`，一次光子减法后的真空概率在数学上为零，FP64 Gaussian 核更新后会得到约 **−4.491×10⁻¹⁶**。K=1/2/3 因而显式终止批次，不裁剪成零、不返回部分记录。K=0会合并掉奇偶信息，在100000样本诊断中出现3800条奇数计数。这项失败没有被混入成功实验；见[原始诊断](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration73_parity_probe_v1/summary.json)和[带数值明细的复现](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration73_parity_diagnostic_v1/summary.json)。后续需用保持物理结构的 Gaussian 核或正范数表达解决，而不是静默放宽概率范围。
 
 含损耗、随机位移的两组固定输入另做八个独立200万样本队列（K=0/1/3及旧有限抽取），共1600万条计数。16个单侧界共同分配失败概率0.01。下界事件在此前 pilot 固定，上界为经验完整单纯形 TV 加 Hoeffding 半径和目标尾部；半径 `sqrt(log(1600)/(4,000,000))`。区间依赖理想独立同分布解释和数值目标，不是有限 PRNG、矩舍入或任意输入的全局认证。
 

@@ -36,7 +36,7 @@
 
 这个排序不依赖浮点对数比较。令整数总权重S=294，exp(S·KL)可写成∏(P/Q)^(整数权重)，是精确有理数；相同地exp(S·边CMI和)也是有理数。程序直接比较它们，并独立检查两者乘积对三棵树恒定，从而确认严格反向排序。全部树概率和后验用Fraction保存，另做90位对数交叉检查。有向根树分解的独立实现通过66项精确检查。
 
-原始表、完整三棵树概率、整数比较证据、源码及核验见[冻结产物](../results/iteration37_tree_counterexample/)。这是固定种子探索的第一个表；没有从GBS面板挑选或替换数据。
+原始表、完整三棵树概率、整数比较证据、源码及核验见[冻结产物](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration37_tree_counterexample)。这是固定种子探索的第一个表；没有从GBS面板挑选或替换数据。
 
 ## 对后续研究的实际约束
 

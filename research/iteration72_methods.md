@@ -34,7 +34,7 @@ CPU C++ 生成与第71轮一致的每条轨迹位移噪声和探测随机数；G
 
 固定作者仓库提交 `fa8b796f2afebd4845a2e335e457735952617ef8`，补全15个官方 GPU 文件并核对 Git blob 和 SHA-256。保留 MIT 许可。GPU 采样及累积量内核未修改；单精度为官方默认设置，另测双精度。
 
-Windows CUDA/MSVC 构建遇到四次失败，v1～v4 的完整输出均保留。v5 使用分开的主机与 CUDA 翻译单元；Eigen 仅用于 CPU，按[官方文档](https://eigen.tuxfamily.org/dox/TopicCUDA.html)启用 `EIGEN_NO_CUDA` 并关闭其向量化。主机布局递归的 bitstring 参数按值传递，并将两个 OpenMP 递归任务改成串行递归，绕过 MSVC 内部错误；累积量准备中的并行相关函数仍使用16线程。改动只发生在临时构建副本，官方原始文件不改，完整差异见[构建证据](../results/iteration72_frugal_gpu_build_v5/host_layout_compatibility.diff)。这是带主机兼容改动的官方 GPU 核心，不能称整个构建完全未修改。
+Windows CUDA/MSVC 构建遇到四次失败，v1～v4 的完整输出均保留。v5 使用分开的主机与 CUDA 翻译单元；Eigen 仅用于 CPU，按[官方文档](https://eigen.tuxfamily.org/dox/TopicCUDA.html)启用 `EIGEN_NO_CUDA` 并关闭其向量化。主机布局递归的 bitstring 参数按值传递，并将两个 OpenMP 递归任务改成串行递归，绕过 MSVC 内部错误；累积量准备中的并行相关函数仍使用16线程。改动只发生在临时构建副本，官方原始文件不改，完整差异见[构建证据](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration72_frugal_gpu_build_v5/host_layout_compatibility.diff)。这是带主机兼容改动的官方 GPU 核心，不能称整个构建完全未修改。
 
 作者代码使用 `#if FGBS_REAL_PRECISION < 2` 选择 CURAND 函数，但该配置由 C++ constexpr 定义，所以这份固定版本在两个精度设置中均选用 float 均匀随机数函数；实际累积量和缓存类型分别为 FP32/FP64。原样保留，不在基线中暗改随机数实现。Frugal 自身的概率裁剪也原样保留。
 

@@ -83,7 +83,7 @@ k=1只有极限态可精确恢复，不能将它列成当前原生实现的成�
 
 原始构件记录的一句“Gaussian unitaries preserve charge”过宽。准确范围是这里
 指定的双模压缩保持N1−N2，任意Gaussian酉变换并不保证这一点。原始记录保留，
-[更正摘要](../results/iteration90_parity_scope_v1/summary.json)只修正这句范围说明，
+[更正摘要](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration90_parity_scope_v1/summary.json)只修正这句范围说明，
 数值、二进制、源快照与全部检验不变。
 
 ## 4. 质量与时间的边界

@@ -12,9 +12,9 @@
 
 ## PCO作者日志的新增整理
 
-公开`time_log.zip`中66个实际日志覆盖90个参数面板、每面板20次测量，共1800条计时，另有Apple压缩元数据。全部重复纳入，无预热剔除。首次解析器遗漏前导空格，失败及单独恢复源码均保留。[解析摘要](../results/iteration68_pilots/iteration68_log_metrics_recovery_pilot_20261110/summary.json)。
+公开`time_log.zip`中66个实际日志覆盖90个参数面板、每面板20次测量，共1800条计时，另有Apple压缩元数据。全部重复纳入，无预热剔除。首次解析器遗漏前导空格，失败及单独恢复源码均保留。[解析摘要](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration68_pilots/iteration68_log_metrics_recovery_pilot_20261110/summary.json)。
 
-作者mode-72、D=10000、d=4局部张量构造均值64.5810043秒；S64 mode-2168在d=1时，D=10000和100000分别约41.8444101秒、8736.428147秒。这些是单个局部张量构建，不能与本轮完整样本吞吐直接相除。28组匹配参数的hafnian/PCO作者时间比约98.47—7304.28，但作者对照硬件不同，不能当作同机加速。本轮还识别出日志中的`std`字段数值对应均值标准误，不能直接称为原始重复计时标准差。[逐面板数据](../results/iteration68_pilots/iteration68_log_metrics_recovery_pilot_20261110/rows.json)。
+作者mode-72、D=10000、d=4局部张量构造均值64.5810043秒；S64 mode-2168在d=1时，D=10000和100000分别约41.8444101秒、8736.428147秒。这些是单个局部张量构建，不能与本轮完整样本吞吐直接相除。28组匹配参数的hafnian/PCO作者时间比约98.47—7304.28，但作者对照硬件不同，不能当作同机加速。本轮还识别出日志中的`std`字段数值对应均值标准误，不能直接称为原始重复计时标准差。[逐面板数据](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration68_pilots/iteration68_log_metrics_recovery_pilot_20261110/rows.json)。
 
 本轮最大连接维数200，比作者D=10000面板小50倍；稠密站点收缩和张量存储在固定局部维数下含D²项，直接扩展意味着对应主项2500倍。这解释了为何当前16GB显卡上的采样加速没有消除大连接维数的困难。可探索的具体路线是压缩基/自适应误差预算、分块流式收缩，以及在有损输入条件下具备误差控制的检测或低阶相关近似。
 
