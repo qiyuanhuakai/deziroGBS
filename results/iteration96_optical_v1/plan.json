@@ -1,0 +1,37 @@
+{
+  "cases": [
+    "twins",
+    "weak",
+    "mixed",
+    "actual16",
+    "pure4",
+    "actual1152"
+  ],
+  "hashes": {
+    "experiments/iteration96_group_benchmark_v1.py": "71b26171acb0fb6b13c3c3ad6b35076ac00bf76d5812a95eeb7b2c100e33d42c",
+    "experiments/iteration96_group_common_v1.py": "4314daf4fc76a4e9226b94884a16c59688dd8e2c0e77e17d8acdba1b74ab54f6",
+    "results/iteration96_tree_build_v1/tree.dll": "6dd24a5c2721b187cf3b3bb84388092a41e0f0db875b2faffc73d96c203ac3e5",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration84_photon_cdf_v1/reference.npz": "d8142365cf0f0e1c7fd2a3c6c0e7cd4fcddfb9624639a2c9379db5a35a7ab69c"
+  },
+  "cutoffs": [
+    8,
+    12
+  ],
+  "cap": 32,
+  "angles": [
+    0,
+    0.025,
+    0.3
+  ],
+  "workers": [
+    1,
+    16
+  ],
+  "replicates": 5,
+  "scope": "raw trees; independent integer-word population laws; optical parameters only"
+}

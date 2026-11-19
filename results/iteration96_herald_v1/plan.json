@@ -1,0 +1,46 @@
+{
+  "cases": [
+    [
+      "twins",
+      8,
+      0,
+      0.25
+    ],
+    [
+      "weak",
+      8,
+      0.025,
+      0.0576
+    ],
+    [
+      "mixed",
+      8,
+      0.3,
+      0.0576
+    ],
+    [
+      "sparse128",
+      64,
+      0.3,
+      0.0576
+    ],
+    [
+      "sparse1152",
+      576,
+      0.3,
+      0.0576
+    ]
+  ],
+  "hashes": {
+    "native/heralded_fock96_v1.cpp": "04bc48320db4fa68c6176ebe9bb3fbbad64caf3624810b456e5fcaa349e6f8e8",
+    "experiments/iteration96_herald_v1.py": "85635b2956c4499be87091a7d15e391d14657a8e57a77ca250e695ebbad54eb3",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "results/iteration96_tree_build_v1/tree.dll": "6dd24a5c2721b187cf3b3bb84388092a41e0f0db875b2faffc73d96c203ac3e5",
+    "experiments/iteration96_group_benchmark_v1.py": "71b26171acb0fb6b13c3c3ad6b35076ac00bf76d5812a95eeb7b2c100e33d42c",
+    "results/iteration96_optical_v1/twins_reference.npz": "7b3d141f5b9688ce12d1fd319fd7e9b33831d7f6cd689533776136831680cf7d",
+    "results/iteration96_optical_v1/weak_reference.npz": "2e7855f51b6e2057cf38a36f9337123176694cc35241b15304b97fe0d17d38da",
+    "results/iteration96_optical_v1/mixed_reference.npz": "fac1666b42a3a973fa370fc5f25d2c60437d4d7a0bd8a60c21e95e3c33a9574a"
+  },
+  "domain": 96030000,
+  "audit": "all balanced occupations through three pairs; optical Fock amplitudes independent of ordered annihilations; 32 higher patterns"
+}
