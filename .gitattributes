@@ -771,3 +771,6 @@ RESEARCH_REPORT_ITERATION94.md -text -whitespace
 research/iteration94*.json -text -whitespace
 research/iteration95*.md -text -whitespace
 tests/test_native_branch94.py -text -whitespace
+
+# Selected archive evidence keeps its original bytes on every platform.
+results/selected/** -text whitespace=trailing-space,cr-at-eol

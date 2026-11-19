@@ -1,12 +1,17 @@
 # 精选结果
 
-以下文件保留完整归档中的原始字节。复算单次实验时，可以按轮次取回对应的原始记录。
+## 第 95 轮
 
-**最新**　[分组采样与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_residual_v1/summary.json) · [完整光子数分布核验](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_audit_v1/validation.json) · [Frugal 的同输入速度与精度](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_frugal144_v1/summary.json) · [上期计数校正](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md)
+| 要查的问题 | 汇总文件 |
+|---|---|
+| 1152 端口的批量速度、单条延迟和总数误差是多少？ | [两条路线的计时与精度](selected/95/sampling.json) |
+| 光子数联合分布和跨环点击的误差有多大？ | [独立光学核验](selected/95/optical-validation.json) |
+| 和 Frugal 在同一组 144 个探测位上相比有多快？ | [同输入计时与首八位分布](selected/95/frugal144.json) |
+| 两种算法生成的总点击数与九章实测相差多少？ | [144 位硬件对照](selected/95/frugal144-validation.json) |
 
-第 95 轮的[两端口误差、光子数精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/summary.json)覆盖全部 662,976 个端口对。按用途取数可查[文件说明](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md)和[校验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/manifest.json)。
+这四份 JSON 逐字节保留归档版本。[实验条件与历次结果](../docs/reports/95.md) · [取回原始样本和清单](../docs/archive.md)
 
-第 95 轮的[三阶点击分布与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/summary.json)、[光学模型与硬件的最小计数差](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/floors.json)及[PNR 扩维配对](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_adaptive_audit_v1/actual.json)随阶段归档发布。
+## 第 84、94 轮
 
 - [第 84 轮重新采样的总光子数误差](iteration84_photon_cdf_v1/summary.json)
 - [第 84 轮随机流复核](iteration84_rng_verification_v1/validation.json)
