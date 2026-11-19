@@ -1,0 +1,17 @@
+{
+  "hashes": {
+    "experiments/verify_iteration95_loop_frugal144_v1.py": "a74467123cad9e4df9c7cc88a1b3fb1458e11ee4efbf49088f5f0537bc2a40d4",
+    "results/iteration95_loop_frugal144_v1/audit.npz": "cd2975d03309c3c6e5c83a618df05cdb49914f74f1305ab672d4c57cf4d0a47d",
+    "results/iteration95_loop_frugal144_v1/summary.json": "4b7b0eaf1e0879356ce0f7d3675e73b807b632f04565553d35eb1f4c9255ea55",
+    "results/iteration95_pair_copula_v1/optical_4.npz": "b82be6fad3513765968dde011ef79a71c4ec2e2f68615e8a003f8118d8ba1acb",
+    "results/iteration84_photon_cdf_v1/reference.npz": "d8142365cf0f0e1c7fd2a3c6c0e7cd4fcddfb9624639a2c9379db5a35a7ab69c",
+    "results/iteration95_loop_residual_v1/residual.dll": "8f798b1dce7bfd2b62df4725f78c3155521c9310728e0eca942b4c5eb201a391",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9"
+  },
+  "hardware": "c786e6e64f76a599479eda75c7fdedf6906a3b41040eec49e5ea89caeb714e74",
+  "projections": "144 measured bits, same choice as the full sampler benchmark. Exact optical 8-bit marginals at prefix, middle, end and eight evenly spread groups; all three nonprefix Frugal TVs empirical on 1280 records.",
+  "accuracy": "Entire 144-bit total CDF vs measured records. Exact loop count law, empirical Frugal DKW only under iid assumption. .01/8 per CDF; both raw sample count gaps also saved.",
+  "replay": "Replay full optical covariance and all 662976 detector-pair moments from source. Independently regenerate the 512-photon projection target from the low-rank transfer Gram matrix."
+}

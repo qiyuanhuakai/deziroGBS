@@ -1,0 +1,17 @@
+{
+  "hashes": {
+    "experiments/iteration95_loop_frugal144_v1.py": "a9eeb2bd0e902bbe45f09821dd4138c92485f2673a61525255de4ad8462d1b4a",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration95_pair_copula_v1/optical_4.npz": "b82be6fad3513765968dde011ef79a71c4ec2e2f68615e8a003f8118d8ba1acb",
+    "results/iteration95_loop_residual_v1/residual.dll": "8f798b1dce7bfd2b62df4725f78c3155521c9310728e0eca942b4c5eb201a391",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration81_prefix_build_v1/prefix.dll": "af8c85c0f0d93e499ef5853d36bb0a42db310f1229aace0c17414e555005c8d6",
+    "src/gbslab/frugal_law.py": "4ab71015708251d53543a2af1976f2de76510c3d40d116a05caf25135e372fd9",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9"
+  },
+  "task": "144 physical detector bins 0,8,...1144 from same original input, both independent spectra, output 144 clicks in both methods. Exact Gaussian reduction; no projection onto approximate optical modes.",
+  "accuracy": "Full eight-bit prefix on 144-dimensional targets. Enumerate Frugal FP64 K2 upstream thresholds on each spectrum and OR convolve. Deterministic local optical law and our finite-table law.",
+  "timing": "one worker, warmup then five alternating repetitions of 256. Upstream official generate_samples plus unpack and OR shown separately from setup and wall. Own record includes output/temporary allocation and expansion. No iid interval from Frugal timing samples.",
+  "rng": "Frugal 0x95210000+2*(rep+1)+spectrum; proposal 0x95211000+(rep+1); independent frame setup 0x95212000"
+}

@@ -1,0 +1,27 @@
+{
+  "hashes": {
+    "experiments/iteration95_loop_residual_v1.py": "a16180be7a8b288a19f5b69eace88e1cb60c80c31d965f466c9531c459a6d97a",
+    "experiments/iteration95_loop_covariance_v1.py": "9b31859d17edbf2f0041f4e987e88dab347f2ccb0181d4b29c4ccee1f1ad4642",
+    "native/gaussian_loop_residual95_v1.cpp": "f35005a34b2e3a2953a0786b0d55aa19887c1d7e106fd8dd68063c74e303d244",
+    "results/iteration95_pair_copula_v1/optical_4.npz": "b82be6fad3513765968dde011ef79a71c4ec2e2f68615e8a003f8118d8ba1acb",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration84_photon_cdf_v1/reference.npz": "d8142365cf0f0e1c7fd2a3c6c0e7cd4fcddfb9624639a2c9379db5a35a7ab69c",
+    "results/iteration95_third_click_v1/quality_3.npz": "e265fed8aa15539a76cf0fe35b02fc4da1f48c344dfba2ec511dad0fe42a5d12",
+    "results/iteration95_spatial_optical_v1/loops.npz": "f990d8679d9482c6bbbc06dc16b2113833e73fc6f296b48beae469c21493efe8",
+    "results/iteration95_loop_alloc_v1/setup_4.npz": "789a40e324c0e8a0c5b7b4c9aadc6dc52131bd429df62640214b0c9cfb7f2e05",
+    "results/iteration95_loop_alloc_v1/manifest.json": "d0141b9cf60daa0f2ef7a39bef6d2731e5faca76b8e500223661869f53ffce44",
+    "native/gaussian_loop_alloc95_v1.cpp": "e665700633194e57df0c56bb3c9a2b6ca91985d43d995c1801008d086e674c3d",
+    "native/gaussian_count_filter95_v1.cpp": "71c58d6b47cd2b3692c9eeca0c88c23c4e873ba8bb5adfb301711ad2a48927c2",
+    "native/gaussian_pair_table95_v1.cpp": "9032737521e3d6329fa5dca38066712d19598215d609f90219c7a5aa016a4c41",
+    "native/gaussian_pair_copula95_v1.cpp": "fc45056352088a8c9288d0c7cc9fc3603e3722e3a9e7a29b39c32842495404b7",
+    "native/gaussian_click_window95_v2.cpp": "640c524c7855689da3a6b641ca1fa0e0125d3b008089a673935971e770682199",
+    "native/gaussian_click_window95_v1.cpp": "f8d5d0c0d9c5df77f80efdcf84b372da85690202b40663f841ad48cb194ff06f",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9"
+  },
+  "targets": "144 loop count covariances from all 1152 optical ports. Each loop count marginal from the optical PGF or full 8-bit optical law. Binary64 Hermite expansion order 96; independent Plackett quadrature on highest 16 and 24 deterministic spread pairs.",
+  "calibration": "Direct output count teacher is the previous optical-only three-moment window PMF (truncated at 384); photon output count target is the independent Gaussian total-photon PMF (truncated at 512). Preserve proposal allocation conditional on total.",
+  "algorithm": "bulk cap 1.25; use conditional subtree sampling for excess target mass; measure raw plus corrected models. Discarded optical PMF beyond limits reported.",
+  "quality": "262144 fresh expanded records per model, same counts conserved per loop, exact finite-proposal local mask laws and exact reweighted loop count marginals; DKW bands allocating .01/8 per hardware or PNR-to-click CDF.",
+  "rng": "0x951d0000+16*kind+corrected quality, 0x951e0000+128*kind+32*corrected+call timing, 0x951c0004 for common frame signs. Independent residual route choice and conditional allocation use purposes 132 and 133.",
+  "timing": "five repeated batches of 32768, alternating one/16 workers; allocation and physical expansion included; 101 one-shot calls"
+}

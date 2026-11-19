@@ -1,0 +1,43 @@
+{
+  "hashes": {
+    "experiments/iteration95_loop_alloc_v1.py": "9424216c0ec1317f21b2464483f80be03e766b026734a22b4e7408cdf2d48a85",
+    "experiments/iteration95_loop_tables_v1.py": "4a1537637c9a61f17d6c753cc999bc991fec4b68c643470ab3299f3ebb1a96e0",
+    "native/gaussian_loop_alloc95_v1.cpp": "e665700633194e57df0c56bb3c9a2b6ca91985d43d995c1801008d086e674c3d",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration84_photon_cdf_v1/reference.npz": "d8142365cf0f0e1c7fd2a3c6c0e7cd4fcddfb9624639a2c9379db5a35a7ab69c",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration95_third_click_v1/moments.json": "f43c46439e2697d84f3b860184ecc890f542020d21097b88970f7706feeb08db",
+    "results/iteration95_spatial_optical_v1/loops.npz": "f990d8679d9482c6bbbc06dc16b2113833e73fc6f296b48beae469c21493efe8",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration93_reference_v2/law_0.npz": "83437c268230b663978c000f26319b2cefaf03a41c466a3ae408062d2287c9d9",
+    "results/iteration93_reference_v2/law_1.npz": "6eabf3718e2e76eeaf14a07ce49d0df10d7220c786eaf133fb883b79138c1c23",
+    "results/iteration93_reference_v2/law_2.npz": "0e00709312b5ef31e3195af8468aadbb3a6a158d81d0dfd0aa2a434c66d5dc37",
+    "results/iteration93_reference_v2/law_3.npz": "e202197f3d77fb09d59c48c696872719b108531b6e2190f2e0cc65cb002ce085",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration93_reference_v2/input_1.npz": "a44389223d644b3ef162832464f98954e8137750906c0dbea6ac5438a039210d",
+    "results/iteration93_reference_v2/input_2.npz": "1013a5a87f7762306241f2a32d9c56a41c2743a39ea1684c1bbb75fb058f568b",
+    "results/iteration93_reference_v2/input_3.npz": "0382bcde01a34e95f5b59a8af72916bba5b6d08c1e035a425645f881cb992e61",
+    "native/gaussian_count_filter95_v1.cpp": "71c58d6b47cd2b3692c9eeca0c88c23c4e873ba8bb5adfb301711ad2a48927c2",
+    "native/gaussian_pair_table95_v1.cpp": "9032737521e3d6329fa5dca38066712d19598215d609f90219c7a5aa016a4c41",
+    "native/gaussian_pair_copula95_v1.cpp": "fc45056352088a8c9288d0c7cc9fc3603e3722e3a9e7a29b39c32842495404b7",
+    "native/gaussian_click_window95_v2.cpp": "640c524c7855689da3a6b641ca1fa0e0125d3b008089a673935971e770682199",
+    "native/gaussian_click_window95_v1.cpp": "f8d5d0c0d9c5df77f80efdcf84b372da85690202b40663f841ad48cb194ff06f",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9"
+  },
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "groups": "Each physical loop is eight consecutive detector bins, single entire group on small fixtures. Decomposition supports groups of one to eight bins with ragged last group.",
+  "dependence": "Invert exact probabilities of two nonempty groups, then four antithetic frames of 256 Hadamard axes at 144 groups; no copula approximation for one group.",
+  "pnr": "Group-total PGF, bivariate sibling PGFs at all tree nodes, exact multivariate count coefficients through total 12 (four or two modes), 6 (eight modes) or 4 (1152). Above that order split by exact sibling totals. Overflow root above 64 small or 40 large represented by cap+1.",
+  "click": "Exact 256-pattern optical law per group; sample conditional on each group click count. Output direct route never draws a photon count.",
+  "methods": "raw direct click, direct calibrated to three optical click moments, raw PNR allocation, PNR global optical-total likelihood ratio capped at 2; also tree-only PNR ablation. No hardware fit.",
+  "quality": "65536 small or 131072 large; save all total/click/retry and hashes, first 8192 records. Deterministic local mask and count laws, entire PNR box on 2/4, empirical PNR-to-click total only. Compare hardware with shared DKW conditional on iid.",
+  "timing": "five alternating repetitions per batch after warmup; 2048 small, 32768 full; expanded output, group-count and attempts array allocations included. Median of 101 separate one-shot calls.",
+  "domains": "quality 0x951a0000+32*case+method, timing 0x951b0000+1024*case+64*method+call, center 0x951c0000+case; purposes 123/124/125/126/130/131"
+}

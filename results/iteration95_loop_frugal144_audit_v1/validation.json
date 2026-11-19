@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "full_source_q_seconds": 0.11269239999819547,
+  "full_all_pair_seconds": 0.38001400000212016,
+  "full_pair_replay": 0.0,
+  "full_photon_ref_seconds": 0.01617209999676561,
+  "photon_pmf_max_error": 2.7755575615628914e-17,
+  "hardware_records": 1492642,
+  "optical_subset_mean": 12.939169218489567,
+  "optical_subset_variance": 16.17657951453502,
+  "projections": [
+    {
+      "ports": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56
+      ],
+      "new_deterministic_tv": 2.2368023176329532e-10,
+      "frugal_empirical_tv": 0.04536152841551181,
+      "loop_empirical_tv": 0.04792157089979082,
+      "frugal_deterministic_tv": 0.00046953066633176435
+    },
+    {
+      "ports": [
+        520,
+        528,
+        536,
+        544,
+        552,
+        560,
+        568,
+        576
+      ],
+      "new_deterministic_tv": 0.00789331859153072,
+      "frugal_empirical_tv": 0.0707654330078909,
+      "loop_empirical_tv": 0.07057017179764087
+    },
+    {
+      "ports": [
+        1088,
+        1096,
+        1104,
+        1112,
+        1120,
+        1128,
+        1136,
+        1144
+      ],
+      "new_deterministic_tv": 2.4096876395762176e-10,
+      "frugal_empirical_tv": 0.04386511763941149,
+      "loop_empirical_tv": 0.05101237910678162
+    },
+    {
+      "ports": [
+        0,
+        144,
+        288,
+        432,
+        576,
+        720,
+        864,
+        1008
+      ],
+      "new_deterministic_tv": 0.005548517617636845,
+      "frugal_empirical_tv": 0.06362819844596478,
+      "loop_empirical_tv": 0.06343362632423243
+    }
+  ],
+  "full_subset_count": {
+    "frugal": {
+      "ks": 0.040290375220581987,
+      "observed_ks": 0.040290375220581987,
+      "interval": [
+        0,
+        0.09554611229707502
+      ],
+      "mean": 12.8375,
+      "variance": 15.982968749999998
+    },
+    "loop": {
+      "ks": 0.02680006824703507,
+      "observed_ks": 0.02779037522058203,
+      "interval": [
+        0.025228007213884233,
+        0.028372129280185905
+      ],
+      "mean": 12.94921875,
+      "variance": 16.14820251464844
+    }
+  }
+}
