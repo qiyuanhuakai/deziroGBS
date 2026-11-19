@@ -1,0 +1,19 @@
+{
+  "hashes": {
+    "experiments/verify_iteration95_count_filter_v1.py": "b736e4b57052a73a21bb3057d9560d6664e888c68ceaf124adaa8e9e96360f5c",
+    "native/gaussian_readout95_v1.cpp": "74d58aeae461c3f683bd7a674c9bc53750aab24871867b0c90c62385e475f7a7",
+    "results/iteration95_pair_table_v1/manifest.json": "629d2cebdc403f625fb4a99a26202dd8b833f96725ef612dd70cd19d7d18108c",
+    "results/iteration95_count_filter_v1/manifest.json": "550669e2abd8177d50685112de5e3110f5b0406f5fa15bb4fc7a6d4c8da2080f",
+    "results/iteration95_pair_copula_v1/optical_4.npz": "b82be6fad3513765968dde011ef79a71c4ec2e2f68615e8a003f8118d8ba1acb",
+    "results/iteration95_third_click_v1/quality_3.npz": "e265fed8aa15539a76cf0fe35b02fc4da1f48c344dfba2ec511dad0fe42a5d12",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration95_third_click_v1/moments.json": "f43c46439e2697d84f3b860184ecc890f542020d21097b88970f7706feeb08db"
+  },
+  "hardware_sha256": "c786e6e64f76a599479eda75c7fdedf6906a3b41040eec49e5ea89caeb714e74",
+  "training": "32768 first experimental shots and 32768 first direct-filter shots, no other sample used. Features 1152 bin hits and per-loop >=2,>=3 bin collisions. Solve ridge LDA with 0.2 standardized diagonal ridge.",
+  "score": "Remove pooled pilot linear regression on total clicks from LDA score. Choose signed threshold using maximum absolute training CDF difference over 999 pooled quantiles. Freeze score then evaluate holdouts.",
+  "holdout": "All remaining 1459874 hardware shots and 229376 per filter; entire 65536 base shots and 8192 third-moment window shots are separate from training.",
+  "family": "One two-sided Hoeffding event rate and 144 DKW loop CDFs for each of seven sources. Union budget 0.01/1024 each; shared hardware band; distinct records assumed iid within source. Hardware-file blocks are diagnostic only.",
+  "replay": "Check all 128 archived SHA256 hashes and total/count/retry arrays for every filtered record; verify standalone stored array prefix. Independent scipy probability table, grid covariance, subset enumeration and model totals.",
+  "timing": "Dependent inputs are fixed archived binary64 optical targets and calibration moments. Time a fresh factor/table preparation plus the relevant proposal total distribution. Excludes optical input preparation and calculation of the target photon PMF."
+}
