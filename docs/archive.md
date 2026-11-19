@@ -1,5 +1,10 @@
 # 取回原始数据
 
+| 查找范围 | 固定版本 | 从哪里开始 |
+|---|---|---|
+| 第 1–94 轮完整工程 | `archive/through-iteration-94` | [按轮次找报告](reports/README.md) |
+| 第 95 轮阶段数据，截至两端口检验 | `archive/iteration95-pairs-v1` | [结果目录](https://github.com/qiyuanhuakai/deziroGBS/tree/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1) · [样本文件与校验说明](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md) |
+
 第 1–94 轮的完整工程固定在标签 `archive/through-iteration-94`，提交为 `0f87aa4b1fbb8baae4e66a456e1505bfd5564d05`。该快照保留全部 125,269 个受跟踪的结果文件，以及当时的报告、输入、失败样本、程序和文件清单。[浏览完整快照](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05) · [整理前的项目首页](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/README.md)
 
 **只看一轮**　先从[报告目录](reports/README.md)找到该轮，报告中的原始数据链接会打开固定快照。第 94 轮可直接查看[实际 PNR 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_actual_quality_v1)和[直接点击数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_branch_actual_quality_v1)。
@@ -10,6 +15,8 @@
 git clone --depth 1 --filter=blob:none --sparse --branch archive/through-iteration-94 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
 git -C deziroGBS-evidence sparse-checkout set results/iteration94_actual_quality_v1
 ```
+
+取第 95 轮数据时，将上例的标签换成 `archive/iteration95-pairs-v1`，路径换成 `results/iteration95_pair_copula_v1` 或下方链接中的其他结果目录。
 
 **完整复现旧实验**　从现有仓库创建独立工作目录，能同时取回历史输入、原生库、实验脚本和原始验证清单。
 

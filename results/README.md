@@ -2,6 +2,8 @@
 
 以下文件保留完整归档中的原始字节。复算单次实验时，可以按轮次取回对应的原始记录。
 
+第 95 轮的[两端口误差、光子数精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/summary.json)覆盖全部 662,976 个端口对。按用途取数可查[文件说明](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md)和[校验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/manifest.json)。
+
 第 95 轮的[三阶点击分布与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/summary.json)、[光学模型与硬件的最小计数差](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/floors.json)及[PNR 扩维配对](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_adaptive_audit_v1/actual.json)随阶段归档发布。
 
 - [第 84 轮重新采样的总光子数误差](iteration84_photon_cdf_v1/summary.json)

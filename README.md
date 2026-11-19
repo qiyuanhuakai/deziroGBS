@@ -1,32 +1,16 @@
 # deziroGBS
 
-研究高斯玻色采样（GBS）的两条经典计算路线：逐端口生成光子数（PNR），以及直接生成点击。采样、矩阵分解和压缩由 C++ 执行，Python 负责实验编排与独立核验。
+用经典计算机模拟高斯玻色采样（GBS）。一条路线生成每个端口的光子数（PNR），另一条直接生成点击。C++ 执行采样与矩阵计算，Python 编排实验和复核结果。
 
-**[第 95 轮阶段结果](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/research/iteration95_checkpoint_v4.md)**　·　[历轮报告](docs/reports/README.md)　·　[精选结果](results/README.md)　·　[原始数据与复现](docs/archive.md)
+[运行四端口示例](docs/quickstart.md) · [历轮研究报告](docs/reports/README.md) · [精选结果](results/README.md) · [取回原始数据](docs/archive.md)
 
-## 目前做到哪里
+## 第 95 轮进展
 
-第 95 轮的 1152 端口点击模型与九章实测总点击数的累计分布最大差为 4.21 个百分点。准备约 0.943 秒，16 线程批量均摊 0.436 微秒/条，单条调用 16.5 微秒。PNR 局部扩维使另 8 条新配对记录的完成数从 6 提至 8，总耗时从 76.85 秒增至 189.97 秒。
-
-| 任务 | 第 94 轮同输入基线 |
+| 路线 | 1152 端口上的结果 |
 |---|---|
-| 四模式，生成光子数 | PNR 与 photonic-engines 的完整分布 TV 区间分别为 0–3.4055% 和 0–3.3247%。同一 CPU 单线程下，PNR 用时是其 6.81 倍。 |
-| 四模式，直接生成点击 | 新方法 K64 的完整点击 TV 上界为 1.3737%，Frugal K2 下界为 3.6693%，Frugal K2 快 114.93 倍。Frugal K4 的区间与新方法重叠，快 111.49 倍。 |
-| 1152 输出，双谱模型 | PNR 完成 53/64 次，每次尝试平均 9.14 秒。直接点击 K8 的 64 次尝试全部超出误差预算。 |
+| 直接点击 | 三阶窗口模型与九章 3.0 实测总点击数的累计分布最大差为 4.21 个百分点。16 线程批量均摊 0.436 微秒/条，单条调用 16.5 微秒。[精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/research/iteration95_checkpoint_v4.md) |
+| 先生成光子数，再转点击 | 全秩高斯 copula 单线程批量生成光子数耗时 70.46 微秒/条。总光子数累计分布对光学参考的最大差为 1.04 个百分点；转成点击后，总点击数对九章实测的最大差为 4.79 个百分点。[样本、误差区间与两端口检验](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md) |
 
-TV 为总变差距离。表中区间属于预定的名义联合 99% 置信族，条件是样本独立同分布且采用固定数值参考。九章 3.0 论文报告每条记录 1.27 微秒，与上表 PNR 的原始耗时相差约 719 万倍，两者的硬件和输出质量不同。[完整比较](docs/reports/76-94/94.md)
+[Frugal 同输入速度与精度比较](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/research/iteration95_checkpoint_v4.md) · [PNR 的 C++ 实现](native/gaussian_mps_core94_v2.cpp) · [直接点击的 C++ 实现](native/gaussian_click_branch94_v1.cpp)
 
-## 阅读与运行
-
-- **找算法**　[PNR 的 C++ 核心](native/gaussian_mps_core94_v2.cpp) · [直接点击的 C++ 核心](native/gaussian_click_branch94_v1.cpp) · [Python 包](src/gbslab/)
-- **运行入门实验**　使用 Python 3.10 或更新版本。以下命令只下载当前主分支快照。[四端口点击采样示例](docs/quickstart.md)
-
-```sh
-git clone --depth 1 --branch main https://github.com/qiyuanhuakai/deziroGBS.git
-cd deziroGBS
-python -m pip install -e .
-python -m gbslab.experiment --help
-```
-
-- **复核结论**　[第 94 轮核验](results/iteration94_verification_v1/validation.json) · [取得原始记录](docs/archive.md) · [下一轮研究方向](research/iteration95_plan.md)
-- **查阅勘误**　第 83 轮旧 PNR 样本曾复用随机流，相关置信保证已撤回，第 84 轮已重新采样。第 86 轮另有直接点击舍入更正。[随机流勘误](docs/corrections/83-rng.md) · [舍入勘误](docs/corrections/86-rounding.md)
+**统计勘误**　第 83 轮旧 PNR 样本的随机流发生重叠，原有置信保证已撤回。第 84 轮使用分离的随机流重新采样。[随机流勘误](docs/corrections/83-rng.md) · [第 86 轮直接点击舍入勘误](docs/corrections/86-rounding.md)

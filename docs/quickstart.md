@@ -1,5 +1,12 @@
 # 生成一批四端口点击记录
 
+使用 Python 3.10 或更新版本。下面的命令只下载主分支的最新快照。
+
+```sh
+git clone --depth 1 --branch main https://github.com/qiyuanhuakai/deziroGBS.git
+cd deziroGBS
+```
+
 在仓库根目录运行 `python -m pip install -e .`，再用下面的 Python 示例生成 32 条记录。每行对应一次采样，每列对应一个端口，1 表示探测到点击。
 
 ```python
