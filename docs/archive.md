@@ -21,4 +21,6 @@ git -C ../deziroGBS-round94 rev-parse HEAD
 
 最后一行应输出本页首段的提交号。在该目录按对应报告的环境要求复现；需要重跑核验时请给输出目录起一个新名字。[第 94 轮核验程序](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/experiments/verify_iteration94_v1.py) · [早期归档与发布记录](publication-history.md)
 
+**早期分卷**　旧版大数组分卷、发布时的核验清单及历史构建材料集中在同一快照的 [research_archive 目录](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive)。使用历史发布工具时，请在完整归档工作目录运行。
+
 **后续轮次**　原始数据随轮次发布到固定归档。主分支只收录代表性汇总、关键图表及对应归档链接；新增报告放入阶段目录，首页更新最新一轮入口。

@@ -87,7 +87,7 @@
 
 618个新冻结产物共8,001,370字节，引用152个历史文件共860,315,674字节；本轮无新增大文件分卷，暂存审核直接重组已有第25轮分卷并核对原哈希。本机原生动态库编译成功，但长双精度格式不兼容导致适配器拒绝，旧构建失败日志及新拒绝记录完整公开。未重新发布或执行第三方论文压缩包中的程序。
 
-科学提交`1c0e5d2f99906077ed5457a534a7ea55f9996ffe`及树`7b40230ada32d6e8b81b207f022bb932faba9ba6`已通过远端引用、重新获取的主分支和GitHub接口核对，与提交前完整暂存树一致。770个新旧产物和462份Python源码及快照的Git字节核验通过；5份本轮运行过的历史源码保留其CRLF字节，避免发布时转换破坏冻结哈希。工作区清洁，见[发布回执](../research_archive/publication/verification_iteration26_2026-11-09.json)。结论不识别原实验输入，不是完整混合实验输出或有限精度区间证书，也不表示依赖门禁或性能优势已解决。
+科学提交`1c0e5d2f99906077ed5457a534a7ea55f9996ffe`及树`7b40230ada32d6e8b81b207f022bb932faba9ba6`已通过远端引用、重新获取的主分支和GitHub接口核对，与提交前完整暂存树一致。770个新旧产物和462份Python源码及快照的Git字节核验通过；5份本轮运行过的历史源码保留其CRLF字节，避免发布时转换破坏冻结哈希。工作区清洁，见[发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration26_2026-11-09.json)。结论不识别原实验输入，不是完整混合实验输出或有限精度区间证书，也不表示依赖门禁或性能优势已解决。
 
 ## 2026-11-09：第二十五轮持续发布
 
@@ -95,7 +95,7 @@
 
 712个新冻结产物共537,210,526字节，引用145个历史文件共347,883,200字节。两个大型状态按40MiB分为12卷，已在独立目录无损还原并核对SHA-256；发布前同时核对全部新旧引用的暂存Git字节。首次相对路径错误的17项失败、残留状态与中止记录保留；绝对路径重跑20项完整结束，13项接受、7项预算未达。新增5项测试通过；全库385运行、351通过，原4失败、1错误与依赖跳过保留。
 
-科学提交`4e5a4c6f6bf832f18b08cc628ff8a9a36f1a3e04`及树`a7c87c04768a8ba4a9c070c34862f4bc888bbd86`已通过远端引用、重新获取的主分支及GitHub接口核对，且与分批上传前完整暂存树一致。857个新旧产物、488份Python源码及快照的Git字节核验通过，工作区清洁，见[发布回执](../research_archive/publication/verification_iteration25_2026-11-09.json)。未重新发布或执行第三方压缩包程序。详见[报告](reports/01-25/25.md)和[完整核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration25_validation/validation.json)。
+科学提交`4e5a4c6f6bf832f18b08cc628ff8a9a36f1a3e04`及树`a7c87c04768a8ba4a9c070c34862f4bc888bbd86`已通过远端引用、重新获取的主分支及GitHub接口核对，且与分批上传前完整暂存树一致。857个新旧产物、488份Python源码及快照的Git字节核验通过，工作区清洁，见[发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration25_2026-11-09.json)。未重新发布或执行第三方压缩包程序。详见[报告](reports/01-25/25.md)和[完整核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration25_validation/validation.json)。
 
 ## 2026-11-09：第二十四轮持续发布
 
@@ -103,7 +103,7 @@
 
 434个新冻结产物共14,778,738字节，另引用并核对161个历史文件共514,246,393字节。本轮无新增大文件分卷；暂存Git字节核验包括所有引用依赖。2,073项产物审计与8项新增测试通过；全库380运行、346通过，原4失败、1错误和依赖跳过保留。公开源码、推导、全部结果和失败条件，不重新发布或执行第三方压缩包程序。
 
-科学提交`014b7906bec45e5d33b0b36160befb712771d1be`及树`16168f9458695655f36f080c77328bf94893bca9`已通过远端引用、重新获取的主分支及GitHub接口核对，文件树与提交前完整暂存树一致，见[发布回执](../research_archive/publication/verification_iteration24_2026-11-09.json)。595个新旧产物及本轮Python源文件暂存字节一致，工作区清洁。
+科学提交`014b7906bec45e5d33b0b36160befb712771d1be`及树`16168f9458695655f36f080c77328bf94893bca9`已通过远端引用、重新获取的主分支及GitHub接口核对，文件树与提交前完整暂存树一致，见[发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration24_2026-11-09.json)。595个新旧产物及本轮Python源文件暂存字节一致，工作区清洁。
 
 ## 2026-11-09：第二十三轮持续发布
 
@@ -111,7 +111,7 @@
 
 954个新冻结产物共1,608,885,279字节，另核对8个历史状态引用共1,576,348,544字节。4个大型新状态按40MiB分为32卷，独立目录还原已与原始SHA-256一致。暂存字节核验同时重组第21与23轮分卷；研究分支分批普通推送，最终文件树一致后才快进主分支。发布回执在远端交叉核验后另存。未重新发布或执行第三方压缩包代码。
 
-科学提交`9dc0225cd7822e70adec721b61de4f33ce1a646e`及树`dad691a5c76468d65ebe151a3690abe29ce1c2ac`已通过远端引用、重新获取的主分支及GitHub接口三方核对，与分批前完整暂存树一致，见[发布回执](../research_archive/publication/verification_iteration23_2026-11-09.json)。远端发布已成功后，本地main仍指向第19轮提交，触发了脚本过严的旧指针断言；核实其为当前头的祖先后正常快进本地指针。回执提交同时修正这一发布工具假设，未改动冻结科学产物或远端历史。
+科学提交`9dc0225cd7822e70adec721b61de4f33ce1a646e`及树`dad691a5c76468d65ebe151a3690abe29ce1c2ac`已通过远端引用、重新获取的主分支及GitHub接口三方核对，与分批前完整暂存树一致，见[发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration23_2026-11-09.json)。远端发布已成功后，本地main仍指向第19轮提交，触发了脚本过严的旧指针断言；核实其为当前头的祖先后正常快进本地指针。回执提交同时修正这一发布工具假设，未改动冻结科学产物或远端历史。
 
 本轮提供同一构造的两后端成本比较，不构成对其他强经典采样器的优势、完整有限精度TV证书或全库门禁通过。
 
@@ -119,11 +119,11 @@
 
 追加完整144站点的两种本地张量重建、四组全链比较、30次串行局部计时、推导、源码快照及报告。144/144站点通过作者PCO参考检查，新增11项测试、2,590项产物核验通过。全库367运行、333通过；原有4失败、1错误及29案例/7类跳过保留。该轮验证给定局部核到有限MPS的转换，不构成完整实验输出TV或端到端速度优势。
 
-仅发布本项目重建数组与第三方来源元数据，不重新发布外部压缩包或其中程序。410个冻结产物共349,123,773字节通过`experiments/iteration22_seal.py`逐项核对暂存Git内容。科学提交`a2328f1cf217193859f463fb576dd396f114f5ff`以普通快进同时发布主分支和研究分支；远端引用、重新获取的文件树及GitHub接口核对一致，见[发布回执](../research_archive/publication/verification_iteration22_2026-11-09.json)。
+仅发布本项目重建数组与第三方来源元数据，不重新发布外部压缩包或其中程序。410个冻结产物共349,123,773字节通过`experiments/iteration22_seal.py`逐项核对暂存Git内容。科学提交`a2328f1cf217193859f463fb576dd396f114f5ff`以普通快进同时发布主分支和研究分支；远端引用、重新获取的文件树及GitHub接口核对一致，见[发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration22_2026-11-09.json)。
 
 ## 2026-11-09：第二十一轮持续发布
 
-完整科学提交`608161a2e3dfcb84ba4f8f35c7fe0588cc61efef`已通过远端引用、重新获取的文件树及GitHub分支API交叉核对，且最终文件树与分批上传前的完整暂存树一致。514个原始产物共1,905,383,549字节验证通过，见[第二十一轮发布回执](../research_archive/publication/verification_iteration21_2026-11-09.json)。
+完整科学提交`608161a2e3dfcb84ba4f8f35c7fe0588cc61efef`已通过远端引用、重新获取的文件树及GitHub分支API交叉核对，且最终文件树与分批上传前的完整暂存树一致。514个原始产物共1,905,383,549字节验证通过，见[第二十一轮发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration21_2026-11-09.json)。
 
 按持续发布授权追加Gaussian基构造、原态投影误差推导、正式58项工作和1项试运行、独立递推参考及验证。原4个深层局域纯核心构造均达到0.1预算，Haar预算失败和超时完整保留。新增8项测试、6,629项产物检查通过；全库356运行、322通过，既有4失败、1错误及29案例/7类跳过不变。
 
@@ -131,7 +131,7 @@
 
 ## 2026-11-09：第二十轮持续发布
 
-公开提交`f4f2c43830af4e0fbe734d3a1a536120d4403f4d`已通过远端引用、重新获取的文件树及GitHub分支API交叉核对。292个原始冻结产物共615,706,200字节验证通过，见[第二十轮发布回执](../research_archive/publication/verification_iteration20_2026-11-09.json)。后续Gaussian基构造的[第二十一轮计划](../research/iteration21_plan.md)仅为待验证计划。
+公开提交`f4f2c43830af4e0fbe734d3a1a536120d4403f4d`已通过远端引用、重新获取的文件树及GitHub分支API交叉核对。292个原始冻结产物共615,706,200字节验证通过，见[第二十轮发布回执](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_iteration20_2026-11-09.json)。后续Gaussian基构造的[第二十一轮计划](../research/iteration21_plan.md)仅为待验证计划。
 
 两个约188MB的NPZ超过GitHub普通文件上限，以10个40MiB以内分卷公开，附完整还原工具和分卷清单。`python publication_support/iteration20_large_artifacts.py restore`还原后与原冻结SHA-256完全一致；发布核验直接对已暂存分卷重组哈希。首次未发布的整文件提交仅在本地备份分支保留，公开历史从此前主分支正常快进，没有改写既有公开提交。
 
@@ -141,9 +141,9 @@
 
 项目所有者明确要求持续探索并持续发布到GitHub。第11至19轮原始研究提交从`64f5fd7`至`cba52ff`按原历史发布至主分支，包含代码、报告、推导、配置、完整成功/失败结果、图表、源快照和验证记录。后续完整研究轮次继续核验后发布；不把发布成功等同科学问题已解决。
 
-发布前核对远端主分支是本地研究头的祖先，使用普通快进推送，不强制覆盖远端。`publication_support/verify_rounds_11_19.py`按9份冻结清单核对已提交Git blob的SHA-256；记录见[本次发布前核验](../research_archive/publication/preflight_2026-11-08.json)。
+发布前核对远端主分支是本地研究头的祖先，使用普通快进推送，不强制覆盖远端。`publication_support/verify_rounds_11_19.py`按9份冻结清单核对已提交Git blob的SHA-256；记录见[本次发布前核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/preflight_2026-11-08.json)。
 
-发布后通过GitHub分支API、远端Git引用与重新获取的主分支交叉核对，确认公开提交`b2199b2`及文件树与本地一致。4,478个冻结产物共608,891,780字节通过核验，见[发布完成记录](../research_archive/publication/verification_2026-11-08.json)。
+发布后通过GitHub分支API、远端Git引用与重新获取的主分支交叉核对，确认公开提交`b2199b2`及文件树与本地一致。4,478个冻结产物共608,891,780字节通过核验，见[发布完成记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/publication/verification_2026-11-08.json)。
 
 最新全库记录为341项运行、307通过、4失败、1错误、29个案例跳过，另有7个类级跳过。新轮针对性测试和产物核对通过；遗留Windows数值范围/容差、Unix resource导入和原生依赖问题仍如实公开。深层大模式MPS实际构造、可扩展高阶采样与完整有限精度保证仍未完成，详见各轮报告。
 

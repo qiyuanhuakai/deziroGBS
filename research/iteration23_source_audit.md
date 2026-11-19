@@ -2,7 +2,7 @@
 
 本记录是第二十三轮正式精度面板之后的只读来源检查。它不改变已经冻结的四组精度比较，也不声称找到了全部误差原因。没有执行第三方程序。
 
-Zenodo 18045305的说明文件把hafnian方法代码指向[Zenodo 7992736](https://zenodo.org/records/7992736)。该快照压缩包260,513字节，MD5 `bb267a792ccadbde08b31e4bcb365012`、SHA-256 `903638725af7f6869f6acef2b153039cc087358d10284c03022d97ceac9f3cf4`。目录名包含提交缩写7bd9b51。逐文件哈希见[来源清单](../research_archive/external_sources/zenodo7992736_inventory.json)。元数据许可标为other-open，包内未发现独立LICENSE；仅发布本项目观察及元数据，不重新发布其代码。
+Zenodo 18045305的说明文件把hafnian方法代码指向[Zenodo 7992736](https://zenodo.org/records/7992736)。该快照压缩包260,513字节，MD5 `bb267a792ccadbde08b31e4bcb365012`、SHA-256 `903638725af7f6869f6acef2b153039cc087358d10284c03022d97ceac9f3cf4`。目录名包含提交缩写7bd9b51。逐文件哈希见[来源清单](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/research_archive/external_sources/zenodo7992736_inventory.json)。元数据许可标为other-open，包内未发现独立LICENSE；仅发布本项目观察及元数据，不重新发布其代码。
 
 在这个快照中，`kron_cpu.py`第95–127行构造乘积热谱，占据筛选包含有限单模截断及中途阈值，最终把权重保存为float16、占据保存为int8。`MPS_cpu.py`第397–398行分配complex64 Gamma和float32 Lambda；第404–428及470–519行载入这些中间量，按阈值筛选，用权重平方根构造Lambda，并在Gamma中除以同一Lambda。Gaussian配对矩阵与hafnian批计算也包含complex64路径。
 
