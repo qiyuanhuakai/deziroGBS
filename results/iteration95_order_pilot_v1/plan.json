@@ -1,0 +1,60 @@
+{
+  "scope": "Paired mode-order controls using the same native kernel and truncation budget.",
+  "cases": [
+    [
+      "pure4",
+      0,
+      128,
+      16,
+      128,
+      0.01
+    ],
+    [
+      "displaced4",
+      1,
+      128,
+      16,
+      128,
+      0.01
+    ],
+    [
+      "pure8",
+      2,
+      128,
+      8,
+      32,
+      0.02
+    ],
+    [
+      "actual0",
+      0,
+      4,
+      6,
+      32,
+      0.1
+    ],
+    [
+      "actual1",
+      1,
+      4,
+      6,
+      32,
+      0.01
+    ]
+  ],
+  "hashes": {
+    "experiments/iteration95_order_pilot_v1.py": "6f6d1cacbfa63a13e5a7fd753aa6c87c77651ebf449767c5804aece43f47b5ca",
+    "native/gaussian_mps_core94_v2.cpp": "902b5cca2d95c72ba63c349460cfb1a47ef0f83cdbcb5bdf5007b88c62191f2a",
+    "results/iteration94_build_v2/mps.dll": "43dadf2a77abdb3f77b70301ea9b6cc032fa65525489729dffc6b3be21f0fdd5",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration93_reference_v2/input_1.npz": "a44389223d644b3ef162832464f98954e8137750906c0dbea6ac5438a039210d",
+    "results/iteration93_reference_v2/input_2.npz": "1013a5a87f7762306241f2a32d9c56a41c2743a39ea1684c1bbb75fb058f568b",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9"
+  },
+  "threads": 4,
+  "cap": 256,
+  "formal_quality_records": 0,
+  "experiment": "0x95001000+small case, actual both use 0x95001100 with distinct sectors",
+  "design": "One fixed four-worker batch per order and case. Paired random addresses across orders. Alternate execution order. Single-run elapsed times are exploratory."
+}
