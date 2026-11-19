@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 96 轮 · 自动识别成对光源、完整 16 位点击与九章硬件对照](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/research/iteration96_checkpoint_v1.md)
+
 [第 95 轮 · 光子数与直接点击，含七个阶段报告](95.md)
 
 - [1–25 轮 · 基础模型与小规模验证](01-25/README.md)

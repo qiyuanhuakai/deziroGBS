@@ -1,5 +1,11 @@
 # 精选结果
 
+## 第 96 轮
+
+- [与 Frugal 同输入的完整 16 位点击误差](selected/96/click-validation.json) · [五次重复计时](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/results/iteration96_frugal16_v2/summary.json)
+- [与 photonic-engines 同输入的 16 模式光子数计时与精度](selected/96/pnr-comparison.json)
+- [九章 1,152 位的总点击数误差、置信区间与批量耗时](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/results/iteration96_calibrated_v1/summary.json) · [实验条件与复现方法](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/research/iteration96_checkpoint_v1.md)
+
 ## 第 95 轮
 
 | 要查的问题 | 汇总文件 |
