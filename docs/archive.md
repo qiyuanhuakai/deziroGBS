@@ -25,4 +25,4 @@ git -C ../deziroGBS-round94 rev-parse HEAD
 
 **后续轮次**　原始数据随轮次发布到固定归档。主分支只收录代表性汇总、关键图表及对应归档链接；新增报告放入阶段目录，首页更新最新一轮入口。
 
-**第 95 轮阶段快照**　[按物理端口编号的点击记录](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_v2) · [七次重复计时](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_timing_v1) · [PNR 重排的配对记录](https://github.com/qiyuanhuakai/deziroGBS/tree/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_order_extension_v2)。链接固定到提交 `2cc6d6d48679969d44d4b1bcfb15343e4d183f6b`。
+**第 95 轮阶段快照**　[三阶点击记录与七次计时](https://github.com/qiyuanhuakai/deziroGBS/tree/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1) · [PNR 扩维原始记录](https://github.com/qiyuanhuakai/deziroGBS/tree/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_adaptive_pnr_v1) · [与 Frugal 的完整分布对照](https://github.com/qiyuanhuakai/deziroGBS/tree/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_frugal_fulltree_v1)。链接固定到提交 `905a652075d1ae0382d1ae086071c58cc364aba9`。

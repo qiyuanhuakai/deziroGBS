@@ -2,7 +2,7 @@
 
 以下文件保留完整归档中的原始字节。复算单次实验时，可以按轮次取回对应的原始记录。
 
-第 95 轮的[点击分布](https://github.com/qiyuanhuakai/deziroGBS/blob/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_v2/summary.json)、[批量与单条计时](https://github.com/qiyuanhuakai/deziroGBS/blob/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_ensemble_timing_v1/summary.json)及[独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/results/iteration95_window_audit_v1/validation.json)随阶段归档发布。
+第 95 轮的[三阶点击分布与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/summary.json)、[光学模型与硬件的最小计数差](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_third_click_v1/floors.json)及[PNR 扩维配对](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/results/iteration95_adaptive_audit_v1/actual.json)随阶段归档发布。
 
 - [第 84 轮重新采样的总光子数误差](iteration84_photon_cdf_v1/summary.json)
 - [第 84 轮随机流复核](iteration84_rng_verification_v1/validation.json)
