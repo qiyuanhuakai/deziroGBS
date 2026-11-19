@@ -1,0 +1,66 @@
+{
+  "scope": "Full direct-threshold trajectories, with all failures retained.",
+  "hashes": {
+    "native/gaussian_click_trajectory95_v1.cpp": "44c6f3a6af166d9b57f73ed9386f927fa3ed8c764ac7f150128862ed8a33e6e5",
+    "native/gaussian_click_proxy95_v1.cpp": "d4d88d4708c0ce31ca7138912a0afbb345c1e5c0a06a491d0f568d9ecf77ed6a",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "experiments/iteration95_trajectory_panel_v1.py": "a9bc42a98553d272a83e6f04244755af4831f74046c38df69aeba50901dca8f2",
+    "experiments/iteration93_baseline_common_v1.py": "5ab05a5fff44414c012af6ee0c00746a7fc8a499b9fd4381165d8cf0c96dbb3b",
+    "results/iteration75_frugal_cpu_build_v1/frugal_cpu_fp64.dll": "ee9dd409655423cda208016b7fcea5bcce2792a7201020e3ede9a2782cb3e5c3",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration93_reference_v2/input_1.npz": "a44389223d644b3ef162832464f98954e8137750906c0dbea6ac5438a039210d",
+    "results/iteration93_reference_v2/input_2.npz": "1013a5a87f7762306241f2a32d9c56a41c2743a39ea1684c1bbb75fb058f568b",
+    "results/iteration93_reference_v2/input_3.npz": "0382bcde01a34e95f5b59a8af72916bba5b6d08c1e035a425645f881cb992e61",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration93_reference_v2/law_0.npz": "83437c268230b663978c000f26319b2cefaf03a41c466a3ae408062d2287c9d9",
+    "results/iteration93_reference_v2/law_1.npz": "6eabf3718e2e76eeaf14a07ce49d0df10d7220c786eaf133fb883b79138c1c23",
+    "results/iteration93_reference_v2/law_2.npz": "0e00709312b5ef31e3195af8468aadbb3a6a158d81d0dfd0aa2a434c66d5dc37",
+    "results/iteration93_reference_v2/law_3.npz": "e202197f3d77fb09d59c48c696872719b108531b6e2190f2e0cc65cb002ce085"
+  },
+  "actual_records": 1024,
+  "batch": 64,
+  "actual_budgets": [
+    [
+      1152,
+      1152
+    ],
+    [
+      0.1,
+      0.01
+    ]
+  ],
+  "family_failure_budget": 0.01,
+  "events": [
+    "hardware_count_DKW",
+    "loose_count_DKW",
+    "limited_count_DKW",
+    "loose_failure_upper",
+    "limited_failure_upper"
+  ],
+  "quality_experiments": [
+    2500001792,
+    2500001793
+  ],
+  "sectors": [
+    0,
+    1
+  ],
+  "purposes": [
+    3,
+    5
+  ],
+  "small_timing": "2048 records, 3 serial rotations, 1 worker; prepared models",
+  "actual_timing": "64 complete attempts, both spectra and OR, three serial repetitions; large budgets",
+  "small_tree_budgets": [
+    0.01,
+    10
+  ],
+  "small_tree_cases": [
+    0,
+    1,
+    2
+  ],
+  "witness_scope": "Hardware count CDF distinct from full Gaussian click TV."
+}
