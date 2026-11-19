@@ -2,7 +2,7 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
-[最新报告 · 条件概率表、两条路线的计数校正及九章逐环检验](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) · [上期 · 1152 端口两两点击精度](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md)
+[最新报告 · 光纤环内的光子分配与 144 位 Frugal 比较](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/research/iteration95_checkpoint_v7.md) · [条件概率表、两条路线的计数校正及九章逐环检验](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) · [1152 端口两两点击精度](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md)
 
 **第 95 轮进行中**　[三阶点击校准、光学模型误差下界及 PNR 扩维](https://github.com/qiyuanhuakai/deziroGBS/blob/905a652075d1ae0382d1ae086071c58cc364aba9/research/iteration95_checkpoint_v4.md) · [二阶校准与 PNR 重排](https://github.com/qiyuanhuakai/deziroGBS/blob/2cc6d6d48679969d44d4b1bcfb15343e4d183f6b/research/iteration95_checkpoint_v3.md) · [单分量点击结果](https://github.com/qiyuanhuakai/deziroGBS/blob/6b6b7ee1de651bafdc5fb229303c2116ba388209/research/iteration95_checkpoint_v2.md)
 

@@ -8,9 +8,9 @@
 
 | 路线 | 1152 端口上的结果 |
 |---|---|
-| 直接点击 | 16 线程批量均摊 0.490 微秒/条，单条调用 8.8 微秒。总点击数对九章实测的累计分布最大差为 4.224 个百分点；三组八端口的完整局部 TV 为 0.073–0.096%。[精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) |
-| 先生成光子数，再转点击 | 16 线程批量均摊 1.025 微秒/条，单条调用 15.3 微秒。总光子数对光学参考的累计分布最大差为 0.01105 个百分点；转成点击后，总点击数对九章实测相差 4.756 个百分点。[计数校正与硬件对照](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) |
+| 直接点击 | 16 线程批量均摊 0.446 微秒/条，单条调用 26.6 微秒。总点击数对九章实测的累计分布最大差为 4.209 个百分点，144 环中最大的八位点击 TV 对光学参考为 0.0179%。[精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/research/iteration95_checkpoint_v7.md) |
+| 先生成光子数，再转点击 | 16 线程批量均摊 0.446 微秒/条，单条调用 27.3 微秒。转点击后总数对九章实测相差 4.612 个百分点。独立的四、八模式完整光子数分布 TV 分别约为 0.4093%、0.0846%。[完整分布核验](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_audit_v1/validation.json) |
 
-[Frugal 与 photonic-engines 同输入比较](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) · [采样与校正的 C++ 实现](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/native/gaussian_count_filter95_v1.cpp) · [144 个光纤环的误差分解](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_spatial_optical_v1/summary.json)
+[144 位同输入 Frugal 比较](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/research/iteration95_checkpoint_v7.md) · [C++ 端口分配](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/native/gaussian_loop_alloc95_v1.cpp) · [硬件计数复核](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_frugal144_audit_v1/validation.json)
 
 **统计勘误**　第 83 轮旧 PNR 样本的随机流发生重叠，原有置信保证已撤回。第 84 轮使用分离的随机流重新采样。[随机流勘误](docs/corrections/83-rng.md) · [第 86 轮直接点击舍入勘误](docs/corrections/86-rounding.md)

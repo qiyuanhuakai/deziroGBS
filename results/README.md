@@ -2,7 +2,7 @@
 
 以下文件保留完整归档中的原始字节。复算单次实验时，可以按轮次取回对应的原始记录。
 
-**最新**　[两条路线的精度与速度](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_count_filter_v1/summary.json) · [百万条记录重放与留出检验](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_readout_audit_v1/validation.json) · [144 个光纤环的误差分解](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_spatial_optical_v1/summary.json)
+**最新**　[分组采样与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_residual_v1/summary.json) · [完整光子数分布核验](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_audit_v1/validation.json) · [Frugal 的同输入速度与精度](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_frugal144_v1/summary.json) · [上期计数校正](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md)
 
 第 95 轮的[两端口误差、光子数精度与计时](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/summary.json)覆盖全部 662,976 个端口对。按用途取数可查[文件说明](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md)和[校验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1/manifest.json)。
 

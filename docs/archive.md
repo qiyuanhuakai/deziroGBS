@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定版本 | 从哪里开始 |
 |---|---|---|
+| 第 95 轮阶段数据，截至光纤环分配 | `archive/iteration95-loop-allocation-v1` | [实验与复现入口](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/research/iteration95_checkpoint_v7.md) · [独立核验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_audit_v1/manifest.json) |
 | 第 95 轮阶段数据，截至计数校正 | `archive/iteration95-count-calibration-v1` | [实验与文件入口](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/research/iteration95_checkpoint_v6.md) · [采样清单](https://github.com/qiyuanhuakai/deziroGBS/blob/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_count_filter_v1/manifest.json) |
 | 第 1–94 轮完整工程 | `archive/through-iteration-94` | [按轮次找报告](reports/README.md) |
 | 第 95 轮阶段数据，截至两端口检验 | `archive/iteration95-pairs-v1` | [结果目录](https://github.com/qiyuanhuakai/deziroGBS/tree/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1) · [样本文件与校验说明](https://github.com/qiyuanhuakai/deziroGBS/blob/9972467c5c19d39b77760273bd8c09b3f243667a/research/iteration95_checkpoint_v5.md) |
