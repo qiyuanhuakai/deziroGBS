@@ -1,0 +1,78 @@
+{
+  "configs": [
+    [
+      2,
+      8192,
+      1
+    ],
+    [
+      2,
+      8192,
+      8
+    ],
+    [
+      2,
+      8192,
+      16
+    ],
+    [
+      2,
+      32768,
+      1
+    ],
+    [
+      2,
+      32768,
+      8
+    ],
+    [
+      2,
+      32768,
+      16
+    ],
+    [
+      5,
+      8192,
+      1
+    ],
+    [
+      5,
+      8192,
+      8
+    ],
+    [
+      5,
+      8192,
+      16
+    ],
+    [
+      5,
+      32768,
+      1
+    ],
+    [
+      5,
+      32768,
+      8
+    ],
+    [
+      5,
+      32768,
+      16
+    ]
+  ],
+  "repetitions": 7,
+  "rotation": 5,
+  "worker_runtimes": "CPU threads; full byte outputs in physical order",
+  "frozen_quality": "two nine-node configurations; no tuning",
+  "experiment": "0x95900000+256*(rep+1)+job, latency 0x95910000+variant",
+  "hashes": {
+    "experiments/iteration95_ensemble_timing_v1.py": "561ff331a963eb71a458301cb67836f7a34a906cab28e881ac7c1e4c7652bbae",
+    "results/iteration95_ensemble_v2/ensemble.dll": "03495008d87366fddf7295e92af9f6db2a1a8eb9f86721c3d2be47df62f6036d",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "results/iteration95_ensemble_v2/quality_4_2.npz": "aefa69e419b78667cfd997e536960a1bdef2e6e0a89050c0c7b34403d1da2835",
+    "results/iteration95_ensemble_v2/quality_4_5.npz": "8feeeee47ac670cbf0fff4dff581fe61939a62418055ffaf89178f42de5d291a"
+  }
+}
