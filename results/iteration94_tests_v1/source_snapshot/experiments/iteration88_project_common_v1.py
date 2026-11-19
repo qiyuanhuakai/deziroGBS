@@ -1,0 +1,4 @@
+"""Array bindings for full-second-moment-preserving one-click projection."""
+from iteration87_guarded_common_v1 import *
+def projected(model,draws,budget,guarded=1,threads=16):
+ draws=np.ascontiguousarray(draws);n,m=draws.shape;bits=np.zeros((n,m),np.uint8);prob=np.zeros((n,m));bounds=np.zeros((n,m,2));kind=np.zeros((n,m),np.uint8);errors=np.zeros((n,2),np.int32);stats=np.zeros((n,20));err=C.create_string_buffer(4096);fn=model.lib.tc88_project_sample;fn.argtypes=[C.c_void_p,C.c_int,C.c_int,C.c_int,C.c_int,DP,BP,DP,DP,BP,IP,DP,C.c_char_p,C.c_int];start=time.perf_counter();rc=fn(model.handle,n,threads,budget,guarded,ptr(draws),bits.ctypes.data_as(BP),ptr(prob),ptr(bounds),kind.ctypes.data_as(BP),errors.ctypes.data_as(IP),ptr(stats),err,len(err));seconds=time.perf_counter()-start;return dict(clicks=bits,conditional=prob,bounds=bounds,kind=kind,errors=errors,statistics=stats),dict(returncode=rc,error=err.value.decode(),seconds=seconds)

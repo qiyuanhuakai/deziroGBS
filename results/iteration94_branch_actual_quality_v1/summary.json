@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "job": {
+    "name": "actual_1152_dual_branch",
+    "records": 64,
+    "experiment": 2483159041,
+    "threads": 16,
+    "batch_size": 16,
+    "limit": 8,
+    "budgets": [
+      0.1,
+      0.01
+    ],
+    "scope": "Fail immediately when either spectrum fails; do not run secondary for records already failed in main. Preserve original global record IDs for every sampled spectrum."
+  },
+  "failures": 64,
+  "completed_samples": 0,
+  "secondary_attempted": 0,
+  "failure_probability_lower": 0.8686536694004806,
+  "failure_probability_upper": 1.0,
+  "full_click_tv_lower_from_failure": 0.8686536694004806,
+  "seconds": 5.597656200001438,
+  "scope": "Frozen64 actual dual-spectrum attempts with explicit early failure outcomes.\nMain-spectrum failures terminate that record; secondary IDs are never repacked.\nFailure probability bounds concern all64 attempts, not successful subsets.\nNo successful-sample throughput is claimed from partial or failed records."
+}

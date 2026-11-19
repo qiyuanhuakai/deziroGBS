@@ -1,0 +1,28 @@
+{
+  "scope": "Complete small click trees, independent Gaussian references and compression audit.\nNo empirical-iid confidence claim is made: complete trees include failure mass.\nPaired sampling controls test worker/batch replay, not statistical independence.\n",
+  "hashes": {
+    "experiments/iteration94_branch_audit_v1.py": "3e4d782352c6a4295ab66622f94f79c94c393fd94953b17c707e384e8511e6a5",
+    "experiments/iteration94_branch_common_v1.py": "2bc946495574a772b77abcb01f9fab8ee72a2a8e9e8390195113ebaab8bd65b6",
+    "native/gaussian_click_branch94_v1.cpp": "bc64cbaaac75901de7cb40ab47b7da479df49cccb865d9e2af83296d40bfadbe",
+    "native/gaussian_click_gram94_v1.cpp": "d0915ebf343de343a67598d5feb87a9a451a4336bb91d54f4df8a506c94493ac",
+    "native/gaussian_mps_core94_v2.cpp": "902b5cca2d95c72ba63c349460cfb1a47ef0f83cdbcb5bdf5007b88c62191f2a",
+    "results/iteration94_branch_build_v1/branch.dll": "66eb8fbe368f6176229682c0b278a4dc29916449b91697e2836dc3969cdf2751",
+    "results/iteration93_reference_v2/input_0.npz": "0e65073bc9c76a08504599b1447728e4177e50af80c5275148bdf8b4ede53080",
+    "results/iteration93_reference_v2/input_1.npz": "a44389223d644b3ef162832464f98954e8137750906c0dbea6ac5438a039210d",
+    "results/iteration93_reference_v2/input_2.npz": "1013a5a87f7762306241f2a32d9c56a41c2743a39ea1684c1bbb75fb058f568b",
+    "results/iteration93_reference_v2/input_3.npz": "0382bcde01a34e95f5b59a8af72916bba5b6d08c1e035a425645f881cb992e61"
+  },
+  "limits": [
+    1,
+    2,
+    4,
+    64
+  ],
+  "budgets": [
+    0.01,
+    1.0
+  ],
+  "compression_seed": 940061,
+  "control_experiment_base": 2483052544,
+  "control_records": 256
+}

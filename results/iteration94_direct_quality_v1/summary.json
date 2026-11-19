@@ -1,0 +1,65 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 7,
+        "records": 65536,
+        "experiment": 2483093511,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005780091168747795,
+        "lower": 0.0,
+        "upper": 0.014071970325988637
+      },
+      "seconds": 0.8595886000039172
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 19,
+        "records": 65536,
+        "experiment": 2483093523,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.010156017509748011,
+        "lower": 0.0,
+        "upper": 0.01844789666698885
+      },
+      "seconds": 1.0082586999997147
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2483093529,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0005254997849908627,
+        "lower": 0.0,
+        "upper": 0.008817378942231705
+      },
+      "seconds": 0.8029735000054643
+    }
+  ]
+}

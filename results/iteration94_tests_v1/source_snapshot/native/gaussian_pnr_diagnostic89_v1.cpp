@@ -1,0 +1,33 @@
+// Read-only frozen PNR flow replay. Instrumentation stores values, never clips.
+#include "gaussian_pnr_blocktree87_v1.cpp"
+#include <sstream>
+#include <iomanip>
+#include <cstring>
+struct FlowDiagnostic89 {Vector values,mean;Real forms;std::vector<std::array<LD73,6>> points;};
+static bool diagnostic_flow89(const ClickModel70& c,State73& state,double uniform,Stats73& stats,FlowDiagnostic89& diagnostic){
+    ++stats.flow_calls;Eigen::SelfAdjointEigenSolver<Real> eig(state.x);need(eig.info()==Eigen::Success,"Polynomial flow eigensolver failure");Vector values=eig.eigenvalues(),rotated=eig.eigenvectors().transpose()*state.mean;need(values.minCoeff()>-1,"Polynomial determinant domain");
+    Real forms=forms73(c,state.factors),rforms=eig.eigenvectors().transpose()*forms;int channels=forms.cols(),d=values.size();diagnostic.values=values;diagnostic.mean=rotated;diagnostic.forms=rforms;diagnostic.points.clear();LD73 normalization=1;bool normalized=false;
+    auto evaluate=[&](LD73 s,bool derivatives){
+        LVec73 mu=LVec73::Zero(channels),mud=LVec73::Zero(channels);LMat73 cov=LMat73::Zero(channels,channels),covd=LMat73::Zero(channels,channels);LD73 logp=0,slope=0;
+        for(int i=0;i<d;++i){LD73 lambda=values[i],a=rotated[i],den=1+s*lambda,t=lambda/den,z=a/den;logp-=.5L*(std::log1p(s*lambda)+s*a*a/den);slope-=.5L*(t+z*z);
+            for(int j=0;j<channels;++j){LD73 u=rforms(i,j);mu[j]+=u*z;if(derivatives)mud[j]-=u*t*z;for(int k=0;k<channels;++k){LD73 uv=u*rforms(i,k);cov(j,k)+=uv*t;if(derivatives)covd(j,k)-=uv*t*t;}}
+        }
+        auto moments=polynomial73(mu,cov,derivatives);LD73 gaussian=std::exp(logp),p=gaussian*moments.value/normalization,derivative=0;
+        if(derivatives){LD73 qprime=moments.gradient.dot(mud)+.5L*(moments.hessian.cwiseProduct(covd)).sum();derivative=gaussian*(slope*moments.value+qprime)/normalization;}
+        diagnostic.points.push_back({s,p,normalization,moments.value,gaussian,normalized?1.L:0.L});need(std::isfinite(p)&&p>=0&&(!normalized||p<=1),"Polynomial survival outside [0,1]; no clipping");return std::pair<LD73,LD73>(p,derivative);
+    };
+    auto initial=evaluate(0,true);normalization=initial.first;need(std::isfinite(normalization)&&normalization>0,"Polynomial state normalization invalid");normalized=true;
+    if(uniform<=evaluate(1,false).first)return false;LD73 lo=0,hi=1,s=.5L;auto guess=std::log((LD73)uniform)/(initial.second/normalization);if(guess>0&&guess<1&&std::isfinite(guess))s=guess;bool converged=false;
+    for(int i=0;i<32;++i){auto [p,derivative]=evaluate(s,true);++stats.root_iterations;LD73 residual=p-uniform;if(std::abs(residual)<=64*std::numeric_limits<LD73>::epsilon()*(1+std::abs(p))){converged=true;break;}if(residual>0)lo=s;else hi=s;auto proposed=s-residual/derivative;if(!(derivative<0&&std::isfinite(proposed)&&proposed>lo&&proposed<hi))proposed=(lo+hi)/2;s=proposed;}
+    if(!converged){++stats.root_fallbacks;for(int i=0;i<64;++i){s=(lo+hi)/2;++stats.root_iterations;if(evaluate(s,false).first>uniform)lo=s;else hi=s;}s=(lo+hi)/2;}
+    double rounded=double(s);need(rounded>=0&&rounded<1,"Polynomial root rounded to endpoint");stats.residual=std::max(stats.residual,double(std::abs(evaluate(rounded,false).first-uniform)));
+    for(int i=0;i<d;++i){double den=1+rounded*values[i];rotated[i]*=std::sqrt(1-rounded)/den;values[i]*=(1-rounded)/den;}state.x=eig.eigenvectors()*values.asDiagonal()*eig.eigenvectors().transpose();state.x=(state.x+state.x.transpose()).eval()/2;state.mean=eig.eigenvectors()*rotated;return true;
+}
+
+API int pnr89_flow_diagnostic(void* handle,const double* squeezing,const double* noise_factor,std::uint64_t experiment,unsigned sector,std::uint64_t record,int retained,std::uint32_t* counts,double* covariance,double* center,int* factors,double* statistics,char* trace_text,int trace_cap,char* message,int cap){try{
+ PnrRoundGuard87 guard;need(handle&&squeezing&&noise_factor&&counts&&covariance&&center&&factors&&statistics&&trace_text,"PNRDiagnostic89 arguments");auto& original=*static_cast<ClickModel70*>(handle);int n=original.model->n,d=2*n,m=original.model->m;ClickModel70 c;c.model=std::make_unique<Model>();c.model->n=n;c.model->m=m;c.model->v=original.model->v;c.a=original.a;c.b=original.b;BlockTree87 tree(c,16);Vector t(n);Real L(d,d),xp=Real::Zero(d,d);for(int i=0;i<n;++i){t[i]=squeezing[i];xp(i,i)=-t[i]/(1+t[i]);xp(n+i,n+i)=t[i]/(1-t[i]);}for(int i=0;i<d;++i)for(int j=0;j<d;++j)L(i,j)=noise_factor[i*d+j];DomainRng84 waits(experiment,sector,Waiting84,record),detectors(experiment,sector,Detector84,record),noise(experiment,sector,Displacement84,record);std::normal_distribution<double> normal;Vector z(d);for(int i=0;i<d;++i)z[i]=normal(noise);State73 state{xp,L*z,{}};Stats73 stats;BlockTrace87 selection;FlowDiagnostic89 diagnostic;bool pure=true;int stage=0,photons=0;std::string failure;std::fill(counts,counts+m,0);
+ try{for(;;){stage=1;double u=uniform84(waits);bool jump=pure?pure_flow74(c,state,t,u,stats):diagnostic_flow89(c,state,u,stats,diagnostic);if(!jump)break;stage=2;int mode=pure?pure_detector74(c,state,t,uniform84(detectors)):detector87(c,state,uniform84(detectors),tree,selection);state.factors.push_back(mode);if(int(state.factors.size())>retained){stage=3;compress73(c,state,stats);pure=false;}++counts[mode];++photons;}}
+ catch(const std::exception& e){failure=e.what();}
+ statistics[0]=failure.empty()?0:stage+1;statistics[1]=photons;statistics[2]=state.factors.size();statistics[3]=pure;statistics[4]=waits.used;statistics[5]=detectors.used;statistics[6]=noise.used;for(int i=0;i<d;++i){center[i]=state.mean[i];for(int j=0;j<d;++j)covariance[i*d+j]=state.x(i,j);}for(int i=0;i<int(state.factors.size());++i)factors[i]=state.factors[i];
+ std::ostringstream stream;stream<<std::setprecision(42)<<"{\"values\":[";for(int i=0;i<diagnostic.values.size();++i){if(i)stream<<",";stream<<"\""<<diagnostic.values[i]<<"\"";}stream<<"],\"mean\":[";for(int i=0;i<diagnostic.mean.size();++i){if(i)stream<<",";stream<<"\""<<diagnostic.mean[i]<<"\"";}stream<<"],\"forms\":[";for(int i=0;i<diagnostic.forms.rows();++i){if(i)stream<<",";stream<<"[";for(int j=0;j<diagnostic.forms.cols();++j){if(j)stream<<",";stream<<"\""<<diagnostic.forms(i,j)<<"\"";}stream<<"]";}stream<<"],\"points\":[";for(std::size_t i=0;i<diagnostic.points.size();++i){if(i)stream<<",";stream<<"[";for(int j=0;j<6;++j){if(j)stream<<",";stream<<"\""<<diagnostic.points[i][j]<<"\"";}stream<<"]";}stream<<"]}";auto text=stream.str();need(int(text.size())<trace_cap,"PNRDiagnostic89 buffer");std::memcpy(trace_text,text.c_str(),text.size()+1);if(!failure.empty())error(message,cap,failure);return 0;
+ }catch(const std::exception& e){error(message,cap,e.what());return 1;}}

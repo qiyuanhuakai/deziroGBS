@@ -1,0 +1,4 @@
+"""Build the independent long-double pure Gaussian Fock recurrence."""
+import argparse,subprocess
+from iteration93_common_v2 import *
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=False);src=ROOT/'native/gaussian_fock_reference93_v1.cpp';save(out,'plan.json',dict(hashes={p.relative_to(ROOT).as_posix():H(p) for p in (Path(__file__),src)}));cmd=[shutil.which('g++'),'-O3','-std=c++20','-shared','-ffp-contract=off','-fno-fast-math',str(src),'-o',str(out/'reference.dll')];r=subprocess.run(cmd,capture_output=True,text=True,errors='replace');save(out,'build.json',dict(command=cmd,returncode=r.returncode,stdout=r.stdout,stderr=r.stderr));manifest(out);assert r.returncode==0,r.stderr;print('built Gaussian reference93')

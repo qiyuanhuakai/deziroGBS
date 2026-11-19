@@ -1,0 +1,15 @@
+// Frozen polynomial73 Gaussian closure with domain-separated random streams.
+// Preserve the numerical method; preserve all failed rows without refilling.
+#include "gaussian_pnr_polynomial73_v1.cpp"
+#include "gaussian_rng_domain84_v1.hpp"
+#include <climits>
+API int pnr84_domain_sample(void* handle,int count,std::uint64_t experiment,unsigned sector,std::uint64_t offset,int threads,int retained,const double* mean,const double* variance,std::uint32_t* output,double* statistics,int* errors,char* message,int cap){try{
+ PrecisionGuard precision;need(handle&&count>=0&&count<=4096&&sector<=65535&&offset<=0x100000000ULL&&std::uint64_t(count)<=0x100000000ULL-offset&&threads>=1&&threads<=64&&retained>=0&&retained<=3&&mean&&variance&&output&&statistics&&errors,"Invalid domain PNR arguments");auto& c=*static_cast<ClickModel70*>(handle);int d=2*c.model->n,m=c.model->m;Vector center(d),deviation(d);for(int j=0;j<d;++j){need(std::isfinite(mean[j])&&std::isfinite(variance[j])&&variance[j]>=0,"Invalid domain displacement");center[j]=mean[j];deviation[j]=std::sqrt(variance[j]);}
+ std::fill(output,output+std::size_t(count)*m,0);std::fill(statistics,statistics+16*count,0);std::fill(errors,errors+2*count,0);std::atomic<int> next{0};std::vector<std::string> messages(count);std::vector<std::thread> pool;
+ auto worker=[&](){PrecisionGuard guard;for(;;){int row=next.fetch_add(1);if(row>=count)break;Stats73 trace;int stage=0;std::uint64_t photons=0;DomainRng84 waits(experiment,sector,Waiting84,offset+row),detectors(experiment,sector,Detector84,offset+row),noise(experiment,sector,Displacement84,offset+row);try{
+  std::normal_distribution<double> normal;State73 state{c.model->initial,center,{}};for(int j=0;j<d;++j)if(deviation[j]>0)state.mean[j]+=deviation[j]*normal(noise);
+  for(;;){stage=1;if(!flow73(c,state,uniform84(waits),trace))break;stage=2;int mode=detector73(c,state,uniform84(detectors));state.factors.push_back(mode);trace.maximum_factors=std::max(trace.maximum_factors,double(state.factors.size()));if(state.factors.size()>std::size_t(retained)){stage=3;compress73(c,state,trace);}auto& value=output[std::size_t(row)*m+mode];need(value<std::numeric_limits<std::uint32_t>::max(),"PNR storage overflow");++value;++photons;}trace.completed=1;
+ }catch(const std::exception& e){errors[2*row]=stage+1;errors[2*row+1]=int(std::min<std::uint64_t>(photons,INT_MAX));messages[row]=e.what();}
+ auto* out=statistics+16*row;out[0]=double(photons);out[1]=trace.completed;out[2]=double(photons);out[3]=trace.compressions;out[4]=trace.maximum_factors;out[5]=trace.flow_calls;out[6]=trace.root_iterations;out[7]=trace.root_fallbacks;out[8]=trace.residual;out[12]=double(waits.used);out[13]=double(detectors.used);out[14]=double(noise.used);}};
+ try{for(int j=0;j<std::min(count,threads);++j)pool.emplace_back(worker);}catch(...){for(auto& t:pool)t.join();throw;}for(auto& t:pool)t.join();for(int row=0;row<count;++row)if(errors[2*row]){error(message,cap,"row="+std::to_string(row)+" completed_photons="+std::to_string(errors[2*row+1])+" "+messages[row]);return 1;}return 0;
+ }catch(const std::exception& e){error(message,cap,e.what());return 1;}}

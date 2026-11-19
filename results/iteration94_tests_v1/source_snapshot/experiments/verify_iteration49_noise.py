@@ -1,0 +1,53 @@
+"""Independent continuous-normal bins, finite program mixture and Gaussian target."""
+import os
+for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ[key]='1'
+import sys,json,shutil,math
+from pathlib import Path
+from fractions import Fraction as F
+import numpy as np
+from iteration22_external import digest,save
+from iteration33_run import encode
+from verify_iteration34 import decode
+from iteration45_independent import grid_below,tv
+from iteration46_displacement_independent import exp_inverse_positive
+from iteration47_radicals import density_radicals
+from iteration48_independent import independent_overlap,bisect_sqrt
+from iteration49_normal_independent import cdf,pi_bounds
+from gbslab.local_mps import threshold_step,sample_local_threshold
+ROOT=Path(__file__).resolve().parents[1];sys.set_int_max_str_digits(0)
+
+
+def main():
+    out=ROOT/'results/iteration49_noise_validation';out.mkdir(exist_ok=False);names=[f'experiments/{n}.py' for n in ('verify_iteration49_noise','iteration49_normal_independent','iteration48_independent','iteration47_radicals','iteration46_displacement_independent','iteration45_independent','iteration22_external','iteration33_run','verify_iteration34')]+[p.relative_to(ROOT).as_posix() for p in (ROOT/'src').rglob('*.py')];hashes={n:digest(ROOT/n) for n in names};deps={};checks=[];rows=[];nodes=0
+    for n in names:p=out/'source_snapshot'/n;p.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/n,p)
+    def read(n):deps[n]=digest(ROOT/n);return decode(json.loads((ROOT/n).read_text()))
+    def check(n,ok):
+        checks.append(dict(name=n,passed=bool(ok)))
+        if not ok:save(out/'checks.failed.json',checks);raise AssertionError(n)
+    base='results/iteration49_noise';plan=read(base+'/plan.json');summary=read(base+'/summary.json');check('36 complete',summary['planned']==summary['finished']==summary['completed']==36)
+    for n,s in plan['source_hashes'].items():check('source '+n,digest(ROOT/n)==s==digest(ROOT/base/'source_snapshot'/n))
+    expected=[dict(pairing=lam,sigma=sigma,dimension=d,cells=c) for lam in (F(0),F(1,2),F(3,4)) for sigma in (F(1,4),F(1,2)) for d in (4,8) for c in (16,64,256)];check('predeclared jobs',plan['jobs']==expected)
+    for index,job in enumerate(expected):
+        rec=read(base+f'/case_{index:02d}.json');name=base+f'/case_{index:02d}.npz';deps[name]=digest(ROOT/name);t=np.load(ROOT/name)['tensor_0'];tensors=[t];tag=f'case{index} ';lam=job['pairing'];sigma=job['sigma'];d=job['dimension'];N=job['cells'];check(tag+'job/layout',rec['job']==job and t.shape==(1,d,1) and t.flags.c_contiguous and list(t.strides)==rec['stored_strides']);br=rec['bridge'];ind=independent_overlap(tensors,[[lam]],[[F(0)]]);check(tag+'independent Hermite/R',encode(ind['hermite'])==encode(br['hermite']) and ind['projection_unnormalized_norm']==br['projection_unnormalized_norm']);scale=max(F(float(x)).denominator for x in np.concatenate([t.real.ravel(),t.imag.ravel()]));check(tag+'exact represented amplitudes',all([a*scale,b*scale]==v for (a,b),v in zip(ind['amplitudes'],br['integer_amplitudes'])) and ind['norm']*scale**2==br['integer_norm']);pl,ph=bisect_sqrt(1-lam*lam);l,h=br['normalization_probability_interval'];check(tag+'pure Gaussian normalization',l<=pl<=ph<=h and br['physical']['determinant']==1-lam*lam);vp=(1-lam)/(1+lam);vq=1/vp;check(tag+'exact covariance',br['physical']['covariance']==[[vq,F(0)],[F(0),vp]]);a,b=ind['overlap_squared_over_norm_interval'];fl=max(F(0),pl*a);fh=min(F(1),ph*b);l,h=br['full_fidelity_interval'];check(tag+'independent full fidelity',l<=fl<=fh<=h);dl,dh=br['full_trace_interval'];check(tag+'state distance enclosure',0<=dl<=dh<=1 and dl*dl<=1-h<=1-l<=dh*dh)
+        grid=rec['grid'];edges=[F(-4)+F(8*k,N) for k in range(N+1)];check(tag+'grid coordinates',grid['sigma']==sigma and grid['cells']==N and grid['standard_edges']==edges and grid['nodes']==[sigma*(a+b)/2 for a,b in zip(edges,edges[1:])]+[F(0)] and grid['interior_half_width']==4*sigma/N);pi=pi_bounds();check(tag+'independent pi identity',grid['pi_interval'][0]<=pi[0]<=pi[1]<=grid['pi_interval'][1]);indcdf=[]
+        for k,x in enumerate(edges):
+            a,b=cdf(x);l,h=grid['cdf_intervals'][k];check(tag+'independent positive normal CDF '+str(k),l<=a<=b<=h);indcdf.append((a,b))
+        weights=[]
+        for a,b in zip(grid['cdf_intervals'],grid['cdf_intervals'][1:]):weights.append((max(F(0),b[0]-a[1]),b[1]-a[0]))
+        tail=(2*grid['cdf_intervals'][0][0],2*grid['cdf_intervals'][0][1]);weights.append(tail);check(tag+'complete bin masses with both tails',encode(weights)==encode(grid['weight_intervals']) and list(tail)==grid['tail_interval'] and sum(a for a,b in weights)<=1<=sum(b for a,b in weights));prob=np.array([float((a+b)/2) for a,b in weights]);prob/=prob.sum();check(tag+'predeclared probability rounding',grid['probabilities_hex']==[float(x).hex() for x in prob]);edges_float=prob.cumsum();edges_float/=edges_float[-1];counts=[];last=0
+        for edge in edges_float:k=grid_below(F(float(edge)),53);counts.append(k-last);last=k
+        sw=[F(k,1<<53) for k in counts];check(tag+'independent selector CDF/word counts',grid['cdf_hex']==[float(x).hex() for x in edges_float] and counts==rec['selector_counts'] and sw==rec['selector_weights'] and sum(sw)==1);selector=tv(sw,weights);check(tag+'selector TV',list(selector)==rec['selector_TV']);mixed=[F(0)]*3;arith=F(0);gridvac=[F(0),F(0)];saved_independent=[];check(tag+'every component retained',len(rec['components'])==N+1)
+        for k,(record,alpha,w,wi) in enumerate(zip(rec['components'],grid['nodes'],sw,weights)):
+            nodes+=1;prefix=tag+f'node{k} ';check(prefix+'exact node',record['node']==k and record['alpha']==alpha and F(float(alpha))==alpha);target=record['finite_target'];density=density_radicals(tensors,[complex(float(alpha))]);coeff=density[1]['coefficient_interval'];el,eh=exp_inverse_positive(alpha*alpha);il=max(F(0),coeff[0]*el);ih=min(F(1),coeff[1]*eh);vl,vh=target['intervals'][0];check(prefix+'independent finite measurement',vl<=il<=ih<=vh and target['intervals'][1]==[1-vh,1-vl]);sampling=record['sampling'];check(prefix+'single complete root',len(sampling['trace'])==sampling['nodes']==1);node=sampling['trace'][0];branches,wg,total=threshold_step(np.ones(1,complex),t,complex(float(alpha)));cp=wg/total;cf=cp.cumsum();cf/=cf[-1];check(prefix+'actual kernel/CDF',node['path']==[] and node['status']=='completed' and node['weights_hex']==[float(x).hex() for x in wg] and node['total_hex']==total.hex() and node['probabilities_hex']==[float(x).hex() for x in cp] and node['cdf_hex']==[float(x).hex() for x in cf]);cnt=[];last=0;previous=F(0);word=[F(0)]*3;real=[F(0)]*3
+            for channel,edge in enumerate(cf):
+                e=F(float(edge));count=grid_below(e,53);c=count-last;cnt.append(c);destination=2 if wg[channel]<=0 else int(channel!=0);word[destination]+=F(c,1<<53);real[destination]+=e-previous;previous=e;last=count
+            check(prefix+'independent finite-word law',cnt==node['counts'] and word==sampling['word_law'] and real==sampling['real_law'] and sum(word)==1);epsilon=tv(word,target['intervals']+[(F(0),F(0))]);check(prefix+'arithmetic TV',list(epsilon)==record['arithmetic_TV']);arith+=w*epsilon[1]
+            for bit in range(3):mixed[bit]+=w*word[bit]
+            el,eh=exp_inverse_positive((1-lam)*alpha*alpha);gl,gh=record['pure_Gaussian_vacuum_interval'];check(prefix+'independent full pure Gaussian node',gl<=pl*el<=ph*eh<=gh);gridvac[0]+=wi[0]*gl;gridvac[1]+=wi[1]*gh;saved_independent.append(dict(node=k,coefficient_interval=coeff))
+        save(out/f'case_{index:02d}.independent_nodes.json',encode(saved_independent));check(tag+'exact complete mixed program law',mixed==rec['mixture_law'] and sum(mixed)==1 and mixed[-1]==0);check(tag+'weighted arithmetic and ideal grid',arith==rec['weighted_arithmetic_TV_upper'] and gridvac==rec['ideal_grid_vacuum_interval']);det=((vq+4*sigma*sigma+1)/2)*((vp+1)/2);cl,ch=bisect_sqrt(1/det);p0=rec['continuous_target'][0];check(tag+'continuous mixed Gaussian covariance target',p0[0]<=cl<=ch<=p0[1] and rec['continuous_target'][1]==[1-p0[1],1-p0[0]]);actual=tv(mixed,rec['continuous_target']+[(F(0),F(0))]);check(tag+'complete mixed-target TV',list(actual)==rec['full_Gaussian_TV']);disc=min(F(1),tail[1]+(1-tail[0])*bisect_sqrt(vp,192)[1]*4*sigma/N);check(tag+'continuous-grid coupling bound',disc==rec['discretization_TV_upper']);bound=min(F(1),dh+arith+selector[1]+disc);check(tag+'complete error composition',bound==rec['total_TV_upper'] and actual[1]<=bound);gridTV=(max(F(0),p0[0]-gridvac[1],gridvac[0]-p0[1]),max(abs(a-b) for a in gridvac for b in p0));check(tag+'direct ideal-grid error bounded',list(gridTV)==rec['ideal_grid_vs_continuous_TV_interval'] and gridTV[1]<=disc)
+        cal=rec['calibration'];rng=np.random.default_rng(cal['seed']);outputs=[];selected=[]
+        for _ in range(cal['samples']):
+            j=int(rng.choice(len(prob),p=prob));value,_=sample_local_threshold(tensors,np.array([[float(grid['nodes'][j])]],complex),rng);selected.append(j);outputs.append(int(value[0,0]))
+        check(tag+'public two-stage sampler replay',cal['samples']==7 and selected==cal['selected_nodes'] and outputs==cal['outputs']);signed=(gridvac[0]-p0[1],gridvac[1]-p0[0]);eR=exp_inverse_positive((1-lam)*(4*sigma)**2);tailbias=(pl*tail[0]*(1-eR[1]),ph*tail[1]);interior=(signed[0]-tailbias[1],signed[1]-tailbias[0]);rows.append(dict(case=index,job=job,TV=actual,total_TV_upper=bound,state_upper=dh,arithmetic_upper=arith,selector_upper=selector[1],discretization_upper=disc,grid_TV=gridTV,signed_grid_vacuum_bias=signed,tail_vacuum_bias_interval=tailbias,interior_vacuum_bias_interval=interior,tail_interval=tail,failure=mixed[-1]));print('verified noise',index,flush=True)
+    check('sources unchanged',all(digest(ROOT/n)==s for n,s in hashes.items()));check('dependencies unchanged',all(digest(ROOT/n)==s for n,s in deps.items()));save(out/'rows.json',encode(rows));save(out/'checks.json',checks);save(out/'validation.json',dict(count=len(checks),passed=sum(c['passed'] for c in checks),cases=36,nodes=nodes,source_hashes=hashes,dependencies=deps,scope='Discrete normal-bin emulator against exact continuous real-displacement Gaussian noise; independent uniform53-bit words, not numpy.normal or fixed-PRNG distribution'))
+if __name__=='__main__':main()

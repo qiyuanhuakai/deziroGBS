@@ -1,0 +1,134 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_mps",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2483093504,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.006265496852695802,
+        "lower": 0.0,
+        "upper": 0.014557376009936644
+      },
+      "pnr": {
+        "empirical_tv": 0.025763417094887373,
+        "lower": 0.0,
+        "upper": 0.034055299210332395
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.001568703529478012,
+      "maximum_bond": 124,
+      "seconds": 34.40269009999611
+    },
+    {
+      "job": {
+        "name": "displaced4_mps",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2483093512,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.004799327777387823,
+        "lower": 0.0,
+        "upper": 0.013091206934628665
+      },
+      "pnr": {
+        "empirical_tv": 0.03411539040573069,
+        "lower": 0.0,
+        "upper": 0.0424072732145466
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 8.823857659398296e-05,
+      "maximum_bond": 94,
+      "seconds": 37.728587700006756
+    },
+    {
+      "job": {
+        "name": "pure8_mps",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2483093516,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.008486739411166984,
+        "lower": 0.0,
+        "upper": 0.016778618568407826
+      },
+      "total_cdf": {
+        "empirical_distance": 0.002233414701955372,
+        "lower": 0.0,
+        "upper": 0.01083827107885095,
+        "radius": 0.008604856376895578
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.020137501065778378,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.0023546001876154294,
+      "maximum_bond": 32,
+      "seconds": 10.961704100018324
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 20,
+        "records": 65536,
+        "experiment": 2483093524,
+        "threads": 16,
+        "batch_size": 512
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0036167075660478443,
+        "lower": 0.0,
+        "upper": 0.011908586723288686
+      },
+      "pnr": {
+        "empirical_tv": 0.012430478164994879,
+        "lower": 0.0,
+        "upper": 0.020722357339298062
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "compression_bound_scope": "Analytic truncation model plus observed-failure confidence event; not an interval-certified global numerical implementation bound.",
+      "maximum_charged": 0.0041974505698636755,
+      "maximum_bond": 16,
+      "seconds": 2.9995106000005762
+    }
+  ]
+}

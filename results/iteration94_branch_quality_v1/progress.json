@@ -1,0 +1,205 @@
+{
+  "completed_jobs": 8,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_branch4",
+        "case": 0,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2483093505,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.00702072408239553,
+        "lower": 0.0,
+        "upper": 0.015312603239636373
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 1.0,
+      "maximum_charged": 0.5342252019790373,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.12981239999680838
+    },
+    {
+      "job": {
+        "name": "pure4_branch64",
+        "case": 0,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2483093506,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005444671752409688,
+        "lower": 0.0,
+        "upper": 0.01373655090965053
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "maximum_charged": 0.0,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.12159109999629436
+    },
+    {
+      "job": {
+        "name": "displaced4_branch4",
+        "case": 1,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2483093513,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.009885242327628024,
+        "lower": 0.0,
+        "upper": 0.018177121484868865
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 1.0,
+      "maximum_charged": 0.4912057496435214,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.12710890000562358
+    },
+    {
+      "job": {
+        "name": "displaced4_branch64",
+        "case": 1,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2483093514,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.005067958986668768,
+        "lower": 0.0,
+        "upper": 0.01335983814390961
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "maximum_charged": 0.0,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.13676850000229024
+    },
+    {
+      "job": {
+        "name": "pure8_branch4",
+        "case": 2,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2483093517,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 535,
+      "click": {
+        "empirical_tv": 0.020709992305405295,
+        "lower": 0.00430968264967717,
+        "upper": 0.029001871462646135
+      },
+      "failure_probability_upper": 0.009531908364570733,
+      "ideal_arithmetic_compression_tv_upper": 1.0,
+      "maximum_charged": 0.9704624635021366,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.2410509000019374
+    },
+    {
+      "job": {
+        "name": "pure8_branch64",
+        "case": 2,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 14,
+        "records": 65536,
+        "experiment": 2483093518,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.010310531791858956,
+        "lower": 0.0,
+        "upper": 0.0186024109490998
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "maximum_charged": 0.0,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.27663410000604927
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch4",
+        "case": 3,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 21,
+        "records": 65536,
+        "experiment": 2483093525,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0026613556955055323,
+        "lower": 0.0,
+        "upper": 0.010953234852746374
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 1.0,
+      "maximum_charged": 0.0,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.08027680000122928
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch64",
+        "case": 3,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 22,
+        "records": 65536,
+        "experiment": 2483093526,
+        "threads": 16,
+        "batch_size": 2048
+      },
+      "failures": 0,
+      "click": {
+        "empirical_tv": 0.0006565024879228443,
+        "lower": 0.0,
+        "upper": 0.008948381645163686
+      },
+      "failure_probability_upper": 0.00013750106577837913,
+      "ideal_arithmetic_compression_tv_upper": 0.01013750106577838,
+      "maximum_charged": 0.0,
+      "scope": "Gaussian projection subspace truncation model; floating point is independently tested but not interval-certified.",
+      "seconds": 0.0774409000059677
+    }
+  ]
+}

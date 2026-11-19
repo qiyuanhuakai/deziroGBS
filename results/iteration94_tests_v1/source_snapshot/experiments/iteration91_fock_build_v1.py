@@ -1,0 +1,4 @@
+"""Build the native finite-occupation core enumerator and table sampler."""
+import argparse,subprocess
+from iteration91_fock_common_v1 import *
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=False);source=ROOT/'native/gaussian_fock_core91_v1.cpp';files=[Path(__file__),source,ROOT/'experiments/iteration91_fock_common_v1.py'];save(out,'plan.json',dict(hashes={p.relative_to(ROOT).as_posix():H(p) for p in files},scope=__doc__));gcc=runtime_dirs()[0]/'g++.exe';cmd=[str(gcc),'-O3','-std=c++20','-shared','-ffp-contract=off','-fno-fast-math',str(source),'-o',str(out/'fock.dll')];r=subprocess.run(cmd,capture_output=True,text=True,errors='replace');save(out,'build.json',dict(command=cmd,returncode=r.returncode,stdout=r.stdout,stderr=r.stderr));manifest(out);assert r.returncode==0,r.stderr;print('built fock91',flush=True)

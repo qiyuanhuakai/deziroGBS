@@ -1,0 +1,85 @@
+{
+  "scope": "Scoped completed94 comparisons; no arbitrary-input or Jiuzhang advantage. Nominal joint99 conditional on iid and numerical references.",
+  "quality_records": 1704064,
+  "events": 82,
+  "branch64_vs_frugal2_pure4": {
+    "guaranteed_click_error_ratio": 2.6711954049593873,
+    "time_ratio": 114.93451519060461
+  },
+  "branch64_vs_frugal4_pure4": {
+    "time_ratio": 111.4869872169978,
+    "accuracy_intervals_overlap": true
+  },
+  "branch64_vs_direct91_pure4": {
+    "speedup": 1.590248515299568,
+    "accuracy_intervals_overlap": true
+  },
+  "mps_vs_pe_pure4": {
+    "time_ratio": 6.8112547323649935,
+    "pnr_intervals_overlap": true
+  },
+  "actual_pnr": {
+    "attempts": 64,
+    "failures": 11,
+    "seconds": 584.7533300000032,
+    "seconds_per_attempt": 9.13677078125005,
+    "raw_time_ratio_to_jz3": 7194307.701771693,
+    "cdf": {
+      "empirical_distance": 0.19157026102860997,
+      "lower": 0.0,
+      "upper": 0.46692566508926847,
+      "radius": 0.2753554040606585
+    },
+    "failure_upper": 0.3925477269920584,
+    "ideal_arithmetic_tv_upper": 0.5025477269920584
+  },
+  "actual_branch": {
+    "completed": true,
+    "job": {
+      "name": "actual_1152_dual_branch",
+      "records": 64,
+      "experiment": 2483159041,
+      "threads": 16,
+      "batch_size": 16,
+      "limit": 8,
+      "budgets": [
+        0.1,
+        0.01
+      ],
+      "scope": "Fail immediately when either spectrum fails; do not run secondary for records already failed in main. Preserve original global record IDs for every sampled spectrum."
+    },
+    "failures": 64,
+    "completed_samples": 0,
+    "secondary_attempted": 0,
+    "failure_probability_lower": 0.8686536694004806,
+    "failure_probability_upper": 1.0,
+    "full_click_tv_lower_from_failure": 0.8686536694004806,
+    "seconds": 5.597656200001438,
+    "scope": "Frozen64 actual dual-spectrum attempts with explicit early failure outcomes.\nMain-spectrum failures terminate that record; secondary IDs are never repacked.\nFailure probability bounds concern all64 attempts, not successful subsets.\nNo successful-sample throughput is claimed from partial or failed records."
+  },
+  "sources": {
+    "verification_sha256": "c3b628079c236b21eaefa8a13af7715317769d88380bdcaed69a2ded52221b5a",
+    "jiuzhang": "https://arxiv.org/html/2304.12240v3"
+  },
+  "experimental_click_count": {
+    "hardware_records": 1492642,
+    "hardware_histogram_sha256": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results": {
+      "pnr": {
+        "empirical_distance": 0.18682705313799286,
+        "threshold": 155,
+        "simulated_cdf": 0.796875,
+        "experimental_cdf": 0.9837020531379929,
+        "raw_sha256": "9e10e762918992e545e88311d22fabe25e84f914f89dd6306ce94af37da5a487"
+      },
+      "direct": {
+        "empirical_distance": 1.0,
+        "threshold": 229,
+        "simulated_cdf": 0.0,
+        "experimental_cdf": 1.0,
+        "raw_sha256": "65f94bd33be97718339c81a105d55699d6de1abe24f0c3b5013129382c01aed1"
+      }
+    },
+    "scope": "Descriptive empirical CDF distances with failures above all physical counts. Outside the frozen confidence family."
+  }
+}

@@ -1,0 +1,1100 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "job": {
+        "name": "pure4_mps",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2483093504,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure4_mps_t1"
+      },
+      "records": 2048,
+      "median_seconds": 4.152912600000491,
+      "seconds": [
+        4.152912600000491,
+        4.056054899998344,
+        4.801363099999435
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_mps",
+        "case": 0,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 0,
+        "records": 65536,
+        "experiment": 2483093504,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure4_mps_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.5557386000000406,
+      "seconds": [
+        0.518876399999499,
+        0.5557386000000406,
+        0.6643992999997863
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_branch4",
+        "case": 0,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2483093505,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_branch4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.02398649999850022,
+      "seconds": [
+        0.02398649999850022,
+        0.029085800000757445,
+        0.023591399998622364
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_branch4",
+        "case": 0,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 1,
+        "records": 65536,
+        "experiment": 2483093505,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_branch4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.006224599999768543,
+      "seconds": [
+        0.0063694000000396045,
+        0.006224599999768543,
+        0.0054579999996349216
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_branch64",
+        "case": 0,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2483093506,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_branch64_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.02527410000038799,
+      "seconds": [
+        0.02591009999923699,
+        0.02527410000038799,
+        0.024991799999042996
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_branch64",
+        "case": 0,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 2,
+        "records": 65536,
+        "experiment": 2483093506,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_branch64_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.006553200000780635,
+      "seconds": [
+        0.007245200000397745,
+        0.005820000000312575,
+        0.006553200000780635
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_pe",
+        "case": 0,
+        "family": "pe",
+        "id": 3,
+        "records": 65536,
+        "experiment": 2483093507,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.6097132999984751,
+      "seconds": [
+        0.6097132999984751,
+        0.6161091000012675,
+        0.5845503999989887
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal2",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 4,
+        "records": 65536,
+        "experiment": 2483093508,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal2_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0002199000009568408,
+      "seconds": [
+        0.00021399999968707561,
+        0.0002199000009568408,
+        0.00022170000011101365
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal3",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 5,
+        "records": 65536,
+        "experiment": 2483093509,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00019489999976940453,
+      "seconds": [
+        0.00019489999976940453,
+        0.0002007000002777204,
+        0.00019429999883868732
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_frugal4",
+        "case": 0,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 6,
+        "records": 65536,
+        "experiment": 2483093510,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_frugal4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00022669999998470303,
+      "seconds": [
+        0.00019659999998111743,
+        0.0002413000001979526,
+        0.00022669999998470303
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 7,
+        "records": 65536,
+        "experiment": 2483093511,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.04019210000114981,
+      "seconds": [
+        0.04019210000114981,
+        0.039762800000971765,
+        0.041323700001157704
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure4_direct16",
+        "case": 0,
+        "family": "direct",
+        "budget": 16,
+        "id": 7,
+        "records": 65536,
+        "experiment": 2483093511,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure4_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.008195799999157316,
+      "seconds": [
+        0.008928599998398568,
+        0.008195799999157316,
+        0.006638200000452343
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2483093512,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps_t1"
+      },
+      "records": 2048,
+      "median_seconds": 6.32097369999974,
+      "seconds": [
+        6.32097369999974,
+        6.416406700000152,
+        6.30089179999959
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_mps",
+        "case": 1,
+        "family": "mps",
+        "d": 16,
+        "bond": 128,
+        "budget": 0.01,
+        "id": 8,
+        "records": 65536,
+        "experiment": 2483093512,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "displaced4_mps_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.7527205000005779,
+      "seconds": [
+        0.7527205000005779,
+        1.0816008000001602,
+        0.7234965999996348
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_branch4",
+        "case": 1,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2483093513,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_branch4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.028778900001270813,
+      "seconds": [
+        0.028778900001270813,
+        0.02944279999974242,
+        0.027539100001376937
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_branch4",
+        "case": 1,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 9,
+        "records": 65536,
+        "experiment": 2483093513,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "displaced4_branch4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.0066299999998591375,
+      "seconds": [
+        0.006034500000168919,
+        0.0066299999998591375,
+        0.006636199999775272
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_branch64",
+        "case": 1,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2483093514,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_branch64_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.03209269999933895,
+      "seconds": [
+        0.035383599999477156,
+        0.031991500000003725,
+        0.03209269999933895
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_branch64",
+        "case": 1,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 10,
+        "records": 65536,
+        "experiment": 2483093514,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "displaced4_branch64_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.006636899999648449,
+      "seconds": [
+        0.006620799998927396,
+        0.006636899999648449,
+        0.008396400000492577
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "displaced4_pe",
+        "case": 1,
+        "family": "pe",
+        "id": 11,
+        "records": 65536,
+        "experiment": 2483093515,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "displaced4_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.8517904999989696,
+      "seconds": [
+        0.8517904999989696,
+        0.6237618000013754,
+        0.9468559000015375
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2483093516,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "pure8_mps_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.8550783999999112,
+      "seconds": [
+        0.8550783999999112,
+        0.8717493000003742,
+        0.7963259999996808
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_mps",
+        "case": 2,
+        "family": "mps",
+        "d": 8,
+        "bond": 32,
+        "budget": 0.02,
+        "id": 12,
+        "records": 65536,
+        "experiment": 2483093516,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "pure8_mps_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.19880860000012035,
+      "seconds": [
+        0.24940710000009858,
+        0.19880860000012035,
+        0.19665079999867885
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_branch4",
+        "case": 2,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2483093517,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_branch4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.06105240000033518,
+      "seconds": [
+        0.06105240000033518,
+        0.0624325000007957,
+        0.06099780000113242
+      ],
+      "failures": [
+        12,
+        9,
+        17
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_branch4",
+        "case": 2,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 13,
+        "records": 65536,
+        "experiment": 2483093517,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_branch4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.009306399999331916,
+      "seconds": [
+        0.009306399999331916,
+        0.008414600000833161,
+        0.009609200000340934
+      ],
+      "failures": [
+        12,
+        9,
+        17
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_branch64",
+        "case": 2,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 14,
+        "records": 65536,
+        "experiment": 2483093518,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_branch64_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.07077670000035141,
+      "seconds": [
+        0.07188680000035674,
+        0.06726709999929881,
+        0.07077670000035141
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_branch64",
+        "case": 2,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 14,
+        "records": 65536,
+        "experiment": 2483093518,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_branch64_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.011485500001072069,
+      "seconds": [
+        0.011485500001072069,
+        0.012033099999825936,
+        0.010527899999942747
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_pe",
+        "case": 2,
+        "family": "pe",
+        "id": 15,
+        "records": 65536,
+        "experiment": 2483093519,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.6208679999999731,
+      "seconds": [
+        0.605486700000256,
+        0.6283649999986665,
+        0.6208679999999731
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal2",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 2,
+        "id": 16,
+        "records": 65536,
+        "experiment": 2483093520,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal2_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0005639999999402789,
+      "seconds": [
+        0.0005639999999402789,
+        0.0006167999999888707,
+        0.0005579999997280538
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal3",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 3,
+        "id": 17,
+        "records": 65536,
+        "experiment": 2483093521,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal3_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.0007066999987728195,
+      "seconds": [
+        0.0006922000011400087,
+        0.0007066999987728195,
+        0.0009855999996943865
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_frugal5",
+        "case": 2,
+        "family": "frugal",
+        "cutoff": 5,
+        "id": 18,
+        "records": 65536,
+        "experiment": 2483093522,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_frugal5_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.002088499999445048,
+      "seconds": [
+        0.0022166999988257885,
+        0.001950800000486197,
+        0.002088499999445048
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 19,
+        "records": 65536,
+        "experiment": 2483093523,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.12586289999853761,
+      "seconds": [
+        0.13471049999861862,
+        0.12586289999853761,
+        0.12268129999938537
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "pure8_direct16",
+        "case": 2,
+        "family": "direct",
+        "budget": 16,
+        "id": 19,
+        "records": 65536,
+        "experiment": 2483093523,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "pure8_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.01055389999964973,
+      "seconds": [
+        0.013088800000332412,
+        0.010146299999178154,
+        0.01055389999964973
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 20,
+        "records": 65536,
+        "experiment": 2483093524,
+        "threads": 1,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.7875809999986814,
+      "seconds": [
+        0.7875809999986814,
+        0.8313792000008107,
+        0.6977574000011373
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_mps",
+        "case": 3,
+        "family": "mps",
+        "d": 16,
+        "bond": 64,
+        "budget": 0.01,
+        "id": 20,
+        "records": 65536,
+        "experiment": 2483093524,
+        "threads": 16,
+        "batch_size": 512,
+        "timing_name": "lossy_tmsv_mps_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.0748557000006258,
+      "seconds": [
+        0.0748557000006258,
+        0.07775240000046324,
+        0.06822500000089349
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch4",
+        "case": 3,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 21,
+        "records": 65536,
+        "experiment": 2483093525,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_branch4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00928829999975278,
+      "seconds": [
+        0.009297099999457714,
+        0.00861590000022261,
+        0.00928829999975278
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch4",
+        "case": 3,
+        "family": "branch",
+        "limit": 4,
+        "budget": 1.0,
+        "id": 21,
+        "records": 65536,
+        "experiment": 2483093525,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_branch4_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.004486699999688426,
+      "seconds": [
+        0.004828399998586974,
+        0.004486699999688426,
+        0.0043762000004790025
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch64",
+        "case": 3,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 22,
+        "records": 65536,
+        "experiment": 2483093526,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_branch64_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.008379700000659795,
+      "seconds": [
+        0.008379700000659795,
+        0.010411400000521098,
+        0.00828410000030999
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_branch64",
+        "case": 3,
+        "family": "branch",
+        "limit": 64,
+        "budget": 0.01,
+        "id": 22,
+        "records": 65536,
+        "experiment": 2483093526,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_branch64_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.004056499999933294,
+      "seconds": [
+        0.004409499999383115,
+        0.004056499999933294,
+        0.003772699999899487
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_pe",
+        "case": 3,
+        "family": "pe",
+        "id": 23,
+        "records": 65536,
+        "experiment": 2483093527,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_pe_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.42732099999921047,
+      "seconds": [
+        0.40128229999936593,
+        0.42732099999921047,
+        0.5947507000000769
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_frugal4",
+        "case": 3,
+        "family": "frugal",
+        "cutoff": 4,
+        "id": 24,
+        "records": 65536,
+        "experiment": 2483093528,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_frugal4_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.00024959999973361846,
+      "seconds": [
+        0.00024959999973361846,
+        0.00024529999973310623,
+        0.00028810000003431924
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2483093529,
+        "threads": 1,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct16_t1"
+      },
+      "records": 2048,
+      "median_seconds": 0.014455700000326033,
+      "seconds": [
+        0.015344900000854977,
+        0.014455700000326033,
+        0.01419999999961874
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "job": {
+        "name": "lossy_tmsv_direct16",
+        "case": 3,
+        "family": "direct",
+        "budget": 16,
+        "id": 25,
+        "records": 65536,
+        "experiment": 2483093529,
+        "threads": 16,
+        "batch_size": 2048,
+        "timing_name": "lossy_tmsv_direct16_t16"
+      },
+      "records": 2048,
+      "median_seconds": 0.004313099998398684,
+      "seconds": [
+        0.004313099998398684,
+        0.004481599999053287,
+        0.004193100001430139
+      ],
+      "failures": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "scope": "Three strictly serial repetitions, same input/count, CPU1 and native CPU16.\nWarm prepared-model timing includes output allocation, random generation and\nsampling; excludes compilation, imports, model preparation and artifact I/O.\nExternal preparation times are separately recorded. Frugal ABI internal layout and target construction ARE included; this is not pure cached sampling cost. Timing controls are not quality N.\nThe direct-click wrapper batches identical purpose5 words in C++, verified\nagainst its original quality wrapper before any timings.\n"
+}
