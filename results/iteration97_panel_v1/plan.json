@@ -1,0 +1,40 @@
+{
+  "hashes": {
+    "experiments/iteration97_panel_v1.py": "790ff43e4b1b047c932e615f4c45019d48f68b3d421374e842f322b8a9697243",
+    "experiments/iteration97_conditionals_v1.py": "9fe886d58bb3f0db217beaccf4d9caa1ce9a05880891a024386f2d2c6921b897",
+    "results/iteration97_build_v1/conditional.dll": "3107b9560c64946c0fa2266f3ffc5d0ad1d789daf00c3ca0e345dcee71420aa1",
+    "results/iteration96_tree_build_v1/tree.dll": "6dd24a5c2721b187cf3b3bb84388092a41e0f0db875b2faffc73d96c203ac3e5",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9",
+    "experiments/iteration96_group_benchmark_v1.py": "71b26171acb0fb6b13c3c3ad6b35076ac00bf76d5812a95eeb7b2c100e33d42c",
+    "results/iteration96_quad_v1/mixed.npz": "83b76b25d0ac78be7001868047c3a9a062622b5b2b90e274176d3207f7def3c0",
+    "results/iteration96_quad_v1/weak.npz": "18f1d300c3f10f2bce5f19a34f2ad70b58c6924945180128ff27631ac503a3a2",
+    "results/iteration96_quad_v1/actual16.npz": "f262ad9f69459257f41c4a04f6a911ad5e4d8e3d8d17250f701c921e33e887db",
+    "results/iteration96_quad_v1/twins.npz": "202342babfad91a6fe7292cf674cda8245ebf31592ad631066ed52d7c59bdac4"
+  },
+  "cases": [
+    "weak",
+    "mixed",
+    "actual16",
+    "twins",
+    "actual1152"
+  ],
+  "seed": 97010000,
+  "small_history": [
+    0,
+    4,
+    8,
+    12
+  ],
+  "hardware_history": [
+    0,
+    4,
+    8
+  ],
+  "hardware_n": 131072,
+  "cap": 32,
+  "replicates": 5,
+  "dkw": "10 empirical distributions plus one independent hardware empirical law, Bonferroni family alpha=.01; iid assumption"
+}

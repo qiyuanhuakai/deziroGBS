@@ -1,0 +1,25 @@
+{
+  "hashes": {
+    "experiments/iteration97_field_v1.py": "771756ec9c7703c383d4f6d79a05d2a1b7d04ef15fbaeff0305760f48b00c2d7",
+    "native/gaussian_coherent_field97_v1.cpp": "4093d7b93d2bf38a546dc4ff24a8f5d94d2b9d944db351d1aa6f19239c1a4f5b",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration96_quad_v1/actual16.npz": "f262ad9f69459257f41c4a04f6a911ad5e4d8e3d8d17250f701c921e33e887db",
+    "results/iteration84_photon_cdf_v1/reference.npz": "d8142365cf0f0e1c7fd2a3c6c0e7cd4fcddfb9624639a2c9379db5a35a7ab69c",
+    "results/iteration94_actual_quality_v1/input_0.npz": "24995794313b904db1502e39ddfe77c53467c56a92f202a84484bf18655baddc",
+    "results/iteration94_actual_quality_v1/input_1.npz": "6b6431e0b50524d4421860fd50d56d2c314d00d53b0ff9142cc4079bfd5f8da9"
+  },
+  "quality": 65536,
+  "methods": [
+    "displaced_vacuum",
+    "normal_preserving"
+  ],
+  "routes": [
+    "direct",
+    "photon"
+  ],
+  "seed": 97080000,
+  "intervals": "four complete simulated CDFs plus one hardware CDF, alpha=.01/5 each, assumed iid",
+  "approximation": "source-space complex-normal covariance preserved with an odd eigenvalue clip on the anomalous part"
+}
