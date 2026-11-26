@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 106 轮 · 跨源相干采样、整机光场读出与 131,072 端口实测](https://github.com/qiyuanhuakai/deziroGBS/blob/f20a5019741376f56eda206d7bfd2ecb684aed6b/research/iteration106_checkpoint_v1.md)
+
 [第 105 轮 · 双模相干采样、九章多源干涉与 1,152 位 Frugal 实测](https://github.com/qiyuanhuakai/deziroGBS/blob/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/research/iteration105_checkpoint_v1.md)
 
 [第 104 轮 · 光学输入与硬件的点击数差距、两种校正及 16,384 端口采样](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/research/iteration104_checkpoint_v1.md) · [补充：同 GPU 对照与硬件文件顺序核验](https://github.com/qiyuanhuakai/deziroGBS/blob/762e3cacdd917d2c0ce59bf756ed79af523cdfa6/research/iteration104_device_comparison_v1.md)
