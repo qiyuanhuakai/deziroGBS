@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 105 轮
+
+- [同宽 Frugal 速度、完整前缀精度与光子数核验](selected/105/validation.json) · [两个光谱的原始 Frugal 记录与分项计时](https://github.com/qiyuanhuakai/deziroGBS/tree/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/results/iteration103_frugal_full_v1) · [各相干分组的完整面板分布误差](https://github.com/qiyuanhuakai/deziroGBS/tree/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/results/iteration105_source_groups_v1)
+
 ## 第 104 轮
 
 - [整机与扩维精选核验](selected/104/validation.json) · [总点击数与光子数误差图](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_figure_v1/cdf.png) · [完整留出直方图](https://github.com/qiyuanhuakai/deziroGBS/tree/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_validate_v1) · [Frugal GPU 计时与八位完整分布](https://github.com/qiyuanhuakai/deziroGBS/blob/762e3cacdd917d2c0ce59bf756ed79af523cdfa6/results/iteration104_device_release_v1/validation.json)

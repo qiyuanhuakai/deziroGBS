@@ -1,0 +1,447 @@
+{
+  "full_1152": {
+    "frugal_K2": {
+      "modes": 1152,
+      "K": 2,
+      "records": 4,
+      "threads": 1,
+      "spectra": [
+        {
+          "total_s": 2953.9326918000006,
+          "layout_s": 12.010573,
+          "cumulant_layout_s": 4e-06,
+          "target_s": 3.065232,
+          "draw_s": 2938.834049,
+          "copy_s": 4e-06,
+          "simd": 4
+        },
+        {
+          "total_s": 3100.7486382000498,
+          "layout_s": 16.729899,
+          "cumulant_layout_s": 1e-05,
+          "target_s": 3.009373,
+          "draw_s": 3080.970882,
+          "copy_s": 4e-06,
+          "simd": 4
+        }
+      ],
+      "draw_us": 1504951232.7500002,
+      "total_us": 1513670332.5000126,
+      "small_mode_seed_check": true
+    },
+    "merged_click_counts": [
+      83,
+      90,
+      87,
+      65
+    ],
+    "prefix": {
+      "modes": 1152,
+      "depth": 16,
+      "K": 2,
+      "spectra": 2,
+      "conditional_nodes": 131070,
+      "full_target_prefix_tv": 0.10771072769668194,
+      "projected_prefix_tv": 0.10771072769668194
+    },
+    "replayed_prefix_bits": 128,
+    "coherent_pair_cpu": {
+      "batch4_single_click_us": 54.65,
+      "batch4_single_pnr_us": 53.275,
+      "prepare_s": 0.3182836,
+      "batch4_setup_inclusive_us": 79625.54999999999,
+      "batch2048_16threads_click_us": 6.605517578125,
+      "batch2048_16threads_pnr_us": 5.07685546875
+    },
+    "draw_speed_ratio_single_thread": 27537991.450137243,
+    "setup_inclusive_ratio_single_thread": 19009.857168961633,
+    "cpu_model_prefix_tv": 0.10597898864954047,
+    "photon_total_tv": 0.0007852029369185764,
+    "photon_total_ks": 0.00044475461224199875,
+    "nominal_mean": 116.2861251673432,
+    "hardware_click_ks": 0.03315608836651707,
+    "hardware_radius": 0.005403225361225868,
+    "hardware_records": 1492642,
+    "hardware_us": 1.27
+  },
+  "synthetic_16": {
+    "hom": {
+      "indistinguishable": {
+        "records": 262144,
+        "two_photon_records": 65554,
+        "coincidences": 0,
+        "prob": 0.0,
+        "odd_records": 0,
+        "unequal": 126099
+      },
+      "labelled": {
+        "records": 262144,
+        "two_photon_records": 65421,
+        "coincidences": 32667,
+        "prob": 0.49933507589306186,
+        "odd_records": 67993,
+        "unequal": 80572
+      },
+      "oppositely_squeezed": {
+        "records": 262144,
+        "two_photon_records": 65669,
+        "coincidences": 65669,
+        "prob": 1.0,
+        "odd_records": 89778,
+        "unequal": 0
+      }
+    },
+    "rank1_complete_click_tv": 0.1794376651745383,
+    "native_click": {
+      "lower": 0.0,
+      "upper": 0.012644202049898625,
+      "empirical_tv": 0.011298023620308552,
+      "event_gap": -0.00033280998704898757,
+      "retained": 4676,
+      "tail": 0.012554534355867952,
+      "radius": 0.02783395974823254
+    },
+    "click_records": 2097152,
+    "frugal": [
+      {
+        "K": 2,
+        "us": 13.247900398027923,
+        "tv": 0.19347140217308317
+      },
+      {
+        "K": 4,
+        "us": 46.760839836679224,
+        "tv": 0.036162021459870713
+      }
+    ],
+    "local_pnr": {
+      "lower": 0.0,
+      "upper": 0.0023600770506514344,
+      "empirical_tv": 0.0004562932581510389,
+      "event_gap": 9.656288265229296e-05,
+      "retained": 25,
+      "tail": 0.0002793935289033822,
+      "radius": 0.003495406894089688,
+      "full_pnr_upper": 0.0023601975706531966
+    },
+    "pnr_records": 1048576,
+    "pnr_comparison": {
+      "shots": 32768,
+      "our_us": 0.29340822038648184,
+      "pe_us": 742.2815429691809,
+      "our_empirical_tv": 0.0038006339275740673,
+      "pe_empirical_tv": 0.004105234682394545
+    }
+  },
+  "synthetic_timing": [
+    {
+      "m": 2,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.17602536672711722
+    },
+    {
+      "m": 2,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.15034180478323833
+    },
+    {
+      "m": 4,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.17138671637439984
+    },
+    {
+      "m": 4,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.14921874935680535
+    },
+    {
+      "m": 16,
+      "pnr": false,
+      "workers": 1,
+      "batch": 2048,
+      "us": 0.22416992351281806
+    },
+    {
+      "m": 16,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.21191408450249583
+    },
+    {
+      "m": 16,
+      "pnr": true,
+      "workers": 1,
+      "batch": 2048,
+      "us": 0.22353515305439942
+    },
+    {
+      "m": 16,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.2307129136625008
+    },
+    {
+      "m": 144,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.24018555677685072
+    },
+    {
+      "m": 144,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.2549804776208475
+    },
+    {
+      "m": 1152,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.6288574070367758
+    },
+    {
+      "m": 1152,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 0.613330087162467
+    },
+    {
+      "m": 4097,
+      "pnr": false,
+      "workers": 16,
+      "batch": 2048,
+      "us": 1.4987304552960268
+    },
+    {
+      "m": 4097,
+      "pnr": true,
+      "workers": 16,
+      "batch": 2048,
+      "us": 1.4300781003839802
+    },
+    {
+      "m": 16384,
+      "pnr": false,
+      "workers": 16,
+      "batch": 512,
+      "us": 6.3130859189186594
+    },
+    {
+      "m": 16384,
+      "pnr": true,
+      "workers": 16,
+      "batch": 512,
+      "us": 5.885546784156759
+    }
+  ],
+  "source_group_models": [
+    {
+      "cap": 1,
+      "method": "one_source",
+      "photon_tv": 0.000785202936918376,
+      "click_tvs": [
+        0.019171530217878607,
+        0.03529480689852631,
+        0.050611860143834876,
+        0.1059789886501887
+      ],
+      "photon_alias_tail": 1.7805554980468207e-52
+    },
+    {
+      "cap": 2,
+      "method": "overlap",
+      "photon_tv": 0.0006118185581250797,
+      "click_tvs": [
+        0.01853104945635435,
+        0.034823042982066774,
+        0.04953210278173057,
+        0.1035379797474574
+      ],
+      "photon_alias_tail": 2.5821702927362617e-52
+    },
+    {
+      "cap": 4,
+      "method": "overlap",
+      "photon_tv": 0.000508253221785526,
+      "click_tvs": [
+        0.016198826028012977,
+        0.030005815358374655,
+        0.045664946524162336,
+        0.09077717810405778
+      ],
+      "photon_alias_tail": 4.1960205128793444e-52
+    },
+    {
+      "cap": 8,
+      "method": "overlap",
+      "photon_tv": 0.0003599859232146987,
+      "click_tvs": [
+        0.01227675313107373,
+        0.020556405035031016,
+        0.028737686165497735,
+        0.05324673889279862
+      ],
+      "photon_alias_tail": 6.286527223387646e-52
+    },
+    {
+      "cap": 16,
+      "method": "overlap",
+      "photon_tv": 0.00022858454110620497,
+      "click_tvs": [
+        0.010355175049439275,
+        0.01898354291737539,
+        0.024520895664254316,
+        0.04802891781593975
+      ],
+      "photon_alias_tail": 9.813663627416006e-52
+    },
+    {
+      "cap": 4,
+      "method": "index_order",
+      "photon_tv": 0.0006997975192315208,
+      "click_tvs": [
+        0.017033182288695343,
+        0.031323264192687,
+        0.04019966136124959,
+        0.09254786715276367
+      ],
+      "photon_alias_tail": 2.295566974017069e-52
+    },
+    {
+      "cap": 25,
+      "method": "all",
+      "photon_tv": 5.231630223051764e-15,
+      "click_tvs": [
+        3.954663585257731e-11,
+        5.6715639321738163e-14,
+        6.18312186777112e-11,
+        5.630415761229046e-11
+      ],
+      "photon_alias_tail": 1.4276341485627586e-51
+    }
+  ],
+  "max_panel_reference_tv_discrepancy": 3.0509135006183376e-10,
+  "panel_ports": [
+    [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120
+    ],
+    [
+      0,
+      1,
+      7,
+      8,
+      15,
+      30,
+      50,
+      51
+    ],
+    [
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  ],
+  "previous_same_gpu_144": [
+    {
+      "panel": 2,
+      "modes": 144,
+      "method": "optical",
+      "K": 0,
+      "batch": 64,
+      "us": 13.353124813875183
+    },
+    {
+      "panel": 2,
+      "modes": 144,
+      "method": "hardware",
+      "K": 0,
+      "batch": 64,
+      "us": 15.765624993946403
+    },
+    {
+      "panel": 2,
+      "modes": 144,
+      "method": "frugal32",
+      "K": 2,
+      "batch": 64,
+      "us": 842966.8984372256
+    },
+    {
+      "panel": 2,
+      "modes": 144,
+      "method": "frugal64",
+      "K": 2,
+      "batch": 64,
+      "us": 1234842.3796875067
+    }
+  ],
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "archives": {
+    "iteration105_two_mode_v1": "048941b1c86c62befe88e8f84e820b1df591c109b7675ce0efa022fe38c489aa",
+    "iteration105_accuracy_v1": "4b32312499c1139516965d2db1d34e9cad52b8b7423641d588b771e644f5fa8b",
+    "iteration105_jiuzhang_v1": "7943ee52c1d7883fc8b6b23d3d684df91ab8fce0f144460777970ed8d20e4bee",
+    "iteration105_source_groups_v1": "4d1151d59f7dd21c5dfbeca267ad0c91108e9542b0b6146969b5a1e30e964b95",
+    "iteration105_full_prefix_v1": "4228fdc654c38b60a2ec34df43f4cf90af0a3b010142e8a84587dd5a32123415",
+    "iteration105_latency_v1": "7755681f38af663450d0f7ab9b318229df6e037286f52aa1f8f056c951186ebc",
+    "iteration103_frugal_full_v1": "efae399486a943a5fe62ec891f017ecd2f806a9bf3312885dd64566e2f703df1"
+  }
+}

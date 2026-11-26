@@ -4,10 +4,10 @@
 
 [运行四端口示例](docs/quickstart.md) · [历轮研究报告](docs/reports/README.md) · [精选结果](results/README.md) · [取回原始数据](docs/archive.md)
 
-## 第 104 轮进展
+## 第 105 轮进展
 
-在九章 3.0 的 1,152 个探测位上，按光学输入校正后，RTX 5080 Laptop 每条点击用时 **0.437 微秒**，每条光子数记录用时 **0.462 微秒**；总光子数累计分布误差降至 **0.08–0.10 个百分点**。按硬件校准后，两条路线分别为 0.956、1.002 微秒/条，对留出硬件记录的总点击数误差为 0.21–0.23 个百分点。[速度、精度与测量条件](results/selected/104/validation.json)
+九章 3.0 高功率输入、1,152 位完整点击、同机单线程 CPU，每批 4 条。计入初始化，本轮模型约 **0.0796 秒/条**，Frugal K2 实测 **1,513.67 秒/条**。对照完整前 16 位的联合点击分布，两者相对光学参考的总变差距离（TV）分别为 **10.598% 和 10.771%**。[速度、精度与运行条件](results/selected/105/validation.json)
 
-名义光学输入与硬件总体的总点击数分布至少相差 **3.16 个百分点**（99% 置信，假设硬件记录独立同分布）。另一个每谱仅占用一个受压缩空间模式的算法已测到 16,384 端口。[研究报告与复现命令](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/research/iteration104_checkpoint_v1.md) · [同 GPU 的 Frugal 速度与精度](https://github.com/qiyuanhuakai/deziroGBS/blob/762e3cacdd917d2c0ce59bf756ed79af523cdfa6/research/iteration104_device_comparison_v1.md)
+保留每对光源内部干涉后，总光子数分布的 TV 为 **0.079%**。计算显示，每组最多 8 个光源联合干涉时，前 16 位点击 TV 降至 **5.325%**。相应多源组采样器是下一步实现目标。[本轮研究与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/research/iteration105_checkpoint_v1.md)
 
 **统计勘误**　第 83 轮旧 PNR 样本的随机流发生重叠，原有置信保证已撤回。第 84 轮使用分离的随机流重新采样。[随机流勘误](docs/corrections/83-rng.md) · [第 86 轮直接点击舍入勘误](docs/corrections/86-rounding.md)
