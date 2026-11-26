@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "m": 4,
+      "batch": 2048,
+      "cap": 16,
+      "click_us": 1.6016113306704938,
+      "pnr_us": 1.8490722766273393,
+      "panel_tv": 3.735222280507652e-05,
+      "field_same_panel_tv": 0.16735853698729788,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "m": 16,
+      "batch": 2048,
+      "cap": 16,
+      "click_us": 1.9190429725313152,
+      "pnr_us": 1.6307617158872745,
+      "panel_tv": 3.249994933275041e-05,
+      "field_same_panel_tv": 0.10368233122842027,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "m": 144,
+      "batch": 2048,
+      "cap": 16,
+      "click_us": 2.590722658624145,
+      "pnr_us": 2.064550784552921,
+      "panel_tv": 8.4448946603615e-06,
+      "field_same_panel_tv": 0.08355527189599363,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        50,
+        96,
+        143
+      ]
+    },
+    {
+      "m": 1152,
+      "batch": 2048,
+      "cap": 16,
+      "click_us": 2.5472168090345804,
+      "pnr_us": 2.5269531249705324,
+      "panel_tv": 9.948081300774006e-07,
+      "field_same_panel_tv": 0.07781300445499388,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        386,
+        768,
+        1151
+      ]
+    },
+    {
+      "m": 4097,
+      "batch": 1023,
+      "cap": 16,
+      "click_us": 3.7485825804627537,
+      "pnr_us": 4.78778102044617,
+      "panel_tv": 2.0795517392551384e-07,
+      "field_same_panel_tv": 0.08064189259792476,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        1368,
+        2732,
+        4096
+      ]
+    },
+    {
+      "m": 16384,
+      "batch": 256,
+      "cap": 16,
+      "click_us": 9.370312454848317,
+      "pnr_us": 8.081640771706589,
+      "panel_tv": 1.1563404197534533e-07,
+      "field_same_panel_tv": 0.08077702556747138,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5463,
+        10923,
+        16383
+      ]
+    },
+    {
+      "m": 65537,
+      "batch": 63,
+      "cap": 16,
+      "click_us": 31.00952340496911,
+      "pnr_us": 32.19365109024303,
+      "panel_tv": 1.8992801822684124e-08,
+      "field_same_panel_tv": 0.08078471991744506,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        21848,
+        43692,
+        65536
+      ]
+    },
+    {
+      "m": 131072,
+      "batch": 32,
+      "cap": 16,
+      "click_us": 67.65624857507646,
+      "pnr_us": 65.91249984921888,
+      "panel_tv": 9.321105935697732e-09,
+      "field_same_panel_tv": 0.08086844677471104,
+      "ideal_arithmetic_full_bound": 0.00035167533962899243,
+      "ports": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        43693,
+        87382,
+        131071
+      ]
+    }
+  ],
+  "frugal": [
+    {
+      "m": 16,
+      "K": 2,
+      "frugal_projected_us": 5.469921887879536,
+      "full_16bit_tv": 0.28855000006874726,
+      "ours_tv": 4.507818654422199e-05
+    },
+    {
+      "m": 16,
+      "K": 4,
+      "frugal_projected_us": 35.21083985447149,
+      "full_16bit_tv": 0.137807671392391,
+      "ours_tv": 4.507818654422199e-05
+    },
+    {
+      "m": 131072,
+      "scope": "First 16 detector positions of the 131072-output circuit",
+      "ours_tv": 9.991547431976044e-09,
+      "K": 2,
+      "frugal_projected_us": 6.793457032472361,
+      "full_16bit_tv": 3.318892029519745e-05
+    }
+  ],
+  "scope": "Output width varies, fixed two occupied twin-beam sources in one spectrum. The ideal-arithmetic full TV bound includes fallback mass and input-number tables. Finite floating arithmetic checked independently via numerical marginals and seeded replay."
+}
