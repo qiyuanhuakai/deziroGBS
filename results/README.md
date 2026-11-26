@@ -1,5 +1,11 @@
 # 精选结果
 
+## 第 97 轮
+
+- [连通单元的完整光子数与点击误差、七批计时](selected/97/forest.json) · [与 Frugal 和 photonic-engines 的同输入比较](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/results/iteration97_bridge_baselines_v1/summary.json)
+- [九章约化 16 位的首批计时和位移场模型的全分布界](selected/97/validation.json) · [真实 1,152 位硬件对照](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/results/iteration97_field_v1/summary.json)
+- [推导、适用范围和运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/research/iteration97_checkpoint_v1.md)
+
 ## 第 96 轮
 
 - [与 Frugal 同输入的完整 16 位点击误差](selected/96/click-validation.json) · [五次重复计时](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/results/iteration96_frugal16_v2/summary.json)

@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 97 轮 | `archive/iteration97-forest-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/research/iteration97_checkpoint_v1.md) · [最终核验](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/results/iteration97_release_v1/validation.json) |
 | 第 96 轮 | `archive/iteration96-correlations-v1` | [报告与命令行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/research/iteration96_checkpoint_v1.md) · [数据与核验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/results/iteration96_release_v1/manifest.json) |
 | 第 95 轮全部七个阶段 | `archive/iteration95-loop-allocation-v1` | [阶段报告](reports/95.md) · [本轮原始样本与清单](https://github.com/qiyuanhuakai/deziroGBS/tree/a5b9a10aabac46874779e592a8f1ac33b90017d3/results/iteration95_loop_residual_v1) |
 | 第 1–94 轮 | `archive/through-iteration-94` | [逐轮报告](reports/README.md) · [完整快照](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05) |
