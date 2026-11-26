@@ -1,0 +1,11 @@
+{
+  "hashes": {
+    "experiments/iteration100_residual_v1.py": "8b8fe2a72f9b749cda6fe885e260e0af8316e14127f264ecc6cca481b12893c9",
+    "results/iteration100_spatial_v1/prepared.npz": "0b690238083da31f5032fc41a9823ca491bfef5674f1c4398d358d307d2b3e88",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration100_relabel_v1/summary.json": "3f6666e7f7c93820294a098851d014d683f37148189b7641810fd0f4dd983056",
+    "results/iteration96_quad_v1/oracle.dll": "407ac3925be45bc616425aec11b6d7959e63e4f75f8fdd00e0c140599f4341b8"
+  },
+  "selection": "top three disjoint pairs by absolute residual covariance divided by optical standard deviations, among spatial modes 16..143",
+  "confidence": "two one-sided Clopper-Pearson limits each at alpha=.005 on previously generated independent correction-spill flags"
+}
