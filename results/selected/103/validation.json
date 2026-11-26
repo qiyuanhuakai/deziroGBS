@@ -1,0 +1,282 @@
+{
+  "scope": "Jiuzhang 3.0 double-spectrum high-power input, 144 spatial groups x 8 threshold-detector bins. Two-group TV values use the numerical optical reference. Hardware KS uses the measured total-click histogram.",
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "batch": 16384,
+  "hardware_us": 1.27,
+  "hardware_records": 1492642,
+  "routes": [
+    {
+      "pnr": false,
+      "records": 1048576,
+      "us": 0.3541015622943178,
+      "quartiles": [
+        0.3479553232210719,
+        0.37926025342471803
+      ],
+      "relative_to_hardware_rate": 3.5865416457677672,
+      "hardware_click_ks": 0.046944982319604756,
+      "optical_photon_ks": 0.015501641780935549,
+      "heldout_optical_click_tv_lower99": 0.0008137363861618341,
+      "empirical_all_survival_gap": 0.0014808348905150925
+    },
+    {
+      "pnr": true,
+      "records": 1048576,
+      "us": 0.37946167097402395,
+      "quartiles": [
+        0.36841430706147094,
+        0.3988677974575694
+      ],
+      "relative_to_hardware_rate": 3.3468465912251197,
+      "hardware_click_ks": 0.04687250307155788,
+      "optical_photon_ks": 0.015379547776515345,
+      "heldout_optical_click_tv_lower99": 0.0006417911533915799,
+      "empirical_all_survival_gap": 0.001768349090200072
+    }
+  ],
+  "hardware_ks_radius99": 0.003704370489637464,
+  "optical_photon_ks_radius99": 0.002015270254150029,
+  "first_2048_build_and_draw_s": 0.9868523000041023,
+  "fp_mismatches": [
+    8,
+    8,
+    8
+  ],
+  "fp32_vs_fp64_tv_upper99": [
+    1.8353859275295874e-05,
+    1.8353859275295874e-05,
+    1.8353859275295874e-05
+  ],
+  "pairs": 10296,
+  "three_bin_max_tv": 7.37257477290143e-15,
+  "raw_full_count_tv_percentiles": [
+    8.978328705007882e-08,
+    0.00016466694058450189,
+    0.0013556216652684371,
+    0.004710646109667773,
+    0.01519347374167116
+  ],
+  "patched_pairs": 72,
+  "patched_count_max_tv": 2.117728022420828e-14,
+  "patched_click_max_tv": 0.0002865831311718416,
+  "upper_any_two_group_count_tv": 0.026702697152185,
+  "click_lower_witness": {
+    "groups": [
+      12,
+      51
+    ],
+    "tv_interval": [
+      0.0009725047774899885,
+      0.010812232141174076
+    ]
+  },
+  "previous_pair_36_107": {
+    "count_tv": 0.021500347305441536,
+    "click_tv": 0.021186587235684774,
+    "vacuum_error": 0.009708321042112389
+  },
+  "current_pair_36_107": {
+    "groups": [
+      36,
+      107
+    ],
+    "raw": {
+      "count_tv": 0.0036301343606935984,
+      "click_tv": 0.0031687547197071808
+    },
+    "hermite_remainder": 7.029331678605326e-15,
+    "patched_click_interval": [
+      0.00016346079733505633,
+      0.000163460801349115
+    ],
+    "patched": {
+      "count_tv": 8.39021574584598e-15,
+      "click_tv": 0.00016346079934208567
+    },
+    "bridge": {
+      "count_tv": 7.248109651044203e-15,
+      "click_tv": 0.0001634607993435703
+    }
+  },
+  "linked": {
+    "previous_pairs": 93,
+    "previous_max_click_tv": 0.0002865831311723623,
+    "bridges": 36,
+    "bridges_max_click_tv": 0.00021793930609044168,
+    "independent_holdout": {
+      "orthant_checks": 96,
+      "orthant_max_error": 1.1102230246251565e-16,
+      "linked_pairs": 129,
+      "linked_n": 524288,
+      "linked_max_7by7_tv": 0.0037986290790279274,
+      "linked_radius99": 0.0064356279660597775,
+      "gpu_four_shot_click_us": 55.42500002775341,
+      "gpu_timings": [
+        130.9000072069466,
+        68.97498678881675,
+        54.800009820610285,
+        57.32499994337559,
+        55.87500345427543,
+        48.77499304711819,
+        48.425004933960736,
+        54.57499355543405,
+        58.47500870004296,
+        53.67500125430524,
+        61.20000034570694,
+        47.950001317076385,
+        57.04999784938991,
+        56.199991377070546,
+        55.42500002775341,
+        57.12499842047691,
+        56.7499955650419,
+        52.00000305194408,
+        51.17499676998705,
+        54.27499127108604,
+        55.07499736268073
+      ]
+    }
+  },
+  "click_baselines": [
+    {
+      "groups": [
+        36,
+        107
+      ],
+      "patched": true,
+      "us": 0.10624998481034709,
+      "tv": 0.00016346079934213996,
+      "frugal": [
+        {
+          "K": 2,
+          "us": 11.534033177440506,
+          "tv": 0.11620165321100952
+        },
+        {
+          "K": 4,
+          "us": 42.624023450343884,
+          "tv": 0.06006982355265706
+        }
+      ]
+    },
+    {
+      "groups": [
+        25,
+        139
+      ],
+      "patched": true,
+      "us": 0.09770508313522441,
+      "tv": 0.00016086362083968188,
+      "frugal": [
+        {
+          "K": 2,
+          "us": 18.752539062916185,
+          "tv": 0.13868372280150035
+        },
+        {
+          "K": 4,
+          "us": 58.565722639514206,
+          "tv": 0.06000977914514514
+        }
+      ]
+    },
+    {
+      "groups": [
+        34,
+        35
+      ],
+      "patched": true,
+      "us": 0.12475584298954345,
+      "tv": 0.00025556204019636835,
+      "frugal": [
+        {
+          "K": 2,
+          "us": 13.907031245707913,
+          "tv": 0.47513477491155426
+        },
+        {
+          "K": 4,
+          "us": 46.10737306620649,
+          "tv": 0.21725001283903145
+        }
+      ]
+    },
+    {
+      "groups": [
+        0,
+        1
+      ],
+      "patched": false,
+      "us": 0.10083007850880676,
+      "tv": 0.0023279749253773906,
+      "frugal": [
+        {
+          "K": 2,
+          "us": 11.204150382582156,
+          "tv": 0.10771072769668194
+        },
+        {
+          "K": 4,
+          "us": 40.834521485066944,
+          "tv": 0.024628131232120175
+        }
+      ]
+    }
+  ],
+  "pnr_baseline": {
+    "ports": [
+      289,
+      861
+    ],
+    "records": 32768,
+    "model_full_tv": [
+      1.322966619268094e-05,
+      1.3229666597182033e-05
+    ],
+    "model_empirical_tv": 0.002936170560991529,
+    "pe_empirical_tv": 0.00349958683764194,
+    "model_us": 0.12602538390638074,
+    "pe_us": 481.22695312713404,
+    "model_timing": [
+      0.12602538390638074,
+      0.13237306006885774,
+      0.1240722724560328,
+      0.12036133512083325,
+      0.1303222632031975
+    ],
+    "pe_timing": [
+      461.5112792976106,
+      483.7183593906502,
+      487.9203613086247,
+      477.30449219329785,
+      481.22695312713404
+    ],
+    "pe_censored": 0,
+    "purification_error": 4.884981308350689e-15
+  },
+  "frugal144": {
+    "modes": 144,
+    "records_per_call": 64,
+    "threads": 1,
+    "K": 2,
+    "frugal_us": 138059.8796877166,
+    "gpu_full_then_slice_us": 3.9132819438236766,
+    "model_raw_prefix_tv": 0.0023279749253773906,
+    "model_patched_prefix_tv_interval": [
+      0.0,
+      0.006205216335271381
+    ],
+    "frugal_prefix_tv": 0.10771072769668194
+  },
+  "manifests": {
+    "fit": "f4b9dc575e35337ee65535e3c730be19e1afd33f1a701129282ee8c839409ae4",
+    "census": "7ddd028e8ca3c572be0f3e50bb51577ccbc175d46970bd72694907bf91c1be7b",
+    "tail": "065446e63dfcd71446754a5d7917434a259bc3a15bece6440f8e6559d624c68e",
+    "sample": "c348e84758c62656c3379a0ffa912ee8f0a876f43e29715e0b4d0e3d795e98c1",
+    "gpu": "1227849c8d32790e257d9adad11ab6551481da47ad76a34a593e2ca5ba6e8ac9",
+    "transport_gpu": "250fb56bd6ad84d74e782fa1d280c225d69480f44142f6ff2d16256d9f954fa9",
+    "projection": "f1e8639f62cef871c2d64605bbcd10f4df22eb70fe3c5ecce9022a44c743ec14",
+    "baselines": "03432215aed46c0a041b94de84014fb30aa32a3082d6960b2ed7d3485c133b1b",
+    "holdout": "fb48d59d4af2f590a2a853bb8389f17ea8353e3de85bd87174f762661f3ec550",
+    "frugal144": "870810bec29f1faa00308d8bc94602da15b66916f21f4c5629df15720725a394"
+  }
+}

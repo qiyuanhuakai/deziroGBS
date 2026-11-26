@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 103 轮
+
+- [两条路线的整机速度、硬件误差及同宽 Frugal 对照](selected/103/validation.json)
+- [10,296 对端口的光子数误差](https://github.com/qiyuanhuakai/deziroGBS/tree/efcf413ca93a283ff9269e4ae470c5f429d8ee7a/results/iteration103_census_v1) · [161 对端口的完整点击分布核验](https://github.com/qiyuanhuakai/deziroGBS/tree/efcf413ca93a283ff9269e4ae470c5f429d8ee7a/results/iteration103_projection_v1)
+
 ## 第 102 轮
 
 - [精选核验：两条整机路线、硬件八位分布、Frugal 与 photonic-engines 对照](selected/102/validation.json)
