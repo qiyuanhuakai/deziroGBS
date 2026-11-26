@@ -1,0 +1,364 @@
+{
+  "rows": [
+    {
+      "m": 4,
+      "sources": 2,
+      "batch": 2048,
+      "prep_s": 0.04494539997540414,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "primary_base_tv": 0.16735853698729797,
+      "primary_corrected_tv": 2.5451691587630165e-09,
+      "max_tile_rounding": 2.5451694432576666e-09,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 0.09326171834800334
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 0.08471678825117124
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 0.07587891559523996
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 0.07763671305838216
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 24
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 78
+        }
+      ],
+      "empirical_tv": 0.005067831517027828
+    },
+    {
+      "m": 16,
+      "sources": 2,
+      "batch": 2048,
+      "prep_s": 0.5966566000133753,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "primary_base_tv": 0.16828285048982666,
+      "primary_corrected_tv": 2.0040251238384153e-09,
+      "max_tile_rounding": 1.979834748020057e-09,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 0.11611328432081791
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 0.12236327506798261
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 0.10385744531049568
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 0.09584960025676992
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 41
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 94
+        }
+      ],
+      "empirical_tv": 0.09433103417354753
+    },
+    {
+      "m": 64,
+      "sources": 8,
+      "batch": 2048,
+      "prep_s": 0.7319174999720417,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "primary_base_tv": 0.041602635910399456,
+      "primary_corrected_tv": 4.549448030448571e-10,
+      "max_tile_rounding": 4.389961654793179e-10,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 0.1421875026608177
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 0.1409179617439804
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 0.15356442872871412
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 0.16708983707758307
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 204
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 266
+        }
+      ],
+      "empirical_tv": 0.09452421093598082
+    },
+    {
+      "m": 256,
+      "sources": 16,
+      "batch": 2048,
+      "prep_s": 0.6010876999935135,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "primary_base_tv": 0.04291596499481096,
+      "primary_corrected_tv": 5.342882544174804e-10,
+      "max_tile_rounding": 5.080503952106666e-10,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 0.3617675758960104
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 0.3257324010519369
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 0.33271484767283255
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 0.32446288855680905
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 463
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 534
+        }
+      ],
+      "empirical_tv": 0.04620418233984289
+    },
+    {
+      "m": 1024,
+      "sources": 32,
+      "batch": 2048,
+      "prep_s": 0.881655499979388,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "primary_base_tv": 0.04552118670973615,
+      "primary_corrected_tv": 4.808371126499996e-10,
+      "max_tile_rounding": 4.4288458289464013e-10,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 0.9661132764904323
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 1.0635742171416496
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 0.923876967817705
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 0.997509772560079
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 959
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 1061
+        }
+      ],
+      "empirical_tv": 0.025380019126097463
+    },
+    {
+      "m": 4096,
+      "sources": 64,
+      "batch": 1024,
+      "prep_s": 0.60446200001752,
+      "primary_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "primary_base_tv": 0.047111181279454316,
+      "primary_corrected_tv": 7.978940525433707e-10,
+      "max_tile_rounding": 7.657178284986071e-10,
+      "timing": [
+        {
+          "half": false,
+          "pnr": false,
+          "us": 4.2902343579953595
+        },
+        {
+          "half": false,
+          "pnr": true,
+          "us": 4.607617199781089
+        },
+        {
+          "half": true,
+          "pnr": false,
+          "us": 3.4347656310274033
+        },
+        {
+          "half": true,
+          "pnr": true,
+          "us": 2.3995116862352006
+        }
+      ],
+      "fp16_changes": [
+        {
+          "pnr": false,
+          "n": 65536,
+          "records": 1940
+        },
+        {
+          "pnr": true,
+          "n": 65536,
+          "records": 1999
+        }
+      ],
+      "empirical_tv": 0.015834202729272308
+    }
+  ]
+}
