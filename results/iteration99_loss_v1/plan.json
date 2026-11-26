@@ -1,0 +1,27 @@
+{
+  "hashes": {
+    "native/gaussian_loss99_v1.cpp": "096570d75a2e48210591500a4c95f79c24f33a865a1a474a409a42556242eb28",
+    "native/fourier_cell98_v1.cpp": "f8685a87b275185a76548a6110638af6063e957dca93f23b97101d3789cbaa39",
+    "native/gaussian_cycle98_v1.cpp": "8f176b99b9a4ebdb6f93c016bd2b0b41f48294753559424f23a1e298004f1d7c",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "experiments/iteration99_loss_v1.py": "39cb46d6fb273bc967c717cb99e31faa28143dce627088ea7b6a099c6e509766",
+    "experiments/iteration98_cycle_v1.py": "f59fbaa05d7970197a3725677694a6307da0abaa9bdd342e17560df33627e2e8"
+  },
+  "seed": 99001000,
+  "cells": [
+    2,
+    16,
+    144
+  ],
+  "cap": 7,
+  "idler_limit": 32,
+  "p": "36/625",
+  "signal": "3/5",
+  "idlers": [
+    "2/5",
+    "11/20",
+    "7/10",
+    "17/20"
+  ],
+  "comparison": "7 warmed batches; independent 131072 shots per route at 16 and 1152 modes; five parity/CDF checks use tolerance .01"
+}

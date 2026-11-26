@@ -1,0 +1,34 @@
+{
+  "hashes": {
+    "experiments/iteration99_marks_v1.py": "a32c8d54a4004f3b6f411654fc344f0db5201b44c445dbf6cc92cfb1edfc40c3",
+    "native/spectral_marks99_v1.cpp": "7773eee17d092bcd011140c05d17ce313f493c285bb2ad6a970ae6de45d7337e",
+    "results/iteration99_loss_v1/loss.dll": "47a7f1cde58a6582b60e6b055b0f154bb7d58fdcd2ad678f94f617c881a8f915",
+    "results/iteration96_quad_v1/oracle.dll": "407ac3925be45bc616425aec11b6d7959e63e4f75f8fdd00e0c140599f4341b8",
+    "results/iteration83_loss_pilot_v1/input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration96_quad_v1/actual16.npz": "f262ad9f69459257f41c4a04f6a911ad5e4d8e3d8d17250f701c921e33e887db",
+    "experiments/iteration99_spectral_v1.py": "2894c3fd490f53c116fdb49f5dba23c18abb75c5035b338be6db2f88a7edc028"
+  },
+  "group": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120
+  ],
+  "seed": 99070000,
+  "records": 131072,
+  "fit": "spectral and optical parameters only; no hardware sample enters calibration",
+  "checks": "same-seed binary replay, per-record PNR total against original, all 65536 optical probabilities; DKW .0025 per CDF"
+}

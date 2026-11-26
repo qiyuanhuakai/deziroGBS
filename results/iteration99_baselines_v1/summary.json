@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "method": "loss99 direct",
+      "records": 131072,
+      "empirical": {
+        "empirical_tv": 0.01689556332033181,
+        "lower": 0.0,
+        "upper": 0.02167631884900528
+      }
+    },
+    {
+      "method": "Frugal K2",
+      "full_click_tv": 0.011861065221290672,
+      "whole_us": [
+        7.226855473163596,
+        7.444824206004341,
+        9.34267578145409,
+        8.806640607872396,
+        7.864404295787608
+      ],
+      "median": 7.864404295787608
+    },
+    {
+      "method": "Frugal K4",
+      "full_click_tv": 0.001925974909169305,
+      "whole_us": [
+        23.963818364336475,
+        23.849218734994793,
+        24.477392571498058,
+        24.632080084074914,
+        26.65551758695983
+      ],
+      "median": 24.477392571498058
+    },
+    {
+      "method": "loss99 PNR",
+      "records": 16384,
+      "quality": {
+        "empirical_tv": 0.04813200516910886,
+        "lower": 0.0,
+        "upper": 0.06201044998795741
+      }
+    },
+    {
+      "method": "photonic-engines CPU v2 + independent detector loss",
+      "records": 16384,
+      "quality": {
+        "empirical_tv": 0.048098499306648786,
+        "lower": 0.0,
+        "upper": 0.06197694412549734
+      },
+      "us": [
+        1194.285986343857,
+        1132.9194336155979,
+        1349.621142566093,
+        1111.5718261578422,
+        1117.9285156401875
+      ],
+      "median": 1132.9194336155979
+    }
+  ],
+  "optical_parent_fock_records": 548591,
+  "detected_keys": 189622,
+  "omitted_parent_mass": 0.00035642620476820437,
+  "thresholded_fock_tv_to_untruncated_oracle": 0.00035639643424203836
+}

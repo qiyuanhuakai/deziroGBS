@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "verified_artifacts": 37,
+  "verified_source_hashes": 34,
+  "fock_patterns": 548591,
+  "fock_max_error": 7.771561172376096e-16,
+  "fock_l1_error": 1.0943022959189607e-15,
+  "heldout": [
+    {
+      "ports": [
+        1001,
+        1005,
+        1003,
+        1007,
+        706,
+        1006,
+        1002,
+        1004,
+        1000,
+        704,
+        708,
+        705,
+        439,
+        710,
+        437,
+        707
+      ],
+      "pilot": 131072,
+      "validation": 1048576,
+      "validation_hits": 632111,
+      "optical_event": 0.39256760722539275,
+      "sample_event": 0.6028280258178711,
+      "observed_gap": 0.21026041859247835,
+      "simultaneous_tv_lower": 0.20896301478901802
+    },
+    {
+      "ports": [
+        436,
+        438,
+        433,
+        432,
+        435,
+        434,
+        714,
+        713,
+        712,
+        715,
+        717,
+        716,
+        718,
+        719,
+        665,
+        667
+      ],
+      "pilot": 131072,
+      "validation": 1048576,
+      "validation_hits": 736033,
+      "optical_event": 0.5134596323747441,
+      "sample_event": 0.7019357681274414,
+      "observed_gap": 0.18847613575269728,
+      "simultaneous_tv_lower": 0.1872627653560387
+    },
+    {
+      "ports": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "pilot": 131072,
+      "validation": 1048576,
+      "validation_hits": 503789,
+      "optical_event": 0.37129903553043053,
+      "sample_event": 0.4804506301879883,
+      "observed_gap": 0.10915159465755775,
+      "simultaneous_tv_lower": 0.10782749879642634
+    }
+  ],
+  "full_1152_click_and_pnr_tv_lower": 0.20896301478901802,
+  "cached_read_and_first_batch_us": [
+    25.51425779984129,
+    22.099169910916316,
+    23.21137694138997,
+    21.335302733405115,
+    23.85590821063488
+  ],
+  "cache_bytes": 3432438,
+  "cache_sha256": "9939b883cd19046787e4f663c904a97a2cb824cfc46a64fd05ef43240e492468",
+  "confidence": "one-sided exact binomial bounds, joint 99% for three pilot-selected validation events, conditional iid; PNR follows by thresholding"
+}
