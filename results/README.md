@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 98 轮
+
+- [16、128、1,152 端口闭环的速度、完整分布误差界及准备时间](selected/98/ring.json)
+- [同一 16 端口输入的 Frugal 和 photonic-engines 实测](selected/98/baselines.json) · [干涉控制、六光子样本及九章奇偶对照](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/results/iteration98_release_v1/validation.json)
+
 ## 第 97 轮
 
 - [连通单元的完整光子数与点击误差、七批计时](selected/97/forest.json) · [与 Frugal 和 photonic-engines 的同输入比较](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/results/iteration97_bridge_baselines_v1/summary.json)
