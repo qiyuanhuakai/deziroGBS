@@ -1,0 +1,413 @@
+{
+  "manifests": {
+    "iteration102_forest_v1": "3494e5ab14f3ebed13e4f9bd73ecbee6c0e9d3886f024c818f19f2ec10c9d12b",
+    "iteration102_triads_v1": "020be1c20238a550b747b1aef5da963b8dbe8fe9faa7e9e3bae4f69d22dcf8f1",
+    "iteration102_four_v1": "8f6577ad226b1d224ec903032055cbad65da4406f194238193b432f972d94406",
+    "iteration102_sample_v1": "ebe71d0a5fcbbedf676e6433816e193aa292440be942ca8f7f54247dab061c1e",
+    "iteration102_projection_v1": "92872cf587a7d769383de26685be2ab0a1d3ada730aa932f988ea421761e5e8a",
+    "iteration102_release_v1": "d813be23cdae8ceb6f481b9d62b69f62fd4fdf6c440165392d220dc41f8739c5",
+    "iteration102_baselines_v1": "e85dc5a28344d527d22383e53b9ff9d8aec57881c2d3d681af801f537bb78c56",
+    "iteration102_blocks_v1": "03fe873c311ead0e9cdaed1a9ad3ca70167cdcdfca02f64fca5281a613cc7837",
+    "iteration102_throughput_v1": "d9ec1aed94a1297a7b465533f0061d08c0f474b35c289c0415ff562a0c43151d"
+  },
+  "hardware_and_count_audit": [
+    {
+      "pnr": false,
+      "n": 524288,
+      "coarse_pair_empirical_tv_max": 0.00371152050803022,
+      "largest_pair": [
+        45,
+        98
+      ],
+      "all_93_sampling_radius99": 0.006513626186333814,
+      "hardware_8bit": [
+        {
+          "ports": [
+            0,
+            8,
+            16,
+            24,
+            32,
+            40,
+            48,
+            56
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.008628083051674295,
+          "empirical_optical_tv": 0.0022822579703313467,
+          "optical_vs_hardware_empirical_tv": 0.008023689693438887,
+          "event_difference": 0.0057422152951180205,
+          "hardware_tv_lower99": 0.0013461105000995566
+        },
+        {
+          "ports": [
+            0,
+            144,
+            288,
+            432,
+            576,
+            720,
+            864,
+            1008
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.010262995367307338,
+          "empirical_optical_tv": 0.003517521736640665,
+          "optical_vs_hardware_empirical_tv": 0.00904821707539431,
+          "event_difference": 0.006657865493835039,
+          "hardware_tv_lower99": 0.0022617606988165747
+        },
+        {
+          "ports": [
+            7,
+            151,
+            295,
+            439,
+            583,
+            727,
+            871,
+            1015
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.010596696027936498,
+          "empirical_optical_tv": 0.0027188879611644364,
+          "optical_vs_hardware_empirical_tv": 0.009885227141171904,
+          "event_difference": 0.006775667610410527,
+          "hardware_tv_lower99": 0.002379562815392063
+        }
+      ]
+    },
+    {
+      "pnr": true,
+      "n": 524288,
+      "coarse_pair_empirical_tv_max": 0.0036316730363769854,
+      "largest_pair": [
+        46,
+        129
+      ],
+      "all_93_sampling_radius99": 0.006513626186333814,
+      "hardware_8bit": [
+        {
+          "ports": [
+            0,
+            8,
+            16,
+            24,
+            32,
+            40,
+            48,
+            56
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.00978231400539048,
+          "empirical_optical_tv": 0.0029509167519444447,
+          "optical_vs_hardware_empirical_tv": 0.008023689693438887,
+          "event_difference": 0.006508028986366675,
+          "hardware_tv_lower99": 0.002111924191348211
+        },
+        {
+          "ports": [
+            0,
+            144,
+            288,
+            432,
+            576,
+            720,
+            864,
+            1008
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.010532672620669162,
+          "empirical_optical_tv": 0.0031605629106970868,
+          "optical_vs_hardware_empirical_tv": 0.00904821707539431,
+          "event_difference": 0.005706726877543569,
+          "hardware_tv_lower99": 0.0013106220825251048
+        },
+        {
+          "ports": [
+            7,
+            151,
+            295,
+            439,
+            583,
+            727,
+            871,
+            1015
+          ],
+          "hardware_holdout": 1392642,
+          "empirical_hw_tv": 0.010241431873127827,
+          "empirical_optical_tv": 0.0031803272108249293,
+          "optical_vs_hardware_empirical_tv": 0.009885227141171904,
+          "event_difference": 0.004087671056507894,
+          "hardware_tv_lower99": 0.0
+        }
+      ]
+    }
+  ],
+  "full_count_pairs": 93,
+  "detector_pairs": {
+    "edge": {
+      "number": 71,
+      "max_count_tv": 1.276998578115064e-14,
+      "max_click_tv": 0.0002865831311723623,
+      "max_vacuum_error": 4.385380947269368e-15
+    },
+    "triad": {
+      "number": 22,
+      "max_count_tv": 1.221830007444071e-14,
+      "max_click_tv": 0.00022315983699093615,
+      "max_vacuum_error": 3.0531133177191805e-15
+    },
+    "four": {
+      "number": 6,
+      "max_count_tv": 0.0035274347139722557,
+      "max_click_tv": 0.003330399652804473,
+      "max_vacuum_error": 7.216449660063518e-16
+    }
+  },
+  "residual": {
+    "click_tv": {
+      "groups": [
+        36,
+        107
+      ],
+      "tv": 0.021186587235684774
+    },
+    "count_tv": {
+      "groups": [
+        36,
+        107
+      ],
+      "tv": 0.021500347305441536
+    }
+  },
+  "hardware": [
+    {
+      "pnr": false,
+      "n": 1048576,
+      "hardware_ks": 0.04517015527032947,
+      "hardware_radius99": 0.003704370489637464,
+      "photon_ks": 0.005565276174036904,
+      "max_vacuum_gap": 0.01012243123813833,
+      "all_pair_99_interval": [
+        0.007323003806044698,
+        0.012921858670231962
+      ]
+    },
+    {
+      "pnr": true,
+      "n": 1048576,
+      "hardware_ks": 0.045427812297733794,
+      "hardware_radius99": 0.003704370489637464,
+      "photon_ks": 0.004856793583141589,
+      "max_vacuum_gap": 0.010466244705462646,
+      "all_pair_99_interval": [
+        0.007666817273369014,
+        0.013265672137556278
+      ]
+    }
+  ],
+  "fixed_16_threads": [
+    {
+      "pnr": false,
+      "median_us": 1.3257568340918624,
+      "click_hardware_ks": 0.04504483213948862,
+      "photon_optical_ks": 0.0049229780613916085
+    },
+    {
+      "pnr": true,
+      "median_us": 1.4585693364210783,
+      "click_hardware_ks": 0.04710914011755801,
+      "photon_optical_ks": 0.0051971821145457425
+    }
+  ],
+  "frugal": [
+    {
+      "groups": [
+        34,
+        35
+      ],
+      "ours_us": 0.10307618936167273,
+      "ours_tv": 0.0002555620401966843,
+      "first_batch_us": 123.1654785271985,
+      "controls": [
+        {
+          "k": 2,
+          "median_us": 12.348046880106267,
+          "tv": 0.47513477491155426
+        },
+        {
+          "k": 4,
+          "median_us": 45.58774412544153,
+          "tv": 0.21725001283903145
+        }
+      ]
+    },
+    {
+      "groups": [
+        73,
+        70
+      ],
+      "ours_us": 0.10908200920312083,
+      "ours_tv": 0.0002299529763383557,
+      "first_batch_us": 125.57739259477785,
+      "controls": [
+        {
+          "k": 2,
+          "median_us": 10.769921885867006,
+          "tv": 0.3038150604631188
+        },
+        {
+          "k": 4,
+          "median_us": 49.314160150970565,
+          "tv": 0.09732359673743447
+        }
+      ]
+    },
+    {
+      "groups": [
+        11,
+        44
+      ],
+      "ours_us": 0.10727541166488663,
+      "ours_tv": 0.000206236874885515,
+      "first_batch_us": 131.92124023930774,
+      "controls": [
+        {
+          "k": 2,
+          "median_us": 14.815136722745592,
+          "tv": 0.2116248081154805
+        },
+        {
+          "k": 4,
+          "median_us": 59.41616208815503,
+          "tv": 0.05623634216046373
+        }
+      ]
+    }
+  ],
+  "pnrs": {
+    "ports": [
+      89,
+      809,
+      358
+    ],
+    "full_numeric_upper": 6.429331587028387e-13,
+    "pe_us": 811.7683594264236,
+    "ours_us": 0.021386711068771547,
+    "pe_empirical": 0.010033424853041822,
+    "ours_empirical": 0.012385764931343968
+  },
+  "block_scaling": [
+    {
+      "width": 3,
+      "pnr": false,
+      "workers": 1,
+      "median_us": 0.031054696592036635,
+      "numerical_full_tv_upper": 2.615501573320021e-14
+    },
+    {
+      "width": 3,
+      "pnr": true,
+      "workers": 1,
+      "median_us": 0.021386711068771547,
+      "numerical_full_tv_upper": 6.629331587028387e-13
+    },
+    {
+      "width": 17,
+      "pnr": false,
+      "workers": 1,
+      "median_us": 0.11469728633528575,
+      "numerical_full_tv_upper": 1.5693009439920125e-13
+    },
+    {
+      "width": 17,
+      "pnr": true,
+      "workers": 1,
+      "median_us": 0.08896483905118657,
+      "numerical_full_tv_upper": 3.977598952217032e-12
+    },
+    {
+      "width": 144,
+      "pnr": false,
+      "workers": 16,
+      "median_us": 0.23188476916402578,
+      "numerical_full_tv_upper": 1.25544075519361e-12
+    },
+    {
+      "width": 144,
+      "pnr": true,
+      "workers": 16,
+      "median_us": 0.16416015569120646,
+      "numerical_full_tv_upper": 3.1820791617736256e-11
+    },
+    {
+      "width": 1152,
+      "pnr": false,
+      "workers": 16,
+      "median_us": 1.1133300859000883,
+      "numerical_full_tv_upper": 1.004352604154888e-11
+    },
+    {
+      "width": 1152,
+      "pnr": true,
+      "workers": 16,
+      "median_us": 0.8020019492960273,
+      "numerical_full_tv_upper": 2.5456633294189005e-10
+    },
+    {
+      "width": 4097,
+      "pnr": false,
+      "workers": 16,
+      "median_us": 3.162011722679381,
+      "numerical_full_tv_upper": 3.572775149155149e-11
+    },
+    {
+      "width": 4097,
+      "pnr": true,
+      "workers": 16,
+      "median_us": 2.546972666550573,
+      "numerical_full_tv_upper": 9.055666947880776e-10
+    }
+  ],
+  "retiming": [
+    {
+      "pnr": false,
+      "selected": [
+        24,
+        32768
+      ],
+      "checks": [
+        {
+          "workers": 24,
+          "n": 32768,
+          "median_us": 1.5339324956897826
+        },
+        {
+          "workers": 16,
+          "n": 8192,
+          "median_us": 1.8786254827318771
+        }
+      ]
+    },
+    {
+      "pnr": true,
+      "selected": [
+        20,
+        32768
+      ],
+      "checks": [
+        {
+          "workers": 20,
+          "n": 32768,
+          "median_us": 1.4950683588921265
+        },
+        {
+          "workers": 16,
+          "n": 8192,
+          "median_us": 1.7754272434444829
+        }
+      ]
+    }
+  ]
+}

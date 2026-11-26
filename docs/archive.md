@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 102 轮 | `archive/iteration102-conditional-forest-v1` | [报告与采样示例](https://github.com/qiyuanhuakai/deziroGBS/blob/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/research/iteration102_checkpoint_v1.md) · [三组光学计数表](https://github.com/qiyuanhuakai/deziroGBS/tree/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/results/iteration102_triads_v1) · [四组条件表](https://github.com/qiyuanhuakai/deziroGBS/tree/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/results/iteration102_four_v1) · [最终核验及独立样本直方图](https://github.com/qiyuanhuakai/deziroGBS/tree/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/results/iteration102_publication_v1) |
 | 第 101 轮 | `archive/iteration101-cross-correlations-v1` | [研究报告与采样示例](https://github.com/qiyuanhuakai/deziroGBS/blob/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/research/iteration101_checkpoint_v1.md) · [原始准备表](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_fit_v1) · [整机直方图与计时](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_sample_v1) · [全部端口对](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_vacuum_v1) |
 | 第 100 轮 | `archive/iteration100-spatial-v1` | [空间采样报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/research/iteration100_checkpoint_v1.md) · [归档准备表](https://github.com/qiyuanhuakai/deziroGBS/tree/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_spatial_v1) · [最终核验](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_release_v1/validation.json) |
 | 第 99 轮 | `archive/iteration99-loss-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/research/iteration99_checkpoint_v1.md) · [准备表与留出核验](https://github.com/qiyuanhuakai/deziroGBS/tree/3b64f2301fb4247542778efb6bdf4f03a8c48a33/results/iteration99_release_v1) |
@@ -15,11 +16,11 @@
 
 **只看一轮**　先从[报告目录](reports/README.md)找到该轮，报告中的原始数据链接会打开固定快照。第 94 轮可直接查看[实际 PNR 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_actual_quality_v1)和[直接点击数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_branch_actual_quality_v1)。
 
-**只下载一个结果目录**　以下示例从 GitHub 取回第 101 轮的协方差拟合表和四组端口对的完整分布。在新目录运行，其他实验替换标签和结果目录即可。
+**只下载一个结果目录**　以下示例从 GitHub 取回第 102 轮的最终核验及独立计数直方图。在新目录运行，其他实验替换标签和结果目录即可。
 
 ```sh
-git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration101-cross-correlations-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set results/iteration101_fit_v1
+git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration102-conditional-forest-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set results/iteration102_publication_v1
 ```
 
 取第 95 轮最新原始样本时，将示例中的标签换为 `archive/iteration95-loop-allocation-v1`，目录换为 `results/iteration95_loop_residual_v1`。如需还原发表当时的版本，可选[计数校正快照](https://github.com/qiyuanhuakai/deziroGBS/tree/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_count_filter_v1)（`archive/iteration95-count-calibration-v1`）或[两端口快照](https://github.com/qiyuanhuakai/deziroGBS/tree/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1)（`archive/iteration95-pairs-v1`）。

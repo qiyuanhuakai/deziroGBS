@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 102 轮
+
+- [精选核验：两条整机路线、硬件八位分布、Frugal 与 photonic-engines 对照](selected/102/validation.json)
+- [全部受约束端口对的完整分布](https://github.com/qiyuanhuakai/deziroGBS/blob/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/results/iteration102_projection_v1/summary.json) · [3 至 4,097 个端口的三模式分块实测](https://github.com/qiyuanhuakai/deziroGBS/blob/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/results/iteration102_blocks_v1/summary.json)
+
 ## 第 101 轮
 
 - [整机复核、独立样本及 Frugal 与 photonic-engines 同输入对照](selected/101/validation.json)
