@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "native/gaussian_cycle98_v1.cpp": "8f176b99b9a4ebdb6f93c016bd2b0b41f48294753559424f23a1e298004f1d7c",
+    "native/fourier_cell98_v1.cpp": "f8685a87b275185a76548a6110638af6063e957dca93f23b97101d3789cbaa39",
+    "experiments/iteration98_cycle_v1.py": "f59fbaa05d7970197a3725677694a6307da0abaa9bdd342e17560df33627e2e8",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9",
+    "experiments/iteration97_forest_v1.py": "393f1fe3faf9c20051bf6da63b3947bff979486c275114b882d60ecd8d5f6da8"
+  },
+  "p": "36/625",
+  "cap": 7,
+  "cases": [
+    2,
+    16,
+    144
+  ],
+  "reflectivity": "1/2",
+  "phase": 0,
+  "repetitions": 7,
+  "records_per_batch": 8192,
+  "workers": [
+    1,
+    16
+  ],
+  "fixture": "two single heralds, interior outputs vacuum; phases 0, pi/2, pi; TV tolerance .012 for 131072 draws"
+}
