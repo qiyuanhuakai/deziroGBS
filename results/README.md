@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 108 轮
+
+- [整机误差上界、Frugal 与九章对照](selected/108/validation.json) · [完整 16 位分布与实测速度](https://github.com/qiyuanhuakai/deziroGBS/tree/a09ccbe38c5ad7023fbbb005d5d8dac27012312b/results/iteration108_exact_v1) · [高占用多谱输入](https://github.com/qiyuanhuakai/deziroGBS/tree/a09ccbe38c5ad7023fbbb005d5d8dac27012312b/results/iteration108_bright_v1)
+
 ## 第 107 轮
 
 - [两条路线、Frugal 与九章同输入对照](selected/107/validation.json) · [131,072 端口整机检验](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_global_v1) · [64 对源跨块误差](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_cross_v1)
