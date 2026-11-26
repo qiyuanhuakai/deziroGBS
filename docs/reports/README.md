@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 100 轮 · 空间端口聚束、两条整机路线与完整留出分布](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/research/iteration100_checkpoint_v1.md)
+
 [第 99 轮 · 有损闭环、九章总光子数与空间相关的留出检验](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/research/iteration99_checkpoint_v1.md)
 
 [第 98 轮 · 闭环的光路干涉、两种采样与九章光子数差距](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/research/iteration98_checkpoint_v1.md)

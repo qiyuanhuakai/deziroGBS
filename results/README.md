@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 100 轮
+
+- [整机两条路线的百万条硬件对照及解析验证](selected/100/validation.json) · [完整分布的剩余误差下限](selected/100/residual.json)
+- [五组完整点击分布](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_projection_v1/summary.json) · [Frugal 和 photonic-engines 同输入基线](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_baselines_v1/summary.json) · [压缩到 144 模式的适用界](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_compression_v1/summary.json)
+
 ## 第 99 轮
 
 - [九章输入的直接点击、PNR、16 位校正与硬件 CDF](selected/99/actual.json) · [独立百万条留出检验](selected/99/validation.json)

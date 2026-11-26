@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "verified_stage_artifacts": 51,
+  "verified_stage_inputs": 52,
+  "public_cli": [
+    [
+      "actual",
+      "click"
+    ],
+    [
+      "actual",
+      "pnr"
+    ],
+    [
+      "tree",
+      "click"
+    ],
+    [
+      "tree",
+      "pnr"
+    ],
+    [
+      "odd",
+      "click"
+    ],
+    [
+      "odd",
+      "pnr"
+    ],
+    [
+      "vac",
+      "click"
+    ],
+    [
+      "vac",
+      "pnr"
+    ]
+  ],
+  "twin_loss_complete_coarse_tv": 4.703510882510026e-16,
+  "twin_loss_omitted_upper": 1.2089258196146291e-56,
+  "root_photon_tv": 7.428797818710637e-15,
+  "root_tail": 3.747400952093696e-18,
+  "all_leaf_impossible_mask_weights_zero": true,
+  "initial_load_s": 0.325342099997215,
+  "cached_first_batch_us": [
+    176.0602539206957,
+    183.97158203242725,
+    178.31220702646533,
+    167.59975585500797,
+    161.06245115565798
+  ],
+  "calibrated": [
+    {
+      "route": 0,
+      "records": 1048576,
+      "hardware_ks": 0.04082347269812442,
+      "click_mean": 103.91056823730469
+    },
+    {
+      "route": 1,
+      "records": 1048576,
+      "hardware_ks": 0.040839685161503325,
+      "click_mean": 103.90723037719727,
+      "photon_ks": 0.0009245830389155163
+    }
+  ],
+  "joint_hardware_cdf_halfwidth": 0.0032817406755182043,
+  "hardware_records": 1492642
+}
