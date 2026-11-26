@@ -1,0 +1,69 @@
+{
+  "hom": {
+    "indistinguishable": {
+      "records": 262144,
+      "two_photon_records": 65554,
+      "coincidences": 0,
+      "prob": 0.0,
+      "odd_records": 0,
+      "unequal": 126099
+    },
+    "labelled": {
+      "records": 262144,
+      "two_photon_records": 65421,
+      "coincidences": 32667,
+      "prob": 0.49933507589306186,
+      "odd_records": 67993,
+      "unequal": 80572
+    },
+    "oppositely_squeezed": {
+      "records": 262144,
+      "two_photon_records": 65669,
+      "coincidences": 65669,
+      "prob": 1.0,
+      "odd_records": 89778,
+      "unequal": 0
+    }
+  },
+  "rank1_complete_click_tv": 0.1794376651745383,
+  "native_click": {
+    "lower": 0.0,
+    "upper": 0.012644202049898625,
+    "empirical_tv": 0.011298023620308552,
+    "event_gap": -0.00033280998704898757,
+    "retained": 4676,
+    "tail": 0.012554534355867952,
+    "radius": 0.02783395974823254
+  },
+  "click_records": 2097152,
+  "frugal": [
+    {
+      "K": 2,
+      "us": 13.247900398027923,
+      "tv": 0.19347140217308317
+    },
+    {
+      "K": 4,
+      "us": 46.760839836679224,
+      "tv": 0.036162021459870713
+    }
+  ],
+  "local_pnr": {
+    "lower": 0.0,
+    "upper": 0.0023600770506514344,
+    "empirical_tv": 0.0004562932581510389,
+    "event_gap": 9.656288265229296e-05,
+    "retained": 25,
+    "tail": 0.0002793935289033822,
+    "radius": 0.003495406894089688,
+    "full_pnr_upper": 0.0023601975706531966
+  },
+  "pnr_records": 1048576,
+  "pnr_comparison": {
+    "shots": 32768,
+    "our_us": 0.29340822038648184,
+    "pe_us": 742.2815429691809,
+    "our_empirical_tv": 0.0038006339275740673,
+    "pe_empirical_tv": 0.004105234682394545
+  }
+}
