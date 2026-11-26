@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 99 轮 | `archive/iteration99-loss-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/research/iteration99_checkpoint_v1.md) · [准备表与留出核验](https://github.com/qiyuanhuakai/deziroGBS/tree/3b64f2301fb4247542778efb6bdf4f03a8c48a33/results/iteration99_release_v1) |
 | 第 98 轮 | `archive/iteration98-cycle-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/research/iteration98_checkpoint_v1.md) · [闭环原始结果](https://github.com/qiyuanhuakai/deziroGBS/tree/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/results/iteration98_cycle_v1) · [独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/results/iteration98_release_v1/validation.json) |
 | 第 97 轮 | `archive/iteration97-forest-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/research/iteration97_checkpoint_v1.md) · [最终核验](https://github.com/qiyuanhuakai/deziroGBS/blob/d99c25e2cdb0f4f0c24dcc53f7a6efb7963fde9f/results/iteration97_release_v1/validation.json) |
 | 第 96 轮 | `archive/iteration96-correlations-v1` | [报告与命令行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/research/iteration96_checkpoint_v1.md) · [数据与核验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/393d3592b8e8013be76844cca88605f428666d39/results/iteration96_release_v1/manifest.json) |
@@ -12,11 +13,11 @@
 
 **只看一轮**　先从[报告目录](reports/README.md)找到该轮，报告中的原始数据链接会打开固定快照。第 94 轮可直接查看[实际 PNR 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_actual_quality_v1)和[直接点击数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_branch_actual_quality_v1)。
 
-**只下载一个结果目录**　以下示例从 GitHub 取回第 98 轮闭环实验。在新目录运行，其他实验替换标签和结果目录即可。
+**只下载一个结果目录**　以下示例从 GitHub 取回第 99 轮准备表和独立核验结果。在新目录运行，其他实验替换标签和结果目录即可。
 
 ```sh
-git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration98-cycle-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set results/iteration98_cycle_v1
+git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration99-loss-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set results/iteration99_release_v1
 ```
 
 取第 95 轮最新原始样本时，将示例中的标签换为 `archive/iteration95-loop-allocation-v1`，目录换为 `results/iteration95_loop_residual_v1`。如需还原发表当时的版本，可选[计数校正快照](https://github.com/qiyuanhuakai/deziroGBS/tree/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_count_filter_v1)（`archive/iteration95-count-calibration-v1`）或[两端口快照](https://github.com/qiyuanhuakai/deziroGBS/tree/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1)（`archive/iteration95-pairs-v1`）。

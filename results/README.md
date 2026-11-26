@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 99 轮
+
+- [九章输入的直接点击、PNR、16 位校正与硬件 CDF](selected/99/actual.json) · [独立百万条留出检验](selected/99/validation.json)
+- [有损闭环的完整 TV 与整数采样](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/results/iteration99_integer_v1/summary.json) · [同输入 Frugal 与 photonic-engines 对照](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/results/iteration99_baselines_v1/summary.json)
+
 ## 第 98 轮
 
 - [16、128、1,152 端口闭环的速度、完整分布误差界及准备时间](selected/98/ring.json)
