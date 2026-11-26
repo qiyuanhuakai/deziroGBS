@@ -1,0 +1,24 @@
+{
+  "build": [
+    "C:\\Program Files\\x86_64-15.1.0-release-win32-seh-ucrt-rt_v12-rev0\\mingw64\\bin\\g++.EXE",
+    "-std=c++20",
+    "-O3",
+    "-shared",
+    "-fopenmp",
+    "-ffp-contract=off",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS-iteration95\\native\\spatial_copula101_v1.cpp",
+    "-o",
+    "C:\\Users\\qiyuaner\\Documents\\ChatGPT\\\u91cf\u5b50\\deziroGBS-iteration95\\results\\iteration101_sample_v1\\copula.dll"
+  ],
+  "records_per_route": 262144,
+  "block": 2048,
+  "workers": 16,
+  "comparisons": "Four fixed optical pair events selected from analytic laws before sampling; four hardware and four optical CDFs.",
+  "hashes": {
+    "native/spatial_copula101_v1.cpp": "ffc11c80dc0ae9b4c8596d2b46c3862a883eddc0b519781fa8e4784bc5ee8a3c",
+    "experiments/iteration101_sample_v1.py": "6a2457f7a5a9157665d30a161f91f9f78fe511d4463618f6ca26c5820c190f65",
+    "results/iteration101_fit_v1/fit.npz": "0534ef3a6e34859ce1a464559a6ebd2e961ffea09f4e066a2be39eeb00206fe6",
+    "results/iteration81_jiuzhang_accuracy_v3/histograms.npz": "2081c4631a2949877bc0a2193b7c6207822cce88056cc9fa693ee79c53309ea0",
+    "results/iteration100_spatial_v1/prepared.npz": "0b690238083da31f5032fc41a9823ca491bfef5674f1c4398d358d307d2b3e88"
+  }
+}

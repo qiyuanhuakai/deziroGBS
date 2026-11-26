@@ -1,0 +1,65 @@
+{
+  "fit": {
+    "pairs": 10296,
+    "raw_min_eigenvalue": 0.4333902038570663,
+    "final_min_eigenvalue": 0.43339020385706606,
+    "max_rho": 0.47082691038542535,
+    "max_cov_error": 7.068998164605489e-16,
+    "max_cov_series_bound": 5.490758335500109e-19,
+    "rms_cov_error": 1.4648572889515671e-16
+  },
+  "rows": [
+    {
+      "groups": [
+        73,
+        70
+      ],
+      "rho": 0.29296147673413053,
+      "count_tv": 0.034914309104175825,
+      "click_tv": 0.03453285550395149,
+      "tree_click_tv": 0.054092296411469405,
+      "series_tv_bound": 1.3959673790305798e-29
+    },
+    {
+      "groups": [
+        35,
+        69
+      ],
+      "rho": 0.22128169257685526,
+      "count_tv": 0.02893088496839944,
+      "click_tv": 0.02855360130210184,
+      "tree_click_tv": 0.04459334009462422,
+      "series_tv_bound": 1.9707241420202367e-36
+    },
+    {
+      "groups": [
+        74,
+        80
+      ],
+      "rho": 0.32028178699229937,
+      "count_tv": 0.043152040305918946,
+      "click_tv": 0.04262454655332857,
+      "tree_click_tv": 0.033549164988340145,
+      "series_tv_bound": 2.1894461961775603e-27
+    },
+    {
+      "groups": [
+        125,
+        131
+      ],
+      "rho": 0.09053924728944213,
+      "count_tv": 0.00944226644102576,
+      "click_tv": 0.009253625887841906,
+      "tree_click_tv": 6.301238435821808e-05,
+      "series_tv_bound": 1.0379080279043307e-58
+    }
+  ],
+  "groups": 144,
+  "order": 56,
+  "inputs": {
+    "results\\iteration100_spatial_v1\\prepared.npz": "0b690238083da31f5032fc41a9823ca491bfef5674f1c4398d358d307d2b3e88",
+    "results\\iteration100_residual_v1\\covariance.npz": "7c8da7f485d0fc50aba282de4a01e426133bdada17619dd75bf95db8027caa08",
+    "results\\iteration100_projection_v1\\panel_4.npz": "ae085e36b059733e002732d9203f482453a446192666b840748deff78de31835",
+    "results\\iteration83_loss_pilot_v1\\input.npz": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746"
+  }
+}
