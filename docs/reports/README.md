@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 104 轮 · 光学输入与硬件的点击数差距、两种校正及 16,384 端口采样](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/research/iteration104_checkpoint_v1.md)
+
 [第 103 轮 · 全部空间端口对的光子数误差、GPU 整机记录与 Frugal 对照](https://github.com/qiyuanhuakai/deziroGBS/blob/efcf413ca93a283ff9269e4ae470c5f429d8ee7a/research/iteration103_checkpoint_v1.md)
 
 [第 102 轮 · 重叠空间端口的联合分布、整机两条采样路线及 4,097 端口分块验证](https://github.com/qiyuanhuakai/deziroGBS/blob/8dce8adf031f1f5ae08bf1a44603dcacdec0c0b0/research/iteration102_checkpoint_v1.md)

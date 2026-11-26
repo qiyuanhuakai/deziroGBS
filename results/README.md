@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 104 轮
+
+- [整机与扩维精选核验](selected/104/validation.json) · [总点击数与光子数误差图](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_figure_v1/cdf.png) · [完整留出直方图](https://github.com/qiyuanhuakai/deziroGBS/tree/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_validate_v1)
+
 ## 第 103 轮
 
 - [两条路线的整机速度、硬件误差及同宽 Frugal 对照](selected/103/validation.json)
