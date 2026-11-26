@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 101 轮 | `archive/iteration101-cross-correlations-v1` | [研究报告与采样示例](https://github.com/qiyuanhuakai/deziroGBS/blob/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/research/iteration101_checkpoint_v1.md) · [原始准备表](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_fit_v1) · [整机直方图与计时](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_sample_v1) · [全部端口对](https://github.com/qiyuanhuakai/deziroGBS/tree/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_vacuum_v1) |
 | 第 100 轮 | `archive/iteration100-spatial-v1` | [空间采样报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/research/iteration100_checkpoint_v1.md) · [归档准备表](https://github.com/qiyuanhuakai/deziroGBS/tree/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_spatial_v1) · [最终核验](https://github.com/qiyuanhuakai/deziroGBS/blob/fc1500936471304e44476dc1469980eded219bcc/results/iteration100_release_v1/validation.json) |
 | 第 99 轮 | `archive/iteration99-loss-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/3b64f2301fb4247542778efb6bdf4f03a8c48a33/research/iteration99_checkpoint_v1.md) · [准备表与留出核验](https://github.com/qiyuanhuakai/deziroGBS/tree/3b64f2301fb4247542778efb6bdf4f03a8c48a33/results/iteration99_release_v1) |
 | 第 98 轮 | `archive/iteration98-cycle-v1` | [报告与运行示例](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/research/iteration98_checkpoint_v1.md) · [闭环原始结果](https://github.com/qiyuanhuakai/deziroGBS/tree/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/results/iteration98_cycle_v1) · [独立核验](https://github.com/qiyuanhuakai/deziroGBS/blob/a0f7a455fe024fe271b5cb1bfe0ca430cff90ca9/results/iteration98_release_v1/validation.json) |
@@ -17,8 +18,8 @@
 **只下载一个结果目录**　以下示例从 GitHub 取回第 100 轮空间采样的准备表和构建记录。在新目录运行，其他实验替换标签和结果目录即可。
 
 ```sh
-git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration100-spatial-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set results/iteration100_spatial_v1
+git clone --depth 1 --filter=blob:none --sparse --branch archive/iteration101-cross-correlations-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set results/iteration101_fit_v1
 ```
 
 取第 95 轮最新原始样本时，将示例中的标签换为 `archive/iteration95-loop-allocation-v1`，目录换为 `results/iteration95_loop_residual_v1`。如需还原发表当时的版本，可选[计数校正快照](https://github.com/qiyuanhuakai/deziroGBS/tree/cc7f15865d89444bb15a12fec9776cdaeafc5218/results/iteration95_count_filter_v1)（`archive/iteration95-count-calibration-v1`）或[两端口快照](https://github.com/qiyuanhuakai/deziroGBS/tree/9972467c5c19d39b77760273bd8c09b3f243667a/results/iteration95_pair_copula_v1)（`archive/iteration95-pairs-v1`）。

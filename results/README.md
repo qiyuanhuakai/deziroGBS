@@ -1,5 +1,10 @@
 # 精选结果
 
+## 第 101 轮
+
+- [整机复核、独立样本及 Frugal 与 photonic-engines 同输入对照](selected/101/validation.json)
+- [10,296 对的协方差和四组完整分布](https://github.com/qiyuanhuakai/deziroGBS/blob/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_fit_v1/summary.json) · [全部真空事件与最大误差端口对](https://github.com/qiyuanhuakai/deziroGBS/blob/92ccb2a4c413a2a4f270e8d6a1953ebfea6b0c35/results/iteration101_vacuum_v1/summary.json)
+
 ## 第 100 轮
 
 - [整机两条路线的百万条硬件对照及解析验证](selected/100/validation.json) · [完整分布的剩余误差下限](selected/100/residual.json)
