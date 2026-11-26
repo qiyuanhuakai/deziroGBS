@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 107 轮
+
+- [两条路线、Frugal 与九章同输入对照](selected/107/validation.json) · [131,072 端口整机检验](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_global_v1) · [64 对源跨块误差](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_cross_v1)
+
 ## 第 106 轮
 
 - [整机速度、光学与硬件精度、同 GPU Frugal 对照](selected/106/validation.json) · [速度与完整面板误差图](https://github.com/qiyuanhuakai/deziroGBS/blob/f20a5019741376f56eda206d7bfd2ecb684aed6b/results/iteration106_figure_v1/speed_accuracy.png) · [全部 662,976 对探测位核验](https://github.com/qiyuanhuakai/deziroGBS/tree/f20a5019741376f56eda206d7bfd2ecb684aed6b/results/iteration106_packed_v1)

@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 107 轮 | `archive/iteration107-local-transport-v1` | [报告与运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/3050dc1482526215675d247b3df11bcb7eca34c5/research/iteration107_checkpoint_v1.md) · [光子碰撞概率与校正表](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_patterns_v1) · [完整记录检验](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_global_v1) · [精选核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/3050dc1482526215675d247b3df11bcb7eca34c5/results/iteration107_release_v1) |
 | 第 106 轮 | `archive/iteration106-coherent-fields-v1` | [报告与运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/f20a5019741376f56eda206d7bfd2ecb684aed6b/research/iteration106_checkpoint_v1.md) · [原始采样与计时](https://github.com/qiyuanhuakai/deziroGBS/tree/f20a5019741376f56eda206d7bfd2ecb684aed6b/results/iteration106_words_v1) · [精选核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/f20a5019741376f56eda206d7bfd2ecb684aed6b/results/iteration106_release_v1) |
 | 第 105 轮（含第 103 轮启动的 1,152 位 Frugal 对照） | `archive/iteration105-two-mode-v1` | [报告与运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/research/iteration105_checkpoint_v1.md) · [完整 Frugal 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/results/iteration103_frugal_full_v1) · [核验原件与校验值](https://github.com/qiyuanhuakai/deziroGBS/tree/57fdc29f6b5abe7c75058d5d546eba45dc4482f0/results/iteration105_release_v1) |
 | 第 104 轮 | `archive/iteration104-total-laws-v1` | [报告与运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/0ec773c88e9efe621db5e455c8b95eb67d6806b6/research/iteration104_checkpoint_v1.md) · [光学输入与硬件差距](https://github.com/qiyuanhuakai/deziroGBS/tree/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_fit_v1) · [扩维实测](https://github.com/qiyuanhuakai/deziroGBS/tree/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_spectral_v1) · [精选核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/0ec773c88e9efe621db5e455c8b95eb67d6806b6/results/iteration104_release_v1) |
@@ -21,11 +22,11 @@
 
 **只看一轮**　先从[报告目录](reports/README.md)找到该轮，报告中的原始数据链接会打开固定快照。第 94 轮可直接查看[实际 PNR 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_actual_quality_v1)和[直接点击数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_branch_actual_quality_v1)。
 
-**只下载一个结果目录**　以下示例只检出第 106 轮的最终核验文件。其他轮次可替换标签和目录名。
+**只下载一个结果目录**　以下示例只检出第 107 轮的最终核验文件。其他轮次可替换标签和目录名。
 
 ```sh
-git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration106-coherent-fields-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set --no-cone "/results/iteration106_release_v1/"
+git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration107-local-transport-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set --no-cone "/results/iteration107_release_v1/"
 git -C deziroGBS-evidence checkout
 ```
 
