@@ -1,0 +1,15 @@
+{
+  "source_sha256": {
+    "native/low_sector108_v1.cpp": "a464e3d7faa9b92d5a405f4151463642c0af80598ad7694d85fca0ba8172432f",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9"
+  },
+  "options": [
+    "-O3",
+    "-std=c++20",
+    "-march=x86-64-v3",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-shared"
+  ],
+  "compiler": "15.1.0"
+}

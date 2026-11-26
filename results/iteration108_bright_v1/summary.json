@@ -1,0 +1,141 @@
+{
+  "rows": [
+    {
+      "m": 1152,
+      "k": 25,
+      "replicas": 512,
+      "emitted_pairs": 61.44,
+      "expected_photons": 52.10626701483977,
+      "bound": 3.289043498305727e-06,
+      "per_replica": 6.4239236262829185e-09,
+      "prep_s": 0.05499989999225363,
+      "batch": 128,
+      "shots": 16384,
+      "cache_bytes": 10616832,
+      "conditional_second_cached_mass": 1.0,
+      "runs": [
+        {
+          "pnr": false,
+          "us": 35.24375006236369,
+          "quartiles": [
+            33.70390618329111,
+            41.285547013103496
+          ],
+          "mean_clicks": 50.63568115234375,
+          "panel_empirical_tv": 0.010528658395151824,
+          "fallbacks": 0
+        },
+        {
+          "pnr": true,
+          "us": 34.99140620988328,
+          "quartiles": [
+            30.53789055229572,
+            88.07421863821219
+          ],
+          "mean_clicks": 50.7081298828125,
+          "panel_empirical_tv": 0.011196486739109446,
+          "fallbacks": 0,
+          "mean_photons": 52.12042236328125,
+          "total_ks": 0.003941057824393357
+        }
+      ]
+    },
+    {
+      "m": 4096,
+      "k": 64,
+      "replicas": 1024,
+      "emitted_pairs": 122.88,
+      "expected_photons": 156.17557418514954,
+      "bound": 5.057329842288604e-06,
+      "per_replica": 4.938811150523103e-09,
+      "prep_s": 0.753262700047344,
+      "batch": 128,
+      "shots": 8192,
+      "cache_bytes": 134217728,
+      "conditional_second_cached_mass": 1.0,
+      "runs": [
+        {
+          "pnr": false,
+          "us": 282.6898435159819,
+          "quartiles": [
+            270.7300780002697,
+            320.10468748921994
+          ],
+          "mean_clicks": 152.9630126953125,
+          "panel_empirical_tv": 0.030685066331801597,
+          "fallbacks": 0
+        },
+        {
+          "pnr": true,
+          "us": 281.1468748404877,
+          "quartiles": [
+            254.1273438509961,
+            382.1355469426635
+          ],
+          "mean_clicks": 152.99560546875,
+          "panel_empirical_tv": 0.029274158061447897,
+          "fallbacks": 0,
+          "mean_photons": 156.2689208984375,
+          "total_ks": 0.005809538357703814
+        }
+      ],
+      "frugal": [
+        {
+          "K": 2,
+          "observed": 16,
+          "batch": 16,
+          "us": 5382.824998378055,
+          "tv": 8.837399215755326e-07
+        },
+        {
+          "K": 4,
+          "observed": 16,
+          "batch": 16,
+          "us": 11190.468751010485,
+          "tv": 5.310279244108429e-09
+        }
+      ],
+      "full_output_same_batch_us": 447.31875095749274
+    },
+    {
+      "m": 8192,
+      "k": 128,
+      "replicas": 1024,
+      "emitted_pairs": 122.88,
+      "expected_photons": 156.60154404477547,
+      "bound": 4.42210125510871e-06,
+      "per_replica": 4.318467795975506e-09,
+      "prep_s": 1.2063310000230558,
+      "batch": 128,
+      "shots": 2048,
+      "cache_bytes": 134217728,
+      "conditional_second_cached_mass": 0.27623398974667124,
+      "runs": [
+        {
+          "pnr": false,
+          "us": 2067.6984377132612,
+          "quartiles": [
+            1659.8624999915046,
+            2222.168749995035
+          ],
+          "mean_clicks": 155.19482421875,
+          "panel_empirical_tv": 0.03746181177115898,
+          "fallbacks": 0
+        },
+        {
+          "pnr": true,
+          "us": 1923.379687468696,
+          "quartiles": [
+            1826.4507812091324,
+            2059.4757813796605
+          ],
+          "mean_clicks": 154.6708984375,
+          "panel_empirical_tv": 0.036233386524824385,
+          "fallbacks": 0,
+          "mean_photons": 156.25390625,
+          "total_ks": 0.026229239355803402
+        }
+      ]
+    }
+  ]
+}

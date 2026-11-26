@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "native/compact_matching108_v1.cpp": "866a792fc7fb52c05af5d2014a4f5f6033d510554dd87426354bcc6491f3029f",
+    "native/pair_matching108_v1.cpp": "f34efeb97d0467948b72e726f9e474e3edd8f072fb1522d0f084677eb60d9b87",
+    "native/gaussian_rng_domain84_v1.hpp": "3c9dd6eb489eb401f6659a65cb5de61a9c5c0ccacc20f69fad12c598d0f193a9"
+  },
+  "options": [
+    "-O3",
+    "-std=c++20",
+    "-march=x86-64-v3",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-shared"
+  ],
+  "compiler": "15.1.0"
+}

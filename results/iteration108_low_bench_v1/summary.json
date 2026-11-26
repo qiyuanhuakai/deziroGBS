@@ -1,0 +1,272 @@
+{
+  "rows": [
+    {
+      "m": 16,
+      "k": 2,
+      "emitted_pairs": 2.0426971314642257,
+      "weak": 0,
+      "shots": 262144,
+      "setup": 0.08042939996812493,
+      "batch": 2048,
+      "analytic": {
+        "vacuum": 0.2959522888699415,
+        "single_click_mass": 0.1465050177937983,
+        "distinct_two_from_two": 0.1478058778478595,
+        "full_click_tv_bound": 0.4097368154884007,
+        "one_photon": 0.11997913199878354,
+        "two_photon": 0.17104111452918147,
+        "full_pnr_tv_bound": 0.4130274646020934,
+        "number_mass_check": 8.326672684688674e-17,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 0.11865233773278305,
+          "panel_empirical_tv": 0.03439963033638653,
+          "empty_gap": 0.0003810241183397345,
+          "singleton_gap": 0.0011383490926264173
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 0.13325194458957412,
+          "panel_empirical_tv": 0.05085559647722169,
+          "empty_gap": 0.0008968994656446405,
+          "singleton_gap": 0.0016533332234857923,
+          "two_photon_gap": 5.347927618970516e-06
+        },
+        {
+          "hybrid": true,
+          "pnr": false,
+          "us": 0.2793456985727971,
+          "panel_empirical_tv": 0.01389313129679785,
+          "empty_gap": 0.0005259826144334845,
+          "singleton_gap": 0.00043330618081108274
+        },
+        {
+          "hybrid": true,
+          "pnr": true,
+          "us": 0.30156249408719304,
+          "panel_empirical_tv": 0.025032727358153622,
+          "empty_gap": 0.0004420592745897345,
+          "singleton_gap": 0.0017531914347173327,
+          "two_photon_gap": 0.0004592969022283455
+        }
+      ]
+    },
+    {
+      "m": 131072,
+      "k": 2,
+      "emitted_pairs": 2.0426971314642257,
+      "weak": 0,
+      "shots": 65536,
+      "setup": 0.724071400007233,
+      "batch": 32,
+      "analytic": {
+        "vacuum": 0.2959522888699416,
+        "single_click_mass": 0.121774098587488,
+        "distinct_two_from_two": 0.16932755029497282,
+        "full_click_tv_bound": 0.41294606224759756,
+        "one_photon": 0.11997913199878338,
+        "two_photon": 0.17104111452918155,
+        "full_pnr_tv_bound": 0.4130274646020933,
+        "number_mass_check": 2.7755575615628914e-17,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 14.003126125317067,
+          "panel_empirical_tv": 0.003759190763809811,
+          "empty_gap": 0.0006938292941208735,
+          "singleton_gap": 0.002450368118738
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 11.168751370860264,
+          "panel_empirical_tv": 0.07909179885527248,
+          "empty_gap": 0.0010761902371291265,
+          "singleton_gap": 0.0011228534703005,
+          "two_photon_gap": 0.0021461413301934462
+        },
+        {
+          "hybrid": true,
+          "pnr": false,
+          "us": 368.73750104859937,
+          "panel_empirical_tv": 0.004242741351939799,
+          "empty_gap": 0.0005565001925583735,
+          "singleton_gap": 0.0029844257359255
+        },
+        {
+          "hybrid": true,
+          "pnr": true,
+          "us": 62.490624259226024,
+          "panel_empirical_tv": 0.03122124419946334,
+          "empty_gap": 0.0027393982449416265,
+          "singleton_gap": 0.001028635787512,
+          "two_photon_gap": 0.0006812975801934462
+        }
+      ]
+    },
+    {
+      "m": 256,
+      "k": 16,
+      "emitted_pairs": 0.12,
+      "weak": 0.12,
+      "shots": 262144,
+      "setup": 0.02258719998644665,
+      "batch": 2048,
+      "analytic": {
+        "vacuum": 0.9027664613069663,
+        "single_click_mass": 0.04772477047464959,
+        "distinct_two_from_two": 0.04558944632301635,
+        "full_click_tv_bound": 0.003919321895367811,
+        "one_photon": 0.04733011600656737,
+        "two_photon": 0.04598373117617797,
+        "full_pnr_tv_bound": 0.003919691510279377,
+        "number_mass_check": 2.2898349882893854e-16,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 0.13896482187192305,
+          "panel_empirical_tv": 0.0002011346175732046,
+          "empty_gap": 0.00030971056803374974,
+          "singleton_gap": 3.342525980584016e-05
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 0.2220214980752644,
+          "panel_empirical_tv": 0.0002472501427551326,
+          "empty_gap": 2.7422970377499745e-05,
+          "singleton_gap": 0.00013442141988165984,
+          "two_photon_gap": 0.00011962595156859296
+        }
+      ]
+    },
+    {
+      "m": 4096,
+      "k": 64,
+      "emitted_pairs": 0.12,
+      "weak": 0.12,
+      "shots": 131072,
+      "setup": 0.8219697999884374,
+      "batch": 1024,
+      "analytic": {
+        "vacuum": 0.9024760229745573,
+        "single_click_mass": 0.04768614109352821,
+        "distinct_two_from_two": 0.046109415733145524,
+        "full_click_tv_bound": 0.003728420198768956,
+        "one_photon": 0.047663966930196824,
+        "two_photon": 0.04613158885365735,
+        "full_pnr_tv_bound": 0.003728421241586788,
+        "number_mass_check": 1.1102230246251565e-16,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 3.3294921877313755,
+          "panel_empirical_tv": 0.00021612691065422233,
+          "empty_gap": 0.0011647240957551874,
+          "singleton_gap": 0.0005975180466532073
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 10.918457007846882,
+          "panel_empirical_tv": 0.00014561029896857845,
+          "empty_gap": 0.00019579099028643743,
+          "singleton_gap": 7.871921852820735e-05,
+          "two_photon_gap": 0.00014922801381359735
+        }
+      ]
+    },
+    {
+      "m": 8192,
+      "k": 128,
+      "emitted_pairs": 0.11999999999999998,
+      "weak": 0.12,
+      "shots": 131072,
+      "setup": 5.587508499971591,
+      "batch": 512,
+      "analytic": {
+        "vacuum": 0.9023116485813317,
+        "single_click_mass": 0.047573953233296364,
+        "distinct_two_from_two": 0.04639817962918937,
+        "full_click_tv_bound": 0.003716218556182538,
+        "one_photon": 0.04756247734298244,
+        "two_photon": 0.04640965529138611,
+        "full_pnr_tv_bound": 0.0037162187842977312,
+        "number_mass_check": 7.632783294297951e-17,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 18.528710938880977,
+          "panel_empirical_tv": 5.723052931681624e-05,
+          "empty_gap": 0.00023492738992547668,
+          "singleton_gap": 0.00016316834873488645
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 69.04609369939863,
+          "panel_empirical_tv": 8.634224712502363e-05,
+          "empty_gap": 0.0003677947780432733,
+          "singleton_gap": 0.00013265077060988645,
+          "two_photon_gap": 0.00047307081872986073
+        }
+      ]
+    },
+    {
+      "m": 8192,
+      "k": 128,
+      "emitted_pairs": 0.014999999999999998,
+      "weak": 0.015,
+      "shots": 131072,
+      "setup": 5.606106900027953,
+      "batch": 512,
+      "analytic": {
+        "vacuum": 0.9872271061184547,
+        "single_click_mass": 0.006512051566259355,
+        "distinct_two_from_two": 0.0061997909799860005,
+        "full_click_tv_bound": 6.105133529998863e-05,
+        "one_photon": 0.006510522481120206,
+        "two_photon": 0.0062013200613362076,
+        "full_pnr_tv_bound": 6.105133908840266e-05,
+        "number_mass_check": 4.336808689942018e-17,
+        "max_class_overrun": 0.0
+      },
+      "runs": [
+        {
+          "hybrid": false,
+          "pnr": false,
+          "us": 4.560156185107189,
+          "panel_empirical_tv": 3.852718125401372e-05,
+          "empty_gap": 0.0003598689792015941,
+          "singleton_gap": 3.396894155314502e-05
+        },
+        {
+          "hybrid": false,
+          "pnr": true,
+          "us": 17.608593680051854,
+          "panel_empirical_tv": 5.4425397141401404e-05,
+          "empty_gap": 0.0001615047213890941,
+          "singleton_gap": 0.00017965410532185498,
+          "two_photon_gap": 3.189527069504244e-05
+        }
+      ]
+    }
+  ]
+}
