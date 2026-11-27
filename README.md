@@ -6,7 +6,7 @@
 
 ## 第 115 轮进展
 
-九章 3.0 原功率的 1,152 通道光路上，两种读出使用同一模型。总光子数分布的 TV 误差上界从 **2.74083% 降至 0.0008379%**。强相关的两个空间端口仍有 **2.1221%** 的触发数联合分布误差。[方法与精度对照](https://github.com/qiyuanhuakai/deziroGBS/blob/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/research/iteration115_checkpoint_v1.md)
+九章 3.0 原功率的 1,152 通道光路上，两种读出使用同一模型。总光子数分布的 TV 误差上界从 **2.74083% 降至 0.0008379%**。强相关的两个空间端口仍有 **2.1221%** 的触发数联合分布误差。[英文预印本 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/25d53393e73ffb3b80d9a0628683b8a8f1428705/papers/number-tilted-gbs/manuscript.pdf) · [4,096 条同输入对照](results/selected/115/matched-4096.json)
 
 每批 16,384 条时，GPU 直接生成点击耗时 **1.056 微秒/条**，逐通道生成光子数耗时 **0.346 微秒/条**。与九章两份实测文件相比，直接采样的总点击数直方图 TV 为 **4.11%、4.02%**。[对照图](https://github.com/qiyuanhuakai/deziroGBS/blob/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_release_v1/comparison.png) · [精选核验](results/selected/115/validation.json)
 
