@@ -1,0 +1,94 @@
+{
+  "route": "click",
+  "width": 1152,
+  "train": 131072,
+  "design": 131072,
+  "test": 524288,
+  "batch": 2048,
+  "torch": "2.12.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "moments_s": 0.6107468999689445,
+  "fit_s": 10.796723600011319,
+  "layer_sha256": [
+    "043513695337524716f7b3ea9d2da8a8381dea65707ced85a89ee3b569294632",
+    "374a39d4a8ee5feaeaa922045cfa1de72e1d188c37bcb494b24759af8c3e6beb",
+    "8fb484d51ee0c62496bab6305b82badcd06899ac8496901c487069a054df19ae",
+    "6993e167422f5ef6fb664ee4c30b63e405fe3e797a42d24258288c92b295e9e0",
+    "06a93285e020e07092ac2d9ab7705f6c1c62e0fa09ae7b840fe3b9c9b20c6d87",
+    "32cd9250b2a1a8e4ed658463176cadd3a749f1ff50ddd201768632d51580de62",
+    "50677d159b5af9b6d9853696a2acfa49865fa7e4385bb68ae9eb5d92127f7ea9",
+    "0496fe43b054ee70a3d0ee368cfc4214f3ae87ed0325e91e8638060688ec7a9a",
+    "bf96a45086ec86a6fc890845ca29fae94bed4abe27d1753d245c8aa84c06c897",
+    "56f84d3b32ee157e46581d2bd4d9088e397c7afbfcf867f354008405a2c5f04e"
+  ],
+  "diagnostics": {
+    "min_target_eigenvalue": -4.090623647239603e-07,
+    "max_target_eigenvalue": 0.3642887725841291,
+    "negative_target_eigenvalues": 124,
+    "iterations": [
+      {
+        "min_training_eigenvalue": 1.555030380504744e-08,
+        "max_training_eigenvalue": 0.3635165675114045,
+        "max_mean_error": 3.7027914059128975e-05
+      },
+      {
+        "min_training_eigenvalue": 9.421929661438988e-11,
+        "max_training_eigenvalue": 0.3642502309868879,
+        "max_mean_error": 2.503079439608591e-06
+      },
+      {
+        "min_training_eigenvalue": 2.4861505294591463e-12,
+        "max_training_eigenvalue": 0.36428754542827313,
+        "max_mean_error": 3.696895410909562e-07
+      },
+      {
+        "min_training_eigenvalue": 1.914979177997903e-13,
+        "max_training_eigenvalue": 0.36428870387475576,
+        "max_mean_error": 1.2710021679573913e-07
+      },
+      {
+        "min_training_eigenvalue": 1.0419104135702584e-13,
+        "max_training_eigenvalue": 0.364288760318508,
+        "max_mean_error": 6.75463870392079e-08
+      },
+      {
+        "min_training_eigenvalue": 9.531590779931648e-14,
+        "max_training_eigenvalue": 0.36428876410769984,
+        "max_mean_error": 6.402251184756125e-08
+      },
+      {
+        "min_training_eigenvalue": 9.453790364084585e-14,
+        "max_training_eigenvalue": 0.3642887672730651,
+        "max_mean_error": 7.446698091495563e-08
+      },
+      {
+        "min_training_eigenvalue": 9.543199691965092e-14,
+        "max_training_eigenvalue": 0.36428876887980305,
+        "max_mean_error": 6.841000577129108e-08
+      },
+      {
+        "min_training_eigenvalue": 9.4803649302039e-14,
+        "max_training_eigenvalue": 0.36428876469087457,
+        "max_mean_error": 6.514204275998026e-08
+      },
+      {
+        "min_training_eigenvalue": 9.521259120104631e-14,
+        "max_training_eigenvalue": 0.3642887643722044,
+        "max_mean_error": 7.277149105533454e-08
+      }
+    ]
+  },
+  "chosen": "occupancy",
+  "hits": 231695,
+  "optical_event": 0.439979064029818,
+  "empirical_event": 0.4419231414794922,
+  "full_tv_lower_simultaneous99": 0.00017699740402221559,
+  "empirical_projection_tv": {
+    "occupancy": 0.00968532256083698,
+    "pair0": 0.005688987480449104,
+    "pair1": 0.0027114870805353686,
+    "pair2": 0.0033253445746607713
+  },
+  "gpu_us_per_row": 1.91872043531216,
+  "batch_median_us": 1.899047845199675
+}
