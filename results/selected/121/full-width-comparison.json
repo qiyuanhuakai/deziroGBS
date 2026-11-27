@@ -1,0 +1,133 @@
+{
+  "round": 121,
+  "archive_commit": "d1654c41d24bf417bd4c6200f49fb302520c1086",
+  "description": "Same published high-power two-spectrum input on 1152 physical detector ports. TV values are fractions.",
+  "optical_input_sha256": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+  "clamped": {
+    "arithmetic": "ideal-arithmetic optical bound; floating-point implementations tested separately",
+    "full_tv_upper": 0.004815,
+    "delivered_records": {
+      "pnr": 70,
+      "click": 69
+    },
+    "seconds_per_delivered": {
+      "pnr": 9.17874898999996,
+      "click": 11.925118218839971
+    }
+  },
+  "positive_p": {
+    "implementation": "Independent implementation of Goodman et al., Eqs. 8-12, with analytic target moments and positive spectral part for indefinite target covariances.",
+    "devices": "RTX 5080 laptop GPU, batches of 2048. Timings include delivery to CPU memory. Fit times exclude computing optical moments.",
+    "small_fit_training_rows": 131072,
+    "large_fp64_training_rows": 1048576,
+    "confidence": "Simultaneous one-sided 99% conditional on fitted maps and frozen events. Eight tests, tail area 0.01/8 each; 1e-8 numerical allowance.",
+    "readouts": {
+      "pnr": {
+        "small_fit": {
+          "rows": 2097152,
+          "full_tv_lower99": 0.011330755210775029,
+          "microseconds_per_record": 2.4944937236925924,
+          "fit_seconds": 12.278656900045462
+        },
+        "large_fit": {
+          "rows": 2097152,
+          "full_tv_lower99": 0.007859817014658538,
+          "microseconds_per_record": 51.536819363012796,
+          "fit_seconds": 105.15385960001731
+        }
+      },
+      "click": {
+        "small_fit": {
+          "rows": 2097152,
+          "full_tv_lower99": 0.006328507452891036,
+          "microseconds_per_record": 2.074358368103768,
+          "fit_seconds": 10.796723600011319
+        },
+        "large_fit": {
+          "rows": 2097152,
+          "full_tv_lower99": 0.00497463433099537,
+          "microseconds_per_record": 51.24700250649927,
+          "fit_seconds": 106.25057630002266
+        }
+      }
+    },
+    "all_eight_tests": [
+      {
+        "route": "pnr",
+        "experiment": "witness",
+        "records": 2097152,
+        "hits": 1019375,
+        "optical_probability": 0.4740228321154883,
+        "full_tv_lower99": 0.011009386428014462
+      },
+      {
+        "route": "pnr",
+        "experiment": "records",
+        "records": 2097152,
+        "hits": 1020049,
+        "optical_probability": 0.4740228321154883,
+        "full_tv_lower99": 0.011330755210775029
+      },
+      {
+        "route": "pnr",
+        "experiment": "fp64",
+        "records": 1048576,
+        "hits": 503836,
+        "optical_probability": 0.4740228321154883,
+        "full_tv_lower99": 0.004997139794292499
+      },
+      {
+        "route": "pnr",
+        "experiment": "large",
+        "records": 2097152,
+        "hits": 999566,
+        "optical_probability": 0.467727499194789,
+        "full_tv_lower99": 0.007859817014658538
+      },
+      {
+        "route": "click",
+        "experiment": "witness",
+        "records": 2097152,
+        "hits": 1049139,
+        "optical_probability": 0.49322104659144755,
+        "full_tv_lower99": 0.006003304922616243
+      },
+      {
+        "route": "click",
+        "experiment": "records",
+        "records": 2097152,
+        "hits": 1049821,
+        "optical_probability": 0.49322104659144755,
+        "full_tv_lower99": 0.006328507452891036
+      },
+      {
+        "route": "click",
+        "experiment": "fp64",
+        "records": 1048576,
+        "hits": 521507,
+        "optical_probability": 0.49322104659144755,
+        "full_tv_lower99": 0.0026500979633341474
+      },
+      {
+        "route": "click",
+        "experiment": "large",
+        "records": 2097152,
+        "hits": 1016091,
+        "optical_probability": 0.47849175198880967,
+        "full_tv_lower99": 0.00497463433099537
+      }
+    ]
+  },
+  "physical_scope": "Fixed optical parameters; the full experimental hardware law is a separate target.",
+  "universal_pnr_bound": {
+    "class": "All mixtures of product Poisson laws with arbitrary joint nonnegative rates",
+    "lower": 4.26e-10
+  },
+  "paper": "https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/papers/number-tilted-gbs/manuscript.pdf",
+  "checks": "https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/results/iteration121_positive_p/manifest.json",
+  "frozen_protocols": {
+    "positive-p-protocol": "0d34aeb8ba0ffca8582093c62439e950077cbfa4",
+    "records-protocol": "edd68aabc551a48d466abcaed17f0cc8565d9f3c",
+    "large-protocol": "48716a7a6ffddb1ecb99a52c07e591b8508d163e"
+  }
+}

@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 121 轮
+
+[两种全宽正 P 配置的整机精度与每条记录耗时](selected/121/full-width-comparison.json) · [八项检验记录](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/results/iteration121_positive_p/comparison.json) · [归档校验](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/results/iteration121_positive_p/manifest.json)
+
 ## 第 120 轮
 
 [整机误差证书、两条读出的完整耗时与留出硬件精度](selected/120/full-record.json) · [逐项校验](https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/results/iteration120_contractions/manifest.json)

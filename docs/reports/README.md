@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 121 轮 · 两种读出的整机正 P 对照与空间事件检验](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/papers/number-tilted-gbs/manuscript.pdf) · [复现步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/papers/number-tilted-gbs/README.md)
+
 [第 120 轮 · 完整记录误差证书与三份留出硬件采集](https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/papers/number-tilted-gbs/manuscript.pdf) · [复核步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/papers/number-tilted-gbs/README.md)
 
 [第 119 轮 · 低于 0.5% 的完整记录误差界与两份留出硬件采集](https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/papers/number-tilted-gbs/manuscript.pdf) · [复核步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/papers/number-tilted-gbs/README.md)
