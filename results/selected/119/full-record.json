@@ -1,0 +1,117 @@
+{
+  "round": 119,
+  "archive_commit": "d467fa25f2e5277e78bfe1cd1a9d2d14f925f343",
+  "optical_target": "Jiuzhang 3.0 published high-power two-spectrum model, 1152 physical detector ports",
+  "mean_detected_photons": 116.286,
+  "readout": [
+    "PNR summed across spectra",
+    "direct binary clicks OR across spectra"
+  ],
+  "full_record_tv_upper": 0.004823426230405225,
+  "truncation": 0.0033634505901246068,
+  "modified_acceptance_tv_upper": 0.0014599756402806185,
+  "thresholded_pnr_vs_direct_tv_upper": 0.002919951280561237,
+  "candidates_per_readout": 64,
+  "accepted": {
+    "pnr": 16,
+    "click": 17
+  },
+  "base_wall_seconds": [
+    587.7294894999941,
+    102.24627290002536
+  ],
+  "interleaved_correction_wall_seconds": 1293.5833660000353,
+  "combined_stage_seconds_per_delivered_row": 60.10785237575924,
+  "timing_prefix": [
+    {
+      "direct": false,
+      "candidates": 8,
+      "accepted": 1,
+      "base_wall_seconds": 341.0211330000311,
+      "score_wall_seconds": 200.27941259997897,
+      "seconds_per_accepted": 541.3005456000101,
+      "workers": 5
+    },
+    {
+      "direct": true,
+      "candidates": 8,
+      "accepted": 2,
+      "base_wall_seconds": 3.3245475000003353,
+      "score_wall_seconds": 131.0302117000101,
+      "seconds_per_accepted": 67.17737960000522,
+      "workers": 5
+    }
+  ],
+  "quartic_likelihood_check_candidates_per_readout": 4096,
+  "holdout": {
+    "protocol_sha256": "14affd7dfd880ad54ca996def518a616029a913c56aabe3a07430e0cba299039",
+    "optical_probability": 0.46159901030841566,
+    "holdouts": [
+      {
+        "file": 12,
+        "sha256": "2a0aad2c68265041daa2d0b03a8a7b4a884ba2ae66cb71258401b76c7d161e2d",
+        "record_count": 1494468,
+        "event_count": 748124,
+        "capture_probability": 0.5005955296466702,
+        "finite_file_tv_lower": 0.03899651933825454,
+        "average_conditional_law_tv_lower99": 0.03766511282733089,
+        "one_sided_radius": 0.0013314065109236541
+      },
+      {
+        "file": 13,
+        "sha256": "4a7a797cb71368f5aff73e3f55438dc038f5c01cb4a72727d5237ae19ed358a6",
+        "record_count": 1476922,
+        "event_count": 740052,
+        "capture_probability": 0.5010772403688211,
+        "finite_file_tv_lower": 0.039478230060405406,
+        "average_conditional_law_tv_lower99": 0.03813893827005194,
+        "one_sided_radius": 0.0013392917903534648
+      }
+    ]
+  },
+  "anytime_lower99": [
+    0.035637067641709146,
+    0.03610006528800354
+  ],
+  "power_transfer": {
+    "low": {
+      "mean_photons": 47.93477969174974,
+      "truncation_tv": 0.0017061079364437029,
+      "clamp_tv_upper": 0.0005714035918102355,
+      "full_tv_upper": 0.0022775115282539383,
+      "output_records_measured_here": false
+    },
+    "median": {
+      "mean_photons": 77.80679761911273,
+      "truncation_tv": 0.0025964213646387196,
+      "clamp_tv_upper": 0.0010358050885525862,
+      "full_tv_upper": 0.0036322264531913058,
+      "output_records_measured_here": false
+    },
+    "high": {
+      "mean_photons": 116.28612516734032,
+      "truncation_tv": 0.003363450590128432,
+      "clamp_tv_upper": 0.0014599756402803596,
+      "full_tv_upper": 0.0048234262304087915,
+      "output_records_measured_here": true
+    }
+  },
+  "frugal": {
+    "cutoff": 2,
+    "full_ports": 1152,
+    "causal_prefix_ports": 16,
+    "covariance_max_errors": [
+      4.996003610813204e-16,
+      1.1535911115245767e-16
+    ],
+    "prefix_optical_max_error": 6.024460550345555e-14,
+    "full_click_tv_lower": 0.1077107276971951,
+    "archived_cpu_workers": 1,
+    "archived_samples": 4,
+    "archived_seconds_per_full_record": 1513.6703325000126,
+    "archive_scope": "CPU FP64 adapter with spectra processed sequentially. Full-input causal tree for the first 16 physical ports."
+  },
+  "arithmetic_scope": "Ideal sampling arithmetic at the stated numerical parameters. Independent tests of finite-precision code; no end-to-end interval certification.",
+  "paper": "https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/papers/number-tilted-gbs/manuscript.pdf",
+  "files": "https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/results/iteration119_weights/manifest.json"
+}
