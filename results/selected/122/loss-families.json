@@ -1,0 +1,270 @@
+{
+  "round": 122,
+  "revision": 10,
+  "archive_commit": "be9e847ece311034827295e493239e7bfb685fe4",
+  "units": "TV bounds are fractions, relative to the specified optical model, for an ideal-arithmetic sampling law. Timings measure floating-point generation and exclude one-time optical setup for the two quartic examples.",
+  "uniform_family": {
+    "assumptions": "Two independent spectra with 50 occupied squeezed inputs each. Any finite gains, any output width, squared operator norm of the passive transfer at most the stated transmission. Rank 50 and cap 15 were not timed.",
+    "rows": [
+      {
+        "max_intensity_transmission": "7/100",
+        "sources_per_spectrum": 50,
+        "spectra": 2,
+        "pair_cap_per_spectrum": 2,
+        "full_tv_upper": "0.00360628"
+      },
+      {
+        "max_intensity_transmission": "1/5",
+        "sources_per_spectrum": 50,
+        "spectra": 2,
+        "pair_cap_per_spectrum": 5,
+        "full_tv_upper": "0.00180540"
+      },
+      {
+        "max_intensity_transmission": "3/10",
+        "sources_per_spectrum": 50,
+        "spectra": 2,
+        "pair_cap_per_spectrum": 7,
+        "full_tv_upper": "0.00308458"
+      },
+      {
+        "max_intensity_transmission": "2/5",
+        "sources_per_spectrum": 50,
+        "spectra": 2,
+        "pair_cap_per_spectrum": 10,
+        "full_tv_upper": "0.00340573"
+      },
+      {
+        "max_intensity_transmission": "51/100",
+        "sources_per_spectrum": 50,
+        "spectra": 2,
+        "pair_cap_per_spectrum": 15,
+        "full_tv_upper": "0.00312211"
+      }
+    ]
+  },
+  "calibrated": {
+    "low": {
+      "ports": 1152,
+      "full_tv_upper": 0.002276,
+      "pnr": {
+        "candidates": 128,
+        "accepted": 33,
+        "seconds_per_accepted": 2.7828001393936574
+      },
+      "direct_click": {
+        "candidates": 128,
+        "accepted": 40,
+        "seconds_per_accepted": 2.506215932499617
+      }
+    },
+    "median": {
+      "ports": 1152,
+      "full_tv_upper": 0.003628,
+      "pnr": {
+        "candidates": 128,
+        "accepted": 26,
+        "seconds_per_accepted": 4.4210908538460405
+      },
+      "direct_click": {
+        "candidates": 128,
+        "accepted": 32,
+        "seconds_per_accepted": 4.783158096874104
+      }
+    },
+    "high": {
+      "ports": 1152,
+      "full_tv_upper": 0.004815,
+      "pnr": {
+        "candidates": 256,
+        "accepted": 70,
+        "seconds_per_accepted": 9.17874898999996
+      },
+      "direct_click": {
+        "candidates": 256,
+        "accepted": 69,
+        "seconds_per_accepted": 11.925118218839971
+      }
+    },
+    "dominated": {
+      "ports": 96,
+      "full_tv_upper": 0.004815,
+      "pnr": {
+        "candidates": 128,
+        "accepted": 29,
+        "seconds_per_accepted": 10.732223472413446
+      },
+      "direct_click": {
+        "candidates": 128,
+        "accepted": 39,
+        "seconds_per_accepted": 2.3616691128207514
+      },
+      "scope": "Synthetic 96 visible ports. High-power squeezing and inherited Gram-order bound. Score 50 auxiliary ports before marginalization."
+    }
+  },
+  "synthetic_quartic": {
+    "bright": {
+      "visible_ports": 32,
+      "sources_per_spectrum": 8,
+      "spectra": 2,
+      "eta": "7/100",
+      "quartic_full_tv_upper": "0.00030131",
+      "exact_model_mean": 17190695.555087615,
+      "reference_setup_seconds": 0.001988900010474026,
+      "input_sha256": "f6b54f70b03a6c6089c128df5b410e1c7575850d8306db886e3654332a082c05",
+      "readouts": [
+        {
+          "route": "pnr",
+          "rows": 4096,
+          "microseconds_per_delivered": 33.94206534323985,
+          "maximum_port": 18637244,
+          "observed_vacuum": 0.031494140625,
+          "optical_vacuum": 0.03216125783849077
+        },
+        {
+          "route": "click",
+          "rows": 4096,
+          "microseconds_per_delivered": 25.131567369385266,
+          "maximum_port": 1,
+          "observed_vacuum": 0.03125,
+          "optical_vacuum": 0.03216125783849077
+        }
+      ]
+    },
+    "unequal_loss": {
+      "visible_ports": 1152,
+      "sources_per_spectrum": 50,
+      "spectra": 2,
+      "eta": "7/100",
+      "quartic_full_tv_upper": "0.00360628",
+      "exact_model_mean": 317.33181429563865,
+      "reference_setup_seconds": 0.3969537999946624,
+      "input_sha256": "dd4dcf85e9d0e66fd41c555e1d137ecb630467bb7bb42eb32db3ffa97eae1fde",
+      "readouts": [
+        {
+          "route": "pnr",
+          "rows": 4096,
+          "microseconds_per_delivered": 21229.76379384056,
+          "maximum_port": 11,
+          "observed_vacuum": 0.14697265625,
+          "optical_vacuum": 0.1488866550511644
+        },
+        {
+          "route": "click",
+          "rows": 4096,
+          "microseconds_per_delivered": 21318.281323218,
+          "maximum_port": 1,
+          "observed_vacuum": 0.135009765625,
+          "optical_vacuum": 0.1488866550511644
+        }
+      ]
+    }
+  },
+  "rank_two_cap_15": {
+    "ports": 6,
+    "rank": 2,
+    "eta": 0.51,
+    "cap": 15,
+    "setup_seconds": 0.3591179000213742,
+    "readouts": [
+      {
+        "route": "pnr",
+        "seconds_per_row": 0.005643992675743448,
+        "rows": 1024,
+        "complete_click_empirical_tv": 0.07161700514486782
+      },
+      {
+        "route": "click",
+        "seconds_per_row": 0.005213421582027422,
+        "rows": 1024,
+        "complete_click_empirical_tv": 0.06376355580710813
+      }
+    ]
+  },
+  "sample_diagnostics": {
+    "unequal_loss": [
+      {
+        "route": "pnr",
+        "test": "joint vacuum",
+        "observed_discrepancy": 0.0019139988011644127,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00360628
+      },
+      {
+        "route": "pnr",
+        "test": "total photon number modulo 4096",
+        "observed_discrepancy": 0.014640327909454125,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00360628
+      },
+      {
+        "route": "click",
+        "test": "joint vacuum",
+        "observed_discrepancy": 0.013876889426164413,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00360628
+      }
+    ],
+    "bright": [
+      {
+        "route": "pnr",
+        "test": "joint vacuum",
+        "observed_discrepancy": 0.0006671172134907685,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00030131
+      },
+      {
+        "route": "pnr",
+        "test": "total photon number modulo 4096",
+        "observed_discrepancy": 0.012939453125,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00030131
+      },
+      {
+        "route": "click",
+        "test": "joint vacuum",
+        "observed_discrepancy": 0.0009112578384907685,
+        "sampling_allowance": 0.029419175634136974,
+        "model_allowance": 0.00030131
+      }
+    ],
+    "memory": {
+      "records": 1024,
+      "exact_multinomial_null_replicates": 100000,
+      "null_tv_quantiles": [
+        0.04805285190737082,
+        0.06947111528033259,
+        0.09548205148769323
+      ],
+      "empirical_full_click_tv": {
+        "pnr": 0.07161700514486782,
+        "click": 0.06376355580710813
+      }
+    }
+  },
+  "interval_tests": {
+    "unequal_loss": {
+      "minimum_gram_slack_pivot": 0.014625461896960356,
+      "model_mean_ball": "[317.3318142956386326883579522729548060697099031 +/- 5.99e-44]",
+      "input_specific_full_tv_ball": "[0.0034805327174129281825454789230006473327090 +/- 5.19e-44]"
+    },
+    "bright": {
+      "minimum_gram_slack_pivot": 0.03149121298542861,
+      "model_mean_ball": "[17190695.555087616645581197960365225086121305576 +/- 6.73e-40]",
+      "input_specific_full_tv_ball": "[0.0003013069555227579953782988158458076134381 +/- 5.04e-44]"
+    },
+    "memory": {
+      "minimum_gram_slack_pivot": 0.055097082428488146,
+      "model_mean_ball": "[22.597969858554287497673454364130501071215477113 +/- 2.75e-46]",
+      "input_specific_full_tv_ball": "[2.9575643506444436075438162088255e-8 +/- 8.40e-40]"
+    },
+    "independent_four_mode_fock": {
+      "pnr_cells": 144,
+      "click_refinements": 36,
+      "maximum_pnr_error": 2.7755575615628914e-17,
+      "maximum_click_error": 2.7755575615628914e-16
+    }
+  },
+  "calibrated_comparison": "../121/full-width-comparison.json",
+  "source": "https://github.com/qiyuanhuakai/deziroGBS/blob/be9e847ece311034827295e493239e7bfb685fe4/papers/number-tilted-gbs/README.md"
+}

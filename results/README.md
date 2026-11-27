@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 122 轮
+
+[整机误差界、三档计时与强损耗算例](selected/122/loss-families.json) · [归档校验](https://github.com/qiyuanhuakai/deziroGBS/blob/be9e847ece311034827295e493239e7bfb685fe4/results/iteration122_families/manifest.json)
+
 ## 第 121 轮
 
 [两种全宽正 P 配置的整机精度与每条记录耗时](selected/121/full-width-comparison.json) · [八项检验记录](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/results/iteration121_positive_p/comparison.json) · [归档校验](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/results/iteration121_positive_p/manifest.json)

@@ -4,10 +4,10 @@
 
 [运行四端口示例](docs/quickstart.md) · [采样核心与实验入口](docs/quickstart.md#采样核心与实验入口) · [历轮研究报告](docs/reports/README.md) · [精选结果](results/README.md) · [取回原始数据](docs/archive.md)
 
-## 第 121 轮进展
+## 第 122 轮进展
 
-在九章 3.0 公开的高功率光学标定上，本方法对 **1,152 个端口完整记录**的理想算术 TV 上界为 **0.4815%**。实测交付光子数记录耗时 **9.18 秒/条**，直接点击 **11.93 秒/条**。同输入的 Goodman 正 P 方法独立复现，在百万轨迹双精度训练后分别为 **51.54、51.25 微秒/条**。每条路线用 2,097,152 条完整记录检验，整机 TV 同时 99% 下界分别为 **0.785%、0.497%**。[第 9 版预印本](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/papers/number-tilted-gbs/manuscript.pdf) · [速度、精度与全部八项检验](results/selected/121/full-width-comparison.json)
+九章 3.0 的三档公开光学输入都完成了两种读出的整机误差验证。低、中、高功率的完整记录 TV 上界分别为 **0.2276%、0.3628%、0.4815%**。高功率光子数采样与直接点击实测为 **9.18、11.93 秒/条**。[三档速度与精度](results/selected/122/loss-families.json) · [同输入正 P 对照](results/selected/121/full-width-comparison.json)
 
-上述精度比较针对固定光学输入。硬件留出数据的三组 16 端口点击重数检验、浮点实现的验证范围和两种训练配置均可复核。[复现步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/d1654c41d24bf417bd4c6200f49fb302520c1086/papers/number-tilted-gbs/README.md) · [硬件结果](results/selected/120/full-record.json)
+第 10 版给出了适用于任意输出宽度和有限压缩强度的损耗定理。双谱各 50 个压缩输入、最大强度透射率至多 0.51 时，每谱保留 15 对残余光子，完整记录 TV 至多 **0.312211%**。这条理论界与三档实测采用不同算法。论文另附强损耗合成电路的两组 4,096 条双路线实验。[预印本 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/be9e847ece311034827295e493239e7bfb685fe4/papers/number-tilted-gbs/manuscript.pdf) · [证明、数据与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/be9e847ece311034827295e493239e7bfb685fe4/papers/number-tilted-gbs/README.md)
 
 **统计勘误**　第 83 轮旧 PNR 样本的随机流发生重叠，原有置信保证已撤回。第 84 轮使用分离的随机流重新采样。[随机流勘误](docs/corrections/83-rng.md) · [第 86 轮直接点击舍入勘误](docs/corrections/86-rounding.md)
