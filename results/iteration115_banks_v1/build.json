@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.5\\bin\\nvcc.EXE",
+    "-O3",
+    "-arch=sm_120",
+    "--fmad=false",
+    "-std=c++17",
+    "-shared",
+    "-Xcompiler",
+    "/MD,/utf-8",
+    "kernel.cu",
+    "-o",
+    "gpu.dll"
+  ],
+  "source_sha256": "aad9036a63590dd844a7c0296324f1350636a6681bd89a59e6286f697acd8cfe",
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "torch": "2.12.1+cu130"
+}

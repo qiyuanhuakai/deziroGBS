@@ -1,0 +1,234 @@
+{
+  "model": "Jiuzhang 3.0 optical transfer, 1152 outputs, original high power, two spectra",
+  "tv_units": "probabilities (multiply by 100 for percent); total photon TV is a model marginal",
+  "base_total_photon_tv_upper": 0.02740832492749053,
+  "tilted_total_photon_tv_upper": 8.378711209880685e-06,
+  "improvement": 3271.1862529847035,
+  "setup_seconds": 1.7628283000085503,
+  "measurements": [
+    {
+      "pnr": false,
+      "shots": 131072,
+      "batch_16384_median_us": 1.0563018797427048,
+      "click_total_empirical_tv_hardware": [
+        0.04106914148550815,
+        0.040162525478418476
+      ],
+      "fp32_fp64_differing_rows": 23,
+      "precision_check_rows": 32768
+    },
+    {
+      "pnr": true,
+      "shots": 131072,
+      "batch_16384_median_us": 0.34572143547961787,
+      "click_total_empirical_tv_hardware": [
+        0.04362531062089739,
+        0.04267476239112474
+      ],
+      "fp32_fp64_differing_rows": 0,
+      "precision_check_rows": 32768
+    }
+  ],
+  "mean_eight_bin_word_tv": 0.0007105714913952438,
+  "pair_reference_checks": [
+    {
+      "banks": [
+        34,
+        35
+      ],
+      "reference_tv": 2.8033542632815994e-05,
+      "model_tv": 0.021220915769740983,
+      "measured_hardware_tv": [
+        0.009633032614994895,
+        0.010529624124225792
+      ],
+      "frugal2": {
+        "complete_word_tv": 0.4751347749115558,
+        "count_pair_tv": 0.39685479431532705,
+        "us": 13.046630868984721,
+        "times": [
+          12.328759765978248,
+          13.19257810905583,
+          12.672802739643885,
+          13.873681638187918,
+          13.046630868984721
+        ]
+      },
+      "frugal4": {
+        "complete_word_tv": 0.2172500128389559,
+        "count_pair_tv": 0.21296738214688965,
+        "us": 53.29624022465396,
+        "times": [
+          56.595703142647835,
+          53.419482441086075,
+          51.21684571918195,
+          53.29624022465396,
+          51.72607421854991
+        ]
+      }
+    },
+    {
+      "banks": [
+        1,
+        143
+      ],
+      "reference_tv": 3.5041160255235086e-05,
+      "model_tv": 0.0008982076416096454,
+      "measured_hardware_tv": [
+        0.011927068515307252,
+        0.013014440677338675
+      ]
+    },
+    {
+      "banks": [
+        50,
+        70
+      ],
+      "reference_tv": 2.5374888075129573e-05,
+      "model_tv": 0.0014403158610741549,
+      "measured_hardware_tv": [
+        0.012395073666898185,
+        0.01274338863129787
+      ]
+    },
+    {
+      "banks": [
+        64,
+        65
+      ],
+      "reference_tv": 5.0634777803441646e-05,
+      "model_tv": 0.0010437438794699443,
+      "measured_hardware_tv": [
+        0.012768687178948945,
+        0.012623522543886044
+      ]
+    }
+  ],
+  "mean_pair_tv_hardware": [
+    0.013436547795504222,
+    0.013301870258035628
+  ],
+  "mean_hardware_pair_tv": 0.0017928782924621198,
+  "full_record_numeric_upper": 0.9963301493148042,
+  "native_checks": {
+    "mixed_fixed_3_empirical_tv": 0.001730688572526489,
+    "mixed_fixed_4_empirical_tv": 0.001594474959663692,
+    "mixed_fixed_6_empirical_tv": 0.00487874259364093,
+    "displaced_pnr_empirical_tv": 0.00630621957865483,
+    "displaced_click_empirical_tv": 0.004686846781891726
+  },
+  "held_out": [
+    {
+      "case": "gain035",
+      "ports": 1152,
+      "gain_scale": 0.35,
+      "mean_photons": 14.245050332999185,
+      "fixed_grid_full_tv_upper": 0.028487890763528378,
+      "tail": 0.0,
+      "base_total_tv_upper": 0.07583158391379077,
+      "heldout_fit_full_tv_upper": 1.1408812943681481e-06,
+      "odd_conditional_tv": 2.243576431579824e-06,
+      "odd_conditional_base_tv": 0.07638250247005743,
+      "characteristic_max_abs": 1.3523946941442396e-15
+    },
+    {
+      "case": "gain065",
+      "ports": 1152,
+      "gain_scale": 0.65,
+      "mean_photons": 49.130887883201275,
+      "fixed_grid_full_tv_upper": 0.0010877972131412901,
+      "tail": 8.096142961106344e-52,
+      "base_total_tv_upper": 0.048168107605871896,
+      "heldout_fit_full_tv_upper": 5.279731539860474e-08,
+      "odd_conditional_tv": 5.266172924199467e-08,
+      "odd_conditional_base_tv": 0.04816291718345355,
+      "characteristic_max_abs": 1.7763568394002505e-15
+    },
+    {
+      "case": "original",
+      "ports": 1152,
+      "gain_scale": 1.0,
+      "mean_photons": 116.2861251673403,
+      "fixed_grid_full_tv_upper": 8.378661053506087e-06,
+      "tail": 8.668790228566844e-18,
+      "base_total_tv_upper": 0.02740832492345665,
+      "heldout_fit_full_tv_upper": 1.5033103796529606e-07,
+      "odd_conditional_tv": 1.5068968195447412e-07,
+      "odd_conditional_base_tv": 0.02740660854184249,
+      "characteristic_max_abs": 4.249413978253322e-15
+    },
+    {
+      "case": "gain120",
+      "ports": 1152,
+      "gain_scale": 1.2,
+      "mean_photons": 167.45202024097,
+      "fixed_grid_full_tv_upper": 5.333643779003231e-05,
+      "tail": 7.519780990469323e-10,
+      "base_total_tv_upper": 0.020580469019624285,
+      "heldout_fit_full_tv_upper": 2.4010805957096797e-07,
+      "odd_conditional_tv": 2.394187836002678e-07,
+      "odd_conditional_base_tv": 0.020581392921090277,
+      "characteristic_max_abs": 7.540897614945145e-10
+    },
+    {
+      "case": "banks72",
+      "ports": 576,
+      "gain_scale": 1.0,
+      "mean_photons": 61.6371054764168,
+      "fixed_grid_full_tv_upper": 2.385982191067652e-05,
+      "tail": 1.5315362438193647e-31,
+      "base_total_tv_upper": 0.017129128404593446,
+      "heldout_fit_full_tv_upper": 1.5242109635717668e-07,
+      "odd_conditional_tv": 1.5326443843058779e-07,
+      "odd_conditional_base_tv": 0.01712712459801156,
+      "characteristic_max_abs": 2.837048893407221e-15
+    },
+    {
+      "case": "banks36",
+      "ports": 288,
+      "gain_scale": 1.0,
+      "mean_photons": 27.360336846074894,
+      "fixed_grid_full_tv_upper": 7.111014714258469e-05,
+      "tail": 1.0947037041591476e-47,
+      "base_total_tv_upper": 0.009961403531320917,
+      "heldout_fit_full_tv_upper": 3.9114767928526064e-07,
+      "odd_conditional_tv": 3.9172626071549e-07,
+      "odd_conditional_base_tv": 0.009938429981460052,
+      "characteristic_max_abs": 1.5867476851400899e-15
+    }
+  ],
+  "matched_16_channels": {
+    "full_click_word_model_tv": 0.021221011020604974,
+    "optical_cache_us": 0.01358642265358867,
+    "enumeration_s": 1.995568899961654,
+    "benchmark": [
+      {
+        "name": "gpu_direct",
+        "shots": 128,
+        "us": 1.9632811927294824,
+        "click_empirical_tv": 0.4933538443052518
+      },
+      {
+        "name": "gpu_pnr",
+        "shots": 128,
+        "us": 0.7796875252097379,
+        "click_empirical_tv": 0.48121361586344924,
+        "pair_empirical_tv": 0.0504870189527695
+      },
+      {
+        "name": "photonic_engines_cpu",
+        "shots": 128,
+        "us": 3246.2624985782895,
+        "click_empirical_tv": 0.5004630416685906,
+        "pair_empirical_tv": 0.05509150889581295
+      },
+      {
+        "name": "photonic_engines_cuda",
+        "shots": 128,
+        "us": 6681.88125200686,
+        "click_empirical_tv": 0.47483540187977485,
+        "pair_empirical_tv": 0.06734959596891248
+      }
+    ]
+  }
+}
