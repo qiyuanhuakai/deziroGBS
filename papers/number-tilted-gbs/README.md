@@ -4,11 +4,50 @@
 
 [Read the paper (PDF)](manuscript.pdf) · [Download the LaTeX source package](latex-source.zip) · [Matched 4,096-shot measurements](../../results/iteration115_panel_accuracy_v2/validation.json) · [Run protocol and input digest](../../results/iteration115_panel_accuracy_v2/protocol.json)
 
+## Revision 8
+
+On the archived Jiuzhang 3.0 high-power optical input, the complete PNR law and the complete direct-click law are each within **0.4815% TV** of their optical target in ideal arithmetic. The independent checker starts from the binary transfer and squeezing values. It encloses the photon-pair tails and verifies both four-dimensional matrix certificates using interval arithmetic. The sample generator uses floating point.
+
+[Paper](manuscript.pdf) · [Source package](latex-source.zip) · [Certificate](../../results/iteration120_contractions/operator_certificate.json) · [Interval verification](../../results/iteration120_contractions/interval_optical.json) · [Runtime data](../../results/iteration120_contractions) · [Checksums](../../results/iteration120_contractions/manifest.json)
+
+### Verify the principal claim on a CPU
+
+From the archive root, use Python 3.11 with NumPy and python-flint 0.9.0. The first command recomputes the bound, independently of the optimizer, GPU, compiled sampler and hardware downloads. The second checks all deposited decisions, hashes and source-package contents.
+
+~~~sh
+python experiments/iteration120_interval.py
+python experiments/iteration120_verify.py
+~~~
+
+### Generate samples and repeat the hardware checks
+
+The two routes each used 256 fresh candidates. PNR accepted 70 at 9.18 seconds per delivered row and direct clicks accepted 69 at 11.93 seconds per row. For generation use the C++17/OpenMP compiler, scientific Python dependencies from revision 7, and CUDA-enabled PyTorch (the archived benchmark used a laptop RTX 5080). Use a separate checkout and a fresh output directory for generating timed arrays. The runners reject overwriting an existing sample batch. The raw acquisition data remain in the official release. Predictions and raw file digests are deposited here.
+
+~~~sh
+python experiments/iteration120_replay.py --workers 2 --shots 64
+python experiments/iteration120_generate.py base 0 --workers 10 --output rerun/iteration120
+python experiments/iteration120_generate.py score 0 --workers 2 --output rerun/iteration120
+python experiments/iteration120_generate.py base 1 --workers 10 --output rerun/iteration120
+python experiments/iteration120_generate.py score 1 --workers 2 --output rerun/iteration120
+python experiments/iteration120_calibration.py evaluate
+python experiments/iteration120_response.py evaluate
+python experiments/iteration120_readout.py
+python experiments/iteration120_panel_certificate.py
+python experiments/iteration120_panel_laws.py
+python experiments/iteration120_hardware_bounds.py
+~~~
+
+The calibration and response predictions were separately frozen before captures 14–15 and 16. The gain-only model improved eight-bank occupancy TV and worsened conditional within-bank multiplicities. The Poisson and empty-bank refill models agree on every bank-occupancy event, and differ on detector multiplicities. The three panel confidence bounds refer to the joint multiplicities of two eight-port banks. To reconstruct both frozen prediction tables, use the corresponding freeze commands after restoring training capture 10 with the round-112 downloader. To propose new numerical dual matrices use iteration120_operator.py with Clarabel; the proof checker verifies the deposited matrices directly.
+
+[First frozen test](https://github.com/qiyuanhuakai/deziroGBS/tree/321db37fc23a43e9d1f7f8a037e03fbc68b362ae/results/iteration120_contractions) · [Second frozen test](https://github.com/qiyuanhuakai/deziroGBS/tree/b935454181ef17a42962e78b226d367b8ec07b16/results/iteration120_contractions) · [Capture 16 comparison](../../results/iteration120_contractions/response_holdout.json) · [Panel confidence results](../../results/iteration120_contractions/hardware_panel_bounds.json)
+
 ## Reproduce revision 7
+
+Use the [fixed revision 7 archive](https://github.com/qiyuanhuakai/deziroGBS/tree/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343) when checking the historical manifest and its paper.
 
 For either complete readout of the published high-power optical model, the layered rejection sampler gives a numerical TV upper bound of 0.4824% in ideal arithmetic. A separate event fixed using hardware file 10 gives simultaneous 99% TV lower limits of 3.766% and 3.813% between the same calibration and the two held-out averaged conditional click laws. See the paper for the sampling assumptions and measured throughput.
 
-[Accepted rows](../../results/iteration119_weights/clamped_bands_64.npz) · [All acceptance decisions](../../results/iteration119_weights/clamped_bands_64.json) · [Held-out counts](../../results/iteration119_weights/hardware_holdout.json) · [Frozen protocol](https://github.com/qiyuanhuakai/deziroGBS/tree/bfd6320687e6a193fe4d7194c81f79e3d4688d3d/results/iteration119_weights) · [Independent checks](../../results/iteration119_weights/audit.json) · [Revision 7 checksums](../../results/iteration119_weights/manifest.json)
+[Accepted rows](../../results/iteration119_weights/clamped_bands_64.npz) · [All acceptance decisions](../../results/iteration119_weights/clamped_bands_64.json) · [Held-out counts](../../results/iteration119_weights/hardware_holdout.json) · [Frozen protocol](https://github.com/qiyuanhuakai/deziroGBS/tree/bfd6320687e6a193fe4d7194c81f79e3d4688d3d/results/iteration119_weights) · [Independent checks](../../results/iteration119_weights/audit.json) · [Revision 7 checksums](https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/results/iteration119_weights/manifest.json)
 
 Run from the archive root, with the original round-115 optical input. The verification command checks the deposited artifacts. For new measurements, use a separate checkout with a C++17/OpenMP compiler, Python, NumPy, SciPy, threadpoolctl and Matplotlib. The hardware evaluation downloads the two source members for the byte-level audit.
 

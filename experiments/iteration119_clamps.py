@@ -31,7 +31,8 @@ def initialize(path,pilot):
 def process(args):
     route,index,pilot=args[:3];timer=perf_counter()
     conditioning=args[3] if len(args)>3 else 1.8
-    t=4*np.random.default_rng([119,92,int(pilot),route,index]).random()
+    domain=args[4] if len(args)>4 else 119
+    t=4*np.random.default_rng([domain,92,int(pilot),route,index]).random()
     stage=0;weights=[];accepted=True
     if t>=.5:
         inputs=[]
