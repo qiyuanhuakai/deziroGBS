@@ -1,0 +1,19 @@
+{
+  "training_file": 10,
+  "development_files": [
+    14,
+    15
+  ],
+  "fresh_file": 16,
+  "prediction_sha256": "e66331aac85e9a0b932c9d726b6c295afa645dff513bbc4450029522ec24b4f1",
+  "models": [
+    "published",
+    "adjusted",
+    "poisson",
+    "refill"
+  ],
+  "parameters": "Each additional model uses the same 144 training-file bank vacuum frequencies. Poisson adds independent equal-rate background counts in the eight ports. Refill replaces some empty banks with a draw from the nominal nonempty bank distribution.",
+  "primary": "Median across the 144 banks of empirical conditional-multiplicity TV on capture 16.",
+  "secondary": "All previously frozen metrics: maximum conditional multiplicity TV, connected RMS, three joint multiplicity TVs, 256-word TV and the round-119 event.",
+  "scope": "Independent test of previously developed models on one new acquisition; finite-file descriptive metrics."
+}
