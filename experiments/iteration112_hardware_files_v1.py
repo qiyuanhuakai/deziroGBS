@@ -17,7 +17,7 @@ def header(kind):
     return struct.pack('<I',zlib.crc32(data))+data
 
 
-def run(out):
+def run(out,numbers=(10,11)):
     out.mkdir(parents=True,exist_ok=True)
     path='results/iteration81_jiuzhang_inventory_v1/volume01.json'
     raw_index=subprocess.check_output(['git','cat-file','blob','HEAD:'+path],cwd=ROOT)
@@ -25,7 +25,7 @@ def run(out):
         raise ValueError('Archived volume index digest differs')
     index=json.loads(raw_index)
     rows=[]
-    for number in (10,11):
+    for number in numbers:
         name=f'jiuzhang3/data/high power/high power ({number}).bin'
         entry=next(a for a in index['files'] if a['filename']==name)
         target=out/name
