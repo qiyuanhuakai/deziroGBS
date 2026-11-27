@@ -1,0 +1,49 @@
+{
+  "input": "results/iteration83_loss_pilot_v1/input.npz",
+  "input_sha256": "cc730b6637b632fc6853d8bada79e578eb96a9d3d08a5f57e440afbd8520f746",
+  "preparation_commit": "6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1",
+  "channels_zero_based": [
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287
+  ],
+  "pnr_probe_channels": [
+    272,
+    280
+  ],
+  "optical_model": "25 paired inputs, two spectra, original high power",
+  "shots_per_method": 4096,
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "scipy": "1.16.2",
+  "torch": "2.12.1+cu130",
+  "mpmath": "1.3.0",
+  "cpu": "Intel Core Ultra 9 275HX",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "cpu_peer_threads": 1,
+  "cuda_driver": "621.40",
+  "upstream": {
+    "photonic-engines": "6c1ed6f8f11ffc9f3c268757f0fe0bd48a768d82",
+    "FrugalGBS": "fa8b796f2afebd4845a2e335e457735952617ef8"
+  },
+  "seeds": {
+    "PE": "115710000 + 1000 * is_cuda + 100 * spectrum + block_index; block_index = 0..31",
+    "tilted": "115680000 + is_pnr; each batch uses record offset 4096 * repetition; scored repetition 9",
+    "Frugal": "115960000 + 100 * K + 2 * repetition + spectrum; scored repetition 5",
+    "noise_floor": "SeedSequence([115,904,observable_index]); 1000 multinomials per observable"
+  },
+  "peer_device_method": "Upstream v2 window 4; 32-mode purification per spectrum; max_photons 100, censored shots forbidden"
+}
