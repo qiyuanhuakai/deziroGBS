@@ -22,4 +22,16 @@ python experiments/iteration115_paper_v2.py
 
 The first command measures both GPU readouts and both photonic-engines backends, including rare high-photon trajectories. The next two compute the PNR bounds, verify click and PNR histograms, recover the 4,096 scored surrogate rows by deterministic replay, benchmark FrugalGBS, and estimate finite-sample fluctuations. The last command regenerates both figures and the table. The manuscript describes the role of Codex in the research, analysis and writing.
 
-[Optical probabilities and sampler histograms](../../results/iteration115_panel_v1/panel.npz) · [Saved PNR and direct-click rows](../../results/iteration115_panel_accuracy_v2/scored_readouts.npz) · [Two-bank optical and model laws](../../results/iteration115_panel_accuracy_v2/pnr_laws.npz) · [Supplement checksums](../../results/iteration115_panel_accuracy_v2/manifest.json)
+[Optical probabilities and sampler histograms](../../results/iteration115_panel_v1/panel.npz) · [Saved PNR and direct-click rows](../../results/iteration115_panel_accuracy_v2/scored_readouts.npz) · [Two-bank optical and model laws](../../results/iteration115_panel_accuracy_v2/pnr_laws.npz) · [First paper-version checksums](https://github.com/qiyuanhuakai/deziroGBS/blob/25d53393e73ffb3b80d9a0628683b8a8f1428705/results/iteration115_panel_accuracy_v2/manifest.json)
+
+## Corrected positive-P comparison and fixed-number test
+
+Revision 3 compares the trained positive-P adaptation on the same 16-detector panel and separately tests a correlated Gaussian projection across six bank pairs. Its whole-circuit bound applies to the projected state; the fast sampler has its own throughput and error results. Run these commands from the archive root. They use the same optical file as the original study.
+
+```sh
+python experiments/iteration115_projection_review_v3.py
+python experiments/iteration115_goodman_review_v3.py
+python experiments/iteration115_review_certificates_v3.py
+```
+
+[Results and numerical bounds](../../results/iteration115_review_v3/validation.json) · [Raw conditional distributions](../../results/iteration115_review_v3) · [Revision checksums](../../results/iteration115_review_v3/manifest.json) · [Goodman et al.](https://arxiv.org/abs/2604.12330)

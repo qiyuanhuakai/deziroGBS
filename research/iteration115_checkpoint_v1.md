@@ -1,5 +1,9 @@
 # 用同一个有损光学模型生成光子数和直接点击
 
+## 论文第三版：同输入基线与固定总数下的空间误差
+
+原稿的 3,271 倍改善度量的是直接拟合的总光子数边际。在 34、35 号空间端口的完整 16 位点击分布上，原快速模型 TV 为 2.1221%；按 Goodman 等人公式独立实现并在该面板训练的直接点击基线估计为 0.3358%，区间为 0.0806%–0.5105%（对三项指标同时至少 99%，给定已训练的映射）。保留全部跨端口协方差的相关高斯投影给出 0.03114%。在全机恰有 116 个光子的条件下，该面板全空概率的误差从 0.9480 降至 0.000746 个百分点。保留每组一个方向时，新投影态的全设备迹距离数值上界为 7.918%；原快速采样器的整机吞吐来自另一种近似，其整记录精度仍受原有界限约束。此次比较使用公开公式的独立实现，全部评估数据均来自本项目的同输入计算。[修订论文](../papers/number-tilted-gbs/manuscript.pdf) · [六组面板与完整结果](../results/iteration115_review_v3/validation.json) · [上游论文](https://arxiv.org/abs/2604.12330)
+
 ## 4,096 条同输入正式对照与英文预印本
 
 [论文 PDF](../papers/number-tilted-gbs/manuscript.pdf) · [LaTeX 源码](../papers/number-tilted-gbs/latex-source.zip) · [逐次计时与直方图](../results/iteration115_panel_v1) · [独立精度核验](../results/iteration115_panel_accuracy_v2/validation.json)
