@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 114 轮 · 稠密干涉网络中的少源采样与九章光子数读出](https://github.com/qiyuanhuakai/deziroGBS/blob/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/research/iteration114_checkpoint_v1.md)
+
 [第 113 轮 · 逐端口光子数分布与九章八路探测读出](https://github.com/qiyuanhuakai/deziroGBS/blob/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/research/iteration113_checkpoint_v1.md)
 
 [第 112 轮 · 共享模式压缩、整记录误差预算与九章跨文件检验](https://github.com/qiyuanhuakai/deziroGBS/blob/cad142bb09f9348730613eee94446b057bcc7467/research/iteration112_checkpoint_v1.md)

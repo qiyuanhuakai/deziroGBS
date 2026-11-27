@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 114 轮
+
+- [整记录精度与同输入对照](selected/114/validation.json) · [百万端口与高精度点击](https://github.com/qiyuanhuakai/deziroGBS/tree/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/results/iteration114_precise_v1) · [九章原功率矩阵与实测](https://github.com/qiyuanhuakai/deziroGBS/tree/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/results/iteration114_saturation_v1)
+
 ## 第 113 轮
 
 - [双读出与九章 144 个空间端口核验](selected/113/validation.json) · [光子数系数与采样记录](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_deep_v1) · [硬件直方图](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_device_v1)
