@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 117 轮
+
+[相关量子态的两条整机读出、三档功率与完整面板误差](selected/117/correlated-readout.json) · [逐条样本与复核](https://github.com/qiyuanhuakai/deziroGBS/blob/adce0699a5fe5f4b6d162317d31165cfaaeae652/papers/number-tilted-gbs/README.md)
+
 ## 第 116 轮
 
 [总数校正下界、八组空间过滤、两条路线实测](selected/116/spatial-filter.json) · [联合分布和面板结果](https://github.com/qiyuanhuakai/deziroGBS/blob/c679bf9a5f1bcdf06347d9d9b31bb48141d989f5/results/iteration116_sectors/manifest.json)

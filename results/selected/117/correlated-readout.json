@@ -1,0 +1,138 @@
+{
+  "archive": "adce0699a5fe5f4b6d162317d31165cfaaeae652",
+  "reference": "Two-spectrum optical model, separately published Jiuzhang 3 calibrations",
+  "width": 1152,
+  "training": "No fitting to click or total-count data",
+  "power_results": {
+    "low": {
+      "mean_target": 47.93477969174971,
+      "total_number_tv": [
+        [
+          0.0331186591416462,
+          0.033118659141647196
+        ],
+        [
+          0.01319832188008492,
+          0.013198321880085956
+        ]
+      ],
+      "complete_single_bank_mean_tv": [
+        0.003400764445664505,
+        0.0005763112420551204
+      ],
+      "single_banks_improved": 142,
+      "single_banks": 144,
+      "mean_two_bank_empty_word_tv": [
+        0.005006269803530471,
+        0.0008316108717487129
+      ],
+      "two_bank_words_improved": 10265,
+      "pairs": 10296,
+      "full_device_tv_upper": [
+        0.4513458697176237,
+        0.45536089757666254
+      ]
+    },
+    "median": {
+      "mean_target": 77.80679761911273,
+      "total_number_tv": [
+        [
+          0.027050978985992215,
+          0.027050978986012195
+        ],
+        [
+          0.00980109005059193,
+          0.009801090050613175
+        ]
+      ],
+      "complete_single_bank_mean_tv": [
+        0.003032928528141728,
+        0.0006223117439768134
+      ],
+      "single_banks_improved": 139,
+      "single_banks": 144,
+      "mean_two_bank_empty_word_tv": [
+        0.0038857454417180744,
+        0.0008608781384434796
+      ],
+      "two_bank_words_improved": 10049,
+      "pairs": 10296,
+      "full_device_tv_upper": [
+        0.49286775295522245,
+        0.49595000336351985
+      ]
+    },
+    "high": {
+      "mean_target": 116.28612516734026,
+      "total_number_tv": [
+        [
+          0.021664718632423034,
+          0.0216647186341911
+        ],
+        [
+          0.007360486316595206,
+          0.007360486318508234
+        ]
+      ],
+      "complete_single_bank_mean_tv": [
+        0.002577428486069488,
+        0.0005985578770176745
+      ],
+      "single_banks_improved": 137,
+      "single_banks": 144,
+      "mean_two_bank_empty_word_tv": [
+        0.0029027511649025303,
+        0.0007974852982614695
+      ],
+      "two_bank_words_improved": 9909,
+      "pairs": 10296,
+      "full_device_tv_upper": [
+        0.5204803749407837,
+        0.5229024696495971
+      ]
+    }
+  },
+  "column_order": [
+    "original_four_photon_core",
+    "first_order_coherence_restored"
+  ],
+  "stress_panel": [
+    {
+      "banks": [
+        34,
+        35
+      ],
+      "pnr_tv": [
+        0.004378560206829089,
+        0.005796668851008143
+      ],
+      "click_tv": 0.004323193261519415
+    },
+    {
+      "banks": [
+        34,
+        35
+      ],
+      "pnr_tv": [
+        0.005158183147946186,
+        0.0065963910871751135
+      ],
+      "click_tv": 0.00505503253920106
+    }
+  ],
+  "high_power_4096_timing_ms_per_row": {
+    "benchmark": [
+      21.933223266501045,
+      22.382780273431994
+    ],
+    "transport_benchmark": [
+      421.90079680173653,
+      22.280124267624046
+    ],
+    "repeat_transport_benchmark": [
+      20.614050439419884,
+      20.7868398681228
+    ]
+  },
+  "timing_note": "PNR followed by direct threshold; transport first-run PNR includes a 1620.64 s elapsed-time outlier for one 32-row batch. Replayed records use the same seeds."
+}
