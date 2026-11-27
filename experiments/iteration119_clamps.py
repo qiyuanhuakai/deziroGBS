@@ -16,12 +16,12 @@ def excess(scale,overlap_sq):
     return 2*scale*d/(np.sqrt((scale-1)**2+4*scale*d)+scale-1)
 
 
-def initialize(path,pilot):
+def initialize(path,pilot,optics=None):
     global models,data,BLAS,reference
     BLAS=threadpool_limits(limits=1)
     with np.load(path) as f:data={k:f[k] for k in f}
     reference=pilot
-    t,ss=hardware();models=[]
+    t,ss=hardware() if optics is None else optics;models=[]
     for s,caps in zip(ss,[(7,9,10),(5,6,6)]):
         q,S,_,fields,_=prepare(t,s,caps[0])
         retention=[prepare(t,s,k)[-1] for k in caps]

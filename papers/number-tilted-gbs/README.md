@@ -1,8 +1,44 @@
-# Subpercent full-record error for a 1,152-port Gaussian boson model
+# Full-record error bounds for classical sampling of lossy Gaussian boson models
 
 **qiyuanhuakai** · 27 November 2026
 
 [Read the paper (PDF)](manuscript.pdf) · [Download the LaTeX source package](latex-source.zip) · [Matched 4,096-shot measurements](../../results/iteration115_panel_accuracy_v2/validation.json) · [Run protocol and input digest](../../results/iteration115_panel_accuracy_v2/protocol.json)
+
+## Revision 10
+
+Section 2 proves a full-record TV bound for arbitrary output width and finite squeezing under an intensity transmission ceiling. The 50-source, 15-pair bound is analytical. The timed calibrated sampler in Table 2 uses nested lower-order truncations. Appendix A derives a width-linear sequential implementation at fixed rank and cutoff and a brightness-uniform local number instrument.
+
+[Three-power input certificates and complete runs](../../results/iteration122_families) · [Exact rational family bounds](../../results/iteration122_families/families.json) · [Synthetic optical checks](../../results/iteration122_families/optical_checks.json) · [Sample checks](../../results/iteration122_families/sample_checks.json) · [SHA-256 manifest](../../results/iteration122_families/manifest.json)
+
+Run from the repository root. The archive verifier requires NumPy and its experiment imports. The interval checks additionally use python-flint 0.9.0. The native examples use an OpenMP-enabled C++17 compiler. The clamped generator uses the CUDA and Python environment documented below.
+
+~~~sh
+python experiments/iteration122_verify.py
+python experiments/iteration122_powers.py verify
+python experiments/iteration122_family_certificate.py
+~~~
+
+The raw matrices and squeezing arrays for all three public powers are stored with the source file hashes. To regenerate in a separate results directory or scratch checkout, preserve the optical inputs and remove previously generated destination files there. Run the following for each new calibrated power (`low`, `median`) and each readout (`0` PNR, `1` direct clicks). The high-power delivery comes from the archived round-120 run.
+
+~~~sh
+python experiments/iteration122_powers.py base low 0
+python experiments/iteration122_powers.py score low 0
+python experiments/iteration122_dilation.py base 0
+python experiments/iteration122_dilation.py score 0
+~~~
+
+For the fast four-photon law, an input NPZ contains a complex transfer `T` (visible outputs by occupied inputs) and real nonnegative `squeezing` (spectra by occupied inputs, phases absorbed into columns). Set a rational intensity ceiling at least as large as the squared operator norm. The following commands write fresh samples for the two archived synthetic inputs. The per-record timings cover generation of both spectra, their merger and production of the visible records, after setup. The generic rank-two reference, local CDF checks and explicit Fock tests have separate entry points.
+
+~~~sh
+python experiments/iteration122_loss.py sample --input results/iteration122_families/unequal_loss/input.npz --output replica-1152.npz --eta 7/100 --seed 122
+python experiments/iteration122_loss.py sample --input results/iteration122_families/bright/input.npz --output replica-bright.npz --eta 7/100 --seed 123
+python experiments/iteration122_memory.py
+python experiments/iteration122_readout_check.py
+python experiments/iteration122_tests.py
+python experiments/iteration122_statistics.py
+~~~
+
+The following historical instructions refer to the [fixed revision 9](https://github.com/qiyuanhuakai/deziroGBS/tree/d1654c41d24bf417bd4c6200f49fb302520c1086).
 
 ## Revision 9
 

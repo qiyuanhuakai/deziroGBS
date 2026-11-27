@@ -45,8 +45,8 @@ def pair_masses(g,f):
     return [sum(prob[:k+1]) for k in range(11)]
 
 
-def optical_data():
-    with np.load(INPUT) as src:
+def optical_data(input_path=INPUT):
+    with np.load(input_path) as src:
         raw=src['T'];squeezing=src['squeezing'].T.repeat(2,axis=1);order=np.argsort(src['order'])
     # A row permutation cancels from T^dagger T.
     m,n=raw.shape

@@ -31,10 +31,10 @@ def conditioned_virtual(q,S,chol,first,last,rng):
     return (noise+q@(a-q.conj().T@noise)).conj()
 
 
-def initialize():
+def initialize(optics=None):
     global models,limit
     limit=threadpool_limits(limits=1)
-    t,ss=hardware();models=[]
+    t,ss=hardware() if optics is None else optics;models=[]
     for j,s in enumerate(ss):
         stops=[2,5,7] if j==0 else [2,5]
         model=prepare(t,s,stops[-1])

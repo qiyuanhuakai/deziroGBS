@@ -1,0 +1,61 @@
+{
+  "unequal_loss": [
+    {
+      "route": "pnr",
+      "test": "joint vacuum",
+      "observed_discrepancy": 0.0019139988011644127,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00360628
+    },
+    {
+      "route": "pnr",
+      "test": "total photon number modulo 4096",
+      "observed_discrepancy": 0.014640327909454125,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00360628
+    },
+    {
+      "route": "click",
+      "test": "joint vacuum",
+      "observed_discrepancy": 0.013876889426164413,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00360628
+    }
+  ],
+  "bright": [
+    {
+      "route": "pnr",
+      "test": "joint vacuum",
+      "observed_discrepancy": 0.0006671172134907685,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00030131
+    },
+    {
+      "route": "pnr",
+      "test": "total photon number modulo 4096",
+      "observed_discrepancy": 0.012939453125,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00030131
+    },
+    {
+      "route": "click",
+      "test": "joint vacuum",
+      "observed_discrepancy": 0.0009112578384907685,
+      "sampling_allowance": 0.029419175634136974,
+      "model_allowance": 0.00030131
+    }
+  ],
+  "memory": {
+    "records": 1024,
+    "exact_multinomial_null_replicates": 100000,
+    "null_tv_quantiles": [
+      0.04805285190737082,
+      0.06947111528033259,
+      0.09548205148769323
+    ],
+    "empirical_full_click_tv": {
+      "pnr": 0.07161700514486782,
+      "click": 0.06376355580710813
+    }
+  }
+}

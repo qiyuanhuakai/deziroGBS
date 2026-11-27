@@ -16,24 +16,24 @@ from iteration120_replay import OUT,stable,init
 FIRST=2**20
 
 
-def init_band():
-    band.initialize()
+def init_band(optics=None):
+    band.initialize(optics)
     band.stable=stable
 
 
-def generate(route,n,workers):
+def generate(route,n,workers,optics=None,first=FIRST):
     OUT.mkdir(exist_ok=True)
     path=OUT/f'base_{route}_{n}.npz'
     if path.exists():raise FileExistsError(path)
     start_time=perf_counter()
-    init_band()
-    t,ss=band.hardware()
+    init_band(optics)
+    t,ss=band.hardware() if optics is None else optics
     setups=[band.quartic(t,s) for s in ss]
     arrays={};stats=[]
-    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp,ProcessPoolExecutor(workers,initializer=init_band) as pool:
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp,ProcessPoolExecutor(workers,initializer=init_band,initargs=(optics,)) as pool:
         lib=band.native(tmp)
         for j,setup in enumerate(setups):
-            start=FIRST;selected=[];log=[]
+            start=first;selected=[];log=[]
             while len(selected)<n:
                 # Schedule independent proposals across multiple batches before
                 # waiting for rare expensive bands. Always retain proposal order.
@@ -45,7 +45,7 @@ def generate(route,n,workers):
                     log.append(info)
                     if row is not None:selected.append(row)
                 start+=count
-                print(route,j,'accepted',len(selected),'of',start-FIRST,flush=True)
+                print(route,j,'accepted',len(selected),'of',start-first,flush=True)
             key=f'{route}_{j}'
             records,fields,latent=map(np.stack,zip(*selected[:n]))
             arrays['row'+key]=records;arrays['v'+key]=fields;arrays['z'+key]=latent;arrays['log'+key]=np.array(log)
@@ -57,19 +57,19 @@ def generate(route,n,workers):
     a,b=[arrays[f'row{route}_{j}'] for j in (0,1)]
     arrays['click' if route else 'pnr']=a|b if route else np.add(a,b,dtype=np.uint32)
     np.savez_compressed(path,**arrays)
-    info=dict(direct=bool(route),candidates=n,first_proposal=FIRST,workers=workers,
+    info=dict(direct=bool(route),candidates=n,first_proposal=first,workers=workers,
               wall_seconds=perf_counter()-start_time,spectra=stats)
     path.with_suffix('.json').write_text(json.dumps(info,indent=2)+'\n')
     print(info,flush=True)
 
 
-def score(route,n,workers):
+def score(route,n,workers,optics=None,domain=120):
     path=OUT/f'base_{route}_{n}.npz';name='click' if route else 'pnr'
     target=OUT/f'full_{route}_{n}.npz'
     if target.exists():raise FileExistsError(target)
     timer=perf_counter()
-    with ProcessPoolExecutor(workers,initializer=init,initargs=(path,)) as pool:
-        rows=list(pool.map(clamp.process,[(route,i,False,1.8,120) for i in range(n)]))
+    with ProcessPoolExecutor(workers,initializer=init,initargs=(path,optics)) as pool:
+        rows=list(pool.map(clamp.process,[(route,i,False,1.8,domain) for i in range(n)]))
     keep=[x['index'] for x in rows if x['accepted']]
     with np.load(path) as f:np.savez_compressed(target,**{name:f[name][keep],'accepted_indices':keep})
     base=json.loads(path.with_suffix('.json').read_bytes())

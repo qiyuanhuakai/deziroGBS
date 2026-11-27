@@ -24,10 +24,10 @@ def stable(S,v,J,cap,threshold,compensated=False):
     return total/(len(weak)+1),len(weak)
 
 
-def init(path):
+def init(path,optics=None):
     import torch
     torch.set_num_threads(1)
-    clamps.initialize(path,{})
+    clamps.initialize(path,{},optics)
     clamps.stable=stable
 
 
