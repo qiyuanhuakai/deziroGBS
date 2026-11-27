@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 118 轮
+
+[完整记录误差界、CPU 速度与三组 16 端口空间误差](selected/118/full-record.json) · [原始记录与校验清单](https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/results/iteration118_auxiliary/manifest.json)
+
 ## 第 117 轮
 
 [相关量子态的两条整机读出、三档功率与完整面板误差](selected/117/correlated-readout.json) · [逐条样本与复核](https://github.com/qiyuanhuakai/deziroGBS/blob/adce0699a5fe5f4b6d162317d31165cfaaeae652/papers/number-tilted-gbs/README.md)

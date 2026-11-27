@@ -1,0 +1,95 @@
+{
+  "archive_commit": "ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45",
+  "paper": "https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/papers/number-tilted-gbs/manuscript.pdf",
+  "target": "Calibrated high-power optical model, 1152 physical detector ports",
+  "pair_caps": [
+    7,
+    5
+  ],
+  "full_record_tv_upper": 0.03091351917028392,
+  "full_record_one_sided_99_upper": 0.023296601202835127,
+  "environment_samples": 32768,
+  "total_number": {
+    "pair_caps": [
+      7,
+      5
+    ],
+    "total_number_tv_lower": 0.00017920924776204417,
+    "total_number_tv_upper": 0.00017920924978769774,
+    "modulo_alias_bound": 2.0256535645522553e-12,
+    "mean_photons": 116.27363526154213,
+    "target_mean": 116.28612516734103
+  },
+  "workers": 4,
+  "readouts": [
+    {
+      "route": "PNR",
+      "shots": 8,
+      "elapsed_seconds_per_delivered_row": 57.226923112502845,
+      "median_individual_row_seconds": 132.17830679999315
+    },
+    {
+      "route": "direct threshold",
+      "shots": 8,
+      "elapsed_seconds_per_delivered_row": 36.62120967500232,
+      "median_individual_row_seconds": 94.82590374999563
+    }
+  ],
+  "panels": [
+    {
+      "banks": [
+        34,
+        35
+      ],
+      "complete_click_tv": 3.6390811337711136e-05,
+      "two_bank_pnr_modulo_tv": 3.685642755676073e-05,
+      "complete_pnr_tv_upper": 0.0014889835944621452
+    },
+    {
+      "banks": [
+        71,
+        72
+      ],
+      "complete_click_tv": 2.7553740809912365e-05,
+      "two_bank_pnr_modulo_tv": 2.829502633490687e-05,
+      "complete_pnr_tv_upper": 0.0012268696687494198
+    },
+    {
+      "banks": [
+        102,
+        143
+      ],
+      "complete_click_tv": 3.1542335303474816e-05,
+      "two_bank_pnr_modulo_tv": 3.235184781568203e-05,
+      "complete_pnr_tv_upper": 0.001235176641671158
+    }
+  ],
+  "finite_precision_replay": [
+    {
+      "direct": true,
+      "spectrum": 0,
+      "index": 1,
+      "deferred_port": 684,
+      "worst_prefix": 967,
+      "original_residual": 6.369008033306016e-07,
+      "prefixes_checked": 29,
+      "max_unit_ket_distance": 1.4696560354365739e-07,
+      "ket_distance_at_worst": 1.4419895642991647e-07,
+      "changed_rank_one_outcomes": 0
+    },
+    {
+      "direct": false,
+      "spectrum": 1,
+      "index": 7,
+      "deferred_port": 619,
+      "worst_prefix": 741,
+      "original_residual": 2.40464185353753e-09,
+      "prefixes_checked": 34,
+      "max_unit_ket_distance": 2.815272762917995e-08,
+      "ket_distance_at_worst": 2.120291466070118e-09,
+      "changed_rank_one_outcomes": 0
+    }
+  ],
+  "reproduction": "https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/papers/number-tilted-gbs/README.md",
+  "manifest": "https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/results/iteration118_auxiliary/manifest.json"
+}

@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 118 轮 · 高功率整机误差界与三组完整面板检验](https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/papers/number-tilted-gbs/manuscript.pdf) · [复核步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/papers/number-tilted-gbs/README.md)
+
 [第 117 轮 · 相关四光子核、三档功率与逐项光子数检验](https://github.com/qiyuanhuakai/deziroGBS/blob/adce0699a5fe5f4b6d162317d31165cfaaeae652/papers/number-tilted-gbs/manuscript.pdf) · [复核步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/adce0699a5fe5f4b6d162317d31165cfaaeae652/papers/number-tilted-gbs/README.md)
 
 [第 116 轮 · 总数校正的误差下界、空间过滤和跨面板检验](https://github.com/qiyuanhuakai/deziroGBS/blob/c679bf9a5f1bcdf06347d9d9b31bb48141d989f5/papers/number-tilted-gbs/manuscript.pdf) · [复现步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/c679bf9a5f1bcdf06347d9d9b31bb48141d989f5/papers/number-tilted-gbs/README.md)
