@@ -2,6 +2,8 @@
 
 ## 第 115 轮
 
+- [positive-P 同输入对照与空间误差](selected/115/spatial-review.json) · [修订论文](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/papers/number-tilted-gbs/manuscript.pdf)
+
 - [4,096 条正式对照和完整 16 通道光子数误差](selected/115/matched-4096.json) · [逐条采样和光学分布](https://github.com/qiyuanhuakai/deziroGBS/tree/25d53393e73ffb3b80d9a0628683b8a8f1428705/results/iteration115_panel_accuracy_v2) · [预印本 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/25d53393e73ffb3b80d9a0628683b8a8f1428705/papers/number-tilted-gbs/manuscript.pdf)
 
 - [两种读出的速度与精度](selected/115/validation.json) · [六组光学输入的留出检验](https://github.com/qiyuanhuakai/deziroGBS/tree/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_robustness_v1) · [逐空间端口对的 81 类联合分布](https://github.com/qiyuanhuakai/deziroGBS/tree/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_pair_banks_v1)

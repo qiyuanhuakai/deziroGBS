@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 115 轮修订论文与空间检验 | `archive/iteration115-visible-sectors-v3` | [论文 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/papers/number-tilted-gbs/manuscript.pdf) · [LaTeX 源码](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/papers/number-tilted-gbs/latex-source.zip) · [研究报告](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/research/iteration115_checkpoint_v1.md) · [复核清单](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/results/iteration115_review_v3/manifest.json) |
 | 第 115 轮论文与 4,096 条正式对照 | `archive/iteration115-visible-sectors-v2` | [论文 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/25d53393e73ffb3b80d9a0628683b8a8f1428705/papers/number-tilted-gbs/manuscript.pdf) · [LaTeX 源码](https://github.com/qiyuanhuakai/deziroGBS/blob/25d53393e73ffb3b80d9a0628683b8a8f1428705/papers/number-tilted-gbs/latex-source.zip) · [正式对照](https://github.com/qiyuanhuakai/deziroGBS/tree/25d53393e73ffb3b80d9a0628683b8a8f1428705/results/iteration115_panel_v1) · [核验与校验清单](https://github.com/qiyuanhuakai/deziroGBS/tree/25d53393e73ffb3b80d9a0628683b8a8f1428705/results/iteration115_panel_accuracy_v2) |
 | 第 115 轮首版 | `archive/iteration115-visible-sectors-v1` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/research/iteration115_checkpoint_v1.md) · [光学模型与计时](https://github.com/qiyuanhuakai/deziroGBS/tree/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_tilt_v1) · [实测端口对](https://github.com/qiyuanhuakai/deziroGBS/tree/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_pair_banks_v1) · [核验与校验清单](https://github.com/qiyuanhuakai/deziroGBS/tree/6bee5fc91af41fc0fb4a84abf0e4d983d7e3a6b1/results/iteration115_release_v1) |
 | 第 114 轮 | `archive/iteration114-source-rank-v1` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/research/iteration114_checkpoint_v1.md) · [双读出与宽光路](https://github.com/qiyuanhuakai/deziroGBS/tree/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/results/iteration114_positive_v1) · [配对采样](https://github.com/qiyuanhuakai/deziroGBS/tree/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/results/iteration114_pairs_v1) · [核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/results/iteration114_release_v1) |
@@ -34,8 +35,8 @@
 **只下载一个结果目录**　以下示例只检出第 115 轮的论文和正式对照核验文件。其他轮次可替换标签和目录名。
 
 ```sh
-git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration115-visible-sectors-v2 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set --no-cone "/papers/number-tilted-gbs/" "/results/iteration115_panel_accuracy_v2/"
+git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration115-visible-sectors-v3 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set --no-cone "/papers/number-tilted-gbs/" "/results/iteration115_panel_accuracy_v2/" "/results/iteration115_review_v3/"
 git -C deziroGBS-evidence checkout
 ```
 
