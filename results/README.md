@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 120 轮
+
+[整机误差证书、两条读出的完整耗时与留出硬件精度](selected/120/full-record.json) · [逐项校验](https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/results/iteration120_contractions/manifest.json)
+
 ## 第 119 轮
 
 [完整记录误差界、分路线计时与留出硬件结果](selected/119/full-record.json) · [完整记录与校验](https://github.com/qiyuanhuakai/deziroGBS/blob/d467fa25f2e5277e78bfe1cd1a9d2d14f925f343/results/iteration119_weights/manifest.json)

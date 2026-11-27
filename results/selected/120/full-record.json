@@ -1,0 +1,176 @@
+{
+  "round": 120,
+  "archive_commit": "4fcb0614cc41cacf1877ceb17e66808f628c48fb",
+  "optical_target": "Jiuzhang 3.0 published high-power two-spectrum model, 1152 physical detector ports",
+  "mean_detected_photons": 116.286,
+  "full_record_tv_upper": 0.004815,
+  "arithmetic_scope": "Exact-arithmetic sampler for the dyadic archived transfer and squeezing inputs; no claim of certified runtime floating-point sampling.",
+  "readouts": {
+    "PNR": {
+      "candidates": 256,
+      "accepted": 70,
+      "base_workers": 10,
+      "scoring_workers": 2,
+      "base_wall_seconds": 185.8853100000415,
+      "scoring_wall_seconds": 456.62711929995567,
+      "seconds_per_accepted": 9.17874898999996
+    },
+    "direct_click": {
+      "candidates": 256,
+      "accepted": 69,
+      "base_workers": 10,
+      "scoring_workers": 2,
+      "base_wall_seconds": 502.7136740999995,
+      "scoring_wall_seconds": 320.11948299995856,
+      "seconds_per_accepted": 11.925118218839971
+    }
+  },
+  "same_input_frugal": {
+    "cutoff": 2,
+    "full_ports": 1152,
+    "causal_prefix_ports": 16,
+    "covariance_max_errors": [
+      4.996003610813204e-16,
+      1.1535911115245767e-16
+    ],
+    "prefix_optical_max_error": 6.024460550345555e-14,
+    "full_click_tv_lower": 0.1077107276971951,
+    "archived_cpu_workers": 1,
+    "archived_samples": 4,
+    "archived_seconds_per_full_record": 1513.6703325000126,
+    "archive_scope": "CPU FP64 adapter with spectra processed sequentially. Full-input causal tree for the first 16 physical ports."
+  },
+  "replay": {
+    "candidates": 128,
+    "identical_decisions": 128,
+    "old_score_seconds": 1293.58,
+    "new_score_seconds_by_route": [
+      124.15,
+      73.45
+    ],
+    "scope": "Different worker and accelerator resources; excludes generating candidates."
+  },
+  "hardware": {
+    "protocol_before_files_14_15": "321db37fc23a43e9d1f7f8a037e03fbc68b362ae",
+    "protocol_before_file_16": "b935454181ef17a42962e78b226d367b8ec07b16",
+    "calibration_files": [
+      {
+        "file": 14,
+        "rows": 1478996,
+        "sha256": "a24a839707348e89c2cb2957d35d448afd71fc33c857cf9bdec6e95064434186",
+        "published": {
+          "conditional_multiplicity_tv_median": 0.001944173262836123,
+          "eight_bank_tv": 0.04095716611867524,
+          "connected_rms": 0.0004325904049931156
+        },
+        "adjusted": {
+          "conditional_multiplicity_tv_median": 0.00941311531330178,
+          "eight_bank_tv": 0.011524248505553608,
+          "connected_rms": 0.0004364553092644497
+        }
+      },
+      {
+        "file": 15,
+        "rows": 1506670,
+        "sha256": "d3da8687f1b4b6ce8c63d4e89bc313542586642c762e1a9e2e3ea4fa371f2210",
+        "published": {
+          "conditional_multiplicity_tv_median": 0.0020503889209452205,
+          "eight_bank_tv": 0.040260717325045006,
+          "connected_rms": 0.0004303310224678231
+        },
+        "adjusted": {
+          "conditional_multiplicity_tv_median": 0.009998951795545073,
+          "eight_bank_tv": 0.010603300249598574,
+          "connected_rms": 0.00043356726225598396
+        }
+      }
+    ],
+    "response_file": {
+      "file": 16,
+      "rows": 1476267,
+      "sha256": "53d7caf231764adec3df9369540a9ea2dd9f951422d011880540a144aa128f66",
+      "metrics": {
+        "published": {
+          "conditional_multiplicity_tv_median": 0.0020918717429875087,
+          "conditional_multiplicity_tv_max": 0.010827900037531434,
+          "connected_rms": 0.0004320690427770242,
+          "joint_pair_tv": [
+            0.01029596982246612,
+            0.01208645370544887,
+            0.015080125400021013
+          ],
+          "eight_bank_tv": 0.04033173534709705,
+          "fixed_event_error": 0.03962874862679078
+        },
+        "adjusted": {
+          "conditional_multiplicity_tv_median": 0.009972617340919188,
+          "conditional_multiplicity_tv_max": 0.03177829829149347,
+          "connected_rms": 0.00043632071653307086,
+          "joint_pair_tv": [
+            0.008164048089484689,
+            0.008503654114502015,
+            0.012572135579642745
+          ],
+          "eight_bank_tv": 0.011571979244301017,
+          "fixed_event_error": 0.0020787289658001917
+        },
+        "poisson": {
+          "conditional_multiplicity_tv_median": 0.0020633812507468673,
+          "conditional_multiplicity_tv_max": 0.009590031131365633,
+          "connected_rms": 0.00047042832824711737,
+          "joint_pair_tv": [
+            0.003312587850373299,
+            0.003203885049000897,
+            0.004822855254906849
+          ],
+          "eight_bank_tv": 0.011554815163666998,
+          "fixed_event_error": 0.00180525503424811
+        },
+        "refill": {
+          "conditional_multiplicity_tv_median": 0.002091871742987492,
+          "conditional_multiplicity_tv_max": 0.010827900037531476,
+          "connected_rms": 0.0004704283282471226,
+          "joint_pair_tv": [
+            0.0031539247439577667,
+            0.003568948816653764,
+            0.005519162137147204
+          ],
+          "eight_bank_tv": 0.011554815163666998,
+          "fixed_event_error": 0.00180525503424811
+        }
+      }
+    },
+    "hardware_projection": "Three bank pairs with 81 click-multiplicity cells per pair. TV values are fractions.",
+    "confidence": 0.99,
+    "scope": "Post-protocol simultaneous sensitivity analysis for all four frozen models and all three specified 81-cell projections. The hardware estimand is the file average of conditional laws; a supermartingale permits stopping and serial dependence.",
+    "poisson_panels": [
+      {
+        "banks": [
+          34,
+          35
+        ],
+        "emitted_to_finite_file_upper": 0.004797729850373299,
+        "emitted_to_average_conditional_upper99": 0.009533589137503538
+      },
+      {
+        "banks": [
+          71,
+          72
+        ],
+        "emitted_to_finite_file_upper": 0.004681327049000897,
+        "emitted_to_average_conditional_upper99": 0.008789000729559224
+      },
+      {
+        "banks": [
+          102,
+          143
+        ],
+        "emitted_to_finite_file_upper": 0.006300247254906849,
+        "emitted_to_average_conditional_upper99": 0.010421011268853864
+      }
+    ]
+  },
+  "paper": "https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/papers/number-tilted-gbs/manuscript.pdf",
+  "cpu_checker": "https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/experiments/iteration120_interval.py",
+  "manifest": "https://github.com/qiyuanhuakai/deziroGBS/blob/4fcb0614cc41cacf1877ceb17e66808f628c48fb/results/iteration120_contractions/manifest.json"
+}
