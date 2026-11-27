@@ -29,10 +29,10 @@ print(clicks[:4])
 
 ## 采样核心与实验入口
 
-| 想看什么 | 第 110 轮的实现 |
+| 想看什么 | 第 111 轮的实现 |
 |---|---|
-| 如何在 CPU 上计算多谱混态的联合光子数分布？ | [C++ 混态概率递推](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/native/gaussian_core110_v1.cpp) |
-| 如何在 GPU 上直接生成点击，或返回各端口的光子数？ | [CUDA 两种读出](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/native/collective_readout110_v1.cu) |
-| 如何在同一组输入上记录耗时、检查精度？ | [Python 批量实验](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/experiments/iteration110_peers_v1.py) · [结果核验](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/experiments/verify_iteration110_v1.py) |
+| 如何保留跨单元相位干涉并返回各端口的点击或光子数？ | [C++ 双读出采样](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/native/shared_measure111_v1.cpp) · [光学输入与相干分支](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/experiments/iteration111_memory_v1.py) |
+| 如何按九章空间端口的实测分布校准记录？ | [CUDA 空间窗口校正](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/native/spatial_windows111_v1.cu) |
+| 如何在同一组输入上测速度和精度？ | [同样本量对照](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/experiments/iteration111_matched_v1.py) · [核验程序](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/experiments/verify_iteration111_v1.py) |
 
-复现实验时，使用同轮归档中的脚本、计算核心和输入文件。[第 110 轮运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/research/iteration110_checkpoint_v1.md) · [按轮取回数据](archive.md)
+复现实验时，使用同轮归档中的计算核心、脚本和输入文件。[第 111 轮运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/research/iteration111_checkpoint_v1.md) · [按轮取回数据](archive.md)

@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 111 轮
+
+- [双读出精度与计时](selected/111/validation.json) · [131,072 端口光子数记录](https://github.com/qiyuanhuakai/deziroGBS/tree/c0c82e81283460ece8147c6360c0a38c61325e74/results/iteration111_wide8_v1) · [九章全部空间端口对](https://github.com/qiyuanhuakai/deziroGBS/tree/c0c82e81283460ece8147c6360c0a38c61325e74/results/iteration111_transport_v1)
+
 ## 第 110 轮
 
 - [光学校正、硬件留出与同卡对照](selected/110/validation.json) · [空间端口分布与分区误差](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_profile_v1) · [高维跨单元干涉](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_bus_v1)

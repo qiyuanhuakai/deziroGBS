@@ -1,0 +1,546 @@
+{
+  "input": "1-radian global phase on a complex supermode, 4 detectors per lossy cell",
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "jiuzhang_reference_us": 1.27,
+  "click": {
+    "omitted_bus_tv": 0.1226995881863992,
+    "model_tv": 0.0004884043352820166,
+    "measured_us": {
+      "1": 11.910107417634208,
+      "8": 2.235302730468902
+    },
+    "shots": 65536,
+    "empirical_tv": 0.1775503103274632,
+    "cached_extra_preparation_s": 0.07440520002273843,
+    "cached_us": {
+      "1": 0.04633790240404778,
+      "8": 0.0410156246744009
+    },
+    "acceptance": 0.3253573944727657,
+    "acceptance_range": [
+      0.03350971154964307,
+      0.7119300785443069
+    ],
+    "fixed_event_bias": [
+      3.0336507297112902e-05,
+      0.020158288011611014
+    ],
+    "cpu_frugal": [
+      {
+        "k": 2,
+        "us": 5.311132809993069,
+        "model_tv": 0.07340238873970717
+      },
+      {
+        "k": 4,
+        "us": 20.47133787641542,
+        "model_tv": 0.02017760534735469
+      }
+    ],
+    "gpu_frugal": [
+      {
+        "k": 2,
+        "us": 3.791259757690568,
+        "empirical_tv": 0.2034572154088201,
+        "shots": 65536
+      },
+      {
+        "k": 4,
+        "us": 7.039062495550752,
+        "empirical_tv": 0.17865997297923966,
+        "shots": 65536
+      }
+    ]
+  },
+  "pnr": {
+    "matched": {
+      "cells": 4,
+      "m": 6,
+      "radix": 16,
+      "batch": 128,
+      "shots": 4096,
+      "setup_s": 7.340489499969408,
+      "whole_tv_budget": 0.02468652053769867,
+      "empirical_threshold_tv": 0.4397491113415797,
+      "pair_model_tv": 0.0003200177394534361,
+      "total_model_ks": 0.00024883011682205053,
+      "pair_empirical_tv": 0.019096934906167522,
+      "total_empirical_ks": 0.01584241510363201
+    },
+    "us": {
+      "1": 14.53984395993757,
+      "8": 4.021875156468013
+    },
+    "photonic_engines": [
+      {
+        "backend": "cpu",
+        "shots": 4096,
+        "us": 40165.985156363604,
+        "pair_empirical_tv": 0.02259411515643112,
+        "total_empirical_ks": 0.010794657777302461,
+        "censored": 0
+      },
+      {
+        "backend": "cuda",
+        "shots": 4096,
+        "us": 12231.276562488347,
+        "pair_empirical_tv": 0.016307100352730655,
+        "total_empirical_ks": 0.010686211310414993,
+        "censored": 0
+      }
+    ]
+  },
+  "projections": [
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 2,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 4,
+      "whole_state_tv_bound": 0.027185491670128587,
+      "click_model_tv": 0.0023967171170063187,
+      "rejection_acceptance": 0.8352199349666204
+    },
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 3,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 9,
+      "whole_state_tv_bound": 0.0007279414445389177,
+      "click_model_tv": 4.285407646517991e-05,
+      "rejection_acceptance": 0.8565510037650468
+    },
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 4,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 16,
+      "whole_state_tv_bound": 0.0008125027039550245,
+      "click_model_tv": 3.809334691704032e-05,
+      "rejection_acceptance": 0.6319505905424209
+    },
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 5,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 25,
+      "whole_state_tv_bound": 7.645095535527052e-06,
+      "click_model_tv": 1.8686706085894129e-07,
+      "rejection_acceptance": 0.8373439565024715
+    },
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 6,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 36,
+      "whole_state_tv_bound": 2.690407552281352e-05,
+      "click_model_tv": 5.469404986273638e-07,
+      "rejection_acceptance": 0.6024139624291768
+    },
+    {
+      "angle": 0.1,
+      "nodes_per_axis": 8,
+      "squeezings": [
+        0.00858444148061617,
+        0.14680818610132104
+      ],
+      "branches": 64,
+      "whole_state_tv_bound": 9.147944613672691e-07,
+      "click_model_tv": 8.442216150897144e-09,
+      "rejection_acceptance": 0.6181878883698143
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 2,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 4,
+      "whole_state_tv_bound": 0.34368814285113247,
+      "click_model_tv": 0.050997767278425726,
+      "rejection_acceptance": 0.5134679171058922
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 3,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 9,
+      "whole_state_tv_bound": 0.1830362425421271,
+      "click_model_tv": 0.01796385992633478,
+      "rejection_acceptance": 0.39829985025803005
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 4,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 16,
+      "whole_state_tv_bound": 0.09507900925050998,
+      "click_model_tv": 0.005973466706935717,
+      "rejection_acceptance": 0.35372333000967543
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 5,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 25,
+      "whole_state_tv_bound": 0.048638349087877605,
+      "click_model_tv": 0.0016529294272874147,
+      "rejection_acceptance": 0.33424625511552997
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 6,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 36,
+      "whole_state_tv_bound": 0.024632988033356916,
+      "click_model_tv": 0.0004884043352820166,
+      "rejection_acceptance": 0.3253573944727657
+    },
+    {
+      "angle": 1.0,
+      "nodes_per_axis": 8,
+      "squeezings": [
+        0.09210986997046287,
+        1.0549075237186114
+      ],
+      "branches": 64,
+      "whole_state_tv_bound": 0.006196452719644871,
+      "click_model_tv": 3.340240868289543e-05,
+      "rejection_acceptance": 0.3193037937701142
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 2,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 4,
+      "whole_state_tv_bound": 0.22425901646010246,
+      "click_model_tv": 0.028634775069982875,
+      "rejection_acceptance": 0.400689407601209
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 3,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 9,
+      "whole_state_tv_bound": 0.07920617654019343,
+      "click_model_tv": 0.005568255498355429,
+      "rejection_acceptance": 0.3026943086518797
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 4,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 16,
+      "whole_state_tv_bound": 0.027137195613917992,
+      "click_model_tv": 0.001103212287220704,
+      "rejection_acceptance": 0.27694607007153355
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 5,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 25,
+      "whole_state_tv_bound": 0.009154028314102123,
+      "click_model_tv": 0.00020992251498092284,
+      "rejection_acceptance": 0.26937525195241385
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 6,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 36,
+      "whole_state_tv_bound": 0.003058205273595791,
+      "click_model_tv": 3.799595734499527e-05,
+      "rejection_acceptance": 0.26705199877479446
+    },
+    {
+      "angle": 3.141592653589793,
+      "nodes_per_axis": 8,
+      "squeezings": [
+        0.6621281541312859,
+        0.6621281541312866
+      ],
+      "branches": 64,
+      "whole_state_tv_bound": 0.0003350790359938418,
+      "click_model_tv": 1.2988953159265122e-06,
+      "rejection_acceptance": 0.2661046088722517
+    }
+  ],
+  "heterogeneous": [
+    {
+      "buses": 1,
+      "reduced_eigensystem": 4,
+      "active": 2,
+      "nodes": 3,
+      "branches": 9,
+      "click_tv": 0.0012440739912560372,
+      "omitted_bus_tv": 0.0764428444766689,
+      "state_bound": 0.02630272958044118,
+      "pair_count_model_tv": 0.00017696280826025396,
+      "bus_overlap": 0.460785357426104
+    },
+    {
+      "buses": 1,
+      "reduced_eigensystem": 4,
+      "active": 2,
+      "nodes": 6,
+      "branches": 36,
+      "click_tv": 9.364114819458495e-07,
+      "omitted_bus_tv": 0.0764428444766689,
+      "state_bound": 0.0004058162800854377,
+      "pair_count_model_tv": 7.624673299696003e-08,
+      "bus_overlap": 0.460785357426104
+    },
+    {
+      "buses": 2,
+      "reduced_eigensystem": 8,
+      "active": 4,
+      "nodes": 2,
+      "branches": 16,
+      "click_tv": 0.011881952329935785,
+      "omitted_bus_tv": 0.09017438292426289,
+      "state_bound": 0.1008091280288254,
+      "pair_count_model_tv": 0.004419738063849977,
+      "bus_overlap": 0.460785357426104
+    },
+    {
+      "buses": 2,
+      "reduced_eigensystem": 8,
+      "active": 4,
+      "nodes": 3,
+      "branches": 81,
+      "click_tv": 0.0009252013086078054,
+      "omitted_bus_tv": 0.09017438292426289,
+      "state_bound": 0.02237156978417672,
+      "pair_count_model_tv": 0.00028105458765021997,
+      "bus_overlap": 0.460785357426104
+    },
+    {
+      "buses": 2,
+      "reduced_eigensystem": 8,
+      "active": 4,
+      "nodes": 4,
+      "branches": 256,
+      "click_tv": 8.208698323307387e-05,
+      "omitted_bus_tv": 0.09017438292426289,
+      "state_bound": 0.005065137744610728,
+      "pair_count_model_tv": 1.65236220789552e-05,
+      "bus_overlap": 0.460785357426104
+    }
+  ],
+  "wide_click": {
+    "cells": 32768,
+    "m": 8,
+    "radix": 2,
+    "batch": 16,
+    "shots": 128,
+    "setup_s": 0.018929900019429624,
+    "whole_tv_budget": 0.006196452719644871,
+    "us": {
+      "1": 993.0874985002447,
+      "8": 278.9249992929399
+    }
+  },
+  "wide_pnr": [
+    {
+      "modes": 131072,
+      "cells": 32768,
+      "radix": 24,
+      "nodes": 6,
+      "shots": 128,
+      "kept": 44611,
+      "setup_s": 48.249248299980536,
+      "state_bound": 0.024632988033356916,
+      "overflow_bound": 0.0038694504353469186,
+      "discarded_marginal_mass": 9.998917124377113e-09,
+      "second_grid_omitted": 1.0936194094757212e-07,
+      "second_grid_overflow_bound": 0.0006135059302099548,
+      "total_tv_budget": 0.028830082985035425,
+      "mean_photons": 49999.25,
+      "target_mean": 49967.35500622894,
+      "sample_mean_se": 30.840454150429178,
+      "max_photons_in_port": 23,
+      "observed_acceptance": 0.33773087071240104,
+      "predicted_acceptance": 0.3253573944727657,
+      "us": {
+        "1": 5375.237502448726,
+        "8": 1594.8750005918555
+      }
+    },
+    {
+      "modes": 131072,
+      "cells": 32768,
+      "radix": 28,
+      "nodes": 8,
+      "shots": 128,
+      "kept": 46791,
+      "setup_s": 137.77822039998136,
+      "state_bound": 0.006196452719644871,
+      "overflow_bound": 0.00033285234827024605,
+      "discarded_marginal_mass": 9.999015288204303e-09,
+      "second_grid_omitted": 1.8525127543078668e-08,
+      "second_grid_overflow_bound": 5.346568451082345e-05,
+      "total_tv_budget": 0.006856952800878995,
+      "mean_photons": 49948.2265625,
+      "target_mean": 49967.35500622894,
+      "sample_mean_se": 34.3229997073808,
+      "max_photons_in_port": 22,
+      "observed_acceptance": 0.3316062176165803,
+      "predicted_acceptance": 0.3193037937701142,
+      "us": {
+        "1": 11377.562499546912,
+        "8": 3460.249994532205
+      }
+    }
+  ],
+  "jiuzhang": {
+    "train": 746336,
+    "holdout": 746306,
+    "spatial_pairs": 10296,
+    "routes": [
+      {
+        "pnr": false,
+        "us": 1.1297302258128639,
+        "shots": 131072,
+        "before": {
+          "single_mean_abs": 0.005621050316036995,
+          "single_max_abs": 0.0239627877789306,
+          "pair_mean_tv": 0.0084834689160869,
+          "pair_max_tv": 0.035658561290124305,
+          "anchor_pair_tv": 0.014326496220720408,
+          "window_mean_tv": 0.02866027019058083,
+          "window_max_tv": 0.04078688446467004,
+          "total_ks": 0.0029394616337050867,
+          "first8_hw_tv": 0.0092771130401092,
+          "first8_optical_tv": 0.015158511818684613
+        },
+        "after": {
+          "single_mean_abs": 0.003489598953457939,
+          "single_max_abs": 0.011085788745524738,
+          "pair_mean_tv": 0.005396061788182396,
+          "pair_max_tv": 0.02416527903268184,
+          "anchor_pair_tv": 0.0030197335254079083,
+          "window_mean_tv": 0.023850082079629416,
+          "window_max_tv": 0.03329653508802726,
+          "total_ks": 0.0029394616337050867,
+          "first8_hw_tv": 0.0092771130401092,
+          "first8_optical_tv": 0.015158511818684613
+        },
+        "changed_fraction": 0.023105197482638888,
+        "redraw": {
+          "single_mean_abs": 0.003398098378189781,
+          "single_max_abs": 0.012153903979899738,
+          "pair_mean_tv": 0.006659901049669078,
+          "pair_max_tv": 0.09879259202111224,
+          "anchor_pair_tv": 0.0037399622681816153,
+          "window_mean_tv": 0.021406396674387842,
+          "window_max_tv": 0.031930902479458775,
+          "total_ks": 0.0029394616337050867,
+          "first8_hw_tv": 0.0092771130401092,
+          "first8_optical_tv": 0.015158511818684613
+        }
+      },
+      {
+        "pnr": true,
+        "us": 0.4371948243431234,
+        "shots": 131072,
+        "before": {
+          "single_mean_abs": 0.005537137467278904,
+          "single_max_abs": 0.0235050241070556,
+          "pair_mean_tv": 0.008225054377560631,
+          "pair_max_tv": 0.033919059336999305,
+          "anchor_pair_tv": 0.011282367802751658,
+          "window_mean_tv": 0.02795184339368928,
+          "window_max_tv": 0.04018737591946094,
+          "total_ks": 0.0036789509721268506,
+          "first8_hw_tv": 0.009970467781283458,
+          "first8_optical_tv": 0.014814364617111341
+        },
+        "after": {
+          "single_mean_abs": 0.003410630362586526,
+          "single_max_abs": 0.011557812758499764,
+          "pair_mean_tv": 0.005297797540640778,
+          "pair_max_tv": 0.02647698557565059,
+          "anchor_pair_tv": 0.0016913926231501702,
+          "window_mean_tv": 0.023576160082679525,
+          "window_max_tv": 0.031563154471046656,
+          "total_ks": 0.0036789509721268506,
+          "first8_hw_tv": 0.009970467781283458,
+          "first8_optical_tv": 0.014814364617111341
+        },
+        "changed_fraction": 0.022900899251302082,
+        "redraw": {
+          "single_mean_abs": 0.0033451002992731507,
+          "single_max_abs": 0.01153818835110082,
+          "pair_mean_tv": 0.0065545342815389466,
+          "pair_max_tv": 0.09915880295861224,
+          "anchor_pair_tv": 0.0023444548960014633,
+          "window_mean_tv": 0.020825957240115465,
+          "window_max_tv": 0.029185591601641275,
+          "total_ks": 0.0036789509721268506,
+          "first8_hw_tv": 0.009970467781283458,
+          "first8_optical_tv": 0.014814364617111341
+        }
+      }
+    ],
+    "split_reference": {
+      "single_mean_abs": 0.0006675613840187346,
+      "single_max_abs": 0.001998394812204596,
+      "pair_mean_tv": 0.0011353272753547813,
+      "pair_max_tv": 0.003921079218814738,
+      "anchor_pair_tv": 0.0018579984906721414,
+      "window_mean_tv": 0.009626784770959395,
+      "window_max_tv": 0.011065511329084026,
+      "total_ks": 0.001819287420281491,
+      "first8_hw_tv": 0.004527145612407474,
+      "first8_optical_tv": 0.012221595654074626
+    },
+    "frozen_spatial": [
+      0,
+      34,
+      35
+    ]
+  }
+}
