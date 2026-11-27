@@ -20,7 +20,10 @@ def header(kind):
 def run(out):
     out.mkdir(parents=True,exist_ok=True)
     path='results/iteration81_jiuzhang_inventory_v1/volume01.json'
-    index=json.loads(subprocess.check_output(['git','cat-file','blob','0f87aa4b1fbb8baae4e66a456e1505bfd5564d05:'+path],cwd=ROOT))
+    raw_index=subprocess.check_output(['git','cat-file','blob','HEAD:'+path],cwd=ROOT)
+    if hashlib.sha256(raw_index).hexdigest()!='808e16750dfaf5f176cb9966fab2e38ced7507718f99aab8a1b4e6733dda70d0':
+        raise ValueError('Archived volume index digest differs')
+    index=json.loads(raw_index)
     rows=[]
     for number in (10,11):
         name=f'jiuzhang3/data/high power/high power ({number}).bin'

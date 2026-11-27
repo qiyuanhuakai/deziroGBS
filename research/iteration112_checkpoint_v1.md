@@ -81,6 +81,15 @@
 
 使用本轮固定归档。硬件原始分卷按需下载至相邻的 external_sources 目录。C++17/OpenMP、CUDA、上游 Frugal 与 photonic-engines 的环境沿用上一轮。实验需要第 110、111 轮的输入与归档计算库；下载单个精选 JSON 即可阅读结论。
 
+如需重建全部产物，可先按下面的方式取得研究工作目录。稀疏检出保留旧轮输入并为第 112 轮生成新的输出目录。external_sources 中还需有相应版本的 photonic-engines、Eigen 以及第 81 轮提取的第 1 份高功率数据；第 10、11 份数据由本轮脚本取回。
+
+```sh
+git clone --branch archive/iteration112-sparse-projection-v2 --depth 1 --filter=blob:none --no-checkout https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-round112
+git -C deziroGBS-round112 sparse-checkout set --no-cone "/*" "!/results/iteration112*/"
+git -C deziroGBS-round112 checkout
+cd deziroGBS-round112
+```
+
 ```sh
 python experiments/iteration112_cases_v1.py results/iteration112_cases_v1
 python experiments/iteration112_fit_v1.py results/iteration112_fit_v1

@@ -44,8 +44,14 @@ def build(out):
     cpp=out/'cpu.cpp';cpp.write_text(cpu_host)
     cmd=json.loads((ROOT/'results/iteration96_frugal_build_v1/build.json').read_text())['command']
     cmd[0]=shutil.which('g++')
+    old_src=next(Path(arg) for arg in cmd if Path(arg).name=='frugal_tree96_v1.cpp')
+    old_root=old_src.parents[1]
     for k,arg in enumerate(cmd):
-        if Path(arg).name=='frugal_tree96_v1.cpp':cmd[k]=str(cpp)
+        old=Path(arg)
+        if old==old_src:cmd[k]=str(cpp)
+        elif old.is_relative_to(old_root):cmd[k]=str(ROOT/old.relative_to(old_root))
+        elif old.is_relative_to(old_root.parent/'external_sources'):
+            cmd[k]=str(ROOT.parent/'external_sources'/old.relative_to(old_root.parent/'external_sources'))
     cmd[-1]=str(out/'cpu.dll')
     cmd[1:1]=['-I',str(ROOT/'native')]
     pr=subprocess.run(cmd,capture_output=True,text=True,errors='replace')
