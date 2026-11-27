@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 112 轮 · 共享模式压缩、整记录误差预算与九章跨文件检验](https://github.com/qiyuanhuakai/deziroGBS/blob/cad142bb09f9348730613eee94446b057bcc7467/research/iteration112_checkpoint_v1.md)
+
 [第 111 轮 · 跨单元共享模式干涉与九章空间端口校正](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/research/iteration111_checkpoint_v1.md)
 
 [第 110 轮 · 整机光子数、空间点击重数与多模干涉](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/research/iteration110_checkpoint_v1.md)
