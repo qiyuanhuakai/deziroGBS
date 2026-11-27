@@ -29,10 +29,10 @@ print(clicks[:4])
 
 ## 采样核心与实验入口
 
-| 想看什么 | 第 109 轮的实现 |
+| 想看什么 | 第 110 轮的实现 |
 |---|---|
-| 如何在 CPU 上保留两端口的联合分布？ | [C++ 条件采样核心](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/native/displaced_tree109_v1.cpp) |
-| 如何在 GPU 上直接生成点击，或返回各端口的光子数？ | [CUDA 两种读出](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/native/displaced_local109_v1.cu) |
-| 如何在同一组输入上记录耗时、检查精度？ | [Python 批量实验](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/experiments/iteration109_peers_v1.py) · [结果核验](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/experiments/verify_iteration109_v1.py) |
+| 如何在 CPU 上计算多谱混态的联合光子数分布？ | [C++ 混态概率递推](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/native/gaussian_core110_v1.cpp) |
+| 如何在 GPU 上直接生成点击，或返回各端口的光子数？ | [CUDA 两种读出](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/native/collective_readout110_v1.cu) |
+| 如何在同一组输入上记录耗时、检查精度？ | [Python 批量实验](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/experiments/iteration110_peers_v1.py) · [结果核验](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/experiments/verify_iteration110_v1.py) |
 
-复现实验时，使用同轮归档中的脚本、计算核心和输入文件。[第 109 轮运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/research/iteration109_checkpoint_v1.md) · [按轮取回数据](archive.md)
+复现实验时，使用同轮归档中的脚本、计算核心和输入文件。[第 110 轮运行方法](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/research/iteration110_checkpoint_v1.md) · [按轮取回数据](archive.md)

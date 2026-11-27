@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 110 轮
+
+- [光学校正、硬件留出与同卡对照](selected/110/validation.json) · [空间端口分布与分区误差](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_profile_v1) · [高维跨单元干涉](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_bus_v1)
+
 ## 第 109 轮
 
 - [九章整机速度与误差、同卡 Frugal 和 PNR 对照](selected/109/validation.json) · [143 条树边的光学核验](https://github.com/qiyuanhuakai/deziroGBS/tree/3a8651b49554a1d87ef371caa105918b5f0ca77c/results/iteration109_global_v1) · [纠缠双光束精度与扩维](https://github.com/qiyuanhuakai/deziroGBS/tree/3a8651b49554a1d87ef371caa105918b5f0ca77c/results/iteration109_twins_v1)
