@@ -1,5 +1,9 @@
 # 精选结果
 
+## 第 113 轮
+
+- [双读出与九章 144 个空间端口核验](selected/113/validation.json) · [光子数系数与采样记录](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_deep_v1) · [硬件直方图](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_device_v1)
+
 ## 第 112 轮
 
 - [双读出与九章跨文件核验](selected/112/validation.json) · [宽光路整记录样本](https://github.com/qiyuanhuakai/deziroGBS/tree/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_emit_v1) · [18 组八位空间与探测器对照](https://github.com/qiyuanhuakai/deziroGBS/tree/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_panels_v1)

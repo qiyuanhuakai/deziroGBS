@@ -4,10 +4,10 @@
 
 [运行四端口示例](docs/quickstart.md) · [采样核心与实验入口](docs/quickstart.md#采样核心与实验入口) · [历轮研究报告](docs/reports/README.md) · [精选结果](results/README.md) · [取回原始数据](docs/archive.md)
 
-## 第 112 轮进展
+## 第 113 轮进展
 
-131,072 端口、1 弧度共享相移的光路上，直接点击 / 逐端口光子数的**整记录 TV 误差预算为 0.04249% / 0.32043%**，GPU 生成并回传完整记录耗时 **16.66 / 21.43 微秒**。对 458,789 个非均匀端口、两个不对易相移，也得到 0.14317% 的完整点击误差预算。[计算方法与对照](https://github.com/qiyuanhuakai/deziroGBS/blob/cad142bb09f9348730613eee94446b057bcc7467/research/iteration112_checkpoint_v1.md)
+同一条 13 端口有损光路上，整条光子数记录的 TV 截断上界从 **12.5895% 降到 0.69823%**。准备需 **9.876 秒**，之后每条耗时 **0.0740 微秒**。直接点击覆盖全部 8,192 种结果，与独立光学计算的 TV 差为 **5.95 × 10⁻¹²**。[速度、精度与对照方法](https://github.com/qiyuanhuakai/deziroGBS/blob/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/research/iteration113_checkpoint_v1.md)
 
-九章 3.0 两份独立高功率文件共 **3,186,388 条**记录。仅用文件 1 训练后，在文件 10、11 上，10,296 个空间端口对的平均经验 TV 分别降至 **0.295% / 0.296%**（直接点击）与 **0.278% / 0.282%**（先生成光子数）。完整 1,152 位记录耗时 **1.145 / 0.433 微秒**。[对照图](https://github.com/qiyuanhuakai/deziroGBS/blob/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_release_v1/comparison.png) · [精选核验](results/selected/112/validation.json)
+九章 3.0 的每个空间端口用八路点击估计光子数。高功率光学模型预测，每条记录平均有 **116.286 个光子到达、103.896 路触发**。两份共 3,186,388 条实测记录平均触发 **106.101 / 106.044 路**。[144 个空间端口的核验](results/selected/113/validation.json)
 
 **统计勘误**　第 83 轮旧 PNR 样本的随机流发生重叠，原有置信保证已撤回。第 84 轮使用分离的随机流重新采样。[随机流勘误](docs/corrections/83-rng.md) · [第 86 轮直接点击舍入勘误](docs/corrections/86-rounding.md)

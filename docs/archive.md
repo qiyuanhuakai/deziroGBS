@@ -2,6 +2,7 @@
 
 | 查找范围 | 固定标签 | 入口 |
 |---|---|---|
+| 第 113 轮 | `archive/iteration113-sector-support-v1` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/research/iteration113_checkpoint_v1.md) · [光子数原始结果](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_deep_v1) · [144 个空间端口](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_device_v1) · [核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/e9d19cb0501e2ddb03cde06ea7fb293fbc50cf6c/results/iteration113_release_v1) |
 | 第 112 轮 | `archive/iteration112-sparse-projection-v2` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/cad142bb09f9348730613eee94446b057bcc7467/research/iteration112_checkpoint_v1.md) · [分支压缩与小光路对照](https://github.com/qiyuanhuakai/deziroGBS/tree/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_fit_v1) · [独立九章采集文件](https://github.com/qiyuanhuakai/deziroGBS/tree/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_hardware_v1) · [核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/cad142bb09f9348730613eee94446b057bcc7467/results/iteration112_release_v1) |
 | 第 111 轮 | `archive/iteration111-shared-mode-v1` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/c0c82e81283460ece8147c6360c0a38c61325e74/research/iteration111_checkpoint_v1.md) · [双读出与上游对照](https://github.com/qiyuanhuakai/deziroGBS/tree/c0c82e81283460ece8147c6360c0a38c61325e74/results/iteration111_matched_v1) · [核验原件与文件摘要](https://github.com/qiyuanhuakai/deziroGBS/tree/c0c82e81283460ece8147c6360c0a38c61325e74/results/iteration111_release_v1) |
 | 第 110 轮 | `archive/iteration110-spectral-correction-v1` | [报告与复现](https://github.com/qiyuanhuakai/deziroGBS/blob/dc28b1df9803c431009e64b0ad2abfbec8402d0d/research/iteration110_checkpoint_v1.md) · [独立光学核验](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_independent_v1) · [匿名训练与留出记录](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_profile_v1) · [精选核验原件](https://github.com/qiyuanhuakai/deziroGBS/tree/dc28b1df9803c431009e64b0ad2abfbec8402d0d/results/iteration110_release_v1) |
@@ -27,11 +28,11 @@
 
 **只看一轮**　先从[报告目录](reports/README.md)找到该轮，报告中的原始数据链接会打开固定快照。第 94 轮可直接查看[实际 PNR 数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_actual_quality_v1)和[直接点击数据](https://github.com/qiyuanhuakai/deziroGBS/tree/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration94_branch_actual_quality_v1)。
 
-**只下载一个结果目录**　以下示例只检出第 112 轮的最终核验文件。其他轮次可替换标签和目录名。
+**只下载一个结果目录**　以下示例只检出第 113 轮的最终核验文件。其他轮次可替换标签和目录名。
 
 ```sh
-git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration112-sparse-projection-v2 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
-git -C deziroGBS-evidence sparse-checkout set --no-cone "/results/iteration112_release_v1/"
+git clone --depth 1 --filter=blob:none --no-checkout --branch archive/iteration113-sector-support-v1 https://github.com/qiyuanhuakai/deziroGBS.git deziroGBS-evidence
+git -C deziroGBS-evidence sparse-checkout set --no-cone "/results/iteration113_release_v1/"
 git -C deziroGBS-evidence checkout
 ```
 
