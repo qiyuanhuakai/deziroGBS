@@ -1,0 +1,87 @@
+{
+  "route": "click",
+  "rows": 1048576,
+  "width": 1152,
+  "train": 1048576,
+  "training_stage": 8,
+  "test_stage": 9,
+  "precision": "FP64",
+  "hits": 521507,
+  "empirical": 0.4973478317260742,
+  "optical": 0.49322104659144755,
+  "binomial_lower": 0.49591419085156563,
+  "alpha": 0.0016666666666666668,
+  "full_tv_lower99": 0.0026931342601180745,
+  "fit_s": 106.25057630002266,
+  "diagnostics": {
+    "min_target_eigenvalue": -4.090623647239603e-07,
+    "max_target_eigenvalue": 0.3642887725841291,
+    "negative_target_eigenvalues": 124,
+    "iterations": [
+      {
+        "min_training_eigenvalue": 1.5692466025181398e-08,
+        "max_training_eigenvalue": 0.36438421584639774,
+        "max_mean_error": 3.356596892400976e-05
+      },
+      {
+        "min_training_eigenvalue": 6.114621155893194e-11,
+        "max_training_eigenvalue": 0.36426331433012105,
+        "max_mean_error": 2.0914392029336426e-06
+      },
+      {
+        "min_training_eigenvalue": 1.1817095722582462e-12,
+        "max_training_eigenvalue": 0.3642879952843701,
+        "max_mean_error": 2.9712221183419985e-07
+      },
+      {
+        "min_training_eigenvalue": 1.9945659913248315e-14,
+        "max_training_eigenvalue": 0.36428872325614514,
+        "max_mean_error": 7.483573494226903e-08
+      },
+      {
+        "min_training_eigenvalue": 4.619114901066985e-16,
+        "max_training_eigenvalue": 0.36428876647439706,
+        "max_mean_error": 2.0431915825902536e-08
+      },
+      {
+        "min_training_eigenvalue": 1.3265363413983351e-17,
+        "max_training_eigenvalue": 0.3642887716071249,
+        "max_mean_error": 5.38487565648893e-09
+      },
+      {
+        "min_training_eigenvalue": -1.1934950719035954e-17,
+        "max_training_eigenvalue": 0.36428877240507906,
+        "max_mean_error": 1.4340627574327414e-09
+      },
+      {
+        "min_training_eigenvalue": -1.9578660657391784e-17,
+        "max_training_eigenvalue": 0.3642887725483306,
+        "max_mean_error": 3.8406966496040695e-10
+      },
+      {
+        "min_training_eigenvalue": -1.4342969378622318e-17,
+        "max_training_eigenvalue": 0.36428877257643627,
+        "max_mean_error": 1.0321321575190723e-10
+      },
+      {
+        "min_training_eigenvalue": -1.7891756259002118e-17,
+        "max_training_eigenvalue": 0.3642887725824305,
+        "max_mean_error": 2.8229085735631543e-11
+      }
+    ]
+  },
+  "host_us_per_record": 50.40536594336231,
+  "protocol_sha256": "72f0f34629fc6c24fe4c264f2c7ac5da3ced8bb984a67a9dca76f4b5f296c948",
+  "layer_sha256": [
+    "813e6111207762006ebd281c4632744194580c6adbdd8275b07f0ed9a8059abe",
+    "ec2832e7ef019665726161b6b3d7cc3ea1e0f0d3d9f7fa6266d80c633916caf7",
+    "e92be16e39af1eb0ce82de8f2dd204aab4242626b3905a47460d98385c5437c0",
+    "69d7d7a70ab6a86db98f3d575fc0bd2a5f6a19039e4a598255f01c529c2bb984",
+    "1d4c6a36534b960f0402031b4da444b66e6f4d01d632d43340a7cf85477aca4e",
+    "bebf5332af1baa5a0f9503055048174759bdabef6271e291365393eeb6f9fcc1",
+    "d23a3b005bf0e18556d8b53d0517ba06709fc70e3eca52cc73e5030436c126b1",
+    "bcac50fd8a7dea3b31344bdf08e542ef1243ba19f8cf6fa53f3227f92ae47da9",
+    "daa39d5c5e92564e0a16d751aeb612b3604847e0e4a88e84bb23bfdb892774df",
+    "1459ab8530fbac41eb5911541e09167933374c69f151d14e4e4b8f0a40f6d823"
+  ]
+}

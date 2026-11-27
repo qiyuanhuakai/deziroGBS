@@ -62,20 +62,22 @@ def generator(route,stage,role):
 
 
 class Fields:
-    def __init__(self,t,ss):
-        self.t = torch.tensor(t.T.copy(),device=DEVICE,dtype=torch.complex64)
+    def __init__(self,t,ss,wide=False):
+        self.dtype = torch.float64 if wide else torch.float32
+        complex_dtype = torch.complex128 if wide else torch.complex64
+        self.t = torch.tensor(t.T.copy(),device=DEVICE,dtype=complex_dtype)
         self.width = len(t)
         n = np.sinh(ss)**2
         a = np.cosh(ss)*np.sinh(ss)
-        self.plus = torch.tensor(np.sqrt((n+a)/2),device=DEVICE,dtype=torch.float32)
-        self.minus = torch.tensor(np.sqrt((a-n)/2),device=DEVICE,dtype=torch.float32)
+        self.plus = torch.tensor(np.sqrt((n+a)/2),device=DEVICE,dtype=self.dtype)
+        self.minus = torch.tensor(np.sqrt((a-n)/2),device=DEVICE,dtype=self.dtype)
 
     def raw(self,rng,route):
         shape = (len(self.plus), BATCH, self.t.shape[0])
-        x = torch.randn(shape,device=DEVICE,generator=rng)*self.plus[:,None]
-        y = torch.randn(shape,device=DEVICE,generator=rng)*self.minus[:,None]
-        a = (x-y).to(torch.complex64) @ self.t
-        b = (x+y).to(torch.complex64) @ self.t
+        x = torch.randn(shape,device=DEVICE,generator=rng,dtype=self.dtype)*self.plus[:,None]
+        y = torch.randn(shape,device=DEVICE,generator=rng,dtype=self.dtype)*self.minus[:,None]
+        a = (x-y).to(self.t.dtype) @ self.t
+        b = (x+y).to(self.t.dtype) @ self.t
         v = (a*b.conj()).sum(0)
         return v.real if route=='pnr' else torch.exp(-v).real
 
@@ -84,9 +86,9 @@ def clip(x,route):
     return x.clamp(min=0,max=None if route=='pnr' else 1)
 
 
-def train(fields,route,mean,cov,n):
-    rng = generator(route,1,0)
-    y = torch.empty((n,fields.width),device=DEVICE)
+def train(fields,route,mean,cov,n,stage=1):
+    rng = generator(route,stage,0)
+    y = torch.empty((n,fields.width),device=DEVICE,dtype=fields.dtype)
     for start in range(0,n,BATCH):
         y[start:start+BATCH] = clip(fields.raw(rng,route),route)
     color,e = power(cov,.5)
@@ -101,7 +103,7 @@ def train(fields,route,mean,cov,n):
         white,ev = power(gram.cpu().numpy()/n,-.5)
         mat = white@color
         offset = mean-center@mat
-        layer = [torch.as_tensor(a.astype(np.float32),device=DEVICE) for a in (mat,offset)]
+        layer = [torch.as_tensor(a,device=DEVICE,dtype=fields.dtype) for a in (mat,offset)]
         for block in y.split(8192):
             block.copy_(clip(block@layer[0]+layer[1],route))
         layers.append(layer)

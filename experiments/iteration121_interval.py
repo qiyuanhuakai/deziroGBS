@@ -52,10 +52,11 @@ def all_void(Q,k):
     return out
 
 
-def run(route):
+def run(route,large=False):
+    variant = route+('_large' if large else '')
     ctx.prec = 160
     ctx.threads = 2
-    with np.load(OUT/(route+'_protocol.npz')) as f:
+    with np.load(OUT/(variant+'_protocol.npz')) as f:
         banks,event,old = (f[k] for k in ('banks','event','optical'))
     with np.load(INPUT) as f:
         raw = f['T'][np.argsort(f['order'])][(8*banks[:,None]+np.arange(8)).ravel()]
@@ -73,11 +74,13 @@ def run(route):
     assert tv < arb('1e-8') and abs(target-exact(old[event].sum()))<arb('1e-8')
     result = dict(precision_bits=ctx.prec,cells=len(law),optical_event_ball=str(target),
                   nominal_table_tv_error_ball=str(tv),input='binary transfer and squeezing values')
-    (OUT/(route+'_interval.json')).write_bytes((json.dumps(result,indent=2)+'\n').encode())
+    (OUT/(variant+'_interval.json')).write_bytes((json.dumps(result,indent=2)+'\n').encode())
     print(route,result,flush=True)
 
 
 if __name__=='__main__':
     p = argparse.ArgumentParser()
     p.add_argument('route',choices=['pnr','click'])
-    run(p.parse_args().route)
+    p.add_argument('--large',action='store_true')
+    args = p.parse_args()
+    run(args.route,args.large)

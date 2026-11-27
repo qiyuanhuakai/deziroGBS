@@ -1,0 +1,87 @@
+{
+  "route": "pnr",
+  "rows": 1048576,
+  "width": 1152,
+  "train": 1048576,
+  "training_stage": 8,
+  "test_stage": 9,
+  "precision": "FP64",
+  "hits": 503836,
+  "empirical": 0.4804954528808594,
+  "optical": 0.4740228321154883,
+  "binomial_lower": 0.4790629804256873,
+  "alpha": 0.0016666666666666668,
+  "full_tv_lower99": 0.005040138310199,
+  "fit_s": 105.15385960001731,
+  "diagnostics": {
+    "min_target_eigenvalue": -6.442191983626324e-07,
+    "max_target_eigenvalue": 0.6377904652910378,
+    "negative_target_eigenvalues": 178,
+    "iterations": [
+      {
+        "min_training_eigenvalue": 4.191822612111749e-09,
+        "max_training_eigenvalue": 0.6429444423878791,
+        "max_mean_error": 4.752651879250114e-05
+      },
+      {
+        "min_training_eigenvalue": 9.063503862620478e-11,
+        "max_training_eigenvalue": 0.6377711731721804,
+        "max_mean_error": 3.2306943840709756e-06
+      },
+      {
+        "min_training_eigenvalue": 2.557728381448606e-12,
+        "max_training_eigenvalue": 0.6377896593498303,
+        "max_mean_error": 4.591700355285888e-07
+      },
+      {
+        "min_training_eigenvalue": 6.242340945236876e-14,
+        "max_training_eigenvalue": 0.6377904039482317,
+        "max_mean_error": 1.2930294658597408e-07
+      },
+      {
+        "min_training_eigenvalue": 2.075788282471995e-15,
+        "max_training_eigenvalue": 0.6377904567395779,
+        "max_mean_error": 4.503635978037046e-08
+      },
+      {
+        "min_training_eigenvalue": 8.799470652528782e-17,
+        "max_training_eigenvalue": 0.6377904637450132,
+        "max_mean_error": 1.635134873334554e-08
+      },
+      {
+        "min_training_eigenvalue": -2.476197617554744e-18,
+        "max_training_eigenvalue": 0.6377904649644419,
+        "max_mean_error": 5.876680315985983e-09
+      },
+      {
+        "min_training_eigenvalue": -4.1290440045063034e-17,
+        "max_training_eigenvalue": 0.637790465215158,
+        "max_mean_error": 2.135547107207092e-09
+      },
+      {
+        "min_training_eigenvalue": -6.244731097660386e-17,
+        "max_training_eigenvalue": 0.637790465271998,
+        "max_mean_error": 7.80829935431715e-10
+      },
+      {
+        "min_training_eigenvalue": -5.260853334617369e-17,
+        "max_training_eigenvalue": 0.6377904652859466,
+        "max_mean_error": 2.864746634356763e-10
+      }
+    ]
+  },
+  "host_us_per_record": 50.77162876176988,
+  "protocol_sha256": "55f95bc4eb2b924943e4372b66350418e4fbec90b0b8771aeef9a288e9874414",
+  "layer_sha256": [
+    "b728ac1c1c7b991ebe1d84ed81da9eb5b1cd071f2581688d2d0ebc4a7466bf82",
+    "0c81f60f737faf96e53cd5cf67d7f61ca84fad11f4ba564d2d986384068018cc",
+    "3daad297e0ef2be548f7a7473a2ff796bda4c24339c03b7dfab1a039b141a5e6",
+    "13c85bc190729716b0759461b55c064360ecf41eec8956a9e8916f7a7e587954",
+    "64de04c028f19b13110e42a42258bc4596f58a475897e8c3b1d1646fe7587936",
+    "81ae86f9d198839c97b3b57ccef0dd455fd3d559b6a4a3b783a2ebd99ab08afc",
+    "7fa4b110c692e5d46fb0596067a1bc06d9604df0e68e068013062527e795fff6",
+    "cf4684f837292ad4d833ff22e83bb046ac77ed75188fa0da70965965904a5096",
+    "36e11637b5de68e61559089d8112f74c0a497ca39cd4bf0d1ff409d424ba4975",
+    "a76eecbcb09adf57ea609219336962fe6cf8726af72f193d3a2af654145b0e7d"
+  ]
+}
