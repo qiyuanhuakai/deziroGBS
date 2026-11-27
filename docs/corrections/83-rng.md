@@ -50,5 +50,5 @@
 
 详见[第84轮报告](../reports/76-94/84.md)、[域规范](../../research/iteration84_rng_method.md)、
 [重采记录](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration84_pnr_regenerated_v1/summary.json)、
-[独立随机流核验](../../results/iteration84_rng_verification_v1/validation.json)及
+[独立随机流核验](../../results/selected/84/rng-verification.json)及
 [独立最终核验](https://github.com/qiyuanhuakai/deziroGBS/blob/0f87aa4b1fbb8baae4e66a456e1505bfd5564d05/results/iteration84_verification_v1/validation.json)。
