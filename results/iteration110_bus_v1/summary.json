@@ -1,0 +1,109 @@
+{
+  "small": [
+    {
+      "theta": 0.003,
+      "tv": 0.0004065357660766796,
+      "full_state_bound": 0.0031355133134615557,
+      "total_sector_bound": 0.0026877934466064566,
+      "numerical_residual": 6.229558679614452e-15
+    },
+    {
+      "theta": 0.02,
+      "tv": 0.0026938300799114715,
+      "full_state_bound": 0.020895516940654953,
+      "total_sector_bound": 0.01791358049035745,
+      "numerical_residual": 6.279978121792548e-15
+    },
+    {
+      "theta": 0.1,
+      "tv": 0.013079517426833488,
+      "full_state_bound": 0.10352217160379643,
+      "total_sector_bound": 0.08895532745115287,
+      "numerical_residual": 6.223391229883506e-15,
+      "frugal2": {
+        "model_tv": 0.04766201561994197,
+        "us": 6.281933593754729
+      },
+      "frugal4": {
+        "model_tv": 0.00014208836242195978,
+        "us": 23.723046894019717
+      }
+    },
+    {
+      "theta": 0.4,
+      "tv": 0.048839923334081915,
+      "full_state_bound": 0.36600845295176093,
+      "total_sector_bound": 0.3230048641532258,
+      "numerical_residual": 5.701362790387551e-15
+    },
+    {
+      "theta": 1.0,
+      "tv": 0.1226995881863992,
+      "full_state_bound": 0.617652750774885,
+      "total_sector_bound": 0.5706952900514843,
+      "numerical_residual": 4.936901300403417e-15,
+      "frugal2": {
+        "model_tv": 0.07340238873970756,
+        "us": 5.440966788228252
+      },
+      "frugal4": {
+        "model_tv": 0.020177605347357984,
+        "us": 20.724853499132223
+      }
+    },
+    {
+      "theta": 3.141592653589793,
+      "tv": 0.12198875473385232,
+      "full_state_bound": 0.5797779473905965,
+      "total_sector_bound": 0.531256749374395,
+      "numerical_residual": 5.26413605005865e-15
+    }
+  ],
+  "wide": [
+    {
+      "theta": 0.003,
+      "full_state_bound": 0.0031355133134615557,
+      "total_sector_bound": 0.003135459629231413,
+      "half_grid_difference": 8.913919949393723e-14,
+      "numerical_residual": 5.174817012407702e-11
+    },
+    {
+      "theta": 0.02,
+      "full_state_bound": 0.020895516940654953,
+      "total_sector_bound": 0.020895159574801356,
+      "half_grid_difference": 3.672756543338096e-14,
+      "numerical_residual": 5.173662771224108e-11
+    },
+    {
+      "theta": 0.1,
+      "full_state_bound": 0.10352217160379643,
+      "total_sector_bound": 0.10352044764553771,
+      "half_grid_difference": 9.280076707085527e-14,
+      "numerical_residual": 5.148110140447076e-11
+    },
+    {
+      "theta": 0.4,
+      "full_state_bound": 0.36600845295176093,
+      "total_sector_bound": 0.3660040901417771,
+      "half_grid_difference": 7.4495964952348e-14,
+      "numerical_residual": 4.853133970882887e-11
+    },
+    {
+      "theta": 1.0,
+      "full_state_bound": 0.617652750774885,
+      "total_sector_bound": 0.6176493674915833,
+      "half_grid_difference": 1.4692691507889322e-12,
+      "numerical_residual": 4.2419208963553145e-11
+    },
+    {
+      "theta": 3.141592653589793,
+      "full_state_bound": 0.5797779473905965,
+      "total_sector_bound": 0.5797742645417009,
+      "half_grid_difference": 1.1941558852868184e-12,
+      "numerical_residual": 4.358712717916213e-11
+    }
+  ],
+  "wide_ports": 131072,
+  "wide_cells": 32768,
+  "mean_photons": 49967.35500622894
+}

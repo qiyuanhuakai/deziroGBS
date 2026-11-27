@@ -1,0 +1,748 @@
+{
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "jiuzhang_hardware_us": 1.27,
+  "field_fit": {
+    "coeff": [
+      0.5172005874861536,
+      -1.4412357032710181,
+      1.4763884628637587
+    ],
+    "fit_s": 4.8957443999825045,
+    "steps": 100,
+    "cost": 5.724179237505464e-05,
+    "converged": false,
+    "covariance_drift": 3.1086244689504383e-15,
+    "baseline_tv": 0.019608116044773877,
+    "calibrated_tv": 0.004976715056031861,
+    "calibrated_ks": 0.0025493239313858617,
+    "alias": [
+      3.197582642101646e-172,
+      2.4533625556077662e-179,
+      1.9861619993017137e-141
+    ],
+    "ranks": [
+      150,
+      150
+    ]
+  },
+  "optical_joint": {
+    "rows": [
+      {
+        "name": "base",
+        "pnr": {
+          "edit_probability": 0.0217427099254417,
+          "before_tv": 0.02174270992544179,
+          "after_tv": 1.511103199670148e-13
+        },
+        "direct": {
+          "edit_probability": 0.01727782617956146,
+          "before_tv": 0.017277826179561445,
+          "after_tv": 4.882481945733913e-14
+        },
+        "source_checks": {
+          "negative_mass": 2.069567959494447e-13,
+          "impossible_mass": 1.9228732104845103e-15,
+          "tail_bound": 1.3761366214726445e-39
+        },
+        "total_tv": 0.019608116044785944
+      },
+      {
+        "name": "fitted",
+        "pnr": {
+          "edit_probability": 0.010863046599912963,
+          "before_tv": 0.010863046599913436,
+          "after_tv": 4.6836571145777454e-14
+        },
+        "direct": {
+          "edit_probability": 0.01682256756436212,
+          "before_tv": 0.016822567564362095,
+          "after_tv": 4.706860494231058e-14
+        },
+        "source_checks": {
+          "negative_mass": 1.8714019585429846e-13,
+          "impossible_mass": 2.9156635873023307e-15,
+          "tail_bound": 1.2716642423676988e-31
+        },
+        "total_tv": 0.004976715056045251
+      }
+    ],
+    "seconds": 2.2730112000135705,
+    "reference_checks": {
+      "negative_mass": 1.9328904121717572e-13,
+      "impossible_mass": 2.8526172309722986e-15,
+      "tail_bound": 5.831121737884796e-38
+    },
+    "threshold_check_tv": 1.6675150030318747e-13,
+    "grid_check_tv": 2.1889323311265386e-13
+  },
+  "independent": {
+    "checks": [
+      {
+        "name": "target",
+        "joint_tv_vs_fourier": 9.565585999734912e-13,
+        "max_cell_error": 1.5213524884316598e-15
+      },
+      {
+        "name": "base_q",
+        "joint_tv_vs_fourier": 1.108852693605652e-12,
+        "max_cell_error": 1.6826817716975029e-15
+      },
+      {
+        "name": "fitted_q",
+        "joint_tv_vs_fourier": 1.0244388951215323e-12,
+        "max_cell_error": 1.4693107841523556e-15
+      }
+    ]
+  },
+  "corrected_cross_check": [
+    {
+      "model": "base",
+      "real_recurrence_corrected_joint_tv": 1.4538248493780278e-12,
+      "corrected_total_tv": 1.340923653506529e-13
+    },
+    {
+      "model": "fitted",
+      "real_recurrence_corrected_joint_tv": 1.3226470666390619e-12,
+      "corrected_total_tv": 1.4104032702482258e-13
+    }
+  ],
+  "actual_optical": [
+    {
+      "model": "base",
+      "pnr": false,
+      "shots": 262144,
+      "changed": 0.0168304443359375,
+      "hardware_total_click_ks": 0.0448541541434514,
+      "empirical_panel_tv": [
+        0.025933014787998136,
+        0.02511002864035581,
+        0.005135970845193738,
+        0.06866655062619034,
+        0.03049323733113681,
+        0.006173027463316867
+      ],
+      "full_gpu_us": [
+        1.3532715001929319,
+        1.109313966907166
+      ],
+      "equal_first8_us": 1.3229492310529167
+    },
+    {
+      "model": "base",
+      "pnr": true,
+      "shots": 262144,
+      "changed": 0.02230072021484375,
+      "hardware_total_click_ks": 0.04127640832582957,
+      "empirical_panel_tv": [
+        0.02558643818409836,
+        0.025897329429250215,
+        0.004886338633199474,
+        0.07483257360678293,
+        0.03080341916290706,
+        0.0059455137145218995
+      ],
+      "total_ks": 0.0022992258106658055,
+      "joint_empirical_tv": 0.07024275198404645,
+      "pair_empirical_tv": 0.0007367880791301105,
+      "outside_grid": 0,
+      "full_gpu_us": [
+        0.7088378879416268,
+        0.40291137537451505
+      ],
+      "equal_first8_us": 0.6833984400600457
+    },
+    {
+      "model": "fitted",
+      "pnr": false,
+      "shots": 262144,
+      "changed": 0.016357421875,
+      "hardware_total_click_ks": 0.04619820820076803,
+      "empirical_panel_tv": [
+        0.026037794502736474,
+        0.024089776106146283,
+        0.0051269008409434505,
+        0.06876570098519903,
+        0.030867223189451266,
+        0.006038798043995545
+      ],
+      "full_gpu_us": [
+        1.3416015747225174,
+        1.1357482918583628
+      ],
+      "equal_first8_us": 1.3697753900032694
+    },
+    {
+      "model": "fitted",
+      "pnr": true,
+      "shots": 262144,
+      "changed": 0.01107025146484375,
+      "hardware_total_click_ks": 0.04202408898989207,
+      "empirical_panel_tv": [
+        0.026571494855814913,
+        0.025015141620527273,
+        0.006200782546690839,
+        0.07380986771559969,
+        0.030617052966789488,
+        0.00529078563254457
+      ],
+      "total_ks": 0.0012395914498392624,
+      "joint_empirical_tv": 0.07078779126702492,
+      "pair_empirical_tv": 0.00041795217647676384,
+      "outside_grid": 0,
+      "full_gpu_us": [
+        0.6156249980904249,
+        0.40003662249432637
+      ],
+      "equal_first8_us": 0.6697754031392833
+    }
+  ],
+  "hardware_profile": [
+    {
+      "pnr": false,
+      "shots": 262144,
+      "missing_profile_records": 5,
+      "relocated_packets_per_record": 6.612480163574219,
+      "before_ks": [
+        0.0016225176242204986,
+        0.06748645606626996,
+        0.05572119244563034,
+        0.030732051183661735,
+        0.004542322055536868,
+        0.0022611110808386514
+      ],
+      "after_ks": [
+        0.0016225176242204986,
+        0.0011435643611223956,
+        0.001136886992468611,
+        0.0013532511300541894,
+        0.006656904845940059,
+        0.00766408257298723
+      ],
+      "cross_pair_hardware_tv": 0.013040194201775386,
+      "first8_hardware_tv": 0.0069126636378884845,
+      "first8_optical_tv": 0.013068092285066982,
+      "full_gpu_us": [
+        1.362207029842466,
+        1.132165529327267
+      ],
+      "equal_first8_us": 1.3911132725752395
+    },
+    {
+      "pnr": true,
+      "shots": 262144,
+      "missing_profile_records": 2,
+      "relocated_packets_per_record": 6.697742462158203,
+      "before_ks": [
+        0.002288873194887908,
+        0.06425159278501996,
+        0.011066074959511174,
+        0.03718919558234668,
+        0.00803785335878543,
+        0.005296291046441498
+      ],
+      "after_ks": [
+        0.002288873194887908,
+        0.0037340479146302785,
+        0.0019493719262376752,
+        0.000994603669973726,
+        0.005447645812736934,
+        0.004233309567166776
+      ],
+      "cross_pair_hardware_tv": 0.012139925647087886,
+      "first8_hardware_tv": 0.008730161706703585,
+      "first8_optical_tv": 0.010710091346654928,
+      "pnr_total_ks": 0.0021533328711559607,
+      "full_gpu_us": [
+        0.6613281300360541,
+        0.4019287125345272
+      ],
+      "equal_first8_us": 0.7175292751071538
+    }
+  ],
+  "hardware_observables": [
+    "total clicks",
+    "active spatial ports",
+    "multiple-click ports",
+    "triple-or-more ports",
+    "clicks first 36 ports",
+    "clicks last 36 ports"
+  ],
+  "hardware_train": 746336,
+  "hardware_holdout": 746306,
+  "profile_types": 301484,
+  "hardware_split_ks": 0.0018192874202815068,
+  "frugal_gpu_same_eight_bits": [
+    {
+      "k": 2,
+      "us": 3.787744148553429,
+      "optical_empirical_tv": 0.09385703044001611,
+      "hardware_empirical_tv": 0.10166803379669506,
+      "shots": 262144
+    },
+    {
+      "k": 4,
+      "us": 4.111840823384227,
+      "optical_empirical_tv": 0.013169157054433285,
+      "hardware_empirical_tv": 0.020515951504955665,
+      "shots": 262144
+    }
+  ],
+  "pnr_289_861": {
+    "shots": 262144,
+    "optical_empirical_tv": 0.00041795217647676384,
+    "profile_empirical_tv": 0.006390266681126714,
+    "previous_pe": {
+      "ports": [
+        289,
+        861
+      ],
+      "shots": 32768,
+      "pnr_empirical_tv": 0.0016964589854902069,
+      "pe_empirical_tv": 0.00349958683764194,
+      "pe_us": 481.22695312713404
+    }
+  },
+  "collective": [
+    {
+      "ports": 16,
+      "cells": 1,
+      "fan": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_photons": 1.5248826601022016,
+      "us": [
+        0.03471680543043476,
+        0.027734387231248547
+      ],
+      "batch": 2048,
+      "ideal_budget_tv_upper": 1.2532123273826067e-11
+    },
+    {
+      "ports": 1152,
+      "cells": 72,
+      "fan": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_photons": 109.79155152735852,
+      "us": [
+        0.18081053099194833,
+        0.16875000596883183
+      ],
+      "batch": 2048,
+      "ideal_budget_tv_upper": 9.023128757154768e-10
+    },
+    {
+      "ports": 131072,
+      "cells": 8192,
+      "fan": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_photons": 12491.838751557236,
+      "us": [
+        15.243749658111483,
+        15.603125575580634
+      ],
+      "batch": 32,
+      "ideal_budget_tv_upper": 1.0266315385918314e-07
+    },
+    {
+      "ports": 4,
+      "cells": 1,
+      "fan": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_photons": 1.5248826601022016,
+      "us": [
+        0.05336914910003543,
+        0.028906242732773535
+      ],
+      "batch": 2048,
+      "ideal_budget_tv_upper": 1.2532123273826067e-11
+    },
+    {
+      "ports": 131072,
+      "cells": 32768,
+      "fan": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_photons": 49967.35500622894,
+      "us": [
+        15.843750588828698,
+        19.512501239660196
+      ],
+      "batch": 32,
+      "ideal_budget_tv_upper": 4.1065261543673257e-07
+    },
+    {
+      "ports": 131073,
+      "cells": 1,
+      "fan": [
+        32768,
+        32768,
+        32768,
+        32769
+      ],
+      "mean_photons": 1.5248826601022016,
+      "us": [
+        17.97096751209709,
+        19.254838867533593
+      ],
+      "batch": 31,
+      "ideal_budget_tv_upper": 1.254809353314809e-11
+    }
+  ],
+  "collective_partial_transpose": [
+    0.6129215709653323,
+    0.5711832687909875,
+    0.6886796526374636,
+    0.4248216146251096,
+    0.42272709974143385,
+    0.43039951215394573,
+    0.4235230982735396
+  ],
+  "collective_peers": {
+    "click": [
+      {
+        "cutoff": 0,
+        "gpu_us": 0.21328126820208126,
+        "shots": 262144,
+        "gpu_empirical_tv": 0.034758713611771574,
+        "model_tv": 3.963105498484816e-14
+      },
+      {
+        "cutoff": 2,
+        "gpu_us": 4.618530269340226,
+        "shots": 262144,
+        "gpu_empirical_tv": 0.2115899394038438,
+        "cpu_us": 5.842871104277947,
+        "cpu_model_tv": 0.20022943509564467
+      },
+      {
+        "cutoff": 4,
+        "gpu_us": 7.6258544936536055,
+        "shots": 262144,
+        "gpu_empirical_tv": 0.04457527404814547,
+        "cpu_us": 20.289453146915548,
+        "cpu_model_tv": 0.021498051056944717
+      }
+    ],
+    "pnr": [
+      {
+        "backend": "collective",
+        "us": 0.9132809282164089,
+        "shots": 4096,
+        "censored": 0,
+        "pair_empirical_tv": 0.01010354578591431,
+        "total_empirical_ks": 0.010910370273179724
+      },
+      {
+        "backend": "cpu",
+        "us": 1481.3406246503291,
+        "shots": 4096,
+        "censored": 0,
+        "pair_empirical_tv": 0.013509995321361616,
+        "total_empirical_ks": 0.008286538039638143
+      },
+      {
+        "backend": "cuda",
+        "us": 1483.8687498013314,
+        "shots": 4096,
+        "censored": 0,
+        "pair_empirical_tv": 0.007589350523031494,
+        "total_empirical_ks": 0.0038839229247059556
+      }
+    ]
+  },
+  "mixed_gaussian_cores": {
+    "cross_checks": [
+      3.903511457162276e-14,
+      1.1188094604747775e-11
+    ],
+    "core_states": 1028790,
+    "independent_setup_s": 0.5699804999749176,
+    "independent": {
+      "tail": 9.100377945905278e-14,
+      "negative_mass": -0.0,
+      "terms": 80,
+      "tables": [
+        {
+          "entries": 625,
+          "dropped": 0.0,
+          "rounding": 3.004132137307403e-14
+        },
+        {
+          "entries": 265256,
+          "dropped": 2.000621890374532e-13,
+          "rounding": 1.0981484957343724e-11
+        }
+      ]
+    },
+    "physical_ports": [
+      0,
+      272,
+      280,
+      856
+    ],
+    "mixed": {
+      "tail": 2.4011000213598302e-18,
+      "negative_mass": -0.0,
+      "terms": 624,
+      "tables": [
+        {
+          "entries": 16,
+          "dropped": 0.0,
+          "rounding": 8.291097300903993e-16
+        },
+        {
+          "entries": 5478,
+          "dropped": 1.999511667349907e-13,
+          "rounding": 2.5503207363852237e-13
+        }
+      ]
+    },
+    "source_spectra": 2,
+    "direct_vs_reference": 8.57014383504745e-16,
+    "threshold_vs_reference": 1.7058565931343805e-16,
+    "scaling": [
+      {
+        "cells": 1,
+        "ports": 4,
+        "mean_photons": 0.3971788496727083,
+        "us": [
+          0.058593741414370015,
+          0.05385743406804977
+        ],
+        "batch": 2048,
+        "ideal_budget_tv_upper": 4.549856414735344e-13
+      },
+      {
+        "cells": 288,
+        "ports": 1152,
+        "mean_photons": 114.38750870573999,
+        "us": [
+          0.15156251720327418,
+          0.15556642551928235
+        ],
+        "batch": 2048,
+        "ideal_budget_tv_upper": 1.310358647443779e-10
+      },
+      {
+        "cells": 32768,
+        "ports": 131072,
+        "mean_photons": 13014.756546075305,
+        "us": [
+          16.562500604777597,
+          15.956249626469798
+        ],
+        "batch": 32,
+        "ideal_budget_tv_upper": 1.4908969499804775e-08
+      }
+    ]
+  },
+  "passive_coupler": {
+    "small": [
+      {
+        "theta": 0.003,
+        "tv": 0.0004065357660766796,
+        "full_state_bound": 0.0031355133134615557,
+        "total_sector_bound": 0.0026877934466064566,
+        "numerical_residual": 6.229558679614452e-15
+      },
+      {
+        "theta": 0.02,
+        "tv": 0.0026938300799114715,
+        "full_state_bound": 0.020895516940654953,
+        "total_sector_bound": 0.01791358049035745,
+        "numerical_residual": 6.279978121792548e-15
+      },
+      {
+        "theta": 0.1,
+        "tv": 0.013079517426833488,
+        "full_state_bound": 0.10352217160379643,
+        "total_sector_bound": 0.08895532745115287,
+        "numerical_residual": 6.223391229883506e-15,
+        "frugal2": {
+          "model_tv": 0.04766201561994197,
+          "us": 6.281933593754729
+        },
+        "frugal4": {
+          "model_tv": 0.00014208836242195978,
+          "us": 23.723046894019717
+        }
+      },
+      {
+        "theta": 0.4,
+        "tv": 0.048839923334081915,
+        "full_state_bound": 0.36600845295176093,
+        "total_sector_bound": 0.3230048641532258,
+        "numerical_residual": 5.701362790387551e-15
+      },
+      {
+        "theta": 1.0,
+        "tv": 0.1226995881863992,
+        "full_state_bound": 0.617652750774885,
+        "total_sector_bound": 0.5706952900514843,
+        "numerical_residual": 4.936901300403417e-15,
+        "frugal2": {
+          "model_tv": 0.07340238873970756,
+          "us": 5.440966788228252
+        },
+        "frugal4": {
+          "model_tv": 0.020177605347357984,
+          "us": 20.724853499132223
+        }
+      },
+      {
+        "theta": 3.141592653589793,
+        "tv": 0.12198875473385232,
+        "full_state_bound": 0.5797779473905965,
+        "total_sector_bound": 0.531256749374395,
+        "numerical_residual": 5.26413605005865e-15
+      }
+    ],
+    "wide": [
+      {
+        "theta": 0.003,
+        "full_state_bound": 0.0031355133134615557,
+        "total_sector_bound": 0.003135459629231413,
+        "half_grid_difference": 8.913919949393723e-14,
+        "numerical_residual": 5.174817012407702e-11
+      },
+      {
+        "theta": 0.02,
+        "full_state_bound": 0.020895516940654953,
+        "total_sector_bound": 0.020895159574801356,
+        "half_grid_difference": 3.672756543338096e-14,
+        "numerical_residual": 5.173662771224108e-11
+      },
+      {
+        "theta": 0.1,
+        "full_state_bound": 0.10352217160379643,
+        "total_sector_bound": 0.10352044764553771,
+        "half_grid_difference": 9.280076707085527e-14,
+        "numerical_residual": 5.148110140447076e-11
+      },
+      {
+        "theta": 0.4,
+        "full_state_bound": 0.36600845295176093,
+        "total_sector_bound": 0.3660040901417771,
+        "half_grid_difference": 7.4495964952348e-14,
+        "numerical_residual": 4.853133970882887e-11
+      },
+      {
+        "theta": 1.0,
+        "full_state_bound": 0.617652750774885,
+        "total_sector_bound": 0.6176493674915833,
+        "half_grid_difference": 1.4692691507889322e-12,
+        "numerical_residual": 4.2419208963553145e-11
+      },
+      {
+        "theta": 3.141592653589793,
+        "full_state_bound": 0.5797779473905965,
+        "total_sector_bound": 0.5797742645417009,
+        "half_grid_difference": 1.1941558852868184e-12,
+        "numerical_residual": 4.358712717916213e-11
+      }
+    ],
+    "wide_ports": 131072,
+    "wide_cells": 32768,
+    "mean_photons": 49967.35500622894
+  },
+  "cuda_controls": [
+    {
+      "pnr": 0,
+      "wide": 0,
+      "target": 2,
+      "status": 0
+    },
+    {
+      "pnr": 1,
+      "wide": 1,
+      "target": 30,
+      "status": 0
+    },
+    {
+      "pnr": 1,
+      "wide": 1,
+      "target": 0,
+      "status": 0
+    },
+    {
+      "pnr": 1,
+      "wide": 0,
+      "target": 1200,
+      "status": 1
+    },
+    {
+      "pnr": 1,
+      "wide": 1,
+      "target": 1200,
+      "status": 0
+    },
+    {
+      "pnr": 1,
+      "wide": 1,
+      "target": 0,
+      "status": 0
+    }
+  ],
+  "artifact_sha256": {
+    "iteration110_spectrum_v1/laws.npz": "f8a83dd2f179404cca7db046534179f53af62addcb88c88fb68f86c67459b5be",
+    "iteration110_spectrum_v1/manifest.json": "20a4f75e12f853602652c560cbb3592fd77fd12ff054532c21434a6b5751c054",
+    "iteration110_spectrum_v1/summary.json": "fcfd360de6e13c17841ac0473ebf1e45abc80aa862de2e8f032a3f53840f153b",
+    "iteration110_joint_v1/manifest.json": "562c505ccbe98f3f0bf825c61fadd05bdc16a85408895e6a294ed0d6cf34fe1d",
+    "iteration110_joint_v1/summary.json": "98837db3a3eba10578a9b84b8f6ad207742f1115c4e52dbfc3ea09237ec751fc",
+    "iteration110_joint_v1/tables.npz": "2cc30e1c01c16db693b791cc9bcc2d5a07372dcbc2ab695292907dc2768b43e1",
+    "iteration110_device_v1/build.json": "9b9da37909768e928c3ef9c92eaff143493186fc2ec27a120f330a17cf62d443",
+    "iteration110_device_v1/gpu.dll": "a8d04503d7a39b2f53b5fae536f0295edc6801b531e65ecd2308d4b4adb04906",
+    "iteration110_device_v1/histograms.npz": "415f7efede3975eb9b639cc825eac1f825389741d2213268e4ec4d58f38e9921",
+    "iteration110_device_v1/manifest.json": "c49f969e8c6653b2b31a3e1ce9e60d4b51ec18a25e974a566073ec1c902a46bc",
+    "iteration110_device_v1/summary.json": "415ba4da757ac5e4ab228cf101dbce2efcad3de18f33fcc2a5459b6a8a90d676",
+    "iteration110_hardware_v1/build.json": "061c834fd25eba5133fe989c4fa23711b230c8e6d444f68f71aee712985bba39",
+    "iteration110_hardware_v1/gpu.dll": "499d2bfba95380b7b66304885c04b1623456603b91a9f4b12fcaee51fd1034c9",
+    "iteration110_hardware_v1/histograms.npz": "8be8ec12e85fb54e826dca0ffc9c83b285b26ff4e8ce504e17c48e1787c1fc22",
+    "iteration110_hardware_v1/manifest.json": "0f09bf9816b57113ee28672ef6fe2f97dd54b30d48287af7f7da0cad861b6dd7",
+    "iteration110_hardware_v1/summary.json": "3effbc0c785325c6ecf102f6e6d7b085731bd3875c6ebc2c2259cfab767f0416",
+    "iteration110_profile_v1/build.json": "9ca95505600639468edbdbc25a2817e483e81b5c61f53de3a2fe4e0ade19a03b",
+    "iteration110_profile_v1/gpu.dll": "b615adb4b81e58b711864e94d632059a6669bfc6b14360f60d1078a3faa43d9a",
+    "iteration110_profile_v1/histograms.npz": "8d9a6cf189b6c83659383d6ed051d25833c89390ee4d1138f58e312632784413",
+    "iteration110_profile_v1/manifest.json": "6de659ec8553585ef09122a862dc9e3374600d0178fa0835579545eed170c55c",
+    "iteration110_profile_v1/summary.json": "0aa0c88d0852085386cb698ccee9df0657dc7aad2f06a10a3518c340cd36e187",
+    "iteration110_profile_v1/training.npz": "3d0c7339cfe5a14f689a985acf42cbcede194da67ad50deedc4ce1c4e724b889",
+    "iteration110_collective_v1/build.json": "f54f4a74778c3d22c0dc13ec1f50c6bf972627e3f2db390dc9084e7400d719b2",
+    "iteration110_collective_v1/gpu.dll": "f49e4aac5b5c29aaf0d93d6306759beaadb98051156d86b926a968f8710c04b4",
+    "iteration110_collective_v1/laws.dll": "6eaf0f3024f685a4c5fdf9c01024fd205705343f113eb2dc5c29a9693b4ca646",
+    "iteration110_collective_v1/manifest.json": "d589b0ebad4f0ec17c21029725a6a8132da0ec276ef58133e5ec95e5f3f9fee3",
+    "iteration110_collective_v1/optical.npz": "ca9fc3cfb8dae86a4f41b5899684b0cc3944ee7e58b7dee306b21beb452189b2",
+    "iteration110_collective_v1/summary.json": "b39e3f9dc91301ce8cd0aee0c982b1b2d98cb279748daeb000d85df4b5685e9a",
+    "iteration110_peers_v1/laws.npz": "978edd4343ff54cce91253deeedd77252f767982986f643a2b36e232d71146cc",
+    "iteration110_peers_v1/manifest.json": "a26beff0c463579e0195b065de345f8d5dbcd490c65a900d337c541fd648ba4a",
+    "iteration110_peers_v1/summary.json": "41bc09e5cd5d6a7c36b2f2e72d713a35c2a164958b55dbc7960f0780533da541",
+    "iteration110_bus_v1/laws.npz": "3723787742fbb7481b8e41131940a2ff880d87ef7d3ad9ed3925c3cd4be38d50",
+    "iteration110_bus_v1/manifest.json": "9f72a85e4e376b3d9e3e2c36c5d5ec233cc742b9574452cef6e323778775c46f",
+    "iteration110_bus_v1/summary.json": "990f4109255ec810c84644a4b5a14195341d29ae173e636227a670db0c1435bb",
+    "iteration110_independent_v1/conditioned.dll": "6de70e4191cbf05e4c8db72b19f0f1fde406dda24731d7712e491c735296dfc0",
+    "iteration110_independent_v1/laws.npz": "54b62053066531b79511c135a57370e52afc3a243b1a0d7a2903aa677e7d7705",
+    "iteration110_independent_v1/manifest.json": "ac97dcfa83663ad28d740008d6a3394e255b288ed5e9951e538fe2eb17aa9e91",
+    "iteration110_independent_v1/summary.json": "076f0551a16b2ed950ef4b90606b0d4cc9d1a19d0675f8b7b38aca840866ef49",
+    "iteration110_mixed_v1/manifest.json": "0e0eeabfdf701964d82bae5e8a6e5fa753794f22967e761610a503e8ace3a6cc",
+    "iteration110_mixed_v1/mixed.dll": "b6fe2189863b854806f5654b837041ab05dc56ade0a04194890f5133c83f22ea",
+    "iteration110_mixed_v1/mixed.npz": "c8c9e763de034f96a2a4f3eac2d9f0c366674f340eabd65983ad74a78dbb786d",
+    "iteration110_mixed_v1/summary.json": "637b317a66e45afc686d5c42310f9922f4c82729f432f8f59b6666bbea474f9d"
+  }
+}

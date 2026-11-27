@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "name": "base",
+      "pnr": {
+        "edit_probability": 0.0217427099254417,
+        "before_tv": 0.02174270992544179,
+        "after_tv": 1.511103199670148e-13
+      },
+      "direct": {
+        "edit_probability": 0.01727782617956146,
+        "before_tv": 0.017277826179561445,
+        "after_tv": 4.882481945733913e-14
+      },
+      "source_checks": {
+        "negative_mass": 2.069567959494447e-13,
+        "impossible_mass": 1.9228732104845103e-15,
+        "tail_bound": 1.3761366214726445e-39
+      },
+      "total_tv": 0.019608116044785944
+    },
+    {
+      "name": "fitted",
+      "pnr": {
+        "edit_probability": 0.010863046599912963,
+        "before_tv": 0.010863046599913436,
+        "after_tv": 4.6836571145777454e-14
+      },
+      "direct": {
+        "edit_probability": 0.01682256756436212,
+        "before_tv": 0.016822567564362095,
+        "after_tv": 4.706860494231058e-14
+      },
+      "source_checks": {
+        "negative_mass": 1.8714019585429846e-13,
+        "impossible_mass": 2.9156635873023307e-15,
+        "tail_bound": 1.2716642423676988e-31
+      },
+      "total_tv": 0.004976715056045251
+    }
+  ],
+  "seconds": 2.2730112000135705,
+  "reference_checks": {
+    "negative_mass": 1.9328904121717572e-13,
+    "impossible_mass": 2.8526172309722986e-15,
+    "tail_bound": 5.831121737884796e-38
+  },
+  "threshold_check_tv": 1.6675150030318747e-13,
+  "grid_check_tv": 2.1889323311265386e-13
+}

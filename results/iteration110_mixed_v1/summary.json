@@ -1,0 +1,86 @@
+{
+  "cross_checks": [
+    3.903511457162276e-14,
+    1.1188094604747775e-11
+  ],
+  "core_states": 1028790,
+  "independent_setup_s": 0.5699804999749176,
+  "independent": {
+    "tail": 9.100377945905278e-14,
+    "negative_mass": -0.0,
+    "terms": 80,
+    "tables": [
+      {
+        "entries": 625,
+        "dropped": 0.0,
+        "rounding": 3.004132137307403e-14
+      },
+      {
+        "entries": 265256,
+        "dropped": 2.000621890374532e-13,
+        "rounding": 1.0981484957343724e-11
+      }
+    ]
+  },
+  "physical_ports": [
+    0,
+    272,
+    280,
+    856
+  ],
+  "mixed": {
+    "tail": 2.4011000213598302e-18,
+    "negative_mass": -0.0,
+    "terms": 624,
+    "tables": [
+      {
+        "entries": 16,
+        "dropped": 0.0,
+        "rounding": 8.291097300903993e-16
+      },
+      {
+        "entries": 5478,
+        "dropped": 1.999511667349907e-13,
+        "rounding": 2.5503207363852237e-13
+      }
+    ]
+  },
+  "source_spectra": 2,
+  "direct_vs_reference": 8.57014383504745e-16,
+  "threshold_vs_reference": 1.7058565931343805e-16,
+  "scaling": [
+    {
+      "cells": 1,
+      "ports": 4,
+      "mean_photons": 0.3971788496727083,
+      "us": [
+        0.058593741414370015,
+        0.05385743406804977
+      ],
+      "batch": 2048,
+      "ideal_budget_tv_upper": 4.549856414735344e-13
+    },
+    {
+      "cells": 288,
+      "ports": 1152,
+      "mean_photons": 114.38750870573999,
+      "us": [
+        0.15156251720327418,
+        0.15556642551928235
+      ],
+      "batch": 2048,
+      "ideal_budget_tv_upper": 1.310358647443779e-10
+    },
+    {
+      "cells": 32768,
+      "ports": 131072,
+      "mean_photons": 13014.756546075305,
+      "us": [
+        16.562500604777597,
+        15.956249626469798
+      ],
+      "batch": 32,
+      "ideal_budget_tv_upper": 1.4908969499804775e-08
+    }
+  ]
+}
