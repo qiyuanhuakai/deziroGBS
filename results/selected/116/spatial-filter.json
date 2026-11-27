@@ -1,0 +1,63 @@
+{
+  "archive": "c679bf9a5f1bcdf06347d9d9b31bb48141d989f5",
+  "reference": "Jiuzhang 3.0 high-power calibrated optical model",
+  "banks": [
+    34,
+    35,
+    0,
+    1,
+    17,
+    89,
+    45,
+    98
+  ],
+  "all_total_reweightings_full_PNR_TV_lower_numerical": 0.020153053307115476,
+  "eight_bank_joint_TV": [
+    0.0027412355182050378,
+    0.0027465229772791703
+  ],
+  "total_PNR_TV": [
+    0.0005237631733901978,
+    0.0005290506324643304
+  ],
+  "fixed_N116_bank_word_TV": 0.0007657056239372103,
+  "full_device_TV_upper_for_filtered_sampler": null,
+  "panels": {
+    "34_35": {
+      "pnr_lower": 0.011972451901459305,
+      "pnr_upper": 0.02138457569607662,
+      "full_click_tv": 0.011310204077322476,
+      "click_wrap_bound": 3.101278076881037e-17,
+      "local_dark_probability": 8.832192537242625e-05
+    },
+    "71_72": {
+      "pnr_lower": 0.0034774050369170313,
+      "pnr_upper": 0.013047571359486053,
+      "full_click_tv": 0.003436641400990643,
+      "click_wrap_bound": 2.615912386477558e-29,
+      "local_dark_probability": 9.130367993834543e-05
+    },
+    "102_143": {
+      "pnr_lower": 0.0007869679760260397,
+      "pnr_upper": 0.009745033703176186,
+      "full_click_tv": 0.0007635962253761541,
+      "click_wrap_bound": 3.7574070439959345e-26,
+      "local_dark_probability": 8.06574017494116e-05
+    }
+  },
+  "throughput": [
+    {
+      "route": "PNR",
+      "median_us": 1.132694694629851,
+      "proposals": 131072,
+      "accepted": 121390
+    },
+    {
+      "route": "direct_click",
+      "median_us": 2.0780597596988706,
+      "proposals": 131072,
+      "accepted": 121406
+    }
+  ],
+  "proposal_batch": 4096
+}

@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 116 轮 · 总数校正的误差下界、空间过滤和跨面板检验](https://github.com/qiyuanhuakai/deziroGBS/blob/c679bf9a5f1bcdf06347d9d9b31bb48141d989f5/papers/number-tilted-gbs/manuscript.pdf) · [复现步骤](https://github.com/qiyuanhuakai/deziroGBS/blob/c679bf9a5f1bcdf06347d9d9b31bb48141d989f5/papers/number-tilted-gbs/README.md)
+
 [第 115 轮 · 正权重总光子数校正、两种读出与空间误差](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/research/iteration115_checkpoint_v1.md) · [英文预印本 PDF](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/papers/number-tilted-gbs/manuscript.pdf) · [LaTeX 源码](https://github.com/qiyuanhuakai/deziroGBS/blob/824f07679e4ba5ce4ca3f9c9c7c4e303dee9386e/papers/number-tilted-gbs/latex-source.zip)
 
 [第 114 轮 · 稠密干涉网络中的少源采样与九章光子数读出](https://github.com/qiyuanhuakai/deziroGBS/blob/bc0c7333f5fbcc2720370bc8a596a480d1ee0966/research/iteration114_checkpoint_v1.md)
