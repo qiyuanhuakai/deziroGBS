@@ -1,0 +1,47 @@
+{
+  "training_file": 10,
+  "training_sha256": "c8e5753f1d7af8d0ceb61897946cf950e2c23dd14b606d8740a4ff9b121426db",
+  "holdouts": [
+    14,
+    15
+  ],
+  "banks": [
+    2,
+    54,
+    55,
+    88,
+    89,
+    98,
+    125,
+    140
+  ],
+  "bank_pairs": [
+    [
+      34,
+      35
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      102,
+      143
+    ]
+  ],
+  "fit": "144 positive row-intensity multipliers fixed by the probabilities of zero clicks in each bank on capture 10.",
+  "sha256_predictions": "2afc32c594ca5159c6741a8762b842ff72a34477c6492221f75681661c898199",
+  "adjusted_transfer_max_singular": 0.7301715622840532,
+  "max_training_vacuum_residual": 5.440092820663267e-15,
+  "range_intensity_gain": [
+    1.0010660232505024,
+    1.1098278627903475
+  ],
+  "metrics": [
+    "median and maximum TV of within-bank multiplicities conditional on a nonempty bank",
+    "RMS error of connected occupancies over all 10296 unordered bank pairs",
+    "complete joint multiplicity TV on three predeclared bank pairs",
+    "complete TV on the archived eight-bank occupancy words and absolute error on the round-119 event"
+  ],
+  "scope": "Descriptive distances to each complete held-out file. No hypothesis of independent device records."
+}
