@@ -35,3 +35,17 @@ python experiments/iteration115_review_certificates_v3.py
 ```
 
 [Results and numerical bounds](../../results/iteration115_review_v3/validation.json) · [Raw conditional distributions](../../results/iteration115_review_v3) · [Revision checksums](../../results/iteration115_review_v3/manifest.json) · [Goodman et al.](https://arxiv.org/abs/2604.12330)
+
+## Spatial calibration and the limit of total-only reweighting
+
+Revision 4 uses the original high-power transfer and the first four bank pairs in the revision-3 panel list. The full PNR lower bound applies to all total-only reweightings of the stated base. The joint-statistic upper endpoints apply to the eight-bank word paired with the global count. The spatially filtered sampler has its own full-record timings and panel errors in Section 9.
+
+```sh
+python experiments/iteration116_sector_floor.py
+python experiments/iteration116_word_filter.py
+python experiments/iteration116_panel_transfer.py
+```
+
+The first command computes the witness and a feasible competing distribution. The second fits unconditional spatial filters and benchmarks both readouts. The third independently reconstructs the complete stress and disjoint-panel click laws and bounds their PNR errors. The archive includes the per-batch timings, optical and model probability arrays, and examples of full records. To reproduce the separate pure-state bond-rank calculation, run `python experiments/iteration116_schmidt.py results/iteration116_schmidt/spectrum.json`. At the central cut the best rank-65,536 approximation to the stronger pure remainder has trace distance 5.9905%. That calculation concerns one chosen pure-state decomposition before measurement.
+
+[Sector bound](../../results/iteration116_sectors/floor.json) · [Filters and timings](../../results/iteration116_sectors/filtered.json) · [Complete panel comparisons](../../results/iteration116_sectors/panel_transfer.json) · [Checksums](../../results/iteration116_sectors/manifest.json)
