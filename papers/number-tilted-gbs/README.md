@@ -6,9 +6,34 @@
 
 The paper tests one physical approximation with two readouts. It distinguishes total-photon accuracy on the high-power optical model, full PNR and threshold accuracy on a 16-detector panel, and discrepancies from measured Jiuzhang 3.0 clicks.
 
+## Correlated four-photon core
+
+Revision 5 samples both readouts on all 1,152 physical detector ports, before any bank compression. Section 10 gives the sequential contraction, its full-state error bound, and the effect of restoring first-order optical coherence. The original and adjusted models each produced 4,096 scored PNR and 4,096 directly sampled threshold rows at high power. The low and median power calibrations are separate official matrices and spreadsheets.
+
+[Every scored high-power row](../../results/iteration117_quartic/scored_4096.npz) · [Coherence-restored rows](../../results/iteration117_quartic/transport_scored_4096.npz) · [Complete PNR bounds](../../results/iteration117_quartic/resolved_pnr.json) · [All three powers](../../results/iteration117_quartic/transport_laws.json) · [Independent oscillator check](../../results/iteration117_quartic/validation.json) · [Revision checksums](../../results/iteration117_quartic/manifest.json)
+
+Run the following from the fixed archive root. The input script downloads six published files by byte range, checks their sizes and CRCs, and records their SHA-256 digests. It requires network access, Python with NumPy, SciPy, openpyxl, requests and the archived project dependencies, and an extraction tool compatible with the Windows tar command. The readout kernel rebuilds with a C++17/OpenMP compiler.
+
+```sh
+python experiments/iteration117_power_inputs.py
+python experiments/iteration117_quartic.py --shots 4096 --batch 32
+python experiments/iteration117_quartic.py --shots 4096 --batch 32 --transport
+python experiments/iteration117_capture.py
+python experiments/iteration117_quartic_laws.py
+python experiments/iteration117_power_laws.py
+python experiments/iteration117_power_laws.py --transport
+python experiments/iteration117_quartic_panels.py 34 35
+python experiments/iteration117_quartic_panels.py 34 35 --transport
+python experiments/iteration117_resolved_pnr.py --cap 6
+python experiments/iteration117_resolved_pnr.py --cap 6 --transport
+python experiments/iteration117_verify.py
+```
+
+For each of `low`, `median` and `high`, pass the power name to `iteration117_bank_sweep.py`, followed by `iteration117_pair_sweep.py`. The first program enumerates 256 words for each of 144 banks. The second evaluates all 10,296 joint empty/occupied laws and connected empty-bank correlations. Use `iteration117_quartic.py --power low --shots 512 --batch 32` and the corresponding median command for the two additional record sets. Specify 71 72 or 102 143 for the two disjoint unmodified-model panel checks. `iteration117_figure.py` rebuilds Figure 3. A preliminary partition test recovered 8.389% of the squared off-diagonal remainder covariance with 72 matched pairs; the corresponding full-record TV upper bound was 99.368%. [Partition calculation](../../results/iteration117_blocks/partition.json)
+
 ## Reproduce the paper
 
-The source package contains the manuscript, two vector figures, and the data-derived table and macros. Extract it and run `pdflatex manuscript.tex` twice. The checked-in PDF uses the same sources.
+The source package contains the manuscript, three vector figures, and the data-derived table and macros. Extract it and run `pdflatex manuscript.tex` twice. The checked-in PDF uses the same sources.
 
 The following commands run from the archive root with the Windows, CUDA, and upstream-tool environment of the [round-115 checkpoint](../../research/iteration115_checkpoint_v1.md). The scripts expect the fixed optical input and earlier stage outputs from that archive. Run in a separate checkout to preserve the original timings.
 
