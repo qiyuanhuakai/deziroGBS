@@ -1,16 +1,44 @@
-# Photon-number calibration of a dual-readout Gaussian boson sampler
+# Sampling a lossy Gaussian boson model with bounded full-record error
 
 **qiyuanhuakai** · 27 November 2026
 
 [Read the paper (PDF)](manuscript.pdf) · [Download the LaTeX source package](latex-source.zip) · [Matched 4,096-shot measurements](../../results/iteration115_panel_accuracy_v2/validation.json) · [Run protocol and input digest](../../results/iteration115_panel_accuracy_v2/protocol.json)
 
-The paper tests one physical approximation with two readouts. It distinguishes total-photon accuracy on the high-power optical model, full PNR and threshold accuracy on a 16-detector panel, and discrepancies from measured Jiuzhang 3.0 clicks.
+Revision 6 compares two complete 1,152-port readouts on the original high-power optical calibration. Retaining seven and five pairs in the two undisplaced residuals gives a 3.0914% full-record TV upper bound. Resolving the displacement environment gives a separate 2.330% upper confidence limit at 99%. Independent calculations on the historical 16-port stress panel give 0.0036391% complete click TV and a 0.00368%–0.1490% bracket for complete PNR TV.
+
+[Full-width pilot and timings](../../results/iteration118_auxiliary/cap14_weak10_8.json) · [Total-count law](../../results/iteration118_auxiliary/law_7_5.json) · [Complete panel click law](../../results/iteration118_auxiliary/panel_7_5_28.json) · [Panel PNR bound](../../results/iteration118_auxiliary/panel_distance.json) · [Environment calculation](../../results/iteration118_auxiliary/environment_7_5.json) · [SHA-256 manifest](../../results/iteration118_auxiliary/manifest.json)
+
+## Reproduce the higher-cutoff experiment
+
+Run from the fixed archive root using the original high-power input described below. Python requires NumPy, SciPy, mpmath and threadpoolctl, in addition to earlier input preparation dependencies. The complete click enumeration compiles a C++17/OpenMP kernel with g++. The sampling driver limits BLAS to one thread per worker. The archive includes full output rows, per-record timings, the determinant coefficients recovered as probability tables, and an independent small-system amplitude calculation.
+
+```sh
+python experiments/iteration118_check.py
+python experiments/iteration118_end_to_end.py
+python experiments/iteration118_measure.py --pairs 5 --shots 128 --workers 4
+python experiments/iteration118_measure.py --pairs 7 --weak-ten --shots 2 --workers 1
+python experiments/iteration118_measure.py --pairs 7 --weak-ten --shots 8 --workers 4
+python experiments/iteration118_laws.py 5 5
+python experiments/iteration118_laws.py 7 5
+python experiments/iteration118_environment.py 7 5 --rows 32768
+python experiments/iteration118_environment_check.py
+python experiments/iteration118_replay.py
+python experiments/iteration118_panel.py
+python experiments/iteration118_panel.py --nodes 32 --radius 0.71
+python experiments/iteration118_panel_distance.py
+```
+
+Run both panel programs with `--banks 71 72` and `--banks 102 143` for the disjoint spatial checks. Run `iteration118_figure.py` to regenerate the full-record figure.
+
+Run `python experiments/iteration118_verify.py` on an unchanged archive to verify all revision 6 digests and stored results.
+
+A record index has independent streams for spectrum, readout, auxiliary proposals, displacement and detector draws. Repeating an index with a different worker count is a deterministic replay. The two-row pilot and the first two rows of the larger run share seeds. The prefix diagnostics were added after the first two runs.
 
 ## Correlated four-photon core
 
-Revision 5 samples both readouts on all 1,152 physical detector ports, before any bank compression. Section 10 gives the sequential contraction, its full-state error bound, and the effect of restoring first-order optical coherence. The original and adjusted models each produced 4,096 scored PNR and 4,096 directly sampled threshold rows at high power. The low and median power calibrations are separate official matrices and spreadsheets.
+Revision 5 samples both readouts on all 1,152 physical detector ports, before any bank compression. The four-photon section gives the sequential contraction, its full-state error bound, and the effect of restoring first-order optical coherence. The original and adjusted models each produced 4,096 scored PNR and 4,096 directly sampled threshold rows at high power. The low and median power calibrations are separate official matrices and spreadsheets.
 
-[Every scored high-power row](../../results/iteration117_quartic/scored_4096.npz) · [Coherence-restored rows](../../results/iteration117_quartic/transport_scored_4096.npz) · [Complete PNR bounds](../../results/iteration117_quartic/resolved_pnr.json) · [All three powers](../../results/iteration117_quartic/transport_laws.json) · [Independent oscillator check](../../results/iteration117_quartic/validation.json) · [Revision checksums](../../results/iteration117_quartic/manifest.json)
+[Every scored high-power row](../../results/iteration117_quartic/scored_4096.npz) · [Coherence-restored rows](../../results/iteration117_quartic/transport_scored_4096.npz) · [Complete PNR bounds](../../results/iteration117_quartic/resolved_pnr.json) · [All three powers](../../results/iteration117_quartic/transport_laws.json) · [Independent oscillator check](../../results/iteration117_quartic/validation.json) · [Revision 5 checksums](https://github.com/qiyuanhuakai/deziroGBS/blob/adce0699a5fe5f4b6d162317d31165cfaaeae652/results/iteration117_quartic/manifest.json)
 
 Run the following from the fixed archive root. The input script downloads six published files by byte range, checks their sizes and CRCs, and records their SHA-256 digests. It requires network access, Python with NumPy, SciPy, openpyxl, requests and the archived project dependencies, and an extraction tool compatible with the Windows tar command. The readout kernel rebuilds with a C++17/OpenMP compiler.
 
@@ -33,7 +61,7 @@ For each of `low`, `median` and `high`, pass the power name to `iteration117_ban
 
 ## Reproduce the paper
 
-The source package contains the manuscript, three vector figures, and the data-derived table and macros. Extract it and run `pdflatex manuscript.tex` twice. The checked-in PDF uses the same sources.
+The source package contains the manuscript, four vector figures, and the data-derived table and macros. Extract it and run `pdflatex manuscript.tex` twice. The checked-in PDF uses the same sources.
 
 The following commands run from the archive root with the Windows, CUDA, and upstream-tool environment of the [round-115 checkpoint](../../research/iteration115_checkpoint_v1.md). The scripts expect the fixed optical input and earlier stage outputs from that archive. Run in a separate checkout to preserve the original timings.
 
