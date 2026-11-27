@@ -2,6 +2,8 @@
 
 从阶段进入各轮报告。目录中的编号对应实验脚本、配置和结果使用的轮次。
 
+[第 109 轮 · 位移干涉、重叠端口读出与高占用双光束](https://github.com/qiyuanhuakai/deziroGBS/blob/3a8651b49554a1d87ef371caa105918b5f0ca77c/research/iteration109_checkpoint_v1.md)
+
 [第 108 轮 · 整机光子数、相干光子对与完整分布误差](https://github.com/qiyuanhuakai/deziroGBS/blob/a09ccbe38c5ad7023fbbb005d5d8dac27012312b/research/iteration108_checkpoint_v1.md)
 
 [第 107 轮 · 光子碰撞、直接点击与高维整机误差](https://github.com/qiyuanhuakai/deziroGBS/blob/3050dc1482526215675d247b3df11bcb7eca34c5/research/iteration107_checkpoint_v1.md)
