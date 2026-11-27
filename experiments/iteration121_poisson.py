@@ -79,10 +79,10 @@ def verify():
     vmax = arb(max(map(abs,v)))
     span = 2*(b*b+2*abs(b)*vmax+2*vmax*vmax)
     lower = -optical/span
-    assert lower>arb('1e-10')
+    assert lower>arb('4.26e-10')
     result = dict(precision=ctx.prec,thinned_vacuum_ball=str(p0),optical_score_ball=str(optical),
                   oscillation_upper_ball=str(span),full_pnr_tv_lower_ball=str(lower),
-                  certified_lower='1e-10',scope='Every mixture of conditionally independent nonnegative Poisson rates.')
+                  certified_lower='4.26e-10',scope='Every mixture of conditionally independent nonnegative Poisson rates.')
     (OUT/'poisson_certificate.json').write_bytes((json.dumps(result,indent=2)+'\n').encode())
     print(result,flush=True)
 

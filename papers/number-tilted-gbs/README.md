@@ -4,6 +4,40 @@
 
 [Read the paper (PDF)](manuscript.pdf) · [Download the LaTeX source package](latex-source.zip) · [Matched 4,096-shot measurements](../../results/iteration115_panel_accuracy_v2/validation.json) · [Run protocol and input digest](../../results/iteration115_panel_accuracy_v2/protocol.json)
 
+## Revision 9
+
+The full-width corrected positive-P comparison uses the same calibrated transfer, powers, detector ordering and two spectra as the clamped sampler. The archive contains the training specifications for both fits, record-generation timings, example full records, optical event checks and all eight confirmatory counts. The fitted maps are specified by implementation, training streams, numeric settings and per-layer hashes. The independent implementations of Goodman et al.'s equations are described in the paper.
+
+[Paper](manuscript.pdf) · [LaTeX source](latex-source.zip) · [Full comparison](../../results/iteration121_positive_p/comparison.json) · [Checksums](../../results/iteration121_positive_p/manifest.json)
+
+These checks use NumPy and SciPy. The optical checkers additionally require python-flint 0.9.0. The third verifies the optical endpoint of the 14-bank PNR witness. Replace `pnr` with `click` for directly generated clicks, or omit `--large` for the 12-bank events.
+
+~~~sh
+python experiments/iteration120_interval.py
+python experiments/iteration121_verify.py
+python experiments/iteration121_interval.py pnr --large
+~~~
+
+For full regeneration, use a separate checkout with an empty round-121 results directory. Keep the archived results for comparison. Experiment scripts use the round-120 calibration tables. The archived GPU run used CUDA-enabled PyTorch 2.12.1, Python 3.11, NumPy, SciPy and threadpoolctl. At each line run both routes, replacing ROUTE with `pnr` and then `click`. The local cache stores reproducible FP64 fitted matrices. The confirmatory record scripts use the frozen event files and save their hashes. The interval program recomputes all optical word probabilities for the selected banks.
+
+~~~sh
+python experiments/iteration121_goodman.py ROUTE
+python experiments/iteration121_witness.py design ROUTE
+python experiments/iteration121_witness.py test ROUTE
+python experiments/iteration121_records.py ROUTE
+python experiments/iteration121_precision.py ROUTE
+python experiments/iteration121_transfer.py design ROUTE --cache rerun/model-cache
+python experiments/iteration121_transfer.py test ROUTE --cache rerun/model-cache
+python experiments/iteration121_interval.py ROUTE
+python experiments/iteration121_interval.py ROUTE --large
+~~~
+
+After both routes are generated, run `python experiments/iteration121_fields_check.py --cache rerun/model-cache` to compare the CPU and GPU field calculations.
+
+The class-wide PNR test uses a rational score recorded in `poisson_witness.json`. Run `python experiments/iteration121_poisson.py verify` with the research dependencies and python-flint. The result is a strict lower bound for every mixture of conditionally independent Poisson counts on the given optical input. Its magnitude is far smaller than the measured discrepancies of the tested generators.
+
+Historical manifests include the PDF and source package at their respective tags. Use [the revision 8 archive](https://github.com/qiyuanhuakai/deziroGBS/tree/archive/iteration120-certified-readouts-v1) to validate the revision 8 manifest.
+
 ## Revision 8
 
 On the archived Jiuzhang 3.0 high-power optical input, the complete PNR law and the complete direct-click law are each within **0.4815% TV** of their optical target in ideal arithmetic. The independent checker starts from the binary transfer and squeezing values. It encloses the photon-pair tails and verifies both four-dimensional matrix certificates using interval arithmetic. The sample generator uses floating point.
