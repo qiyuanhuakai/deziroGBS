@@ -1,14 +1,40 @@
-# Sampling a lossy Gaussian boson model with bounded full-record error
+# Subpercent full-record error for a 1,152-port Gaussian boson model
 
 **qiyuanhuakai** · 27 November 2026
 
 [Read the paper (PDF)](manuscript.pdf) · [Download the LaTeX source package](latex-source.zip) · [Matched 4,096-shot measurements](../../results/iteration115_panel_accuracy_v2/validation.json) · [Run protocol and input digest](../../results/iteration115_panel_accuracy_v2/protocol.json)
 
+## Reproduce revision 7
+
+For either complete readout of the published high-power optical model, the layered rejection sampler gives a numerical TV upper bound of 0.4824% in ideal arithmetic. A separate event fixed using hardware file 10 gives simultaneous 99% TV lower limits of 3.766% and 3.813% between the same calibration and the two held-out averaged conditional click laws. See the paper for the sampling assumptions and measured throughput.
+
+[Accepted rows](../../results/iteration119_weights/clamped_bands_64.npz) · [All acceptance decisions](../../results/iteration119_weights/clamped_bands_64.json) · [Held-out counts](../../results/iteration119_weights/hardware_holdout.json) · [Frozen protocol](https://github.com/qiyuanhuakai/deziroGBS/tree/bfd6320687e6a193fe4d7194c81f79e3d4688d3d/results/iteration119_weights) · [Independent checks](../../results/iteration119_weights/audit.json) · [Revision 7 checksums](../../results/iteration119_weights/manifest.json)
+
+Run from the archive root, with the original round-115 optical input. The verification command checks the deposited artifacts. For new measurements, use a separate checkout with a C++17/OpenMP compiler, Python, NumPy, SciPy, threadpoolctl and Matplotlib. The hardware evaluation downloads the two source members for the byte-level audit.
+
+~~~sh
+python experiments/iteration119_verify.py
+python experiments/iteration119_check.py
+python experiments/iteration119_benchmark.py --start 4096 --shots 4096 --cap 7 --workers 6
+python experiments/iteration119_fast.py
+python experiments/iteration119_mixture.py --shots 64 --workers 5 --batch 32
+python experiments/iteration119_clamps.py --shots 64 --workers 7
+python experiments/iteration119_mixture.py --shots 8 --workers 5 --batch 16
+python experiments/iteration119_timing.py
+python experiments/iteration119_hardware.py evaluate
+python experiments/iteration119_audit.py
+python experiments/iteration119_frugal.py
+python experiments/iteration119_powers.py
+python experiments/iteration119_figure.py
+~~~
+
+The likelihood comparison used 4,096 four-photon candidates per route. A separate band sampler generated 64 higher-order candidates per route. The final acceptances are a subset of those 64. To reproduce the eight-row sequential pilot in a clean output directory, run the draw and score stages of iteration119_subpercent.py, then iteration119_clamps.py with --pilot. Run iteration119_optical.py for the unclipped nine/six-pair state.
+
+## Reproduce the revision 6 experiment
+
 Revision 6 compares two complete 1,152-port readouts on the original high-power optical calibration. Retaining seven and five pairs in the two undisplaced residuals gives a 3.0914% full-record TV upper bound. Resolving the displacement environment gives a separate 2.330% upper confidence limit at 99%. Independent calculations on the historical 16-port stress panel give 0.0036391% complete click TV and a 0.00368%–0.1490% bracket for complete PNR TV.
 
-[Full-width pilot and timings](../../results/iteration118_auxiliary/cap14_weak10_8.json) · [Total-count law](../../results/iteration118_auxiliary/law_7_5.json) · [Complete panel click law](../../results/iteration118_auxiliary/panel_7_5_28.json) · [Panel PNR bound](../../results/iteration118_auxiliary/panel_distance.json) · [Environment calculation](../../results/iteration118_auxiliary/environment_7_5.json) · [SHA-256 manifest](../../results/iteration118_auxiliary/manifest.json)
-
-## Reproduce the higher-cutoff experiment
+[Full-width pilot and timings](../../results/iteration118_auxiliary/cap14_weak10_8.json) · [Total-count law](../../results/iteration118_auxiliary/law_7_5.json) · [Complete panel click law](../../results/iteration118_auxiliary/panel_7_5_28.json) · [Panel PNR bound](../../results/iteration118_auxiliary/panel_distance.json) · [Environment calculation](../../results/iteration118_auxiliary/environment_7_5.json) · [SHA-256 manifest](https://github.com/qiyuanhuakai/deziroGBS/blob/ce56b3677fc1ec90ab2c581240a2f8d6c0dc8d45/results/iteration118_auxiliary/manifest.json)
 
 Run from the fixed archive root using the original high-power input described below. Python requires NumPy, SciPy, mpmath and threadpoolctl, in addition to earlier input preparation dependencies. The complete click enumeration compiles a C++17/OpenMP kernel with g++. The sampling driver limits BLAS to one thread per worker. The archive includes full output rows, per-record timings, the determinant coefficients recovered as probability tables, and an independent small-system amplitude calculation.
 

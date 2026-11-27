@@ -181,7 +181,7 @@ class History:
         self.rebuild()
         return a
 
-    def ket(self,v,row):
+    def ket(self,v,row,first_pair=0):
         K=self.K;z=self.grid
         pv=self.powers@v;pw=self.powers@row
         log=np.zeros((K+1,len(z)),complex)
@@ -212,7 +212,7 @@ class History:
                         for a in range(d,K-s-e+1):
                             proj=coeff.T@all_powers[d][a]
                             for b in range(e,K-s-a+1):correction[s+a+b]+=(proj*all_powers[e][b]).sum(0)
-        result=sum(base[n]*correction[j] for n in range(K+1) for j in range(K+1-n))
+        result=sum(base[n]*correction[j] for n in range(K+1) for j in range(max(0,first_pair-n),K+1-n))
         coef=np.fft.fft(result)/len(z)
         return coef*np.sqrt(FAC[:self.D+1])/self.radius**np.arange(self.D+1)
 
